@@ -8,20 +8,23 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
 
 const Wrapper = styled.div`
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #1c70e1, #339eff);
+  color: #fff;
   display: flex;
-  align-content: center;
-  background: red;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Layout = ({ children }) => {
   return (
     <Wrapper>
-      <main>{children}</main>
+      {children}
     </Wrapper>
   )
 }
