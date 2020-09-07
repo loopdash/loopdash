@@ -1,0 +1,13 @@
+.footer {
+  max-width: 1024px;
+  margin: 1rem auto;
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      list-style-type: none !important;
+    }
+  }
+}

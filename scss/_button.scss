@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+.btn,
+.wp-block-button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #000;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  font-weight: $button-font-weight;
+  font-family: $button-font-family;
+  color: $button-font-color;
+  font-size: $button-font-size;
+  border-radius: $border-radius;
+  background: $button-background-color;
+
+  @include bounce();
+}
+
+.btn a,
+.wp-block-button a {
+  color: $button-font-color;
+}
+
+.wp-block-button__link {
+  color: $button-font-color;
+  background: $button-background-color;
+  border-radius: $border-radius;
+  &:hover {
+    color: #ffffff !important;
+  }
+}

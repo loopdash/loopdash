@@ -1,0 +1,32 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.serif {
+  font-family: "Adamina", serif;
+}
+
+p,
+span {
+  color: $body-color;
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+}
+
+.content-wrapper h1,
+.content-wrapper h2 {
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-size: 50px;
+}
