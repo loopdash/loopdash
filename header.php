@@ -4,6 +4,14 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
     <?php wp_head(); ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177470860-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-177470860-1');
+    </script>
   </head>
   <body <?php body_class(); ?>>
   <header class="header-wrapper">

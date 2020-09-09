@@ -403,7 +403,7 @@ h6 {
     border: 1px solid #4880fd; }
 
 body {
-  padding: 0 1.25em; }
+  padding: 0 1em; }
 
 .content-hero {
   max-width: 1024px;
@@ -471,7 +471,7 @@ body {
   .nav ul li {
     margin: 0 0.5rem; }
     .nav ul li a {
-      padding: 1em;
+      padding: 0.5em;
       color: #383838;
       text-decoration: none; }
       .nav ul li a:hover {
@@ -483,6 +483,12 @@ body {
       padding: 0.375em 0.6875em; }
       .nav ul .btn a:hover {
         color: #fff; }
+
+@media (max-width: 599px) {
+  .nav h1 {
+    font-size: 1.25em; }
+  .nav ul li {
+    display: none; } }
 
 input[type="text"],
 input[type="email"] {

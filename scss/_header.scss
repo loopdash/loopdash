@@ -34,7 +34,7 @@
     li {
       margin: 0 0.5rem;
       a {
-        padding: 1em;
+        padding: 0.5em;
         color: $heading-color;
         text-decoration: none;
         &:hover {
@@ -50,6 +50,19 @@
         &:hover {
           color: #fff;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .nav {
+    h1 {
+      font-size: 1.25em;
+    }
+    ul {
+      li {
+        display: none;
       }
     }
   }
