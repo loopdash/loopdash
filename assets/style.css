@@ -322,7 +322,10 @@ li {
   font-family: "Adamina", serif; }
 
 p,
-span {
+span,
+ol,
+ul,
+li {
   color: #969696;
   font-size: 17px;
   line-height: 29px;
@@ -337,11 +340,21 @@ h5,
 h6 {
   color: #383838; }
 
-.content-wrapper h1,
-.content-wrapper h2 {
+ol,
+ul {
+  margin-left: 20px; }
+
+.content-wrapper h1 {
   font-family: "Adamina", serif;
   font-weight: 400;
-  font-size: 50px; }
+  font-size: 50px;
+  margin-bottom: 1.125rem; }
+
+.content-wrapper h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 19px; }
 
 .flex {
   display: flex; }
@@ -367,7 +380,7 @@ h6 {
   color: #ffffff;
   font-size: 1rem;
   border-radius: 0.25rem;
-  background: #4880fd;
+  background: #4158f6;
   transition: all ease-in-out 0.25s; }
   .btn:hover,
   .wp-block-button:hover {
@@ -380,7 +393,7 @@ h6 {
 
 .wp-block-button__link {
   color: #ffffff;
-  background: #4880fd;
+  background: #4158f6;
   border-radius: 0.25rem; }
   .wp-block-button__link:hover {
     color: #ffffff !important; }
@@ -400,10 +413,14 @@ h6 {
   .card h3 {
     font-weight: 500; }
   .card:hover {
-    border: 1px solid #4880fd; }
+    border: 1px solid #4158f6; }
 
+html,
 body {
-  padding: 0 1em; }
+  padding: 0 1em;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  opacity: 100% !important; }
 
 .content-hero {
   max-width: 1024px;
@@ -436,13 +453,18 @@ body {
 
 .footer {
   max-width: 1024px;
-  margin: 1rem auto; }
-  .footer .footer-content {
+  margin: 3rem auto 0.75rem;
+  width: 100%; }
+  .footer ul {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    .footer .footer-content li {
+    justify-content: center; }
+    .footer ul li {
       list-style-type: none !important; }
+  .footer a {
+    font-size: 0.75em;
+    padding: 0 0.6875em;
+    color: #969696; }
 
 .header {
   display: flex;
@@ -455,7 +477,8 @@ body {
   margin: 1em auto; }
 
 .header-brand {
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 24px; }
   .header-brand a {
     color: #383838;
     text-decoration: none; }
@@ -475,7 +498,7 @@ body {
       color: #383838;
       text-decoration: none; }
       .nav ul li a:hover {
-        color: #4880fd; }
+        color: #4158f6; }
   .nav ul .btn {
     display: flex; }
     .nav ul .btn a {
@@ -544,4 +567,4 @@ p a:visited {
   text-decoration: none; }
   p a:hover,
   p a:visited:hover {
-    color: #4880fd; }
+    color: #4158f6; }
