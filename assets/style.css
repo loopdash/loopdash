@@ -457,7 +457,7 @@ main {
 
 .footer {
   max-width: 1024px;
-  margin: -3rem auto 0.75rem;
+  margin: 0 auto 0.75rem;
   width: 100%; }
   .footer ul {
     width: 100%;
