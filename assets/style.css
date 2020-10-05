@@ -424,7 +424,7 @@ body {
   height: 100% !important; }
 
 main {
-  height: 100% !important; }
+  min-height: 768px !important; }
 
 .content-hero {
   max-width: 1024px;
