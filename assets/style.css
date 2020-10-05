@@ -420,7 +420,11 @@ body {
   padding: 0 1em;
   background: #ffffff !important;
   background-color: #ffffff !important;
-  opacity: 100% !important; }
+  opacity: 100% !important;
+  height: 100% !important; }
+
+main {
+  height: 100% !important; }
 
 .content-hero {
   max-width: 1024px;
