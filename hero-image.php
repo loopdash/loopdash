@@ -1,5 +1,5 @@
 <section>
-  <div class="bg-gradient-to-br from-blue-100 to-blue-50 py-12 px-3">
+  <div class="bg-gray-100 py-12 px-3">
     <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 p-4 mt-12">
       <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase">Software development agency</h1>
       <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">

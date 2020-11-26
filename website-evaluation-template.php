@@ -7,7 +7,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<section>
-			<div class="bg-gradient-to-br from-blue-100 to-blue-50 py-12 px-3">
+			<div class="bg-gray-100 py-12 px-3">
 				<div class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-12 p-4 mt-12">
 					<h1 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Website Evaluation</h1>
 					<h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -100,7 +100,7 @@ get_header();
 						include 'text-set.php'; 
 					?>
 					<div class="mt-8 md:flex md:justify-center max-w-3xl mx-auto lg:px-8" id="form">
-						<?php echo do_shortcode('[contact-form-7 id="471" title="Contact form"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]'); ?>
 					</div>
 				</div>
 			</div>
