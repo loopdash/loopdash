@@ -79,7 +79,7 @@ get_header();
 						include 'text-set.php'; 
 					?>
 					<div class="mt-8 md:flex md:justify-center max-w-3xl mx-auto lg:px-8" id="form">
-						<?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="471" title="Contact form"]'); ?>
 					</div>
 				</div>
 			</div>
