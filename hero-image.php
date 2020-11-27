@@ -1,7 +1,7 @@
 <section>
   <div class="bg-gray-100 py-12 px-3">
     <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 p-4">
-      <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase">Software development agency</h1>
+      <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase">Web application development</h1>
       <h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
         Grow your business through technology
       </h2>

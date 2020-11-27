@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Web design template 
+* Template Name: Web design 
 */
 get_header();
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: About template 
+* Template Name: About 
 */
 get_header();
 ?>
@@ -13,14 +13,14 @@ get_header();
 					About Loopdash
 				</h1>
 				<h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-						We try to <span class="text-blue-500">not write software</span>
+						We try to <span class="text-blue-500">not write code</span>
 				</h2>
 			</div>
 		</section>
 
 		<section>
 			<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-lg text-gray-500 pb-8 divide-y divide-blue-50">
-				<p class="py-5">At Loopdash, we don’t write software we don't have to. It’s not because we don’t enjoy what we do, quite the opposite. But for us software is a means to an end - a way to solve a problem. We've been around a while, so we have a few guidelines to ensure we leave things better than we found them.</p>
+				<p class="py-5">At Loopdash, we don’t write applications we don't have to. It’s not because we don’t enjoy what we do, quite the opposite. But for us apps are a means to an end - a way to solve a problem. We've been around a while, so we have a few guidelines to ensure we leave things better than we found them.</p>
 
 				<p class="py-5"><span class="text-blue-600 font-bold">If a solution exists, we won’t rebuild it.</span> Simply because there's no reason for us to. If we know of a SaaS product that solves 95% of the problem, we will tell you about it. Simple as that. We won’t rebuild our own version just because we can. And frankly, we think it’s bad business to even try.</p>
 
