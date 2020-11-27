@@ -20,23 +20,16 @@ get_header();
 			</div>
 		</section>
 
-		<section>
-			<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-lg text-gray-500 pb-8 divide-y divide-blue-50">
-				<p class="py-5">As a consultancy, Loopdash offers more than just code; we provide project leadership and <a href="http://loopdash.com/about">technical expertise</a>. We don't just write code - we'll guide you toward a maintainable and sustainable product, and ensure your business needs are met every step of the way.</p>
-			</div>
-		</section>
+		<section class="mt-12">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-lg text-gray-500 pb-8 grid md:grid-cols-2 lg:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div>
+					<h3 class="text-2xl text-blue-500 font-bold">Let's work together</h3>
+					<p>As a consultancy, Loopdash offers more than just code; we provide project leadership and <a href="http://loopdash.com/about">technical expertise</a>. We don't just write code - we'll guide you toward a maintainable and sustainable product, and ensure your business needs are met every step of the way.</p>
+        </div>
 
-		<section>
-			<div class="py-12">
-				<div class="mt-5 sm:mt-8 max-w-4xl mx-auto px-4 lg:px-8">
-					<?php 
-						$h2 = 'Contact Us';
-						$h3 = 'Let’s Work Together';
-						$p = 'Get in touch to let us know what you’re looking for and one of our solutions architects will get back to you soon.';
-						include 'text-set.php'; 
-					?>
-					<div class="mt-8 md:flex md:justify-center max-w-3xl mx-auto lg:px-8" id="form">
-						<?php echo do_shortcode('[contact-form-7 id="471" title="Contact form"]'); ?>
+        <div class="max-w-4xl mx-auto">
+					<div class="mt-8 md:flex md:justify-center max-w-3xl mx-auto" id="form">
+						<?php echo do_shortcode('[contact-form-7 id="6" title="Contact form"]'); ?>
 					</div>
 				</div>
 			</div>
