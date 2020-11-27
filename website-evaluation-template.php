@@ -82,7 +82,7 @@ get_header();
 		</section>
 
 		<?php 
-			$testimonialBody = 'My team has been working with Gary for over two years now and he has been a tremendous partner. He has created a software tool web application for us that continues to evolve and is a big asset to our offering. Gary has done a great job of listening to our goals and needs, staying organized, being transparent, and ensuring he hits deadlines.';
+			$testimonialBody = 'My team has been working with Loopdash for over two years now and he has been a tremendous partner. He has created a software tool web application for us that continues to evolve and is a big asset to our offering. Loopdash has done a great job of listening to our goals and needs, staying organized, being transparent, and ensuring he hits deadlines.';
 			$testimonialName = 'Sam Jennings';
 			$testimonialPosition = 'Founder';
 			$testimonialCompany = 'Marketplace Strategy';

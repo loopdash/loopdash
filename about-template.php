@@ -8,13 +8,15 @@ get_header();
 	<main id="primary" class="site-main">
 		
 		<section>
-			<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px- lg:text-center my-12">
-				<h1 class="text-base text-blue-600 font-semibold tracking-wide uppercase">
-					About Loopdash
-				</h1>
-				<h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-						We try to <span class="text-blue-500">not write code</span>
-				</h2>
+			<div class="bg-gray-100 bg-gray-100 py-12 px-3">
+				<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
+					<h1 class="text-base text-blue-600 font-semibold tracking-wide uppercase">
+						About Loopdash
+					</h1>
+					<h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+							We try to <span class="text-blue-500">avoid writing code</span>
+					</h2>
+				</div>
 			</div>
 		</section>
 

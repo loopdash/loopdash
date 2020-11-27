@@ -31,7 +31,7 @@ get_header();
 							<?php 
 								$featureIcon = "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check-circle'><path d='M22 11.08V12a10 10 0 1 1-5.93-9.14'></path><polyline points='22 4 12 14.01 9 11.01'></polyline></svg>";
 								$featureTitle = "Website evaluation";
-								$featureDescription = "Having website problems? Discover how to get more traffic, leads, and better performance through our complimentary website evaluation.";
+								$featureDescription = "Having website problems? Discover how to get more traffic, leads, and better performance through our complimentary website evaluation.<a href='#form' class='mt-6 block rounded-md shadow mb-3 flex items-center justify-center px-3 py-1 border border-transparent text-base font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700'>Get your free review</a>";
 								include 'feature-callout.php';
 							?>
 
@@ -50,19 +50,12 @@ get_header();
 							?>
 						</dl>
 					</div>
-					<div class="mt-5 sm:mt-8 sm:flex sm:justify-start lg:justify-center">
-						<div class="rounded-md shadow mb-3">
-							<a href="#form" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
-								Get your free review
-							</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
 
 		<?php 
-			$testimonialBody = 'My team has been working with Gary for over two years now and he has been a tremendous partner. He has created a software tool web application for us that continues to evolve and is a big asset to our offering. Gary has done a great job of listening to our goals and needs, staying organized, being transparent, and ensuring he hits deadlines.';
+			$testimonialBody = 'My team has been working with Loopdash for over two years now and he has been a tremendous partner. He has created a software tool web application for us that continues to evolve and is a big asset to our offering. Loopdash has done a great job of listening to our goals and needs, staying organized, being transparent, and ensuring he hits deadlines.';
 			$testimonialName = 'Sam Jennings';
 			$testimonialPosition = 'Founder';
 			$testimonialCompany = 'Marketplace Strategy';
