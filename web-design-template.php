@@ -11,7 +11,7 @@ get_header();
 				<div class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-12 p-4">
 					<h1 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Website Design &amp; Development</h1>
 					<h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-						Get a new site in 8 weeks
+						Get a new site in 3 weeks
 					</h2>
 					<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
 						We build sites that work for your business and your users — be it a complex intranet platform, a progressive web app, or a marketing site.
