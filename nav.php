@@ -36,6 +36,7 @@
           <div class="flex space-x-4">
             <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400">About</a>
             <a href="/services/web-design-development" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-gray-900">Web design</a>
+            <a href="/services/wordpress-hosting" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-gray-900">Hosting</a>
           </div>
         </div>
       </div>

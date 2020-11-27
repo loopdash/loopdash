@@ -8,7 +8,7 @@ get_header();
 	<main id="primary" class="site-main">
 		<section>
 			<div class="bg-gray-100 py-12 px-3">
-				<div class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-12 p-4 mt-12">
+				<div class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:py-20 lg:px-12 p-4">
 					<h1 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Website Design &amp; Development</h1>
 					<h2 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
 						Get a new site in 8 weeks
@@ -96,7 +96,7 @@ get_header();
 					<?php 
 						$h2 = 'Contact Us';
 						$h3 = 'Setup your website evaluation<br/><span class="text-blue-400">in under 23 seconds</span>';
-						$p = 'Get more from your website. Fill out the form below and we\'ll give you a free website evaluation within 48 hours.';
+						$p = 'Get more from your website. Fill out the form below and we will provide a free website evaluation within 3 days.';
 						include 'text-set.php'; 
 					?>
 					<div class="mt-8 md:flex md:justify-center max-w-3xl mx-auto lg:px-8" id="form">

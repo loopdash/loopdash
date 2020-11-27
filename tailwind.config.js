@@ -1,4 +1,5 @@
 // tailwind.config.js
+const { green } = require('tailwindcss/colors')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -6,6 +7,7 @@ module.exports = {
     colors: {
       white: '#ffffff',
       gray: colors.blueGray,
+      green: colors.green,
       blue: {
         900: '#0F317D',
         800: '#113991',
