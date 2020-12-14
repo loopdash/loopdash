@@ -46,7 +46,7 @@ get_header();
 												$
 											</span>
 											<span class="font-semibold text-blue-500">
-												20
+												40
 											</span>
 										</span>
 										<span class="text-gray-400 text-sm">
@@ -107,7 +107,7 @@ get_header();
 												$
 											</span>
 											<span class="font-semibold text-blue-500">
-												32
+												60
 											</span>
 										</span>
 										<span class="text-gray-400 text-sm">
