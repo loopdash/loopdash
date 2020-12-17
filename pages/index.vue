@@ -22,17 +22,30 @@
 
 <script>
 export default {
-  async fetch () {
-    this.hero = await this.$content('index').only(['title', 'heading', 'lead']).fetch()
-    this.feature = {
-      title: 'Something',
-      description: 'We have 290 Tailwind CSS variables in thematically connected categories to allow you to work effectively.'
-    }
-  },
+  // async fetch () {
+  //   // this.hero = await this.$content('index').only(['title', 'heading', 'lead']).fetch()
+  //   this.hero = {
+  //     title: 'Website & app development',
+  //     heading: 'Is your website underperforming?',
+  //     lead: 'Discover how to get more leads, visitors, and a better web presence through our complimentary website evaluation.'
+  //   }
+
+  //   this.feature = {
+  //     title: 'Something',
+  //     description: 'We have 290 Tailwind CSS variables in thematically connected categories to allow you to work effectively.'
+  //   }
+  // },
   data () {
     return {
-      hero: {},
-      feature: {}
+      hero: {
+        title: 'Website & app development',
+        heading: 'Is your website working for you?',
+        lead: 'Discover how to get more leads, visitors, and a better web presence through our complimentary website evaluation.'
+      },
+      feature: {
+        title: 'Something',
+        description: 'We have 290 Tailwind CSS variables in thematically connected categories to allow you to work effectively.'
+      }
     }
   }
 }

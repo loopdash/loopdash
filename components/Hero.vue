@@ -14,13 +14,8 @@
 
         <div class="mt-5 sm:mt-8 sm:flex sm:justify-start lg:justify-start">
           <div class="rounded-md shadow mb-3">
-            <a href="#form" class="w-full flex items-center justify-center px-8 py-2 border-2 border-blue-600 text-base font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-3 md:text-lg md:px-5 transition-all">
-              Free website evaluation
-            </a>
-          </div>
-          <div class="sm:ml-3">
-            <a href="/about" class="w-full flex items-center justify-center px-8 py-2 text-base font-bold rounded-md text-blue-400 border-2 border-blue-400 hover:text-blue-700 hover:border-blue-700 md:py-3 md:text-lg md:px-5 transition-all">
-              Our process
+            <a href="/form" class="w-full flex items-center justify-center px-8 py-2 border-2 border-blue-600 text-base font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-3 md:text-lg md:px-5 transition-all">
+              Get your website evaluation
             </a>
           </div>
         </div>
