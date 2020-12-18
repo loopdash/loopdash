@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="bg-gray-100 py-12 px-3 mb-10">
-      <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 p-4">
+    <div class="bg-gray-100 py-16 px-3 mb-10">
+      <div class="max-w-5xl text-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 p-4">
         <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase">
           {{ hero.title }}
         </h1>
@@ -12,7 +12,7 @@
           {{ hero.lead }}
         </p>
 
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-start lg:justify-start">
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-start lg:justify-center">
           <div class="rounded-md shadow mb-3">
             <a href="/form" class="w-full flex items-center justify-center px-8 py-2 border-2 border-blue-600 text-base font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-3 md:text-lg md:px-5 transition-all">
               Get your website evaluation

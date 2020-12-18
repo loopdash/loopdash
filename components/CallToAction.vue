@@ -1,19 +1,27 @@
 <template>
-  <div class="bg-gray-200">
+  <div class="bg-gradient-to-br from-blue-800 to-blue-700">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="block">Ready to dive in?</span>
-        <span class="block text-blue-600">Start your free trial today.</span>
+      <h2 class="text-3xl text-white font-extrabold tracking-tight sm:text-4xl mb-6">
+        <span class="block">Having website issues?</span>
+        <span class="block text-blue-300">Learn what to fix.</span>
       </h2>
-      <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-            Get started
-          </a>
+
+      <div class="">
+        <div class="w-full mb-6">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            value=""
+            size="40"
+            class="border-solid border-2 border-grey-light py-3 rounded gray-500 bg-gray-50 px-3 w-full"
+            aria-require–d="true"
+            aria-invalid="false"
+          >
         </div>
-        <div class="ml-3 inline-flex rounded-md shadow">
+        <div class="">
           <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50">
-            Learn more
+            Get your review
           </a>
         </div>
       </div>
