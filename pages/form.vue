@@ -1,5 +1,5 @@
 <template>
-  <main class="flex h-100 bg-gradient-to-br from-blue-500 to-blue-400">
+  <main class="flex h-100 bg-gradient-to-br from-blue-800 to-blue-700">
     <div class="w-full md:w-1/2 max-w-sm m-auto bg-indigo-100 rounded p-5">
       <div class="bg-white p-5 rounded-xl">
         <h1 class="mt-2 text-3xl leading-8 font-extrabold text-blue-600">
