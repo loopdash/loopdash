@@ -15,11 +15,6 @@
               </div>
             </div>
           </div>
-          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <a href="/services/website-evaluation" class="px-3 py-2 rounded-lg text-sm font-medium bg-blue-500 text-white hover:text-white hover:bg-blue-900 transition-all">
-              Free website review
-            </a>
-          </div>
         </div>
       </div>
       <div class="hidden sm:hidden">
