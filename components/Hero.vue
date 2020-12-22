@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="bg-gray-100 py-16 px-3 mb-10">
-      <div class="max-w-5xl text-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 p-4">
+      <div class="max-w-3xl text-center mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 p-4">
         <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase">
           {{ hero.title }}
         </h1>

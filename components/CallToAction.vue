@@ -9,20 +9,20 @@
       <div class="">
         <div class="w-full mb-6">
           <input
+            v-model="email"
             type="email"
             name="email"
             placeholder="Your email"
-            value=""
-            size="40"
             class="border-solid border-2 border-grey-light py-3 rounded gray-500 bg-gray-50 px-3 w-full"
-            aria-require–d="true"
-            aria-invalid="false"
           >
         </div>
         <div class="">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-bold rounded-md text-blue-600 bg-blue-300 hover:bg-blue-50">
+          <button
+            class="inline-flex items-center justify-center px-5 py-3 text-base font-bold rounded-md text-blue-600 bg-blue-300 hover:bg-blue-50"
+            @click="handleClick"
+          >
             Get your review
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -31,5 +31,29 @@
 
 <script>
 export default {
+  data () {
+    return {
+      email: ''
+    }
+  },
+  computed: {
+    isDisabled () {
+      return this.email.length > 0
+    }
+  },
+  methods: {
+    handleClick () {
+      const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: this.email })
+      }
+      fetch('http://localhost:8080/api/send_email', requestOptions).then(
+        (response) => {
+          console.log(response)
+        }
+      )
+    }
+  }
 }
 </script>
