@@ -19,8 +19,8 @@ export default {
     return {
       hero: {
         title: 'Website and app development',
-        heading: 'Grow your business through the web',
-        lead: 'Searching for a web development partner? At Loopdash we build apps and site to make your business more efficient.'
+        heading: 'Does your website suck?',
+        lead: 'At Loopdash we build apps and site to make your business more efficient.'
       },
       feature: {
         title: 'Something',
