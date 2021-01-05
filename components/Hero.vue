@@ -34,9 +34,10 @@ export default {
     }
   },
   async fetch () {
-    const response = await fetch('http://localhost:8080/api/get-average-uptime')
-      .then(res => res.json())
-    this.averageUptime = `${response.data.toFixed(2)}%`
+    const response = await fetch(
+      'http://localhost:8080/api/get-server-status'
+    ).then(res => res.json())
+    this.averageUptime = `${response.data.averageUptime.toFixed(2)}%`
   },
   data () {
     return {

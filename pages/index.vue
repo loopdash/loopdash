@@ -9,6 +9,7 @@
     <About />
     <Testimonials />
     <CallToAction />
+    <Footer />
   </main>
 </template>
 

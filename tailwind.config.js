@@ -23,7 +23,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Inter', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
-      mono: ['SF-Mono', 'Consolas', 'monospace']
+      mono: ['SF Mono', 'Consolas', 'Avenir']
     }
   }
 }
