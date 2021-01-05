@@ -1,7 +1,6 @@
 <template>
   <main>
     <Nav />
-    <!-- <Banner /> -->
     <Hero
       v-bind="{hero}"
     />
@@ -19,8 +18,8 @@ export default {
     return {
       hero: {
         title: 'Website and app development',
-        heading: 'Does your website suck?',
-        lead: 'At Loopdash we build apps and site to make your business more efficient.'
+        heading: 'Is your website bad?',
+        lead: 'Let\'s make it great. We partner with business and brands to build better websites and apps.'
       },
       feature: {
         title: 'Something',

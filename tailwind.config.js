@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   theme: {
@@ -18,11 +18,12 @@ module.exports = {
         300: '#99B4F9',
         200: '#B3C7FB',
         100: '#CCDAFC',
-         50: '#E6ECFE'
+        50: '#E6ECFE'
       }
     },
     fontFamily: {
-      sans: ['Inter', 'Avenir', 'Helvetica', 'Arial', 'sans-serif']
+      sans: ['Inter', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+      mono: ['SF-Mono', 'Consolas', 'monospace']
     }
   }
 }

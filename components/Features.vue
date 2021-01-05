@@ -6,11 +6,11 @@
           <LayoutIcon />
         </div>
       </div>
-      <dt class="text-lg leading-6 font-medium text-gray-900">
-        Need a new website or a redesign?
+      <dt class="text-xl leading-6 font-bold text-gray-900">
+        Need a new site?
       </dt>
-      <dd class="mt-2 text-base text-gray-500">
-        Don't have a site or need to make some changes to your current one? Let's chat. Our sites are user-friendly, responsive, and obtain more qualified leads.
+      <dd class="mt-2 text-lg text-gray-500">
+        Don't have a site or need to make some changes to your current one? Our sites are user-friendly, responsive, and obtain more qualified leads.
       </dd>
     </div>
     <div>
@@ -19,11 +19,11 @@
           <RefreshCwIcon />
         </div>
       </div>
-      <dt class="text-lg leading-6 font-medium text-gray-900">
-        Doing the same task over and over?
+      <dt class="text-xl leading-6 font-bold text-gray-900">
+        Doing busy work?
       </dt>
-      <dd class="mt-2 text-base text-gray-500">
-        If so, it's time to automate. Automation lets you focus on the important parts of your business.
+      <dd class="mt-2 text-lg text-gray-500">
+        If you're doing the same task over and over, perhaps it's time to automate. From formatting CSVs, to sending batches of emails, we're happy to help build a workflow that decreases busy work.
       </dd>
     </div>
     <div>
@@ -32,11 +32,11 @@
           <TrendingUpIcon />
         </div>
       </div>
-      <dt class="text-lg leading-6 font-medium text-gray-900">
+      <dt class="text-xl leading-6 font-bold text-gray-900">
         Have an idea for a startup?
       </dt>
-      <dd class="mt-2 text-base text-gray-500">
-        We've built a number of MVPs.
+      <dd class="mt-2 text-lg text-gray-500">
+        Building a company is hard. Unless your a technical founder, funding can feel impossible. Our MVP approach will help you pitch your app to investors and maximaze your chance of securing funding.
       </dd>
     </div>
   </div>
@@ -46,13 +46,6 @@
 import { LayoutIcon, RefreshCwIcon, TrendingUpIcon } from 'vue-feather-icons'
 
 export default {
-  components: { LayoutIcon, RefreshCwIcon, TrendingUpIcon },
-  props: {
-    feature: {
-      type: Object,
-      required: true,
-      default: null
-    }
-  }
+  components: { LayoutIcon, RefreshCwIcon, TrendingUpIcon }
 }
 </script>

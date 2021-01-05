@@ -1,5 +1,5 @@
 <template>
-  <header class="flex-row site-header pa-5 align-center">
+  <header class="flex-row site-header pa-5 align-center border-b border-gray-200">
     <nav>
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
@@ -12,21 +12,6 @@
                 <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400">About</a>
                 <a href="/services/web-design-development" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-gray-900">Web design</a>
                 <a href="/services/wordpress-hosting" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-gray-900">Hosting</a>
-                <a
-                  href="https://status.loopdash.com"
-                  target="_blank"
-                  class="px-3 py-2
-                  rounded-md text-sm font-medium text-gray-400
-                  hover:text-gray-900 flex justify-content"
-                >
-                  <span class="mr-1">Status</span>
-                  <span>
-                    <span class="flex absolute h-2 w-2 mt-1">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-600" />
-                    </span>
-                  </span>
-                </a>
               </div>
             </div>
           </div>
@@ -43,7 +28,3 @@
     </nav>
   </header>
 </template>
-
-<script>
-export default {}
-</script>

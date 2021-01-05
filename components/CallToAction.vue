@@ -76,10 +76,9 @@ export default {
           body: JSON.stringify({ email: this.email })
         }
 
-        fetch('http://localhost:8080/api/send_email', requestOptions)
+        fetch('http://localhost:8080/api/send-email', requestOptions)
           .then((response) => {
             if (response) {
-              console.log(response)
               self.submitted = true
               self.successful = true
               self.message = 'Message sent'
@@ -87,7 +86,6 @@ export default {
           }
           ).catch(function (error) {
             if (error) {
-              console.log(error)
               self.submitted = true
               self.successful = false
               self.message = 'Something went wrong'
