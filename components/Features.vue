@@ -6,7 +6,7 @@
           <LayoutIcon />
         </div>
       </div>
-      <dt class="text-xl leading-6 font-bold text-gray-900">
+      <dt class="text-xl leading-6 font-bold text-gray-600 font-mono">
         Need a new site?
       </dt>
       <dd class="mt-2 text-lg text-gray-500">
@@ -19,7 +19,7 @@
           <RefreshCwIcon />
         </div>
       </div>
-      <dt class="text-xl leading-6 font-bold text-gray-900">
+      <dt class="text-xl leading-6 font-bold text-gray-600 font-mono">
         Doing busy work?
       </dt>
       <dd class="mt-2 text-lg text-gray-500">
@@ -32,8 +32,8 @@
           <TrendingUpIcon />
         </div>
       </div>
-      <dt class="text-xl leading-6 font-bold text-gray-900">
-        Have an idea for a startup?
+      <dt class="text-xl leading-6 font-bold text-gray-600 font-mono">
+        Have startup idea?
       </dt>
       <dd class="mt-2 text-lg text-gray-500">
         Building a company is hard. Unless your a technical founder, funding can feel impossible. Our MVP approach will help you pitch your app to investors and maximaze your chance of securing funding.

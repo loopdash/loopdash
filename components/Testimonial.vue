@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <p class="leading-loose text-gray-500">
+      <p class="text-gray-500 text-md">
         {{ testimonial }}
       </p>
     </div>
