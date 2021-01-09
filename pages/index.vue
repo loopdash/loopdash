@@ -14,16 +14,3 @@
     <Footer />
   </main>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      feature: {
-        title: 'Something',
-        description: 'We have 290 Tailwind CSS variables in thematically connected categories to allow you to work effectively.'
-      }
-    }
-  }
-}
-</script>

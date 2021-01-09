@@ -8,8 +8,8 @@
               <div class="inset-y-0 left-0 flex items-center">
                 <a href="/" class="font-mono mono">Loopdash</a>
               </div>
-              <div class="xs:hidden sm:hidden md:block flex-1 flex items-center justify-center font-mono">
-                <div class="sm:ml-6">
+              <div class="invisible md:visible lg:visible xl:visible flex-1 flex font-mono">
+                <div class="invisible md:visible lg:visible xl:visible sm:ml-6">
                   <div class="flex space-x-4">
                     <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">About</a>
                     <a href="/services/web-design-development" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Web Design</a>
@@ -34,7 +34,7 @@
                   </div>
                 </div>
               </div>
-              <MenuIcon class="md:hidden" @click.prevent="handleMenuClick" />
+              <MenuIcon class="visible sm:visible md:invisible hover:text-blue-500 text-gray-600" @click.prevent="handleMenuClick" />
             </div>
           </div>
           <div
