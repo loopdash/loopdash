@@ -1,11 +1,11 @@
 <template>
   <section>
     <div class="py-20 px-3 mb-10">
-      <div class="max-w-4xl mx-auto text-center lg:pt-10 lg:pb-24 px-4 sm:px-6 lg:px-8 p-4">
+      <div class="max-w-3xl mx-auto text-center lg:pt-10 lg:pb-24 px-4 sm:px-6 lg:px-8 p-4">
         <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
           {{ title }} {{ averageUptime }}
         </h1>
-        <h2 class="mt-2 leading-12 font-extrabold tracking-tight text-5xl">
+        <h2 class="mt-2 leading-12 font-bold tracking-tight text-5xl">
           {{ heading }}
         </h2>
         <p class="mt-4 text-xl text-gray-500 lg:mx-auto">

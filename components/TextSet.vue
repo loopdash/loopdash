@@ -4,7 +4,7 @@
       <h2 v-if="h2" class="text-base text-blue-600 font-semibold tracking-wide uppercase font-mono">
         {{ h2 }}
       </h2>
-      <h3 v-if="h3" class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <h3 v-if="h3" class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
         {{ h3 }}
       </h3>
 
