@@ -3,7 +3,7 @@
     <div class="py-20 px-3 mb-10">
       <div class="max-w-3xl mx-auto text-center lg:pt-10 lg:pb-24 px-4 sm:px-6 lg:px-8 p-4">
         <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
-          {{ title }} {{ averageUptime }}
+          {{ title }}
         </h1>
         <h2 class="mt-2 leading-12 font-bold tracking-tight text-5xl">
           {{ heading }}
@@ -40,17 +40,6 @@ export default {
       type: String,
       required: true,
       default: null
-    }
-  },
-  async fetch () {
-    const response = await fetch(
-      'http://localhost:8080/api/get-server-status'
-    ).then(res => res.json())
-    this.averageUptime = `${response.data.averageUptime.toFixed(2)}%`
-  },
-  data () {
-    return {
-      averageUptime: null
     }
   }
 }

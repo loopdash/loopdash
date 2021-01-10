@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 
 app.set('API_PORT', process.env.API_PORT || 8080)
 
-app.post('/api/send_email', (req, res) => {
+app.post('/api/send-email', (req, res) => {
   const { email } = req.body
 
   if (!email) {

@@ -1,6 +1,7 @@
 ---
 title: 'About Loopdash'
 heading: 'We try to avoid writing code'
+template: 'page'
 ---
 
 <p class="mb-6 text-lg text-gray-500">At Loopdash, we don’t write applications we don't have to. It’s not because we don’t enjoy what we do, quite the opposite. But for us apps are a means to an end - a way to solve a problem. We've been around a while, so we have a few guidelines to ensure we leave things better than we found them.</p>
