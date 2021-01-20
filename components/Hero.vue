@@ -1,22 +1,43 @@
 <template>
-  <section>
-    <div class="py-20 px-3 mb-10">
-      <div class="max-w-3xl mx-auto text-center lg:pt-10 lg:pb-24 px-4 sm:px-6 lg:px-8 p-4">
-        <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
-          {{ title }}
-        </h1>
-        <h2 class="mt-2 leading-12 font-bold tracking-tight text-5xl">
-          {{ heading }}
-        </h2>
-        <p class="mt-4 text-xl text-gray-500 lg:mx-auto">
-          {{ lead }}
-        </p>
-        <div class="mt-5 sm:mt-8 sm:flex justify-center">
-          <div class="rounded-md shadow mb-3">
-            <a href="/about" class="w-full flex items-center justify-center px-8 py-2 border-2 border-blue-600 text-base font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700 py-3 md:text-lg transition-all">
-              Our process
-            </a>
+  <section class="relative container mx-auto px-8 pt-16 pb-20 max-w-7xl">
+    <div class="relative flex flex-wrap flex-col md:flex-row lg:items-center -mx-8">
+      <div class="md:w-1/2 px-8">
+        <div class="mb-4 text-center md:text-left">
+          <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
+            {{ title }}
+          </h1>
+          <h2 class="mt-2 leading-12 font-bold tracking-tight text-5xl mb-6">
+            {{ heading }}
+          </h2>
+          <p class="text-xl md:text-lg lg:text-xl xl:text-2xl text-grey-dark leading-normal text-gray-500 lg:mx-auto">
+            {{ lead }}
+          </p>
+        </div>
+
+        <div class="md:hidden px-8 pt-2 mb-6 md:mb-2">
+          <div class="shadow-lg rounded-2xl">
+            <img src="/mps-screenshot.png" alt="" class="rounded-2xl">
           </div>
+        </div>
+
+        <Form />
+
+        <div class="markdown text-lg mt-6 text-center md:text-left flex justify-center md:justify-start">
+          <div class="flex items-center border-r-2 border-gray-200 pr-3">
+            <StarIcon size="16" class="text-yellow-400" />
+            <StarIcon size="16" class="text-yellow-400" />
+            <StarIcon size="16" class="text-yellow-400" />
+            <StarIcon size="16" class="text-yellow-400" />
+            <StarIcon size="16" class="text-yellow-400" />
+          </div>
+          <p class="pl-3">
+            <span class="font-bold">Rated 5 stars</span> by over <span class="font-bold text-blue-500">9 customers</span>
+          </p>
+        </div>
+      </div>
+      <div class="hidden md:block md:w-1/2 px-8 pt-2 lg:pt-16">
+        <div class="shadow-lg rounded-xl">
+          <img src="/mps-screenshot.png" alt="" class="rounded-2xl">
         </div>
       </div>
     </div>
@@ -24,7 +45,10 @@
 </template>
 
 <script>
+import { StarIcon } from 'vue-feather-icons'
+
 export default {
+  components: { StarIcon },
   props: {
     title: {
       type: String,

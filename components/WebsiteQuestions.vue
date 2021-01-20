@@ -11,7 +11,10 @@
     <div class="w-full md:w-2/3 px-6 mb-6">
       <Question
         question="Why is a Loopdash website better than Wix or Squarespace?"
-        answer="Our custom websites are designed with your brand in mind and are capable of anything from custom searches to selling products. Custom sites also last longer, are more portable and are better for SEO. When done right they end up paying for themselves."
+        answer="Our custom websites are designed with your brand in mind and
+        are capable of anything from custom searches to selling products.
+        Custom sites also last longer, are more portable and are better for
+        SEO. Custom sites end up paying for themselves."
       />
       <Question
         question="Do I own my website once the project is finished?"

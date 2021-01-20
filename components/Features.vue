@@ -7,7 +7,7 @@
         </div>
       </div>
       <dt class="text-xl leading-6 font-bold text-gray-600 font-mono">
-        Need a new site?
+        Need a new website?
       </dt>
       <dd class="mt-2 text-lg text-gray-500">
         Don't have a site or need to make some changes to your current one? Our sites are user-friendly, responsive, and obtain more qualified leads.
@@ -23,7 +23,7 @@
         Doing busy work?
       </dt>
       <dd class="mt-2 text-lg text-gray-500">
-        If you're doing the same task over and over, perhaps it's time to automate. From formatting CSVs, to sending batches of emails, we're happy to help build a workflow that decreases busy work.
+        If you're doing the same task over and over it's time to automate. From formatting CSVs, to bulk sending emails, we can help build a system to decrease busy work.
       </dd>
     </div>
     <div>
