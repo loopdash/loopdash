@@ -18,7 +18,7 @@ const mailgun = require('mailgun-js')({
 app.use(cors())
 app.use(bodyParser.json())
 
-app.set('API_PORT', process.env.API_PORT || 8080)
+app.set('PORT', process.env.PORT || 8080)
 
 app.post('/api/send-email', (req, res) => {
   const { email } = req.body
@@ -72,6 +72,6 @@ app.get('/api/get-server-status', (req, res) => {
     )
 })
 
-app.listen(process.env.API_PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`App is running on ${process.env.API_PORT}`)
 })
