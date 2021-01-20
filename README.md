@@ -1,5 +1,7 @@
 # loopdash
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ae097404-5d67-4078-9776-2766684ff371/deploy-status)](https://app.netlify.com/sites/loopdash/deploys)
+
 ## Build Setup
 
 ```bash
