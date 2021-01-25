@@ -15,8 +15,8 @@
         </div>
 
         <div class="md:hidden px-8 pt-2 mb-6 md:mb-2">
-          <div class="shadow-lg rounded-2xl">
-            <img src="/mps-screenshot.png" alt="" class="rounded-2xl">
+          <div class="shadow-lg">
+            <img src="/mps-screenshot.png" alt="">
           </div>
         </div>
 
@@ -36,8 +36,8 @@
         </div>
       </div>
       <div class="hidden md:block md:w-1/2 px-8 pt-2 lg:pt-16">
-        <div class="shadow-lg rounded-xl">
-          <img src="/mps-screenshot.png" alt="" class="rounded-2xl">
+        <div class="shadow-lg">
+          <img src="/mps-screenshot.png" alt="">
         </div>
       </div>
     </div>
