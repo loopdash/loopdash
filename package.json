@@ -2,6 +2,9 @@
   "name": "loopdash",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "14.0.0"
+  },
   "main": "server",
   "dependencies": {
     "axios": "^0.21.1",
@@ -11,9 +14,26 @@
     "express": "^4.17.1",
     "lodash": "^4.17.20",
     "mailgun-js": "^0.22.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "nodemon": "^2.0.6",
+    "nuxt": "^2.14.6",
+    "tailwindcss": "^2.0.1",
+    "vue-feather-icons": "^5.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4"
+  },
   "scripts": {
     "start": "node server",
     "build": "cd client/ && npm install && npm run generate"

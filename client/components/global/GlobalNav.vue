@@ -14,23 +14,6 @@
                     <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">About</a>
                     <a href="/services/web-design-development" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Web Design</a>
                     <a href="/services/hosting" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Hosting</a>
-                    <div class="flex px-3 py-2">
-                      <span
-                        class="mr-1 text-sm font-medium text-gray-400"
-                      >Status</span>
-                      <span>
-                        <span class="flex absolute h-2 w-2 mt-1">
-                          <span
-                            :class="{ 'bg-red-400': isDown,'bg-green-400 animate-ping': !isDown}"
-                            class="absolute inline-flex h-full w-full rounded-full  opacity-75"
-                          />
-                          <span
-                            :class="{ 'bg-red-600': isDown, 'bg-green-600': !isDown}"
-                            class="relative inline-flex rounded-full h-2 w-2"
-                          />
-                        </span>
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -58,18 +41,6 @@ import { MenuIcon } from 'vue-feather-icons'
 
 export default {
   components: { MenuIcon },
-  async fetch () {
-    const response = await fetch(
-      'http://localhost:8080/api/get-server-status'
-    ).then(res => res.json())
-    this.isDown = response.data.isDown
-  },
-  data () {
-    return {
-      isDown: null,
-      showMenu: false
-    }
-  },
   methods: {
     handleMenuClick () {
       this.showMenu = !this.showMenu

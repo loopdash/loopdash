@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-600 py-20 overflow-x-hidden bg-repeat" style="background-image: url(/hero-background.svg)">
+  <section class="bg-blue-600 py-12 overflow-x-hidden bg-repeat" style="background-image: url(/hero-background.svg)">
     <div class="container px-4 mx-auto max-w-6xl">
       <div class="flex flex-wrap lg:flex-nowrap">
         <div class="w-full lg:w-1/2 px-2 mb-5">

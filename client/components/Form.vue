@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="max-w-sm mb-3">
+    <div class="w-full md:w-auto max-w-md mb-3">
       <input
         v-model="email"
         type="email"
@@ -23,7 +23,7 @@
       <button
         :disabled="disabled"
         :class="{ 'bg-blue-600 hover:bg-blue-600': disabled, 'hover:bg-blue-700 bg-blue-900': !disabled }"
-        class="inline-flex items-center justify-center px-5 py-3 text-base font-bold rounded-md text-white"
+        class="inline-flex items-center w-full md:w-auto justify-center px-5 py-3 text-base font-bold rounded-md text-white"
         @click.prevent="handleClick"
       >
         Get started

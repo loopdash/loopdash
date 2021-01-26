@@ -1,6 +1,6 @@
 <template>
-  <section class="relative container mx-auto px-8 pt-16 pb-20 max-w-7xl">
-    <div class="relative flex flex-wrap flex-col md:flex-row lg:items-center -mx-8">
+  <section class="relative container mx-auto px-8 pt-8 pb-20 max-w-7xl">
+    <div class="relative flex flex-wrap flex-col md:flex-row lg:items-center -mx-8 pt-16 pb-21">
       <div class="md:w-1/2 px-8">
         <div class="mb-4 text-center md:text-left">
           <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">

@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-7xl mx-auto mb-16w px-3 py-10 space-y-10 md:space-y-0 md:grid md:grid-cols-3 lg:grid-cols-3 md:gap-x-8 md:gap-y-10">
     <div>
       <div class="flex-shrink-0 mb-4">
-        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-blue-700 to-blue-500 text-white">
+        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-blue-700 to-blue-600 text-white">
           <LayoutIcon />
         </div>
       </div>
@@ -15,7 +15,7 @@
     </div>
     <div>
       <div class="flex-shrink-0 mb-4">
-        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-blue-700 to-blue-500 text-white">
+        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-blue-700 to-blue-600 text-white">
           <RefreshCwIcon />
         </div>
       </div>
@@ -28,7 +28,7 @@
     </div>
     <div>
       <div class="flex-shrink-0 mb-4">
-        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-br from-blue-700 to-blue-500 text-white">
+        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-gradient-to-br from-blue-700 to-blue-600 text-white">
           <TrendingUpIcon />
         </div>
       </div>
