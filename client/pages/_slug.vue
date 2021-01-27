@@ -13,15 +13,18 @@
       </div>
     </div>
     <div v-else>
-      <mini-hero :title="page.title" :heading="page.heading">
-        <template #mini-hero />
-      </mini-hero>
       <div class="px-8 mb-16 mx-auto max-w-2xl">
+        <MiniHero :title="page.title" :heading="page.heading">
+          <template #MiniHero />
+        </MiniHero>
         <nuxt-content :document="page" />
       </div>
-      <call-to-action>
-        <template #call-to-action />
-      </call-to-action>
+      <CallToAction>
+        <template #CallToAction />
+      </CallToAction>
+      <Footer>
+        <template #Footer />
+      </Footer>
     </div>
   </div>
 </template>
@@ -29,8 +32,10 @@
 <script>
 import CallToAction from '../components/global/CallToAction.vue'
 import MiniHero from '../components/global/MiniHero.vue'
+import Footer from '../components/global/Footer.vue'
+
 export default {
-  components: { MiniHero, CallToAction },
+  components: { MiniHero, CallToAction, Footer },
   async asyncData ({ $content, params }) {
     const page = await $content('pages', params.slug).fetch()
     return { page }

@@ -36,6 +36,7 @@
   },
   "scripts": {
     "start": "node server",
+    "dev": "cd client/ && npm run dev",
     "build": "cd client/ && npm install && npm run generate"
   },
   "repository": {

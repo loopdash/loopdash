@@ -1,29 +1,24 @@
 <template>
-  <div>
-    <div class="flex justify-end w-full mb-2">
-      <div
-        v-if="submitted"
-        :class="{ 'border-green-500 bg-green-500': successful, 'border-red-500 bg-red-500': !successful }"
-        class="p-y-2 px-3  text-white border-1 rounded border-solid "
-      >
-        {{ message }}
-      </div>
+  <div class="w-full">
+    <div
+      v-if="submitted"
+      :class="{ 'border-green-500 bg-green-500': successful, 'border-red-500 bg-red-500': !successful }"
+      class="p-y-2 px-3 text-white border-1 rounded border-solid "
+    >
+      {{ message }}
     </div>
-
-    <div class="w-full md:w-auto max-w-md mb-3">
+    <div class="grid grid grid-cols-10 gap-4">
       <input
         v-model="email"
         type="email"
         name="email"
         placeholder="Enter your email"
-        class="border-solid border-2 focus:border-blue-200 py-3 rounded gray-500 bg-gray-50 px-3 w-full"
+        class="col-span-7 border-solid border-2 focus:border-blue-200 py-3 rounded gray-500 bg-gray-50 px-3"
       >
-    </div>
-    <div>
       <button
         :disabled="disabled"
         :class="{ 'bg-blue-600 hover:bg-blue-600': disabled, 'hover:bg-blue-700 bg-blue-900': !disabled }"
-        class="inline-flex items-center w-full md:w-auto justify-center px-5 py-3 text-base font-bold rounded-md text-white"
+        class="col-span-3 px-5 py-3 text-base font-bold rounded-md text-white"
         @click.prevent="handleClick"
       >
         Get started

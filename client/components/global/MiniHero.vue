@@ -1,19 +1,17 @@
 <template>
   <section>
-    <slot name="global-nav">
-      <div class="bg-gray-100 py-8 px-3 mb-10">
-        <div class="max-w-4xl mx-auto text-center lg:py-10 px-4 sm:px-6 lg:px-8 p-4">
-          <h1 class="text-base text-gray-500 font-semibold tracking-wide uppercase font-mono">
-            {{ title }}
-          </h1>
-          <h2 class="text-blue-600 mt-2 leading-12 font-bold tracking-tight text-5xl">
-            {{ heading }}
-          </h2>
-          <p class="text-gray-500 mt-4 text-xl  lg:mx-auto">
-            {{ lead }}
-          </p>
-        </div>
-      </div>
+    <slot name="mini-hero" class="pb-18 max-w-7xl mx-auto lg:text-center mb-8">
+      <h2 v-if="title" class="text-base text-blue-600 font-semibold tracking-wide uppercase font-mono">
+        {{ title }}
+      </h2>
+
+      <h3 v-if="heading" class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+        {{ heading }}
+      </h3>
+
+      <p v-if="lead" class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+        {{ lead }}
+      </p>
     </slot>
   </section>
 </template>

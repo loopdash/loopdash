@@ -1,6 +1,7 @@
 ---
 title: 'Loopdash Privacy Policy'
-template: 'document'
+heading: 'We try to avoid writing code'
+template: 'page'
 ---
 
 <p class="text-lg text-gray-500 font-semibold">Last Updated May 2018</p>
