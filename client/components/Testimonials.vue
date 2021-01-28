@@ -1,12 +1,11 @@
 <template>
-  <section>
-    <div class="py-20 px-3 mb-18">
-      <TextSet
-        h2="Testimonials"
-        h3="What others are saying"
-      />
-    </div>
-    <div class="flex flex-wrap max-w-7xl mx-auto mb-6">
+  <section class="py-24 px-4 mb-18">
+    <TextSet
+      h2="Testimonials"
+      h3="What others are saying"
+      class="pb-8"
+    />
+    <div class="flex flex-wrap max-w-6xl mx-auto mb-6">
       <Testimonial
         name="Sam Jennings"
         position="Founder"

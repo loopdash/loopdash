@@ -5,18 +5,23 @@
     </global-nav>
 
     <div v-if="page.template == 'document'">
-      <div class="px-8 py-12 mb-16 mx-auto max-w-2xl">
-        <h1 class="text-3xl font-bold mb-4">
-          {{ page.title }}
-        </h1>
+      <section class="container mx-auto px-4 pt-20 pb-24 max-w-2xl">
+        <div class="mb-8 text-center mx-auto max-w-3xl pt-4">
+          <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
+            {{ page.title }}
+          </h1>
+          <h2 class="mt-2 leading-12 font-bold tracking-tight text-5xl mb-4">
+            {{ page.heading }}
+          </h2>
+        </div>
         <nuxt-content :document="page" />
-      </div>
+      </section>
     </div>
     <div v-else>
       <div class="px-8 mb-16 mx-auto max-w-2xl">
-        <MiniHero :title="page.title" :heading="page.heading">
-          <template #MiniHero />
-        </MiniHero>
+        <Hero :title="page.title" :heading="page.heading">
+          <template #Hero />
+        </Hero>
         <nuxt-content :document="page" />
       </div>
       <CallToAction>
@@ -31,11 +36,11 @@
 
 <script>
 import CallToAction from '../components/global/CallToAction.vue'
-import MiniHero from '../components/global/MiniHero.vue'
+import Hero from '../components/global/Hero.vue'
 import Footer from '../components/global/Footer.vue'
 
 export default {
-  components: { MiniHero, CallToAction, Footer },
+  components: { Hero, CallToAction, Footer },
   async asyncData ({ $content, params }) {
     const page = await $content('pages', params.slug).fetch()
     return { page }

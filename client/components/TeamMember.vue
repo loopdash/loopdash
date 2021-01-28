@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 rounded-xl p-6 mb-1">
+  <div class="bg-gray-50 rounded-xl p-6 mb-1">
     <div class="grid grid-cols-6 gap-4">
       <div class="col-span-1">
         <img :src="name + '.png'" :alt="name" class="object-contain w-20 h-20">
