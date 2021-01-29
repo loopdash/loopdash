@@ -2,7 +2,7 @@
   <section class="bg-gradient-to-b from-blue-900 to-blue-700 py-12 overflow-x-hidden bg-repeat">
     <div class="container px-4 mx-auto max-w-7xl">
       <div class="flex flex-wrap lg:flex-nowrap">
-        <div class="w-full lg:w-1/2 px-2 mb-5">
+        <div class="w-full lg:w-1/2 px-2 mb-7">
           <h3 class="text-3xl font-extrabold mb-2 text-blue-50">
             Are you...
           </h3>
@@ -41,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full lg:w-1/2 px-2 mb-5">
+        <div class="w-full lg:w-1/2 px-2 mb-7">
           <h3 class="text-3xl font-extrabold mb-2 text-blue-50">
             Do you...
           </h3>

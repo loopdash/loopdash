@@ -14,19 +14,19 @@
           </p>
         </div>
 
-        <div v-if="show == 'true'" class="mb-8 flex flex-center justify-center">
+        <div v-if="show == true" class="mb-8 flex flex-center justify-center">
           <div class="flex justify-center items-center w-full max-w-lg">
             <Form />
           </div>
         </div>
 
-        <div v-if="show == 'true'" class="mx-auto pt-2 mb-6 md:mb-2 max-w-2xl">
+        <div v-if="show == true" class="mx-auto pt-2 mb-6 md:mb-2 max-w-2xl">
           <div class="shadow-lg">
             <img :src="randomImage" alt="">
           </div>
         </div>
 
-        <div v-if="show == 'true'" class="markdown text-lg mt-6 text-center md:text-left flex justify-center">
+        <div v-if="show == true" class="markdown text-lg mt-6 text-center md:text-left flex justify-center">
           <div class="flex items-center border-r-2 border-gray-200 pr-3">
             <StarIcon size="16" class="text-yellow-400" />
             <StarIcon size="16" class="text-yellow-400" />

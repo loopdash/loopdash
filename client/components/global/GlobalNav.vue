@@ -14,6 +14,7 @@
                 <div class="invisible md:visible lg:visible xl:visible sm:ml-6">
                   <div class="flex space-x-4">
                     <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">About</a>
+                    <a href="/services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Services</a>
                     <!-- <a href="/services/web-design-development" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Web Design</a> -->
                     <!-- <a href="/services/hosting" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Hosting</a> -->
                   </div>
@@ -27,6 +28,7 @@
           >
             <div class="px-2 pt-2 pb-3 space-y-1 font-mono">
               <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">About</a>
+              <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">Services</a>
               <!-- <a href="/services/web-design-development" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-blue-700">Web Design</a> -->
               <!-- <a href="/services/hosting" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-blue-700">Hosting</a> -->
               <!-- <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-blue-700">Calendar</a> -->
