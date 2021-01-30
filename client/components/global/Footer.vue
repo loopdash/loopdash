@@ -1,8 +1,15 @@
 <template>
   <div>
     <slot name="footer">
-      <footer class="px-4 md:px-8 py-24 max-w-4xl mb-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex justify-center items-center">
-        <a href="/" title="Go to Loopdash" class="text-center font-semibold mx-auto mb-10 text-4xl text-brand-black dark:text-white max-w-sm">
+      <footer
+        class="px-4 md:px-8 py-24 max-w-4xl mb-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex justify-center items-center"
+      >
+        <a
+          href="/"
+          title="Go to Loopdash"
+          class="text-center font-semibold mx-auto mb-10 text-4xl
+          text-brand-black dark:text-white max-w-md"
+        >
           Loopdash
           <!-- <svg
             width="315px"
@@ -30,27 +37,34 @@
             </g>
           </svg> -->
 
-          <div class="mt-6 text-sm text-gray-500  flex items-center justify-center">
-            <span class="px-3">
-              © <!-- -->2021<!-- --> Loopdash {{ averageUptime }}
-            </span>
-            •
-            <div class="flex px-3 py-2">
-              <span
-                class="mr-1"
-              >Status</span>
-              <span>
+          <div
+            class="mt-6 text-sm text-gray-500  flex items-center justify-center"
+          >
+            <span class="px-3 font-mono"> Uptime {{ averageUptime }} </span>
+            <div
+              class="flex px-3 py-1 bg-green-100 font-mono text-green-700
+            items-center mr-3 pl-0 text-sm rounded-md"
+            >
+              <span class="mb-4 mx-4">
                 <span class="flex absolute h-2 w-2 mt-1">
                   <span
-                    :class="{ 'bg-red-400': isDown,'bg-green-400 animate-ping': !isDown}"
+                    :class="{
+                      'bg-red-400': isDown,
+                      'bg-green-400 animate-ping': !isDown
+                    }"
                     class="absolute inline-flex h-full w-full rounded-full  opacity-75"
                   />
                   <span
-                    :class="{ 'bg-red-600': isDown, 'bg-green-600': !isDown}"
+                    :class="{
+                      'bg-red-600': isDown,
+                      'bg-green-600': !isDown
+                    }"
                     class="relative inline-flex rounded-full h-2 w-2"
                   />
                 </span>
               </span>
+
+              <span>{{ message }}</span>
             </div>
           </div>
         </a>
@@ -67,11 +81,13 @@ export default {
     ).then(res => res.json())
     this.averageUptime = `${response.data.averageUptime.toFixed(2)}%`
     this.isDown = response.data.isDown
+    this.message = response.data.message
   },
   data () {
     return {
       averageUptime: null,
-      isDown: null
+      isDown: null,
+      message: null
     }
   }
 }

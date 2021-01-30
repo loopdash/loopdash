@@ -56,17 +56,19 @@ app.get("/api/get-server-status", (req, res) => {
       api_key: `${UPTIME_ROBOT_KEY}`,
       all_time_uptime_ratio: 1
     })
-    .then(response =>
+    .then(response => {
+      let isDown = _.some(response.data.monitors, { status: 9 });
       res.status(200).json({
         status: "success",
         data: {
           averageUptime: _.meanBy(response.data.monitors, m =>
             parseInt(m.all_time_uptime_ratio)
           ),
-          isDown: _.some(response.data.monitors, { status: 9 })
+          isDown: isDown,
+          message: isDown ? "Some systems down" : "All systems operational"
         }
-      })
-    )
+      });
+    })
     .catch(error =>
       res.status(500).json({
         status: "failed",
