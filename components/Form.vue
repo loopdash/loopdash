@@ -59,7 +59,7 @@ export default {
           body: JSON.stringify({ email: this.email })
         }
 
-        fetch('http://api.loopdash.com/api/send-email', requestOptions)
+        fetch('https://api.loopdash.com/api/send-email', requestOptions)
           .then((response) => {
             if (response) {
               self.submitted = true
