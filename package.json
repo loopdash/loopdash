@@ -37,7 +37,7 @@
   "scripts": {
     "start": "node server",
     "dev": "cd client/ && npm run dev",
-    "build": "npm install && cd client/ && nuxt generate"
+    "build": "cd client/ && npm install && npm run generate"
   },
   "repository": {
     "type": "git",
