@@ -15,8 +15,6 @@
                   <div class="flex space-x-4">
                     <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">About</a>
                     <a href="/services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Services</a>
-                    <!-- <a href="/services/web-design-development" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Web Design</a> -->
-                    <!-- <a href="/services/hosting" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">Hosting</a> -->
                   </div>
                 </div>
               </div>
@@ -24,15 +22,16 @@
                 class="btn items-center justify-center text-lg font-semibold flex self-center cursor-pointer visible h-10 w-10 sm:visible md:invisible hover:text-gray-800 text-gray-400 bg-gray-200 border-1 border-gray-300 rounded-md"
                 @click.prevent="handleMenuClick"
               >
-                {{ !showMenu ? '↓' : '↑' }}
+                <MenuIcon v-if="!showMenu" />
+                <XIcon v-else />
               </button>
             </div>
             <div
               :class="{ 'hidden': !showMenu, '': showMenu }"
             >
               <div class="px-2 pt-2 pb-3 space-y-1 font-mono">
-                <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">About</a>
-                <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">Services</a>
+                <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-500">About</a>
+                <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-500">Services</a>
               </div>
             </div>
           </div>
@@ -43,8 +42,10 @@
 </template>
 
 <script>
+import { MenuIcon, XIcon } from 'vue-feather-icons'
 
 export default {
+  components: { MenuIcon, XIcon },
   data () {
     return {
       showMenu: false
