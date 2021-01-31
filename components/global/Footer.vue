@@ -77,7 +77,7 @@
 export default {
   async fetch () {
     const response = await fetch(
-      'http://localhost:8080/api/get-server-status'
+      'http://api.loopdash.com/api/get-server-status'
     ).then(res => res.json())
     this.averageUptime = `${response.data.averageUptime.toFixed(2)}%`
     this.isDown = response.data.isDown
