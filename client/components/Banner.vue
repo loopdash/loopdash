@@ -10,7 +10,7 @@
           </span>
           <p class="ml-3 font-medium text-white truncate">
             <span class="md:hidden">
-              Need help with your site? <a href="sms:3305061300&body=Hello" class="font-bold text-link text-white underline">Text us your problem</a>
+              <a href="sms:3305061300&body=Hello" class="font-bold text-link text-white underline">Need help with your site? Text us</a>
             </span>
             <span class="hidden md:inline">
               Improve your site in 30 minutes.
