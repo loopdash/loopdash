@@ -6,7 +6,7 @@
           <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-16">
               <div class="inset-y-0 left-0 flex items-center">
-                <a href="/" class="font-mono">
+                <a href="/" class="font-mono font-bold">
                   Loopdash
                 </a>
               </div>
@@ -20,18 +20,20 @@
                   </div>
                 </div>
               </div>
-              <MenuIcon class="visible sm:visible md:invisible hover:text-blue-500 text-gray-600" @click.prevent="handleMenuClick" />
+              <button
+                class="btn items-center justify-center text-lg font-semibold flex self-center cursor-pointer visible h-10 w-10 sm:visible md:invisible hover:text-gray-800 text-gray-400 bg-gray-200 border-1 border-gray-300 rounded-md"
+                @click.prevent="handleMenuClick"
+              >
+                {{ !showMenu ? '↓' : '↑' }}
+              </button>
             </div>
-          </div>
-          <div
-            :class="{ 'hidden': !showMenu, '': showMenu }"
-          >
-            <div class="px-2 pt-2 pb-3 space-y-1 font-mono">
-              <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">About</a>
-              <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">Services</a>
-              <!-- <a href="/services/web-design-development" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-blue-700">Web Design</a> -->
-              <!-- <a href="/services/hosting" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-blue-700">Hosting</a> -->
-              <!-- <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-blue-700">Calendar</a> -->
+            <div
+              :class="{ 'hidden': !showMenu, '': showMenu }"
+            >
+              <div class="px-2 pt-2 pb-3 space-y-1 font-mono">
+                <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">About</a>
+                <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-900">Services</a>
+              </div>
             </div>
           </div>
         </nav>
@@ -41,12 +43,17 @@
 </template>
 
 <script>
-import { MenuIcon } from 'vue-feather-icons'
 
 export default {
-  components: { MenuIcon },
+  data () {
+    return {
+      showMenu: false
+    }
+  },
   methods: {
     handleMenuClick () {
+      console.log('this.showMenu')
+      console.log(this.showMenu)
       this.showMenu = !this.showMenu
     }
   }

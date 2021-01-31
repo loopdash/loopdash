@@ -1,6 +1,7 @@
 <template>
   <main>
     <GlobalNav />
+    <Banner />
     <Hero
       title="Website &amp; Application Hosting"
       heading="Tired of your site breaking?"

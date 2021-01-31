@@ -1,6 +1,7 @@
 <template>
   <main>
     <GlobalNav />
+    <Banner />
     <Hero
       title="Website & app development"
       heading="Need a better website?"

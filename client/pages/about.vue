@@ -1,6 +1,7 @@
 <template>
   <main>
     <GlobalNav />
+    <Banner />
     <Hero
       title="About Loopdash"
       heading="We try to avoid writing code"

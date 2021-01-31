@@ -12,7 +12,7 @@
         v-model="email"
         type="email"
         name="email"
-        placeholder="Enter your email"
+        placeholder="you@something.com"
         class="col-span-7 border-solid border-2 focus:border-blue-200 py-3 rounded gray-500 bg-gray-50 px-3"
       >
       <button
