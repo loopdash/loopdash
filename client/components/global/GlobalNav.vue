@@ -52,8 +52,6 @@ export default {
   },
   methods: {
     handleMenuClick () {
-      console.log('this.showMenu')
-      console.log(this.showMenu)
       this.showMenu = !this.showMenu
     }
   }
