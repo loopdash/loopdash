@@ -7,7 +7,7 @@
             <MessageCircleIcon />
           </span>
           <p class="ml-3 font-medium text-white truncate">
-            Having website issues? Text us your problem
+            Need website help? Text us
           </p>
         </a>
 
