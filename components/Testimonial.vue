@@ -12,11 +12,7 @@
           </span>
         </p>
         <div class="flex">
-          <StarIcon size="16" class="text-yellow-400" />
-          <StarIcon size="16" class="text-yellow-400" />
-          <StarIcon size="16" class="text-yellow-400" />
-          <StarIcon size="16" class="text-yellow-400" />
-          <StarIcon size="16" class="text-yellow-400" />
+          ⭐️⭐️⭐️⭐️⭐️
         </div>
       </div>
     </div>
@@ -27,10 +23,7 @@
 </template>
 
 <script>
-import { StarIcon } from 'vue-feather-icons'
-
 export default {
-  components: { StarIcon },
   props: {
     name: {
       type: String,
@@ -53,5 +46,5 @@ export default {
       default: null
     }
   }
-}
+};
 </script>

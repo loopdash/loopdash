@@ -28,11 +28,7 @@
 
         <div v-if="show == true" class="markdown text-lg mt-6 text-center md:text-left flex justify-center">
           <div class="flex items-center border-r-2 border-gray-200 pr-3">
-            <StarIcon size="16" class="text-yellow-400" />
-            <StarIcon size="16" class="text-yellow-400" />
-            <StarIcon size="16" class="text-yellow-400" />
-            <StarIcon size="16" class="text-yellow-400" />
-            <StarIcon size="16" class="text-yellow-400" />
+            ⭐️⭐️⭐️⭐️⭐️
           </div>
           <p class="pl-3">
             <span class="font-bold">Rated 5 stars</span> by over <span class="font-bold text-blue-500">9 customers</span>
@@ -44,10 +40,7 @@
 </template>
 
 <script>
-import { StarIcon } from 'vue-feather-icons'
-
 export default {
-  components: { StarIcon },
   props: {
     title: {
       type: String,
@@ -72,7 +65,7 @@ export default {
   },
   computed: {
     randomImage () {
-      const images = ['mps-intel-application.png', 'instil-website.png', 'sixth-city-website.png', 'perfect-fit-website.png']
+      const images = ['mps-intel-application.png', 'instil-website.png', 'sixth-city-website.png', 'perfect-fit-website.png', 'peak.png']
       return images[Math.floor(Math.random() * images.length)]
     }
   }
