@@ -76,7 +76,7 @@
 
 <script>
 export default {
-  async fetch () {
+  mounted () {
     const response = await fetch(
       'https://api.loopdash.com/api/get-server-status'
     ).then(res => res.json())
