@@ -6,7 +6,7 @@
           <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
             {{ title }}
           </h1>
-          <h2 class="mt-2 leading-12 font-bold tracking-tight text-5xl mb-4">
+          <h2 class="mt-2 leading-12 font-bold tracking-tight text-3xl md:text-5xl mb-4">
             {{ heading }}
           </h2>
           <p class="text-xl md:text-lg lg:text-xl xl:text-2xl text-grey-dark leading-normal text-gray-500 lg:mx-auto">
