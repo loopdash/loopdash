@@ -10,7 +10,10 @@
                   Loopdash
                 </a>
               </div>
-              <div class="invisible md:visible lg:visible xl:visible flex-1 flex-end flex font-mono">
+              <div
+                class="invisible md:visible lg:visible xl:visible flex-1
+                flex-end flex font-mono justify-end"
+              >
                 <div class="invisible md:visible lg:visible xl:visible sm:ml-6">
                   <div class="flex space-x-4">
                     <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-400 hover:text-blue-600">About</a>

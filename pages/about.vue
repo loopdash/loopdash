@@ -4,7 +4,7 @@
     <Banner />
     <Hero
       title="About Loopdash"
-      heading="We try to avoid writing code"
+      heading="If something is broken we're here to fix it"
       show="false"
     />
     <section class="container mx-auto px-4 pb-24 max-w-2xl">
