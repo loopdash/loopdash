@@ -46,5 +46,5 @@ export default {
       default: null
     }
   }
-};
+}
 </script>
