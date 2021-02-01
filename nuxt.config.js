@@ -1,16 +1,16 @@
 export default {
   ssr: true,
-  components: true,
+  target: "static",
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'loopdash',
+    title: "loopdash",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -25,19 +25,19 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    "@nuxtjs/eslint-module",
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    "@nuxtjs/tailwindcss"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    "@nuxt/content"
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -50,14 +50,14 @@ export default {
   build: {
     extend(config, ctx) {
       config.module.rules.push({
-        enforce: 'pre',
+        enforce: "pre",
         test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
+        loader: "eslint-loader",
         exclude: /(node_modules)/,
         options: {
           fix: true
         }
-      })
+      });
     }
   }
-}
+};
