@@ -7,18 +7,21 @@
     >
       {{ message }}
     </div>
-    <div class="grid grid grid-cols-10 gap-4">
+    <div class="grid grid grid-cols-10 gap-3">
       <input
         v-model="email"
         type="email"
         name="email"
         placeholder="you@something.com"
-        class="col-span-7 border-solid border-2 focus:border-blue-200 py-3 rounded gray-500 bg-gray-50 px-3"
+        class="col-span-12 md:col-span-7 border-solid border-2
+                py-3 rounded
+               focus:ring-blue-400
+        bg-gradient-to-b from-gray-100 to-gray-50 px-3"
       >
       <button
         :disabled="disabled"
         :class="{ 'bg-blue-600 hover:bg-blue-600': disabled, 'hover:bg-blue-700 bg-blue-900': !disabled }"
-        class="col-span-3 px-5 py-3 text-base font-bold rounded-md text-white"
+        class="col-span-12 md:col-span-3 px-5 py-3 text-base font-bold rounded-md text-white"
         @click.prevent="handleClick"
       >
         Get started
@@ -66,8 +69,8 @@ export default {
               self.successful = true
               self.message = 'Message sent successfully'
             }
-          }
-          ).catch(function (error) {
+          })
+          .catch(function (error) {
             if (error) {
               self.submitted = true
               self.successful = false
