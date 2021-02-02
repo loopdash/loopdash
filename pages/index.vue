@@ -13,6 +13,21 @@
     <TeamMembers />
     <Testimonials />
     <CallToAction />
-    <Footer />
+    {{ response }}
+    <Footer
+      :is-down="response.data.isDown"
+      :message="response.data.message"
+    />
   </main>
 </template>
+
+<script>
+export default {
+  async asyncData ({ $http }) {
+    const response = await fetch(
+      'https://api.loopdash.com/api/get-server-status'
+    ).then(res => res.json())
+    return { response }
+  }
+}
+</script>

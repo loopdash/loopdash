@@ -40,8 +40,6 @@
           <div
             class="mt-6 text-sm text-gray-500  flex items-center justify-center"
           >
-            <p v-if="$fetchState.pending">Fetching mountains...</p>
-            <p v-else-if="$fetchState.error">An error occurred :(</p>
             <div
               class="flex px-3 py-1 bg-green-100 font-mono text-green-700
             items-center mr-3 pl-0 text-sm rounded-md"
@@ -76,18 +74,16 @@
 
 <script>
 export default {
-  mounted () {
-    const response = await fetch(
-      'https://api.loopdash.com/api/get-server-status'
-    ).then(res => res.json())
-    this.isDown = response.data.isDown
-    this.message = response.data.message
-  },
-  data () {
-    return {
-      averageUptime: 'nullasdf',
-      isDown: null,
-      message: null
+  props: {
+    isDown: {
+      type: Boolean,
+      required: true,
+      default: false
+    },
+    message: {
+      type: String,
+      required: true,
+      default: null
     }
   }
 }
