@@ -41,10 +41,10 @@
             class="mt-6 text-sm  flex items-center justify-center"
           >
             <div
-              class="flex px-3 py-1 animate-ping font-mono items-center mr-3 pl-0 text-sm rounded-md"
+              class="flex px-3 py-1 font-mono items-center mr-3 pl-0 text-sm rounded-md"
                     :class="{
-                      'bg-yellow-300 text-yellow-800': response.data.isDown,
-                      'bg-green-400 text-green-800': !response.data.isDown
+                      'animate-ping bg-yellow-300 text-yellow-800': response.data.isDown,
+                      'animate-ping bg-green-400 text-green-800': !response.data.isDown
                     }"
             >
               <span class="mb-4 mx-4">
