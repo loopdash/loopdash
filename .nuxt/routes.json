@@ -2,48 +2,56 @@
   {
     "name": "_tailwind",
     "path": "/_tailwind",
-    "component": "/Users/garybunofsky/Documents/projects/loopdash/node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue"
+    "component": "/Users/garybunofsky/Documents/projects/loopdash/node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue",
+    "_name": "_02b3c060"
   },
   {
     "name": "about",
     "path": "/about",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_2650f940"
   },
   {
     "name": "form",
     "path": "/form",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/form.vue",
-    "chunkName": "pages/form"
+    "chunkName": "pages/form",
+    "_name": "_2ea49e41"
   },
   {
     "name": "services",
     "path": "/services",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/services/index.vue",
-    "chunkName": "pages/services/index"
+    "chunkName": "pages/services/index",
+    "_name": "_5ecd3ec4"
   },
   {
     "name": "services-hosting",
     "path": "/services/hosting",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/services/hosting.vue",
-    "chunkName": "pages/services/hosting"
+    "chunkName": "pages/services/hosting",
+    "_name": "_efbc2ff4"
   },
   {
     "name": "services-web-design-development",
     "path": "/services/web-design-development",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/services/web-design-development.vue",
-    "chunkName": "pages/services/web-design-development"
+    "chunkName": "pages/services/web-design-development",
+    "_name": "_1a5451ae"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_0c8f5e25"
   },
   {
     "name": "slug",
     "path": "/:slug",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/_slug.vue",
-    "chunkName": "pages/_slug"
+    "chunkName": "pages/_slug",
+    "_name": "_0ad8bcdd"
   }
 ]
