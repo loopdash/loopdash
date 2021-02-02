@@ -13,7 +13,6 @@
     <TeamMembers />
     <Testimonials />
     <CallToAction />
-    {{ response }}
     <Footer
       :response="response"
     />
@@ -22,16 +21,16 @@
 
 <script>
 export default {
-  async asyncData ({ $http }) {
+  async asyncData({ $http }) {
     const response = await fetch(
-      'https://api.loopdash.com/api/get-server-status'
-    ).then(res => res.json())
-    return { response }
+      "https://api.loopdash.com/api/get-server-status"
+    ).then(res => res.json());
+    return { response };
   },
-  data () {
+  data() {
     return {
       response: null
-    }
+    };
   }
-}
+};
 </script>
