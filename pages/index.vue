@@ -4,8 +4,11 @@
     <Banner />
     <Hero
       title="Website & app development"
-      heading="Need a better website?"
-      lead="We collaborate with brands to improve their websites and apps."
+      heading="Can you update your site?"
+      lead="Suprisingly most people <span
+            class='text-blue-600 font-extrabold'>can't change their
+             website</span>. We're here to help. Get your free website
+      improvement plan today."
     />
 
     <ProConList />

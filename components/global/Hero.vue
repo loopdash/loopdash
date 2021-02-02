@@ -1,17 +1,15 @@
 <template>
   <div>
     <slot name="hero">
-      <section class="container mx-auto px-4 pt-20 pb-24">
-        <div class="mb-8 text-center mx-auto max-w-3xl pt-4">
-          <h1 class="text-base text-blue-500 font-semibold tracking-wide uppercase font-mono">
+      <section class="container mx-auto px-4 pt-20 pb-12">
+        <div class="mb-6 md:mb-8 text-center mx-auto max-w-3xl pt-4">
+          <h1 class="text-base text-gray-400 font-semibold tracking-wide uppercase font-mono">
             {{ title }}
           </h1>
           <h2 class="mt-2 leading-12 font-bold tracking-tight text-4xl md:text-5xl mb-4">
             {{ heading }}
           </h2>
-          <p class="text-xl md:text-lg lg:text-xl xl:text-2xl text-grey-dark leading-normal text-gray-500 lg:mx-auto">
-            {{ lead }}
-          </p>
+          <p class="text-xl md:text-lg lg:text-xl xl:text-2xl text-grey-dark leading-normal text-gray-500 lg:mx-auto" v-html="lead" />
         </div>
 
         <div v-if="show == true" class="mb-8 flex flex-center justify-center">
@@ -20,7 +18,7 @@
           </div>
         </div>
 
-        <div v-if="show == true" class="mx-auto mb-6 md:mb-2 max-w-2xl">
+        <div v-if="show == true" class="mx-auto mb-4 md:mb-7 max-w-3xl">
           <carousel :per-page="1">
             <slide>
               <img :src="'peak.png'" alt="" class="shadow-lg rounded-lg">
@@ -34,14 +32,15 @@
             <slide>
               <img :src="'perfect-fit-website.png'" alt="" class="shadow-lg rounded-lg">
             </slide>
-            <slide>
-              <img :src="'mps-intel-application.png'" alt="" class="shadow-lg rounded-lg">
-            </slide>
           </carousel>
         </div>
 
-        <div v-if="show == true" class="markdown text-lg mt-6 text-center md:text-left flex justify-center">
-          <div class="flex items-center border-r-2 border-gray-200 pr-3">
+        <div
+          v-if="show == true"
+          class="markdown text-lg text-center md:text-left flex flex-col
+                 md:flex-row justify-center items-center"
+        >
+          <div class="flex items-center md:border-r-2 md:border-gray-200 md:pr-3">
             ⭐️⭐️⭐️⭐️⭐️
           </div>
           <p class="pl-3">

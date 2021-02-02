@@ -11,12 +11,17 @@
           </p>
         </a>
 
-        <a href="https://calendly.com/loopdash" class="hidden md:flex w-0 flex-1 flex items-center">
+        <a
+          href="https://calendly.com/loopdash"
+          class="hidden md:flex w-0
+          flex-1 flex items-center"
+          target="_blank"
+        >
           <span class="flex p-2 rounded-lg bg-blue-800 text-white">
             <CalendarIcon />
           </span>
           <p class="ml-3 font-medium text-white truncate">
-            Having website issues? Text us your problem
+            Having website issues? Schedule a
           </p>
         </a>
       </div>

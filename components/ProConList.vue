@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gradient-to-b from-blue-900 to-blue-700 py-12 overflow-x-hidden bg-repeat">
+  <section class="bg-gradient-to-b from-blue-600 to-blue-500 py-12 overflow-x-hidden bg-repeat">
     <div class="container px-4 mx-auto max-w-7xl">
       <div class="flex flex-wrap lg:flex-nowrap">
         <div class="w-full lg:w-1/2 px-2 mb-7">
@@ -13,8 +13,13 @@
                   <XIcon size="16" />
                 </div>
                 <div>
-                  <p class="mb-1 text-lg leading-6 font-medium text-gray-600">
-                    Tired of trying to DIY the perfect site?
+                  <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
+                    Sick of
+                    <span
+                      class="font-extrabold
+                             text-red-500"
+                    >
+                      everything breaking</span> when you update your site?
                   </p>
                 </div>
               </div>
@@ -23,8 +28,11 @@
                   <XIcon size="16" />
                 </div>
                 <div>
-                  <p class="mb-1 text-lg leading-6 font-medium text-gray-600">
-                    Sick of developers who don’t understand your business?
+                  <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
+                    Tired of
+                    <span class="font-extrabold text-red-500">
+                      wasting
+                      hours</span> trying to make your site yourself?
                   </p>
                 </div>
               </div>
@@ -33,8 +41,11 @@
                   <XIcon size="16" />
                 </div>
                 <div>
-                  <p class="mb-1 text-lg leading-6 font-medium text-gray-600">
-                    Annoyed with freelancers who never communicate?
+                  <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
+                    Annoyed with freelancers who
+                    <span class="font-extrabold text-red-500">
+                      never communicate?
+                    </span>
                   </p>
                 </div>
               </div>
@@ -52,8 +63,11 @@
                   <CheckIcon size="16" />
                 </div>
                 <div>
-                  <p class="mb-1 text-lg leading-6 font-medium text-gray-600">
-                    Want a tech partner to guide you?
+                  <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
+                    Ready to be able to <span
+                      class="font-extrabold
+                      text-green-500"
+                    >change anything</span> you want?
                   </p>
                 </div>
               </div>
@@ -62,8 +76,11 @@
                   <CheckIcon size="16" />
                 </div>
                 <div>
-                  <p class="mb-1 text-lg leading-6 font-medium text-gray-600">
-                    Need a team who gets your brand?
+                  <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
+                    Want a brand new site in <span
+                      class="font-extrabold
+                      text-green-500"
+                    >2 weeks</span>?
                   </p>
                 </div>
               </div>
@@ -72,8 +89,10 @@
                   <CheckIcon size="16" />
                 </div>
                 <div>
-                  <p class="mb-1 text-lg leading-6 font-medium text-gray-600">
-                    Want devs to collaborate with, rather than make excuses?
+                  <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
+                    Want to work with devs that 
+                    <span class="font-extrabold text-green-500">
+                      communicate often</span>?
                   </p>
                 </div>
               </div>

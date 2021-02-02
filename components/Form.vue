@@ -20,11 +20,11 @@
       >
       <button
         :disabled="disabled"
-        :class="{ 'bg-blue-600 hover:bg-blue-600': disabled, 'hover:bg-blue-700 bg-blue-900': !disabled }"
-        class="col-span-12 md:col-span-3 px-5 py-3 text-base font-bold rounded-md text-white"
+        class="col-span-12 md:col-span-3 px-5 py-3 text-base font-bold
+        rounded-md text-white bg-blue-900 hover:bg-blue-800"
         @click.prevent="handleClick"
       >
-        Get started
+        Get your plan
       </button>
     </div>
   </div>
