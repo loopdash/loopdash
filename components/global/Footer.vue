@@ -41,8 +41,11 @@
             class="mt-6 text-sm text-gray-500  flex items-center justify-center"
           >
             <div
-              class="flex px-3 py-1 bg-green-100 font-mono text-green-700
-            items-center mr-3 pl-0 text-sm rounded-md"
+              class="flex px-3 py-1 font-mono items-center mr-3 pl-0 text-sm rounded-md"
+                    :class="{
+                      'bg-yellow-400': response.data.isDown,
+                      'bg-green-400 animate-ping': !response.data.isDown
+                    }"
             >
               <span class="mb-4 mx-4">
                 <span class="flex absolute h-2 w-2 mt-1">
@@ -81,5 +84,5 @@ export default {
       default: null
     }
   }
-}
+};
 </script>
