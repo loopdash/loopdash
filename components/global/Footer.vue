@@ -78,7 +78,7 @@ export default {
     response: {
       type: Object,
       required: true,
-      default: false
+      default: null
     }
   }
 }

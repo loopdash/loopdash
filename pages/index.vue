@@ -22,16 +22,16 @@
 
 <script>
 export default {
-  data() {
-    return {
-      response: null
-    }
-  }
   async asyncData ({ $http }) {
     const response = await fetch(
       'https://api.loopdash.com/api/get-server-status'
     ).then(res => res.json())
     return { response }
+  },
+  data () {
+    return {
+      response: null
+    }
   }
 }
 </script>
