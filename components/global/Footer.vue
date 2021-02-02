@@ -43,15 +43,15 @@
             <div
               class="flex px-3 py-1 font-mono items-center mr-3 pl-0 text-sm rounded-md"
                     :class="{
-                      'animate-ping bg-yellow-300 text-yellow-800': response.data.isDown,
-                      'animate-ping bg-green-400 text-green-800': !response.data.isDown
+                      'bg-yellow-300 text-yellow-800': response.data.isDown,
+                      'bg-green-400 text-green-800': !response.data.isDown
                     }"
             >
               <span class="mb-4 mx-4">
                 <span class="flex absolute h-2 w-2 mt-1">
                   <span
                     :class="{
-                      'bg-yellow-400': response.data.isDown,
+                      'bg-yellow-400 animate-ping': response.data.isDown,
                       'bg-green-400 animate-ping': !response.data.isDown
                     }"
                     class="absolute inline-flex h-full w-full rounded-full  opacity-75"
