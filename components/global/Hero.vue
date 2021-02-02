@@ -20,10 +20,24 @@
           </div>
         </div>
 
-        <div v-if="show == true" class="mx-auto pt-2 mb-6 md:mb-2 max-w-2xl">
-          <div class="shadow-lg">
-            <img :src="randomImage" alt="">
-          </div>
+        <div v-if="show == true" class="mx-auto mb-6 md:mb-2 max-w-2xl">
+          <carousel :per-page="1">
+            <slide>
+              <img :src="'peak.png'" alt="" class="shadow-lg rounded-lg">
+            </slide>
+            <slide>
+              <img :src="'instil-website.png'" alt="" class="shadow-lg rounded-lg">
+            </slide>
+            <slide>
+              <img :src="'sixth-city-website.png'" alt="" class="shadow-lg rounded-lg">
+            </slide>
+            <slide>
+              <img :src="'perfect-fit-website.png'" alt="" class="shadow-lg rounded-lg">
+            </slide>
+            <slide>
+              <img :src="'mps-intel-application.png'" alt="" class="shadow-lg rounded-lg">
+            </slide>
+          </carousel>
         </div>
 
         <div v-if="show == true" class="markdown text-lg mt-6 text-center md:text-left flex justify-center">
@@ -40,7 +54,13 @@
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel'
+
 export default {
+  components: {
+    Carousel,
+    Slide
+  },
   props: {
     title: {
       type: String,
@@ -64,8 +84,14 @@ export default {
     }
   },
   computed: {
-    randomImage () {
-      const images = ['mps-intel-application.png', 'instil-website.png', 'sixth-city-website.png', 'perfect-fit-website.png', 'peak.png']
+    images () {
+      const images = [
+        'mps-intel-application.png',
+        'instil-website.png',
+        'sixth-city-website.png',
+        'perfect-fit-website.png',
+        'peak.png'
+      ]
       return images[Math.floor(Math.random() * images.length)]
     }
   }
