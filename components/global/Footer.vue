@@ -48,14 +48,14 @@
                 <span class="flex absolute h-2 w-2 mt-1">
                   <span
                     :class="{
-                      'bg-red-400': response.data.isDown,
+                      'bg-yellow-400': response.data.isDown,
                       'bg-green-400 animate-ping': !response.data.isDown
                     }"
                     class="absolute inline-flex h-full w-full rounded-full  opacity-75"
                   />
                   <span
                     :class="{
-                      'bg-red-600': response.data.isDown,
+                      'bg-yellow-600': response.data.isDown,
                       'bg-green-600': !response.data.isDown
                     }"
                     class="relative inline-flex rounded-full h-2 w-2"
