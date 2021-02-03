@@ -42,7 +42,11 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content",
+    ['@netsells/nuxt-hotjar', {
+        id: '2229235',
+        sv: '6'
+    }],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
