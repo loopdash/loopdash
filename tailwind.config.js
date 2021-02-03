@@ -24,7 +24,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Inter', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],
-      mono: ['SF Mono', 'Consolas', 'Avenir']
+      mono: ['SF Mono', 'Consolas', 'Menlo', 'Courier New','monospace']
     }
   }
 }
