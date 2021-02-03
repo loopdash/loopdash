@@ -14,12 +14,9 @@
                 </div>
                 <div>
                   <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
-                    Sick of
                     <span
-                      class="font-extrabold
-                             text-red-500"
-                    >
-                      everything breaking</span> when you update your site?
+                      class="font-extrabold text-red-500"
+                    >Sick of your site breaking</span> when you update it?
                   </p>
                 </div>
               </div>
@@ -32,7 +29,7 @@
                     Tired of
                     <span class="font-extrabold text-red-500">
                       wasting
-                      hours</span> trying to make your site yourself?
+                      hours</span> trying to build your own site?
                   </p>
                 </div>
               </div>
@@ -90,7 +87,7 @@
                 </div>
                 <div>
                   <p class="mb-1 text-md md:text-xl leading-6 font-medium text-gray-600">
-                    Want to work with devs that 
+                    Want to work with devs that
                     <span class="font-extrabold text-green-500">
                       communicate often</span>?
                   </p>

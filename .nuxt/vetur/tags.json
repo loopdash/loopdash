@@ -41,6 +41,12 @@
   "LazyForm": {
     "description": "Auto imported from components/Form.vue"
   },
+  "FullForm": {
+    "description": "Auto imported from components/FullForm.vue"
+  },
+  "LazyFullForm": {
+    "description": "Auto imported from components/FullForm.vue"
+  },
   "HostingQuestions": {
     "description": "Auto imported from components/HostingQuestions.vue"
   },

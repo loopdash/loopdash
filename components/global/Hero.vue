@@ -13,9 +13,13 @@
         </div>
 
         <div v-if="show == true" class="mb-8 flex flex-center justify-center">
-          <div class="flex justify-center items-center w-full max-w-lg">
-            <Form />
-          </div>
+          <a
+            href="/form"
+            class="col-span-12 md:col-span-3 px-6 py-4 text-md font-bold
+            rounded-md text-white bg-blue-900 hover:bg-blue-800"
+          >
+            Get your website plan
+          </a>
         </div>
 
         <div v-if="show == true" class="mx-auto mb-4 md:mb-7 max-w-3xl">

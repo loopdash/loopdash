@@ -6,6 +6,12 @@
     "_name": "_02b3c060"
   },
   {
+    "name": "_tailwind",
+    "path": "/_tailwind",
+    "component": "/Users/garybunofsky/Documents/projects/loopdash/node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue",
+    "_name": "_02b3c060"
+  },
+  {
     "name": "about",
     "path": "/about",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/about.vue",
@@ -13,11 +19,11 @@
     "_name": "_2650f940"
   },
   {
-    "name": "form",
-    "path": "/form",
-    "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/form.vue",
-    "chunkName": "pages/form",
-    "_name": "_2ea49e41"
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_1780ffb3"
   },
   {
     "name": "services",

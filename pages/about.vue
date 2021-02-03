@@ -4,7 +4,7 @@
     <Banner />
     <Hero
       title="About Loopdash"
-      heading="If something is broken we're here to fix it"
+      heading="Site broken? We're here to fix it."
       show="false"
     />
     <section class="container mx-auto px-4 pb-24 max-w-2xl">
@@ -40,6 +40,24 @@
     </section>
     <TeamMembers />
     <CallToAction />
-    <Footer />
+    <Footer
+      :response="response"
+    />
   </main>
 </template>
+
+<script>
+export default {
+  async asyncData ({ $http }) {
+    const response = await fetch(
+      'https://api.loopdash.com/api/get-server-status'
+    ).then(res => res.json())
+    return { response }
+  },
+  data () {
+    return {
+      response: null
+    }
+  }
+}
+</script>

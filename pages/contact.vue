@@ -2,17 +2,14 @@
   <main>
     <GlobalNav />
     <Hero
-      title="Website & app development"
-      heading="Hate your website?"
-      lead="If so, you need our website plan. We'll show you how to <a href='/get-my-plan'
-            class='text-blue-600 font-extrabold'>improve your site in 3 steps</a>. Just click the blue button below."
+      title="Contact Loopdash"
+      heading="Improve your site in 3 steps."
+      lead="The first step to a better site is knowing what's wrong."
+      :show="false"
     />
-
-    <ProConList />
-
-    <TeamMembers />
-    <Testimonials />
-    <CallToAction />
+    <div class="w-full max-w-xl m-auto bg-indigo-100 rounded">
+      <FullForm />
+    </div>
     <Footer
       :response="response"
     />

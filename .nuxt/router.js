@@ -6,7 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _02b3c060 = () => interopDefault(import('../node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue' /* webpackChunkName: "" */))
 const _2650f940 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _2ea49e41 = () => interopDefault(import('../pages/form.vue' /* webpackChunkName: "pages/form" */))
+const _1780ffb3 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _5ecd3ec4 = () => interopDefault(import('../pages/services/index.vue' /* webpackChunkName: "pages/services/index" */))
 const _efbc2ff4 = () => interopDefault(import('../pages/services/hosting.vue' /* webpackChunkName: "pages/services/hosting" */))
 const _1a5451ae = () => interopDefault(import('../pages/services/web-design-development.vue' /* webpackChunkName: "pages/services/web-design-development" */))
@@ -34,13 +34,17 @@ export const routerOptions = {
     component: _02b3c060,
     name: "_tailwind"
   }, {
+    path: "/_tailwind",
+    component: _02b3c060,
+    name: "_tailwind"
+  }, {
     path: "/about",
     component: _2650f940,
     name: "about"
   }, {
-    path: "/form",
-    component: _2ea49e41,
-    name: "form"
+    path: "/contact",
+    component: _1780ffb3,
+    name: "contact"
   }, {
     path: "/services",
     component: _5ecd3ec4,
