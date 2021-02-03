@@ -66,7 +66,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Loopdash. A web & app development agency.","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products."},{"hid":"og:title","name":"og:title","content":"Loopdash. A web & app development agency."},{"hid":"og:description","name":"description","content":"Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products."}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Loopdash. A web & app development agency.","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Loopdash is a full service web development agency, busy designing and developing beautiful websites, apps, and products."},{"hid":"og:title","name":"og:title","content":"Loopdash. A web development agency."},{"hid":"og:description","name":"description","content":"Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products."},{"property":"og:image","content":"\u002Fsocial.png"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {

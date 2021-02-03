@@ -7,9 +7,10 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products." },
-      { hid: 'og:title', name: 'og:title', content: "Loopdash. A web & app development agency." },
-      { hid: "og:description", name: "description", content: "Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products." }
+      { hid: "description", name: "description", content: "Loopdash is a full service web development agency, busy designing and developing beautiful websites, apps, and products." },
+      { hid: 'og:title', name: 'og:title', content: "Loopdash. A web development agency." },
+      { hid: "og:description", name: "description", content: "Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products." },
+      { property: 'og:image', content: "/social.png" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
