@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
+import { Carousel, Slide } from 'vue-carousel'
 
 export default {
   components: {
@@ -87,16 +87,16 @@ export default {
     }
   },
   computed: {
-    images() {
+    images () {
       const images = [
-        "mps-intel-application.png",
-        "instil-website.png",
-        "sixth-city-website.png",
-        "perfect-fit-website.png",
-        "peak.png"
-      ];
-      return images[Math.floor(Math.random() * images.length)];
+        'mps-intel-application.png',
+        'instil-website.png',
+        'sixth-city-website.png',
+        'perfect-fit-website.png',
+        'peak.png'
+      ]
+      return images[Math.floor(Math.random() * images.length)]
     }
   }
-};
+}
 </script>
