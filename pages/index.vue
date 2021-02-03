@@ -4,7 +4,8 @@
     <Hero
       title="Website & app development"
       heading="Hate your website?"
-      lead="If so, you need our website plan. We'll show you how to <a href='/get-my-plan'
+      lead="If so, you need our website plan. We'll show you how to <a
+            href='/contact'
             class='text-blue-600 font-extrabold'>improve your site in 3 steps</a>. Just click the blue button below."
     />
 
@@ -21,16 +22,16 @@
 
 <script>
 export default {
-  async asyncData ({ $http }) {
+  async asyncData({ $http }) {
     const response = await fetch(
-      'https://api.loopdash.com/api/get-server-status'
-    ).then(res => res.json())
-    return { response }
+      "https://api.loopdash.com/api/get-server-status"
+    ).then(res => res.json());
+    return { response };
   },
-  data () {
+  data() {
     return {
       response: null
-    }
+    };
   }
-}
+};
 </script>

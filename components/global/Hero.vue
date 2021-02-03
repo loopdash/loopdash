@@ -14,7 +14,7 @@
 
         <div v-if="show == true" class="mb-8 flex flex-center justify-center">
           <a
-            href="/form"
+            href="/contact"
             class="col-span-12 md:col-span-3 px-6 py-4 text-md font-bold
             rounded-md text-white bg-blue-900 hover:bg-blue-800"
           >
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
+import { Carousel, Slide } from "vue-carousel";
 
 export default {
   components: {
@@ -87,16 +87,16 @@ export default {
     }
   },
   computed: {
-    images () {
+    images() {
       const images = [
-        'mps-intel-application.png',
-        'instil-website.png',
-        'sixth-city-website.png',
-        'perfect-fit-website.png',
-        'peak.png'
-      ]
-      return images[Math.floor(Math.random() * images.length)]
+        "mps-intel-application.png",
+        "instil-website.png",
+        "sixth-city-website.png",
+        "perfect-fit-website.png",
+        "peak.png"
+      ];
+      return images[Math.floor(Math.random() * images.length)];
     }
   }
-}
+};
 </script>

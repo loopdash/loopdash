@@ -34,10 +34,6 @@ export const routerOptions = {
     component: _02b3c060,
     name: "_tailwind"
   }, {
-    path: "/_tailwind",
-    component: _02b3c060,
-    name: "_tailwind"
-  }, {
     path: "/about",
     component: _2650f940,
     name: "about"

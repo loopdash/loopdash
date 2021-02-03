@@ -6,12 +6,6 @@
     "_name": "_02b3c060"
   },
   {
-    "name": "_tailwind",
-    "path": "/_tailwind",
-    "component": "/Users/garybunofsky/Documents/projects/loopdash/node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue",
-    "_name": "_02b3c060"
-  },
-  {
     "name": "about",
     "path": "/about",
     "component": "/Users/garybunofsky/Documents/projects/loopdash/pages/about.vue",
