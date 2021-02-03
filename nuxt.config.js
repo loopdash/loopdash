@@ -3,7 +3,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "loopdash",
+    title: "Loopdash | Website & Software Development",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -26,8 +26,14 @@ export default {
     // https://go.nuxtjs.dev/eslint
     "@nuxtjs/eslint-module",
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    // https://www.npmjs.com/package/@nuxtjs/google-analytics
+    '@nuxtjs/google-analytics'
   ],
+
+  googleAnalytics: {
+    id: 'UA-177470860-1'
+  }
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
