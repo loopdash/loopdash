@@ -1,7 +1,7 @@
 <template>
   <div>
     <slot name="hero">
-      <section class="container mx-auto px-4 pt-20 pb-12">
+      <section class="container mx-auto px-4 pt-20 pb-8">
         <div class="mb-6 md:mb-8 text-center mx-auto max-w-3xl pt-4">
           <h1 class="text-base text-gray-400 font-semibold tracking-wide uppercase font-mono">
             {{ title }}
@@ -55,6 +55,13 @@
     </slot>
   </div>
 </template>
+
+<style>
+.VueCarousel-dot-container {
+  margin-top: 0px !important;
+  margin-bottom: 12px;
+}
+</style>
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'

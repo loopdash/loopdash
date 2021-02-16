@@ -97,6 +97,15 @@
           </div>
         </div>
       </div>
+      <div class="mb-8 flex flex-center justify-center">
+        <a
+          href="/contact"
+          class="col-span-12 md:col-span-3 px-6 py-4 text-md font-bold
+          rounded-md text-blue-600 bg-white hover:bg-blue-100"
+        >
+          Learn how we can help
+        </a>
+      </div>
     </div>
   </section>
 </template>

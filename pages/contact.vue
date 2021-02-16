@@ -7,7 +7,7 @@
       lead="The first step to a better site is knowing what's wrong."
       :show="false"
     />
-    <div class="w-full max-w-xl m-auto bg-indigo-100 rounded">
+    <div class="w-full px-4 max-w-xl m-auto bg-indigo-100 rounded">
       <FullForm />
     </div>
     <Footer

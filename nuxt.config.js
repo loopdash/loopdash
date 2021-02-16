@@ -3,11 +3,14 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: "Loopdash | Website & Software Development",
+    title:  "Loopdash. A web & app development agency.",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "Loopdash is a full service web development agency, busy designing and developing beautiful websites, apps, and products." },
+      { hid: 'og:title', name: 'og:title', content: "Loopdash. A web development agency." },
+      { hid: "og:description", name: "description", content: "Loopdash is a full service software agency, busy designing and developing beautiful websites, apps, and products." },
+      { property: 'og:image', content: "/social.png" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -42,7 +45,11 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content",
+    ['@netsells/nuxt-hotjar', {
+        id: '2229235',
+        sv: '6'
+    }],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
