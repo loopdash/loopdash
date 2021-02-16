@@ -1,5 +1,5 @@
 export default {
-  ssr: false,
+  ssr: true,
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -28,11 +28,11 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     // https://www.npmjs.com/package/@nuxtjs/google-analytics
-    '@nuxtjs/google-analytics'
+    "@nuxtjs/google-analytics"
   ],
 
   googleAnalytics: {
-    id: 'UA-177470860-1'
+    id: "UA-177470860-1"
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
