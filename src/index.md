@@ -1,7 +1,10 @@
 ---
-layout: base.njk
+layout: post.njk
 title: Sede requie sacra haemonii
 subhead: Redditus suis Medusae
+sitemap:
+  changefreq: weekly
+  priority: 1.0
 ---
 ## Ubi caelum
 

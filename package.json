@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "start": "npx @11ty/eleventy --serve"
   },
@@ -17,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/loopdash/loopdash/issues"
   },
-  "homepage": "https://github.com/loopdash/loopdash#readme"
+  "homepage": "https://github.com/loopdash/loopdash#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@quasibit/eleventy-plugin-sitemap": "^2.1.4"
+  }
 }
