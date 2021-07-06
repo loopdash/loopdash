@@ -1,0 +1,21 @@
+{
+  "name": "loopdash",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loopdash/loopdash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loopdash/loopdash/issues"
+  },
+  "homepage": "https://github.com/loopdash/loopdash#readme"
+}

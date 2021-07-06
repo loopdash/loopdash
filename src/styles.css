@@ -1,0 +1,79 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* variables */
+:root {
+  --base-font-size: 12px;
+  --multiplier: 1.05vw;
+  --font-size-sm: calc(var(--base-font-size) + var(--multiplier));
+}
+
+/* font */
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+  background-size: 100% var(--line-height-sm);
+}
+
+p {
+  font-size: var(--font-size-sm);
+  line-height: var(--font-size-sm) * 2px;
+}
+
+/* elements */
+.main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.hero {
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0b95bb 0%, #81ff8e 100%);
+  padding: 3.5em;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
