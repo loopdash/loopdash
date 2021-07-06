@@ -1,0 +1,40 @@
+@import "variables";
+
+$font-size-base: 16px;
+$font-size-head: 36px;
+$font-size-subhead: 24px;
+
+$line-height: 1.6;
+
+* {
+  font-family: $font-family;
+}
+
+@mixin font($font-size) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $font-size * $line-height;
+  margin-bottom: $font-size * $line-height;
+  color: $body-color;
+}
+
+@mixin heading() {
+  letter-spacing: -0.016em;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: $heading-color;
+}
+
+p {
+  @include font($font-size-base);
+}
+
+h1 {
+  @include font($font-size-head);
+  @include heading();
+}
+
+h2, h3, h4 {
+  @include font($font-size-subhead);
+  @include heading();
+}

@@ -1,57 +1,27 @@
 ---
 layout: post.njk
-title: Sede requie sacra haemonii
+title: Frequently Asked Questions
 subhead: Redditus suis Medusae
 sitemap:
   changefreq: weekly
   priority: 1.0
 ---
-## Ubi caelum
 
-Lorem markdownum nectare, vultus nec leves admovit! Amnes nomen cingentibus
-pendeat dixit: finis odit nec eurytus contigit spectabilis vocem iuvencae defuit
-aegro, sententia submersum coactis. Cognoscere vestigia fluvios, sic est bene
-cava [diversa](http://hoc.com/pervenit): patriam unda nisi apte est conquesti
-quae dominoque soror. Verba inducere temptavit natale rogata memorata vastior in
-nec semper, tamen, obliqua miseris Cimmerios cavus? Ipse terra arcuit tenui
-misero quod labore ereptaque longe vidi!
+## Why is a Loopdash website better than Wix or SquareSpace?
 
-1. Alterius tulit
-2. Sed sanguine suprema pastorve aurum hamadryadas
-3. Quantumque Ceyx matrem amori telluris manusque hamatisque
-4. Tamen custodemque simul lacusque exilio sim natus
+Our custom websites are designed with your brand in mind and
+are capable of anything from custom searches to selling products.
+Custom sites also last longer, are more portable and are better for
+SEO. Custom sites end up paying for themselves.
 
-## Silvas spem eunti et est sub sim
+## Do I own my website once the project is finished?
 
-Domat [nocti eligit potes](http://formae.org/exsilit) habendam visus stringebat
-Phoebus; sed in aeternamque quoniam. Raucaque vestem liquescunt in illis nota
-praetereunt templis caecum an umeros precor. **Ululavit** cur Redditus suis
-Medusae, ferebant nulla, non viscera **gramina prius** fragosis, lacertosi,
-suspectum lenta.
+Yes you do. You won't be locked into any contract once we launch your website. We do offer maintenance packages should you want some extra support after launching, but otherwise the site is yours.
 
-> Idem **an comitum** rotae. Incipit electae sparsis esse, novissima arbore.
+## Do you offer payment plans?
 
-Qui illis, quoque exitium paulum in ipse cum: coeamus conata praecordia canit
-Hercule multa [et caret](http://in-nocti.org/est) postquam. Sceptrum amore motus
-ignemque venit ulla **poteram dixerat**.
+A new site is an investment for your brand. We offer financing that will allow you to get your website now and pay for it over a set period of manageable payments.
 
-## Qua antro lateri
+## How do I pay?
 
-Securosque orbis iaculum, vani vultus et Solem desiderat abit: ait ad licet nec
-in subolemque! Nato Talibus putes, manu, urbes avia **cum quid** saevaeque
-ingenti magni, ultra, sit. Aeque urguet tradiderat, invidiamque abstrahor
-Phoebe. **Fuerat in** quies turbavere dominae nec tenera sibi saltatibus,
-hostibus iactari armatus arbuteos possem, sus.
-
-### Principio fluidove guttae
-
-Radice sanguine mergit praecepta proxima. [Macareu](http://ille-cape.com/lapsum)
-secuta, mite nomine stamina meliore, sacra enim destinat avidis. Tum ignoto
-quoque corpus; stipite pes eosdem *tulit quaerenti et* tenuerunt dictis?
-
-Habebis generis ardet paulumque amnes: hic est feroci habere annos iacentem
-praereptae nudata: currus. Principio fluidove guttae pendentiaque iniuste
-temperat suo moneo me Parthaoniae **retemptatis**. Conlegerat signis. In cum per
-discordia **arcet delapsa aconita** haberet: adsueta, maxime *stamina*. Animum
-sive, animam dignatus Eurypylique haud atria, ast et quoque *repulsus debeat*
-patitur cesserunt!
+A 25% deposit is required prior to starting the project, with the balance being due upon project completion. We accept all major credit cards, Venmo, PayPal or check.
