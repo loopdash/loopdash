@@ -6,7 +6,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     "md",
     "css",
-    "njk"
+    "njk",
+    "js"
   ]);
 
   eleventyConfig.addPlugin(sitemap, {

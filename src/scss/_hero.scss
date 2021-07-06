@@ -1,15 +1,31 @@
 .hero {
-  text-align: center;
-  background: linear-gradient(90deg, #0b95bb 0%, #81ff8e 100%);
-  height: 30vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 400px;
+  background: #000000;
 
   .hero-content {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     h1, h2 {
       color: #ffffff;
+      text-shadow: -2px 2px 1px black;
+    }
+
+    h2 {
+      font-weight: 400;
     }
   }
+}
+
+#hero-overlay {
+  overflow: hidden;
 }

@@ -1,8 +1,8 @@
 @import "variables";
 
-$font-size-base: 16px;
-$font-size-head: 36px;
-$font-size-subhead: 24px;
+$font-size-head: 60px;
+$font-size-subhead: 23px;
+$font-size-base: 20px;
 
 $line-height: 1.6;
 
@@ -18,11 +18,11 @@ $line-height: 1.6;
   color: $body-color;
 }
 
-@mixin heading() {
-  letter-spacing: -0.016em;
-  font-weight: 600;
+@mixin heading($font-size) {
+  font-weight: 800;
   margin-bottom: 0px;
   color: $heading-color;
+  line-height: $font-size * ($line-height / 1.25);
 }
 
 p {
@@ -31,10 +31,10 @@ p {
 
 h1 {
   @include font($font-size-head);
-  @include heading();
+  @include heading($font-size-head);
 }
 
 h2, h3, h4 {
   @include font($font-size-subhead);
-  @include heading();
+  @include heading($font-size-subhead);
 }

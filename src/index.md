@@ -1,7 +1,7 @@
 ---
 layout: post.njk
-title: Frequently Asked Questions
-subhead: Redditus suis Medusae
+title: FAQ
+subhead: We're here with the answers you need to bring your project to life
 sitemap:
   changefreq: weekly
   priority: 1.0
