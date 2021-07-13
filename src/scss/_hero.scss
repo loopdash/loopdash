@@ -1,10 +1,12 @@
 .hero {
+  font-family: var(--font-family);
   position: relative;
   display: flex;
   align-items: center;
   justify-items: center;
   height: 400px;
   background: #000000;
+  margin-bottom: 1.75rem;
 
   .hero-content {
     position: absolute;
@@ -19,13 +21,5 @@
       color: #ffffff;
       text-shadow: -2px 2px 1px black;
     }
-
-    h2 {
-      font-weight: 400;
-    }
   }
-}
-
-#hero-overlay {
-  overflow: hidden;
 }

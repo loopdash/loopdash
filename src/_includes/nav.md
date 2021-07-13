@@ -9,7 +9,7 @@
           <a href="/">About</a>
         </li>
         <li class="header-navigation-link">
-          <a href="/">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li class="header-navigation-link">
           <a href="/">Our Work</a>

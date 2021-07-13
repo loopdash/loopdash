@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.md' %}
+  <body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl w-full space-y-8">
+        <div>
+          <h1 class="mt-6 text-center font-bold text-5xl mb-2">
+            {{h1}}
+          </h1>
+          <h2 class="text-center text-xl font-mono">
+            {{h2}}
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-white shadow dark:bg-gray-800 w-full p-10 mb-6 shadow sm:inline-block">
+            <h3 class="text-base font-extrabold mb-1">Why are your sites better than Wix or SquareSpace?</h3>
+            <p class="text-md leading-relaxed">Our custom websites are designed with your brand in mind and
+            are capable of anything from custom searches to selling products.
+            Custom sites also last longer, are more portable and are better for
+            SEO.</p>
+            {% include 'testimonial.md' %}
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-content-title">
+                <h6 class="text-2xl font-bold text-white">Get web assistance in less than 24 hours.</h6>
+              </div>
+              <div class="card-content-body">
+                {% include 'form.md' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

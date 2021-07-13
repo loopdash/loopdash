@@ -1,17 +1,39 @@
 
 module.exports = {
   purge: [ "./src/_includes/**/*.njk", "./src/*.html" ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       colors: {
-        "primary-color": "var(--primary-color)",
-        "secondary-color": "var(--secondary-color)"
-      },
+        green: {
+          900: "var(--green-900)",
+          800: "var(--green-800)",
+          700: "var(--green-700)",
+          600: "var(--green-600)",
+          500: "var(--green-500)",
+          400: "var(--green-400)",
+          300: "var(--green-300)",
+          200: "var(--green-200)",
+          100: "var(--green-100)",
+          50: "var(--green-50)"
+        },
+        gray: {
+          900: "var(--gray-900)",
+          800: "var(--gray-800)",
+          700: "var(--gray-700)",
+          600: "var(--gray-600)",
+          500: "var(--gray-500)",
+          400: "var(--gray-400)",
+          300: "var(--gray-300)",
+          200: "var(--gray-200)",
+          100: "var(--gray-100)",
+          50: "var(--gray-50)"
+        }
+      }
     },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    fontFamily: {
+      mono: "Roboto Mono",
+      sans: "Red Hat Display"
+    }
+  }
 }

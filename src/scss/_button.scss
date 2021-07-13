@@ -1,0 +1,35 @@
+.button {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 6px;
+  outline: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--gray-900);
+    background-color: #fff;
+    transition: border-color .2s linear;
+  }
+  &-label {
+    position: relative;
+    z-index: 3;
+    border: 1px solid var(--gray-900);
+    padding: 12px;
+    font-size: 16px;
+    font-family: "messina",sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--gray-900);
+    background-color: #fff;
+    display: block;
+    transition: color .2s linear,transform .2s linear,border-color .2s linear;
+  }
+}

@@ -1,6 +1,4 @@
 .header-navigation {
-  font-family: $font-family;
-  color: $body-color;
   text-decoration: none;
   background-position: 0 top;
   background-repeat: repeat-x;
@@ -45,7 +43,6 @@
 
   a {
     font-weight: 500;
-    color: $heading-color;
     text-decoration: none;
   }
 }
