@@ -8,41 +8,17 @@
           <h1 class="mt-6 text-center font-bold text-5xl mb-2">
             {{h1}}
           </h1>
-          <h2 class="text-center text-xl font-mono">
-            {{h2}}
-          </h2>
         </div>
         <div class="grid grid-cols-2 gap-3">
-          <div>
-            <div class="flex flex justify-center card bg-white dark:bg-gray-800 w-full p-10 mb-6 sm:inline-block">
-              <div class="mb-6">
-                {% include 'testimonial.md' %}
-              </div>
-              <div class="">
-                <h5 class="text-2xl font-bold">Contact us now</h5>
-              </div>
-              <div class="grid grid-cols-2 gap-1">
-                <div>
-                  <a class="button text-base text-blue-400 font" href="tel:3305061300">
-                    <span class="button-label">
-                      (330) 506-1300
-                    </span>
-                  </a>
-                </div>
-                <div>
-                  <a class="button text-base text-blue-400 font" href="mailto:gary@loopdash.com">
-                    <span class="button-label">
-                      gary@loopdash.com
-                    </span>
-                  </a>
-                </div>
-              </div>
+          <div class="flex align-center justify-center card  bg-white text-lg w-full p-10 mb-6 sm:inline-block space-y-4">
+            <div class="self-center">
+              {% include 'testimonial.md' %}
             </div>
           </div>
           <div class="card card-dotted">
             <div class="card-content">
               <div class="card-content-title">
-                <h6 class="text-2xl font-bold text-white text-center">Schedule a call today</h6>
+                <h6 class="text-2xl font-bold text-white text-center font-mono">Contact Us Today</h6>
               </div>
               <div class="card-content-body">
                 {% include 'form.md' %}
