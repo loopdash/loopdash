@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: index.njk
 h1: Frequently asked questions
 h2: FAQ
 h3: We're here with the answers you need to bring your project to life

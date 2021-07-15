@@ -1,0 +1,27 @@
+---
+layout: index.njk
+h1: loopdash documents
+h2: Documents
+h3: Find the answers you need to do what you need to do
+sitemap:
+  changefreq: weekly
+  priority: 1.0
+pagination:
+  data: collections.docs
+  size: 10
+  alias: docs
+---
+
+<ul>
+  {%- for post in collections.docs | reverse -%}
+    <li>
+      <h3 class="text-blue-500 text-2xl font-bold">
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h3>
+      <span>{{ post.date }}</span>
+      {% if post.data.teaser %}
+        <p>{{ post.data.teaser }}</p>
+      {% endif %} 
+    </li>
+  {%- endfor -%}
+</ul>
