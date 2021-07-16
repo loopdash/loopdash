@@ -7,7 +7,10 @@ module.exports = function(eleventyConfig) {
     "md",
     "css",
     "njk",
-    "js"
+    "js",
+    "jpg",
+    "png",
+    "svg"
   ]);
 
   eleventyConfig.addPlugin(sitemap, {

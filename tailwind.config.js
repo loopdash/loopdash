@@ -32,8 +32,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      mono: "Roboto Mono",
-      sans: "Red Hat Display"
+      mono: ["var(--font-mono)"],
+      sans: ["var(--font-sans)"]
     }
   }
 }
