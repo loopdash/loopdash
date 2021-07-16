@@ -12,7 +12,7 @@
           <a href="/contact">Contact</a>
         </li>
         <li class="header-navigation-link">
-          <a href="/">Our Work</a>
+          <a href="/docs">Docs</a>
         </li>
       </ul>
     </div>
