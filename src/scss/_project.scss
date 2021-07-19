@@ -8,9 +8,11 @@
   height: 50vh;
   min-height: 512px;
   padding: 1.5rem;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 0 0.5rem 1rem 0.5rem;
   width: 48%;
+  position: relative;
+  z-index: 1;
 
   &:before {
     content: "";
@@ -52,6 +54,9 @@
     // color: #033232 !important;
     color: #ffffff;
     background: linear-gradient(135deg, #00c4b5 0%, #46D4C9 100%);
+    border-bottom: 6px solid;
+    border-bottom-color: rgb(0 0 0 / 3%);
+
 
     .device {
       background: url('../images/andvari.png') no-repeat;
@@ -64,6 +69,9 @@
     // color: #10528b !important;
     color: #ffffff;
     background: linear-gradient(135deg, #ffce62 0%, #FFE4A9 100%);
+    border-bottom: 6px solid;
+    border-bottom-color: rgb(0 0 0 / 3%);
+
 
     .device {
       background: url('../images/homedoggy.png') no-repeat;
@@ -76,6 +84,9 @@
     // color: #069 !important;
     color: #ffffff;
     background: linear-gradient(135deg, #ff740d 0%, #FFA765 100%);
+    border-bottom: 6px solid;
+    border-bottom-color: rgb(0 0 0 / 3%);
+
 
     .device {
       background: url('../images/mps-2.png') no-repeat;
@@ -88,6 +99,9 @@
     // color: #069 !important;
     color: #ffffff;
     background: linear-gradient(135deg, #8cc547 0%, #ABD579 100%);
+    border-bottom: 6px solid;
+    border-bottom-color: rgb(0 0 0 / 3%);
+
 
     .device {
       background: url('../images/peak.png') no-repeat;
@@ -100,6 +114,9 @@
     // color: #069 !important;
     color: #ffffff;
     background: linear-gradient(135deg, #df0001 0%, #E84646 100%);
+    border-bottom: 6px solid;
+    border-bottom-color: rgb(0 0 0 / 3%);
+
 
     .device {
       background: url('../images/peak.png') no-repeat;

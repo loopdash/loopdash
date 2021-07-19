@@ -1,13 +1,3 @@
----
-layout: layouts/default.njk
-h1: Loopdash
-h2: We've saved our customers over $2,493,231
-h3: 
-sitemap:
-  changefreq: weekly
-  priority: 1.0
----
-
 <div class="projects">
   <a href="https://andvariassociates.com" class="project project--andvari">
     <div class="device">&nbsp;</div>
@@ -44,7 +34,6 @@ sitemap:
       <p>Designed and developed a website for cleaning company.</p>
     </div>
   </a>
-
 
   <a href="" class="project project--magna">
     <div class="device">&nbsp;</div>
