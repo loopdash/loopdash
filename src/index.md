@@ -1,5 +1,5 @@
 ---
-layout: default.njk
+layout: layouts/default.njk
 h1: Loopdash
 h2: We've saved our customers over $2,493,231
 h3: 

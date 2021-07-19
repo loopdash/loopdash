@@ -9,8 +9,7 @@
   min-height: 512px;
   padding: 1.5rem;
   border-radius: 5px;
-  margin: 1%;
-  margin-bottom: 1rem;
+  margin: 0 0.5rem 1rem 0.5rem;
   width: 48%;
 
   &:before {
@@ -36,6 +35,10 @@
     transition: opacity .5s ease,transform .5s ease,-webkit-transform .5s ease;
   }
 
+  &:hover {
+    opacity: 0.95;
+  }
+
   &:hover .device {
     -webkit-transition: opacity .5s ease,-webkit-transform .5s ease;
     transition: opacity .5s ease,-webkit-transform .5s ease;
@@ -48,7 +51,7 @@
   &--andvari {
     // color: #033232 !important;
     color: #ffffff;
-    background: linear-gradient(45deg, #00c4b5 0%, #46D4C9 100%);
+    background: linear-gradient(135deg, #00c4b5 0%, #46D4C9 100%);
 
     .device {
       background: url('../images/andvari.png') no-repeat;
@@ -60,7 +63,7 @@
   &--homedoggy {
     // color: #10528b !important;
     color: #ffffff;
-    background: linear-gradient(45deg, #ffce62 0%, #FFE4A9 100%);
+    background: linear-gradient(135deg, #ffce62 0%, #FFE4A9 100%);
 
     .device {
       background: url('../images/homedoggy.png') no-repeat;
@@ -72,7 +75,7 @@
   &--mps {
     // color: #069 !important;
     color: #ffffff;
-    background: linear-gradient(45deg, #ff740d 0%, #FFA765 100%);
+    background: linear-gradient(135deg, #ff740d 0%, #FFA765 100%);
 
     .device {
       background: url('../images/mps-2.png') no-repeat;
@@ -84,7 +87,7 @@
   &--peak {
     // color: #069 !important;
     color: #ffffff;
-    background: linear-gradient(45deg, #8cc547 0%, #ABD579 100%);
+    background: linear-gradient(135deg, #8cc547 0%, #ABD579 100%);
 
     .device {
       background: url('../images/peak.png') no-repeat;
@@ -96,7 +99,7 @@
   &--magna {
     // color: #069 !important;
     color: #ffffff;
-    background: linear-gradient(45deg, #df0001 0%, #E84646 100%);
+    background: linear-gradient(135deg, #df0001 0%, #E84646 100%);
 
     .device {
       background: url('../images/peak.png') no-repeat;
@@ -112,6 +115,7 @@
     padding: 1rem;
     .project {
       width: 100%;
+      margin: 0 0 1rem 0;
     }
   }
 }
