@@ -5,6 +5,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        blue: {
+          900: "var(--blue-900)",
+          800: "var(--blue-800)",
+          700: "var(--blue-700)",
+          600: "var(--blue-600)",
+          500: "var(--blue-500)",
+          400: "var(--blue-400)",
+          300: "var(--blue-300)",
+          200: "var(--blue-200)",
+          100: "var(--blue-100)",
+          50: "var(--blue-50)"
+        },
         green: {
           900: "var(--green-900)",
           800: "var(--green-800)",

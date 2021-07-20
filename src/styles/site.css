@@ -31,7 +31,16 @@
   --blue-200: #80A1F8;
   --blue-100: #AAC0FA;
   --blue-50: #D5E0FD;
-
+  --green-900: #002B16;
+  --green-800: #00552C;
+  --green-700: #008043;
+  --green-600: #00AA59;
+  --green-500:  #00D56F;
+  --green-400: #00FF85;
+  --green-300: #33FF9D;
+  --green-200: #66FFB6;
+  --green-100: #99FFCE;
+  --green-50: #CCFFE7;
   --font-mono: "IBM Plex Mono";
   --font-sans: "Roboto";
 }

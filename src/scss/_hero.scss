@@ -5,13 +5,21 @@
   align-items: center;
   justify-items: center;
   height: 50vh;
-  background: var(--blue-500);
+  background: var(--gray-900);
   margin-bottom: 1.75rem;
-  color: #ffffff;
   padding: 2rem;
 
+  h2,
+  p {
+    color: #ffffff;
+  }
+
+  h1 {
+
+    color: var(--green-200);
+  }
+
   &--content {
-    width: 42rem;
     height: 400px;
     display: flex;
     flex-direction: column;

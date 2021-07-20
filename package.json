@@ -6,8 +6,8 @@
   "scripts": {
     "start": "run-p start:*",
     "start:eleventy": "npx @11ty/eleventy --serve",
-    "start:postcss": "postcss src/styles/*.css --dir public/css --watch",
-    "start:watch": "sass  --no-source-map --watch src/scss:public/css",
+    "start:postcss": "postcss src/styles/*.css --dir _site/css --watch",
+    "start:watch": "sass  --no-source-map --watch src/scss:_site/css",
     "dev": "npm-run-all --parallel start watch"
   },
   "repository": {

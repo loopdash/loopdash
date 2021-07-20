@@ -1,8 +1,8 @@
 ---
 layout: layouts/documents.njk
-h1: Pointing Your Domain to the Loopdash Server
+h1: pointing your domain to the loopdash server
 h2: Pointing Your Domain to the Loopdash Server
-excerpt: 
+excerpt: A brief tutorial on how to point your DNS to Loopdash's server
 sitemap:
   changefreq: weekly
   priority: 1.0
@@ -19,22 +19,22 @@ url: /documents/how-to-delegate-access-to-godaddy
   <li>Add the following CNAME record.</li>
 </ol>
 
-<div class="rounded-xl overflow-hidden bg-blue-50 p-5 text-base">
+<div class="rounded-xl overflow-hidden bg-green-50 p-5 text-base">
   <table class="table-auto">
-    <thead class="blue-600">
+    <thead class="green-600">
       <tr>
-        <th class="w-1/2 px-4 py-2 text-blue-600">Record Type</th>
-        <th class="w-1/2 px-4 py-2 text-blue-600">Name</th>
-        <th class="w-1/2 px-4 py-2 text-blue-600">Value</th>
-        <th class="w-1/2 px-4 py-2 text-blue-600">TTL</th>
+        <th class="w-1/2 px-4 py-2 text-green-600">Record Type</th>
+        <th class="w-1/2 px-4 py-2 text-green-600">Name</th>
+        <th class="w-1/2 px-4 py-2 text-green-600">Value</th>
+        <th class="w-1/2 px-4 py-2 text-green-600">TTL</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="border border-blue-500 px-4 py-2 text-blue-600 font-normal">CNAME</td>
-        <td class="border border-blue-500 px-4 py-2 text-blue-600 font-normal italic">your-domain.com</td>
-        <td class="border border-blue-500 px-4 py-2 text-blue-600 font-normal font-mono">104.236.48.77</td>
-        <td class="border border-blue-500 px-4 py-2 text-blue-600 font-normal">3600</td>
+        <td class="border border-green-500 px-4 py-2 text-green-600 font-normal">CNAME</td>
+        <td class="border border-green-500 px-4 py-2 text-green-600 font-normal italic">your-domain.com</td>
+        <td class="border border-green-500 px-4 py-2 text-green-600 font-normal font-mono">104.236.48.77</td>
+        <td class="border border-green-500 px-4 py-2 text-green-600 font-normal">3600</td>
       </tr>
     </tbody>
   </table>
