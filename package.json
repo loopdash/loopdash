@@ -9,7 +9,7 @@
     "start:postcss": "postcss src/styles/*.css --dir _site/css --watch",
     "start:watch": "sass  --no-source-map --watch src/scss:_site/css",
     "dev": "npm-run-all --parallel start watch",
-    "build": "npx eleventy"
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
