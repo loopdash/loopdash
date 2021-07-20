@@ -1,4 +1,4 @@
-.doc--title {
+.document--title {
   display: flex;
   align-items: center;
   color: var(--blue-500);
@@ -6,9 +6,9 @@
   &:before {
     margin: 0 0.5rem 0 0;
     content: "";
-    background: url('../images/folder.svg');
+    background: url('../images/folder.svg') no-repeat;
     background-size: 20px 20px;
-    width: 20px;
+    width: 22px;
     height: 20px;
     display: inline-block;
   }
