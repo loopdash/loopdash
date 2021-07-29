@@ -5,7 +5,7 @@
         <a href="/">Loopdash</a>
       </li>
       <li class="header-navigation-link">
-        <a href="/">About</a>
+        <a href="/about">About</a>
       </li>
       <li class="header-navigation-link">
         <a href="/contact">Contact</a>

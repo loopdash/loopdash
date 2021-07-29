@@ -9,16 +9,6 @@
   margin-bottom: 8rem;
   margin-top: 0;
 }
-.content-wrapper:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  z-index: -1;
-}
 
 .dropcap {
   color: var(--green-500);
@@ -34,19 +24,7 @@
 
 @media only screen and (min-width: 768px) {
   .content-wrapper {
-    padding: 3rem;
-    margin-top: -4rem;
-  }
-  .content-wrapper:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 30px 40px -3px rgba(0, 0, 0, 0.08), 0 15px 10px -2px rgba(0, 0, 0, 0.05);
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%2300FF00'/%3E%3C/svg%3E") repeat right bottom;
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    z-index: -1;
+    padding: 0;
   }
 }
 .nav-wrapper {
@@ -82,7 +60,7 @@
   height: 100%;
   min-height: 50vh;
   background: var(--gray-900);
-  margin-bottom: 1.75rem;
+  margin-bottom: 2.25rem;
   padding: 6rem 2rem;
 }
 .hero h2,
@@ -142,6 +120,25 @@
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%230043F0'/%3E%3C/svg%3E") repeat right bottom;
 }
 
+.card-green .card-content-title {
+  background-color: var(--green-500);
+  border: 1px solid var(--green-500);
+}
+
+.card-green .card-content-body {
+  border: 1px solid var(--green-500);
+}
+
+.card-green.card-dotted:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 100%;
+  height: 100%;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%2300FF000'/%3E%3C/svg%3E") repeat right bottom;
+}
+
 .card-gray .card-content-title {
   background-color: var(--gray-900);
   border: 1px solid var(--gray-900);
@@ -161,6 +158,16 @@
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%23101010'/%3E%3C/svg%3E") repeat right bottom;
 }
 
+.card-white.card-dotted:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 100%;
+  height: 100%;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%23ffffff'/%3E%3C/svg%3E") repeat right bottom;
+}
+
 a.button,
 .button {
   display: inline-block;
@@ -173,15 +180,61 @@ a.button,
   -ms-user-select: none;
   user-select: none;
   padding: 0.5875rem 1rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border-top: 1px solid var(--gray-900);
-  border-left: 1px solid var(--gray-900);
-  border-bottom: 4px solid var(--gray-900);
-  border-right: 4px solid var(--gray-900);
+  border: 1px solid var(--gray-900);
   transition: border-color 0.2s linear;
-  color: --gray-900;
+  color: var(--gray-900);
+  font-family: var(--font-mono);
+}
+
+a.button-white,
+.button-white {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.875rem 1.6rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid white;
+  transition: border-color 0.2s linear;
+  color: white;
+}
+
+a.button-green,
+.button-green {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.875rem 1.6rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid var(--green-600);
+  transition: border-color 0.2s linear;
+  color: #ffffff;
+  background: var(--green-600);
+}
+a.button-green:hover,
+.button-green:hover {
+  color: #ffffff;
+  background: var(--green-500);
+  border: 1px solid var(--green-500);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .projects {

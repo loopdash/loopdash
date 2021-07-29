@@ -1,5 +1,5 @@
 ---
-layout: layouts/documents.njk
+layout: layouts/default.njk
 h1: pointing your domain to the loopdash server
 h2: Pointing Your Domain to the Loopdash Server
 excerpt: A brief tutorial on how to point your DNS to Loopdash's server

@@ -1,5 +1,5 @@
 ---
-layout: layouts/documents.njk
+layout: layouts/default.njk
 h1: How to Delegate Access to GoDaddy
 h2: How to Delegate Access to GoDaddy
 excerpt: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
