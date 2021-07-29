@@ -1,4 +1,4 @@
-<div class="nav-wrapper">
+<div class="nav-wrapper font-mono font-bold">
   <nav class="nav">
     <ul class="nav--list">
       <li class="header-navigation-link">
@@ -11,7 +11,10 @@
         <a href="/contact">Contact</a>
       </li>
       <li class="header-navigation-link">
-        <a href="/documents">Docs</a>
+        <a href="/services">Services</a>
+      </li>
+      <li class="header-navigation-link">
+        <a href="/documents">Documents</a>
       </li>
     </ul>
   </nav>
