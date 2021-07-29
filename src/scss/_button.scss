@@ -9,12 +9,13 @@ a.button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: .5875rem 1rem;
+  padding: 0.5875rem 1rem;
   font-size: 1.125rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: 1px solid var(--gray-900);
-  transition: border-color .2s linear;
+  transition: border-color 0.2s linear;
   color: var(--gray-900);
   font-family: var(--font-mono);
 }
@@ -33,9 +34,10 @@ a.button-white,
   padding: 0.875rem 1.6rem;
   font-size: 1.125rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: 1px solid white;
-  transition: border-color .2s linear;
+  transition: border-color 0.2s linear;
   color: white;
 }
 
@@ -53,9 +55,10 @@ a.button-green,
   padding: 0.875rem 1.6rem;
   font-size: 1.125rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: 1px solid var(--green-600);
-  transition: border-color .2s linear;
+  transition: border-color 0.2s linear;
   color: #ffffff;
   background: var(--green-600);
 
@@ -63,6 +66,7 @@ a.button-green,
     color: #ffffff;
     background: var(--green-500);
     border: 1px solid var(--green-500);
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 }
