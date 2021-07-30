@@ -1,4 +1,5 @@
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
+const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
@@ -16,8 +17,22 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: "https://loopdash.com",
-    },
+      hostname: "https://loopdash.com"
+    }
+  });
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if (outputPath && outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   return {
