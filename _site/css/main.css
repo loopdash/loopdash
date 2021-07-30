@@ -70,7 +70,7 @@
   color: #ffffff;
 }
 .hero h1 {
-  color: var(--green-200);
+  color: var(--green-100);
 }
 .hero--content {
   height: auto;
