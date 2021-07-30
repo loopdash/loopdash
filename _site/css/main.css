@@ -41,6 +41,7 @@
   font-family: var(--font-sans);
   font-weight: 500;
   width: 100%;
+  background: var(--gray-100);
 }
 
 .nav--list {
@@ -49,6 +50,7 @@
   width: 100%;
   overflow: hidden;
   overflow-x: scroll;
+  background: var(--gray-100);
 }
 
 .header-navigation-link {
