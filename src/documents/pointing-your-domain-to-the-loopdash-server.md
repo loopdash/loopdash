@@ -2,7 +2,7 @@
 layout: layouts/default.njk
 h1: pointing your domain to the loopdash server
 h2: Pointing Your Domain to the Loopdash Server
-excerpt: A brief tutorial on how to point your DNS to Loopdash's server
+description: A brief tutorial on how to point your DNS to Loopdash's server
 sitemap:
   changefreq: weekly
   priority: 1.0
