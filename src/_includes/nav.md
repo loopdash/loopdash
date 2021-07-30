@@ -1,4 +1,4 @@
-<div class="nav-wrapper font-mono font-bold">
+<div class="nav-wrapper font-mono">
   <nav class="nav">
     <ul class="nav--list">
       <li class="header-navigation-link">
