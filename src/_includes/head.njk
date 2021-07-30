@@ -30,7 +30,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="" rel="stylesheet">
  
-  <link rel="stylesheet" href="/css/site.css">
+  <link rel="preload" href="/css/site.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/site.css"></noscript>
+
   <link rel="stylesheet" href="/css/main.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
