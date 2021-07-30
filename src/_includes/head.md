@@ -1,10 +1,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-]
+
+  <!-- HTML Meta Tags -->
   <title>{{ h1 }}</title>
-  <meta name="description" content={{description}}>
+  <meta name="description" content={ description }>
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="loopdash">
+  <meta itemprop="description" content={ description }>
+  <meta itemprop="image" content="">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://loopdash.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={ h1 }>
+  <meta property="og:description" content={ description }>
+  <meta property="og:image" content="">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={ h1 }>
+  <meta name="twitter:description" content={ description }>
+  <meta name="twitter:image" content="">
   <meta name="robots" content="index, follow" />
+  <!-- Meta Tags Generated via http://heymeta.com -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
