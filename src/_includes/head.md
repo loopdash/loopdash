@@ -4,24 +4,28 @@
 
   <!-- HTML Meta Tags -->
   <title>{{ h1 }}</title>
-  <meta name="description" content={ document.data.description }>
+  <meta name="description" content={{ description }}>
+  <meta name="description" content={{ data.description }}>
+  <meta name="description" content={ description }>
+  <meta name="description" content={ data.description }>
+  <meta name="description" content={{ description}}>
 
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="loopdash">
-  <meta itemprop="description" content={ document.data.description }>
+  <meta itemprop="description" content={ data.description }>
   <meta itemprop="image" content="">
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content={ page.url }>
   <meta property="og:type" content="website">
-  <meta property="og:title" content={ document.data.h1 }>
-  <meta property="og:description" content={ document.data.description }>
+  <meta property="og:title" content={ data.h1 }>
+  <meta property="og:description" content={ data.description }>
   <meta property="og:image" content="">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content={ document.data.h1 }>
-  <meta name="twitter:description" content={ document.data.description }>
+  <meta name="twitter:title" content={ data.h1 }>
+  <meta name="twitter:description" content={ data.description }>
   <meta name="twitter:image" content="">
   <meta name="robots" content="index, follow" />
   <!-- Meta Tags Generated via http://heymeta.com -->
