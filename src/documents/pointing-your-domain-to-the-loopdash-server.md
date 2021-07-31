@@ -1,6 +1,7 @@
 ---
 layout: layouts/default.njk
-h1: pointing your domain to the loopdash server
+title: Pointing Your Domain to the Loopdash Server - Loopdash
+h1: Pointing Your Domain to the Loopdash Server
 h2: Pointing Your Domain to the Loopdash Server
 description: A brief tutorial on how to point your DNS to Loopdash's server
 sitemap:
