@@ -2,28 +2,11 @@
 <html lang="en">
   {% include 'head.njk' %}
   <body>
-    <div class="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-6xl w-full space-y-8">
-        <div>
-          <h1 class="mt-6 text-center font-bold text-5xl mb-2">
-            {{h1}}
-          </h1>
-          {# <div class="my-4">
-          {% include 'features.md' %}
-          </div> #}
-        </div>
-          <div class="card card-green card-dotted">
-            <div class="card-content">
-              <div class="card-content-title">
-                <h6 class="text-2xl font-bold text-white text-center font-mono">Contact Us Today</h6>
-              </div>
-              <div class="card-content-body">
-                {% include 'form.md' %}
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
+    {% include 'nav.njk' %}
+    {% include 'hero.md' %}
+    <section class="content-wrapper text-xl leading-relaxed md:max-w-2xl ">
+      {% include 'features.md' %}
+      {% include 'form.md' %}
+    </section>
   </body>
 </html>
-

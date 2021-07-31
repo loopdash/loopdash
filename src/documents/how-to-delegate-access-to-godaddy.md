@@ -5,7 +5,7 @@ h2: How to Delegate Access to GoDaddy
 description: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
 sitemap:
   changefreq: weekly
-  priority: 1.0
+  priority: 0.5
 tags: documents
 date: 2021-07-14
 url: /documents/how-to-delegate-access-to-godaddy

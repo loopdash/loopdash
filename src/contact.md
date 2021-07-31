@@ -1,8 +1,9 @@
 ---
 layout: layouts/contact.njk
-h1: Make more money from your site
-h2: Make your website work for you 
+h1: Contact Loopdash
+h2: Make your website work for you.
+description: Contact us Loopdash today to recieve a free website consultation.
 sitemap:
   changefreq: weekly
-  priority: 1.0
+  priority: 0.8
 ---

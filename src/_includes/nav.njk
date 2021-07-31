@@ -1,4 +1,4 @@
-<div class="bg-gray-100 mx-auto">
+<div class="mx-auto">
   <div class="nav-wrapper font-mono">
     <nav class="nav">
       <ul class="nav--list">
@@ -6,16 +6,16 @@
           <a href="/">Loopdash</a>
         </li>
         <li class="header-navigation-link">
-          <a href="/about">About</a>
+          <a class="{{ 'active' if '/about' in page.url }}" href="/about">About</a>
         </li>
         <li class="header-navigation-link">
-          <a href="/contact">Contact</a>
+          <a class="{{ 'active' if '/contact' in page.url }}" href="/contact">Contact</a>
         </li>
         <li class="header-navigation-link">
-          <a href="/services">Services</a>
+          <a class="{{ 'active' if '/services' in page.url }}" href="/services">Services</a>
         </li>
         <li class="header-navigation-link">
-          <a href="/documents">Documents</a>
+          <a class="{{ 'active' if '/documents' in page.url }}" href="/documents">Documents</a>
         </li>
       </ul>
     </nav>
