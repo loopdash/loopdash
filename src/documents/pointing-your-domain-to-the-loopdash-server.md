@@ -5,7 +5,7 @@ h2: Pointing Your Domain to the Loopdash Server
 description: A brief tutorial on how to point your DNS to Loopdash's server
 sitemap:
   changefreq: weekly
-  priority: 1.0
+  priority: 0.5
 tags: documents
 date: 2021-07-14
 url: /documents/how-to-delegate-access-to-godaddy
