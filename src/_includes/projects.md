@@ -17,30 +17,12 @@
     </div>
   </a>
 
-  <a href="https://intel.marketplacestrategy.com" class="project project--mps">
-    <div class="device">&nbsp;</div>
-    <div class="description">
-      <span class="font-mono font-semibold uppercase font-xs mb-1">app design & development</span>
-      <h2 class="text-2xl font-bold mb-2">Marketplace Strategy</h2>
-      <p>Designed and developed a web app.</p>
-    </div>
-  </a>
-
   <a href="https://peakdryiceblasting.com" class="project project--peak">
     <div class="device">&nbsp;</div>
     <div class="description">
       <span class="font-mono font-semibold uppercase font-xs mb-1">website design & development</span>
       <h2 class="text-2xl font-bold mb-2">Peak Dry Ice Blasting</h2>
       <p>Designed and developed a website for cleaning company.</p>
-    </div>
-  </a>
-
-  <a href="" class="project project--magna">
-    <div class="device">&nbsp;</div>
-    <div class="description">
-      <span class="font-mono font-semibold uppercase font-xs mb-1">app design & development</span>
-      <h2 class="text-2xl font-bold mb-2">Magna</h2>
-      <p>Designed and developed a web app for Magna company.</p>
     </div>
   </a>
 </div>

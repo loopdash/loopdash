@@ -31141,7 +31141,7 @@ video {
   --green-100: #99FFCE;
   --green-50: #CCFFE7;
   --font-mono: "IBM Plex Mono";
-  --font-sans: "Roboto";
+  --font-sans: "Helvetica";
 }
 
 @media (min-width: 640px) {
