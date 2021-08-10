@@ -1,6 +1,5 @@
 .projects {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -10,8 +9,7 @@
   height: 50vh;
   min-height: 512px;
   padding: 1.5rem;
-  border-radius: 3px;
-  margin: 0 0 1rem 0;
+  margin: 0.5rem;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -126,8 +124,8 @@
 
 @media only screen and (max-width: 768px) {
   .projects {
-    display: block;
-    padding: 1rem;
+    display: flex;
+
     .project {
       width: 100%;
       margin: 0 0 1rem 0;

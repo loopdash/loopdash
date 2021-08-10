@@ -4,9 +4,7 @@
   <body>
     {% include 'nav.njk' %}
     {% include 'hero.md' %}
-    <section class="mx-auto md:max-w-xl xl:max-w-4xl p-4 mb-20">
-      {{ content | safe }}
-    </section>
+    {{ content | safe }}
     {% include 'footer.njk' %}
   </body>
 </html>
