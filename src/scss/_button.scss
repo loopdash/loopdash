@@ -1,7 +1,8 @@
-a.button,
-.button {
+.btn {
+  font-family: var(--font-sans);
+  text-decoration: none;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -10,62 +11,32 @@ a.button,
   -ms-user-select: none;
   user-select: none;
   padding: 0.5875rem 1rem;
-  font-size: 1.125rem;
+  font-size: var(--font-size-base);
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: 1px solid var(--gray-900);
-  transition: border-color 0.2s linear;
   color: var(--gray-900);
 }
 
-a.button-white,
-.button-white {
-  display: inline-block;
-  font-weight: 600;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 1px solid white;
-  transition: border-color 0.2s linear;
-  color: white;
+.btn-white {
+  color: #fff;
+  background-color: #fff;
+  background-color: #fff;
 }
 
-a.button-green,
-.button-green {
-  display: inline-block;
-  font-weight: 600;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 1px solid var(--green-600);
-  transition: border-color 0.2s linear;
-  color: #ffffff;
-  background: var(--green-600);
+.btn-o-white {
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fff;
 
-  &:hover {
-    color: #ffffff;
-    background: var(--green-500);
-    border: 1px solid var(--green-500);
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:hover,
+  &:focus {
+    border-radius: 0;
+    color: var(--blue-900);
+    background-color: transparent;
+    background-image: none;
+    border-color: var(--blue-900);
   }
 }

@@ -1,0 +1,27 @@
+
+.timeline  {
+  text-align: center;
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+      content: "→";
+      color: var(--blue-600);
+      font-size: 44px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline  {
+    .step {
+      &:after {
+        content: "↓";
+        margin: 1.25rem;
+        color: var(--blue-600);
+        font-size: 44px;
+      }
+    }
+  }
+}
