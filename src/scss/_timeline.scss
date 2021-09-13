@@ -6,10 +6,13 @@
     align-items: center;
     justify-content: center;
     &:after {
-      content: "→";
+      display: block;
+      content: ' ';
+      background-image: url('../images/arrow-right-circle.svg');
+      background-size: 28px 28px;
       text-shadow: 1px 1px var(--blue-900);
-      color: var(--blue-600);
-      font-size: 44px;
+      height: 28px;
+      width: 28px;
     }
   }
 }
@@ -18,10 +21,15 @@
   .timeline  {
     .step {
       &:after {
-        content: "↓";
         margin: 1.25rem;
-        color: var(--blue-600);
-        font-size: 44px;
+        display: block;
+        content: ' ';
+        background-image: url('../images/arrow-right-circle.svg');
+        background-size: 28px 28px;
+        text-shadow: 1px 1px var(--blue-900);
+        height: 28px;
+        width: 28px;
+        transform:rotate(90deg);
       }
     }
   }

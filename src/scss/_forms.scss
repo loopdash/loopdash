@@ -1,0 +1,15 @@
+.field-wrapper {
+  display: block;
+  overflow: hidden;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.6875rem;
+  }
+  input {
+    @include font(20px);
+    padding: .875rem 0.875rem;
+    width: 100%;
+  }
+}

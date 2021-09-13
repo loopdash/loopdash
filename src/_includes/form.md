@@ -1,8 +1,16 @@
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-  hbspt.forms.create({
-	region: "na1",
-	portalId: "19938154",
-	formId: "d2119f61-ab35-44f8-8dc7-c2cb76df1486"
-});
-</script>
+<form name="contact" method="POST" data-netlify="true">
+
+  <div class="field-wrapper">
+    <label>Your Name:</label>
+    <input type="text" name="name" />
+  </div>
+
+  <div class="field-wrapper">
+    <label>Your Email:</label>
+    <input type="email" name="email" />
+  </div>
+
+  <div class="field-wrapper">
+    <button type="submit" class="btn btn-white">Send</button>
+  </div>
+</form>

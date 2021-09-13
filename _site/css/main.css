@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --green-50: #D5FFD5;
   --gray-900: #000000;
@@ -469,6 +468,30 @@ table {
   max-width: var(--breakpoint-md);
 }
 
+nav {
+  max-width: var(--breakpoint-md);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li *:first-of-type {
+  justify-content: start;
+}
+nav ul li a {
+  padding: 0.675rem 1.385rem;
+}
+
 :root {
   --green-50: #D5FFD5;
   --gray-900: #000000;
@@ -658,11 +681,16 @@ strong {
 
 .hero {
   font-family: var(--font-family);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-items: center;
   margin-bottom: 2.25rem;
+  display: flex;
+  height: 50vh;
+  min-height: 600px;
+  padding: 1rem;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .hero--content {
   height: auto;
@@ -670,12 +698,13 @@ strong {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 56rem;
+  width: var(--breakpoint-sm);
   overflow: hidden;
 }
 .hero h1 {
   text-transform: uppercase;
   font-weight: 400;
+  color: var(--blue-700);
   font-family: var(--font-mono);
   font-size: 13.6px;
   font-weight: 500;
@@ -683,6 +712,18 @@ strong {
   line-height: 16.1185185185px;
   letter-spacing: -0.035rem;
   margin-bottom: 0.25rem;
+}
+.hero h2 {
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 21.9428571429px;
+  line-height: 71.1111111111px;
+  letter-spacing: -0.035rem;
+}
+.hero p {
+  color: var(--blue-50);
 }
 
 .card {
@@ -2303,25 +2344,28 @@ strong {
   justify-content: center;
 }
 .timeline .step:after {
-  content: "→";
+  display: block;
+  content: " ";
+  background-image: url("../images/arrow-right-circle.svg");
+  background-size: 28px 28px;
   text-shadow: 1px 1px var(--blue-900);
-  color: var(--blue-600);
-  font-size: 44px;
+  height: 28px;
+  width: 28px;
 }
 
 @media screen and (max-width: 768px) {
   .timeline .step:after {
-    content: "↓";
     margin: 1.25rem;
-    color: var(--blue-600);
-    font-size: 44px;
+    display: block;
+    content: " ";
+    background-image: url("../images/arrow-right-circle.svg");
+    background-size: 28px 28px;
+    text-shadow: 1px 1px var(--blue-900);
+    height: 28px;
+    width: 28px;
+    transform: rotate(90deg);
   }
 }
-.cta {
-  background: #fff;
-  padding: 1.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -2402,4 +2446,22 @@ footer a:hover {
 
 .cta {
   background: #fff;
+}
+
+.field-wrapper {
+  display: block;
+  overflow: hidden;
+}
+.field-wrapper label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.6875rem;
+}
+.field-wrapper input {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  padding: 0.875rem 0.875rem;
+  width: 100%;
 }

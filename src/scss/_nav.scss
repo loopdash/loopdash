@@ -1,0 +1,28 @@
+nav {
+  max-width: var(--breakpoint-md);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  ul {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      *:first-of-type {
+        justify-content: start;
+      }
+      a {
+        padding: .675rem 1.385rem;
+
+      }
+    }
+  }
+}

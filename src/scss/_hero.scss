@@ -2,11 +2,16 @@
 
 .hero {
   font-family: var(--font-family);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-items: center;
   margin-bottom: 2.25rem;
+  display: flex;
+  height: 50vh;
+  min-height: 600px;
+  padding: 1rem;
+  text-align:center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   &--content {
     height: auto;
@@ -14,14 +19,22 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: 56rem;
+    width: var(--breakpoint-sm);
     overflow: hidden;
   }
   
   h1 {
     text-transform: uppercase;
     font-weight: 400;
+    color: var(--blue-700);
     @include heading($font-size-base / 1.25);
     margin-bottom: 0.25rem;
+  }
+  h2 {
+    color: white;
+    @include heading(60px);
+  }
+  p {
+    color: var(--blue-50);
   }
 }
