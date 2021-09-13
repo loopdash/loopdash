@@ -43,35 +43,23 @@ h6 { @include heading(24px); }
 .h5 { @include heading(28px); }
 .h6 { @include heading(24px); }
 
-.text-center {
-  text-align: center;
-}
+.text-center { text-align: center; }
 
+.font-thin { font-weight: 400; }
 .font-bold,
 strong {
   font-weight: 600;
 }
 
-.flex {
-  display: flex;
+
+.close {
+  margin-right: 12px;
+  margin-bottom: 2px;
+  width: 20px
 }
-.flex-item {
-  flex-basis: 100%;
-}
-.flex-direction-row {
-  flex-direction: row;
-}
-.flex-direction-column {
-  flex-direction: column;
-}
-.justify-center {
-  justify-content: center;
-}
-.align-center {
-  align-content: center;
-}
-@media screen and (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-  }
+
+.checkmark {
+  margin-right: 12px;
+  margin-bottom: 2px;
+  width: 20px
 }

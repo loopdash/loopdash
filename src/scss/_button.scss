@@ -22,7 +22,11 @@
 .btn-white {
   color: #fff;
   background-color: #fff;
-  background-color: #fff;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: var(--blue-400);
 }
 
 .btn-o-white {
@@ -38,5 +42,21 @@
     background-color: transparent;
     background-image: none;
     border-color: var(--blue-900);
+  }
+}
+
+.btn-o-blue {
+  color: var(--blue-400);
+  background-color: transparent;
+  background-image: none;
+  border-color: var(--blue-400);;
+
+  &:hover,
+  &:focus {
+    border-radius: 0;
+    color: #ffffff;
+    background-color: var(--blue-400);
+    background-image: none;
+    border-color: var(--blue-400);
   }
 }

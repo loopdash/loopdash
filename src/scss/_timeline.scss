@@ -7,6 +7,7 @@
     justify-content: center;
     &:after {
       content: "→";
+      text-shadow: 1px 1px var(--blue-900);
       color: var(--blue-600);
       font-size: 44px;
     }
