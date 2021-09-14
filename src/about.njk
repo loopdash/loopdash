@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/about.njk
 title: About Us - Loopdash
 h1: About Loopdash
 h2: Loopdash makes sites & apps on the internet.
@@ -36,43 +36,18 @@ sitemap:
   </p>
 </div>
 
-
-<div class="pt-20 pb-12">
-  <div class="mb-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="lg:text-center">
-        <h3 class="font-mono text-sm mb-2 font-mono">
-          Loopdash Team
-        </h3>
-        <h5 class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
-          We're a team of devs & designers.
-        </h5>
-        <p class="mt-4 max-w-2xl text-xl text-gray-500 text-base lg:mx-auto">
-          Our developers have been building websites and apps for over a decade. Everything we make is user friendly and built the the right way.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-6xl flex justify-center items-center mx-auto mb-3 ">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {% for member in collections.members %}
-        <div class="bg-gray-100 rounded-xl p-3 mb-1">
-          <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-3 md:col-span-2">
-              <img src={{member.data.image}} alt="a memoji of anthony" class="object-contain w-24 h-24">
-            </div>
-            <div class="col-span-9 md:col-span-10 flex flex-wrap flex-col self-center">
-              <p class="block font-semibold mb-0 text-lg text-gray-800">{{ member.data.name }},
-                <span class="text-gray-400">
-                  {{ member.data.title }}
-                </span>
-              </p>
-              <p class="text-gray-500 text-base">
-                {{ member.data.description }}
-              </p>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
+<div class="bg-blue-500">
+{% for member in collections.members %}
+<div class="bg-blue-50">
+  <img src={{member.data.image}} alt="" class="">
+  <p class="text-gray-800">{{ member.data.name }},
+    <span class="text-gray-400">
+      {{ member.data.title }}
+    </span>
+  </p>
+  <p class="text-gray-500 text-base">
+    {{ member.data.description }}
+  </p>
+</div>
+{% endfor %}
+</div>

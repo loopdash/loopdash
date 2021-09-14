@@ -3,10 +3,7 @@
   {% include 'head.njk' %}
   <body>
     {% include 'nav.njk' %}
-    {% include 'hero.md' %}
-    <section class="mx-auto md:max-w-xl xl:max-w-4xl">
-      {{ content | safe }}
-    </section>
+    {{ content | safe }}
     {% include 'footer.njk' %}
   </body>
 </html>

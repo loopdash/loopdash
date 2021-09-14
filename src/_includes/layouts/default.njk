@@ -3,10 +3,11 @@
   {% include 'head.njk' %}
   <body>
     {% include 'nav.njk' %}
-    {% include 'hero.md' %}
-    <section class="mx-auto md:max-w-xl xl:max-w-4xl p-4 mb-20">
+        <h1>{{ h1 }}</h1>
+        <h2>{{ h2 }}</h2>
+        <p class="h4 font-thin">{{ description }}</p>
       {{ content | safe }}
-    </section>
+    </div>
     {% include 'footer.njk' %}
   </body>
 </html>

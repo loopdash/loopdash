@@ -27,7 +27,7 @@
     text-transform: uppercase;
     font-weight: 400;
     color: var(--blue-700);
-    @include heading($font-size-base / 1.25);
+    @include heading(16px);
     margin-bottom: 0.25rem;
   }
   h2 {
