@@ -32,7 +32,6 @@
   }
   h2 {
     color: white;
-    @include heading(60px);
   }
   p {
     color: var(--blue-50);
