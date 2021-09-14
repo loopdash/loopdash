@@ -1,4 +1,4 @@
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true" action="/thank-you">
   <div class="field-wrapper">
     <label>Your Name</label>
     <input type="text" name="name" />
