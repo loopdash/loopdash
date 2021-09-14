@@ -1,5 +1,5 @@
 ---
-layout: layouts/default.njk
+layout: layouts/cover.njk
 title: Documents - Loopdash
 h1: Loopdash Documents
 h2: Documents
@@ -14,11 +14,11 @@ sitemap:
     <a href="{{ document.url }}" class="text-decoration-none">
       <section class="mb-12">
         <div>
-          <h3 class="h6 text-blue-900">
+          <h3 class="h5 text-blue-800 flex flex-row"><img src="../images/folder.svg" class="folder" />
             {{ document.data.h2 }}
           </h3>
         </div>
-        <p class="text-gray-500">
+        <p class="text-white">
           {{ document.data.description }}
         </p>
       </section>

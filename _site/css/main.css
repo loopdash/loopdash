@@ -470,14 +470,18 @@ table {
 
 nav {
   max-width: var(--breakpoint-md);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 auto 2.25rem;
+  overflow: auto;
+  white-space: nowrap;
 }
 nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
   text-decoration: none;
   color: #ffffff;
+  padding: 1.125rem 1.385rem;
 }
 nav ul {
   margin-top: 1rem;
@@ -487,9 +491,6 @@ nav ul {
 }
 nav ul li *:first-of-type {
   justify-content: start;
-}
-nav ul li a {
-  padding: 0.675rem 1.385rem;
 }
 
 :root {
@@ -731,6 +732,20 @@ h6 {
   border-color: #fff;
 }
 
+.card-dotted .content {
+  position: relative;
+  background: #fff;
+}
+.card-dotted:before {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  top: 16px;
+  left: 16px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%23ffffff'/%3E%3C/svg%3E") repeat bottom right;
+}
+
 .card-blue-900 {
   border-color: var(--blue-900);
 }
@@ -827,18 +842,17 @@ h6 {
 }
 
 .btn-o-white {
-  color: var(--blue-400);
+  color: #fff;
   background-color: transparent;
   background-image: none;
-  border-color: var(--blue-400);
+  border-color: #fff;
 }
 .btn-o-white:hover, .btn-o-white:focus {
   border-radius: 0;
   color: var(--blue-900);
-  border: 1px;
+  border: 1px solid var(--blue-900);
   background-color: transparent;
   background-image: none;
-  border-color: var(--blue-900);
 }
 
 .btn-o-blue {
@@ -2487,16 +2501,8 @@ footer a:hover {
   width: 20px;
 }
 
-.document--title {
-  display: flex;
-  align-items: center;
-}
-.document--title:before {
-  margin: 0 0.125rem 0 0;
-  content: "";
-  background: url("../images/folder.svg") no-repeat;
-  background-size: 20px 20px;
-  width: 24px;
-  height: 20px;
-  display: inline-block;
+.folder {
+  margin-right: 12px;
+  margin-bottom: 2px;
+  width: 20px;
 }

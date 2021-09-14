@@ -1,27 +1,18 @@
 <nav>
-  <a href="/" class="font-semibold text-xl tracking-loose">
-    LoopDash
-  </a>
-  <ul>
-    <li>
-      <a href="/about" class="{{ 'bg-blue-500 text-white' if '/documents' in page.url }}">
+  
+      <a href="/" class="font-semibold text-xl tracking-loose">
+        LoopDash
+      </a>
+      <a href="/about" class="{{ 'bg-blue-500 text-white' if '/about' in page.url }}">
         About
       </a>
-    </li>
-    <li>
-      <a href="/services" class="{{ 'bg-blue-500 text-white' if '/documents' in page.url }}">
+      <a href="/services" class="{{ 'bg-blue-500 text-white' if '/services' in page.url }}">
         Services
       </a>
-    </li>
-    <li>
       <a href="/documents" class="{{ 'bg-blue-500 text-white' if '/documents' in page.url }}">
         Documents
       </a>
-    </li>
-    <li>
-      <a href="/contact" class="">
+      <a href="/contact" class="{{ 'bg-blue-500 text-white' if '/contact' in page.url }}">
         Contact
       </a>
-    </li>
-  </ul>
 </nav>

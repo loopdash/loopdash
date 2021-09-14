@@ -10,17 +10,8 @@
   width: 20px
 }
 
-.document--title {
-  display: flex;
-  align-items: center;
-  &:before {
-    margin: 0 0.125rem 0 0;
-    content: "";
-    background: url('../images/folder.svg') no-repeat;
-    background-size: 20px 20px;
-    width: 24px;
-    height: 20px;
-    display: inline-block;
-  }
+.folder {
+  margin-right: 12px;
+  margin-bottom: 2px;
+  width: 20px
 }
-  

@@ -3,11 +3,12 @@
   {% include 'head.njk' %}
   <body>
     {% include 'nav.njk' %}
+      <div class="wrapper-sm mt-20">
         <h1>{{ h1 }}</h1>
         <h2>{{ h2 }}</h2>
         <p class="h4 font-thin">{{ description }}</p>
+      </div>
       {{ content | safe }}
     </div>
-    {% include 'footer.njk' %}
   </body>
 </html>

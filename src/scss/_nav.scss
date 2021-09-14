@@ -1,13 +1,16 @@
 nav {
   max-width: var(--breakpoint-md);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  margin: 0 auto 2.25rem;
+  overflow: auto;
+  white-space: nowrap;
   a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
     text-decoration: none;
     color: #ffffff;
+    padding: 1.125rem 1.385rem;
   }
 
   ul {
@@ -18,10 +21,6 @@ nav {
     li {
       *:first-of-type {
         justify-content: start;
-      }
-      a {
-        padding: .675rem 1.385rem;
-
       }
     }
   }

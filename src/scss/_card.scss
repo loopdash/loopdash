@@ -8,6 +8,22 @@
   border-color: #fff;
 }
 
+.card-dotted {
+  .content {
+    position: relative;
+    background: #fff;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    top: 16px;
+    left: 16px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Ccircle cx='2.5' cy='2.5' r='.5' fill='%23ffffff'/%3E%3C/svg%3E") repeat bottom right;
+  }
+}
+
 .card-blue-900 { border-color: var(--blue-900); }
 .card-blue-800 { border-color: var(--blue-800); }
 .card-blue-700 { border-color: var(--blue-700); }
