@@ -538,6 +538,7 @@ nav ul li *:first-of-type {
 
 h1 {
   font-size: calc(1.475rem + 2.7vw);
+  font-weight: 500;
   line-height: 1.35em;
 }
 @media (min-width: 1200px) {
@@ -547,17 +548,19 @@ h1 {
 }
 
 h2 {
-  font-size: calc(1.45rem + 2.4vw);
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
   h2 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 }
 
 h3 {
   font-size: calc(1.4rem + 1.8vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -568,6 +571,7 @@ h3 {
 
 h4 {
   font-size: calc(1.375rem + 1.5vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -578,6 +582,7 @@ h4 {
 
 h5 {
   font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -588,6 +593,7 @@ h5 {
 
 h6 {
   font-size: calc(1.275rem + 0.3vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -598,6 +604,7 @@ h6 {
 
 p, ul, li {
   font-size: 1rem;
+  font-weight: 300;
   margin-bottom: 1rem;
   line-height: 1.5em;
 }
@@ -608,6 +615,7 @@ ul, li {
 
 .h1 {
   font-size: calc(1.475rem + 2.7vw);
+  font-weight: 500;
   line-height: 1.35em;
 }
 @media (min-width: 1200px) {
@@ -617,17 +625,19 @@ ul, li {
 }
 
 .h2 {
-  font-size: calc(1.45rem + 2.4vw);
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
   .h2 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 }
 
 .h3 {
   font-size: calc(1.4rem + 1.8vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -638,6 +648,7 @@ ul, li {
 
 .h4 {
   font-size: calc(1.375rem + 1.5vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -648,6 +659,7 @@ ul, li {
 
 .h5 {
   font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -658,6 +670,7 @@ ul, li {
 
 .h6 {
   font-size: calc(1.275rem + 0.3vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -711,13 +724,8 @@ ul, li {
 .hero h1 {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1rem;
   color: var(--blue-700);
-  font-family: var(--font-mono);
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 5.8514285714px;
-  line-height: 18.962962963px;
-  letter-spacing: -0.035rem;
   margin-bottom: 0.25rem;
 }
 .hero h2 {
@@ -804,10 +812,7 @@ ul, li {
   -ms-user-select: none;
   user-select: none;
   padding: 0.5875rem 1rem;
-  font-family: var(--font-sans);
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 32px;
+  font-size: 1rem;
   font-weight: 600;
   padding: 0.75rem 0.875rem;
   line-height: 1.5;
@@ -1010,6 +1015,7 @@ ul, li {
 
 h1 {
   font-size: calc(1.475rem + 2.7vw);
+  font-weight: 500;
   line-height: 1.35em;
 }
 @media (min-width: 1200px) {
@@ -1019,17 +1025,19 @@ h1 {
 }
 
 h2 {
-  font-size: calc(1.45rem + 2.4vw);
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
   h2 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 }
 
 h3 {
   font-size: calc(1.4rem + 1.8vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1040,6 +1048,7 @@ h3 {
 
 h4 {
   font-size: calc(1.375rem + 1.5vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1050,6 +1059,7 @@ h4 {
 
 h5 {
   font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1060,6 +1070,7 @@ h5 {
 
 h6 {
   font-size: calc(1.275rem + 0.3vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1070,6 +1081,7 @@ h6 {
 
 p, ul, li {
   font-size: 1rem;
+  font-weight: 300;
   margin-bottom: 1rem;
   line-height: 1.5em;
 }
@@ -1080,6 +1092,7 @@ ul, li {
 
 .h1 {
   font-size: calc(1.475rem + 2.7vw);
+  font-weight: 500;
   line-height: 1.35em;
 }
 @media (min-width: 1200px) {
@@ -1089,17 +1102,19 @@ ul, li {
 }
 
 .h2 {
-  font-size: calc(1.45rem + 2.4vw);
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
   .h2 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
 }
 
 .h3 {
   font-size: calc(1.4rem + 1.8vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1110,6 +1125,7 @@ ul, li {
 
 .h4 {
   font-size: calc(1.375rem + 1.5vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1120,6 +1136,7 @@ ul, li {
 
 .h5 {
   font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -1130,6 +1147,7 @@ ul, li {
 
 .h6 {
   font-size: calc(1.275rem + 0.3vw);
+  font-weight: 500;
   line-height: 1.2em;
 }
 @media (min-width: 1200px) {
@@ -2480,17 +2498,11 @@ footer a:hover {
 .field-wrapper label {
   display: block;
   font-weight: 600;
-  font-family: var(--font-sans);
-  font-size: 18px;
-  line-height: 28.8px;
-  margin-bottom: 28.8px;
+  font-size: 1rem;
   margin-bottom: 0.6875rem;
 }
 .field-wrapper input {
-  font-family: var(--font-sans);
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 32px;
+  font-size: 1rem;
   padding: 0.75rem 0.875rem;
   width: 100%;
   color: var(--gray-400);
