@@ -2521,7 +2521,10 @@ footer a:hover {
 }
 .field-wrapper input:focus, .field-wrapper input:active {
   outline: none;
-  border: 1px solid var(--blue-600);
+  border: 2px solid var(--blue-600);
+}
+.field-wrapper input[type=checkbox] {
+  width: auto;
 }
 .field-wrapper select {
   font-size: 1rem;
@@ -2550,7 +2553,7 @@ footer a:hover {
 }
 .field-wrapper textarea:focus, .field-wrapper textarea:active {
   outline: none;
-  border: 1px solid var(--blue-600);
+  border: 2px solid var(--blue-6);
 }
 
 .close {

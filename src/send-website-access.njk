@@ -1,20 +1,20 @@
 ---
 layout: layouts/cover.njk
-title: Access - Loopdash
-h1: Access Loopdash
+title: Send Website Access - Loopdash
+h1: Send Website Access
 h2: Let's get started
-description: Send us your credentials and we will start your project.
+description: Send your website credentials.
 sitemap:
   changefreq: weekly
   priority: 1.0
 ---
 
 <div class="wrapper-sm">
-  <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+  <form name="website-access" method="POST" data-netlify="true" action="/thank-you">
 
     <div class="field-wrapper">
       <label>Domain name of site</label>
-      <input type="domain_name" name="domain_name" />
+      <input type="text" name="domain_name" />
     </div>
 
     <div class="field-wrapper">
@@ -51,41 +51,42 @@ sitemap:
 
     <div class="field-wrapper">
       <label>Hosting panel login URL</label>
-      <input type="hosting_panel_login_url" name="hosting_panel_login_url" />
+      <input type="text" name="hosting_panel_login_url" />
     </div>
 
     <div class="field-wrapper">
       <label>Hosting panel username</label>
-      <input type="hosting_panel_username" name="hosting_panel_username" />
+      <input type="text" name="hosting_panel_username" />
     </div>
 
     <div class="field-wrapper">
       <label>Hosting panel password</label>
-      <input type="hosting_panel_password" name="hosting_panel_password" />
+      <input type="password" name="hosting_panel_password" />
     </div>
 
     <div class="field-wrapper">
-      <input type="checkbox" id="is_wordpress" name="is_wordpress">
-      <label for="is_wordpress">Is it a WordPress site?</label>
+      <label for="is_wordpress" class="flex">
+        <input type="checkbox" id="is_wordpress" name="is_wordpress">
+        Is it a WordPress site?
+      </label>
     </div>
 
     <div id="wp_questions">
       <div class="field-wrapper">
         <label>WordPress username</label>
-        <input type="wordpress_username" name="wordpress_username" />
+        <input type="text" name="wordpress_username" />
       </div>
 
       <div class="field-wrapper">
         <label>WordPress password</label>
-        <input type="wordpress_password" name="wordpress_password" />
+        <input type="password" name="wordpress_password" />
       </div>
 
       <div class="field-wrapper">
         <label>WordPress admin URL</label>
-        <input type="wordpress_admin_url" name="wordpress_admin_url" />
+        <input type="text" name="wordpress_admin_url" />
       </div>
     </div>
-
 
     <div class="field-wrapper">
       <label for="special_instructions">Any special instructions?</label>
