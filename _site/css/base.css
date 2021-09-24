@@ -108,6 +108,328 @@ sub {
   bottom: -0.25em;
 }
 
+body, html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #3f3f3f;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background: #39c0c8;
+  color: #fff;
+}
+
+::selection {
+  background: #39c0c8;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #39c0c8;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .scroll {
+    opacity: 0;
+  }
+  .scroll.is-visible.fadeUp {
+    -webkit-animation: fadeUp;
+            animation: fadeUp;
+    -webkit-animation-name: fadeUp;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+            animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .scroll.is-visible.fadeLeft {
+    -webkit-animation: fadeLeft;
+            animation: fadeLeft;
+    -webkit-animation-name: fadeLeft;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+            animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .scroll.is-visible.fadeRight {
+    -webkit-animation: fadeRight;
+            animation: fadeRight;
+    -webkit-animation-name: fadeRight;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+            animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+.animate-items .item {
+  opacity: 1;
+}
+@media (min-width: 600px) {
+  .animate-items .item {
+    opacity: 0;
+  }
+}
+
+.base h2 {
+  position: relative;
+  z-index: 2;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3f3f3f;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+}
+@media (min-width: 600px) {
+  .base h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 900px) {
+  .base h2 {
+    font-size: 43px;
+  }
+}
+@media (min-width: 1024px) {
+  .base h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .base h2 {
+    font-size: 60px;
+  }
+}
+.base h3 {
+  position: relative;
+  z-index: 2;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3f3f3f;
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+}
+@media (min-width: 600px) {
+  .base h3 {
+    font-size: 27px;
+  }
+}
+@media (min-width: 900px) {
+  .base h3 {
+    font-size: 32px;
+  }
+}
+.base a:not(.button):not(.document-title) {
+  position: relative;
+  display: inline-block;
+  color: #3f3f3f;
+  transition: 275ms ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.base a:not(.button):not(.document-title) span {
+  position: relative;
+}
+.base a:not(.button):not(.document-title):hover span {
+  color: #39c0c8;
+}
+.base a:not(.button):not(.document-title):hover::before {
+  transform: scaleX(0);
+}
+.base a:not(.button):not(.document-title)::before {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  opacity: 0.8;
+  background: linear-gradient(to left, #74d3d8, #39c0c8);
+  text-decoration: underline;
+  white-space: nowrap;
+  overflow: hidden;
+  transform-origin: left;
+  transition: transform 275ms ease;
+}
+.base p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+@media (min-width: 900px) {
+  .base p {
+    font-size: 18px;
+  }
+}
+.base p strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.base p em {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.base p strong em,
+.base p em strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.base ol {
+  list-style: none;
+  counter-reset: a;
+  margin: 0 0 30px 20px;
+}
+@media (min-width: 900px) {
+  .base ol {
+    margin: 0 0 30px 30px;
+  }
+}
+.base ol li {
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  padding-left: 20px;
+  font-size: 16px;
+}
+@media (min-width: 900px) {
+  .base ol li {
+    font-size: 18px;
+  }
+}
+.base ol li::before {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  text-indent: -35px;
+  counter-increment: a;
+  content: counter(a) ".";
+  color: #39c0c8;
+}
+.base table thead th {
+  background: #39c0c8;
+  color: white;
+  padding: 13px 10px 10px;
+  line-height: normal;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.base table tbody {
+  border: 1px solid #f2f2f2;
+  border-radius: 0 3px 3px 0;
+  background: white;
+}
+.base table tbody td {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  background: #39c0c8;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  padding: 13px 10px;
+  border-radius: 3px;
+  min-width: 200px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: ease-in all 0.2s;
+}
+@media (min-width: 600px) {
+  .button {
+    font-size: 18px;
+  }
+}
+.button::after {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: sub;
+  content: "";
+  transition: ease-in all 0.2s;
+}
+.button:hover {
+  background: #3f3f3f;
+  color: #fff;
+}
+.button:hover::after {
+  transform: translateX(5px);
+}
+
+.wrap1400 {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.wrap1100 {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.wrap1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.wrap900 {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
 @-webkit-keyframes fadeUp {
   0% {
     filter: alpha(opacity=0);
@@ -422,257 +744,6 @@ sub {
   border: none;
 }
 
-body, html {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #3f3f3f;
-  font-size: 18px;
-  overflow-x: hidden;
-}
-
-::-moz-selection {
-  background: #39c0c8;
-  color: #fff;
-}
-
-::selection {
-  background: #39c0c8;
-  color: #fff;
-}
-
-::-moz-selection {
-  background: #39c0c8;
-  color: #fff;
-}
-
-@media (min-width: 600px) {
-  .scroll {
-    opacity: 0;
-  }
-  .scroll.is-visible.fadeUp {
-    -webkit-animation: fadeUp;
-            animation: fadeUp;
-    -webkit-animation-name: fadeUp;
-    -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
-            animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .scroll.is-visible.fadeLeft {
-    -webkit-animation: fadeLeft;
-            animation: fadeLeft;
-    -webkit-animation-name: fadeLeft;
-    -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
-            animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .scroll.is-visible.fadeRight {
-    -webkit-animation: fadeRight;
-            animation: fadeRight;
-    -webkit-animation-name: fadeRight;
-    -webkit-animation-duration: 0.6s;
-            animation-duration: 0.6s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
-            animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-}
-.animate-items .item {
-  opacity: 1;
-}
-@media (min-width: 600px) {
-  .animate-items .item {
-    opacity: 0;
-  }
-}
-
-.wrap1400 {
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 94%;
-}
-
-.wrap1100 {
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 94%;
-}
-
-.wrap1000 {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 94%;
-}
-
-.wrap900 {
-  max-width: 900px;
-  margin: 0 auto;
-  width: 94%;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.base h2 {
-  position: relative;
-  z-index: 2;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  color: #3f3f3f;
-  font-size: 32px;
-  margin-bottom: 20px;
-  letter-spacing: -0.03em;
-}
-@media (min-width: 600px) {
-  .base h2 {
-    font-size: 36px;
-  }
-}
-@media (min-width: 900px) {
-  .base h2 {
-    font-size: 43px;
-  }
-}
-@media (min-width: 1024px) {
-  .base h2 {
-    font-size: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  .base h2 {
-    font-size: 60px;
-  }
-}
-.base p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.8;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-@media (min-width: 900px) {
-  .base p {
-    font-size: 18px;
-  }
-}
-.base p strong {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.base ol {
-  list-style: none;
-  counter-reset: a;
-  margin: 0 0 30px 20px;
-}
-@media (min-width: 900px) {
-  .base ol {
-    margin: 0 0 30px 30px;
-  }
-}
-.base ol li {
-  position: relative;
-  margin-bottom: 15px;
-  line-height: 1.4;
-  padding-left: 20px;
-}
-.base ol li::before {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  position: absolute;
-  text-indent: -35px;
-  counter-increment: a;
-  content: counter(a) ".";
-  color: #39c0c8;
-}
-.base table thead th {
-  background: #39c0c8;
-  color: white;
-  padding: 13px 10px 10px;
-  line-height: normal;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-.base table tbody {
-  border: 1px solid #f2f2f2;
-  border-radius: 0 3px 3px 0;
-  background: white;
-}
-.base table tbody td {
-  padding: 10px;
-  font-size: 16px;
-}
-
-.button {
-  position: relative;
-  display: inline-block;
-  background: #39c0c8;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: normal;
-  padding: 13px 10px;
-  border-radius: 3px;
-  min-width: 200px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: ease-in all 0.2s;
-}
-@media (min-width: 600px) {
-  .button {
-    font-size: 18px;
-  }
-}
-.button::after {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 24px;
-  display: inline-block;
-  vertical-align: sub;
-  content: "";
-  transition: ease-in all 0.2s;
-}
-.button:hover {
-  background: #3f3f3f;
-  color: #fff;
-}
-.button:hover::after {
-  transform: translateX(5px);
-}
-
 .page-hero .hero {
   text-align: center;
   margin: 90px auto;
@@ -768,13 +839,11 @@ body, html {
 }
 @media (min-width: 600px) {
   .page-hero h1 {
-    margin-bottom: 20px;
     font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
   .page-hero h1 {
-    margin-bottom: 30px;
     font-size: 24px;
   }
 }
@@ -788,6 +857,8 @@ body, html {
   line-height: 1;
   letter-spacing: -0.03em;
   color: #3f3f3f;
+  line-height: 0.95;
+  margin-bottom: 20px;
 }
 @media (min-width: 600px) {
   .page-hero p.subheadline {
@@ -797,12 +868,6 @@ body, html {
 @media (min-width: 900px) {
   .page-hero p.subheadline {
     font-size: 72px;
-    line-height: 0.8;
-  }
-}
-@media (min-width: 1200px) {
-  .page-hero p.subheadline {
-    font-size: 90px;
   }
 }
 .page-hero p:not(.subheadline) {
@@ -1231,25 +1296,30 @@ body, html {
   }
 }
 
-.document .page-hero .hero h1 {
-  margin-bottom: 10px;
+.documents {
+  position: relative;
+  z-index: 2;
 }
-.document .page-hero .hero p.subheadline {
-  font-size: 36px;
-  line-height: 0.95;
-  margin-bottom: 20px;
+.documents li {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
 }
-@media (min-width: 600px) {
-  .document .page-hero .hero p.subheadline {
-    font-size: 60px;
-  }
+.documents li:last-of-type {
+  border: none;
 }
-@media (min-width: 900px) {
-  .document .page-hero .hero p.subheadline {
-    font-size: 72px;
-  }
+.documents li .document-title {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
-.document .content {
+.documents li .document-title h3 {
+  display: inline-block;
+}
+.documents li .document-title:hover h3 {
+  color: #39c0c8;
+}
+
+.document {
   position: relative;
   z-index: 2;
 }
@@ -1328,7 +1398,7 @@ body, html {
 @media (min-width: 900px) {
   .site-header .menu li:not(.btn) a {
     font-family: "Calibre", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     color: #3f3f3f;
     cursor: pointer;

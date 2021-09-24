@@ -12,12 +12,12 @@ sitemap:
 {% include 'page-hero.njk' %}
 
 <article class="documents">
-  <div class="wrap1000">
+  <div class="wrap900">
     <ul>
       {% for document in collections.documents %}
-      <li>
-        <a href="{{ document.url }}" class="text-decoration-none">
-          <h2>{{ document.data.h1 }}</h2>
+      <li class="base scroll fadeUp">
+        <a href="{{ document.url }}" class="document-title">
+          <h3>{{ document.data.subheadline }}</h3>
         </a>
         <p>
           {{ document.data.description }}
