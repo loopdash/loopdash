@@ -95,11 +95,12 @@
 .mobile-toggle-container
   display: block
   position: relative
-  width: 80px
+  width: 55px
   height: 55px
   cursor: pointer
   z-index: 999
   display: block
+  right: 10px
   @media (min-width: $break-mid)
     display: none
 .mobile-toggle
@@ -127,8 +128,9 @@
     left: 0
     right: 0
     margin: 0 auto
-    width: 50px
-    height: 3px
+    width: 40px
+    height: 4px
+    border-radius: 3px
     background: $dcyan
     content: ""
     opacity: 1
@@ -145,11 +147,12 @@
     position: absolute
     left: 0
     right: 0
-    top: 0
+    top: -1px
     margin: 0 auto
     display: block
-    width: 50px
-    height: 3px
+    width: 40px
+    height: 4px
+    border-radius: 3px
     background: $dcyan
     transition: all .2s ease
     transition-timing-function: cubic-bezier(.75,0,.29,1.01)
@@ -166,6 +169,20 @@
       width: 100%
       height: 100%
       transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1)
+      &::after
+        content: ''
+        background-image: url(../images/blob.svg)
+        display: block
+        height: 100%
+        right: -20%
+        top: -20%
+        opacity: 0.1
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        z-index: 1
+        position: absolute
+        width: 100%
     .site-logo
       position: relative
       &::after
@@ -193,6 +210,8 @@
         visibility: hidden
         opacity: 1
     .menu
+      position: relative
+      z-index: 2
       display: block
       visibility: visible !important
       opacity: 1 !important
@@ -204,6 +223,7 @@
       li
         margin-bottom: 30px
         a
+          +headline
           font-size: 32px
           color: #fff
     .mobile-toggle

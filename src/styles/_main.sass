@@ -94,12 +94,11 @@ body,html
 .button
   position: relative
   display: inline-block
-  background: white
-  color: $black
+  background: $dcyan
+  color: white
   +font-b
   line-height: normal
-  padding: 12px 30px
-  border: 1px solid $black
+  padding: 13px 10px
   border-radius: 3px
   min-width: 200px
   font-size: 16px
@@ -117,9 +116,8 @@ body,html
     content: '\e902'
     transition: ease-in all .2s
   &:hover
-    background: $dcyan
+    background: $black
     color: #fff
-    border-color: $dcyan
     &::after
       transform: translateX(5px)
 
@@ -161,6 +159,14 @@ body,html
         margin: 0
       p:not(.subheadline)
         margin: 0
+      p.subheadline
+        font-size: 36px
+        @media (min-width: $break-hand)
+          font-size: 60px
+        @media (min-width: $break-mid)
+          font-size: 90px
+        @media (min-width: $break-laptop)
+          font-size: 110px
   h1
     position: relative
     z-index: 2
@@ -187,21 +193,21 @@ body,html
     @media (min-width: $break-hand)
       font-size: 60px
     @media (min-width: $break-mid)
-      font-size: 90px
+      font-size: 72px
       line-height: .8
     @media (min-width: $break-laptop)
-      font-size: 110px
+      font-size: 90px
   p:not(.subheadline)
     position: relative
     z-index: 2
     font-size: 18px
     line-height: 1.6
     margin: 0 auto
-    max-width: 600px
+    max-width: 700px
     @media (min-width: $break-hand)
-      font-size: 21px
+      font-size: 20px
     @media (min-width: $break-laptop)
-      font-size: 26px
+      font-size: 24px
     + .button
       margin-top: 30px
   .button
@@ -281,14 +287,10 @@ body,html
         padding: 40px 40px 60px
       .button
         position: absolute
-        bottom: -25px
+        bottom: -26px
         left: 0
         right: 0
         margin: 0 auto
-        border: none
-        background: $cyan
-        color: #fff
-        padding: 12px 10px 15px
         width: 200px
         &:hover
           background: $black
@@ -452,11 +454,3 @@ body,html
         font-size: 20px
       @media (min-width: $break-mid)
         font-size: 24px
-    .button
-      background: $dcyan
-      border-color: $dcyan
-      color: #fff
-      &:hover
-        border-color: $black
-        background: $black
-        color: #fff
