@@ -84,12 +84,45 @@ body,html
   p
     +font
     line-height: 1.8
-    font-size: 18px
+    font-size: 16px
     margin-bottom: 30px
     @media (min-width: $break-mid)
-      font-size: 20px
+      font-size: 18px
     strong
       +font-b
+  ol
+    list-style: none
+    counter-reset: a
+    margin: 0 0 30px 20px
+    @media (min-width: $break-mid)
+      margin: 0 0 30px 30px
+    li
+      position: relative
+      margin-bottom: 15px
+      line-height: 1.4
+      padding-left: 20px
+      &::before
+        +font-b
+        position: absolute
+        text-indent: -35px
+        counter-increment: a
+        content: counter(a)'.'
+        color: $dcyan
+  table
+    thead
+      th
+        background: $dcyan
+        color: white
+        padding: 13px 10px 10px
+        line-height: normal
+        +headline
+    tbody
+      border: 1px solid $lgray
+      border-radius: 0 3px 3px 0
+      background: white
+      td
+        padding: 10px
+        font-size: 16px
 
 .button
   position: relative
@@ -238,12 +271,21 @@ body,html
     margin: 0 auto
     @media (min-width: $break-mid)
       margin: 0 auto 0 -90px
+    p
+      font-size: 18px
+      @media (min-width: $break-mid)
+        font-size: 20px
 .why
   margin: 90px auto
   position: relative
   z-index: 2
   @media (min-width: $break-desk)
     margin: 160px auto
+  .intro
+    p
+      font-size: 18px
+      @media (min-width: $break-mid)
+        font-size: 20px
   .grid
     margin: 0 auto
     @media (min-width: $break-desk)
@@ -454,3 +496,19 @@ body,html
         font-size: 20px
       @media (min-width: $break-mid)
         font-size: 24px
+
+.document
+  .page-hero
+    .hero
+      h1
+        margin-bottom: 0
+      p.subheadline
+        font-size: 36px
+        line-height: normal
+        @media (min-width: $break-hand)
+          font-size: 60px
+        @media (min-width: $break-mid)
+          font-size: 72px
+  .content
+    position: relative
+    z-index: 2

@@ -568,18 +568,62 @@ body, html {
   font-weight: 300;
   font-style: normal;
   line-height: 1.8;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 @media (min-width: 900px) {
   .base p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .base p strong {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.base ol {
+  list-style: none;
+  counter-reset: a;
+  margin: 0 0 30px 20px;
+}
+@media (min-width: 900px) {
+  .base ol {
+    margin: 0 0 30px 30px;
+  }
+}
+.base ol li {
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  padding-left: 20px;
+}
+.base ol li::before {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  text-indent: -35px;
+  counter-increment: a;
+  content: counter(a) ".";
+  color: #39c0c8;
+}
+.base table thead th {
+  background: #39c0c8;
+  color: white;
+  padding: 13px 10px 10px;
+  line-height: normal;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.base table tbody {
+  border: 1px solid #f2f2f2;
+  border-radius: 0 3px 3px 0;
+  background: white;
+}
+.base table tbody td {
+  padding: 10px;
+  font-size: 16px;
 }
 
 .button {
@@ -824,6 +868,14 @@ body, html {
     margin: 0 auto 0 -90px;
   }
 }
+.below .intro p {
+  font-size: 18px;
+}
+@media (min-width: 900px) {
+  .below .intro p {
+    font-size: 20px;
+  }
+}
 
 .why {
   margin: 90px auto;
@@ -833,6 +885,14 @@ body, html {
 @media (min-width: 1024px) {
   .why {
     margin: 160px auto;
+  }
+}
+.why .intro p {
+  font-size: 18px;
+}
+@media (min-width: 900px) {
+  .why .intro p {
+    font-size: 20px;
   }
 }
 .why .grid {
@@ -1169,6 +1229,28 @@ body, html {
   .callout .base p {
     font-size: 24px;
   }
+}
+
+.document .page-hero .hero h1 {
+  margin-bottom: 0;
+}
+.document .page-hero .hero p.subheadline {
+  font-size: 36px;
+  line-height: normal;
+}
+@media (min-width: 600px) {
+  .document .page-hero .hero p.subheadline {
+    font-size: 60px;
+  }
+}
+@media (min-width: 900px) {
+  .document .page-hero .hero p.subheadline {
+    font-size: 72px;
+  }
+}
+.document .content {
+  position: relative;
+  z-index: 2;
 }
 
 .site-header {
