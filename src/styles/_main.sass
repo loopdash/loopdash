@@ -134,18 +134,24 @@ body,html
       z-index: 2
     .grid
       margin: 60px auto
-      align-items: center
+      align-items: flex-start
       @media (min-width: $break-mid)
         margin: 90px auto
       @media (min-width: $break-desk)
         margin: 150px 0 90px
-    .grid-item
-      width: 100%
-      @media (min-width: $break-mid)
-        width: 50%
-      &.graphic
+      .hero
         @media (min-width: $break-mid)
+          width: 450px
+        @media (min-width: $break-laptop)
+          width: 600px
+      .graphic
+        width: 100%
+        @media (min-width: $break-mid)
+          width: calc(100% - 450px)
           padding-left: 40px
+        @media (min-width: $break-laptop)
+          width: calc(100% - 600px)
+
     .hero
       margin: 0 0 40px
       text-align: left
@@ -158,15 +164,16 @@ body,html
   h1
     position: relative
     z-index: 2
-    +headline
+    +headline-b
     font-size: 16px
     letter-spacing: .1em
     margin-bottom: 10px
     color: $dcyan
     text-transform: uppercase
     @media (min-width: $break-hand)
+      margin-bottom: 20px
       font-size: 20px
-    @media (min-width: $break-desk)
+    @media (min-width: $break-laptop)
       margin-bottom: 30px
       font-size: 24px
   p.subheadline
@@ -180,25 +187,21 @@ body,html
     @media (min-width: $break-hand)
       font-size: 60px
     @media (min-width: $break-mid)
-      font-size: 80px
+      font-size: 90px
       line-height: .8
     @media (min-width: $break-laptop)
-      font-size: 95px
-    @media (min-width: $break-full)
-      font-size: 120px
+      font-size: 110px
   p:not(.subheadline)
     position: relative
     z-index: 2
     font-size: 18px
     line-height: 1.6
     margin: 0 auto
-    max-width: 665px
+    max-width: 600px
     @media (min-width: $break-hand)
       font-size: 21px
     @media (min-width: $break-laptop)
       font-size: 26px
-    @media (min-width: $break-full)
-      font-size: 30px
     + .button
       margin-top: 30px
   .button
@@ -363,7 +366,6 @@ body,html
       font-size: 32px
       content: '\e902'
       position: absolute
-
       top: 30px
       background: linear-gradient(to left,$cyan, $dcyan)
       color: #fff
@@ -384,16 +386,14 @@ body,html
         right: -30px
         left: auto
       @media (min-width: $break-desk)
-        top: 35px
-      @media (min-width: $break-full)
-        top: 50px
+        top: 36px
     &:last-of-type
       margin-bottom: 0
       &::after
         display: none
 
   .label
-    +headline
+    +headline-b
     text-transform: uppercase
     letter-spacing: .1em
     color: $dcyan
@@ -404,8 +404,6 @@ body,html
     color: $black
     @media (min-width: $break-desk)
       font-size: 65px
-    @media (min-width: $break-full)
-      font-size: 90px
   .perks
     text-align: center
     max-width: max-content
@@ -417,13 +415,11 @@ body,html
       padding-bottom: 25px
       border-bottom: 1px solid $gray
       @media (min-width: $break-hand)
-        font-size: 24px
+        font-size: 20px
         margin-bottom: 30px
         padding-bottom: 30px
       @media (min-width: $break-mid)
-        font-size: 28px
-      @media (min-width: $break-desk)
-        font-size: 32px
+        font-size: 24px
       &:last-of-type
         border: none
     .icon-check

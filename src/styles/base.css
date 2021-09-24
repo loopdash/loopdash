@@ -322,7 +322,7 @@ sub {
 .contact-form .field-wrapper label {
   display: block;
   font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-size: 20px;
   margin-bottom: 7px;
@@ -436,7 +436,7 @@ body, html {
   position: relative;
   z-index: 2;
   font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   color: #3f3f3f;
   font-size: 32px;
@@ -544,7 +544,7 @@ body, html {
 }
 .page-hero.home-hero .grid {
   margin: 60px auto;
-  align-items: center;
+  align-items: flex-start;
 }
 @media (min-width: 900px) {
   .page-hero.home-hero .grid {
@@ -556,17 +556,28 @@ body, html {
     margin: 150px 0 90px;
   }
 }
-.page-hero.home-hero .grid-item {
+@media (min-width: 900px) {
+  .page-hero.home-hero .grid .hero {
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-hero.home-hero .grid .hero {
+    width: 600px;
+  }
+}
+.page-hero.home-hero .grid .graphic {
   width: 100%;
 }
 @media (min-width: 900px) {
-  .page-hero.home-hero .grid-item {
-    width: 50%;
+  .page-hero.home-hero .grid .graphic {
+    width: calc(100% - 450px);
+    padding-left: 40px;
   }
 }
-@media (min-width: 900px) {
-  .page-hero.home-hero .grid-item.graphic {
-    padding-left: 40px;
+@media (min-width: 1200px) {
+  .page-hero.home-hero .grid .graphic {
+    width: calc(100% - 600px);
   }
 }
 .page-hero.home-hero .hero {
@@ -597,10 +608,11 @@ body, html {
 }
 @media (min-width: 600px) {
   .page-hero h1 {
+    margin-bottom: 20px;
     font-size: 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .page-hero h1 {
     margin-bottom: 30px;
     font-size: 24px;
@@ -610,7 +622,7 @@ body, html {
   position: relative;
   z-index: 2;
   font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-size: 36px;
   line-height: 1;
@@ -624,18 +636,13 @@ body, html {
 }
 @media (min-width: 900px) {
   .page-hero p.subheadline {
-    font-size: 80px;
+    font-size: 90px;
     line-height: 0.8;
   }
 }
 @media (min-width: 1200px) {
   .page-hero p.subheadline {
-    font-size: 95px;
-  }
-}
-@media (min-width: 1400px) {
-  .page-hero p.subheadline {
-    font-size: 120px;
+    font-size: 110px;
   }
 }
 .page-hero p:not(.subheadline) {
@@ -644,7 +651,7 @@ body, html {
   font-size: 18px;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 665px;
+  max-width: 600px;
 }
 @media (min-width: 600px) {
   .page-hero p:not(.subheadline) {
@@ -654,11 +661,6 @@ body, html {
 @media (min-width: 1200px) {
   .page-hero p:not(.subheadline) {
     font-size: 26px;
-  }
-}
-@media (min-width: 1400px) {
-  .page-hero p:not(.subheadline) {
-    font-size: 30px;
   }
 }
 .page-hero p:not(.subheadline) + .button {
@@ -803,7 +805,7 @@ body, html {
   color: #3f3f3f;
   font-size: 24px;
   font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   text-align: center;
 }
@@ -945,12 +947,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .timeline .grid-item::after {
-    top: 35px;
-  }
-}
-@media (min-width: 1400px) {
-  .timeline .grid-item::after {
-    top: 50px;
+    top: 36px;
   }
 }
 .timeline .grid-item:last-of-type {
@@ -980,11 +977,6 @@ body, html {
     font-size: 65px;
   }
 }
-@media (min-width: 1400px) {
-  .timeline p {
-    font-size: 90px;
-  }
-}
 .timeline .perks {
   text-align: center;
   max-width: max-content;
@@ -999,19 +991,14 @@ body, html {
 }
 @media (min-width: 600px) {
   .timeline .perks li {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
 }
 @media (min-width: 900px) {
   .timeline .perks li {
-    font-size: 28px;
-  }
-}
-@media (min-width: 1024px) {
-  .timeline .perks li {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 .timeline .perks li:last-of-type {
@@ -1154,7 +1141,7 @@ body, html {
 @media (min-width: 900px) {
   .site-header .menu li:not(.btn) a {
     font-family: "Calibre", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     color: #3f3f3f;
     cursor: pointer;
