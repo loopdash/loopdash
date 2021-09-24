@@ -12,7 +12,11 @@ module.exports = function(eleventyConfig) {
     "jpg",
     "jpeg",
     "png",
-    "svg"
+    "svg",
+    "eot",
+    "ttf",
+    "woff",
+    "ico"
   ]);
 
   eleventyConfig.addPlugin(sitemap, {

@@ -7,7 +7,7 @@
     "start": "run-p start:*",
     "start:eleventy": "npx @11ty/eleventy --serve",
     "start:postcss": "postcss src/styles/*.css --dir _site/css --watch",
-    "start:watch": "sass  --no-source-map --watch src/scss:_site/css",
+    "start:watch": "sass  --no-source-map --watch src/styles/base.sass:src/styles/base.css",
     "dev": "npm-run-all --parallel start:watch start",
     "build": "npm i && npx @11ty/eleventy"
   },

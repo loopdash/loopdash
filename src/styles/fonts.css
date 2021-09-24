@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Calibre';
+  src: font-url('../fonts/CalibreRegular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: font-url('../fonts/CalibreRegularItalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: font-url('../fonts/CalibreBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: font-url('../fonts/CalibreBoldItaclic.otf');
+  font-weight: bold;
+  font-style: italic;
+}

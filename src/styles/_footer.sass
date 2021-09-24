@@ -1,0 +1,30 @@
+footer
+  padding: 60px 0
+  position: relative
+  @media (min-width: $break-hand)
+    padding: 90px 0
+  .blob
+    position: absolute
+    z-index: 1
+    right: -50%
+    bottom: 0
+    opacity: .5
+  .grid
+    justify-content: space-between
+    position: relative
+    z-index: 2
+  .menu
+    a
+      border-bottom: 1px solid $gray
+      transition: ease-in all .1s
+      &:hover
+        color: $dcyan
+  .social
+    display: flex
+    justify-content: flex-end
+    li
+      margin-left: 30px
+    a
+      transition: ease-in all .1s
+      &:hover
+        color: $dcyan
