@@ -1232,11 +1232,12 @@ body, html {
 }
 
 .document .page-hero .hero h1 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .document .page-hero .hero p.subheadline {
   font-size: 36px;
-  line-height: normal;
+  line-height: 0.95;
+  margin-bottom: 20px;
 }
 @media (min-width: 600px) {
   .document .page-hero .hero p.subheadline {
