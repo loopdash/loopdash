@@ -159,6 +159,9 @@ body, html {
     animation-fill-mode: forwards;
   }
 }
+.animate-items .grid-item {
+  opacity: 1;
+}
 .animate-items .item {
   opacity: 1;
 }
