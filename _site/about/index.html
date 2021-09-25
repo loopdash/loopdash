@@ -21,6 +21,22 @@
     });
 
   });
+
+  /*======================================*/
+  // Animate Who We Are Stats
+  /*=====================================*/
+  $('.counter').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now).toLocaleString('en'));
+        }
+      });
+  });
+
   /*==================================*/
   // Scroll animations
   /*==================================*/
@@ -71,4 +87,4 @@
   // end scripts
   //*===================================*/
 
-  });</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../styles/icomoon.css"><link rel="icon" href="../../favicon.png"></head><body><header class="site-header"><div class="wrap1400"><div class="grid"><a class="logo" href="/"><img src="../../images/loopdash.png" alt="Loopdash Logo"></a><div class="mobile-toggle-container"><a href="#" class="mobile-toggle" title="Mobile Menu Toggle Button"><span class="menu-icon"><span class="menu-icon-left"></span> <span class="menu-icon-right"></span></span></a></div><ul class="menu"><li><a class="active" href="/about">About</a></li><li><a class="" href="/documents">Documents</a></li><li class="btn"><a href="/contact">Contact Us</a></li></ul></div></div></header><main><article class="page-hero"><div class="wrap1400"><div class="hero"><h1 class="scroll fadeUp">About Loopdash</h1><p class="subheadline scroll fadeUp">We makes stuff on the internet.</p><p class="scroll fadeUp">Our developers have been building websites and apps for over a decade. Everything we make is user friendly and built the the right way.</p></div></div></article></main><footer><div class="wrap1400"><div class="grid"><ul class="menu"><li><a href="#">Privacy Policy</a></li></ul><ul class="social"><li><a target="_blank" href="https://twitter.com/_loopdash/"><span class="icon icon-twitter"></span></a></li><li><a target="_blank" href="https://www.instagram.com/_loopdash/"><span class="icon icon-instagram"></span></a></li></ul></div></div><img class="blob" src="/images/blob.svg" alt=""></footer></body></html>
+  });</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../styles/icomoon.css"><link rel="icon" href="../../favicon.png"></head><body><header class="site-header"><div class="wrap1400"><div class="grid"><a class="logo" href="/"><img src="../../images/loopdash.png" alt="Loopdash Logo"></a><div class="mobile-toggle-container"><a href="#" class="mobile-toggle" title="Mobile Menu Toggle Button"><span class="menu-icon"><span class="menu-icon-left"></span> <span class="menu-icon-right"></span></span></a></div><ul class="menu"><li><a class="active" href="/about">About</a></li><li><a class="" href="/documents">Documents</a></li><li class="btn"><a href="/contact">Contact Us</a></li></ul></div></div></header><main><article class="page-hero"><div class="wrap1400"><div class="hero"><h1 class="scroll fadeUp">About Loopdash</h1><p class="subheadline scroll fadeUp">We makes stuff on the internet.</p><p class="scroll fadeUp">Our developers have been building websites and apps for over a decade. Everything we make is user friendly and built the the right way.</p></div></div></article><article class="stats"><div class="wrap1100"><div class="grid"><div class="grid-item"><div class="inner"><p class="number"><span class="counter">280</span></p><p class="label">Products launched</p></div></div><div class="grid-item"><div class="inner"><p class="number"><span class="counter">3</span></p><p class="label">Unicorns launched</p></div></div><div class="grid-item"><div class="inner"><p class="number"><span class="counter">12</span></p><p class="label">Years in business</p></div></div><div class="grid-item"><div class="inner"><p class="number"><span class="counter">1</span></p><p class="label">Countries represented</p></div></div><div class="grid-item"><div class="inner"><p class="number"><span class="counter">100</span><span class="symobl">%</span></p><p class="label">Remote employees</p></div></div><div class="grid-item"><div class="inner"><p class="number"><span class="symobl">$</span><span class="counter">0</span></p><p class="label">Funding raised</p></div></div></div></div></article><article class="callout"><div class="wrap1000"><div class="base text-center"><h2 class="scroll fadeUp">Ready for a better site?</h2><p class="scroll fadeUp">If you're not sure your project fits the bill, send it to us anyway. We'll let you know within a couple of days.</p><a class="button scroll fadeUp" href="/contact">Get Started</a></div></div></article></main><footer><div class="wrap1400"><div class="grid"><ul class="menu"><li><a href="#">Privacy Policy</a></li></ul><ul class="social"><li><a target="_blank" href="https://twitter.com/_loopdash/"><span class="icon icon-twitter"></span></a></li><li><a target="_blank" href="https://www.instagram.com/_loopdash/"><span class="icon icon-instagram"></span></a></li></ul></div></div><img class="blob" src="/images/blob.svg" alt=""></footer></body></html>
