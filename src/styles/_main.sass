@@ -47,6 +47,35 @@
         @media (min-width: $break-laptop)
           padding-left: 40px
           width: calc(100% - 550px)
+        .still-graphic
+          display: block
+          @media (min-width: $break-mid)
+            display: none
+        .parallax-container
+          position: relative
+          z-index: 1
+          width: 100%
+          bottom: 0
+          left: 0
+          right: 0
+          margin: 0 auto
+          display: none
+          @media (min-width: $break-mid)
+            display: block
+          img
+            position: absolute
+            width: 100%
+            @media (min-width: $break-mid)
+          .phone
+            z-index: 3
+          .laptop
+            z-index: 2
+          .woman
+            z-index: 4
+          .cirlce
+            z-index: 1
+          .plant
+            z-index: 1
 
   h1
     position: relative

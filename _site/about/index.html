@@ -22,6 +22,16 @@
 
   });
 
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    $(".parallax").css("transform","translateY(" +  (scroll/-7)  + "px)");
+    $(".parallax2").css("transform","translateY(" +  (scroll/12)  + "px)");
+    $(".parallax3").css("transform","translateX(" +  (scroll/-12)  + "px)");
+    $(".parallax4").css("transform","translateX(" +  (scroll/12)  + "px)");
+    $(".parallax").css("margin-bottom",(scroll/-7)  + "px");
+    $(".parallax2").css("margin-bottom",(scroll/12)  + "px");
+  });
+
   /*======================================*/
   // Animate Who We Are Stats
   /*=====================================*/

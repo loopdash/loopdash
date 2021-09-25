@@ -142,6 +142,14 @@ body, html {
     animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
     animation-fill-mode: forwards;
   }
+  .scroll.is-visible.fadeDown {
+    animation: fadeDown;
+    -webkit-animation-name: fadeDown;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: 0.6s cubic-bezier(0.175, 0.885, 0.2, 1.5);
+    animation-fill-mode: forwards;
+  }
   .scroll.is-visible.fadeLeft {
     animation: fadeLeft;
     -webkit-animation-name: fadeLeft;
@@ -864,6 +872,48 @@ body, html {
     padding-left: 40px;
     width: calc(100% - 550px);
   }
+}
+.page-hero.home-hero .grid .graphic .still-graphic {
+  display: block;
+}
+@media (min-width: 900px) {
+  .page-hero.home-hero .grid .graphic .still-graphic {
+    display: none;
+  }
+}
+.page-hero.home-hero .grid .graphic .parallax-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+}
+@media (min-width: 900px) {
+  .page-hero.home-hero .grid .graphic .parallax-container {
+    display: block;
+  }
+}
+.page-hero.home-hero .grid .graphic .parallax-container img {
+  position: absolute;
+  width: 100%;
+}
+.page-hero.home-hero .grid .graphic .parallax-container .phone {
+  z-index: 3;
+}
+.page-hero.home-hero .grid .graphic .parallax-container .laptop {
+  z-index: 2;
+}
+.page-hero.home-hero .grid .graphic .parallax-container .woman {
+  z-index: 4;
+}
+.page-hero.home-hero .grid .graphic .parallax-container .cirlce {
+  z-index: 1;
+}
+.page-hero.home-hero .grid .graphic .parallax-container .plant {
+  z-index: 1;
 }
 .page-hero h1 {
   position: relative;
