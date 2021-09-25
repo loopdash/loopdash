@@ -1,4 +1,5 @@
 .page-hero
+  position: relative
   .hero
     text-align: center
     margin: 90px auto
@@ -84,7 +85,7 @@
     font-size: 16px
     letter-spacing: .1em
     margin-bottom: 10px
-    color: $dcyan
+    color: $cyan
     text-transform: uppercase
     @media (min-width: $break-hand)
       font-size: 20px
@@ -183,7 +184,7 @@
         @media (min-width: $break-mid)
           transform: scale(1.05)
       .inner
-        border: 2px solid $cyan
+        border: 2px solid $lcyan
         box-shadow: 0 0 10px 5px rgba($gray, 0.4)
         .benefits
           margin-top: 27px
@@ -247,7 +248,7 @@
         height: 30px
         font-size: 20px
       &.icon-check
-        background: linear-gradient(to left,$cyan, $dcyan)
+        background: linear-gradient(to left,$lcyan, $cyan)
     p
       +font
       display: flex
@@ -289,7 +290,7 @@
       content: '\e902'
       position: absolute
       top: 30px
-      background: linear-gradient(to left,$cyan, $dcyan)
+      background: linear-gradient(to left,$lcyan, $cyan)
       color: #fff
       border-radius: 999em
       display: flex
@@ -318,7 +319,7 @@
     +headline-b
     text-transform: uppercase
     letter-spacing: .1em
-    color: $dcyan
+    color: $cyan
   p
     font-size: 50px
     +font
@@ -345,7 +346,7 @@
       &:last-of-type
         border: none
     .icon-check
-      color: $dcyan
+      color: $cyan
       margin-right: 5px
 
 .callout
@@ -396,7 +397,7 @@
         display: inline-block
       &:hover
         h3
-          color: $dcyan
+          color: $cyan
 .document
   position: relative
   z-index: 2
@@ -422,7 +423,7 @@
     .label
       +headline-b
       letter-spacing: -.03em
-      color: $dcyan
+      color: $cyan
       font-size: 20px
       margin-top: 10px
       @media (min-width: $break-small)

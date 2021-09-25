@@ -5,10 +5,10 @@ body,html
   overflow-x: hidden
 
 ::selection
-  background: $dcyan
+  background: $cyan
   color: #fff
 ::-moz-selection
-  background: $dcyan
+  background: $cyan
   color: #fff
 
 @media (min-width: $break-hand)
@@ -89,7 +89,7 @@ body,html
       position: relative
     &:hover
       span
-        color: $dcyan
+        color: $cyan
       &::before
         transform: scaleX(0)
     &::before
@@ -100,7 +100,7 @@ body,html
       width: 100%
       height: 8px
       opacity: .8
-      background: linear-gradient(to left, $cyan,$dcyan)
+      background: linear-gradient(to left, $lcyan,$cyan)
       text-decoration: underline
       white-space: nowrap
       overflow: hidden
@@ -140,7 +140,7 @@ body,html
         text-indent: -35px
         counter-increment: a
         content: counter(a)'.'
-        color: $dcyan
+        color: $cyan
   table
     width: 100%
     text-align: center
@@ -167,7 +167,7 @@ body,html
 .button
   position: relative
   display: inline-block
-  background: $dcyan
+  background: $cyan
   color: white
   +font-b
   line-height: normal

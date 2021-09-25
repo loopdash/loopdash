@@ -6,9 +6,10 @@ footer
   .blob
     position: absolute
     z-index: 1
-    right: -50%
+    right: 0
     bottom: 0
     opacity: .5
+    transform: rotate(180deg)
   .grid
     justify-content: space-between
     position: relative
@@ -18,7 +19,7 @@ footer
       border-bottom: 1px solid $gray
       transition: ease-in all .1s
       &:hover
-        color: $dcyan
+        color: $cyan
   .social
     display: flex
     justify-content: flex-end
@@ -27,4 +28,4 @@ footer
     a
       transition: ease-in all .1s
       &:hover
-        color: $dcyan
+        color: $cyan

@@ -52,7 +52,7 @@
             display: block
             content: ''
             height: 8px
-            background: linear-gradient(to left,$cyan, $dcyan)
+            background: linear-gradient(to left,$lcyan, $cyan)
             transform: scaleX(0)
             transition: transform 250ms ease-in-out
             transform-origin: 100% 50%
@@ -79,7 +79,7 @@
           +font-b
           line-height: normal
           padding: 12px 30px
-          background: $dcyan
+          background: $cyan
           color: #fff
           border-radius: 3px
           min-width: 150px
@@ -91,6 +91,8 @@
           &:hover
             background: $black
             color: #fff
+  .social
+    display: none
 
 .mobile-toggle-container
   display: block
@@ -113,9 +115,9 @@
     .menu-icon
       &::after,
       &::before
-        background: $cyan
+        background: $lcyan
       span
-        background: $cyan
+        background: $lcyan
 
 .menu-icon
   position: absolute
@@ -129,14 +131,14 @@
     right: 0
     margin: 0 auto
     width: 40px
-    height: 4px
+    height: 5px
     border-radius: 3px
-    background: $dcyan
+    background: $cyan
     content: ""
     opacity: 1
     transition: all .2s ease
   &::before
-    top: -11px
+    top: -12px
     transition: all .2s ease
     transition-timing-function: cubic-bezier(.75,.15,.36,1)
   &::after
@@ -147,20 +149,20 @@
     position: absolute
     left: 0
     right: 0
-    top: -1px
+    top: -2px
     margin: 0 auto
     display: block
     width: 40px
-    height: 4px
+    height: 5px
     border-radius: 3px
-    background: $dcyan
+    background: $cyan
     transition: all .2s ease
     transition-timing-function: cubic-bezier(.75,0,.29,1.01)
 
 .menu-open
   @media (max-width: $break-mid)
     .site-header
-      background: linear-gradient(to bottom right, $dcyan 0%, $dcyan 20%, $cyan 100%)
+      background: linear-gradient(to bottom right, $cyan 0%, $cyan 20%, $lcyan 100%)
       background-position: bottom right
       background-repeat: repeat
       position: fixed
@@ -171,15 +173,31 @@
       transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1)
       &::after
         content: ''
-        background-image: url(../images/blob.svg)
+        background-image: url(../images/swoosh-cyan.svg)
         display: block
         height: 100%
-        right: -20%
-        top: -20%
+        background-position: bottom
+        transform: rotate(180deg)
         opacity: 0.1
         background-repeat: no-repeat
         background-size: contain
-        background-position: center
+        background-position: bottom
+        top: 0
+        z-index: 1
+        position: absolute
+        width: 100%
+      &::before
+        content: ''
+        background-image: url(../images/swoosh-cyan.svg)
+        display: block
+        height: 100%
+        background-position: bottom
+        transform: rotate(180deg)
+        opacity: 0.1
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: bottom
+        top: -90px
         z-index: 1
         position: absolute
         width: 100%
@@ -219,13 +237,46 @@
       width: 100%
       text-align: right
       padding-top: 40px
-      padding-right: 20px
+      padding-right: 22px
       li
         margin-bottom: 30px
+        animation: fadeUp
+        -webkit-animation-name: fadeUp
+        animation-duration: .6s
+        animation-iteration-count: 1
+        animation-timing-function: .6s cubic-bezier(.175,.885,.2,1.5)
+        animation-fill-mode: forwards
         a
-          +headline
+          +headline-b
+          letter-spacing: -.03em
           font-size: 32px
           color: #fff
+          @media (min-width: $break-hand)
+            font-size: 43px
+          &:hover
+            color: $dcyan
+    .social
+      position: relative
+      z-index: 2
+      display: flex
+      justify-content: flex-end
+      width: 100%
+      padding-right: 20px
+      li
+        margin-left: 30px
+        animation: fadeUp
+        -webkit-animation-name: fadeUp
+        animation-duration: .6s
+        animation-iteration-count: 1
+        animation-timing-function: .6s cubic-bezier(.175,.885,.2,1.5)
+        animation-fill-mode: forwards
+      a
+        font-size: 27px
+        color: white
+        @media (min-width: $break-hand)
+          font-size: 32px
+        &:hover
+          color: $dcyan
     .mobile-toggle
       top: -3px
       .text
@@ -233,10 +284,10 @@
       .menu-icon
         &::after,
         &::before
-          background: #fff
+          background: $dcyan
           right: 0px !important
         span
-          background: #fff
+          background: $dcyan
           left: 0px !important
       .menu-icon
         &::after,
