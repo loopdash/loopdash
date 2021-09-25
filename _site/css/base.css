@@ -912,7 +912,7 @@ body, html {
 }
 @media (min-width: 1200px) {
   .page-hero.home-hero .grid .hero {
-    width: 600px;
+    width: 550px;
   }
 }
 .page-hero.home-hero .grid .hero p:not(.subheadline) {
@@ -951,12 +951,13 @@ body, html {
 @media (min-width: 900px) {
   .page-hero.home-hero .grid .graphic {
     width: calc(100% - 450px);
-    padding-left: 40px;
+    margin-top: -5%;
   }
 }
 @media (min-width: 1200px) {
   .page-hero.home-hero .grid .graphic {
-    width: calc(100% - 600px);
+    padding-left: 40px;
+    width: calc(100% - 550px);
   }
 }
 .page-hero h1 {
@@ -1068,7 +1069,12 @@ body, html {
   }
 }
 .below .intro p {
-  font-size: 18px;
+  font-size: 16px;
+}
+@media (min-width: 600px) {
+  .below .intro p {
+    font-size: 18px;
+  }
 }
 @media (min-width: 900px) {
   .below .intro p {
@@ -1087,7 +1093,12 @@ body, html {
   }
 }
 .why .intro p {
-  font-size: 18px;
+  font-size: 16px;
+}
+@media (min-width: 600px) {
+  .why .intro p {
+    font-size: 18px;
+  }
 }
 @media (min-width: 900px) {
   .why .intro p {
