@@ -347,23 +347,34 @@ body, html {
   content: counter(a) ".";
   color: #39c0c8;
 }
+.base table {
+  width: 100%;
+  text-align: center;
+}
 .base table thead th {
-  background: #39c0c8;
+  background: #d8d8d8;
+  border: 1px solid #d8d8d8;
   color: white;
   padding: 13px 10px 10px;
   line-height: normal;
+  color: #3f3f3f;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 .base table tbody {
-  border: 1px solid #f2f2f2;
+  border: 1px solid #d8d8d8;
   border-radius: 0 3px 3px 0;
   background: white;
 }
 .base table tbody td {
-  padding: 10px;
+  padding: 12px 10px;
   font-size: 16px;
+}
+@media (min-width: 768px) {
+  .base table tbody td {
+    font-size: 18px;
+  }
 }
 
 .button {
