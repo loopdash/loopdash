@@ -1,6 +1,68 @@
-<article class="contact-form">
+<article class="form-container contact-form">
   <div class="wrap900">
     <form name="contact" method="POST" data-netlify="true" action="/thank-you/">
+
+      <div class="field-wrapper">
+        <label>Did someone refer you to us?</label>
+        <ul class="radios">
+          <li>
+            <input onclick="showHidden()" type="radio" id="yesReferred" name="refer" />
+            <label for="yesReferred">Yes</label>
+          </li>
+          <li>
+            <input  onclick="showHidden()" type="radio" id="noReferred" name="refer" />
+            <label for="noReferred">No</label>
+          </li>
+        </ul>
+      </div>
+
+      <div id="referral" class="field-wrapper hidden">
+        <script>
+        var referral = document.getElementById('referral');
+        function showHidden() {
+            if (document.getElementById('yesReferred').checked) {
+              referral.classList.add('show');
+            } else {
+              referral.classList.remove('show');
+            }
+          }
+        </script>
+        <label>Who referred you?</label>
+        <input name="referral" type="text">
+      </div>
+
+      <div class="field-wrapper range">
+        <label for="timeline">Your Timeline</label>
+        <input class="slider" type="range" id="timeline" name="timeline" min="1" max="24" value="0" step="1">
+        <p><span id="months"></span> Months</p>
+      </div>
+
+      <div class="field-wrapper range">
+        <label for="budget">Your Budget</label>
+        <input class="slider" type="range" id="budget" name="budget" min="0" max="100" value="0" step="5">
+        <p>$ <span id="amount"></span>k</p>
+      </div>
+
+      <script>
+        var timelineSlider = document.getElementById("timeline");
+        var months = document.getElementById("months");
+        months.innerHTML = timelineSlider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        timelineSlider.oninput = function() {
+          months.innerHTML = this.value;
+        }
+
+        var budgetSlider = document.getElementById("budget");
+        var amount = document.getElementById("amount");
+        amount.innerHTML = budgetSlider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        budgetSlider.oninput = function() {
+          amount.innerHTML = this.value;
+        }
+      </script>
+
       <div class="field-row">
         <div class="field-wrapper">
           <label>Your Name</label>

@@ -322,13 +322,20 @@
     margin: 90px auto
   @media (min-width: $break-desk)
     margin: 160px auto 90px
+  img
+    margin: 0 auto 20px
+    width: 90px
+    @media (min-width: $break-hand)
+      width: 110px
   .base
     border: 1px solid $gray
     background: #fff
     border-radius: 3px
-    padding: 60px 30px
+    padding: 60px 20px
     box-shadow: 8px 8px 0px 0px rgba($gray,.4)
     margin-right: 8px
+    @media (min-width: $break-small)
+      padding: 60px 30px
     @media (min-width: $break-hand)
       margin: 0 auto
       padding: 60px 40px
