@@ -28,9 +28,9 @@
         p:not(.subheadline)
           margin: 0
         h1
-          margin-bottom: 10px
+          margin-bottom: 15px
           @media (min-width: $break-hand)
-            margin-bottom: 20px
+            margin-bottom: 25px
         h2.subheadline
           font-size: 36px
           line-height: .8
@@ -122,6 +122,7 @@
     position: relative
     z-index: 2
 
+
 .below
   margin: 90px auto
   position: relative
@@ -146,6 +147,11 @@
     margin: 0 auto
     @media (min-width: $break-mid)
       margin: 0 auto 0 -90px
+    h2
+      @media (min-width: $break-desk)
+        font-size: 50px
+      @media (min-width: $break-laptop)
+        font-size: 60px
 
 .why
   margin: 90px auto
@@ -153,6 +159,12 @@
   z-index: 2
   @media (min-width: $break-desk)
     margin: 160px auto
+  .intro
+    h2
+      @media (min-width: $break-desk)
+        font-size: 50px
+      @media (min-width: $break-laptop)
+        font-size: 60px
   .grid
     margin: 0 auto
     @media (min-width: $break-desk)
@@ -303,7 +315,12 @@
       margin-bottom: 0
       &::after
         display: none
-
+  .base
+    h2
+      @media (min-width: $break-desk)
+        font-size: 50px
+      @media (min-width: $break-laptop)
+        font-size: 60px
   .label
     +font-b
     text-transform: uppercase
@@ -347,6 +364,15 @@
     margin: 90px auto
   @media (min-width: $break-desk)
     margin: 160px auto 90px
+  &.support
+    .base
+      padding: 50px 20px 70px
+      @media (min-width: $break-small)
+        padding: 50px 30px 70px
+      @media (min-width: $break-hand)
+        padding: 50px 40px 70px
+      @media (min-width: $break-mid)
+        padding: 50px 90px 70px
   img
     margin: 0 auto 20px
     width: 90px
@@ -367,12 +393,16 @@
     @media (min-width: $break-mid)
         padding: 60px 90px
     p
-      font-size: 18px
+      font-size: 20px
       @media (min-width: $break-hand)
-        font-size: 20px
+        font-size: 22px
       @media (min-width: $break-mid)
         font-size: 24px
-
+    h2
+      @media (min-width: $break-desk)
+        font-size: 50px
+      @media (min-width: $break-laptop)
+        font-size: 60px
 .documents
   position: relative
   z-index: 2

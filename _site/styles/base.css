@@ -116,7 +116,7 @@ body, html {
   font-weight: 400;
   font-style: normal;
   color: #3f3f3f;
-  font-size: 18px;
+  font-size: 20px;
   overflow-x: hidden;
 }
 @media (min-width: 900px) {
@@ -194,7 +194,7 @@ body, html {
   font-weight: 400;
   font-style: normal;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 @media (min-width: 900px) {
@@ -255,12 +255,7 @@ body, html {
 }
 @media (min-width: 1024px) {
   .base h2 {
-    font-size: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  .base h2 {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 .base h3 {
@@ -892,11 +887,11 @@ body, html {
   margin: 0;
 }
 .page-hero.home-hero .grid .hero h1 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 @media (min-width: 600px) {
   .page-hero.home-hero .grid .hero h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 .page-hero.home-hero .grid .hero h2.subheadline {
@@ -1083,6 +1078,16 @@ body, html {
     margin: 0 auto 0 -90px;
   }
 }
+@media (min-width: 1024px) {
+  .below .intro h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .below .intro h2 {
+    font-size: 60px;
+  }
+}
 
 .why {
   margin: 90px auto;
@@ -1092,6 +1097,16 @@ body, html {
 @media (min-width: 1024px) {
   .why {
     margin: 160px auto;
+  }
+}
+@media (min-width: 1024px) {
+  .why .intro h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .why .intro h2 {
+    font-size: 60px;
   }
 }
 .why .grid {
@@ -1328,6 +1343,16 @@ body, html {
 .timeline .grid-item:last-of-type::after {
   display: none;
 }
+@media (min-width: 1024px) {
+  .timeline .base h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline .base h2 {
+    font-size: 60px;
+  }
+}
 .timeline .label {
   font-family: "Calibre", sans-serif;
   font-weight: 700;
@@ -1397,6 +1422,24 @@ body, html {
     margin: 160px auto 90px;
   }
 }
+.callout.support .base {
+  padding: 50px 20px 70px;
+}
+@media (min-width: 480px) {
+  .callout.support .base {
+    padding: 50px 30px 70px;
+  }
+}
+@media (min-width: 600px) {
+  .callout.support .base {
+    padding: 50px 40px 70px;
+  }
+}
+@media (min-width: 900px) {
+  .callout.support .base {
+    padding: 50px 90px 70px;
+  }
+}
 .callout img {
   margin: 0 auto 20px;
   width: 90px;
@@ -1431,16 +1474,26 @@ body, html {
   }
 }
 .callout .base p {
-  font-size: 18px;
+  font-size: 20px;
 }
 @media (min-width: 600px) {
   .callout .base p {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (min-width: 900px) {
   .callout .base p {
     font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .callout .base h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .callout .base h2 {
+    font-size: 60px;
   }
 }
 
