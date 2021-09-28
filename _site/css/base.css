@@ -943,7 +943,12 @@ body, html {
 }
 .page-hero .hero {
   text-align: center;
-  margin: 90px auto;
+  margin: 60px auto;
+}
+@media (min-width: 600px) {
+  .page-hero .hero {
+    margin: 90px auto;
+  }
 }
 .page-hero.home-hero {
   position: relative;
