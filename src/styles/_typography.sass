@@ -3,6 +3,8 @@ body,html
   color: $black
   font-size: 18px
   overflow-x: hidden
+  @media (min-width: $break-mid)
+    font-size: 22px
 
 ::selection
   background: $cyan
@@ -54,7 +56,7 @@ body,html
   h2
     position: relative
     z-index: 2
-    +headline
+    +font-sb
     color: $black
     font-size: 32px
     margin-bottom: 20px
@@ -70,7 +72,7 @@ body,html
   h3
     position: relative
     z-index: 2
-    +headline
+    +font-sb
     color: $black
     font-size: 24px
     margin-bottom: 20px
@@ -84,7 +86,7 @@ body,html
     display: inline-block
     color: $black
     transition: 275ms ease
-    +font-bi
+    +font-sbi
     span
       position: relative
     &:hover
@@ -109,17 +111,17 @@ body,html
   p
     +font
     line-height: 1.8
-    font-size: 16px
+    font-size: 18px
     margin-bottom: 30px
     @media (min-width: $break-mid)
-      font-size: 18px
+      font-size: 22px
     strong
       +font-b
     em
       +font-i
     strong em,
     em strong
-      +font-bi
+      +font-sbi
   ol
     list-style: none
     counter-reset: a
@@ -152,7 +154,7 @@ body,html
         padding: 13px 10px 10px
         line-height: normal
         color: $black
-        +headline-b
+        +font-b
     tbody
       border: 1px solid $gray
       border-radius: 0 3px 3px 0

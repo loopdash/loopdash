@@ -42,6 +42,7 @@
             font-size: 110px
       .graphic
         width: 100%
+        display: none
         @media (min-width: $break-mid)
           width: calc(100% - 450px)
           margin-top: -5%
@@ -81,7 +82,7 @@
   h1
     position: relative
     z-index: 2
-    +headline-b
+    +font-b
     font-size: 16px
     letter-spacing: .1em
     margin-bottom: 10px
@@ -94,7 +95,7 @@
   h2.subheadline
     position: relative
     z-index: 2
-    +headline
+    +font-sb
     font-size: 36px
     line-height: 1
     letter-spacing: -.03em
@@ -218,7 +219,7 @@
     h3
       color: $black
       font-size: 24px
-      +headline
+      +font-sb
       text-align: center
       @media (min-width: $break-hand)
         font-size: 32px
@@ -316,7 +317,7 @@
         display: none
 
   .label
-    +headline-b
+    font-b
     text-transform: uppercase
     letter-spacing: .1em
     color: $cyan
@@ -421,7 +422,7 @@
       @media (min-width: $break-small)
         padding: 0 20px
     .label
-      +headline-b
+      font-b
       letter-spacing: -.03em
       color: $cyan
       font-size: 20px

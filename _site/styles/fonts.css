@@ -1,34 +1,32 @@
 @font-face {
   font-family: 'Calibre';
-  src: font-url('../fonts/CalibreRegular.otf');
+  src: font-url('../fonts/calibre-web-regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Calibre';
-  src: font-url('../fonts/CalibreRegularItalic.otf');
+  src: font-url('../fonts/Calibre-RegularItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Calibre';
-  src: font-url('../fonts/Calibre-Semibold.otf');
+  src: font-url('../fonts/calibre-web-semibold.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Calibre';
-  src: font-url('../fonts/CalibreBold.otf');
-  font-weight: bold;
-  font-style: normal;
+  src: font-url('../fonts/Calibre-SemiboldItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Calibre';
-  src: font-url('../fonts/CalibreBoldItaclic.otf');
+  src: font-url('../fonts/calibre-web-bold.woff2') format('woff2');
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
