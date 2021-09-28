@@ -182,8 +182,8 @@ body, html {
 .base h2 {
   position: relative;
   z-index: 2;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #3f3f3f;
   font-size: 32px;
@@ -207,14 +207,14 @@ body, html {
 }
 @media (min-width: 1200px) {
   .base h2 {
-    font-size: 55px;
+    font-size: 60px;
   }
 }
 .base h3 {
   position: relative;
   z-index: 2;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
   font-style: normal;
   color: #3f3f3f;
   font-size: 24px;
@@ -336,8 +336,8 @@ body, html {
   padding: 13px 10px 10px;
   line-height: normal;
   color: #3f3f3f;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 .base table tbody {
@@ -651,8 +651,8 @@ body, html {
 }
 .form-container .field-wrapper label {
   display: block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
   font-style: normal;
   font-size: 20px;
   margin-bottom: 7px;
@@ -689,8 +689,8 @@ body, html {
   margin-bottom: 20px;
 }
 .form-container .range p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   margin-top: 20px;
   color: #39c0c8;
@@ -763,8 +763,8 @@ body, html {
 }
 .form-container .radios label {
   display: block !important;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   position: relative;
   padding: 10px 30px 4px;
@@ -855,7 +855,7 @@ body, html {
 }
 .page-hero.home-hero .grid .hero h2.subheadline {
   font-size: 36px;
-  line-height: 0.9;
+  line-height: 0.8;
 }
 @media (min-width: 600px) {
   .page-hero.home-hero .grid .hero h2.subheadline {
@@ -864,12 +864,12 @@ body, html {
 }
 @media (min-width: 900px) {
   .page-hero.home-hero .grid .hero h2.subheadline {
-    font-size: 72px;
+    font-size: 90px;
   }
 }
 @media (min-width: 1200px) {
   .page-hero.home-hero .grid .hero h2.subheadline {
-    font-size: 95px;
+    font-size: 110px;
   }
 }
 .page-hero.home-hero .grid .graphic {
@@ -932,7 +932,7 @@ body, html {
 .page-hero h1 {
   position: relative;
   z-index: 2;
-  font-family: "Poppins", sans-serif;
+  font-family: "Calibre", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -943,19 +943,19 @@ body, html {
 }
 @media (min-width: 600px) {
   .page-hero h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
   .page-hero h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .page-hero h2.subheadline {
   position: relative;
   z-index: 2;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
   font-style: normal;
   font-size: 36px;
   line-height: 1;
@@ -1111,7 +1111,7 @@ body, html {
   box-shadow: 0 0 10px 5px rgba(216, 216, 216, 0.4);
 }
 .why .grid-item:last-of-type .inner .benefits {
-  margin-top: 21px;
+  margin-top: 27px;
 }
 .why .grid-item .inner {
   position: relative;
@@ -1155,8 +1155,8 @@ body, html {
 .why .grid-item h3 {
   color: #3f3f3f;
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
   font-style: normal;
   text-align: center;
 }
@@ -1308,8 +1308,8 @@ body, html {
   display: none;
 }
 .timeline .label {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1480,8 +1480,8 @@ body, html {
   }
 }
 .stats .grid-item .label {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: -0.03em;
   color: #39c0c8;
@@ -1592,19 +1592,19 @@ body, html {
 }
 @media (min-width: 900px) {
   .site-header .menu li:not(.btn) a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
     font-style: normal;
     color: #3f3f3f;
     cursor: pointer;
     line-height: 0;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 1024px) {
   .site-header .menu li:not(.btn) a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media (min-width: 900px) {
@@ -1846,8 +1846,8 @@ body, html {
     animation-fill-mode: forwards;
   }
   .menu-open .menu li a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
     font-style: normal;
     letter-spacing: -0.03em;
     font-size: 32px;
