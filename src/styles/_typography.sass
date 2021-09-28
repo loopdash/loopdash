@@ -152,9 +152,11 @@ body,html
         top: 0px
         left: 5px
         +font
-        text-indent: -8px
+        text-indent: -3px
         content: "\2022"
         color: $cyan
+        @media (min-width: $break-mid)
+          text-indent: -8px
   ol
     list-style: none
     counter-reset: a
