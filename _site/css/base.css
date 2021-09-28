@@ -204,8 +204,8 @@ body, html {
 .base h2 {
   position: relative;
   z-index: 2;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: normal;
   color: #3f3f3f;
   font-size: 32px;
@@ -229,14 +229,14 @@ body, html {
 }
 @media (min-width: 1200px) {
   .base h2 {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 .base h3 {
   position: relative;
   z-index: 2;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: normal;
   color: #3f3f3f;
   font-size: 24px;
@@ -358,8 +358,8 @@ body, html {
   padding: 13px 10px 10px;
   line-height: normal;
   color: #3f3f3f;
-  font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 .base table tbody {
@@ -750,8 +750,8 @@ body, html {
 }
 .form-container .field-wrapper label {
   display: block;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: normal;
   font-size: 20px;
   margin-bottom: 7px;
@@ -790,8 +790,8 @@ body, html {
   margin-bottom: 20px;
 }
 .form-container .range p {
-  font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: normal;
   margin-top: 20px;
   color: #39c0c8;
@@ -863,8 +863,8 @@ body, html {
 }
 .form-container .radios label {
   display: block !important;
-  font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: normal;
   position: relative;
   padding: 10px 30px 4px;
@@ -955,7 +955,7 @@ body, html {
 }
 .page-hero.home-hero .grid .hero h2.subheadline {
   font-size: 36px;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 @media (min-width: 600px) {
   .page-hero.home-hero .grid .hero h2.subheadline {
@@ -964,12 +964,12 @@ body, html {
 }
 @media (min-width: 900px) {
   .page-hero.home-hero .grid .hero h2.subheadline {
-    font-size: 90px;
+    font-size: 72px;
   }
 }
 @media (min-width: 1200px) {
   .page-hero.home-hero .grid .hero h2.subheadline {
-    font-size: 110px;
+    font-size: 95px;
   }
 }
 .page-hero.home-hero .grid .graphic {
@@ -1032,7 +1032,7 @@ body, html {
 .page-hero h1 {
   position: relative;
   z-index: 2;
-  font-family: "Calibre", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -1043,19 +1043,19 @@ body, html {
 }
 @media (min-width: 600px) {
   .page-hero h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
   .page-hero h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .page-hero h2.subheadline {
   position: relative;
   z-index: 2;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: normal;
   font-size: 36px;
   line-height: 1;
@@ -1211,7 +1211,7 @@ body, html {
   box-shadow: 0 0 10px 5px rgba(216, 216, 216, 0.4);
 }
 .why .grid-item:last-of-type .inner .benefits {
-  margin-top: 27px;
+  margin-top: 21px;
 }
 .why .grid-item .inner {
   position: relative;
@@ -1255,8 +1255,8 @@ body, html {
 .why .grid-item h3 {
   color: #3f3f3f;
   font-size: 24px;
-  font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
 }
@@ -1408,8 +1408,8 @@ body, html {
   display: none;
 }
 .timeline .label {
-  font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1584,8 +1584,8 @@ body, html {
   }
 }
 .stats .grid-item .label {
-  font-family: "Calibre", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: normal;
   letter-spacing: -0.03em;
   color: #39c0c8;
@@ -1652,6 +1652,7 @@ body, html {
 .site-header .logo {
   width: 180px;
   display: block;
+  margin-left: 3%;
 }
 @media (min-width: 600px) {
   .site-header .logo {
@@ -1660,7 +1661,8 @@ body, html {
 }
 @media (min-width: 900px) {
   .site-header .logo {
-    width: 235px;
+    width: 225px;
+    margin: 0;
   }
 }
 .site-header .logo img {
@@ -1694,19 +1696,19 @@ body, html {
 }
 @media (min-width: 900px) {
   .site-header .menu li:not(.btn) a {
-    font-family: "Calibre", sans-serif;
-    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
     font-style: normal;
     color: #3f3f3f;
     cursor: pointer;
     line-height: 0;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1024px) {
   .site-header .menu li:not(.btn) a {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (min-width: 900px) {
@@ -1890,17 +1892,19 @@ body, html {
     position: absolute;
     width: 100%;
   }
-  .menu-open .site-logo {
+  .menu-open .logo {
     position: relative;
   }
-  .menu-open .site-logo::after {
+  .menu-open .logo::after {
+    z-index: 9;
     position: absolute;
     top: 0;
     width: 100%;
     content: "";
     display: block;
+    background-image: url(../../images/logo-white.svg);
     background-size: contain;
-    height: 29px;
+    height: 35px;
     background-repeat: no-repeat;
     -webkit-animation: fadeUp;
             animation: fadeUp;
@@ -1919,13 +1923,12 @@ body, html {
   }
 }
 @media (max-width: 900px) and (min-width: 600px) {
-  .menu-open .site-logo::after {
-    height: 39px;
-    margin-top: 6px;
+  .menu-open .logo::after {
+    height: 40px;
   }
 }
 @media (max-width: 900px) {
-  .menu-open .site-logo img {
+  .menu-open .logo img {
     visibility: hidden;
     opacity: 1;
   }
@@ -1958,8 +1961,8 @@ body, html {
             animation-fill-mode: forwards;
   }
   .menu-open .menu li a {
-    font-family: "Calibre", sans-serif;
-    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
     font-style: normal;
     letter-spacing: -0.03em;
     font-size: 32px;
@@ -2055,6 +2058,13 @@ footer {
 footer .blob {
   position: absolute;
   z-index: 1;
+  right: -50%;
+  bottom: 0;
+  opacity: 0.5;
+}
+footer .swoosh {
+  position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
   opacity: 0.5;
@@ -2070,7 +2080,7 @@ footer .menu a {
   transition: ease-in all 0.1s;
 }
 footer .menu a:hover {
-  color: #39c0c8;
+  color: #1c5f63;
 }
 footer .social {
   display: flex;
@@ -2083,5 +2093,5 @@ footer .social a {
   transition: ease-in all 0.1s;
 }
 footer .social a:hover {
-  color: #39c0c8;
+  color: #1c5f63;
 }

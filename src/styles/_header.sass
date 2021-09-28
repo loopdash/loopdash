@@ -17,10 +17,12 @@
   .logo
     width: 180px
     display: block
+    margin-left: 3%
     @media (min-width: $break-hand)
       width: 200px
     @media (min-width: $break-mid)
-      width: 235px
+      width: 225px
+      margin: 0
     img
       width: 100%
   .menu
@@ -44,9 +46,9 @@
           cursor: pointer
           line-height: 0
           position: relative
-          font-size: 20px
+          font-size: 18px
         @media (min-width: $break-desk)
-          font-size: 24px
+          font-size: 20px
         &::after
           @media (min-width: $break-mid)
             display: block
@@ -201,17 +203,18 @@
         z-index: 1
         position: absolute
         width: 100%
-    .site-logo
+    .logo
       position: relative
       &::after
+        z-index: 9
         position: absolute
         top: 0
         width: 100%
         content: ''
         display: block
-        // background-image: url(../../../../wp-content/uploads/2021/06/logo-white.svg)
+        background-image: url(../../images/logo-white.svg)
         background-size: contain
-        height: 29px
+        height: 35px
         background-repeat: no-repeat
         animation: fadeUp
         -webkit-animation-name: fadeUp
@@ -222,8 +225,7 @@
         animation-delay: 0s
         margin-top: 3px
         @media (min-width: $break-hand)
-          height: 39px
-          margin-top: 6px
+          height: 40px
       img
         visibility: hidden
         opacity: 1
