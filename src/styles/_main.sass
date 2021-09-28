@@ -42,7 +42,6 @@
             font-size: 110px
       .graphic
         width: 100%
-        display: none
         @media (min-width: $break-mid)
           width: calc(100% - 450px)
           margin-top: -5%
@@ -109,13 +108,13 @@
   p:not(.subheadline)
     position: relative
     z-index: 2
-    font-size: 18px
+    font-size: 20px
     line-height: 1.6
     margin: 0 auto
     max-width: 700px
     @media (min-width: $break-hand)
-      font-size: 20px
-    @media (min-width: $break-laptop)
+      font-size: 22px
+    @media (min-width: $break-mid)
       font-size: 24px
     + .button
       margin-top: 30px
@@ -147,25 +146,13 @@
     margin: 0 auto
     @media (min-width: $break-mid)
       margin: 0 auto 0 -90px
-    p
-      font-size: 16px
-      @media (min-width: $break-hand)
-        font-size: 18px
-      @media (min-width: $break-mid)
-        font-size: 20px
+
 .why
   margin: 90px auto
   position: relative
   z-index: 2
   @media (min-width: $break-desk)
     margin: 160px auto
-  .intro
-    p
-      font-size: 16px
-      @media (min-width: $break-hand)
-        font-size: 18px
-      @media (min-width: $break-mid)
-        font-size: 20px
   .grid
     margin: 0 auto
     @media (min-width: $break-desk)
@@ -317,7 +304,7 @@
         display: none
 
   .label
-    font-b
+    +font-b
     text-transform: uppercase
     letter-spacing: .1em
     color: $cyan
@@ -422,7 +409,7 @@
       @media (min-width: $break-small)
         padding: 0 20px
     .label
-      font-b
+      +font-b
       letter-spacing: -.03em
       color: $cyan
       font-size: 20px
