@@ -260,7 +260,7 @@ body, html {
   font-family: "Calibre", sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: #092425;
+  color: #3f3f3f;
   font-size: 32px;
   margin-bottom: 20px;
   letter-spacing: -0.03em;
@@ -286,7 +286,7 @@ body, html {
   font-family: "Calibre", sans-serif;
   font-weight: 600;
   font-style: normal;
-  color: #092425;
+  color: #3f3f3f;
   font-size: 24px;
   margin-bottom: 20px;
   letter-spacing: -0.03em;
@@ -304,7 +304,7 @@ body, html {
 .base a:not(.button):not(.document-title) {
   position: relative;
   display: inline-block;
-  color: #092425;
+  color: #3f3f3f;
   transition: 275ms ease;
   font-family: "Calibre", sans-serif;
   font-weight: 600;
@@ -401,7 +401,7 @@ body, html {
   color: white;
   padding: 13px 10px 10px;
   line-height: normal;
-  color: #092425;
+  color: #3f3f3f;
   font-family: "Calibre", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -461,7 +461,7 @@ body, html {
   transition: ease-in all 0.2s;
 }
 .button:hover {
-  background: #092425;
+  background: #3f3f3f;
   color: #fff;
 }
 .button:hover::after {
@@ -851,7 +851,7 @@ body, html {
   padding: 0px;
   -webkit-appearance: none;
   width: 100%;
-  height: 6px;
+  height: 10px;
   border-radius: 3px;
   background: #d8d8d8;
   outline: none;
@@ -867,8 +867,8 @@ body, html {
   transition: 0.2s;
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: linear-gradient(to left, #74d3d8, #39c0c8);
   cursor: pointer;
@@ -913,10 +913,10 @@ body, html {
   line-height: normal;
   cursor: pointer;
   border-radius: 3px;
-  color: #092425;
+  color: #3f3f3f;
   border: 2px solid #d8d8d8;
   margin-left: 0px;
-  background-color: #f2f2f2;
+  background-color: transparent;
   max-width: 100%;
 }
 @media (min-width: 600px) {
@@ -1106,7 +1106,7 @@ body, html {
   font-size: 36px;
   line-height: 1;
   letter-spacing: -0.03em;
-  color: #092425;
+  color: #3f3f3f;
   line-height: 0.95;
   margin-bottom: 20px;
 }
@@ -1329,7 +1329,20 @@ body, html {
   margin-right: 7px;
   margin-top: -6px;
 }
-
+@media (min-width: 600px) {
+  .why .grid-item .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .why .grid-item .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
 .why .grid-item .icon.icon-check {
   background: linear-gradient(to left, #74d3d8, #39c0c8);
 }
@@ -1477,10 +1490,15 @@ body, html {
 .timeline .perks li {
   font-size: 18px;
   line-height: 1.4;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d8d8d8;
 }
 @media (min-width: 600px) {
   .timeline .perks li {
     font-size: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 900px) {
