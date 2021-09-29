@@ -2,7 +2,7 @@
 layout: layouts/document.njk
 title: Pointing Your Domain to the Loopdash Server - Loopdash
 h1: Loopdash Documents
-subheadline: Pointing Your Domain to the Loopdash Server
+subheadline: Pointing Your Domain to Our Server
 description: A brief tutorial on how to point your DNS to Loopdash's server
 sitemap:
   changefreq: weekly
