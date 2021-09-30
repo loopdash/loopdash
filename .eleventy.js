@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
     "eot",
     "ttf",
     "woff",
+    "woff2",
     "ico"
   ]);
 
