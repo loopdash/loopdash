@@ -1637,8 +1637,12 @@ body, html {
 }
 @media (min-width: 900px) {
   .site-header .logo {
-    width: 225px;
     margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .site-header .logo {
+    width: 225px;
   }
 }
 .site-header .logo img {
@@ -1684,6 +1688,11 @@ body, html {
 }
 @media (min-width: 1024px) {
   .site-header .menu li:not(.btn) a {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-header .menu li:not(.btn) a {
     font-size: 24px;
   }
 }
@@ -1706,13 +1715,13 @@ body, html {
 }
 @media (min-width: 900px) {
   .site-header .menu .btn {
-    margin-left: 40px;
+    margin-left: 30px;
     margin-right: 0px;
   }
 }
 @media (min-width: 1024px) {
   .site-header .menu .btn {
-    margin-left: 60px;
+    margin-left: 50px;
   }
 }
 @media (min-width: 1200px) {
