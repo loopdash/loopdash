@@ -215,7 +215,7 @@ body, html {
 .base p strong em,
 .base p em strong {
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
 .base p + h2,
@@ -236,7 +236,7 @@ body, html {
   position: relative;
   z-index: 2;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   color: #3f3f3f;
   font-size: 32px;
@@ -262,7 +262,7 @@ body, html {
   position: relative;
   z-index: 2;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   color: #3f3f3f;
   font-size: 24px;
@@ -285,7 +285,7 @@ body, html {
   color: #3f3f3f;
   transition: 275ms ease;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
 .base a:not(.button):not(.document-title) span {
@@ -408,7 +408,7 @@ body, html {
   font-weight: 700;
   font-style: normal;
   line-height: normal;
-  padding: 13px 10px;
+  padding: 13px 10px 16px;
   border-radius: 3px;
   min-width: 200px;
   font-size: 18px;
@@ -696,10 +696,10 @@ body, html {
 .form-container .field-wrapper label {
   display: block;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-size: 20px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .form-container input, .form-container textarea {
   width: 100%;
@@ -811,7 +811,7 @@ body, html {
   font-weight: 700;
   font-style: normal;
   position: relative;
-  padding: 10px 30px 4px;
+  padding: 8px 30px 10px;
   font-size: 18px;
   line-height: normal;
   cursor: pointer;
@@ -832,7 +832,7 @@ body, html {
 }
 .form-container .radios input[type=radio]:checked + label {
   border: none;
-  padding: 12px 32px 6px;
+  padding: 10px 32px 12px;
   background: linear-gradient(to left, #74d3d8, #39c0c8);
   color: white;
   overflow: hidden;
@@ -843,6 +843,7 @@ body, html {
 
 .page-hero {
   position: relative;
+  z-index: 3;
 }
 .page-hero .hero {
   text-align: center;
@@ -1004,7 +1005,7 @@ body, html {
   position: relative;
   z-index: 2;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-size: 36px;
   line-height: 1;
@@ -1100,7 +1101,7 @@ body, html {
 .why {
   margin: 90px auto;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
   .why {
@@ -1154,7 +1155,7 @@ body, html {
   box-shadow: 0 0 10px 5px rgba(216, 216, 216, 0.4);
 }
 .why .grid-item:last-of-type .inner .benefits {
-  margin-top: 21px;
+  margin-top: 28px;
 }
 .why .grid-item .inner {
   position: relative;
@@ -1163,9 +1164,14 @@ body, html {
   background: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
-  padding: 40px 30px 30px;
+  padding: 40px 20px 30px;
   max-width: 500px;
   margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .why .grid-item .inner {
+    padding: 40px 30px 30px;
+  }
 }
 @media (min-width: 600px) {
   .why .grid-item .inner {
@@ -1199,7 +1205,7 @@ body, html {
   color: #3f3f3f;
   font-size: 24px;
   font-family: "Calibre", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
 }
@@ -1230,7 +1236,6 @@ body, html {
   align-items: center;
   color: #fff;
   margin-right: 7px;
-  margin-top: -6px;
 }
 @media (min-width: 600px) {
   .why .grid-item .icon {
@@ -1265,6 +1270,7 @@ body, html {
 }
 .why .grid-item .text {
   width: calc(100% - 25px);
+  margin-top: -2px;
 }
 @media (min-width: 1200px) {
   .why .grid-item .text {
@@ -1282,10 +1288,23 @@ body, html {
     margin: 160px auto 130px;
   }
 }
+.timeline .blob {
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: -50%;
+  transform: translateY(-50%);
+  width: 120%;
+  opacity: 0.5;
+}
+.timeline .wrap1000, .timeline .wrap1100 {
+  position: relative;
+  z-index: 2;
+}
 .timeline .grid {
   margin: 60px auto 0;
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .timeline .grid {
     margin: 60px -20px 0;
   }
@@ -1297,7 +1316,7 @@ body, html {
   opacity: 1;
   margin-bottom: 90px;
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .timeline .grid-item {
     margin: 0;
     width: 33.3333333%;
@@ -1317,7 +1336,7 @@ body, html {
   font-size: 32px;
   content: "";
   position: absolute;
-  top: 30px;
+  top: 40px;
   background: linear-gradient(to left, #74d3d8, #39c0c8);
   color: #fff;
   border-radius: 999em;
@@ -1332,17 +1351,12 @@ body, html {
   margin: 0 auto;
   transform: rotate(90deg) translateX(60px);
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .timeline .grid-item::after {
     transform: none;
     margin: 0;
     right: -30px;
     left: auto;
-  }
-}
-@media (min-width: 1024px) {
-  .timeline .grid-item::after {
-    top: 40px;
   }
 }
 .timeline .grid-item:last-of-type {
@@ -1369,6 +1383,12 @@ body, html {
   letter-spacing: 0.1em;
   color: #39c0c8;
   margin-bottom: 10px;
+  font-size: 18px;
+}
+@media (min-width: 1200px) {
+  .timeline .label {
+    font-size: 20px;
+  }
 }
 .timeline p {
   font-size: 50px;
@@ -1418,7 +1438,7 @@ body, html {
 .callout {
   margin: 60px auto;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 @media (min-width: 600px) {
   .callout {
