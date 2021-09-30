@@ -1788,12 +1788,13 @@ body, html {
 @media (min-width: 900px) {
   .site-header .menu li:not(.btn) {
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 4px;
   }
 }
 @media (min-width: 1024px) {
   .site-header .menu li:not(.btn) {
     margin-left: 60px;
+    margin-top: 7px;
   }
 }
 @media (min-width: 1200px) {
@@ -1833,7 +1834,7 @@ body, html {
     transition: transform 250ms ease-in-out;
     transform-origin: 100% 50%;
     position: relative;
-    bottom: 4px;
+    bottom: 0px;
   }
 }
 .site-header .menu li:not(.btn) a:hover::after {
@@ -1868,7 +1869,7 @@ body, html {
     font-weight: 700;
     font-style: normal;
     line-height: normal;
-    padding: 15px 30px 10px;
+    padding: 12px 30px 14px;
     background: #39c0c8;
     color: #fff;
     border-radius: 3px;
