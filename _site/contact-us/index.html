@@ -104,7 +104,7 @@
             } else {
               referral.classList.remove('show');
             }
-          }</script><label>Who referred you?</label> <input name="referral" type="text"></div><div class="field-wrapper range"><label for="timeline">Your Timeline</label> <input class="slider" type="range" id="timeline" name="timeline" min="1" max="24" value="0" step="1"><p><span id="months"></span> Months</p></div><div class="field-wrapper range"><label for="budget">Your Budget</label> <input class="slider" type="range" id="budget" name="budget" min="0" max="100" value="0" step="5"><p>$ <span id="amount"></span>k</p></div><script>var timelineSlider = document.getElementById("timeline");
+          }</script><label>Who referred you?</label> <input name="referral" type="text"></div><div class="field-wrapper range"><label for="timeline">Your Timeline</label> <input class="slider" type="range" id="timeline" name="timeline" min="1" max="12" value="0" step="1"><p><span id="months"></span> months</p></div><div class="field-wrapper range"><label for="budget">Your Budget</label> <input class="slider" type="range" id="budget" name="budget" min="1" max="100" value="0" step="1"><p>$<span id="amount"></span>k</p></div><script>var timelineSlider = document.getElementById("timeline");
         var months = document.getElementById("months");
         months.innerHTML = timelineSlider.value; // Display the default slider value
 
