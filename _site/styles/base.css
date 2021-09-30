@@ -807,6 +807,9 @@ body, html {
 }
 .form-container .radios label {
   display: block !important;
+  font-family: "Calibre", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   position: relative;
   padding: 10px 30px 4px;
   font-size: 18px;
