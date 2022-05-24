@@ -14,7 +14,7 @@ sitemap:
 <article class="documents">
   <div class="wrap900">
     <ul>
-      {% for document in collections.documents %}
+      {% for document in collections.documents | reverse %}
       <li class="base scroll fadeUp">
         <a href="{{ document.url }}" class="document-title">
           <h3>{{ document.data.subheadline }}</h3>
