@@ -11,17 +11,11 @@ tags: documents
 date: 2021-07-14
 url: /documents/how-to-delegate-access-to-godaddy
 ---
+The Loopdash team often needs to modify your DNS records to launch a site, setup an email server, or something else domain related. We could just login using your username and password, but that isn't necessarily the most secure option. If you are like most of our customers and use GoDaddy, you can just grant us access to your account. This allows us to make the necessary changes without sharing you password with us.
 
-<article class="content">
-  <div class="wrap1000">
-    <div class="base scroll fadeUp">
-      <p>The Loopdash team often needs to modify your DNS records to launch a site, setup an email server, or something else domain related. We could just login using your username and password, but that isn't necessarily the most secure option. If you are like most of our customers and use GoDaddy, you can just grant us access to your account. This allows us to make the necessary changes without sharing you password with us.<br/><br/>Once we have access, we are able to modifiy DNS records so we can launch your site, turn on email, or any other domain related jobs we are responsible for. This is also more secure because you can easily revoke access once our tasks are done.</p>
-      <ol>
-        <li>Login to GoDaddy and go to your <a target="_blank" href="https://account.godaddy.com/"><span>Account Settings</span></a></li>
-        <li>Select <a target="_blank" href="https://account.godaddy.com/access"><span>Delegate Access</span></a></li>
-        <li>Enter <span class="font-bold">gary@loopdash.com</span> to invite us</li>
-        <li>Select <span class="font-bold">Products, Domains & Purchase</span></li>
-      </ol>
-    </div>
-  </div>
-</article>
+Once we have access, we are able to modifiy DNS records so we can launch your site, turn on email, or any other domain related jobs we are responsible for. This is also more secure because you can easily revoke access once our tasks are done.
+
+1. Login to GoDaddy and go to your [Account Settings](https://account.godaddy.com/)
+2. Select [Delegate Access](https://account.godaddy.com/access)
+3. Enter *gary@loopdash.com* to invite us
+4. Select *Products, Domains & Purchase*

@@ -6,7 +6,13 @@
 
       <main class="document">
         {% include 'page-hero.njk' %}
-        {{ content | safe }}
+        <article class="content">
+          <div class="wrap1000">
+            <div class="base scroll fadeUp">
+            {{ content | safe }}
+            </div>
+          </div>
+        </article>
         {% include 'support-cta.njk' %}
       </main>
 

@@ -308,7 +308,11 @@ body, html {
   transition: 275ms ease;
   font-family: "Calibre", sans-serif;
   font-weight: 500;
-  font-style: italic;
+  color: #39c0c8;
+  text-decoration: underline;
+}
+.base a:not(.button):not(.document-title) span {
+  position: relative;
 }
 .base a:not(.button):not(.document-title) span {
   position: relative;
@@ -319,7 +323,7 @@ body, html {
 .base a:not(.button):not(.document-title):hover::before {
   transform: scaleX(0);
 }
-.base a:not(.button):not(.document-title)::before {
+.base a:not(.button):not(.document-title):not(li)::before, {
   position: absolute;
   content: "";
   bottom: 8px;
