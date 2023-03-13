@@ -47,6 +47,6 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "_site"
     },
-    passthroughFileCopy: true,
+    passthroughFileCopy: true
   };
 };
