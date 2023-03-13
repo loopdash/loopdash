@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body>
+    {% include 'nav.njk' %}
+    <main class="single-glossary">
+      {% include 'hero-without-image.njk' %}
+      <div class="default-container page-content card">
+        {{ content | safe }}
+      </div>
+    </main>
+    {% include 'site-footer.njk' %}
+  </body>
+</html>

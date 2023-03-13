@@ -2,12 +2,10 @@
 <html lang="en">
   {% include 'head.njk' %}
   <body>
-    {% include 'site-header.njk' %}
-
-      <main>
-        {{ content | safe }}
-      </main>
-
+    {% include 'nav.njk' %}
+    <main>
+      {{ content | safe }}
+    </main>
     {% include 'site-footer.njk' %}
   </body>
 </html>

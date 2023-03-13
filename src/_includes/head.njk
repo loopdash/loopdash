@@ -1,160 +1,52 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  {% include 'meta.njk' %}
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description | safe}}">
-
-  <!-- Google tags -->
-  <meta itemprop="name" content="loopdash">
-  <meta itemprop="description" content="{{ description | safe}}">
-  <meta itemprop="image" content="">
-
-  <!-- Facebook tags -->
-  <meta property="og:url" content="{{ page.url | safe }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ h1 | safe }}">
-  <meta property="og:description" content="{{ description | safe}}">
-  <meta property="og:image" content="../../images/meta.png">
-
-  <!-- Twitter tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ h1 | safe }}">
-  <meta name="twitter:description" content="{{ description | safe}}">
-  <meta name="twitter:image" property="og:image" content="../../images/meta.png">
-  <meta name="robots" content="index, follow" />
-
-  <!-- Fonts -->
-  <link rel="stylesheet" href="../../styles/fonts.css">
-  <!-- Fonts -->
-
-  <link rel="stylesheet" href="../../styles/base.css">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177470860-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-177470860-1');
-  </script>
-  <!-- Hotjar Tracking Code for loopdash.com -->
-  <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:2229235,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-
-  <!-- JQuery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <!-- JQuery -->
-
-  <!-- Scripts -->
-  <script>
-  jQuery(document).ready(function ($) {
-
-  /*=====================================*/
-  // Mobile Menu
-  /*=====================================*/
-  $(document).ready(function() {
-
-    $('.mobile-toggle-container').click(function(){
-      $(document).find('html').toggleClass('menu-open');
-    });
-
-  });
-
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    $(".parallax").css("transform","translateY(" +  (scroll/-7)  + "px)");
-    $(".parallax2").css("transform","translateY(" +  (scroll/12)  + "px)");
-    $(".parallax3").css("transform","translateX(" +  (scroll/-12)  + "px)");
-    $(".parallax4").css("transform","translateX(" +  (scroll/12)  + "px)");
-    $(".parallax").css("margin-bottom",(scroll/-7)  + "px");
-    $(".parallax2").css("margin-bottom",(scroll/12)  + "px");
-  });
-
-  /*======================================*/
-  // Animate Who We Are Stats
-  /*=====================================*/
-  $('.counter').each(function () {
-      $(this).prop('Counter',0).animate({
-          Counter: $(this).text()
-      }, {
-          duration: 4000,
-          easing: 'swing',
-          step: function(now) {
-            $(this).text(Math.ceil(now).toLocaleString('en'));
-        }
-      });
-  });
-
-  /*==================================*/
-  // Scroll animations
-  /*==================================*/
-
-   // Detect request animation frame
-   var scroll = window.requestAnimationFrame ||
-                // IE Fallback
-                function(callback){ window.setTimeout(callback, 1000/60)};
-   var elementsToShow = document.querySelectorAll('.scroll');
-
-   function loop() {
-
-       Array.prototype.forEach.call(elementsToShow, function(element){
-         if (isElementInViewport(element)) {
-           element.classList.add('is-visible');
-         } else {
-           element.classList.remove('is-visible');
-         }
-       });
-
-       scroll(loop);
-   }
-
-   // Call the loop for the first time
-   loop();
-
-   // Helper function from: http://stackoverflow.com/a/7557433/274826
-   function isElementInViewport(el) {
-     // special bonus for those using jQuery
-     if (typeof jQuery === "function" && el instanceof jQuery) {
-       el = el[0];
-     }
-     var rect = el.getBoundingClientRect();
-     return (
-       (rect.top <= 0
-         && rect.bottom >= 0)
-       ||
-       (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-         rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-       ||
-       (rect.top >= 0 &&
-         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-     );
-   }
-
-
-  //*===================================*/
-  // end scripts
-  //*===================================*/
-
-  });
-
-
-  </script>
-  <!-- Scripts -->
-
-  <!-- Icomoon Font -->
-  <link rel="stylesheet" href="../../styles/icomoon.css">
-  <!-- Google Font -->
-
-  <link rel="icon" href="../../favicon.png">
-
-</head>
+  <link rel="stylesheet" href="../../styles/normalize.css"/>
+  <link rel="stylesheet" href="../../styles/base.css"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-Italic.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-MediumItalic.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+  <link
+    rel="preload"
+    href="https://thedecisionlab.com/fonts/Sailec-BoldItalic.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"/>
+</head></head>

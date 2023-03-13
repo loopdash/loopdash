@@ -1,14 +1,19 @@
 ---
 layout: layouts/default.njk
-title: Contact Us - Loopdash
-h1: Contact Loopdash
-subheadline: Let's start your project
-description: All projects begin with a complimentary consultation to talk through your idea, project, or goals.
+title: Start your web project - Loopdash
+h1: Contact Loopdash for Web Development
+h2: Let's talk about your web project.
+p: All projects begin with a complimentary consultation to talk through your idea, project, or goals.
+image: "/images/computer-illustration.jpg"
+imageAlt: Computer
 sitemap:
   changefreq: weekly
   priority: 0.9
 ---
 
-{% include 'page-hero.njk' %}
-
-{% include 'contact-form.njk' %}
+<div class="default-container">
+  {% include 'big-hero.njk' %}
+  <div class="page-content">
+    {% include 'contact-form.njk' %}
+  </div>
+</div>

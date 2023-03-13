@@ -1,0 +1,32 @@
+---
+layout: layouts/default.njk
+title: Glossary - Loopdash
+h1: Web Development Glossary
+h2: The A-Zs of Web Development
+description: The A-Zs of the Web Development
+pagination:
+  data: collections.glossary
+  size: 40
+  alias: terms
+sitemap:
+  changefreq: weekly
+  priority: 0.6
+---
+
+<div class="page-hero">
+  <div class="page-hero__content default-container text-center">
+    <h1 class="text--eyebrow">{{ h1 }}</h1>
+    <h2 class="font-47 font-weight--800">{{ h2 }}</h2>
+    <p class="font-43 font--normal">{{ description }}</p>
+  </div>
+</div>
+<article class="default-container">
+  {% for term in terms %}
+    <div class="glossary-term">
+      <a class="card" href="{{ term.url }}">
+        <h2 class="font-44 text--charcoal font-weight--700 mb-1 mt-0">{{ term.data.h1 }}</h2>
+        <p class="font-42 text--charcoal">{{ term.data.summary }}</p>
+      </a>
+    </div>
+  {% endfor %}
+</article>

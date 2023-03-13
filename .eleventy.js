@@ -1,7 +1,7 @@
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const htmlmin = require("html-minifier");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
 
   eleventyConfig.setTemplateFormats([
@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
     if (outputPath && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
