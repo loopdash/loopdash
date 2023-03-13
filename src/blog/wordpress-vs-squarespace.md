@@ -41,11 +41,11 @@ WordPress considerably permits users with business and eCommerce plans to instal
 
 ##### Blogging
 
-Squarespace has built-in blogging tools such as [categories](/glossary/category), [comments](/glossary/comments), and moderation, in addition to tags and scheduling of [post](/glossary/post).
+Squarespace has built-in blogging tools such as [categories](/glossary/category/), [comments](/glossary/comments/), and moderation, in addition to tags and scheduling of [post](/glossary/post/).
 
-WordPress has a free plan that gives beginner blogger [options](/glossary/options), and a hosted site with a storage of 3 gigabytes. Paid plans do render more options, including customization.
+WordPress has a free plan that gives beginner blogger [options](/glossary/options/), and a hosted site with a storage of 3 gigabytes. Paid plans do render more options, including customization.
 
-Neither of these two permits unlimited design freedom. Both platforms do offer structured [templates](/glossary/template) and a limited number of [themes](/glossary/theme), as well as essential editing tools. The higher-priced plans on each platform, however, fortunately, open up more premium design options.
+Neither of these two permits unlimited design freedom. Both platforms do offer structured [templates](/glossary/template/) and a limited number of [themes](/glossary/theme/), as well as essential editing tools. The higher-priced plans on each platform, however, fortunately, open up more premium design options.
 
 ##### E-commerce
 

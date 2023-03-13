@@ -14,7 +14,7 @@ date: 2023-03-04
 url: /blog/database-error
 ---
 
-If you're seeing the error message "Error establishing database connection" on your [WordPress](/glossary/WordPress) site, it means that WordPress is unable to establish a connection to the [database](/glossary/database) that stores all of your site's content and settings. This error can be caused by a number of different issues, but fortunately, there are a few steps you can take to try and resolve it.
+If you're seeing the error message "Error establishing database connection" on your [WordPress](/glossary/wordpress/) site, it means that WordPress is unable to establish a connection to the [database](/glossary/database/) that stores all of your site's content and settings. This error can be caused by a number of different issues, but fortunately, there are a few steps you can take to try and resolve it.
 
 ### Fix Error Establishing Connection to Database
 

@@ -13,7 +13,7 @@ date: 2021-07-14
 url: /blog/does-my-site-need-an-ssl
 ---
 
-Running a website, app or something on the internet? Having an [ssl](/glossary/ssl) certificate is no longer treated as a luxury, but a necessity. Here are five substantial advantages of having an SSL certificate. TLDR your site must have an SSL. Continue reading below to understand why SSL is necessary.
+Running a website, app or something on the internet? Having an [ssl](/glossary/ssl/) certificate is no longer treated as a luxury, but a necessity. Here are five substantial advantages of having an SSL certificate. TLDR your site must have an SSL. Continue reading below to understand why SSL is necessary.
 
 ## What is an SSL Certificate?
 

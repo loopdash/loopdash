@@ -17,9 +17,9 @@ If you are experiencing difficulties accessing your WordPress website, encounter
 
 ## What is an internal server error?
 
-A WordPress Internal Server Error is an error message that appears when the server is unable to process a request due to an internal issue. This could be caused by a variety of issues, including a corrupted [.htaccess](/glossary/htaccess) file, a [plugin](/glossary/plugin) conflict, or a [lack of memory](glossary/memory-usage). It is usually accompanied by a 500 Internal Server Error code. Follow the steps below to fix your internal server error.
+A WordPress Internal Server Error is an error message that appears when the server is unable to process a request due to an internal issue. This could be caused by a variety of issues, including a corrupted [.htaccess](/glossary/htaccess) file, a [plugin](/glossary/plugin/) conflict, or a [lack of memory](glossary/memory-usage/). It is usually accompanied by a 500 Internal Server Error code. Follow the steps below to fix your internal server error.
 
-1. Increase the PHP Memory Limit: Increasing the PHP memory limit in WordPress can fix the internal server error. To do this, access your WordPress files using an [FTP](/glossary/ftp) client and locate the [wp-config.php](/glossary/wp-config.php) file. Add the following code to the file: define('WP_MEMORY_LIMIT', '64M');
+1. Increase the PHP Memory Limit: Increasing the PHP memory limit in WordPress can fix the internal server error. To do this, access your WordPress files using an [FTP](/glossary/ftp/) client and locate the [wp-config.php](/glossary/wp-config.php/) file. Add the following code to the file: define('WP_MEMORY_LIMIT', '64M');
 
 2. Deactivate Plugins: Plugins can sometimes cause internal server errors. To fix this, access your WordPress files using an FTP client and navigate to the /wp-content/plugins/ folder. Rename the plugins folder to something like plugins_old. This will deactivate all plugins.
 

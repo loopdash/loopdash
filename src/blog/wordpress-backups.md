@@ -13,7 +13,7 @@ date: 2023-03-04
 url: /blog/wordpress-backups
 ---
 
-Creating daily backups for [WordPress](/glossary/wordpress) websites is necessary for a few reasons. Website backups provide a safeguard against data loss due to malicious attacks, hardware failure, or software issues. They also ensure that your website can be swiftly restored to its prior state in the event of a disaster. Additionally, WordPress backups help protect against data corruption caused by hackers or other malicious actors. Furthermore, it allows for easy rollback to a previous version of your website if necessary. By performing daily backups, you can ensure that your website is always secure and up-to-date.
+Creating daily backups for [WordPress](/glossary/wordpress/) websites is necessary for a few reasons. Website backups provide a safeguard against data loss due to malicious attacks, hardware failure, or software issues. They also ensure that your website can be swiftly restored to its prior state in the event of a disaster. Additionally, WordPress backups help protect against data corruption caused by hackers or other malicious actors. Furthermore, it allows for easy rollback to a previous version of your website if necessary. By performing daily backups, you can ensure that your website is always secure and up-to-date.
 
 ## What can happen if you don't do daily backups?
 
