@@ -40,7 +40,7 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  config.addPassthroughCopy('src/_redirects');
+  eleventyConfig.addPassthroughCopy('src/_redirects');
 
   return {
     dir: {
