@@ -353,7 +353,7 @@ ul {
 .big-hero {
   padding: 3rem 0;
 }
-.home-hero {
+.default-container.home-hero {
   padding: 6rem 1.25rem;
 }
 
