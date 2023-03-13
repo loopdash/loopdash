@@ -350,8 +350,18 @@ ul {
   flex: 1;
 }
 
+/* problem section */
+.big-hero {
+  padding: 3rem 0;
+}
+.home-hero {
+  padding: 6rem 1.25rem;
+}
 
 /* problem section */
+.problem-section {
+  padding: 4rem 1.25rem;
+}
 .problem-section .grid {
   align-items: center;
 }
