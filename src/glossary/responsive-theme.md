@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Responsive Theme - Loopdash
 h1: Responsive Theme
 h2: What does it mean?
-summary: A responsive theme is a WordPress theme that adjusts its layout and design to fit different screen sizes and devices, providing an optimal user experience.
+description: A responsive theme is a WordPress theme that adjusts its layout and design to fit different screen sizes and devices, providing an optimal user experience.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

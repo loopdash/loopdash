@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Plugin Directory - Loopdash
 h1: Plugin Directory
 h2: What does it mean?
-summary: The Plugin Directory is a centralized repository of user-contributed software extensions that can be easily installed and integrated into a WordPress website to enhance its functionality and features.
+description: The Plugin Directory is a centralized repository of user-contributed software extensions that can be easily installed and integrated into a WordPress website to enhance its functionality and features.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

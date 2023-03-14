@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Subdomain - Loopdash
 h1: Subdomain
 h2: What does it mean?
-summary: A subdomain in Wordpress is a separate section of a website that can be used to organize content or create a distinct area for a specific purpose, such as a blog or online store.
+description: A subdomain in Wordpress is a separate section of a website that can be used to organize content or create a distinct area for a specific purpose, such as a blog or online store.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

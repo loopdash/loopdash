@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: WordPress.com - Loopdash
 h1: WordPress.com
 h2: What does it mean?
-summary: WordPress.com is a cloud-based platform that provides a fully managed WordPress experience, allowing users to easily create and manage websites without the need for technical expertise or server administration.
+description: WordPress.com is a cloud-based platform that provides a fully managed WordPress experience, allowing users to easily create and manage websites without the need for technical expertise or server administration.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

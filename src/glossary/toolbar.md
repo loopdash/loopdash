@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Toolbar - Loopdash
 h1: Toolbar
 h2: What does it mean?
-summary: A toolbar is a graphical user interface element that provides quick access to frequently used features and functions within the WordPress content management system.
+description: A toolbar is a graphical user interface element that provides quick access to frequently used features and functions within the WordPress content management system.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

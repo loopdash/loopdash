@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Subscriber - Loopdash
 h1: Subscriber
 h2: What does it mean?
-summary: A Subscriber in Wordpress is a user role that has the ability to view and comment on posts, but cannot create or edit content.
+description: A Subscriber in Wordpress is a user role that has the ability to view and comment on posts, but cannot create or edit content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

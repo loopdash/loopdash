@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Plugin - Loopdash
 h1: Plugin
 h2: What does it mean?
-summary: A plugin is a software component that adds specific functionality to a WordPress website, extending its core features and allowing users to customize their site without modifying the underlying code.
+description: A plugin is a software component that adds specific functionality to a WordPress website, extending its core features and allowing users to customize their site without modifying the underlying code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

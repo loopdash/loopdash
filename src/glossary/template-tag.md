@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Template Tag - Loopdash
 h1: Template Tag
 h2: What does it mean?
-summary: A Template Tag is a predefined function in WordPress that allows developers to easily retrieve and display specific information or content within a theme or plugin.
+description: A Template Tag is a predefined function in WordPress that allows developers to easily retrieve and display specific information or content within a theme or plugin.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

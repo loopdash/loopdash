@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: .htaccess - Loopdash
 h1: .htaccess
 h2: What does it mean?
-summary: Configuration file used to control web server behavior for WordPress sites.
+description: Configuration file used to control web server behavior for WordPress sites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Permalinks - Loopdash
 h1: Permalinks
 h2: What does it mean?
-summary: Permalinks are the permanent URLs that are assigned to each post or page in WordPress, allowing users to access the content even after it has been moved or renamed.
+description: Permalinks are the permanent URLs that are assigned to each post or page in WordPress, allowing users to access the content even after it has been moved or renamed.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

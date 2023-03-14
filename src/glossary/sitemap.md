@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Sitemap - Loopdash
 h1: Sitemap
 h2: What does it mean?
-summary: A sitemap is a hierarchical list of all the pages on a website that helps search engines and users navigate and understand the structure of the site, and can be generated automatically using a plugin in Wordpress.
+description: A sitemap is a hierarchical list of all the pages on a website that helps search engines and users navigate and understand the structure of the site, and can be generated automatically using a plugin in Wordpress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

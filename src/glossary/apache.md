@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Apache - Loopdash
 h1: Apache
 h2: What does it mean?
-summary: Apache is a web server software that can be used to host and serve WordPress websites.
+description: Apache is a web server software that can be used to host and serve WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

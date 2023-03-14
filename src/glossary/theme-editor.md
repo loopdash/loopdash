@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Theme Editor - Loopdash
 h1: Theme Editor
 h2: What does it mean?
-summary: Theme Editor is a built-in tool in WordPress that allows developers to modify the code and design of their website's theme directly from the WordPress dashboard.
+description: Theme Editor is a built-in tool in WordPress that allows developers to modify the code and design of their website's theme directly from the WordPress dashboard.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

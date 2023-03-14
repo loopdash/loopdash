@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Backend - Loopdash
 h1: Backend
 h2: What does it mean?
-summary: Backend in Wordpress refers to the server-side of the platform where the core functionality and data management of the website is handled.
+description: Backend in Wordpress refers to the server-side of the platform where the core functionality and data management of the website is handled.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Multisite (MU) - Loopdash
 h1: Multisite (MU)
 h2: What does it mean?
-summary: Multisite (MU) is a feature in WordPress that allows users to create and manage multiple websites from a single WordPress installation.
+description: Multisite (MU) is a feature in WordPress that allows users to create and manage multiple websites from a single WordPress installation.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

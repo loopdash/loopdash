@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Filter - Loopdash
 h1: Filter
 h2: What does it mean?
-summary: A filter in WordPress is a function that allows developers to modify or manipulate data before it is displayed or processed by WordPress core or plugins.
+description: A filter in WordPress is a function that allows developers to modify or manipulate data before it is displayed or processed by WordPress core or plugins.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Category - Loopdash
 h1: Category
 h2: What does it mean?
-summary: Category is a taxonomy in WordPress that allows grouping of posts based on a common topic or theme.
+description: Category is a taxonomy in WordPress that allows grouping of posts based on a common topic or theme.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

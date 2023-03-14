@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Nonce Keys - Loopdash
 h1: Nonce Keys
 h2: What does it mean?
-summary: Nonce keys are randomly generated strings used to ensure the security of form submissions and prevent unauthorized access to sensitive data in Wordpress.
+description: Nonce keys are randomly generated strings used to ensure the security of form submissions and prevent unauthorized access to sensitive data in Wordpress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Object - Loopdash
 h1: Object
 h2: What does it mean?
-summary: An object in WordPress is a data structure that encapsulates related properties and methods, allowing for modular and reusable code.
+description: An object in WordPress is a data structure that encapsulates related properties and methods, allowing for modular and reusable code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

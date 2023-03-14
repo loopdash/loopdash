@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Property - Loopdash
 h1: Property
 h2: What does it mean?
-summary: Property is a custom post type in WordPress that allows users to create and manage listings for real estate, rentals, or any other type of property.
+description: Property is a custom post type in WordPress that allows users to create and manage listings for real estate, rentals, or any other type of property.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

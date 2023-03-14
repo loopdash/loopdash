@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Custom fields - Loopdash
 h1: Custom fields
 h2: What does it mean?
-summary: Custom fields in Wordpress are user-defined metadata that can be added to posts, pages, or custom post types to provide additional information and functionality beyond the default content fields.
+description: Custom fields in Wordpress are user-defined metadata that can be added to posts, pages, or custom post types to provide additional information and functionality beyond the default content fields.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

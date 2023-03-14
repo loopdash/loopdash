@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Customizer - Loopdash
 h1: Customizer
 h2: What does it mean?
-summary: Customizer is a user interface in WordPress that allows developers to customize and preview the appearance and functionality of a theme or plugin in real-time.
+description: Customizer is a user interface in WordPress that allows developers to customize and preview the appearance and functionality of a theme or plugin in real-time.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

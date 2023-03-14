@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Contributor - Loopdash
 h1: Contributor
 h2: What does it mean?
-summary: A Contributor in WordPress is a user role that can create and edit their own posts, but cannot publish them without approval from an editor or administrator.
+description: A Contributor in WordPress is a user role that can create and edit their own posts, but cannot publish them without approval from an editor or administrator.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

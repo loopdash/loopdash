@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Search engine optimization (SEO) - Loopdash
 h1: Search engine optimization (SEO)
 h2: What does it mean?
-summary: SEO is the process of optimizing a website's content and structure to improve its visibility and ranking on search engines like Google, and can be achieved through various plugins and techniques in Wordpress.
+description: SEO is the process of optimizing a website's content and structure to improve its visibility and ranking on search engines like Google, and can be achieved through various plugins and techniques in Wordpress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

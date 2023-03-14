@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Role - Loopdash
 h1: Role
 h2: What does it mean?
-summary: A role in Wordpress defines a set of permissions and capabilities that determine what a user can and cannot do within the website.
+description: A role in Wordpress defines a set of permissions and capabilities that determine what a user can and cannot do within the website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

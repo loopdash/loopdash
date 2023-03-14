@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Media - Loopdash
 h1: Media
 h2: What does it mean?
-summary: Media in Wordpress is a built-in feature that allows users to upload and manage various types of digital content such as images, videos, and audio files.
+description: Media in Wordpress is a built-in feature that allows users to upload and manage various types of digital content such as images, videos, and audio files.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

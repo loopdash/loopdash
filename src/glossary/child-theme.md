@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Child Theme - Loopdash
 h1: Child Theme
 h2: What does it mean?
-summary: A child theme is a WordPress theme that inherits the functionality and styling of its parent theme, allowing developers to make modifications without affecting the original codebase.
+description: A child theme is a WordPress theme that inherits the functionality and styling of its parent theme, allowing developers to make modifications without affecting the original codebase.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

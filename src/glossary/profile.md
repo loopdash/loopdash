@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Profile - Loopdash
 h1: Profile
 h2: What does it mean?
-summary: A Profile in Wordpress is a user-specific page that displays personal information and settings for each individual user.
+description: A Profile in Wordpress is a user-specific page that displays personal information and settings for each individual user.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Theme Options - Loopdash
 h1: Theme Options
 h2: What does it mean?
-summary: Theme Options are a set of customizable settings that allow users to modify the appearance and functionality of a WordPress theme without having to modify the code.
+description: Theme Options are a set of customizable settings that allow users to modify the appearance and functionality of a WordPress theme without having to modify the code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

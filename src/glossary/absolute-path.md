@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Absolute Path - Loopdash
 h1: Absolute Path
 h2: What does it mean?
-summary: An absolute path in WordPress refers to the complete and exact location of a file or directory on the server, starting from the root directory.
+description: An absolute path in WordPress refers to the complete and exact location of a file or directory on the server, starting from the root directory.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

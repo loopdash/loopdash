@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Revisions - Loopdash
 h1: Revisions
 h2: What does it mean?
-summary: Revisions in Wordpress are a feature that allows users to view and restore previous versions of their content, providing a safety net for changes made to posts and pages.
+description: Revisions in Wordpress are a feature that allows users to view and restore previous versions of their content, providing a safety net for changes made to posts and pages.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

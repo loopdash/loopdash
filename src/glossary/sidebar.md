@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Sidebar - Loopdash
 h1: Sidebar
 h2: What does it mean?
-summary: Sidebar is a customizable section in the WordPress theme that allows users to add widgets and content to the side of their website pages.
+description: Sidebar is a customizable section in the WordPress theme that allows users to add widgets and content to the side of their website pages.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

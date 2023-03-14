@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post Slug - Loopdash
 h1: Post Slug
 h2: What does it mean?
-summary: A Post Slug is a URL-friendly version of a post's title that is used to identify and access the post in WordPress.
+description: A Post Slug is a URL-friendly version of a post's title that is used to identify and access the post in WordPress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

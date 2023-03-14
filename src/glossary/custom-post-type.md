@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Custom Post Type - Loopdash
 h1: Custom Post Type
 h2: What does it mean?
-summary: Custom Post Type is a feature in WordPress that allows developers to create their own content types with custom fields and taxonomies.
+description: Custom Post Type is a feature in WordPress that allows developers to create their own content types with custom fields and taxonomies.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Parent Theme - Loopdash
 h1: Parent Theme
 h2: What does it mean?
-summary: A parent theme in WordPress is a pre-designed and pre-coded template that serves as a foundation for creating child themes with customized styles and functionality.
+description: A parent theme in WordPress is a pre-designed and pre-coded template that serves as a foundation for creating child themes with customized styles and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

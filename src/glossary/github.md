@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: GitHub - Loopdash
 h1: GitHub
 h2: What does it mean?
-summary: GitHub is a web-based platform that allows developers to collaborate on code, manage version control, and deploy their projects seamlessly, just like how WordPress enables developers to create and manage websites and blogs.
+description: GitHub is a web-based platform that allows developers to collaborate on code, manage version control, and deploy their projects seamlessly, just like how WordPress enables developers to create and manage websites and blogs.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

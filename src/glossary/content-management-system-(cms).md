@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Content Management System (CMS) - Loopdash
 h1: Content Management System (CMS)
 h2: What does it mean?
-summary: A CMS like Wordpress is a software application that allows users to create, manage, and publish digital content, such as blog posts, web pages, and media files, without requiring extensive technical knowledge or coding skills.
+description: A CMS like Wordpress is a software application that allows users to create, manage, and publish digital content, such as blog posts, web pages, and media files, without requiring extensive technical knowledge or coding skills.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: QuickPress - Loopdash
 h1: QuickPress
 h2: What does it mean?
-summary: QuickPress is a streamlined content creation tool within the WordPress platform that allows users to quickly publish posts or pages without navigating through the full WordPress dashboard.
+description: QuickPress is a streamlined content creation tool within the WordPress platform that allows users to quickly publish posts or pages without navigating through the full WordPress dashboard.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

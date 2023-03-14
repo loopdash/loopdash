@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: WAMP - Loopdash
 h1: WAMP
 h2: What does it mean?
-summary: WAMP is a software bundle that includes Apache, MySQL, and PHP, which allows developers to easily set up a local server environment for developing and testing WordPress websites.
+description: WAMP is a software bundle that includes Apache, MySQL, and PHP, which allows developers to easily set up a local server environment for developing and testing WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

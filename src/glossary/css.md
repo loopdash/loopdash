@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: CSS - Loopdash
 h1: CSS
 h2: What does it mean?
-summary: CSS is a styling language used to define the visual appearance of HTML elements in WordPress websites.
+description: CSS is a styling language used to define the visual appearance of HTML elements in WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post Format - Loopdash
 h1: Post Format
 h2: What does it mean?
-summary: Post Format is a feature in WordPress that allows developers to define different styles for different types of posts, such as video, audio, gallery, quote, and more.
+description: Post Format is a feature in WordPress that allows developers to define different styles for different types of posts, such as video, audio, gallery, quote, and more.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

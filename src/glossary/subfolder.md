@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Subfolder - Loopdash
 h1: Subfolder
 h2: What does it mean?
-summary: A subfolder in Wordpress is a directory within the main installation folder that can contain additional files and folders for organizing content and functionality.
+description: A subfolder in Wordpress is a directory within the main installation folder that can contain additional files and folders for organizing content and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

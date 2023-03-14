@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Header - Loopdash
 h1: Header
 h2: What does it mean?
-summary: A header in WordPress is a section of a website that appears at the top of every page and contains important information such as the site's logo, navigation menu, and contact information.
+description: A header in WordPress is a section of a website that appears at the top of every page and contains important information such as the site's logo, navigation menu, and contact information.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

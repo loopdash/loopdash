@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: SALT Keys - Loopdash
 h1: SALT Keys
 h2: What does it mean?
-summary: SALT keys are a set of random strings used by WordPress to enhance security by encrypting user passwords and other sensitive data.
+description: SALT keys are a set of random strings used by WordPress to enhance security by encrypting user passwords and other sensitive data.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

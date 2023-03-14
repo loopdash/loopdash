@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: HTML - Loopdash
 h1: HTML
 h2: What does it mean?
-summary: HTML is a markup language used to structure and display content on web pages, and is an essential component of WordPress development.
+description: HTML is a markup language used to structure and display content on web pages, and is an essential component of WordPress development.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

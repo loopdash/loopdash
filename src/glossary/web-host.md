@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Web host - Loopdash
 h1: Web host
 h2: What does it mean?
-summary: A web host is a server that provides the necessary infrastructure and resources for running a WordPress website.
+description: A web host is a server that provides the necessary infrastructure and resources for running a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

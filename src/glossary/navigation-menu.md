@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Navigation Menu - Loopdash
 h1: Navigation Menu
 h2: What does it mean?
-summary: A navigation menu in Wordpress is a user interface element that displays a list of links to different pages or sections of a website, allowing users to easily navigate and access content.
+description: A navigation menu in Wordpress is a user interface element that displays a list of links to different pages or sections of a website, allowing users to easily navigate and access content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

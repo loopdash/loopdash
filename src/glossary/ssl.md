@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: SSL - Loopdash
 h1: SSL
 h2: What does it mean?
-summary: SSL is a security protocol that encrypts data transmitted between a user's browser and a website, ensuring that sensitive information such as login credentials and payment details are protected, and is essential for any WordPress site that handles user data.
+description: SSL is a security protocol that encrypts data transmitted between a user's browser and a website, ensuring that sensitive information such as login credentials and payment details are protected, and is essential for any WordPress site that handles user data.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Primary Menu - Loopdash
 h1: Primary Menu
 h2: What does it mean?
-summary: The Primary Menu is a customizable navigation bar that allows users to easily access important pages and content on a WordPress website.
+description: The Primary Menu is a customizable navigation bar that allows users to easily access important pages and content on a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

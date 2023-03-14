@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: AJAX - Loopdash
 h1: AJAX
 h2: What does it mean?
-summary: AJAX is a technique used in WordPress development to dynamically update content on a web page without requiring a full page reload.
+description: AJAX is a technique used in WordPress development to dynamically update content on a web page without requiring a full page reload.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

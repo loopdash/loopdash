@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Template File - Loopdash
 h1: Template File
 h2: What does it mean?
-summary: A template file is a PHP file that defines the structure and layout of a specific page or post type in a WordPress theme.
+description: A template file is a PHP file that defines the structure and layout of a specific page or post type in a WordPress theme.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

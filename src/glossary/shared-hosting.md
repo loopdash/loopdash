@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Shared Hosting - Loopdash
 h1: Shared Hosting
 h2: What does it mean?
-summary: Shared hosting is a type of web hosting service where multiple websites, including WordPress sites, share the same server resources and infrastructure.
+description: Shared hosting is a type of web hosting service where multiple websites, including WordPress sites, share the same server resources and infrastructure.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Action - Loopdash
 h1: Action
 h2: What does it mean?
-summary: Action is a WordPress function that allows developers to execute custom code at specific points in the execution of a WordPress page or post.
+description: Action is a WordPress function that allows developers to execute custom code at specific points in the execution of a WordPress page or post.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

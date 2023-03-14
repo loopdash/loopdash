@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Dedicated IP - Loopdash
 h1: Dedicated IP
 h2: What does it mean?
-summary: A dedicated IP is a unique numerical identifier assigned to a specific website hosted on a server, allowing for secure and reliable access to the site without interference from other websites sharing the same IP address.
+description: A dedicated IP is a unique numerical identifier assigned to a specific website hosted on a server, allowing for secure and reliable access to the site without interference from other websites sharing the same IP address.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Loop - Loopdash
 h1: Loop
 h2: What does it mean?
-summary: A loop in WordPress is a PHP code structure that iterates through a set of posts or pages and displays them on a webpage.
+description: A loop in WordPress is a PHP code structure that iterates through a set of posts or pages and displays them on a webpage.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

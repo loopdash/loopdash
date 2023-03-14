@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Media Settings - Loopdash
 h1: Media Settings
 h2: What does it mean?
-summary: Media Settings in Wordpress are a configuration panel that allows users to set default sizes for images, choose the location for uploaded files, and enable/disable certain media-related features.
+description: Media Settings in Wordpress are a configuration panel that allows users to set default sizes for images, choose the location for uploaded files, and enable/disable certain media-related features.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

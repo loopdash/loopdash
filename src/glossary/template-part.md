@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Template Part - Loopdash
 h1: Template Part
 h2: What does it mean?
-summary: A Template Part is a reusable code snippet that can be included in multiple templates to display consistent content across a WordPress website.
+description: A Template Part is a reusable code snippet that can be included in multiple templates to display consistent content across a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

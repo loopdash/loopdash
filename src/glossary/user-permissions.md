@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: User Permissions - Loopdash
 h1: User Permissions
 h2: What does it mean?
-summary: User Permissions in Wordpress refer to the level of access and control a user has over the website's content and functionality.
+description: User Permissions in Wordpress refer to the level of access and control a user has over the website's content and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Include File - Loopdash
 h1: Include File
 h2: What does it mean?
-summary: An include file in WordPress is a separate PHP file that can be included in other PHP files to reuse code and improve maintainability.
+description: An include file in WordPress is a separate PHP file that can be included in other PHP files to reuse code and improve maintainability.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

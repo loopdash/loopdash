@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Tag - Loopdash
 h1: Tag
 h2: What does it mean?
-summary: A tag is a keyword or label assigned to a piece of content in WordPress, allowing for easy categorization and organization of posts.
+description: A tag is a keyword or label assigned to a piece of content in WordPress, allowing for easy categorization and organization of posts.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

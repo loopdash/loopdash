@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Permalink - Loopdash
 h1: Permalink
 h2: What does it mean?
-summary: A permalink is a permanent URL that points to a specific post or page on a WordPress website.
+description: A permalink is a permanent URL that points to a specific post or page on a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

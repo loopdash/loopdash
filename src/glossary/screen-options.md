@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Screen Options - Loopdash
 h1: Screen Options
 h2: What does it mean?
-summary: Screen Options in Wordpress allow users to customize the display of various elements on a particular screen or page, such as hiding or showing certain widgets or columns.
+description: Screen Options in Wordpress allow users to customize the display of various elements on a particular screen or page, such as hiding or showing certain widgets or columns.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

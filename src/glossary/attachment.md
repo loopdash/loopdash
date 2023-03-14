@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Attachment - Loopdash
 h1: Attachment
 h2: What does it mean?
-summary: Attachment in Wordpress refers to any media file (such as images, videos, or audio) that is uploaded and attached to a post or page, allowing it to be displayed or played within the content.
+description: Attachment in Wordpress refers to any media file (such as images, videos, or audio) that is uploaded and attached to a post or page, allowing it to be displayed or played within the content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Responsive design - Loopdash
 h1: Responsive design
 h2: What does it mean?
-summary: Responsive design is a development approach that ensures a website or theme adapts to different screen sizes and devices, providing an optimal user experience, and is essential for any modern WordPress site.
+description: Responsive design is a development approach that ensures a website or theme adapts to different screen sizes and devices, providing an optimal user experience, and is essential for any modern WordPress site.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post Types - Loopdash
 h1: Post Types
 h2: What does it mean?
-summary: Post Types are custom content types in WordPress that allow developers to create and manage different types of content, such as blog posts, pages, and custom post types, with their own unique attributes and functionality.
+description: Post Types are custom content types in WordPress that allow developers to create and manage different types of content, such as blog posts, pages, and custom post types, with their own unique attributes and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: PHP - Loopdash
 h1: PHP
 h2: What does it mean?
-summary: PHP is a server-side scripting language used by WordPress to dynamically generate web pages and handle database interactions.
+description: PHP is a server-side scripting language used by WordPress to dynamically generate web pages and handle database interactions.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

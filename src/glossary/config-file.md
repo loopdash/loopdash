@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Config File - Loopdash
 h1: Config File
 h2: What does it mean?
-summary: A config file in WordPress is a file that contains settings and configurations for the WordPress installation, such as database connection details, site URL, and security keys.
+description: A config file in WordPress is a file that contains settings and configurations for the WordPress installation, such as database connection details, site URL, and security keys.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Footer - Loopdash
 h1: Footer
 h2: What does it mean?
-summary: A footer is a section of a WordPress website that appears at the bottom of every page and typically contains information such as copyright notices, contact information, and links to important pages.
+description: A footer is a section of a WordPress website that appears at the bottom of every page and typically contains information such as copyright notices, contact information, and links to important pages.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

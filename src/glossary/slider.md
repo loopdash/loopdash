@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Slider - Loopdash
 h1: Slider
 h2: What does it mean?
-summary: Slider is a plugin that allows users to create and display image or video slideshows on their WordPress website.
+description: Slider is a plugin that allows users to create and display image or video slideshows on their WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

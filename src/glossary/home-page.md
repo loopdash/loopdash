@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Home Page - Loopdash
 h1: Home Page
 h2: What does it mean?
-summary: The Home Page in Wordpress is the default landing page of a website that displays a combination of static and dynamic content, including posts, pages, widgets, and menus, designed to provide visitors with an overview of the site's purpose and structure.
+description: The Home Page in Wordpress is the default landing page of a website that displays a combination of static and dynamic content, including posts, pages, widgets, and menus, designed to provide visitors with an overview of the site's purpose and structure.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

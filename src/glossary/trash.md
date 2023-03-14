@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Trash - Loopdash
 h1: Trash
 h2: What does it mean?
-summary: Trash is a built-in feature in WordPress that allows users to temporarily store deleted content before permanently deleting it.
+description: Trash is a built-in feature in WordPress that allows users to temporarily store deleted content before permanently deleting it.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

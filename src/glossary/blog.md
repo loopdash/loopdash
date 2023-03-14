@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Blog - Loopdash
 h1: Blog
 h2: What does it mean?
-summary: A blog is a content management system that allows users to create and publish articles, images, and videos on a website using the Wordpress platform.
+description: A blog is a content management system that allows users to create and publish articles, images, and videos on a website using the Wordpress platform.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

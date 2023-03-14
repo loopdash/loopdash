@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Shortcode - Loopdash
 h1: Shortcode
 h2: What does it mean?
-summary: Shortcode is a WordPress feature that allows developers to create custom macros that can be used to insert dynamic content or functionality into posts, pages, or widgets without the need for complex coding.
+description: Shortcode is a WordPress feature that allows developers to create custom macros that can be used to insert dynamic content or functionality into posts, pages, or widgets without the need for complex coding.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

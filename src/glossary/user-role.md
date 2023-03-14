@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: User Role - Loopdash
 h1: User Role
 h2: What does it mean?
-summary: A User Role in Wordpress defines the level of access and permissions a user has within the website's backend.
+description: A User Role in Wordpress defines the level of access and permissions a user has within the website's backend.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

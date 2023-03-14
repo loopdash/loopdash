@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Gallery - Loopdash
 h1: Gallery
 h2: What does it mean?
-summary: Gallery is a WordPress plugin that allows users to easily create and manage image galleries on their website.
+description: Gallery is a WordPress plugin that allows users to easily create and manage image galleries on their website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: FTP - Loopdash
 h1: FTP
 h2: What does it mean?
-summary: FTP (File Transfer Protocol) is a standard network protocol used to transfer files from a local computer to a remote server, commonly used by WordPress developers to upload and manage website files.
+description: FTP (File Transfer Protocol) is a standard network protocol used to transfer files from a local computer to a remote server, commonly used by WordPress developers to upload and manage website files.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

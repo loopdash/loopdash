@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: WPEngine - Loopdash
 h1: WPEngine
 h2: What does it mean?
-summary: WPEngine is a managed WordPress hosting platform that provides developers with a secure, scalable, and high-performance environment to build and deploy their WordPress websites.
+description: WPEngine is a managed WordPress hosting platform that provides developers with a secure, scalable, and high-performance environment to build and deploy their WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Fluid layout - Loopdash
 h1: Fluid layout
 h2: What does it mean?
-summary: A fluid layout in WordPress is a responsive design technique that allows the website to adjust its content and layout dynamically based on the screen size and resolution of the device being used to view it.
+description: A fluid layout in WordPress is a responsive design technique that allows the website to adjust its content and layout dynamically based on the screen size and resolution of the device being used to view it.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

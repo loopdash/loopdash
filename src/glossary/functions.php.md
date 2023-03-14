@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: functions.php - Loopdash
 h1: functions.php
 h2: What does it mean?
-summary: functions.php is a file in the WordPress theme directory that contains PHP code used to add, modify, or remove functionality from a WordPress site.
+description: functions.php is a file in the WordPress theme directory that contains PHP code used to add, modify, or remove functionality from a WordPress site.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

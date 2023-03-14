@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: GPL - Loopdash
 h1: GPL
 h2: What does it mean?
-summary: The GPL is a software license that allows developers to freely modify and distribute WordPress code, as long as they also release their modifications under the same license.
+description: The GPL is a software license that allows developers to freely modify and distribute WordPress code, as long as they also release their modifications under the same license.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

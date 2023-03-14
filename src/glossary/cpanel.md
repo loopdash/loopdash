@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: cPanel - Loopdash
 h1: cPanel
 h2: What does it mean?
-summary: cPanel is a web-based control panel that simplifies the management of a WordPress website by providing easy access to server settings, file management, and database administration.
+description: cPanel is a web-based control panel that simplifies the management of a WordPress website by providing easy access to server settings, file management, and database administration.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

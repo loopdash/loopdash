@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Array - Loopdash
 h1: Array
 h2: What does it mean?
-summary: An array in WordPress is a data structure that stores a collection of values or variables in a single variable, allowing for efficient and organized data manipulation and retrieval.
+description: An array in WordPress is a data structure that stores a collection of values or variables in a single variable, allowing for efficient and organized data manipulation and retrieval.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Shortcodes - Loopdash
 h1: Shortcodes
 h2: What does it mean?
-summary: Shortcodes are a type of code in WordPress that allows developers to easily insert dynamic content or functionality into a post or page by using a simple, user-friendly syntax.
+description: Shortcodes are a type of code in WordPress that allows developers to easily insert dynamic content or functionality into a post or page by using a simple, user-friendly syntax.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

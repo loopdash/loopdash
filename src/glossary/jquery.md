@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: jQuery - Loopdash
 h1: jQuery
 h2: What does it mean?
-summary: jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML document traversing, event handling, and animating for WordPress developers.
+description: jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML document traversing, event handling, and animating for WordPress developers.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

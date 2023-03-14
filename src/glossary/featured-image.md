@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Featured Image - Loopdash
 h1: Featured Image
 h2: What does it mean?
-summary: A Featured Image is a designated image that represents a post or page in WordPress and is displayed prominently in various areas of the website.
+description: A Featured Image is a designated image that represents a post or page in WordPress and is displayed prominently in various areas of the website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

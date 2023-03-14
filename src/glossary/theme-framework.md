@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Theme Framework - Loopdash
 h1: Theme Framework
 h2: What does it mean?
-summary: A theme framework is a pre-built foundation for developing custom WordPress themes with standardized code and functionality.
+description: A theme framework is a pre-built foundation for developing custom WordPress themes with standardized code and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

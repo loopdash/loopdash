@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Theme - Loopdash
 h1: Theme
 h2: What does it mean?
-summary: A theme in WordPress is a collection of files that determine the visual appearance and layout of a website.
+description: A theme in WordPress is a collection of files that determine the visual appearance and layout of a website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

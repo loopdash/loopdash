@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Custom Backgrounds - Loopdash
 h1: Custom Backgrounds
 h2: What does it mean?
-summary: Custom Backgrounds in Wordpress allow users to easily set and customize the background image or color of their website without needing to modify any code.
+description: Custom Backgrounds in Wordpress allow users to easily set and customize the background image or color of their website without needing to modify any code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post - Loopdash
 h1: Post
 h2: What does it mean?
-summary: Post is a built-in content type in WordPress that allows users to create and publish articles, news, and other types of written content on their website.
+description: Post is a built-in content type in WordPress that allows users to create and publish articles, news, and other types of written content on their website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: URL - Loopdash
 h1: URL
 h2: What does it mean?
-summary: A URL is a unique address that identifies a specific page or resource on a website, which is used by WordPress to link to and display content.
+description: A URL is a unique address that identifies a specific page or resource on a website, which is used by WordPress to link to and display content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

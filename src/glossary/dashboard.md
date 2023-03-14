@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Dashboard - Loopdash
 h1: Dashboard
 h2: What does it mean?
-summary: A dashboard in Wordpress is a user interface that provides an overview of website statistics, content management, and site customization options.
+description: A dashboard in Wordpress is a user interface that provides an overview of website statistics, content management, and site customization options.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

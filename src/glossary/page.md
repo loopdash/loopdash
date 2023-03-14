@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Page - Loopdash
 h1: Page
 h2: What does it mean?
-summary: Page is a built-in content type in WordPress that allows users to create and publish static pages on their website.
+description: Page is a built-in content type in WordPress that allows users to create and publish static pages on their website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

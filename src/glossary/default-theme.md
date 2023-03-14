@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Default Theme - Loopdash
 h1: Default Theme
 h2: What does it mean?
-summary: The Default Theme is the pre-installed design template that serves as the baseline for the appearance and functionality of a WordPress website.
+description: The Default Theme is the pre-installed design template that serves as the baseline for the appearance and functionality of a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

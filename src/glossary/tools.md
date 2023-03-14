@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Tools - Loopdash
 h1: Tools
 h2: What does it mean?
-summary: Tools are essential components that enable developers to efficiently create, manage, and customize WordPress websites, including plugins, themes, and APIs.
+description: Tools are essential components that enable developers to efficiently create, manage, and customize WordPress websites, including plugins, themes, and APIs.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

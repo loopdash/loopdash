@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Action Hook - Loopdash
 h1: Action Hook
 h2: What does it mean?
-summary: An action hook is a specific point in the execution of WordPress where developers can insert custom code to modify or extend the functionality of the platform.
+description: An action hook is a specific point in the execution of WordPress where developers can insert custom code to modify or extend the functionality of the platform.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

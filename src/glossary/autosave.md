@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Autosave - Loopdash
 h1: Autosave
 h2: What does it mean?
-summary: Autosave is a feature in Wordpress that automatically saves drafts of posts or pages at regular intervals to prevent data loss in case of unexpected events such as power outages or browser crashes.
+description: Autosave is a feature in Wordpress that automatically saves drafts of posts or pages at regular intervals to prevent data loss in case of unexpected events such as power outages or browser crashes.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

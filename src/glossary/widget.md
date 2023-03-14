@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Widget - Loopdash
 h1: Widget
 h2: What does it mean?
-summary: A widget is a small software component that can be added to a WordPress website's sidebar or footer to provide additional functionality or content.
+description: A widget is a small software component that can be added to a WordPress website's sidebar or footer to provide additional functionality or content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

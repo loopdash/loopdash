@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Static Front Page - Loopdash
 h1: Static Front Page
 h2: What does it mean?
-summary: A static front page is a fixed webpage that serves as the homepage of a WordPress website, displaying the same content to all visitors.
+description: A static front page is a fixed webpage that serves as the homepage of a WordPress website, displaying the same content to all visitors.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

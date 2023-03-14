@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Meta Box - Loopdash
 h1: Meta Box
 h2: What does it mean?
-summary: Meta Box is a powerful WordPress plugin that allows developers to easily create custom meta boxes and fields for posts, pages, and custom post types.
+description: Meta Box is a powerful WordPress plugin that allows developers to easily create custom meta boxes and fields for posts, pages, and custom post types.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

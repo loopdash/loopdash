@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: VPS Hosting - Loopdash
 h1: VPS Hosting
 h2: What does it mean?
-summary: VPS Hosting is a virtual server that provides dedicated resources and flexibility for hosting WordPress websites.
+description: VPS Hosting is a virtual server that provides dedicated resources and flexibility for hosting WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

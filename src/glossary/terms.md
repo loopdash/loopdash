@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Terms - Loopdash
 h1: Terms
 h2: What does it mean?
-summary: Terms in Wordpress refer to predefined categories or tags used to organize and classify content on a website.
+description: Terms in Wordpress refer to predefined categories or tags used to organize and classify content on a website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

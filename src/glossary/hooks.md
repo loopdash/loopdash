@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Hooks - Loopdash
 h1: Hooks
 h2: What does it mean?
-summary: Hooks in Wordpress are predefined functions that allow developers to modify and extend the functionality of the platform without modifying the core code.
+description: Hooks in Wordpress are predefined functions that allow developers to modify and extend the functionality of the platform without modifying the core code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

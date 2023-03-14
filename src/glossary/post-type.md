@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post Type - Loopdash
 h1: Post Type
 h2: What does it mean?
-summary: A post type is a custom content type in WordPress that allows developers to create and manage different types of content, such as blog posts, pages, and custom post types, with their own unique attributes and functionality.
+description: A post type is a custom content type in WordPress that allows developers to create and manage different types of content, such as blog posts, pages, and custom post types, with their own unique attributes and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

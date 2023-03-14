@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Pingback - Loopdash
 h1: Pingback
 h2: What does it mean?
-summary: Pingback is a WordPress feature that automatically notifies a website when another website links to its content, allowing for easier cross-referencing and backlinking.
+description: Pingback is a WordPress feature that automatically notifies a website when another website links to its content, allowing for easier cross-referencing and backlinking.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

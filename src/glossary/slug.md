@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Slug - Loopdash
 h1: Slug
 h2: What does it mean?
-summary: Slug is a unique URL-friendly identifier for a post or page in WordPress that helps search engines and users to easily identify and access the content.
+description: Slug is a unique URL-friendly identifier for a post or page in WordPress that helps search engines and users to easily identify and access the content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

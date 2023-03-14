@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Widgets - Loopdash
 h1: Widgets
 h2: What does it mean?
-summary: Widgets are small, self-contained software components that can be easily added to a WordPress website to provide specific functionality or content.
+description: Widgets are small, self-contained software components that can be easily added to a WordPress website to provide specific functionality or content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

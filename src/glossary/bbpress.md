@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: bbPress - Loopdash
 h1: bbPress
 h2: What does it mean?
-summary: bbPress is a lightweight and efficient forum software designed specifically for WordPress, allowing users to easily create and manage online discussion forums within their WordPress websites.
+description: bbPress is a lightweight and efficient forum software designed specifically for WordPress, allowing users to easily create and manage online discussion forums within their WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

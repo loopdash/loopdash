@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Akismet - Loopdash
 h1: Akismet
 h2: What does it mean?
-summary: Akismet is a spam filtering plugin for WordPress that uses machine learning algorithms to automatically detect and block spam comments and trackbacks.
+description: Akismet is a spam filtering plugin for WordPress that uses machine learning algorithms to automatically detect and block spam comments and trackbacks.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Open Source - Loopdash
 h1: Open Source
 h2: What does it mean?
-summary: Open Source refers to the fact that the source code of Wordpress is freely available for anyone to view, modify, and distribute, allowing for a collaborative and community-driven approach to software development.
+description: Open Source refers to the fact that the source code of Wordpress is freely available for anyone to view, modify, and distribute, allowing for a collaborative and community-driven approach to software development.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

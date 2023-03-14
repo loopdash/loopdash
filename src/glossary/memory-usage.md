@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Memory Usage - Loopdash
 h1: Memory Usage
 h2: What does it mean?
-summary: Memory usage in Wordpress refers to the amount of RAM that the platform consumes while running, which can impact website performance and scalability.
+description: Memory usage in Wordpress refers to the amount of RAM that the platform consumes while running, which can impact website performance and scalability.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Free Software - Loopdash
 h1: Free Software
 h2: What does it mean?
-summary: Free Software is software that is licensed to be freely used, modified, and distributed without any restrictions, allowing developers to create and distribute WordPress plugins and themes without any legal barriers.
+description: Free Software is software that is licensed to be freely used, modified, and distributed without any restrictions, allowing developers to create and distribute WordPress plugins and themes without any legal barriers.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

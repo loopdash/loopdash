@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: MySQL - Loopdash
 h1: MySQL
 h2: What does it mean?
-summary: MySQL is a relational database management system used by WordPress to store and retrieve data for websites and applications.
+description: MySQL is a relational database management system used by WordPress to store and retrieve data for websites and applications.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: API - Loopdash
 h1: API
 h2: What does it mean?
-summary: API in Wordpress is a set of programming instructions and standards for accessing a web-based software application or web tool.
+description: API in Wordpress is a set of programming instructions and standards for accessing a web-based software application or web tool.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

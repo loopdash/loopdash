@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: RSS feed - Loopdash
 h1: RSS feed
 h2: What does it mean?
-summary: An RSS feed is a standardized format for publishing frequently updated content, such as blog posts, that can be easily read and subscribed to by users through a WordPress website.
+description: An RSS feed is a standardized format for publishing frequently updated content, such as blog posts, that can be easily read and subscribed to by users through a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

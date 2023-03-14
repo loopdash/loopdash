@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Excerpt - Loopdash
 h1: Excerpt
 h2: What does it mean?
-summary: Excerpt is a WordPress feature that allows developers to display a short summary of a post or page on the homepage or archive pages.
+description: Excerpt is a WordPress feature that allows developers to display a short summary of a post or page on the homepage or archive pages.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

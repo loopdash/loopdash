@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Taxonomy - Loopdash
 h1: Taxonomy
 h2: What does it mean?
-summary: Taxonomy in Wordpress is a way of organizing and categorizing content, similar to how variables and functions are organized in code.
+description: Taxonomy in Wordpress is a way of organizing and categorizing content, similar to how variables and functions are organized in code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

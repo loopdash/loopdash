@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Cookies - Loopdash
 h1: Cookies
 h2: What does it mean?
-summary: Cookies are small text files that are stored on a user's computer by a website, allowing the website to remember user preferences and login information, and are commonly used in Wordpress to enhance user experience and track website analytics.
+description: Cookies are small text files that are stored on a user's computer by a website, allowing the website to remember user preferences and login information, and are commonly used in Wordpress to enhance user experience and track website analytics.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

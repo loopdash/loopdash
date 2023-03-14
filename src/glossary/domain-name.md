@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Domain Name - Loopdash
 h1: Domain Name
 h2: What does it mean?
-summary: A domain name is a unique identifier that allows users to access a website hosted on a server, such as a Wordpress site, by typing in a specific URL.
+description: A domain name is a unique identifier that allows users to access a website hosted on a server, such as a Wordpress site, by typing in a specific URL.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

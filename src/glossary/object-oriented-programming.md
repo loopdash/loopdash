@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Object-Oriented Programming - Loopdash
 h1: Object-Oriented Programming
 h2: What does it mean?
-summary: Object-Oriented Programming is a programming paradigm that allows developers to create reusable and modular code by organizing data and behavior into objects, which can be easily integrated into WordPress plugins and themes.
+description: Object-Oriented Programming is a programming paradigm that allows developers to create reusable and modular code by organizing data and behavior into objects, which can be easily integrated into WordPress plugins and themes.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

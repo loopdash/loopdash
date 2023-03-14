@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Robots.txt - Loopdash
 h1: Robots.txt
 h2: What does it mean?
-summary: Robots.txt is a file that instructs search engine crawlers which pages or sections of a WordPress website should not be indexed or crawled.
+description: Robots.txt is a file that instructs search engine crawlers which pages or sections of a WordPress website should not be indexed or crawled.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

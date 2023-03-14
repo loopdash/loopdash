@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Filter Hook - Loopdash
 h1: Filter Hook
 h2: What does it mean?
-summary: A Filter Hook in WordPress is a function that allows developers to modify or manipulate data before it is displayed or processed by WordPress core or plugins.
+description: A Filter Hook in WordPress is a function that allows developers to modify or manipulate data before it is displayed or processed by WordPress core or plugins.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Administrator - Loopdash
 h1: Administrator
 h2: What does it mean?
-summary: An administrator is a person who is responsible for managing and overseeing the operations of a system or organization.
+description: An administrator is a person who is responsible for managing and overseeing the operations of a system or organization.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

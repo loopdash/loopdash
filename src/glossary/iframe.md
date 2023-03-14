@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: iFrame - Loopdash
 h1: iFrame
 h2: What does it mean?
-summary: iFrame is an HTML tag that allows developers to embed external content within a webpage, which can be used in Wordpress to display content from other websites or applications.
+description: iFrame is an HTML tag that allows developers to embed external content within a webpage, which can be used in Wordpress to display content from other websites or applications.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: chmod - Loopdash
 h1: chmod
 h2: What does it mean?
-summary: Chmod is a command used in WordPress to change the file permissions of a file or directory, allowing or restricting access to certain users or groups.
+description: Chmod is a command used in WordPress to change the file permissions of a file or directory, allowing or restricting access to certain users or groups.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

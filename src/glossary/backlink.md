@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Backlink - Loopdash
 h1: Backlink
 h2: What does it mean?
-summary: A backlink is a hyperlink from one website to another, which can be added to a Wordpress site to improve its search engine optimization and increase traffic.
+description: A backlink is a hyperlink from one website to another, which can be added to a Wordpress site to improve its search engine optimization and increase traffic.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

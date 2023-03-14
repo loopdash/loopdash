@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Atom - Loopdash
 h1: Atom
 h2: What does it mean?
-summary: Atom is a highly customizable and open-source text editor that can be used to write and edit code for WordPress websites.
+description: Atom is a highly customizable and open-source text editor that can be used to write and edit code for WordPress websites.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

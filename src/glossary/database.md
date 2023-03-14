@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Database - Loopdash
 h1: Database
 h2: What does it mean?
-summary: A database is a structured collection of data that is used by WordPress to store and retrieve information for the website.
+description: A database is a structured collection of data that is used by WordPress to store and retrieve information for the website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

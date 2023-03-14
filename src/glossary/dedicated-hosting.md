@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Dedicated Hosting - Loopdash
 h1: Dedicated Hosting
 h2: What does it mean?
-summary: Dedicated hosting for WordPress is a type of hosting where a single server is exclusively dedicated to hosting a single WordPress website, providing high performance, security, and customization options.
+description: Dedicated hosting for WordPress is a type of hosting where a single server is exclusively dedicated to hosting a single WordPress website, providing high performance, security, and customization options.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Metadata - Loopdash
 h1: Metadata
 h2: What does it mean?
-summary: Metadata in Wordpress refers to additional information about a post or page, such as the author, date, tags, and categories, that is stored in the database and used to organize and display content on the website.
+description: Metadata in Wordpress refers to additional information about a post or page, such as the author, date, tags, and categories, that is stored in the database and used to organize and display content on the website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

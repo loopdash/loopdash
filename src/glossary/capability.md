@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Capability - Loopdash
 h1: Capability
 h2: What does it mean?
-summary: Capability in Wordpress refers to the ability of a user or role to perform specific actions or access certain features within the platform.
+description: Capability in Wordpress refers to the ability of a user or role to perform specific actions or access certain features within the platform.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

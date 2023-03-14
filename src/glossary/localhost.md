@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: localhost - Loopdash
 h1: localhost
 h2: What does it mean?
-summary: Localhost is the default hostname for the local computer used for developing and testing WordPress websites locally.
+description: Localhost is the default hostname for the local computer used for developing and testing WordPress websites locally.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Editor - Loopdash
 h1: Editor
 h2: What does it mean?
-summary: Editor is a built-in tool in Wordpress that allows users to create and edit content for their website without the need for coding knowledge.
+description: Editor is a built-in tool in Wordpress that allows users to create and edit content for their website without the need for coding knowledge.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

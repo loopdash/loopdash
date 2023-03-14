@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Database Table - Loopdash
 h1: Database Table
 h2: What does it mean?
-summary: A database table in Wordpress is a structured collection of data that stores information related to posts, pages, comments, users, and other content types.
+description: A database table in Wordpress is a structured collection of data that stores information related to posts, pages, comments, users, and other content types.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

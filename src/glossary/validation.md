@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Validation - Loopdash
 h1: Validation
 h2: What does it mean?
-summary: Validation in Wordpress refers to the process of ensuring that user input meets the required format and standards to prevent errors and improve security.
+description: Validation in Wordpress refers to the process of ensuring that user input meets the required format and standards to prevent errors and improve security.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

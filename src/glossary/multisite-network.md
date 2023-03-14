@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Multisite Network - Loopdash
 h1: Multisite Network
 h2: What does it mean?
-summary: Multisite Network is a feature in WordPress that allows a single installation to host multiple sites, each with its own unique domain or subdomain, content, and users.
+description: Multisite Network is a feature in WordPress that allows a single installation to host multiple sites, each with its own unique domain or subdomain, content, and users.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

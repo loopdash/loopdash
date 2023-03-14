@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Function - Loopdash
 h1: Function
 h2: What does it mean?
-summary: A function in Wordpress is a block of code that performs a specific task and can be called upon by other parts of the website to execute that task.
+description: A function in Wordpress is a block of code that performs a specific task and can be called upon by other parts of the website to execute that task.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

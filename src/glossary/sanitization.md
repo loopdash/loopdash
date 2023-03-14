@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Sanitization - Loopdash
 h1: Sanitization
 h2: What does it mean?
-summary: Sanitization in Wordpress is the process of cleaning and validating user input data to prevent security vulnerabilities and ensure data integrity.
+description: Sanitization in Wordpress is the process of cleaning and validating user input data to prevent security vulnerabilities and ensure data integrity.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

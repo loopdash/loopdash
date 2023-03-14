@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Admin Area - Loopdash
 h1: Admin Area
 h2: What does it mean?
-summary: The Admin Area in Wordpress is the backend interface where site administrators can manage and customize the website's content, settings, and functionality.
+description: The Admin Area in Wordpress is the backend interface where site administrators can manage and customize the website's content, settings, and functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

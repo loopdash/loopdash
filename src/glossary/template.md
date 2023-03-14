@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Template - Loopdash
 h1: Template
 h2: What does it mean?
-summary: A template in WordPress is a pre-designed layout or structure that can be used to create consistent pages or posts on a website.
+description: A template in WordPress is a pre-designed layout or structure that can be used to create consistent pages or posts on a website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

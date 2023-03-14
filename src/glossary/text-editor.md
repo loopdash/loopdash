@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Text Editor - Loopdash
 h1: Text Editor
 h2: What does it mean?
-summary: A text editor is a software tool used to create and edit code and content within the WordPress platform.
+description: A text editor is a software tool used to create and edit code and content within the WordPress platform.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

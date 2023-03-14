@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post Meta - Loopdash
 h1: Post Meta
 h2: What does it mean?
-summary: Post Meta is a feature in WordPress that allows developers to add custom fields to posts, pages, and other content types, providing additional information and functionality beyond the standard content.
+description: Post Meta is a feature in WordPress that allows developers to add custom fields to posts, pages, and other content types, providing additional information and functionality beyond the standard content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: WP_Query - Loopdash
 h1: WP_Query
 h2: What does it mean?
-summary: WP_Query is a powerful tool in WordPress that allows developers to retrieve and display specific content from the database based on various parameters and conditions.
+description: WP_Query is a powerful tool in WordPress that allows developers to retrieve and display specific content from the database based on various parameters and conditions.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

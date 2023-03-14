@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Visual Editor - Loopdash
 h1: Visual Editor
 h2: What does it mean?
-summary: Visual Editor is a WYSIWYG (What You See Is What You Get) editor in WordPress that allows users to create and edit content visually without needing to know HTML or CSS.
+description: Visual Editor is a WYSIWYG (What You See Is What You Get) editor in WordPress that allows users to create and edit content visually without needing to know HTML or CSS.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

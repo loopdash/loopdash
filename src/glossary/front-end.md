@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Front End - Loopdash
 h1: Front End
 h2: What does it mean?
-summary: Front End in Wordpress refers to the user interface and design elements that are visible to the website visitors and are created using HTML, CSS, and JavaScript.
+description: Front End in Wordpress refers to the user interface and design elements that are visible to the website visitors and are created using HTML, CSS, and JavaScript.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

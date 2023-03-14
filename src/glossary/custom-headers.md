@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Custom Headers - Loopdash
 h1: Custom Headers
 h2: What does it mean?
-summary: Custom Headers in Wordpress are a feature that allows developers to add unique and personalized headers to their website, enhancing the overall design and user experience.
+description: Custom Headers in Wordpress are a feature that allows developers to add unique and personalized headers to their website, enhancing the overall design and user experience.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

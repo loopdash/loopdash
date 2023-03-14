@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: JavaScript - Loopdash
 h1: JavaScript
 h2: What does it mean?
-summary: JavaScript is a client-side scripting language used in WordPress to add interactivity and dynamic functionality to web pages.
+description: JavaScript is a client-side scripting language used in WordPress to add interactivity and dynamic functionality to web pages.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

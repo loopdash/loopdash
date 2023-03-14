@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Navigation Bar - Loopdash
 h1: Navigation Bar
 h2: What does it mean?
-summary: A Navigation Bar is a graphical user interface element that displays a list of links to different pages or sections of a website, typically located at the top of a WordPress website.
+description: A Navigation Bar is a graphical user interface element that displays a list of links to different pages or sections of a website, typically located at the top of a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

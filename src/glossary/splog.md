@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Splog - Loopdash
 h1: Splog
 h2: What does it mean?
-summary: Splog is a type of spam blog that is created automatically by software bots and can harm the reputation of a WordPress website.
+description: Splog is a type of spam blog that is created automatically by software bots and can harm the reputation of a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Author - Loopdash
 h1: Author
 h2: What does it mean?
-summary: The author is a user role in WordPress that can create and publish content on a website.
+description: The author is a user role in WordPress that can create and publish content on a website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

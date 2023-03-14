@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Page Builder - Loopdash
 h1: Page Builder
 h2: What does it mean?
-summary: Page Builder is a drag-and-drop interface that allows users to easily create and customize complex page layouts in WordPress without the need for coding.
+description: Page Builder is a drag-and-drop interface that allows users to easily create and customize complex page layouts in WordPress without the need for coding.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

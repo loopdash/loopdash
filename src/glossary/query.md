@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Query - Loopdash
 h1: Query
 h2: What does it mean?
-summary: A query is a request for specific information from a WordPress database, typically used to retrieve posts or pages based on certain criteria.
+description: A query is a request for specific information from a WordPress database, typically used to retrieve posts or pages based on certain criteria.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

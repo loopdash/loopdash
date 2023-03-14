@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Spam - Loopdash
 h1: Spam
 h2: What does it mean?
-summary: Spam is unwanted and unsolicited content, typically in the form of comments or messages, that can harm the user experience and security of a WordPress website.
+description: Spam is unwanted and unsolicited content, typically in the form of comments or messages, that can harm the user experience and security of a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

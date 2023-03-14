@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: RSS - Loopdash
 h1: RSS
 h2: What does it mean?
-summary: RSS is a standardized format for publishing and distributing content updates, which can be easily integrated into WordPress websites using plugins or built-in functionality.
+description: RSS is a standardized format for publishing and distributing content updates, which can be easily integrated into WordPress websites using plugins or built-in functionality.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

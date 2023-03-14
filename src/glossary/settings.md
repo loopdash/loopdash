@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Settings - Loopdash
 h1: Settings
 h2: What does it mean?
-summary: Settings in Wordpress refer to the configurable options that allow users to customize the behavior and appearance of their website.
+description: Settings in Wordpress refer to the configurable options that allow users to customize the behavior and appearance of their website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

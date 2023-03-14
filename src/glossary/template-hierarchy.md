@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Template Hierarchy - Loopdash
 h1: Template Hierarchy
 h2: What does it mean?
-summary: Template Hierarchy in WordPress is a system that determines which template file is used to display a particular page or post based on the type of content and its relationship to other templates.
+description: Template Hierarchy in WordPress is a system that determines which template file is used to display a particular page or post based on the type of content and its relationship to other templates.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

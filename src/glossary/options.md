@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Options - Loopdash
 h1: Options
 h2: What does it mean?
-summary: Options are a set of configurable settings that allow users to customize the behavior and appearance of a WordPress site.
+description: Options are a set of configurable settings that allow users to customize the behavior and appearance of a WordPress site.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

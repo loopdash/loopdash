@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: DDoS - Loopdash
 h1: DDoS
 h2: What does it mean?
-summary: DDoS is a type of cyber attack that floods a website with a large amount of traffic, overwhelming its servers and making it inaccessible to legitimate users, potentially causing downtime and data loss.
+description: DDoS is a type of cyber attack that floods a website with a large amount of traffic, overwhelming its servers and making it inaccessible to legitimate users, potentially causing downtime and data loss.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

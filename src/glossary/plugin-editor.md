@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Plugin Editor - Loopdash
 h1: Plugin Editor
 h2: What does it mean?
-summary: The Plugin Editor is a built-in tool in WordPress that allows developers to modify the code of their plugins directly from the WordPress dashboard.
+description: The Plugin Editor is a built-in tool in WordPress that allows developers to modify the code of their plugins directly from the WordPress dashboard.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Updates - Loopdash
 h1: Updates
 h2: What does it mean?
-summary: This update includes bug fixes, security enhancements, and new features to improve the overall performance and user experience of the WordPress platform.
+description: This update includes bug fixes, security enhancements, and new features to improve the overall performance and user experience of the WordPress platform.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

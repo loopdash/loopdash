@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Draft - Loopdash
 h1: Draft
 h2: What does it mean?
-summary: Draft is a feature in WordPress that allows users to save their work as an unpublished post or page, enabling them to work on it later without losing their progress.
+description: Draft is a feature in WordPress that allows users to save their work as an unpublished post or page, enabling them to work on it later without losing their progress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

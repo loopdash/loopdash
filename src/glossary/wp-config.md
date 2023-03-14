@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: wp-config.php - Loopdash
 h1: wp-config.php
 h2: What does it mean?
-summary: The wp-config.php file is a crucial configuration file in WordPress that contains database connection details, security keys, and other settings necessary for the proper functioning of the WordPress site.
+description: The wp-config.php file is a crucial configuration file in WordPress that contains database connection details, security keys, and other settings necessary for the proper functioning of the WordPress site.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Functions File - Loopdash
 h1: Functions File
 h2: What does it mean?
-summary: The Functions File in WordPress is a PHP file that contains custom code and functions that can modify or extend the functionality of a WordPress site.
+description: The Functions File in WordPress is a PHP file that contains custom code and functions that can modify or extend the functionality of a WordPress site.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

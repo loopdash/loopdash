@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Class - Loopdash
 h1: Class
 h2: What does it mean?
-summary: A class in WordPress is a blueprint for creating objects that encapsulate data and behavior, allowing for modular and reusable code.
+description: A class in WordPress is a blueprint for creating objects that encapsulate data and behavior, allowing for modular and reusable code.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

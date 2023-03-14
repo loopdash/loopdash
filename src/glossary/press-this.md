@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Press This - Loopdash
 h1: Press This
 h2: What does it mean?
-summary: Press This is a bookmarklet tool in WordPress that allows users to quickly grab content from any web page and publish it as a new post on their WordPress site.
+description: Press This is a bookmarklet tool in WordPress that allows users to quickly grab content from any web page and publish it as a new post on their WordPress site.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

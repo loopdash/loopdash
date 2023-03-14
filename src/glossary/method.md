@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Method - Loopdash
 h1: Method
 h2: What does it mean?
-summary: Method is a PHP library that provides a simple and consistent way to make HTTP requests and handle responses in WordPress.
+description: Method is a PHP library that provides a simple and consistent way to make HTTP requests and handle responses in WordPress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

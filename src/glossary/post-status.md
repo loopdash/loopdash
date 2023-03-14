@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Post Status - Loopdash
 h1: Post Status
 h2: What does it mean?
-summary: Post Status is a built-in feature in WordPress that allows users to set the status of their posts, such as draft, published, pending review, or private.
+description: Post Status is a built-in feature in WordPress that allows users to set the status of their posts, such as draft, published, pending review, or private.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

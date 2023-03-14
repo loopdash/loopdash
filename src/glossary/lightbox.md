@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Lightbox - Loopdash
 h1: Lightbox
 h2: What does it mean?
-summary: Lightbox is a JavaScript library that allows for the display of images and videos in a pop-up window on a WordPress website.
+description: Lightbox is a JavaScript library that allows for the display of images and videos in a pop-up window on a WordPress website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

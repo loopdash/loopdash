@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Admin Bar - Loopdash
 h1: Admin Bar
 h2: What does it mean?
-summary: The Admin Bar is a customizable toolbar that provides quick access to frequently used features and settings for WordPress site administrators.
+description: The Admin Bar is a customizable toolbar that provides quick access to frequently used features and settings for WordPress site administrators.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

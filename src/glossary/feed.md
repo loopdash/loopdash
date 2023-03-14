@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Feed - Loopdash
 h1: Feed
 h2: What does it mean?
-summary: Feed is a feature in WordPress that allows users to subscribe to updates from a website and receive them in a standardized format, such as RSS or Atom.
+description: Feed is a feature in WordPress that allows users to subscribe to updates from a website and receive them in a standardized format, such as RSS or Atom.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

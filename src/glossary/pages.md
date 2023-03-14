@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Pages - Loopdash
 h1: Pages
 h2: What does it mean?
-summary: Pages are a type of post in WordPress that allow users to create static content such as About Us, Contact Us, and other non-blog related content.
+description: Pages are a type of post in WordPress that allow users to create static content such as About Us, Contact Us, and other non-blog related content.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: WordPress - Loopdash
 h1: WordPress
 h2: What does it mean?
-summary: WordPress is an open-source content management system written in PHP that allows users to create and manage websites with ease.
+description: WordPress is an open-source content management system written in PHP that allows users to create and manage websites with ease.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

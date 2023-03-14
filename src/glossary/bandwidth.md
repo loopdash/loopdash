@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Bandwidth - Loopdash
 h1: Bandwidth
 h2: What does it mean?
-summary: Bandwidth refers to the amount of data that can be transferred between a website and its visitors, and is an important consideration for WordPress developers when choosing a hosting provider.
+description: Bandwidth refers to the amount of data that can be transferred between a website and its visitors, and is an important consideration for WordPress developers when choosing a hosting provider.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

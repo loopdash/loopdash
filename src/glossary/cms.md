@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: CMS - Loopdash
 h1: CMS
 h2: What does it mean?
-summary: A CMS is a software application that allows users to create, manage, and publish digital content, such as blog posts, web pages, and media files, on a website, like Wordpress.
+description: A CMS is a software application that allows users to create, manage, and publish digital content, such as blog posts, web pages, and media files, on a website, like Wordpress.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

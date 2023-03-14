@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: Stylesheet - Loopdash
 h1: Stylesheet
 h2: What does it mean?
-summary: A stylesheet is a file containing a set of rules that define the visual appearance of a WordPress website, including fonts, colors, layout, and other design elements.
+description: A stylesheet is a file containing a set of rules that define the visual appearance of a WordPress website, including fonts, colors, layout, and other design elements.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly

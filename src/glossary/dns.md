@@ -3,7 +3,7 @@ layout: layouts/single-glossary.njk
 title: DNS - Loopdash
 h1: DNS
 h2: What does it mean?
-summary: DNS (Domain Name System) is a system that translates human-readable domain names (like www.example.com) into IP addresses that computers can understand, allowing Wordpress to connect to the correct server and display the website.
+description: DNS (Domain Name System) is a system that translates human-readable domain names (like www.example.com) into IP addresses that computers can understand, allowing Wordpress to connect to the correct server and display the website.
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
