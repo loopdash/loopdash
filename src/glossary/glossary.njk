@@ -6,7 +6,7 @@ h2: The A-Zs of Web Development
 description: The A-Zs of the Web Development
 pagination:
   data: collections.glossary
-  size: 40
+  size: 10
   alias: terms
 sitemap:
   changefreq: weekly
@@ -29,4 +29,10 @@ sitemap:
       </a>
     </div>
   {% endfor %}
+  {% if pagination.previousPageHref %}
+    <a class="pagination-item prev" rel="prev" href="{{ pagination.previousPageHref }}">← Newer</a>
+  {% endif %}
+  {% if pagination.nextPageHref %}
+    <a class="pagination-item next" rel="next" href="{{ pagination.nextPageHref }}">Older →</a>
+  {% endif %}
 </article>

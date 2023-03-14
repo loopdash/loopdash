@@ -3,9 +3,9 @@
   {% include 'head.njk' %}
   <body>
     {% include 'nav.njk' %}
-    <main class="single-glossary">
+    <main class="single-glossary default-container page-content">
       {% include 'hero-without-image.njk' %}
-      <div class="default-container page-content card">
+      <div class="card">
         {{ content | safe }}
       </div>
     </main>

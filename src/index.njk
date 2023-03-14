@@ -9,95 +9,29 @@ sitemap:
   priority: 1.0
 ---
 
-<section class="home-hero default-container">
-  <h1 class="text--eyebrow mb-2">WordPress &amp; Webflow Development</h1>
-  <h2 class="font-46 text-bold">We develop wonderful web experiences.</h2>
+<section class="section-home-hero default-container text-centers">
+  <h1 class="text--eyebrow">WordPress &amp; Webflow Development</h1>
+  <h2 class="font-47 text-bold">We develop wonderful WordPress websites.</h2>
   <p class="font-42 mb-2">
-    For over a decade, we've been partnering with clients to provide them with reliable and efficient web development
-    services using
-    <a href="/glossary/wordpress/" )>Wordpress</a>, Ruby on Rails, and React to protect their brand identity and
-    <mark>help their businesses operate for the long term.</mark>
-    Our team is committed to creating
-    <mark>high-quality sites &amp; apps</mark>
-    that meet your unique needs and elevate your online
-                                    presence.
+    For over a decade, we've been partnering with clients to provide reliable and efficient web development services to help
+    their businesses grow long-term.
   </p>
-  <a href="/contact-us/" class="button btn-large">Why we started Loopdash</a>
-</section>
-{# <section class="default-container py-4">
-                                                                                <div class="swiffy-slider">
-                                                                                  <ul class="slider-container">
-                                                                                    <li>
-                                                                                      <p>
-                                                                                        Top notch pros. From start to finish the experience was kind and professional. All communication was clear and
-                                                                                        collaborative. Couldn't have asked for a better team." Greg Holcomb, CEO @ The HD Group
-                                                                                      </p>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                      <p>
-                                                                                        Loopdash cares about their clients and their work. They put in tremendous effort to finish a project on a tight timeline
-                                                                                        by our deadline. The team has remained highly responsive as support engineers, resolving our technical and training
-                                                                                        issues with great efficiency. Ed Sussman, CEO @ WhiteHatWiki
-                                                                                      </p>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                      <p>
-                                                                                        It has been an absolute pleasure working with Loopdash. They have served as the primary website development team for the
-                                                                                        nonprofit I work for over the past 6 months. Gary and his team are incredibly responsive, creative, and thoughtful in
-                                                                                        helping us achieve our digital needs as a growing organization. I trust them to tackle some of the hardest projects
-                                                                                        we've faced in terms of our website development and updates. They've always come through and we're eager to continue
-                                                                                        working with them.
-                                                                                      </p>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                      <p>
-                                                                                        For over a decade, we've been partnering with clients to provide them with reliable and efficient web development
-                                                                                        services using WordPress, Ruby on Rails, and React to protect their brand identity and help their businesses operate for
-                                                                                        the long term. Our team is committed to creating high-quality web solutions that meet your unique needs and elevate your
-                                                                                        online presence.
-                                                                                      </p>
-                                                                                    </li>
-                                                                                  </ul>
-                                                                                  <button type="button" class="slider-nav"></button>
-                                                                                  <button type="button" class="slider-nav slider-nav-next"></button>
-                                                                                  <div class="slider-indicators">
-                                                                                    <button class="active"></button>
-                                                                                    <button></button>
-                                                                                    <button></button>
-                                                                                  </div>
-                                                                                </div>
-                                                                              </section> #}
-<section class="page-content problem-section large-container">
-  <div class="grid mb-6">
-    <div class="grid-item">
-      <picture>
-        <source srcset="images/computer.webp" type="image/webp">
-        <source srcset="images/computer.png" type="image/png">
-        <img src="img/computer.png" alt="computer with terminal running">
-      </picture>
-    </div>
-    <div class="grid-item">
-      <h2 class="font-45">Building a website for your business can be brutal.</h2>
-      <p class="font-41">First your try to DIY your site, only to be left with a bunch of broken links and a website that
-        looks like it was built in 1999.
-      </p>
-      <p class="font-41">Next, you meet with a dozen development teams and get 3 proposals a month later.
-      </p>
-      <p class="font-41">If you're really lucky and you hire the right team, your website gets a whole lot better... then you
-        request a small change and your team is unresponsive.
-      </p>
-      <p class="font-41">We've seen it happen to our clients, so we started Loopdash to become the web development team we
-        wish we could have hired. That means providing fair pricing, fast turnaround times, and founder-friendly collaboration
-        to build the website you envision.
-      </p>
+  {% set button = { href: "/contact-us/", text: "Get website help", classes: "button" } %}
+  {% include "partials/button.njk" %}
+  <div class="grid section-home-hero__review">
+    <img class="grid-item section-home-hero__review__stars" src="/images/review-stars.svg"/>
+    <div class="grid-item section-home-hero__review__text">
+      <span class="font-39">Join 50+ happy clients</span>
     </div>
   </div>
 </section>
-<div class="page-content large-container mb-4">
+{% include "partials/problem-section.njk" %}
+{% include "partials/logo-section.njk" %}
+<div class="section-why page-content large-container">
   <div class="headline-container text-center mb-2">
     <h3 class="font-46">Why work with Loopdash?</h3>
   </div>
-  <div class="grid why-section">
+  <div class="grid">
     <div class="card grid-item">
       <div
         class="why-image-container">{# <img src="../images/computer.png"/> #}
@@ -186,9 +120,8 @@ sitemap:
       </ul>
     </div>
   </div>
-</div>
-<div class="large-container">
-  <div class="text-center">
-    <a href="/contact-us/" class="button btn-large">Start your project</a>
+  <div class="section-why__cta">
+    {% set button = { href: "/contact-us/", text: "Start your project", classes: "" } %}
+    {% include "partials/button.njk" %}
   </div>
 </div>
