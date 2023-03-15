@@ -11,7 +11,7 @@
   --color-white: #ffffff;
   --color-wheat: #fcfcfc;
   --color-dark-wheat: #f6f2ef;
-  --color-gray: #808080;
+  --color-gray: #7c7676;
   --color-chocolate: #3D3C38;
   --color-charcoal: #080602;
   --color-tomato: tomato;
@@ -19,9 +19,6 @@
   --color-dark-green: #2a9534;
   --color-blue: #0366fc;
   --color-dark-blue: #0e0066;
-  --color-teal: ##f6f9fc;
-  --color-dark-teal: #49789b;
-  --md-breakpoint: 768px;
 }
 
 main {

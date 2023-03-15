@@ -19,12 +19,12 @@ sitemap:
   {% set button = { href: "/contact-us/", text: "Get website help", classes: "button" } %}
   {% include "partials/button.njk" %}
   <div class="grid section-home-hero__review">
-    <img class="grid-item section-home-hero__review__stars" src="/images/review-stars.svg"/>
-    <div class="grid-item section-home-hero__review__text">
-      <span class="font-39">Join 50+ happy clients</span>
+    <img class="grid-item section-home-hero__review__stars" src="/images/review-stars.svg" alt="5 out of 5 stars">
+      <div class="grid-item section-home-hero__review__text">
+        <span class="font-39">Join 50+ happy clients</span>
+      </div>
     </div>
-  </div>
-</section>
-{% include "partials/problem-section.njk" %}
-{% include "partials/cta-section.njk" %}
-{# {% include "partials/logo-section.njk" %} #}
+  </section>
+  {% include "partials/problem-section.njk" %}
+  {% include "partials/cta-section.njk" %}
+  {# {% include "partials/logo-section.njk" %} #}
