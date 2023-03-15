@@ -9,8 +9,8 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
-url: /glossary/responsive design
+date: 2023-03-15
+url: /glossary/responsive-design
 ---
 
 Responsive design is a web development approach that aims to create websites that can adapt to different screen sizes and devices. This means that the website will look and function well on desktops, laptops, tablets, and smartphones. Responsive design involves using flexible layouts, images, and media queries to adjust the website's content and layout based on the user's device. This approach ensures that users have a consistent and seamless experience regardless of the device they are using to access the website. Responsive design is essential in today's digital landscape, where users are accessing websites from a variety of devices and screen sizes.

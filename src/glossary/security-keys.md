@@ -9,8 +9,8 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
-url: /glossary/security keys
+date: 2023-03-15
+url: /glossary/security-keys
 ---
 
 Security keys are cryptographic devices that are used to authenticate users and protect sensitive information from unauthorized access. These keys are designed to provide an additional layer of security to online accounts and services by generating unique codes that are required to access them. Security keys are typically small, portable devices that can be plugged into a computer or mobile device, or they can be integrated into a smartphone or other device. They work by generating a unique code that is sent to the user's device, which is then used to authenticate the user and grant access to the account or service. Security keys are an important tool for protecting sensitive information and preventing unauthorized access to online accounts and services.

@@ -1,7 +1,7 @@
 --- 
 layout: layouts/single-glossary.njk
-title: .htaccess - Loopdash
-h1: .htaccess
+title: htaccess - Loopdash
+h1: htaccess
 h2: What does it mean?
 description: Configuration file used to control web server behavior for WordPress sites.
 imageAlt: keyboard
@@ -9,7 +9,7 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
+date: 2023-03-15
 url: /glossary/htaccess
 ---
 

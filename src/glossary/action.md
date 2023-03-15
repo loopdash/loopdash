@@ -9,7 +9,7 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
+date: 2023-03-15
 url: /glossary/action
 ---
 

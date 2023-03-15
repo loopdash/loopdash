@@ -9,8 +9,8 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
-url: /glossary/home page
+date: 2023-03-15
+url: /glossary/home-page
 ---
 
 As a web developer, the home page is the first page that a user sees when they visit a website. It serves as the main entry point to the website and provides an overview of the site's content and purpose. The home page typically includes a header with the website's logo and navigation menu, as well as a hero section that showcases the website's main message or call to action. It may also feature sections that highlight the website's key features, services, or products. The home page should be designed to be visually appealing, easy to navigate, and provide a clear understanding of what the website is about. It is important to optimize the home page for search engines and ensure that it loads quickly to provide a positive user experience.

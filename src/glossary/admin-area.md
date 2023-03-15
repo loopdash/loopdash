@@ -9,8 +9,8 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
-url: /glossary/admin area
+date: 2023-03-15
+url: /glossary/admin-area
 ---
 
 As a web developer, the Admin Area refers to the backend of a website or web application that is accessible only to authorized users with administrative privileges. This area is designed to provide a secure and centralized location for managing the website's content, functionality, and user data. The Admin Area typically includes a dashboard that displays key metrics and allows administrators to perform tasks such as adding or editing pages, managing user accounts, and configuring settings. It may also include tools for monitoring website traffic, generating reports, and performing other administrative tasks. The Admin Area is an essential component of any website or web application, as it enables administrators to maintain and update the site's content and functionality without requiring technical expertise.

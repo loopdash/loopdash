@@ -37,7 +37,7 @@ By applying optimized keywords, search engine optimization has the potential to 
 
 Squarespace renders meta descriptions and customized URLs for all pages. Google Analytics is accessible for every plan. It allows for easy social media integration, and while users can't install any third-party SEO apps, they can happily rely on provided built-in options.
 
-WordPress considerably permits users with business and eCommerce plans to install third-party [plugins](/glossary/plugins) to help them maximize SEO. WordPress users may not have as many configuration options, but the platform renders auto-generated XML sitemaps, which assists in providing sites for improved visibility in search engines. Only users paying for the business tier plan in WordPress can install third-party plugins and use Google Analytics.
+WordPress considerably permits users with business and eCommerce plans to install third-party [plugins](/glossary/plugin) to help them maximize SEO. WordPress users may not have as many configuration options, but the platform renders auto-generated XML sitemaps, which assists in providing sites for improved visibility in search engines. Only users paying for the business tier plan in WordPress can install third-party plugins and use Google Analytics.
 
 ##### Blogging
 

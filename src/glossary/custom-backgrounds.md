@@ -9,8 +9,8 @@ sitemap:
 	changefreq: weekly
 	priority: 0.5
 tags: glossary
-date: 2023-03-06
-url: /glossary/custom backgrounds
+date: 2023-03-15
+url: /glossary/custom-backgrounds
 ---
 
 Custom backgrounds refer to the ability to set a unique image or color as the background of a website or webpage. As a web developer, this feature can be implemented by using CSS (Cascading Style Sheets) to define the background property of an HTML element. Custom backgrounds can be used to enhance the visual appeal of a website, create a specific mood or atmosphere, or reinforce branding. They can also be used to differentiate between different sections of a website or to highlight important content. Custom backgrounds can be static or dynamic, and can be set to change based on user interactions or time of day. Overall, custom backgrounds are a powerful tool for web developers to create engaging and memorable websites.
