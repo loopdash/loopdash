@@ -9,7 +9,7 @@ sitemap:
   priority: 1.0
 ---
 
-<section class="section-home-hero default-container text-centers">
+<section class="section-home-hero container-40 text-centers">
   <h1 class="text--eyebrow">WordPress &amp; Webflow Development</h1>
   <h2 class="font-47 text-bold">We develop wonderful WordPress websites.</h2>
   <p class="font-42 mb-2">
@@ -26,102 +26,5 @@ sitemap:
   </div>
 </section>
 {% include "partials/problem-section.njk" %}
-{% include "partials/logo-section.njk" %}
-<div class="section-why page-content large-container">
-  <div class="headline-container text-center mb-2">
-    <h3 class="font-46">Why work with Loopdash?</h3>
-  </div>
-  <div class="grid">
-    <div class="card grid-item">
-      <div
-        class="why-image-container">{# <img src="../images/computer.png"/> #}
-      </div>
-      <h3 class="text-bold font-45">Freelancers</h3>
-      <ul>
-        <li class="font-41 check">
-          Inexpensive
-        </li>
-        <li class="font-41 close">
-          No quality control
-        </li>
-        <li class="font-41 close">
-          Communication challenges
-        </li>
-        <li class="font-41 close">
-          Lack dependability
-        </li>
-        <li class="font-41 close">
-          Limited expertise
-        </li>
-        <li class="font-41 close">
-          Lack of team collaboration
-        </li>
-        <li class="font-41 close">
-          No long-term relationship
-        </li>
-      </ul>
-    </div>
-    <div class="card grid-item">
-      <div
-        class="why-image-container">{# <img src="../images/computer.png"/> #}
-      </div>
-      <h3 class="text-bold font-45">Agencies</h3>
-      <ul>
-        <li class="font-41 check">
-          Quality work
-        </li>
-        <li class="font-41 close">
-          Expensive
-        </li>
-        <li class="font-41 close">
-          Slower delivery
-        </li>
-        <li class="font-41 close">
-          Less flexibility
-        </li>
-        <li class="font-41 close">
-          Lack of personalization
-        </li>
-        <li class="font-41 close">
-          Potential communication issues
-        </li>
-        <li class="font-41 close">
-          Overlapping projects
-        </li>
-      </ul>
-    </div>
-    <div class="card grid-item">
-      <div
-        class="why-image-container">{# <img src="../images/computer.png"/> #}
-      </div>
-      <h3 class="text-bold font-45">Loopdash</h3>
-      <ul>
-        <li class="font-41 check">
-          Quality work
-        </li>
-        <li class="font-41 check">
-          Affordable
-        </li>
-        <li class="font-41 check">
-          Quick delivery
-        </li>
-        <li class="font-41 check">
-          More flexibility
-        </li>
-        <li class="font-41 check">
-          Long-term relationship
-        </li>
-        <li class="font-41 check">
-          Customizable solutions
-        </li>
-        <li class="font-41 check">
-          Prompt communication
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="section-why__cta">
-    {% set button = { href: "/contact-us/", text: "Start your project", classes: "" } %}
-    {% include "partials/button.njk" %}
-  </div>
-</div>
+{% include "partials/cta-section.njk" %}
+{# {% include "partials/logo-section.njk" %} #}

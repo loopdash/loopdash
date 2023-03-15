@@ -1,65 +1,33 @@
 <footer class="footer">
-  <div class="large-container">
+  <div class="container-72">
     <nav class="footer__container">
       <div class="footer__container-column logo">
-        <img src="/images/logo-white.svg" alt="loopdash logo" class="footer__logo">
-      </div>
-      <div class="footer__container-column">
-        <h6 class="font-40 text-bold">Company</h6>
-        <ul>
-          <li class="font-40">
-            <a href="/">Home</a>
-          </li>
-          <li class="font-40">
-            <a href="/about/">About</a>
-          </li>
-          <li class="font-40">
-            <a href="/sercices/">Services</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__container-column">
-        <h6 class="font-40 text-bold">Contact</h6>
-        <ul>
-          <li class="font-40">
-            <a target="blank" href="mailto:gary@loopdash.com">Email</a>
-          </li>
-          <li class="font-40">
-            <a target="blank" href="https://twitter.com/_loopdash/">Twitter</a>
-          </li>
-          <li class="font-40">
-            <a target="blank" href="https://www.facebook.com/LoopdashCode/">Facebook</a>
-          </li>
-          <li class="font-40">
-            <a target="blank" href="https://www.instagram.com/_loopdash/">Instagram</a>
-          </li>
-          <li class="font-40">
-            <a
-              target="blank"
-              href="https://www.google.com/search?q=loopdash&oq=loopdash&aqs=chrome..69i57j69i65j69i60l2j69i65j69i60l2j69i65.2493j0j1&sourceid=chrome&ie=UTF-8">
-              Google</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__container-column">
-        <h6 class="font-40 text-bold">Blog</h6>
-        <ul>
-          <li class="font-40">
-            <a href="/blog/wordpress-internal-server-error/">Fix a WordPress Server Error</a>
-          </li>
-          <li class="font-40">
-            <a href="/blog/wordpress-backups/">WordPress Backups; Do I Need Them?</a>
-          </li>
-          <li class="font-40">
-            <a href="/blog/database-error/">Fix Error Establishing Connection to Database</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</footer>
-<div class="sticky-cta">
-  <a href="tel:3307707708" class="button button--small">
-    Call a dev
-  </a>
-</div>
+        <img src="/images/logo-white.svg" alt="loopdash logo" class="footer__logo"></div>
+        <div class="footer__container-column">
+          <h6 class="font-40 text-bold">Company</h6>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/sercices/">Services</a></li>
+          </ul>
+        </div>
+        <div class="footer__container-column">
+          <h6 class="font-40 text-bold">Contact</h6>
+          <ul>
+            <li><a target="blank" href="mailto:gary@loopdash.com">Email</a></li>
+            <li><a target="blank" href="https://twitter.com/_loopdash/">Twitter</a></li>
+            <li><a target="blank" href="https://www.google.com/search?q=loopdash&oq=loopdash&aqs=chrome..69i57j69i65j69i60l2j69i65j69i60l2j69i65.2493j0j1&sourceid=chrome&ie=UTF-8">Google</a></li>
+          </ul>
+        </div>
+        <div class="footer__container-column">
+          <h6 class="font-40 text-bold">Blog</h6>
+          <ul>
+            <li><a href="/blog/wordpress-internal-server-error/">Fix a WordPress Server Error</a></li>
+            <li><a href="/blog/wordpress-backups/">WordPress Backups; Do I Need Them?</a></li>
+            <li><a href="/blog/database-error/">Fix Error Establishing Connection to Database</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
+  {% include 'partials/sticky-cta.njk' %}

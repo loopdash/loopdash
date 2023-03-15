@@ -1,9 +1,9 @@
 ---
 layout: layouts/default.njk
 title: Glossary - Loopdash
-h1: Web Development Glossary
-h2: The A-Zs of Web Development
-description: The A-Zs of the Web Development
+h1: WordPress Glossary
+h2: The A-Zs of WordPress
+description: The A-Zs of the WordPress
 pagination:
   data: collections.glossary
   size: 10
@@ -14,13 +14,13 @@ sitemap:
 ---
 
 <div class="page-hero">
-  <div class="page-hero__content default-container text-center">
+  <div class="page-hero__content container-40 text-center">
     <h1 class="text--eyebrow">{{ h1 }}</h1>
     <h2 class="font-47 font-weight--800">{{ h2 }}</h2>
     <p class="font-43 font--normal">{{ description }}</p>
   </div>
 </div>
-<article class="default-container">
+<article class="container-40">
   {% for term in terms %}
     <div class="glossary-term">
       <a class="card" href="{{ term.url }}">
@@ -29,10 +29,15 @@ sitemap:
       </a>
     </div>
   {% endfor %}
-  {% if pagination.previousPageHref %}
-    <a class="pagination-item prev" rel="prev" href="{{ pagination.previousPageHref }}">← Newer</a>
-  {% endif %}
-  {% if pagination.nextPageHref %}
-    <a class="pagination-item next" rel="next" href="{{ pagination.nextPageHref }}">Older →</a>
-  {% endif %}
+  <div class="pagination-container">
+    <div class="pagination-container__count">
+      {% if pagination.previousPageHref %}
+        <a class="button button--secondary pagination-item prev" rel="prev" disabled href="{{ pagination.previousPageHref }}">Previous</a>
+      {% endif %}
+      {% if pagination.nextPageHref %}
+        <a class="button button--secondary pagination-item next" rel="next" href="{{ pagination.nextPageHref }}">Next</a>
+      {% endif %}
+    </div>
+    <a href="/glossary/" class="font-42 back-to-glossary">Back to WordPress Glossary</a>
+  </div>
 </article>
