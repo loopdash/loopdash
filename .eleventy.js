@@ -43,6 +43,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('src/_redirects');
+  eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
 
   return {
     dir: {
