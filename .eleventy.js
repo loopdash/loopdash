@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
     "jpeg",
     "png",
     "webp",
+    "gif",
     "svg",
     "eot",
     "ttf",

@@ -17,8 +17,9 @@
   --color-tomato: tomato;
   --color-green: #3db549;
   --color-dark-green: #2a9534;
-  --color-blue: #0366fc;
+  --color-blue: #0169fb;
   --color-dark-blue: #0e0066;
+  --shadow-medium: 0 5px 6px rgba(140,149,159,0.15);
 }
 
 main {
@@ -435,7 +436,7 @@ ul {
 
 /* problem section */
 .section-problem {
-  padding: 5rem 1.25rem 2rem;
+  padding: 5rem 1.25rem 8rem;
   color: var(--color-dark-teal);
   background-color: var(--color-light-gray);
 }
@@ -619,6 +620,26 @@ ul.blogs {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+/* section-slideshow */
+.section-slideshow {
+  max-width: 56rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: -5rem auto 4rem;
+  text-align: center;
+  
+}
+
+.section-slideshow__image {
+  border-radius: 0.75rem;
+  margin: -5rem auto;
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow-medium);
 }
 
 /* section-cta */
