@@ -679,9 +679,11 @@ ul.blogs {
 
 /* section-cta */
 .section-cta {
-  color: var(--color-gray);
   text-align: center;
   padding: 6rem 1.25rem 7rem;
+}
+.section-cta p {
+  color: var(--color-gray);
 }
 
 .section-cta h3{
