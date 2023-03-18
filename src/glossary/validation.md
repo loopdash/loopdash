@@ -7,7 +7,7 @@ description: Validation in Wordpress refers to the process of ensuring that user
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/validation

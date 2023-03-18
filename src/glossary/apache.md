@@ -7,7 +7,7 @@ description: Apache is a web server software that can be used to host and serve 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/apache

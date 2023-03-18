@@ -7,7 +7,7 @@ description: HTML is a markup language used to structure and display content on 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/html

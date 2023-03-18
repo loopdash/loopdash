@@ -7,7 +7,7 @@ description: A role in Wordpress defines a set of permissions and capabilities t
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/role

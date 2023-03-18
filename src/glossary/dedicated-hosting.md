@@ -7,7 +7,7 @@ description: Dedicated hosting for WordPress is a type of hosting where a single
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/dedicated-hosting

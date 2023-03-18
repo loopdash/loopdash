@@ -7,7 +7,7 @@ description: Post Format is a feature in WordPress that allows developers to def
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/post-format

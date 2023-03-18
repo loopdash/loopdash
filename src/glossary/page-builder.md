@@ -7,7 +7,7 @@ description: Page Builder is a drag-and-drop interface that allows users to easi
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/page-builder

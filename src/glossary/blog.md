@@ -7,7 +7,7 @@ description: A blog is a content management system that allows users to create a
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/blog

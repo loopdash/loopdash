@@ -7,7 +7,7 @@ description: An include file in WordPress is a separate PHP file that can be inc
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/include-file

@@ -7,7 +7,7 @@ description: A Subscriber in Wordpress is a user role that has the ability to vi
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/subscriber

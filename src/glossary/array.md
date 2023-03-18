@@ -7,7 +7,7 @@ description: An array in WordPress is a data structure that stores a collection 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/array

@@ -7,7 +7,7 @@ description: Media Settings in Wordpress are a configuration panel that allows u
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/media-settings

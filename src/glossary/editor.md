@@ -7,7 +7,7 @@ description: Editor is a built-in tool in Wordpress that allows users to create 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/editor

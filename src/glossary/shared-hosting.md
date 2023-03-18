@@ -7,7 +7,7 @@ description: Shared hosting is a type of web hosting service where multiple webs
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/shared-hosting

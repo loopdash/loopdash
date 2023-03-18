@@ -7,7 +7,7 @@ description: Post Status is a built-in feature in WordPress that allows users to
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/post-status

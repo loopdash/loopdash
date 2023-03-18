@@ -7,7 +7,7 @@ description: A static front page is a fixed webpage that serves as the homepage 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/static-front-page

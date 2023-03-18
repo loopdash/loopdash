@@ -7,7 +7,7 @@ description: User Permissions in Wordpress refer to the level of access and cont
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/user-permissions

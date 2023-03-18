@@ -7,7 +7,7 @@ description: An administrator is a person who is responsible for managing and ov
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/administrator

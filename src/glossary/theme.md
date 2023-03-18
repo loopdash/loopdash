@@ -7,7 +7,7 @@ description: A theme in WordPress is a collection of files that determine the vi
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/theme

@@ -7,7 +7,7 @@ description: A Contributor in WordPress is a user role that can create and edit 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/contributor

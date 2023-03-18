@@ -7,7 +7,7 @@ description: Autosave is a feature in Wordpress that automatically saves drafts 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/autosave

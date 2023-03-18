@@ -7,7 +7,7 @@ description: An action hook is a specific point in the execution of WordPress wh
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/action-hook

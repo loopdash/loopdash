@@ -7,7 +7,7 @@ description: Visual Editor is a WYSIWYG (What You See Is What You Get) editor in
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/visual-editor

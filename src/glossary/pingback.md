@@ -7,7 +7,7 @@ description: Pingback is a WordPress feature that automatically notifies a websi
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/pingback

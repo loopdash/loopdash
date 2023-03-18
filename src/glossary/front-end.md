@@ -7,7 +7,7 @@ description: Front End in Wordpress refers to the user interface and design elem
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/front-end

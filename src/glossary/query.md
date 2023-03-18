@@ -7,7 +7,7 @@ description: A query is a request for specific information from a WordPress data
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/query

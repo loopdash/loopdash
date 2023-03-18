@@ -7,7 +7,7 @@ description: A domain name is a unique identifier that allows users to access a 
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/domain-name

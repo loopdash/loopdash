@@ -7,7 +7,7 @@ description: A class in WordPress is a blueprint for creating objects that encap
 imageAlt: keyboard
 sitemap:
 	changefreq: weekly
-	priority: 0.5
+	priority: 0.4
 tags: glossary
 date: 2023-03-15
 url: /glossary/class
