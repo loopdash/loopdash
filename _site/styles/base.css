@@ -368,7 +368,7 @@ ul {
 }
 
 .section-faqs ul li:before {
-  content: "✓";
+  content: "•";
   color: var(--color-dark-green);
   display: inline-block;
   width: 1em;
