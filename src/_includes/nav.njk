@@ -1,8 +1,46 @@
 <header id="header" class="nav">
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
-  <a href="/services/">Services</a>
-  <a href="/contact-us/">Contact</a>
-  {# {% include "partials/calendly-button.njk" %} #}
+  <div class="nav__container">
+    <a href="/">
+      <img src="/images/logo.svg" alt="Loopdash Logo" class="logo">
+    </a>
+    <div class="nav__menu">
+      <div class="nav__menu__hamburger">
+        <div class="nav__menu__hamburger__line"></div>
+        <div class="nav__menu__hamburger__line"></div>
+        <div class="nav__menu__hamburger__line"></div>
+      </div>
+      <div class="nav__menu__links__desktop">
+        <a href="/about/">About</a>
+        <a href="/services/">Services</a>
+        <a href="/contact-us/">Contact</a>
+        <a href="/blog/">Blog</a>
+        {% include "partials/calendly-button.njk" %}
+      </div>
+    </div>
+  </div>
+  <div class="nav__menu__links__mobile">
+    <a href="/about/">About</a>
+    <a href="/services/">Services</a>
+    <a href="/contact-us/">Contact</a>
+    <a href="/blog/">Blog</a>
+  </div>
+  <div class="close__menu">
+    <div class="close__menu__line"></div>
+    <div class="close__menu__line"></div>
+  </div>
 </header>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.nav__menu__hamburger');
+    const mobileMenu = document.querySelector('.nav__menu__links__mobile');
+    const closeMenu = document.querySelector('.close__menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+      closeMenu.classList.toggle('show');
+    });
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+      closeMenu.classList.toggle('show');
+    });
+  });
+</script>
