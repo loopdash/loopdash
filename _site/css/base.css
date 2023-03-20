@@ -590,7 +590,6 @@ ul {
   gap: 0.5rem;
 }
 
-
 .section-home-hero__review .section-home-hero__review__stars {
   max-width: 4rem;
   flex: 1;
@@ -598,10 +597,51 @@ ul {
 }
 .section-home-hero__review .section-home-hero__review__text {
   display: flex;
+  align-items: center;
 }
 .section-home-hero__review .section-home-hero__review__text span {
   margin-bottom: 0;
 }
+
+/*Vertical Sliding*/
+.vertical-carousel{
+	display: inline;
+	text-indent: 8px;
+}
+.vertical-carousel span{
+	animation: topToBottom 10s linear infinite 0s;
+	-ms-animation: topToBottom 10s linear infinite 0s;
+	-webkit-animation: topToBottom 10s linear infinite 0s;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.vertical-carousel span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.vertical-carousel span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.vertical-carousel span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-20px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(20px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
 
 /* problem section */
 .section-problem {
@@ -793,7 +833,7 @@ ul.blogs {
 
 /* section-slideshow */
 .section-slideshow {
-  max-width: 56rem;
+  max-width: 48rem;
   display: flex;
   justify-content: center;
   border-radius: 0.5rem;
