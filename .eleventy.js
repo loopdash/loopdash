@@ -2,7 +2,6 @@ const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./src/sass/");
 
   eleventyConfig.setTemplateFormats([
     "md",
