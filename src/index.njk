@@ -1,20 +1,19 @@
 ---
 layout: layouts/default.njk
 title: Web Design & Website Development - Loopdash
-h1: Loopdash Web Development
-h2: We develop sites & apps.
-description: We partner with companies, startups, and marketing firms to develop sites and apps that keep their businesses running.
+h1: WordPress & Webflow Development
+h2: We design & develop WordPress websites.
+description: For over a decade, we've been partnering with clients to provide reliable and efficient WordPress development and design services to help their businesses grow long-term.
 sitemap:
   changefreq: weekly
   priority: 1.0
 ---
 
 <section class="section-home-hero container-40 text-centers">
-  <h1 class="text--eyebrow">WordPress &amp; Webflow Development</h1>
-  <h2 class="font-47 text-bold">We develop wonderful WordPress websites.</h2>
+  <h1 class="text--eyebrow">{{ h1 }}</h1>
+  <h2 class="font-47 text-bold">{{ h2 }}</h2>
   <p class="font-42 mb-2">
-    For over a decade, we've been partnering with clients to provide reliable and efficient web development services to help
-    their businesses grow long-term.
+    {{ description }}
   </p>
   {% include "partials/calendly-button.njk" %}
   <div class="grid section-home-hero__review">
@@ -22,8 +21,9 @@ sitemap:
       <div class="grid-item section-home-hero__review__text vertical-carousel">
         <span class="font-39">Join 67+ happy clients</span>
         <span class="font-39">Get a free consultation</span>
+        <span class="font-39">Rated 5 stars on Google</span>
         <span class="font-39">No credit card required</span>
-        <span class="font-39">Get started today</span>
+        <span class="font-39">Talk to a professional dev today ☝️</span>
       </div>
     </div>
   </section>
