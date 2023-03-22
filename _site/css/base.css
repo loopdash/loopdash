@@ -111,34 +111,6 @@ h1, h2, h3, h4, h5, h6 {
 .font-weight--200 { font-weight: 200; }
 .font-weight--100 { font-weight: 100; }
 
-.page-content h1 {
-  font-size: calc(var(--base-font-size) * 3.052);
-  margin-bottom: 1rem;
-}
-.page-content h2 {
-  font-size: calc(var(--base-font-size) * 3.052);
-  margin-bottom: 1rem;
-}
-.page-content h3 {
-  font-size: calc(var(--base-font-size) * 2.441);
-  margin-bottom: 1rem;
-}
-.page-content h4 {
-  font-size: calc(var(--base-font-size) * 1.953);
-  margin-bottom: 1rem;
-}
-.page-content h5,
-.page-content h6 {
-  font-size: calc(var(--base-font-size) * 1.563);
-  margin-bottom: 1rem;
-}
-.page-content p,
-.page-content ol, 
-.page-content ul,
-.page-content li {
-  font-size: calc(var(--base-font-size) * 1.25);
-  margin-bottom: 1rem;
-}
 
 ul {
   -webkit-padding-start: 0;
@@ -146,30 +118,42 @@ ul {
   list-style: none;
 }
 
+
 .font-47 {
-  font-size: calc(var(--base-font-size) * 3.052) !important;
+  font-size: calc(var(--base-font-size) * 2.5) !important;
   margin-bottom: 1rem;
 }
+.page-content h1,
+.page-content h2,
 .font-46 {
-  font-size: calc(var(--base-font-size) * 2.441) !important;
+  font-size: calc(var(--base-font-size) * 2.25) !important;
   margin-bottom: 1rem;
 }
+.page-content h3,
 .font-45 {
-  font-size: calc(var(--base-font-size) * 1.953) !important;
+  font-size: calc(var(--base-font-size) * 2.0) !important;
   margin-bottom: 1rem;
 }
+.page-content h4,
 .font-44 {
-  font-size: calc(var(--base-font-size) * 1.563) !important;
+  font-size: calc(var(--base-font-size) * 1.75) !important;
   margin-bottom: 1rem;
 }
+.page-content h5,
+.page-content h6,
 .font-43 {
-  font-size: calc(var(--base-font-size) * 1.3875) !important;
+  font-size: calc(var(--base-font-size) * 1.5) !important;
   margin-bottom: 1rem;
 }
+.page-content p,
+.page-content ol, 
+.page-content ul,
+.page-content li,
 .font-42 {
   font-size: calc(var(--base-font-size) * 1.25) !important;
   margin-bottom: 1rem;
 }
+
 .font-41 {
   font-size: calc(var(--base-font-size) * 1.125) !important;
   margin-bottom: 1rem;
@@ -179,21 +163,10 @@ ul {
   margin-bottom: 1rem;
 }
 .font-39 {
-  font-size: calc(var(--base-font-size) * 0.8) !important;
+  font-size: calc(var(--base-font-size) * 0.75) !important;
   margin-bottom: 1rem;
 }
-.font-38 {
-  font-size: calc(var(--base-font-size) * 0.64) !important;
-  margin-bottom: 1rem;
-}
-.font-37 {
-  font-size: calc(var(--base-font-size) * 0.512) !important;
-  margin-bottom: 1rem;
-}
-.font-36 {
-  font-size: calc(var(--base-font-size) * 0.41) !important;
-  margin-bottom: 1rem;
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -220,33 +193,12 @@ ul {
   color: var(--color-chocolate);
 }
 
-.text--tomato {
-  color: var(--color-tomato);
-}
-
-.text--green {
-  color: var(--color-green);
-}
-
-.text--underline {
-  text-decoration: underline;
-}
-
 .text--eyebrow {
   font-size: calc(var(--base-font-size) * 0.8);
   font-weight: 600;
   color: var(--color-chocolate);
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.text--uppercase {
-  text-transform: uppercase;
-}
-
-.text-mono {
-  font-family: var(--mono-font);
-  letter-spacing: 1px;
 }
 
 .text-center {
