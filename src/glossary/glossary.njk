@@ -13,13 +13,7 @@ sitemap:
   priority: 0.6
 ---
 
-<div class="page-hero">
-  <div class="page-hero__content container-40 text-center">
-    <h1 class="text--eyebrow">{{ h1 }}</h1>
-    <h2 class="font-47 font-weight--800">{{ h2 }}</h2>
-    <p class="font-43 font--normal">{{ description }}</p>
-  </div>
-</div>
+{% include 'big-hero.njk' %}
 <article class="container-40">
   {% for term in terms %}
     <div class="glossary-term">
