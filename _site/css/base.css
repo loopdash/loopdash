@@ -146,18 +146,6 @@ ul {
   list-style: none;
 }
 
-.font-50 {
-  font-size: calc(var(--base-font-size) * 5.96) !important;
-  margin-bottom: 1rem;
-}
-.font-49 {
-  font-size: calc(var(--base-font-size) * 4.768) !important;
-  margin-bottom: 1rem;
-}
-.font-48 {
-  font-size: calc(var(--base-font-size) * 3.815) !important;
-  margin-bottom: 1rem;
-}
 .font-47 {
   font-size: calc(var(--base-font-size) * 3.052) !important;
   margin-bottom: 1rem;
