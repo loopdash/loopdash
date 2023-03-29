@@ -6,7 +6,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
-
   eleventyConfig.setTemplateFormats([
     "md",
     "css",
