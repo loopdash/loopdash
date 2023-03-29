@@ -1,96 +1,19 @@
 <div class="section-faqs container-40">
-  <h4 class="font-45 text-bold text-center">FAQs</h4>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">What is Loopdash?</h6>
-    <div class="answer">
-      <p class="font-41">
-        Loopdash is a design/development practice led by Gary Bunofsky, who oversees creative, dev, and strategy. Loopdash is
-        composed of a selective group of collaborators that contribute to deliver an exceptional project outcomes.
-      </p>
-    </div>
+  <h4 class="font-46 text-bold text-center">FAQ</h4>
+  <div class="mb-3">
+    {% for question in collections.faq | reverse | limit(5) %}
+      <div class="faq" id="faq">
+        <h6 class="question font-41 text-bold">{{ question.data.question }}</h6>
+        <div class="answer">
+          <p class="font-41">
+            {{ question.templateContent | safe }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">What kind of projects do you work on?</h6>
-    <div class="answer">
-      <p class="font-41">We specialize in WordPress development. Often we find the most value working on web or branding
-        revamps that translate into marketing website projects. We like to collaborate closely with founders or
-        marketing/product leads. Most of our clients hire us for:</p>
-      <ul class="font-41">
-        <li class="check">Brand / Visual Identity</li>
-        <li class="check">Website Design</li>
-        <li class="check">Website Development in WordPress or Webflow</li>
-        <li class="check">Web App Development in Rails or React</li>
-        <li class="check">On-retainer Support (long-term projects where we act as an outsourced dev team)</li>
-      </ul>
-    </div>
-  </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">How do I become a client?</h6>
-    <div class="answer">
-      <p class="font-41">
-        To become a client, please reach out via email to hello@loopdash.com or schedule a time to
-        <a
-          href=""
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/loopdash/talk-to-a-web-developer'});return false;">review
-          your project</a>.
-      </p>
-    </div>
-  </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">What does it cost to work with Loopdash?</h6>
-    <div class="answer">
-      <p class="font-41">We prefer to work on a fixed-cost for a majority of our projects. To give an accurate figure, we need
-        to understand your requirements, scope, deliverables and timelines. With that being said, most projects range from
-        $10-20k USD and take around 4-12 weeks to deliver. The minimum level of engagement is currently set at $5K USD.
-      </p>
-    </div>
-  </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">What are the payment terms?</h6>
-    <div class="answer">
-      <p class="font-41">The payment schedule is broken down into three parts:
-      </p>
-      <ul class="font-40">
-        <li>50% is due at the very beginning of the project.</li>
-        <li>Another 25% is due at the first milestone, usually when design is approved.</li>
-        <li>The final 25% of the total amount is due when the project is launched.</li>
-      </ul>
-      <p class="font-41">It's important to note that there are some things that are not included in the project cost. These
-        include:</p>
-      <ul class="font-40">
-        <li>Production costs for printed materials</li>
-        <li>Video or photography purchases</li>
-        <li>Typography or font licenses</li>
-        <li>Media buys, PPC or ad placements</li>
-        <li>Creation of video or photography assets</li>
-        <li>Hosting (this can be discussed before the project is launched)</li>
-      </ul>
-    </div>
-  </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">Who owns the website and deliverables after the project?</h6>
-    <div class="answer">
-      <p class="font-41">Once the project is completed and paid in full you will own all assets and deliverables. We believe
-        in providing our clients with complete ownership of their projects, which includes the website and brand identity.
-      </p>
-    </div>
-  </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">Can you build an app?</h6>
-    <div class="answer">
-      <p class="font-41">We can build anything that runs in the browser. We have built web-based apps that run on mobile,
-        desktop and tablets. We don't do iOS or Android apps.
-      </p>
-    </div>
-  </div>
-  <div class="faq" id="faq">
-    <h6 class="question font-41 text-bold">How do I join Loopdash?</h6>
-    <div class="answer">
-      <p class="font-41">We are not actively seeking new collaborators at this time. If you are interested in joining
-        Loopdash, please send us a note at
-        <a href="mailto:hello@loopdash.com">hello@loopdash.com</a>
-      </p>
-    </div>
+  <div class="text-center">
+    <a href="/faq/" class="button button--secondary">More FAQ</a>
   </div>
 </div>
 <script>
