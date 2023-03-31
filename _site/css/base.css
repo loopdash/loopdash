@@ -231,7 +231,7 @@ ul {
 }
 .nav a.button {
   color: var(--color-white);
-  padding: 0.125rem .5rem;
+  padding: 0.05rem .75rem;
   margin-left: 0.5rem;
 }
 .nav .logo {
@@ -457,6 +457,10 @@ ul {
   padding: 3rem 0;
 }
 
+.fadein {
+
+  opacity: 0;
+}
 /* section-logos */
 .section-logos {
   padding: 1.5rem 1.25rem 1.5rem;
@@ -464,15 +468,27 @@ ul {
   background-color: var(--color-charcoal);
   border-bottom: 1px solid #ffffff36;
 }
+
 .section-logos .grid {
-  gap: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 96px;
+  width: 72rem;
+  margin: 0 auto;
+}
+.section-logos .grid:before {
+  content: "";
+  background-image: linear-gradient(rgba(255,255,255, 0.2), rgba(255,255,255,0));
 }
 .section-logos .grid-item {
   display: flex;
   justify-content: center;
-  max-height: 72px;
+  max-height: 48px !important;
   margin: 0 auto;
 }
+
+
 .section-logos .logos-heading {
   display: flex;
   font-size: calc(var(--base-font-size) * 1.125) !important;
@@ -482,25 +498,8 @@ ul {
   color: white;
   line-height: 1.5rem;
 }
-.section-logos .forward-majority {
-  max-height: 50px;
-}
 
-@media only screen and (max-width: 768px)   {
-  .section-logos {
-    padding: 3rem 0;
-  }
-  .section-logos .grid {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .section-logos .grid-item {
-    max-width: 32%;
-    width: 25%;
-    margin: 0;
-    flex: 33%;
-  }
-}
+
 
 /* section-home-hero */
 .section-home-hero {
@@ -809,7 +808,7 @@ ul.blogs {
 
 /* footer */
 .footer {
-  background: var(--color-charcoal);
+  background: #080602f2;
   color: var(--color-wheat);
   padding: 4rem 0 6rem 0;
   border-top: 1px solid var(--color-charcoal);

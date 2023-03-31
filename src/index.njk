@@ -9,7 +9,7 @@ sitemap:
   priority: 1.0
 ---
 
-<section class="section-home-hero container-40 text-centers">
+<section class="section-home-hero container-40 text-center">
   <h1 class="text--eyebrow">{{ h1 }}</h1>
   <h2 class="font-47 text-bold">{{ h2 }}</h2>
   <p class="font-42 mb-2">
@@ -28,9 +28,24 @@ sitemap:
     </div>
   </section>
   {% include "partials/problem-section.njk" %}
-  <section class="section-slideshow">
+  <section class="section-slideshow fadein">
     <img class="section-slideshow__image" src="/images/work.gif" alt="animated slideshow of Loopdash's work"/>
   </section>
   {% include "partials/faq-section.njk" %}
   {% include "partials/cta-section.njk" %}
-  {% include "partials/logo-section.njk" %}
+  {# {% include "partials/logo-section.njk" %} #}
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        $('.fadein').each(function (i) {
+          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_element) {
+            $(this).animate({
+              'opacity': '1'
+            }, 400);
+          }
+        });
+      });
+    });
+  </script>
