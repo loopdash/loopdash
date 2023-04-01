@@ -1,4 +1,4 @@
---- 
+---
 layout: layouts/single-glossary.njk
 title: Why do you use WordPress? - Loopdash
 question: Why do you use WordPress?
@@ -8,7 +8,9 @@ sitemap:
 	priority: 0.6
 tags: faq
 date: 2023-03-23
-url: /faq/will-my-website-be-custom
+url: /faq/why-do-you-use-wordpress
 ---
 
-<p class="font-41">Yes, that's all we build. Custom WordPress website is better than building a theme using elementor or beaver builder because it allows for a more customized and unique look and feel. Building a custom WordPress website also allows for more control over the design, content, and functionality of the website, as well as the ability to add custom plugins and themes to the website. Additionally, when building a custom WordPress website, you have the ability to add custom code, which can help to create a more dynamic and interactive website. Finally, custom WordPress websites are generally more secure than websites built using elementor or beaver builder, as they are built from the ground up.</p>
+<p class="font-41">WordPress is the ideal solution for business owners and brands who need to build a website quickly and easily. It is user-friendly and requires no coding knowledge, with a vast library of plugins to choose from. Plus, WordPress is open source and free, meaning business owners can save money on web hosting and development costs. Additionally, it offers a wide range of customization options, allowing business owners to tailor their websites to their specific needs. </p>
+
+

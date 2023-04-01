@@ -12,13 +12,13 @@ url: /faq/what-are-the-payment-terms
 ---
 
 <p class="font-41">The payment schedule is broken down into three parts:</p>
-<ul class="font-40">
+<ul class="font-41">
 	<li>50% is due at the very beginning of the project.</li>
 	<li>Another 25% is due at the first milestone, usually when design is approved.</li>
 	<li>The final 25% of the total amount is due when the project is launched.</li>
 </ul>
 <p class="font-41">It's important to note that there are some things that are not included in the project cost. These include:</p>
-<ul class="font-40">
+<ul class="font-41">
 	<li>Production costs for printed materials</li>
 	<li>Video or photography purchases</li>
 	<li>Typography or font licenses</li>
