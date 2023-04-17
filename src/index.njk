@@ -27,13 +27,13 @@ sitemap:
       </div>
     </div>
   </section>
-  {% include "partials/problem-section.njk" %}
   <section class="section-slideshow fadein">
     <img class="section-slideshow__image" src="/images/work.gif" alt="animated slideshow of Loopdash's work"/>
   </section>
+  {% include "partials/problem-section.njk" %}
+  {% include "partials/project-section.njk" %}
   {% include "partials/faq-section.njk" %}
   {% include "partials/cta-section.njk" %}
-  {# {% include "partials/logo-section.njk" %} #}
   <script>
     $(document).ready(function () {
       $(window).scroll(function () {

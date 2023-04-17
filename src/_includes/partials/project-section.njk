@@ -1,0 +1,32 @@
+<div class="container-72">
+  <h4 class="font-46 text-bold text-center">Developed & Built by Loopdash</h4>
+  <div class="project-items">
+    {% for project in collections.projects | limit(5) %}
+      <div class="project-item">
+        <div class="project-card" id="project">
+          <div class="project-background {{ project.data.backgroundClass }}">
+            <div class="project-image-wrap">
+              <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" class="project-image"/>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-details">
+              <span class="font-38 project-location">{{ project.data.company.location }}</span>
+              <span class="font-36 badge {{ project.data.backgroundClass }}">{{ project.data.company.type }}</span>
+            </div>
+            <h5 class="project-title font-43 text-bold">{{ project.data.title }}</h5>
+            <div
+              class="project-button-wrap">
+              {# <a href="{{ project.data.url }}" class="button button--tertiary">
+                                                                                      View Project
+                                                                                    </a> #}
+              <a href="{{ project.data.external }}" target="_blank" class="button button--tertiary project-external">
+                Visit Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
