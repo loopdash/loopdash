@@ -825,6 +825,11 @@ ul {
   font-weight: 600;
 }
 
+button span {
+  pointer-events: none;
+}
+
+
 .badge {
   font-size: calc(var(--base-font-size) * 0.65);
   text-transform: uppercase;
