@@ -16,4 +16,4 @@ date: 2023-03-04
 url: /projects/novak-insurance
 ---
 
-Some details about the project.
+<p class="font-41">Designed & developed a website for an insurance agency.</p>

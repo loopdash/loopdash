@@ -15,11 +15,8 @@
               <span class="font-36 badge {{ project.data.backgroundClass }}">{{ project.data.company.type }}</span>
             </div>
             <h5 class="project-title font-43 text-bold">{{ project.data.title }}</h5>
-            <div
-              class="project-button-wrap">
-              {# <a href="{{ project.data.url }}" class="button button--tertiary">
-                                                                                      View Project
-                                                                                    </a> #}
+            {{ project.templateContent | safe }}
+            <div class="project-button-wrap">
               <a href="{{ project.data.external }}" target="_blank" class="button button--tertiary project-external">
                 Visit Live Site
               </a>

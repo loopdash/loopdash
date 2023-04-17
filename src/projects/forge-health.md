@@ -16,4 +16,4 @@ date: 2023-03-04
 url: /projects/forge-health
 ---
 
-Some details about the project.
+<p class="font-41">Developed a webite for a healthcare start-up.</p>

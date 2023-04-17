@@ -1,7 +1,7 @@
 ---
 title: Design It For Us
 company:
-  type: PAC
+  type: Political
   location: Washington, D.C
 image: "/images/projects/design-it-for-us.png"
 imageAlt: Forward Majority WordPress Website
@@ -16,4 +16,4 @@ date: 2023-03-04
 url: /projects/design-it-for-us
 ---
 
-Some details about the project.
+<p class="font-41">Designed and developed a webite for a new poltical organization.</p>

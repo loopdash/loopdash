@@ -1,7 +1,7 @@
 ---
 title: Forward Majority
 company:
-  type:  PAC
+  type:  Political
   location: Washington, D.C
 image: "/images/projects/forward-majority.png"
 imageAlt: Forward Majority WordPress Website
@@ -16,4 +16,4 @@ date: 2023-03-04
 url: /projects/forward-majority
 ---
 
-Some details about the project.
+<p class="font-41">Designed & developed a website for a political organization.</p>
