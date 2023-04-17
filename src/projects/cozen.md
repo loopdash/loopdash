@@ -16,4 +16,4 @@ date: 2023-03-04
 url: /projects/cozen
 ---
 
-<p class="font-41">Designed & developed a multi-state law firm.</p>
+<p class="font-41">Designed & developed a website for a multi-state law firm.</p>
