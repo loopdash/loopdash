@@ -432,7 +432,7 @@ ul {
   overflow: hidden;
   max-height: 200px;
   margin-top: -1px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .project-body {
@@ -471,6 +471,7 @@ ul {
   align-items: center;
 }
 .project-title {
+  margin-top: 12px;
   margin-bottom: 32px;
 }
 .project-button-wrap {
