@@ -410,8 +410,8 @@ ul {
 .project-image-wrap {
   height: 400px;
   max-width: 480px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 36px;
+  margin-right: 36px;
   position: absolute;
   top: 30px;
   left: auto;
@@ -449,6 +449,10 @@ ul {
 }
 .design-it-for-us {
   background: linear-gradient(360deg, #469D6A -41.29%, #69E299 98.63%);
+}
+.cozen {
+  color: var(--color-white);
+  background: #008C9E;
 }
 
 .novak-insurance {
@@ -763,10 +767,9 @@ ul {
   cursor: pointer;
   white-space: nowrap;
   border-radius: 6px;
-  min-height: 2.125rem;
-  padding: 0.3875rem 1.5rem;
+  padding: 10px 24px;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   font-weight: 700;
   line-height: 1;
   -webkit-text-decoration-line: none;
@@ -925,7 +928,7 @@ ul.blogs {
   max-width: 48rem;
   display: flex;
   justify-content: center;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   padding: 2rem;
   margin: 0rem auto 4rem;
   text-align: center;
@@ -956,7 +959,6 @@ ul.blogs {
   color: var(--color-gray);
 }
   
-
 /* footer */
 .footer {
   background: #080602f2;
@@ -1262,7 +1264,7 @@ mark{
   width: 100%;
   background: var(--color-white);
   border: 1px solid var(--color-charcoal);
-  border-radius: 0.5rem;
+  border-radius: 6px;
   font-size: 16px;
   padding: 4px 10px;
 }
@@ -1323,7 +1325,7 @@ mark{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   font-weight: 600;
   color:  var(--color-charcoal);
   border: 1px solid var(--color-charcoal);
