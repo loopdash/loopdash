@@ -534,14 +534,14 @@ ul {
 
 /* services */
 .section-services {
-  padding: 4rem 1.25rem;
+  padding: 0rem 1.25rem;
   display: grid;
   grid-template-columns: auto;
-  padding: 50px;
+  padding: 0;
 }
 
 .service {
-  padding: 16px
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -550,6 +550,10 @@ ul {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 50px;
+  }
+
+  .service {
+    padding: 16px;
   }
 }
 
