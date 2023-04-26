@@ -12,7 +12,7 @@ sitemap:
   changefreq: weekly
   priority: 0.5
 tags: projects
-date: 2023-03-04
+date: 2022-03-04
 url: /projects/forward-majority
 ---
 

@@ -450,6 +450,7 @@ ul {
 .design-it-for-us {
   background: linear-gradient(360deg, #469D6A -41.29%, #69E299 98.63%);
 }
+
 .cozen {
   color: var(--color-white);
   background: #008C9E;
@@ -457,6 +458,11 @@ ul {
 
 .novak-insurance {
   background: #E4E1DD;
+}
+
+.vesey-ventures {
+  color: #7D8934;
+  background: #F4FEB6;
 }
 
 .project-image {
@@ -523,6 +529,27 @@ ul {
     width: 30%;
     min-width: 30%;
     padding: 1vw;
+  }
+}
+
+/* services */
+.section-services {
+  padding: 4rem 1.25rem;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 50px;
+}
+
+.service {
+  padding: 16px
+}
+
+@media screen and (min-width: 768px) {
+  .section-services {
+    padding: 4rem 1.25rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
   }
 }
 
