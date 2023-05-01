@@ -1,13 +1,16 @@
 ---
+layout: layouts/single-project.njk
 title: Forward Majority
+h1: WordPress Development for Forward Majority
+h2: Forward Majority
+description: Designed & developed a website for a political organization.
 company:
-  type:  Political
+  type: Political
   location: Washington, D.C
 image: "/images/projects/forward-majority.png"
 imageAlt: Forward Majority WordPress Website
 backgroundClass: forward-majority
 external: https://forwardmajority.org
-permalink: false
 sitemap:
   changefreq: weekly
   priority: 0.5
@@ -16,4 +19,4 @@ date: 2022-03-04
 url: /projects/forward-majority
 ---
 
-<p class="font-41">Designed & developed a website for a political organization.</p>
+Designed & developed a website for a political organization.

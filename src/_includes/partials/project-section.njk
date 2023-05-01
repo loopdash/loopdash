@@ -17,6 +17,9 @@
             <h5 class="project-title font-43 text-bold">{{ project.data.title }}</h5>
             {{ project.templateContent | safe }}
             <div class="project-button-wrap">
+              <a href="{{ project.data.url }}" class="button button--secondary">
+                View Project
+              </a>
               <a href="{{ project.data.external }}" target="_blank" class="button button--tertiary project-external">
                 Visit Live Site
               </a>

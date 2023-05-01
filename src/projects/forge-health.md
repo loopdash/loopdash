@@ -1,5 +1,9 @@
 ---
+layout: layouts/single-project.njk
 title: Forge Health
+h1: WordPress Development for Forge Health
+h2: Forge Health
+description: Developed a webite for a healthcare start-up.
 company:
   type: Start-up
   location: New York, NY
@@ -7,7 +11,6 @@ image: "/images/projects/forge-health.png"
 imageAlt: Forge health website build
 backgroundClass: forge-health
 external: https://forgehealth.com
-permalink: false
 sitemap:
   changefreq: weekly
   priority: 0.5
@@ -16,4 +19,4 @@ date: 2021-07-03
 url: /projects/forge-health
 ---
 
-<p class="font-41">Developed a webite for a healthcare start-up.</p>
+Developed a webite for a healthcare start-up.

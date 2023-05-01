@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body>
+    {% include 'nav.njk' %}
+    <main class="blog">
+      {% include 'big-hero.njk' %}
+      <article class="container-72 page-content">
+        <div class="single-project-image">
+          <img src="{{ image }}" alt="{{ imageAlt }}" class="project-image"/>
+        </div>
+      </article>
+    </main>
+    {% include 'site-footer.njk' %}
+  </body>
+</html>

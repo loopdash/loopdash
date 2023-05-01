@@ -1,0 +1,19 @@
+---
+layout: layouts/default.njk
+title: Projects - Loopdash
+h1: Loopdash Projects
+h2: Our WordPress & Webflow Projects 
+description: Here are some of our Webflow and WordPress projects.
+image: "/images/computer-illustration.jpg"
+imageAlt: Computer
+pagination:
+  data: collections.projects
+  size: 10
+  alias: projects
+sitemap:
+  changefreq: weekly
+  priority: 0.6
+---
+
+{% include 'big-hero.njk' %}
+{% include "partials/project-section.njk" %}

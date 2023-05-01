@@ -1,5 +1,9 @@
 ---
+layout: layouts/single-project.njk
 title: Vesey Ventures
+h1: WordPress Development for Vesey Ventures
+h2: Vesey Ventures
+description: Worked with the designers at LabelMaker to develop a Webflow website for a venture capital firm.
 company:
   type: Venture Capital
   location: New York, NY
@@ -7,7 +11,6 @@ image: "/images/projects/vesey-ventures.png"
 imageAlt: Vesey Ventures Webflow Website
 backgroundClass: vesey-ventures
 external: https://vesey.vc
-permalink: false
 sitemap:
   changefreq: weekly
   priority: 0.5
@@ -16,4 +19,4 @@ date: 2023-04-19
 url: /projects/vesey-ventures
 ---
 
-<p class="font-41">Worked with the designers at <a href="https://labelmaker.nyc">LabelMaker</a> to develop a Webflow website for a venture capital firm.</p>
+Worked with the designers at [LabelMaker](https://labelmaker.nyc) to develop a Webflow website for a venture capital firm.
