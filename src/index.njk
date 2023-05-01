@@ -31,7 +31,10 @@ sitemap:
     <img class="section-slideshow__image" src="/images/work.gif" alt="animated slideshow of Loopdash's work"/>
   </section>
   {% include "partials/problem-section.njk" %}
-  {% include "partials/project-section.njk" %}
+  <div class="section-projects">
+    <h4 class="font-46 text-bold text-center">Selected Projects</h4>
+    {% include "partials/project-section.njk" %}
+  </div>
   {% include "partials/services-section.njk" %}
   {% include "partials/faq-section.njk" %}
   {% include "partials/cta-section.njk" %}
