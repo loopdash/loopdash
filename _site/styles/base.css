@@ -424,7 +424,8 @@ ul {
   left: auto;
   right: auto;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 9px;
+  border: 1px solid #0000002b;
 }
 
 .project-background {
