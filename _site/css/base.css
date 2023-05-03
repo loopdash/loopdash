@@ -418,8 +418,8 @@ ul {
 .project-image-wrap {
   height: 400px;
   max-width: 480px;
-  margin-left: 36px;
-  margin-right: 36px;
+  margin-left: 25px;
+  margin-right: 25px;
   position: absolute;
   top: 30px;
   left: auto;
@@ -445,7 +445,7 @@ ul {
 }
 
 .project-body {
-  padding: 0 30px 30px 30px;
+  padding: 0 20px 30px 20px;
 }
 
 .forge-health {
@@ -557,10 +557,18 @@ ul {
     display: flex;
     flex-direction: row;
   }
+  .project-body {
+    padding: 0 30px 30px 30px;
+  }
+
   .project-item {
     width: 46%;
     min-width: 46%;
     padding: 1vw;
+  }
+  .project-image-wrap {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 
@@ -585,6 +593,63 @@ ul {
 /* projects */
 .section-projects {
   padding: 4rem 1.25rem;
+}
+
+/* testimonials */
+.section-testimonials {
+  padding: 2rem 1rem 2.75rem 1rem;
+  background-color: var(--color-dark-wheat);
+}
+.section-testimonials .splide__arrows {
+  display: none;
+}
+.section-testimonials .splide__pagination__page {
+  width: 24px;
+  border-radius: 4px;
+  height: 6px;
+  margin: 4px;
+}
+.section-testimonials .splide__pagination__page.is-active {
+  background: var(--color-green);
+  transform: scale(1);
+}
+.section-testimonials .splide__pagination {
+  bottom: 1.5em;
+}
+
+.testimonial-items {
+  max-width: 105rem;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+.testimonial-items .testimonial-item {
+  width: 50%;
+}
+
+.testimonial-card {
+  text-align: center;
+  background-color: var(--color-white);
+  text-decoration: none;
+  box-shadow: var(--shadow-medium);
+  border-radius: 8px;
+  padding: 2.25rem;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255, .8);
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.testimonial-card__stars {
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 /* services */
@@ -693,7 +758,6 @@ ul {
 /* section-logos */
 .section-logos {
   padding: 1.5rem 1.25rem 1.5rem;
-  color: var(--color-dark-teal);
   background-color: var(--color-charcoal);
   border-bottom: 1px solid #ffffff36;
 }
@@ -806,7 +870,6 @@ ul {
 .section-problem {
   margin: -5rem auto 0 auto;
   padding: 8rem 1.25rem 8rem;
-  color: var(--color-dark-teal);
   background-color: var(--color-light-gray);
 }
 

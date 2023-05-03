@@ -1,0 +1,20 @@
+<div class="section-testimonials">
+  <h4 class="font-46 mb-4 text-bold text-center">Rated 5/5 on Google Reviews</h4>
+  <div class="splide" role="group" aria-label="testimonials" id="testimonials">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for testimonial in collections.testimonials %}
+          <li class="splide__slide testimonial-item">
+            <div class="testimonial-card" id="testimonial">
+              <img class="testimonial-card__stars" src="/images/review-stars.svg" alt="5 out of 5 stars"/>
+              <p class="font-40">
+                {{ testimonial.data.description }}</p>
+              <span class="font-39 text--charcoal">{{ testimonial.data.name }}, {{ testimonial.data.role }} @
+              {{ testimonial.data.company }}</span>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
