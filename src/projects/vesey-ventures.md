@@ -1,7 +1,7 @@
 ---
 layout: layouts/single-project.njk
 title: Vesey Ventures
-h1: WordPress Development for Vesey Ventures
+h1: Webflow Development for Vesey Ventures
 h2: Vesey Ventures
 description: Worked with the designers at LabelMaker to develop a Webflow website for a venture capital firm.
 company:
