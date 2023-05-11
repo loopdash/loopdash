@@ -19,4 +19,4 @@ date: 2023-03-29
 url: /projects/design-it-for-us
 ---
 
-Designed and developed a website for a new political organization.
+Designed and developed a website for a new polticial organization.

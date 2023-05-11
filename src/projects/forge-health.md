@@ -19,4 +19,4 @@ date: 2021-07-03
 url: /projects/forge-health
 ---
 
-Developed a webite for a healthcare start-up.
+Worked with the designers at [LabelMaker](https://labelmaker.nyc) to develop a website for a healthcare start-up.
