@@ -4,9 +4,10 @@ title: Design It For Us
 h1: WordPress Development for Design It For Us
 h2: Design It For Us
 description: Designed and developed a webite for a new poltical organization.
+meta_image: "/images/projects/design-it-for-us-meta.png"
 company:
   type: Political
-  location: Washington, D.C
+  location: Washington, D.C.
 image: "/images/projects/design-it-for-us.png"
 imageAlt: Design It For Us WordPress Website
 backgroundClass: design-it-for-us

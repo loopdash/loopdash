@@ -4,6 +4,7 @@ title: Cozen O'Connor
 h1: WordPress Development for Cozen O'Connor
 h2: Cozen O'Connor
 description: Designed & developed a website for a multi-state law firm.
+meta_image: "/images/projects/cozen-meta.png"
 company:
   type: Law Firm
   location: Washington, DC
@@ -15,7 +16,7 @@ sitemap:
   changefreq: weekly
   priority: 0.5
 tags: projects
-date: 2023-03-04
+date: 2022-02-04
 url: /projects/cozen
 ---
 

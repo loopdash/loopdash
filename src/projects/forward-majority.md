@@ -4,9 +4,10 @@ title: Forward Majority
 h1: WordPress Development for Forward Majority
 h2: Forward Majority
 description: Designed & developed a website for a political organization.
+meta_image: "/images/projects/forward-majority-meta.png"
 company:
   type: Political
-  location: Washington, D.C
+  location: Washington, D.C.
 image: "/images/projects/forward-majority.png"
 imageAlt: Forward Majority WordPress Website
 backgroundClass: forward-majority

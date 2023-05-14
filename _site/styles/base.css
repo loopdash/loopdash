@@ -457,6 +457,14 @@ ul {
 .design-it-for-us {
   background: linear-gradient(360deg, #469D6A -41.29%, #69E299 98.63%);
 }
+.hey-google {
+  color: #420303;
+  background: #FFB5B5;
+}
+.accrue-savings {
+  color: #000000;
+  background: #F3E0AD;
+}
 
 .cozen {
   color: var(--color-white);
