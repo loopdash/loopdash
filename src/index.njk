@@ -16,41 +16,37 @@ sitemap:
     {{ description }}
   </p>
   {% include "partials/calendly-button.njk" %}
-  <div class="grid section-home-hero__review">
-    <img class="grid-item section-home-hero__review__stars" src="/images/review-stars.svg" alt="5 out of 5 stars">
-      <div class="grid-item section-home-hero__review__text vertical-carousel">
-        <span class="font-39">Join 67+ happy clients</span>
-        <span class="font-39">Get a free consultation</span>
-        <span class="font-39">Rated 5 stars on Google</span>
-        <span class="font-39">No credit card required</span>
-        <span class="font-39">Talk to a professional dev today ☝️</span>
-      </div>
-    </div>
-  </section>
-  <section class="section-slideshow fadein">
-    <img class="section-slideshow__image" src="/images/work.gif" alt="animated slideshow of Loopdash's work"/>
-  </section>
-  {% include "partials/problem-section.njk" %}
-  <div class="section-projects">
-    <h4 class="font-46 text-bold text-center">Selected Projects</h4>
-    {% include "partials/project-section.njk" %}
-  </div>
-  {% include "partials/testimonial-section.njk" %}
-  {% include "partials/services-section.njk" %}
-  {% include "partials/faq-section.njk" %}
-  {% include "partials/cta-section.njk" %}
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        $('.fadein').each(function (i) {
-          var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window > bottom_of_element) {
-            $(this).animate({
-              'opacity': '1'
-            }, 400);
-          }
-        });
+  {% set perk_1 = "Join 67+ happy clients" %}
+  {% set perk_2 = "Get a free consultation" %}
+  {% set perk_3 = "Rated 5 stars on Google" %}
+  {% set perk_4 = "No credit card required" %}
+  {% set perk_5 = "Talk to a professional dev today ☝️" %}
+  {% include "partials/perk-carousel.njk" %}
+</section>
+<section class="section-slideshow fadein">
+  <img class="section-slideshow__image" src="/images/work.gif" alt="animated slideshow of Loopdash's work"/>
+</section>
+{% include "partials/problem-section.njk" %}
+<div class="section-projects">
+  <h4 class="font-46 text-bold text-center">Selected Projects</h4>
+  {% include "partials/project-section.njk" %}
+</div>
+{% include "partials/testimonial-section.njk" %}
+{% include "partials/services-section.njk" %}
+{% include "partials/faq-section.njk" %}
+{% include "partials/cta-section.njk" %}
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      $('.fadein').each(function (i) {
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_element) {
+          $(this).animate({
+            'opacity': '1'
+          }, 400);
+        }
       });
     });
-  </script>
+  });
+</script>

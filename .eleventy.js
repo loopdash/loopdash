@@ -4,6 +4,12 @@ const inspect = require("util").inspect;
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
+  eleventyConfig.addFilter('categoryFilter', function (collection, category) {
+    if (!category) return collection;
+    const filtered = collection.filter(item => item.data.category == category)
+    return filtered;
+  });
+
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   eleventyConfig.setTemplateFormats([
