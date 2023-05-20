@@ -1184,6 +1184,9 @@ ul.blogs {
   padding: 1.25rem 1.5rem;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
+.card--white {
+  background-color: var(--color-white);
+}
 a.card {
   border: 2px solid transparent;
 }
