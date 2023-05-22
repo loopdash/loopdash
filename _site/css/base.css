@@ -13,8 +13,8 @@
   --color-gray: #7c7676;
   --color-chocolate: #3D3C38;
   --color-charcoal: #080602;
-  --color-green: #FF5C35;
-  --color-dark-green: #f24c25;
+  --color-orange: #FF5C35;
+  --color-dark-orange: #f24c25;
   --color-blue: #0169fb;
   --color-dark-blue: #0e0066;
   --shadow-medium: 0 5px 6px rgba(140,149,159,0.15);
@@ -48,7 +48,7 @@ p {
 }
 
 a {
-  color: var(--color-dark-green);
+  color: var(--color-dark-orange);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   text-decoration: underline;
@@ -56,7 +56,7 @@ a {
 
 a:hover,
 a:active {
-  color: var(--color-green);
+  color: var(--color-orange);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -150,16 +150,12 @@ ul {
 }
 
 /* text styles */
-.text--wheat {
-  color: var(--color-wheat);
-}
-
 .text--charcoal {
   color: var(--color-charcoal);
 }
 
-.text--color-chocolate {
-  color: var(--color-chocolate);
+.text--orange {
+  color: var(--color-orange)
 }
 
 .text--eyebrow {
@@ -212,7 +208,7 @@ ul {
 }
 .nav a:hover,
 .nav a:focus {
-  color: var(--color-green);
+  color: var(--color-orange);
 }
 .nav a.button {
   color: var(--color-white);
@@ -231,7 +227,7 @@ ul {
   cursor: pointer;
 }
 .nav__menu__hamburger:hover .nav__menu__hamburger__line {
-  background-color: var(--color-green);
+  background-color: var(--color-orange);
 }
 .nav__menu__links__mobile,
 .nav__menu__links__desktop {
@@ -270,14 +266,15 @@ ul {
 }
 .close__menu:hover .close__menu__line {
   cursor: pointer;
-  background-color: var(--color-green);
+  background-color: var(--color-orange);
 }
 .close__menu__line {
-  width: 1.5rem;
-  height: 2px;
+  width: 24px;
+  height: 3px;
   background-color: var(--color-charcoal);
-  margin: 5px 0;
+  margin: 4px 0;
   transition: 0.4s;
+  border-radius: 4px;
 }
 .close__menu .close__menu__line:first-of-type {
   transform: rotate(45deg);
@@ -298,16 +295,14 @@ ul {
   }
 }
 
-
-
 .nav__menu__hamburger__line {
-  width: 22px;
-  height: 2px;
+  width: 24px;
+  height: 3px;
   background-color: var(--color-charcoal);
-  margin: 5px 0;
+  margin: 6px 0px;
   transition: 0.4s;
+  border-radius: 4px;
 }
-
 
 .site-header {
   color: var(--color-charcoal);
@@ -602,7 +597,7 @@ ul {
   margin: 4px;
 }
 .section-testimonials .splide__pagination__page.is-active {
-  background: var(--color-green);
+  background: var(--color-orange);
   transform: scale(1);
 }
 .section-testimonials .splide__pagination {
@@ -697,7 +692,7 @@ ul {
 }
 
 .section-faqs .question:hover {
-  color: var(--color-green);
+  color: var(--color-orange);
 }
 
 .section-faqs .question:after {
@@ -713,7 +708,7 @@ ul {
 
 .section-faqs ul li:before {
   content: "•";
-  color: var(--color-dark-green);
+  color: var(--color-dark-orange);
   display: inline-block;
   width: 1em;
 }
@@ -915,9 +910,9 @@ ul {
 .button {
   font-family: var(--default-font);
   font-size: calc(var(--base-font-size) * 0.9);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), var(--color-green);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), var(--color-orange);
   color: var(--color-white);
-  border: 1px solid var(--color-green);
+  border: 1px solid var(--color-orange);
   display: inline-flex;
   cursor: pointer;
   white-space: nowrap;
@@ -958,7 +953,7 @@ ul {
 .button:hover,
 .button:focus {
   color: var(--color-white);
-  background: var(--color-dark-green);
+  background: var(--color-dark-orange);
 }
 
 .button .button__icon {

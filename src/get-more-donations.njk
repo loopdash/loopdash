@@ -7,7 +7,9 @@ eleventyExcludeFromCollections: true
 ---
 
 <section class="landing-page-hero container-40">
-  <h1 class="font-47 text-bold">{{ h1 }}</h1>
+  <h1 class="font-47 text-bold">Get
+    <span class="text--orange">More Donations</span>
+    for Your Political Organization</h1>
   <h2 class="font-43 mb-4">Boost your funding with expert Design, Content Strategy, and SEO</h2>
   <div class="video-wrapper mb-2">
     <div style="position: relative; padding-bottom: 64.98194945848375%; height: 0;" class="mb-2">
@@ -19,17 +21,11 @@ eleventyExcludeFromCollections: true
         allowfullscreen
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
-    <div class="mb-6">
-      {% set perk_1 = '“Gary and his team at Loopdash have been great to work with.”' %}
-      {% set perk_2 = '“Great design, thoughtful strategy, and responsive service.”' %}
-      {% set perk_3 = '“All communication was clear and collaborative. Couldn\'t have asked for a better team.”' %}
-    {% set perk_4 = '“It has been an absolute pleasure working with Loopdash.”' %}
-    {% set perk_5 = '“They\'ve always come through and we\'re eager to continue working with them”' %}
-    {% include "partials/perk-carousel.njk" %}
-    </div>
-    {# {% set testimonaiHeadline = null %}
-                                                                            {% set testimonialFilter = "political" %}
-                                                                            {% include "partials/testimonial-section.njk" %} #}
+    <button data-cal-link="garyb/30min" class="button button--calendly mb-4">
+      <span>Get More Donations</span>
+      <img src="/images/chevron-right.svg" alt="arrow icon" class="button__icon"/></button>
+    {% set testimonialHeadline = "What our clients have to say" %}
+    {% include "partials/testimonial-section.njk" %}
     <h3 class="font-43 mb-1 text-bold">
       More Traffic + Effective Content Strategy = Increased Donations &amp; More Votes
     </h3>
