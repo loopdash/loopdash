@@ -1,0 +1,27 @@
+---
+layout: layouts/default.njk
+title: Testimonials - Loopdash
+h1: Testimonials
+h2: "Client Testimonials: Feedback on our design, dev, and strategy"
+description: Real experiences shared by our valued clients
+pagination:
+  data: collections.testimonials
+  size: 30
+  alias: testimonials
+sitemap:
+  changefreq: weekly
+  priority: 0.7
+---
+
+{% include 'big-hero.njk' %}
+<article class="container-72 testimonial-grid mb-4">
+  {% for testimonial in testimonials | reverse %}
+    <div class="testimonial-card" id="testimonial">
+      <img class="testimonial-card__stars" src="/images/review-stars.svg" alt="5 out of 5 stars"/>
+      <p class="font-40">
+        {{ testimonial.data.description }}</p>
+      <span class="font-39 text--charcoal">{{ testimonial.data.name }}, {{ testimonial.data.role }} @
+      {{ testimonial.data.company }}</span>
+    </div>
+  {% endfor %}
+</div></article>

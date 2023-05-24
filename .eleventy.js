@@ -1,15 +1,23 @@
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 const htmlmin = require("html-minifier");
 const inspect = require("util").inspect;
+require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
+  // Add environment variables to Nunjucks, usage: {{ env("MY_VAR") }}
+  eleventyConfig.addFilter("env", key => process.env[key]);
+
+  // Add a debug filter, usage: {{ content | debug }}
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
+
+  // Add categories filter to get all posts in a category
   eleventyConfig.addFilter('categoryFilter', function (collection, category) {
     if (!category) return collection;
     const filtered = collection.filter(item => item.data.category == category)
     return filtered;
   });
 
+  // Add a limit filter, usage: {{ array | limit(3) }}
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   eleventyConfig.setTemplateFormats([
@@ -27,12 +35,13 @@ module.exports = function (eleventyConfig) {
     "ttf",
     "woff",
     "woff2",
-    "ico"
+    "ico",
+    "mp4"
   ]);
 
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
-      hostname: "https://loopdash.com"
+      hostname: process.env['ROOT_URL']
     }
   });
 

@@ -7,19 +7,15 @@ eleventyExcludeFromCollections: true
 ---
 
 <section class="landing-page-hero container-40">
-  <h1 class="font-47 text-bold">Get
+  <h1 class="font-47 text-bold">Get {{ "ROOT_URL" | env }}
     <span class="text--orange">More Donations</span>
     for Your Political Organization</h1>
   <h2 class="font-43 mb-4">Boost your funding with expert Design, Content Strategy, and SEO</h2>
   <div class="video-wrapper mb-2">
-    <div style="position: relative; padding-bottom: 64.98194945848375%; height: 0;" class="mb-2">
-      <iframe
-        src="https://www.loom.com/embed/a7340f590a4442e295000e0b19aaeb56"
-        frameborder="0"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <video id="video_src" width="100%" height="auto" controls>
+      <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
     <button data-cal-link="garyb/30min" class="button button--calendly mb-4">
       <span>Get More Donations</span>
@@ -36,3 +32,75 @@ eleventyExcludeFromCollections: true
       <span>Get More Donations</span>
       <img src="/images/chevron-right.svg" alt="arrow icon" class="button__icon"/></button>
   </section>
+  <script>
+    function initializePass() {
+      var query = window
+        .location
+        .search
+        .substring(1);
+      var vars = query.split("&");
+      var query_string = {};
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (typeof query_string[pair[0]] === "undefined") {
+          query_string[pair[0]] = decodeURIComponent(pair[1]);
+        } else if (typeof query_string[pair[0]] === "string") {
+          var arr = [
+            query_string[pair[0]],
+            decodeURIComponent(pair[1])
+          ];
+          query_string[pair[0]] = arr;
+        } else {
+          query_string[pair[0]].push(decodeURIComponent(pair[1]));
+        }
+      }
+      setCookie(query_string);
+    }
+    function getCookie(cookie_name) {
+      var name = cookie_name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') 
+          c = c.substring(1);
+        
+        if (c.indexOf(name) == 0) 
+          return c.substring(name.length, c.length);
+        
+      }
+      return "";
+    }
+    function setCookie(query_string) {
+      // Set cookie expiration. Default is 30 days.
+      var today = new Date();
+      var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000);
+      for (var param in query_string) {
+        document.cookie = param + "=" + query_string[param] + "; path=/; expires=" + expiry.toGMTString();
+      }
+      getAllCookies();
+    }
+    function getAllCookies() {
+      var cookies = {};
+      if (document.cookie && document.cookie != '') {
+        var split = document.cookie.split(';');
+        for (var i = 0; i < split.length; i++) {
+          var name_value = split[i].split("=");
+          name_value[0] = name_value[0].replace(/^ /, '');
+          cookies[decodeURIComponent(name_value[0])] = decodeURIComponent(name_value[1]);
+        }
+      }
+      injectCookie(cookies);
+    }
+    function injectCookie(array) {
+      for (var key in array) {
+        if (document.getElementById(key)) {
+          var videoPath = "/videos/" + getCookie(key) + "-screenshot.mp4";
+          $("#video_src").attr("src", videoPath);
+        }
+      }
+    }
+    // After DOM is loaded initialize pass.js
+    document.addEventListener('DOMContentLoaded', function () {
+      initializePass();
+    });
+  </script>
