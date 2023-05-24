@@ -4,7 +4,7 @@ const inspect = require("util").inspect;
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
-  // Add environment variables to Nunjucks, usage: {{ env("MY_VAR") }}
+  // Add environment variables to Nunjucks, usage: {{ key | env }}
   eleventyConfig.addFilter("env", key => process.env[key]);
 
   // Add a debug filter, usage: {{ content | debug }}

@@ -4,7 +4,7 @@ title: Forge Health
 h1: WordPress Development for Forge Health
 h2: Forge Health
 description: Developed a webite for a healthcare start-up.
-meta_image: "/images/projects/forge-health-meta.png"
+metaImage: "/images/projects/forge-health-meta.png"
 company:
   type: Start-up
   location: New York, NY

@@ -4,7 +4,7 @@ title: Accrue Savings
 h1: Webflow Development for Accrue Savings
 h2: Accrue Savings
 description: Worked with the designers at [LabelMaker](https://labelmaker.nyc) to develop a Webflow website for fin-tech startup.
-meta_image: "/images/projects/accrue-savings-meta.png"
+metaImage: "/images/projects/accrue-savings-meta.png"
 company:
   type: Start-up
   location: New York, NY

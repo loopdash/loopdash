@@ -4,7 +4,7 @@ title: Novak Insurance
 h1: WordPress Development for Novak Insurance
 h2: Novak Insurance
 description: Designed & developed a website for an insurance agency.
-meta_image: "/images/projects/novak-insurance-meta.png"
+metaImage: "/images/projects/novak-insurance-meta.png"
 company:
   type: Insurance Company
   location: Cleveland, OH

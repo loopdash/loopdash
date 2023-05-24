@@ -4,7 +4,7 @@ title: Vesey Ventures
 h1: Webflow Development for Vesey Ventures
 h2: Vesey Ventures
 description: Worked with the designers at LabelMaker to develop a Webflow website for a venture capital firm.
-meta_image: "/images/projects/vesey-venures-meta.png"
+metaImage: "/images/projects/vesey-venures-meta.png"
 company:
   type: Venture Capital
   location: New York, NY
