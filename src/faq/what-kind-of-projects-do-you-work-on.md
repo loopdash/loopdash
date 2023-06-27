@@ -7,15 +7,16 @@ sitemap:
 	changefreq: monthly
 	priority: 0.6
 tags: faq
-date: 2023-03-28
-url: /faq/what-is-loopdash
+date: 2023-06-28
+url: /faq/what-kind-of-projects-do-you-work-on
 ---
 
-<p class="font-41">We specialize in WordPress development. Often we find the most value working on web or branding revamps that translate into marketing website projects. We like to collaborate closely with founders or marketing/product leads. Most of our clients hire us for:</p>
+<p class="font-41">We partner with welfare and advocacy organizations to boost support, signatures, and donations. Often we find the most value working on campaigns that translate into branding and digital website projects. We like to collaborate closely with visionaries and changemakers who want to make the world a better place. Our holistic approach encompasses:</p>
 <ul class="font-41">
   <li class="check">Brand / Visual Identity</li>
   <li class="check">Website Design</li>
-  <li class="check">Website Development in <a href="/glossary/wordpress">WordPress</a> or Webflow</li>
-  <li class="check">Web App Development in Rails or React</li>
-  <li class="check">On-retainer Support (long-term projects where we act as an outsourced dev team)</li>
+  <li class="check">Website Development</li>
+  <li class="check">EveryAction, ActionNetwork and ActBlue Integrations</li>
+  <li class="check">Conversion Rate Optimization</li>
+  <li class="check">Donation Rate Optimization</li>
 </ul>
