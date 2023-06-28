@@ -901,28 +901,46 @@ ul {
   color: var(--color-gray);
 }
 .section-problem .grid {
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.section-problem h3::before {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  display: inline-flex;
+  border: 2px solid var(--color-gray);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
+  margin-right: 0.375rem;
+  font-weight: 600;
 }
-.section-problem .grid .grid-item:first-of-type {
-  flex: 1;
+
+.section-problem h3.one::before {
+  content: "1";
 }
-.section-problem .grid .grid-item:last-of-type {
-  flex: 1;
+.section-problem h3.two::before {
+  content: "2";
+}
+.section-problem h3.three::before {
+  content: "3";
+}
+.section-problem h3.four::before {
+  content: "4";
 }
 
 @media only screen and (max-width: 1240px) and (min-width: 768px)   {
-  .section-problem .grid .grid-item:first-of-type {
-    flex: 4;
-  }
-  .section-problem .grid .grid-item:last-of-type {
-    flex: 5;
+  .section-problem .grid .grid-item {
+    flex: 48% !important;
   }
 }
-
-@media only screen and (max-width: 768px)   {
-  .section-problem .grid .grid-item img {
-    max-width: 300px;
+@media only screen and (max-width: 767px) and (min-width: 480px)   {
+  .section-problem .grid .grid-item {
+    flex: 1;
   }
 }
 
