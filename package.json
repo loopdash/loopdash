@@ -1,0 +1,39 @@
+{
+  "name": "loopdash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:postcss & npm run start:eleventy",
+    "start:eleventy": "npx @11ty/eleventy --serve",
+    "start:postcss": "postcss src/css --dir _site/css --watch",
+    "dev": "npm run start",
+    "build": "postcss src/css --dir _site/css --watch --verbose && npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loopdash/loopdash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loopdash/loopdash/issues"
+  },
+  "homepage": "https://github.com/loopdash/loopdash#readme",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.6",
+    "dotenv": "^16.0.3",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.49",
+    "postcss-nested": "^7.0.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^5.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.1.4",
+    "postcss-cli": "^11.0.0"
+  }
+}
