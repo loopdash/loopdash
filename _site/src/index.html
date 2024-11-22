@@ -47,20 +47,114 @@
 </section>
 
 <section class="projects">
+  <div class="project project-ej">
+    <div class="project-details">
+      <h4 class="project-title">Encode Justice</h4>
+      <span class="project-description">How we did the project real nice nice.<span>
+    </div>
+  </div>
+  <div class="project project-fm">
+    <div class="project-details">
+      <h4 class="project-title">Forward Majority</h4>
+      <span class="project-description">How we did the project real nice nice.<span>
+    </div>
+  </div>
   <div class="project project-at">
-    <h4 class="project-title">Accountable Tech</h4>
-    
+    <div class="project-details">
+      <h4 class="project-title">Accountable Tech</h4>
+      <span class="project-description">How we did the project real nice nice.<span>
+    </div>
   </div>
-  <div class="project project-ndf">
-    <h4 class="project-title">No Deepfakes for Democracy</h4>
-    
+    <div class="project project-ndf">
+    <div class="project-details">
+      <h4 class="project-title">No Deepfakes for Democracy</h4>
+      <span class="project-description">How we did the project real nice nice.<span>
+    </div>
   </div>
-  <a class="cta">View more projects</a>
+  <a href="/projects" class="projects-link">View more projects</a>
 </section>
 
 <section class="cta">
-  <h4>Our actions today shape tomorrow. Let's get started</h4>
+  <div class="cta-container">
+    <h4 class="heading">Our actions today shape tomorrow. Let's get started.</h4>
+    <a href="/contact" class="button">Contact Us</a>
+  </div>
 </section>
+
+<div id="load-screen" class="load-screen">
+  <div class="progress-bar"></div>
+  <div class="load-text">Loading...</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const loadScreen = document.getElementById('load-screen');
+    const progressBar = document.querySelector('.progress-bar');
+    const loadText = document.querySelector('.load-text');
+
+    // Function to generate random 8-letter uppercase strings
+    const generateRandomText = () => {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      let text = '';
+      for (let i = 0; i < 8; i++) {
+        text += chars[Math.floor(Math.random() * chars.length)];
+      }
+      return text;
+    };
+
+    // Update the load text with random strings
+    const interval = setInterval(() => {
+      loadText.textContent = generateRandomText();
+    }, 100); // Update every 100ms
+
+    // When the progress bar animation ends
+    progressBar.addEventListener('animationend', () => {
+      clearInterval(interval); // Stop random text updates
+
+      // Show "LOOPDASH" 0.25 seconds before fade-out
+      setTimeout(() => {
+        loadText.textContent = 'LOOPDASH';
+      }, 750); // 1s - 0.25s = 0.75s
+
+      // Fade out the load screen
+      setTimeout(() => {
+        loadScreen.style.opacity = '0'; // Fade out
+        loadScreen.style.pointerEvents = 'none';
+
+        // Remove load screen after fade-out
+        setTimeout(() => {
+          loadScreen.remove();
+        }, 500); // Match the CSS transition duration
+      }, 1000); // Total animation duration
+    });
+});
+</script>
+
+<script>
+
+let lastScrollTop = 0;
+const header = document.querySelector('.site-header');
+let ticking = false;
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        header.classList.add('no-sticky'); // Scrolling down
+      } else {
+        header.classList.remove('no-sticky'); // Scrolling up
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+</script>
     </main>
     
     <footer class="footer">
