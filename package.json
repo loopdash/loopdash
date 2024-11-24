@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npm run start:postcss & npm run start:eleventy",
     "start:eleventy": "npx @11ty/eleventy --serve",
