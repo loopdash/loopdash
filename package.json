@@ -7,7 +7,6 @@
   "scripts": {
     "start": "npm run start:postcss & npm run start:eleventy",
     "start:eleventy": "npx @11ty/eleventy --serve",
-    "start:postcss": "postcss src/css --dir _site/css --watch",
     "build": "npm i && npx @11ty/eleventy"
   },
   "repository": {

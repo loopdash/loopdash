@@ -240,20 +240,23 @@ p {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  & > section {
+}
+
+.scroller > section {
     scroll-snap-align: center;
     scroll-snap-stop: always;
     height: 100dvh;
     background: var(--color-cream);
-    img,
-    video {
+  }
+
+.scroller > section img,
+    .scroller > section video {
       border-radius: 7px;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
     }
-  }
-}
 
 /* Home Hero */
 .home-hero {
@@ -275,6 +278,7 @@ p {
 .button {
   display: flex;
   justify-content: center;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   font-family: var(--base-font);
   padding: 12px 26px;
@@ -420,7 +424,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: saturate(1.8) blur(30px);
+  -webkit-backdrop-filter: saturate(1.8) blur(30px);
+          backdrop-filter: saturate(1.8) blur(30px);
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
   z-index: 9999;
   display: flex;
