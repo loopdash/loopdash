@@ -1,0 +1,31 @@
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/base.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('.site-header');
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (currentScroll > lastScrollTop) {
+            header.classList.add('no-sticky'); // Scrolling down
+          } else {
+            header.classList.remove('no-sticky'); // Scrolling up
+          }
+
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    });
+  </script>
+</head>

@@ -1,6 +1,6 @@
 ---
-layout: layouts/home.njk
-title: test
+layout: layouts/home-layout.njk
+title: Home
 ---
 
 <section class="home-hero">
@@ -90,31 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Match the CSS transition duration
       }, 1000); // Total animation duration
     });
-});
-</script>
-
-<script>
-
-let lastScrollTop = 0;
-const header = document.querySelector('.site-header');
-let ticking = false;
-
-window.addEventListener('scroll', () => {
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScroll > lastScrollTop) {
-        header.classList.add('no-sticky'); // Scrolling down
-      } else {
-        header.classList.remove('no-sticky'); // Scrolling up
-      }
-
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-      ticking = false;
-    });
-
-    ticking = true;
-  }
 });
 </script>

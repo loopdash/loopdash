@@ -3,6 +3,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 :root {
+  --base-font-size: 16px;
+  --base-font: "Overused Grotesk", sans-serif;
+  --base-line-height: 1.25;
+  --spacing-unit: calc(var(--base-font-size) * var(--base-line-height));
   --color-cream: #f5f4ee;
   --color-cream-dark: #e6e4d7;
   --color-charcoal-light: #5e5d56;
@@ -13,10 +17,62 @@
 }
 
 body {
-  font-family: "Overused Grotesk", sans-serif;
-  line-height: 1.5;
+  font-family: var(--base-font);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  margin: 0;
+  padding: 0;
   background-color: var(--color-cream);
 }
+
+/* Text & Typography */
+.text-container {
+  max-width: 768px;
+  padding: 0 2rem
+}
+
+.h1 {
+  font-size: calc(var(--base-font-size) * 2.5); /* 2.5x base size */
+  line-height: calc(var(--base-line-height) * 2.5); /* Matches font size */
+  margin-bottom: var(--spacing-unit); /* Space below */
+  font-weight: bold;
+}
+
+/* Subhead (Heading 2) */
+.h2 {
+  font-size: calc(var(--base-font-size) * 2); /* 2x base size */
+  line-height: calc(var(--base-line-height) * 2);
+  margin-bottom: var(--spacing-unit);
+  font-weight: bold;
+}
+
+/* Heading 3 */
+.h3 {
+  font-size: calc(var(--base-font-size) * 1.5); /* 1.5x base size */
+  line-height: calc(var(--base-line-height) * 1.5);
+  margin-bottom: calc(var(--spacing-unit) / 2); /* Slightly tighter spacing */
+  font-weight: bold;
+}
+
+/* Heading 4 */
+.h4 {
+  font-size: calc(var(--base-font-size) * 1); /* 1x base size */
+  line-height: calc(var(--base-line-height) * 1);
+  margin-bottom: calc(var(--spacing-unit) / 2);
+  font-weight: bold;
+}
+
+p {
+  font-size: calc(var(--base-font-size) * 1.25); /* 1.25x base size */
+  line-height: calc(var(--base-line-height) * 1.25);
+  margin-bottom: calc(var(--spacing-unit) / 2);
+  font-weight: 400;
+}
+
+/* Optional: Add consistent top padding for better rhythm across sections */
+/* .section {
+  padding-top: var(--spacing-unit);
+} */
 
 /* Header and Navbar */
 .site-header {
@@ -40,22 +96,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
   max-width: var(--container);
   margin: 0 auto;
 }
-@media only screen and (max-width: var(--mobile)) {
+@media only screen and (max-width: 1260px) {
   .navbar {
-    padding: 2rem 0;
+    padding: 2rem 2rem;
   }
 }
 
-.logo a {
-  font-size: 1.85rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--color-charcoal);
-  transition: all 0.3s ease-in-out;
+.logo {
+  max-width: 140px;
+  height: auto;
 }
 
 .nav {
@@ -86,9 +139,19 @@ body {
 .nav-opened .menu-toggle .bar {
   background-color: var(--color-cream-dark);
 }
+
+.nav-opened {
+  background-color: var(--color-charcoal);
+}
+
+.nav-opened .logo-path {
+  fill: var(--color-cream-dark);
+}
+
 .nav-opened .logo a {
   color: var(--color-cream-dark);
 }
+
 .nav-opened .nav-container {
   display: flex;
 }
@@ -97,6 +160,8 @@ body {
   background-color: var(--color-charcoal);;
 }
 
+
+/* Nav */
 .nav-container {
   background: var(--color-cream);
   position: absolute;
@@ -179,13 +244,13 @@ body {
   font-size: 44px;
   font-weight: 500;
   line-height: 1;
-  font-family: "Overused Grotesk", sans-serif;
+  font-family: var(--base-font);
 }
 
 .lead {
   font-size: 21px;
   color: var(--color-charcoal-light);
-  font-family: "Overused Grotesk", sans-serif;
+  font-family: var(--base-font);
 }
 
 .button {
@@ -193,7 +258,7 @@ body {
   justify-content: center;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  font-family: "Overused Grotesk", sans-serif;
+  font-family: var(--base-font);
   padding: 12px 26px;
   line-height: 1;
   font-size: 18px;
@@ -202,7 +267,7 @@ body {
   border: 1px solid #757575;
   text-decoration: none;
   font-weight: 550;
-  background: linear-gradient(145deg, #6e6868, #252525);
+  background: linear-gradient(172deg, #6e6868, #252525);
   align-items: center;
   box-sizing: border-box;
   height: 44px;
@@ -223,7 +288,7 @@ body {
         0 5px 10px rgba(0, 0, 0, 0.6), 
         inset 0 -2px 5px rgba(0, 0, 0, 0.6), 
         inset 0 2px 5px rgba(255, 255, 255, 0.5);
-    background: linear-gradient(145deg, #6e6868, #252525);
+    background: linear-gradient(172deg, #6e6868, #252525);
     transform: translateY(-2px); /* Moves up by 2px */
 }
 
@@ -236,32 +301,35 @@ body {
   justify-content: center;
   gap: 2rem;
   margin: 0 auto;
-  padding: 0 2rem 7rem 2rem;
+  padding: 0 0 7rem 0;
   box-sizing: border-box;
   font-size: 33px;
   font-weight:550;
   color: #ffffff;
 }
 
-@media only screen and (max-width: var(--mobile)) {
+@media only screen and (max-width: 1260px) {
   .projects {
     padding: 0 2rem 7rem 2rem;
-  } 
+  }
 }
 
+
 .project-details {
-  padding: 72px 36px;
+  padding: 3rem 3rem;
 }
 
 .project-title {
   font-size: 38px;
   font-weight: 600;
   margin: 0;
+  line-height: 38px;
 }
 .project-description {
   font-size: 28px;
   font-weight: 400;
   margin: 0;
+  line-height: 28px;
 }
 
 .project {
@@ -297,10 +365,11 @@ body {
 }
 
 .projects-link {
-  color: var(--color-charcoal-light);
+  color: var(--color-charcoal);
+  text-decoration: none;
   text-align: center;
   padding: 3rem 0 4rem 0;
-  font-size: 34px;
+  font-size: 28px;
 }
 
 
@@ -325,7 +394,7 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: var(--mobile)) {
+@media only screen and (max-width: 768px) {
   .cta {
     max-width: 90vw;
   } 
@@ -389,13 +458,9 @@ body {
 /* Footer */
 .footer {
   max-width: 1260px;
-  background: var(--color-accent);
-  padding: 48px;
+  background: var(--color-cream-dark);
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  gap: 3rem;
-}
-
-.footer .col {
-  background: var(--color-cream);
+  gap: 1rem;
 }

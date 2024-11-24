@@ -5,45 +5,45 @@ const Image = require("@11ty/eleventy-img");
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
-
-    eleventyConfig.addNunjucksAsyncShortcode("image", async (src, alt, widths = [300, 600, null], formats = ["webp", "jpeg"]) => {
+  // Image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", async (src, alt, widths = [300, 600, null], formats = ["webp", "jpeg"]) => {
     if (!alt) {
       throw new Error(`Missing \`alt\` attribute for image: ${src}`);
     }
 
-    let metadata = await Image(src, {
-      widths: widths, // Define responsive widths
-      formats: formats, // Specify formats (e.g., webp, jpeg)
-      outputDir: "./_site/images", // Directory for output
-      urlPath: "/images", // Path in HTML
-    });
+    // let metadata = await Image(src, {
+    //   widths: widths,
+    //   formats: formats,
+    //   outputDir: "_site/images",
+    //   urlPath: "/images",
+    // });
 
     let imageAttributes = {
       alt,
-      sizes: "(max-width: 600px) 100vw, 600px", // Example responsive sizes
-      loading: "lazy", // Lazy loading for performance
-      decoding: "async", // Hint for faster decoding
+      sizes: "(max-width: 600px) 100vw, 600px",
+      loading: "lazy",
+      decoding: "async",
     };
 
     return Image.generateHTML(metadata, imageAttributes);
   });
 
-  // Add environment variables to Nunjucks, usage: {{ key | env }}
+  // Environment variables filter
   eleventyConfig.addFilter("env", key => process.env[key]);
 
-  // Add a debug filter, usage: {{ content | debug }}
+  // Debug filter
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
 
-  // Add categories filter to get all posts in a category
+  // Category filter
   eleventyConfig.addFilter('categoryFilter', function (collection, category) {
     if (!category) return collection;
-    const filtered = collection.filter(item => item.data.category == category)
-    return filtered;
+    return collection.filter(item => item.data.category == category);
   });
 
-  // Add a limit filter, usage: {{ array | limit(3) }}
+  // Limit filter
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
+  // Template formats
   eleventyConfig.setTemplateFormats([
     "md",
     "css",
@@ -63,34 +63,35 @@ module.exports = function (eleventyConfig) {
     "mp4"
   ]);
 
+  // Sitemap plugin
   eleventyConfig.addPlugin(sitemap, {
     sitemap: {
       hostname: process.env['ROOT_URL']
     }
   });
 
+  // HTML minification
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
     if (outputPath && outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
       });
-      return minified;
     }
-
     return content;
   });
 
-  eleventyConfig.addPassthroughCopy('src/_redirects');
+  // Passthrough copy
+  // eleventyConfig.addPassthroughCopy('src/_redirects');
   eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
 
   return {
     dir: {
       input: "src",
       includes: "_includes",
-      output: "_site"
+      layouts: "_includes/layouts",
+      output: "_site",
     },
     passthroughFileCopy: true
   };
