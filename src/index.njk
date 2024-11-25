@@ -1,10 +1,13 @@
 ---
 layout: home.njk
 title: Home Page
+sitemap:
+  changefreq: weekly
+  priority: 1.0
 ---
 
 <section class="home-hero">
-  <h1 class="heading">Isn't it time to bring your vision to life?</h1>
+  <h1 class="type-heading">Isn't it time to bring your vision to life?</h1>
   <p class="lead">We help founders, nonprofits, and changemakers amplify their impact and achieve results.</p>
   <a href="#" class="button">Get started</a>
 </section>
@@ -50,45 +53,48 @@ title: Home Page
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const loadScreen = document.getElementById('load-screen');
-    const progressBar = document.querySelector('.progress-bar');
-    const loadText = document.querySelector('.load-text');
+  document.addEventListener('DOMContentLoaded', () => {
+      // Check if the current path is the home screen
+      if (window.location.pathname === '/') {
+          const loadScreen = document.getElementById('load-screen');
+          const progressBar = document.querySelector('.progress-bar');
+          const loadText = document.querySelector('.load-text');
 
-    // Function to generate random 8-letter uppercase strings
-    const generateRandomText = () => {
-      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      let text = '';
-      for (let i = 0; i < 8; i++) {
-        text += chars[Math.floor(Math.random() * chars.length)];
+          // Function to generate random 8-letter uppercase strings
+          const generateRandomText = () => {
+              const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+              let text = '';
+              for (let i = 0; i < 8; i++) {
+                  text += chars[Math.floor(Math.random() * chars.length)];
+              }
+              return "[" + text + "]";
+          };
+
+          // Update the load text with random strings
+          const interval = setInterval(() => {
+              loadText.textContent = generateRandomText();
+          }, 100); // Update every 100ms
+
+          // When the progress bar animation ends
+          progressBar.addEventListener('animationend', () => {
+              clearInterval(interval); // Stop random text updates
+
+              // Show "LOOPDASH" 0.25 seconds before fade-out
+              setTimeout(() => {
+                  loadText.textContent = '[LOOPDASH]';
+              }, 400); // 1s - 0.25s = 0.75s
+
+              // Fade out the load screen
+              setTimeout(() => {
+                  loadScreen.style.opacity = '0'; // Fade out
+                  loadScreen.style.pointerEvents = 'none';
+
+                  // Remove load screen after fade-out
+                  setTimeout(() => {
+                      loadScreen.remove();
+                  }, 500); // Match the CSS transition duration
+              }, 500); // Total animation duration
+          });
       }
-      return text;
-    };
-
-    // Update the load text with random strings
-    const interval = setInterval(() => {
-      loadText.textContent = generateRandomText();
-    }, 100); // Update every 100ms
-
-    // When the progress bar animation ends
-    progressBar.addEventListener('animationend', () => {
-      clearInterval(interval); // Stop random text updates
-
-      // Show "LOOPDASH" 0.25 seconds before fade-out
-      setTimeout(() => {
-        loadText.textContent = 'LOOPDASH';
-      }, 400); // 1s - 0.25s = 0.75s
-
-      // Fade out the load screen
-      setTimeout(() => {
-        loadScreen.style.opacity = '0'; // Fade out
-        loadScreen.style.pointerEvents = 'none';
-
-        // Remove load screen after fade-out
-        setTimeout(() => {
-          loadScreen.remove();
-        }, 500); // Match the CSS transition duration
-      }, 600); // Total animation duration
-    });
-});
+  });
 </script>
