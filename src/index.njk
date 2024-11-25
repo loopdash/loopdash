@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Show "LOOPDASH" 0.25 seconds before fade-out
       setTimeout(() => {
         loadText.textContent = 'LOOPDASH';
-      }, 750); // 1s - 0.25s = 0.75s
+      }, 400); // 1s - 0.25s = 0.75s
 
       // Fade out the load screen
       setTimeout(() => {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           loadScreen.remove();
         }, 500); // Match the CSS transition duration
-      }, 1000); // Total animation duration
+      }, 600); // Total animation duration
     });
 });
 </script>
