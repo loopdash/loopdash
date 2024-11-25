@@ -28,4 +28,21 @@
       }
     });
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const bgImages = document.querySelectorAll(".project");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // Stop observing once the image is visible
+          }
+        });
+      });
+
+      bgImages.forEach((bgImage) => observer.observe(bgImage));
+    });
+  </script>
 </head>

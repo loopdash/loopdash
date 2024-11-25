@@ -1,6 +1,6 @@
 <header class="site-header">
   <nav class="navbar">
-    <div class="navbar--primary">
+    <div class="navbar-logo">
       <a href="/">
         <svg class="logo" width="205" height="24" viewBox="0 0 205 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="logo-path" d="M18.245 20.5042C19.8825 21.4463 21.782 21.9847 23.8065 21.9847C28.8727 21.9847 33.5 17.9946 33.5 11.8298C33.5 5.66444 28.5006 0.666559 22.3334 0.666559L11.1667 0.666559C17.3339 0.666559 22.3334 5.66444 22.3334 11.8298C22.3334 15.9551 20.1095 19.0641 18.2396 20.4826L18.245 20.5042Z" fill="#31302a"/>
@@ -36,9 +36,9 @@
 
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
-  const siteHeader = document.querySelector('body');
+  const body = document.querySelector('body');
 
   menuToggle.addEventListener('click', () => {
-    siteHeader.classList.toggle('nav-opened');
+    body.classList.toggle('nav-opened');
   });
 </script>
