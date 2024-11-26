@@ -11,7 +11,7 @@ export default function (eleventyConfig) {
   // Image shortcode
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
-    async (src, alt, widths = [300, 600, null], formats = ["webp", "jpeg"]) => {
+    async (src, alt, widths = [1024, 1024, null], formats = ["png", "webp", "jpeg"]) => {
       if (!alt) {
         throw new Error(`Missing \`alt\` attribute for image: ${src}`);
       }
@@ -19,8 +19,7 @@ export default function (eleventyConfig) {
       let metadata = await eleventyImg(src, {
         widths: widths,
         formats: formats,
-        outputDir: "dist/images", // Adjusted to use "dist"
-        urlPath: "/images",
+        outputDir: "./_site/img", // Adjusted to use "dist"
       });
 
       let imageAttributes = {
