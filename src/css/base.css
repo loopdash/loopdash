@@ -231,7 +231,7 @@ body {
   .container-lg,
   .container-xl,
   .container-2xl {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 
