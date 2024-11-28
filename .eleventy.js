@@ -11,7 +11,7 @@ export default function (eleventyConfig) {
   // Image shortcode
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
-    async (src, alt, widths = [1024, 1024, null], formats = ["png", "webp", "jpeg"]) => {
+    async (src, alt, widths = [1024, 1024, null], formats = ["png", "webp", "jpeg"], className = "") => {
       if (!alt) {
         throw new Error(`Missing \`alt\` attribute for image: ${src}`);
       }
@@ -27,6 +27,7 @@ export default function (eleventyConfig) {
         sizes: "(max-width: 600px) 100vw, 600px",
         loading: "lazy",
         decoding: "async",
+        class: className, // Add the class attribute here
       };
 
       return eleventyImg.generateHTML(metadata, imageAttributes);
