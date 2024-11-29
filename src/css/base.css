@@ -505,6 +505,14 @@ body {
 .my-14 { margin-top: calc(var(--spacing) * 14); margin-bottom: calc(var(--spacing) * 14); }
 .my-15 { margin-top: calc(var(--spacing) * 15); margin-bottom: calc(var(--spacing) * 15); }
 .my-16 { margin-top: calc(var(--spacing) * 16); margin-bottom: calc(var(--spacing) * 16); }
+.my-17 { margin-top: calc(var(--spacing) * 17); margin-bottom: calc(var(--spacing) * 17); }
+.my-18 { margin-top: calc(var(--spacing) * 18); margin-bottom: calc(var(--spacing) * 18); }
+.my-19 { margin-top: calc(var(--spacing) * 19); margin-bottom: calc(var(--spacing) * 19); }
+.my-20 { margin-top: calc(var(--spacing) * 20); margin-bottom: calc(var(--spacing) * 20); }
+.my-21 { margin-top: calc(var(--spacing) * 21); margin-bottom: calc(var(--spacing) * 21); }
+.my-22 { margin-top: calc(var(--spacing) * 22); margin-bottom: calc(var(--spacing) * 22); }
+.my-23 { margin-top: calc(var(--spacing) * 23); margin-bottom: calc(var(--spacing) * 23); }
+.my-24 { margin-top: calc(var(--spacing) * 24); margin-bottom: calc(var(--spacing) * 24); }
 
 /* Auto Margins */
 .m-auto { margin: auto; }
@@ -1062,7 +1070,6 @@ a.project {
 
 /* Footer */
 .site-footer {
-  background: var(--color-cream-dark);
   a {
     color: var(--color-charcoal);
     text-decoration: none;
