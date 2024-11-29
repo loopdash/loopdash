@@ -3,11 +3,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 :root {
-  --base-font-size: 16px;
+  --base-font-size: 1rem;
+  --base-line-height: 1.3;
   --base-font: "Overused Grotesk", sans-serif;
-  --base-line-height: 1.25;
   --border-radius: 0.7rem;
-  --spacing-unit: calc(var(--base-font-size) * var(--base-line-height));
   --color-cream: #f9f9f5;
   --color-cream-dark: #f3f2eb;
   --color-charcoal-light: #3e3e3d;
@@ -31,99 +30,128 @@ body {
 
 /* Text Sizes */
 .text-1 {
-  font-size: calc(var(--base-font-size) * 0.625); /* 10px */
-  line-height: calc(var(--base-font-size) * 0.875); /* 14px */
+  font-size: clamp(0.625rem, 0.8vw, 0.75rem); /* Smallest text */
+  line-height: clamp(0.875rem, 1vw, 1rem); /* Scaled line height */
+  line-height: clamp(0.875rem, 1vw, 1rem); /* Scaled line height */
 }
 
 .text-2 {
-  font-size: calc(var(--base-font-size) * 0.75); /* 12px */
-  line-height: calc(var(--base-font-size) * 1); /* 16px */
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  line-height: clamp(1rem, 1.25vw, 1.125rem);
+  line-height: clamp(1rem, 1.25vw, 1.125rem);
 }
 
 .text-3 {
-  font-size: calc(var(--base-font-size) * 0.875); /* 14px */
-  line-height: calc(var(--base-font-size) * 1.25); /* 20px */
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  line-height: clamp(1.125rem, 1.5vw, 1.25rem);
+  line-height: clamp(1.125rem, 1.5vw, 1.25rem);
 }
 
 .text-4 {
-  font-size: calc(var(--base-font-size) * 0.9375); /* 15px */
-  line-height: calc(var(--base-font-size) * 1.375); /* 22px */
+  font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
+  line-height: clamp(1.25rem, 1.75vw, 1.375rem);
+  line-height: clamp(1.25rem, 1.75vw, 1.375rem);
 }
 
 .text-5 {
-  font-size: var(--base-font-size); /* 16px */
-  line-height: calc(var(--base-font-size) * 1.5); /* 24px */
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: clamp(1.375rem, 2vw, 1.5rem);
+  line-height: clamp(1.375rem, 2vw, 1.5rem);
 }
 
 .text-6 {
-  font-size: calc(var(--base-font-size) * 1.125); /* 18px */
-  line-height: calc(var(--base-font-size) * 1.75); /* 28px */
+  font-size: clamp(1.125rem, 1.75vw, 1.5rem);
+  line-height: clamp(1.5rem, 2.25vw, 1.75rem);
+  line-height: clamp(1.5rem, 2.25vw, 1.75rem);
 }
 
 .text-7 {
-  font-size: calc(var(--base-font-size) * 1.25); /* 20px */
-  line-height: calc(var(--base-font-size) * 1.75); /* 28px */
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  line-height: clamp(1.75rem, 2.5vw, 2rem);
+  line-height: clamp(1.75rem, 2.5vw, 2rem);
 }
 
 .text-8 {
-  font-size: calc(var(--base-font-size) * 1.375); /* 22px */
-  line-height: calc(var(--base-font-size) * 1.875); /* 30px */
+  font-size: clamp(1.375rem, 2.25vw, 1.75rem);
+  line-height: clamp(1.875rem, 2.75vw, 2.25rem);
+  line-height: clamp(1.875rem, 2.75vw, 2.25rem);
 }
 
 .text-9 {
-  font-size: calc(var(--base-font-size) * 1.5); /* 24px */
-  line-height: calc(var(--base-font-size) * 2); /* 32px */
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: clamp(2rem, 3vw, 2.5rem);
+  line-height: clamp(2rem, 3vw, 2.5rem);
 }
 
 .text-10 {
-  font-size: calc(var(--base-font-size) * 1.875); /* 30px */
-  line-height: calc(var(--base-font-size) * 2.25); /* 36px */
+  font-size: clamp(1.875rem, 2.75vw, 2.25rem);
+  line-height: clamp(2.25rem, 3.5vw, 2.75rem);
+  line-height: clamp(2.25rem, 3.5vw, 2.75rem);
 }
 
 .text-11 {
-  font-size: calc(var(--base-font-size) * 2.25); /* 36px */
-  line-height: calc(var(--base-font-size) * 2.5); /* 40px */
+  font-size: clamp(2.25rem, 3vw, 2.5rem);
+  line-height: clamp(2.5rem, 4vw, 3rem);
+  line-height: clamp(2.5rem, 4vw, 3rem);
 }
 
 .text-12 {
-  font-size: calc(var(--base-font-size) * 2.625); /* 42px */
-  line-height: calc(var(--base-font-size) * 2.75); /* 44px */
+  font-size: clamp(2.625rem, 3.5vw, 3rem);
+  line-height: clamp(2.75rem, 4.5vw, 3.25rem);
+  line-height: clamp(2.75rem, 4.5vw, 3.25rem);
 }
 
 .text-13 {
-  font-size: calc(var(--base-font-size) * 3); /* 48px */
-  line-height: calc(var(--base-font-size) * 1); /* 48px */
+  font-size: clamp(3rem, 4vw, 3.5rem);
+  line-height: clamp(3rem, 4.5vw, 3.5rem);
+  line-height: clamp(3rem, 4.5vw, 3.5rem);
 }
 
 .text-14 {
-  font-size: calc(var(--base-font-size) * 3.375); /* 54px */
-  line-height: calc(var(--base-font-size) * 1); /* 54px */
+  font-size: clamp(3.375rem, 4.5vw, 4rem);
+  line-height: clamp(3.375rem, 5vw, 4rem);
+  line-height: clamp(3.375rem, 5vw, 4rem);
 }
 
 .text-15 {
-  font-size: calc(var(--base-font-size) * 3.75); /* 60px */
-  line-height: calc(var(--base-font-size) * 1); /* 60px */
+  font-size: clamp(3.75rem, 5vw, 4.5rem);
+  line-height: clamp(3.75rem, 5.5vw, 4.5rem);
+  line-height: clamp(3.75rem, 5.5vw, 4.5rem);
 }
 
 .text-16 {
-  font-size: calc(var(--base-font-size) * 4.5); /* 72px */
-  line-height: calc(var(--base-font-size) * 1); /* 72px */
+  font-size: clamp(4.5rem, 6vw, 5rem); /* Largest text */
+  line-height: clamp(4.5rem, 6.5vw, 5.5rem);
+  line-height: clamp(4.5rem, 6.5vw, 5.5rem);
 }
 
 .text-center { text-align: center; }
 .text-white { color: #ffffff; }
-.text-weight-400 {font-weight: 400 !important; }
+.text-charcoal-light { color: var(--color-charcoal-light); }
+.text-weight-400 { font-weight: 400 !important; }
+.text-weight-450 { font-weight: 450 !important; }
 .text-weight-500 { font-weight: 500 !important; }
 .text-weight-550 { font-weight: 550 !important; }
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
 
+
+/* Text-Layout */
 .text-layout img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: var(--border-radius);
+}
+
+/* About-Layout */
+.about-layout {
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+  main {
+    padding-top: calc(var(--spacing) * 12);
+  }
 }
 
 
@@ -222,6 +250,7 @@ body {
 .container-2xl { 
   max-width: 1536px;
 }
+
 @media only screen and (max-width: 1024px) {
   .container-sm,
   .container-md,
@@ -838,7 +867,7 @@ body {
   }
 }
 
-a.project {
+.project {
   cursor: pointer;
   background: linear-gradient (0deg, #000000 30%, #ffffff 100%);
   background-repeat: no-repeat;
@@ -999,6 +1028,7 @@ a.project {
 
 
 /* Single Project Layout */
+.about-layout .site-header,
 .single-project-layout .site-header {
   backdrop-filter: none;
   background-color: unset;
