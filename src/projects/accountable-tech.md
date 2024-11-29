@@ -16,7 +16,7 @@ project:
   # collaborators:
   #   - name:
   website: accountabletech.org
-  heroImage: "./src/img/projects/nils-huenerfuerst-BLI6L8EDLjs-unsplash.jpg"
+  heroImage: "./src/img/projects/gettyimages-1400646644-170667a.jpg"
   imageAlt: Accountable Tech WordPress Website
 
 sitemap:

@@ -6,13 +6,12 @@
   --base-font-size: 16px;
   --base-font: "Overused Grotesk", sans-serif;
   --base-line-height: 1.25;
-  --border-radius: 0.6rem;
+  --border-radius: 0.7rem;
   --spacing-unit: calc(var(--base-font-size) * var(--base-line-height));
-  --color-cream: #f5f4ee;
-  --color-cream-dark: #e6e4d7;
-  --color-charcoal-light: #5e5d56;
-  --color-charcoal: #31302a;
-  --color-accent: #31302a;
+  --color-cream: #f9f9f5;
+  --color-cream-dark: #f3f2eb;
+  --color-charcoal-light: #3e3e3d;
+  --color-charcoal: #1f1f1f;
   --container: 1260px;
   --mobile: 768px;
   --trs-prop: all;
@@ -118,8 +117,6 @@ body {
 .text-weight-550 { font-weight: 550 !important; }
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
-
-
 
 .text-layout img {
   display: block;
@@ -233,10 +230,6 @@ body {
   .container-2xl {
     padding: 0 1.5rem;
   }
-}
-
-:root {
-  --spacing: 0.25rem; /* Base spacing unit: 4px */
 }
 
 /* Padding */
@@ -690,7 +683,7 @@ body {
 }
 
 .nav a.menu-item:hover {
-  color: var(--color-cream);
+  color: var(--color-cream-dark);
   transform: scale(1.03);
   margin-left: 10px;
 }
@@ -734,12 +727,6 @@ body {
   }
 }
 
-.flex-item {
-  flex:1;
-}
-.flex-gap {
-  gap: 2rem;
-}
 
 
 /* Containers */
@@ -768,13 +755,14 @@ body {
     max-width: 90vw;
   } 
 }
-
+  /* --color-charcoal-light: #3e3e3d;
+  --color-charcoal: #1f1f1f; */
 .button {
   display: flex;
   justify-content: center;
   max-width: fit-content;
   font-family: var(--base-font);
-  padding: 12px 26px;
+  padding: 11px 26px 14px 26px;
   line-height: 1;
   font-size: 1.125rem;
   color: #ffffff;
@@ -782,12 +770,10 @@ body {
   border: 1px solid #757575;
   text-decoration: none;
   font-weight: 400;
-  background: linear-gradient(172deg, #6e6868, #252525);
+  background: linear-gradient(172deg, #787877, var(--color-charcoal));
   align-items: center;
   box-sizing: border-box;
-  height: 44px;
   margin: 0px;
-  min-height: 38px;
   box-shadow: 
         0 5px 10px rgba(0, 0, 0, 0.3), 
         inset 0 2px 7px rgba(0, 0, 0, 0.3), 
@@ -822,23 +808,16 @@ body {
 /* Projects */
 .projects {
   width: 100%;
-  max-width: 1260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   margin: 0 auto;
-  padding: 0 0 7rem 0;
+  padding-bottom: 7rem;
   box-sizing: border-box;
   font-size: 33px;
   font-weight:550;
   color: #ffffff;
-}
-
-@media only screen and (max-width: 1260px) {
-  .projects {
-    padding: 0 1rem 7rem 1rem;
-  }
 }
 
 .project-details {
@@ -851,20 +830,7 @@ body {
   }
 }
 
-.project-title {
-  font-size: 38px;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  line-height: 38px;
-}
-.project-description {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.10;
-  margin: 0;
-}
-
-.project {
+a.project {
   cursor: pointer;
   background: linear-gradient (0deg, #000000 30%, #ffffff 100%);
   background-repeat: no-repeat;
@@ -880,6 +846,9 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   opacity: 0;
+  box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.28);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .project:hover {
@@ -924,28 +893,24 @@ body {
     url('../images/cover-forward-majority.jpg');
 }
 
-.projects-link {
-  color: var(--color-charcoal);
+.link-chevron {
   text-decoration: none;
   text-align: center;
-  padding: 3rem 0 4rem 0;
-  font-size: 28px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   position: relative; /* Needed for positioning pseudo-elements */
   align-items: center; /* Keeps the text and chevron aligned vertically */
 }
 
-.projects-link::after {
+.link-chevron::after {
   content: url('../images/chevron-right.svg');
+  transform: scale(0.8);
   display: inline-block;
-  margin-left: 2px; /* Initial spacing between text and chevron */
-  transition: transform 0.3s ease; /* Smooth chevron movement */
-  position: relative; /* Prevents affecting the flow of the text */
+  background-size: contain; /* Ensure the SVG scales properly */
+  align-self: center; /* Ensures it aligns within the flex container */
+  vertical-align: middle;
 }
 
-.projects-link:hover::after {
-  transform: translateX(4px); /* Moves the chevron to the right */
-}
+
 
 
 /* cta */
@@ -1042,7 +1007,7 @@ body {
 
 .single-project-layout {
   .single-project-hero {
-    height: 100%;
+    height: 90vh;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: 50% 50%;
@@ -1098,46 +1063,19 @@ body {
 /* Footer */
 .site-footer {
   background: var(--color-cream-dark);
-  .container {
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1rem;
-    max-width: 1260px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    .location {
-      text-transform: uppercase;
-      font-size: 0.6875rem;
-      font-weight: 600;
-    }
-  }
-  .footer-nav__list {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+  a {
+    color: var(--color-charcoal);
     text-decoration: none;
-    list-style-type: none;
-    gap: 1rem;
-    .footer-nav__link {
-      text-transform: uppercase;
-      font-size: 0.6875rem;
-      font-weight: 600;
-      text-decoration: none;
-      color: var(--color-charcoal);
-      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
-    }   
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--color-charcoal);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .site-footer {
-    .container {
-      padding: 1rem 0;
+    .flex {
+      align-items: center;
+      justify-content: center;
     }
   } 
 }
