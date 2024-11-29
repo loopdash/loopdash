@@ -1028,6 +1028,13 @@ body {
 
 
 /* Single Project Layout */
+.about-layout {
+  .site-footer {
+    a { 
+      color: #ffffff;
+    }
+  }
+}
 .about-layout .site-header,
 .single-project-layout .site-header {
   backdrop-filter: none;
