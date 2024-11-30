@@ -152,6 +152,9 @@ body {
   main {
     padding-top: calc(var(--spacing) * 12);
   }
+  .site-footer a { 
+    color: #ffffff;
+    }
 }
 
 
