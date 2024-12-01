@@ -34,6 +34,14 @@ export default function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addNunjucksAsyncShortcode('svgIcon', async (src, alt, sizes) => {
+    let metadata = await eleventyImg(src, {
+      formats: ['svg'],
+      dryRun: true,
+    })
+    return metadata.svg[0].buffer.toString()
+  })
+
   // Environment variables filter
   eleventyConfig.addFilter("env", (key) => process.env[key]);
 

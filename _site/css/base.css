@@ -148,6 +148,10 @@ hr {
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
 
+.ol {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 
 /* Text-Layout */
 .text-layout img {
@@ -726,6 +730,7 @@ hr {
   display: inline-block;
   color: var(--color-cream-dark);
   line-height: inherit;
+  font-weight: 500;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   text-decoration: none;
   width: 100%;
@@ -774,27 +779,29 @@ hr {
 }
 
 .nav-opened .nav li:nth-child(1) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .nav-opened .nav li:nth-child(2) {
-  animation-delay: 0.3s;
+  animation-delay: 0.175s; /* +0.1s */
 }
 
 .nav-opened .nav li:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.25s; /* +0.15s */
 }
 
 .nav-opened .nav li:nth-child(4) {
-  animation-delay: 0.5s;
+  animation-delay: 0.325s; /* +0.2s */
 }
 
 .nav-opened .nav li:nth-child(5) {
-  animation-delay: 0.6s;
+  animation-delay: 0.4s; /* +0.25s */
 }
+
 .nav-opened .nav li:nth-child(6) {
-  animation-delay: 0.7s;
+  animation-delay: 0.475s; /* +0.3s */
 }
+
 
 @keyframes fadeInUp {
   from {
@@ -850,7 +857,6 @@ hr {
   /* --color-charcoal-light: #3e3e3d;
   --color-charcoal: #1f1f1f; */
 .button {
-  display: flex;
   justify-content: center;
   max-width: fit-content;
   font-family: var(--base-font);
@@ -1151,6 +1157,14 @@ hr {
       color: #004c7e;
     }
   }
+}
+
+/* Card */
+.card {
+  padding: 1.375rem 1.75rem;
+  border-radius: var(--border-radius);
+  background: #ffffff;
+  box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.28);
 }
 
 /* Footer */
