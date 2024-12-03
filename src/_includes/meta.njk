@@ -2,7 +2,7 @@
 {%- if (metaImage) -%}
   {% set metaImage = metaImage %}
 {%- else -%}
-  {% set metaImage = "/images/meta.png" %}
+  {% set metaImage = "https://res.cloudinary.com/loopdash/image/upload/l_text:Archivo_122_bold:{{ title }},co_rgb:1F1F1F,g_south,y_-270,g_west,x_100/l_text:Archivo_60_normal:{{ description }},co_rgb:3e3e3d,g_south,y_-180,g_west,x_100/l_loopdash-logo,w_128,h_82,g_north,y_-400,g_west,x_100/computer.png" %}
 {%- endif -%}
 <link rel="canonical" href="https://loopdash.com{{ page.url | safe }}"/>
 
