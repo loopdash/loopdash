@@ -1,10 +1,9 @@
 <meta charset="UTF-8">
+{% set metaTitle =  title + " - Loopdash" %}
 {%- if (metaImage) -%}
   {% set metaImage = metaImage %}
 {%- else -%}
-
-  {% set metaImage = "https://res.cloudinary.com/loopdash/image/upload/l_text:overused-grotesk-semibold.ttf_82:" + (title | urlencode) + ",co_rgb:1F1F1F,g_south,y_0,g_west,x_100/l_text:overused-grotesk-book.ttf_24:We%20have%20been%20the%20industry%27s%20standard%20text%20ever%20since.,co_rgb:1F1F1F,g_south,y_58,g_west,x_100/l_loopdashmark,w_192,h_20,g_north,y_-205,g_west,x_100/computer.png" %}
-
+  {% set metaImage = "https://res.cloudinary.com/loopdash/image/upload/l_text:overused-grotesk-semibold.ttf_128:" + (title | urlencode) + ",co_rgb:584e46,g_south,y_0,g_west,x_100/l_loopdashmark,w_192,h_20,g_north,y_-205,g_west,x_100/computer.png" %}
 {%- endif -%}
 <link rel="canonical" href="https://loopdash.com{{ page.url | safe }}"/>
 
@@ -19,13 +18,13 @@
 <!-- Facebook tags -->
 <meta property="og:url" content="https://loopdash.com{{ page.url | safe }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ h1 | safe }}">
+<meta property="og:title" content="{{ metaTitle }}">
 <meta property="og:description" content="{{ description | safe }}">
 <meta property="og:image" content="{{ metaImage }}">
 
 <!-- Twitter tags -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ h1 | safe }}">
+<meta name="twitter:title" content="{{ metaTitle }}">
 <meta name="twitter:description" content="{{ description | safe }}">
 <meta name="twitter:image" property="og:image" content="{{ metaImage }}">
 <meta name="robots" content="index, follow"/>
