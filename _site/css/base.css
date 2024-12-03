@@ -240,6 +240,17 @@ hr {
   filter: saturate(1); /* Restore color saturation */
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Containers */
 .container-sm {
@@ -790,30 +801,6 @@ hr {
 }
 
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Initial state */
-.animated {
-  opacity: 0; /* Fully transparent */
-  visibility: hidden; /* Hide the element but keep its layout intact */
-  transition: opacity 2.25s ease, visibility 2.25s ease;
-}
-
-/* Visible state */
-.animated.visible {
-  opacity: 1; /* Fully visible */
-  visibility: visible; /* Make the element visible */
-}
-
 /* flex / containers */
 .flex {
   display: flex;
@@ -1166,6 +1153,16 @@ hr {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
+    .animated {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 2.25s ease, visibility 2.25s ease;
+    }
+
+    .animated.visible {
+      opacity: 1;
+      visibility: visible;
+    }
     .brand-color {
       visibility: hidden;
       padding: calc(var(--spacing) * 30) calc(var(--spacing) * 8);
@@ -1174,14 +1171,12 @@ hr {
       font-size: clamp(0.875rem, 1.2vw, 1rem);
       transform: translateY(20px);
     }
-    .brand-color.visible {
-      visibility: visible;
-    }
     .brand-color:nth-child(1),
     .brand-color:nth-child(2) {
       grid-column: span 2;
     }
 
+    /* https://colorbase.app/colors */
     .brand-color:nth-child(1) {
       background: #0097FC;
     }
@@ -1197,7 +1192,7 @@ hr {
       background: #C2EBFF;
 
     }
-    .brand-color:nth-child(3)::after { content: "Firefly"; }
+    .brand-color:nth-child(3)::after { content: "French Pass"; }
 
     .brand-color:nth-child(4) {
       background: #EFFF34;
