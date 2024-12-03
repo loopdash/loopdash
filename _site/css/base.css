@@ -5,12 +5,12 @@
 :root {
   --base-font-size: 1rem;
   --base-line-height: 1.3;
-  --base-font: "Overused Grotesk", sans-serif;
+  --base-font: "DMSans-Regular", sans-serif;
   --border-radius: 0.7rem;
   --color-cream: #f9f9f5;
   --color-cream-dark: #f3f2eb;
-  --color-charcoal-light: #3e3e3d;
-  --color-charcoal: #1f1f1f;
+  --color-charcoal-light: #78766d;
+  --color-charcoal: #262218;
   --container: 1260px;
   --mobile: 768px;
   --trs-prop: all;
@@ -136,8 +136,15 @@ hr {
 .text-uppercase { text-transform: uppercase; }
 
 .ol {
-  list-style-type: disc;
   padding-left: 20px;
+    li:before {
+      margin: 0px 5px 0 -16px;
+      vertical-align: middle;
+      display: inline-block;
+      content: "●";
+      color: inherit;
+      font-size: 70%;
+  }
 }
 
 /* Text-Layout */
@@ -862,7 +869,6 @@ hr {
         0 5px 10px rgba(0, 0, 0, 0.3), 
         inset 0 2px 7px rgba(0, 0, 0, 0.3), 
         inset 0 4px 7px rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.5px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   transform: translateY(0);
   width: 100%;
