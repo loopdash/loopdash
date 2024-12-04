@@ -62,31 +62,45 @@
 
         <div class="container-lg mx-auto py-20 mb-12">
           <div class="flex mb-16">
-            <div class="col-5">
-              <h3 class="text-9 mb-0 text-weight-600">Website</h3>
-              <p class="text-6 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            <div class="col-6">
+              <h3 class="text-9 mb-0 text-weight-600">Visual System</h3>
+              <p class="text-5 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
             </div>
           </div>
-          {% image "./src/img/projects/website-accountable-tech.png", "Image description", [2200, 600], ["jpeg", "webp"], "reveal" %}
-        </div>
 
-        <div class="container-lg mx-auto py-20 mb-12">
           <div class="flex mb-16">
             <div class="col-6">
               <div class="slideshow">
-                {% image "./src/img/projects/slideshow-accountable-tech-1.png", "Image description", [512, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-7.png", "Image description", [512, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-4.png", "Image description", [512, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-3.png", "Image description", [512, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-1.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-7.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-4.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-3.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
               </div>
             </div>
             <div class="col-6">
               <div class="slideshow">
-                {% image "./src/img/projects/slideshow-accountable-tech-5.png", "Image description", [512, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-6.png", "Image description", [512, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-2.png", "Image description", [512, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-8.png", "Image description", [512, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-5.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-6.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-2.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-8.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
               </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="col-12">
+              {% image "./src/img/projects/gettyimages-1471645492-170667a.jpg", "Image description", [2200, 600], ["jpeg", "webp"], "reveal" %}
+            </div>
+          </div>
+        </div>
+
+        <div class="container-lg mx-auto py-20">
+          <div class="flex mb-16">
+            <div class="col-5">
+              <h3 class="text-9 mb-0 text-weight-600">Website</h3>
+              <p class="text-5 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+            </div>
+            <div class="col-12">
+              {% image "./src/img/projects/website-accountable-tech.png", "Image description", [2200, 600], ["jpeg", "webp"], "reveal mb-12" %}
             </div>
           </div>
         </div>
@@ -97,7 +111,7 @@
           <div class="flex mb-16">
             <div class="col-5">
               <h3 class="text-9 mb-0 text-weight-600">Brand Extension</h3>
-              <p class="text-6 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+              <p class="text-5 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
             </div>
           </div>
           <div class="brand-palette">
@@ -118,13 +132,18 @@
 
         {% image "./src/img/projects/accountable-tech-full.png", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}
 
-        <div class="container-lg mx-auto">
-          {% image "./src/img/projects/gettyimages-1471645492-170667a.jpg", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}
-        </div>
-
       </div>
 
-      
+      <div class="introduction introduction-{{project.class}}">
+        <div class="flex justify-between mx-auto py-24 container-lg">
+          <div class="col-7">
+            <p class="text-10 text-weight-300 text-white">"Love the site! I think ya'll did it: Made something refreshed and more compelling while sticking to some of the bones in areas to save us time and respect our past work."</p>
+            <p class="text-5 m-0 p-0 text-white text-weight-600 details">Zach Praiss</p>
+            <p class="text-5 m-0 p-0 text-white text-weight-300">Digital Director</p>
+          </div>
+        </div>
+      </div>
+
     </main>
     {% include 'footer.njk' %}
   </body>

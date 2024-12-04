@@ -6,7 +6,7 @@
   --base-font-size: 1rem;
   --base-line-height: 1.275;
   --base-font: "DM Sans", sans-serif;
-  --border-radius: 0.7rem;
+  --border-radius: 6px;
   --color-cream: #f9f9f5;
   --color-cream-dark: #f3f2eb;
   --color-charcoal-light: #78766d;
@@ -1156,15 +1156,16 @@ hr {
       .slideshow {
         position: relative;
         width: 100%;
-        min-height: 512px; /* Ensures a visible minimum height */
+        height: 512px !important;
         overflow: hidden;
+        border-radius: var(--border-radius);
         picture {
           display: block; /* Keeps pictures in the document flow */
           width: 100%;
           height: auto; /* Maintain image aspect ratio */
           opacity: 0; /* Initially hidden */
           img {
-            border-radius: 5px;
+            border-radius: var(--border-radius);
           }
         }
         picture:first-child {
@@ -1176,7 +1177,7 @@ hr {
   .introduction-accountable-tech {
     background-color: #0097FC;
     .details {
-      color: #004c7e;
+      color: #00558e;
     }
   }
   .brand-palette {

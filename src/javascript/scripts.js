@@ -74,8 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
       slide.style.top = "0";
       slide.style.left = "0";
       slide.style.width = "100%";
-      slide.style.height = "100%";
+      slide.style.height = "auto";
       });
+
+      // Function to update container height
+      const updateSlideshowHeight = () => {
+        const activeSlide = slides[currentIndex].querySelector("img");
+        slideshow.style.height = `${activeSlide.offsetHeight}px`;
+      };
+
+      // Initial height setup
+      updateSlideshowHeight();
+      window.addEventListener("resize", updateSlideshowHeight); // Adjust on window resize
+
 
       // Start the slideshow for this container
       setInterval(() => {
