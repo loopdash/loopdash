@@ -15,8 +15,8 @@ project:
     - name: Bloomberg
     - name: Fast Company
     - name: Mashable
-    - name: Axios
-    - name: The Washington Post
+    # - name: Axios
+    # - name: The Washington Post
   # collaborators:
   #   - name:
   website: accountabletech.org

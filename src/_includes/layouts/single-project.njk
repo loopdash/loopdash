@@ -11,19 +11,19 @@
     <main>
       <div class="introduction introduction-{{project.class}}">
         <div class="flex justify-between mx-auto py-24 container-lg">
-          <div class="col-6">
+          <div class="col-7">
             <h1 class="text-12 mb-6 text-white text-weight-600">{{ title }}</h1>
             <p class="text-6 text-weight-300 text-white">Accountable Tech came to us with a powerful mission: to hold Big Tech accountable and advocate for a safer digital future. Their existing website wasn't doing their vision justice. We crafted a bold, purpose-driven platform that amplifies their voice, strengthens campaigns, and empowers their team with tools for storytelling, SEO, and accessibility. The result is a website that embodies their mission and positions them as leaders in the fight for accountability in the tech industry.</p>
           </div>
           <div class="col-3 details">
-            <h5 class="text-4 mb-0 text-weight-600 text-uppercase">Industry</h5>
-            <ul class="text-5">
+            <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Industry</h5>
+            <ul class="text-3">
               <li>{{project.industry}}</li>
             </ul>
 
             {% if project.services %}
-              <h5 class="text-4 mb-0 text-weight-600 text-uppercase">Services</h5>
-                <ul class="text-5">
+              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Services</h5>
+                <ul class="text-3">
                 {% for service in project.services %}
                   <li>{{ service.name }}</li>
                 {% endfor %}
@@ -31,8 +31,8 @@
             {% endif %}
 
             {% if project.collaborators %}
-              <h5 class="text-4 mb-0 text-weight-600 text-uppercase">Collaborators</h5>
-                <ul class="text-5">
+              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Collaborators</h5>
+                <ul class="text-3">
                 {% for collaborator in project.collaborators %}
                   <li>{{ collaborator.name }}</li>
                 {% endfor %}
@@ -40,8 +40,8 @@
             {% endif %}
 
             {% if project.press %}
-              <h5 class="text-4 mb-0 text-weight-600 text-uppercase">Press</h5>
-                <ul class="text-5">
+              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Press</h5>
+                <ul class="text-3">
                 {% for item in project.press %}
                   <li>{{ item.name }}</li>
                 {% endfor %}
@@ -49,8 +49,8 @@
             {% endif %}
 
             {% if project.website %}
-              <h5 class="text-4 mb-0 text-weight-600 text-uppercase">Website</h5>
-                <ul class="text-5">
+              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Website</h5>
+                <ul class="text-3">
                   <li>{{ project.website }}</li>
               </ul>
             {% endif %}
