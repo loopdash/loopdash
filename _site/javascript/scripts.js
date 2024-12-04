@@ -60,6 +60,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  const slides = document.querySelectorAll(".slideshow picture");
+  console.log('slides');
+  let currentIndex = 0;
+
+  if (slides.length > 0) {
+    console.log(slides);
+    // Initialize slides
+    slides.forEach((slide, index) => {
+      slide.style.opacity = index === 0 ? "1" : "0";
+      slide.style.position = "absolute";
+      slide.style.top = "0";
+      slide.style.left = "0";
+      slide.style.width = "100%";
+      slide.style.height = "100%";
+      slide.style.transition = "opacity 1s ease-in-out";
+    });
+
+    // Start the slideshow
+    setInterval(() => {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].style.opacity = "0";
+      slides[currentIndex].style.zIndex = "1";
+      slides[nextIndex].style.opacity = "1";
+      slides[nextIndex].style.zIndex = "2";
+      currentIndex = nextIndex;
+    }, 1100); // Adjust the interval as needed
+  }
+
+
   // Cal.com
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "meet", {origin:"https://cal.com"});

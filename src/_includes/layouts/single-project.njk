@@ -4,7 +4,6 @@
   <body class="single-project-layout">
     {% include 'nav.njk' %}
     
-    <h1 class="text-12 mb-6 text-white text-weight-500">{{ title }}</h1>
     <div class="hero-wrapper">
       {% image project.heroImage, "Image description", [2200, 600], ["jpeg", "webp"], "single-project-hero" %}
     </div>
@@ -13,7 +12,8 @@
       <div class="introduction introduction-{{project.class}}">
         <div class="flex justify-between mx-auto py-24 container-lg">
           <div class="col-6">
-            <p class="text-8 text-weight-400 text-white">Accountable Tech came to us with a powerful mission: to hold Big Tech accountable and advocate for a safer digital future. Their existing website wasn’t doing their vision justice—it lacked the impact and functionality needed to drive their movement forward. We created a bold, purpose-driven platform that amplifies their voice, strengthens their campaigns, and empowers their team with advanced tools for storytelling, SEO, and accessibility. The result is a website that embodies their mission and positions them as leaders in the fight for accountability in the tech industry.</p>
+            <h1 class="text-12 mb-6 text-white text-weight-600">{{ title }}</h1>
+            <p class="text-6 text-weight-300 text-white">Accountable Tech came to us with a powerful mission: to hold Big Tech accountable and advocate for a safer digital future. Their existing website wasn't doing their vision justice. We crafted a bold, purpose-driven platform that amplifies their voice, strengthens campaigns, and empowers their team with tools for storytelling, SEO, and accessibility. The result is a website that embodies their mission and positions them as leaders in the fight for accountability in the tech industry.</p>
           </div>
           <div class="col-3 details">
             <h5 class="text-4 mb-0 text-weight-600 text-uppercase">Industry</h5>
@@ -64,7 +64,7 @@
           <div class="flex mb-16">
             <div class="col-5">
               <h3 class="text-9 mb-0 text-weight-600">Website</h3>
-              <p class="text-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+              <p class="text-6 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
             </div>
           </div>
           {% image "./src/img/projects/website-accountable-tech.png", "Image description", [2200, 600], ["jpeg", "webp"], "reveal" %}
@@ -72,12 +72,31 @@
 
         {% image "./src/img/projects/screenshot-accountable-tech.jpg", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}
 
+        <div class="container-lg mx-auto py-20 mb-12">
+          <div class="flex mb-16">
+            <div class="col-6">
+              <div class="slideshow">
+                {% image "./src/img/projects/slideshow-accountable-tech-1.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-4.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-2.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-3.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+                {% image "./src/img/projects/slideshow-accountable-tech-5.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="">
+                {% image "./src/img/projects/slideshow-accountable-tech-3.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
         <div class="container-lg mx-auto py-20 mb-12">
           <div class="flex mb-16">
             <div class="col-5">
               <h3 class="text-9 mb-0 text-weight-600">Brand Extension</h3>
-              <p class="text-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+              <p class="text-6 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
             </div>
           </div>
           <div class="brand-palette">

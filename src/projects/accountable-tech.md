@@ -1,9 +1,7 @@
 ---
 layout: single-project.njk
 title: Accountable Tech
-h1: WordPress Development for Accountable Tech
-h2: Accountable Tech
-description: Designed and developed a website for a new political organization.
+description:
 metaImage: 
 project:
   class: accountable-tech
