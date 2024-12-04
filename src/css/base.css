@@ -973,19 +973,19 @@ hr {
 .project-ndf {
   background-image: 
     linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
-    url('../images/cover-palantir.jpg');
+    url('../img/projects/cover-palantir.jpg');
 }
 
 .project-ej {
   background-image:
     linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
-    url('../images/cover-encode-justice.jpg');
+    url('../img/projects/cover-encode-justice.jpg');
 }
 
 .project-fm {
   background-image:
     linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
-    url('../images/cover-forward-majority.jpg');
+    url('../img/projects/cover-forward-majority.jpg');
 }
 
 .link-chevron {
