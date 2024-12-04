@@ -60,33 +60,32 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  const slides = document.querySelectorAll(".slideshow picture");
-  console.log('slides');
-  let currentIndex = 0;
+  // Select all slideshow containers
+  const slideshows = document.querySelectorAll(".slideshow");
+  slideshows.forEach((slideshow) => {
+    const slides = slideshow.querySelectorAll("picture");
+    let currentIndex = 0;
 
-  if (slides.length > 0) {
-    console.log(slides);
-    // Initialize slides
-    slides.forEach((slide, index) => {
+    if (slides.length > 0) {
+      // Initialize slides for this slideshow
+      slides.forEach((slide, index) => {
       slide.style.opacity = index === 0 ? "1" : "0";
       slide.style.position = "absolute";
       slide.style.top = "0";
       slide.style.left = "0";
       slide.style.width = "100%";
       slide.style.height = "100%";
-      slide.style.transition = "opacity 1s ease-in-out";
-    });
+      });
 
-    // Start the slideshow
-    setInterval(() => {
-      const nextIndex = (currentIndex + 1) % slides.length;
-      slides[currentIndex].style.opacity = "0";
-      slides[currentIndex].style.zIndex = "1";
-      slides[nextIndex].style.opacity = "1";
-      slides[nextIndex].style.zIndex = "2";
-      currentIndex = nextIndex;
-    }, 1100); // Adjust the interval as needed
-  }
+      // Start the slideshow for this container
+      setInterval(() => {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].style.opacity = "0";
+        slides[nextIndex].style.opacity = "1";
+        currentIndex = nextIndex;
+      }, 875); // Adjust interval as needed
+    }
+  });
 
 
   // Cal.com
