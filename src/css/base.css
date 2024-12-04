@@ -1256,9 +1256,9 @@ hr {
 
 /* Card */
 .card {
-  border-radius: var(--border-radius);
+  border-radius: 11px;
   background: #ffffff;
-  box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.08);
 }
 
 .card-at-blue {
