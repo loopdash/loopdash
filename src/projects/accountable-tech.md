@@ -20,7 +20,7 @@ project:
   # collaborators:
   #   - name:
   website: accountabletech.org
-  heroImage: "./src/img/projects/hero-accountable-3.jpg"
+  heroImage: "./src/img/projects/cover-accountable-tech-1.jpg"
   imageAlt: Accountable Tech WordPress Website
 
 sitemap:
