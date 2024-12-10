@@ -27,9 +27,9 @@ project:
           slideshows:
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/accountable-tech-logo-panel.png"
+                - src: "./src/img/projects/encode-1.png"
                   alt: ""
-                - src: "./src/img/projects/slideshow-accountable-tech-7.png"
+                - src: "./src/img/projects/encode-3.png"
                   alt: ""
                 - src: "./src/img/projects/slideshow-accountable-tech-4.png"
                   alt: ""
@@ -37,7 +37,7 @@ project:
                   alt: ""
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/slideshow-accountable-tech-5.png"
+                - src: "./src/img/projects/encode-2.png"
                   alt: ""
                 - src: "./src/img/projects/slideshow-accountable-tech-6.png"
                   alt: ""
@@ -70,7 +70,7 @@ project:
               cardClass: "card-at-light"
         - type: fullwidth
           images:
-            - src: "./src/img/projects/screenshot-accountable-tech.jpg"
+            - src: "./src/img/projects/encode-10.jpg"
               alt: ""
     - heading: Brand Extension
       paragraph: We refined the logo and typography to align seamlessly with the website’s modern design, creating a cohesive digital identity that amplifies Accountable Tech’s mission. Adjustments to proportions and type hierarchy bring clarity and boldness to the brand, while vibrant yellow call-to-action elements inject energy and draw attention to key actions. These updates pave the way for a more accessible and engaging conversation around Big Tech accountability, ensuring the brand feels both authoritative and approachable in a digital-first context.
@@ -86,7 +86,7 @@ project:
         - type: colors
         - type: fullwidth
           images: 
-            - src: "./src/img/projects/nils-huenerfuerst-BLI6L8EDLjs-unsplash.jpg"
+            - src: "./src/img/projects/encode-11.jpg"
               alt: null
         - type: image
           images: 
