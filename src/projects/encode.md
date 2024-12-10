@@ -1,13 +1,13 @@
 ---
 layout: single-project.njk
-title: Accountable Tech
+title: Encode
 description:
 metaImage: 
 project:
-  class: accountable-tech
+  class: encode
   hero:
-    src: "./src/img/projects/cover-accountable-tech-1.jpg"
-    alt: Accountable Tech WordPress Website
+    src: "./src/img/projects/cover-encode-justice.jpg"
+    alt: Encode WordPress Website
   industry: Internet Advocacy
   services:
     - name: Brand Identity
@@ -15,10 +15,10 @@ project:
     - name: Web Design
     - name: Web Development
   press:
-    - name: Bloomberg
-    - name: Fast Company
-    - name: Mashable
-  website: accountabletech.org
+    - name: Forbes
+    - name: Washington Post
+    - name: Time Magazine
+  website: encodeai.org
   sections:
     - heading: null
       paragraph: null
@@ -55,7 +55,7 @@ project:
       content:
         - type: image
           images:
-            - src: "./src/img/projects/website-accountable-tech.png"
+            - src: "./src/img/projects/website-encode.png"
               alt: ""
               colSpan: 12
         - type: image
@@ -97,9 +97,9 @@ project:
               alt:
               colSpan: 6
   testimonial:
-    quote: "Love the site! I think ya'll did it: Made something refreshed and more compelling while sticking to some of the bones in areas to save us time and respect our past work."
-    author: Zach Praiss
-    role: Campaigns Director
+    quote: "Had a fantastic experience working with Loopdash - the team was accessible and responsive to feedback even when we had changes in vision throughout the process. We're all so pleased with the final product and would 100% work with Loopdash again."
+    author: Sneha Revanur
+    role: Activist & Founder of Encode
 sitemap:
   changefreq: weekly
   priority: 0.5

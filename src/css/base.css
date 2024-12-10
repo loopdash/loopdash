@@ -7,7 +7,7 @@
   --base-line-height: 1.275;
   --base-font: "DM Sans", sans-serif;
   --border-radius: 12px;
-  --color-cream: #f9f9f5;
+  --color-cream: #f6f6f1;
   --color-cream-dark: #f3f2eb;
   --color-charcoal-light: #78766d;
   --color-charcoal: #262218;
@@ -125,6 +125,10 @@ hr {
 .text-16 {
   font-size: clamp(4.5rem, 6vw, 5rem);
   line-height: clamp(4.5rem, 6.5vw, 5.5rem);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
 }
 
 .text-center { text-align: center; }
@@ -1126,7 +1130,7 @@ hr {
     top: 0; /* Ensures the element stays fixed at the top */
     left: 0;
   }
-  .hero-wrapper::after {
+  .hero::after {
     content: '';
     position: absolute;
     top: 0;
@@ -1145,12 +1149,25 @@ hr {
     position: relative;
     background-color: var(--color-cream);
 
-    .project-wrapper {
+    .project-section-wrapper {
       img {
         width: 100%;
         height: auto;
+        border-radius: 10px;
       }
-      
+
+      .fullwidth-wrapper {
+        padding-top: calc(var(--spacing) * 24);
+        padding-bottom: calc(var(--spacing) * 24);
+        img {
+          border-radius: 0;
+        }
+      }
+
+      .card img {
+        margin: 0 0 -5px 0;
+      }
+            
       .slideshow {
         position: relative;
         width: 100%;
@@ -1172,10 +1189,19 @@ hr {
       }
     }
   }
+  .introduction {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .introduction-accountable-tech {
     background-color: #0097FC;
     .details {
       color: #00558e;
+    }
+  }
+  .introduction-encode {
+    background-color: #ff6347;
+    .details {
+      color: #ffc0b6;
     }
   }
   .brand-palette {
@@ -1205,41 +1231,80 @@ hr {
       grid-column: span 2;
     }
 
+    /* Accountable Tech */    
     /* https://colorbase.app/colors */
-    .brand-color:nth-child(1) {
+    .brand-color-accountable-tech:nth-child(1) {
       background: #0097FC;
     }
-    .brand-color:nth-child(1)::after { content: "Azure Radiance"; }
+    .brand-color-accountable-tech:nth-child(1)::after { content: "Azure Radiance"; }
 
-    .brand-color:nth-child(2) {
+    .brand-color-accountable-tech:nth-child(2) {
       background: #0A1F2B;
       color: rgba(255, 255, 255, 0.8);
     }
-    .brand-color:nth-child(2)::after { content: "Firefly"; }
+    .brand-color-accountable-tech:nth-child(2)::after { content: "Firefly"; }
 
-    .brand-color:nth-child(3) {
+    .brand-color-accountable-tech:nth-child(3) {
       background: #C2EBFF;
 
     }
-    .brand-color:nth-child(3)::after { content: "French Pass"; }
+    .brand-color-accountable-tech:nth-child(3)::after { content: "French Pass"; }
 
-    .brand-color:nth-child(4) {
+    .brand-color-accountable-tech:nth-child(4) {
       background: #EFFF34;
 
     }
-    .brand-color:nth-child(4)::after { content: "Golden Fizz"; }
+    .brand-color-accountable-tech:nth-child(4)::after { content: "Golden Fizz"; }
 
-    .brand-color:nth-child(5) {
+    .brand-color-accountable-tech:nth-child(5) {
       background: #ffffff;
 
     }
-    .brand-color:nth-child(5)::after { content: "Pure White"; }
+    .brand-color-accountable-tech:nth-child(5)::after { content: "Pure White"; }
 
-    .brand-color:nth-child(6) {
+    .brand-color-accountable-tech:nth-child(6) {
       background: #f5f5f5;
 
     }
-    .brand-color:nth-child(6)::after { content: "Wild Sand"; }
+    .brand-color-accountable-tech:nth-child(6)::after { content: "Wild Sand"; }
+
+
+    /* Encode */    
+    /* https://colorbase.app/colors */
+    .brand-color-encode:nth-child(1) {
+      background: #ff6347;
+    }
+    .brand-color-encode:nth-child(1)::after { content: "Persimmon"; }
+
+    .brand-color-encode:nth-child(2) {
+      background: #182c58;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .brand-color-encode:nth-child(2)::after { content: "Cloud Burst"; }
+
+    .brand-color-encode:nth-child(3) {
+      background: #fffae9;
+
+    }
+    .brand-color-encode:nth-child(3)::after { content: "Buttery White"; }
+
+    .brand-color-encode:nth-child(4) {
+      background: #ffc0b6;
+
+    }
+    .brand-color-encode:nth-child(4)::after { content: "Tuft Blush"; }
+
+    .brand-color-encode:nth-child(5) {
+      background: #ffffff;
+
+    }
+    .brand-color-encode:nth-child(5)::after { content: "Pure White"; }
+
+    .brand-color-encode:nth-child(6) {
+      background: #f3f4f6;
+
+    }
+    .brand-color-encode:nth-child(6)::after { content: "Wild Sand"; }
 
     @media only screen and (max-width: 768px) {
       .brand-color,

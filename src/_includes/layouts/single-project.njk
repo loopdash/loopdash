@@ -4,167 +4,112 @@
   <body class="single-project-layout">
     {% include 'nav.njk' %}
     
-    <div class="hero-wrapper">
-      {% image project.heroImage, "Image description", [2200, 600], ["jpeg", "webp"], "single-project-hero" %}
-    </div>
+    {% include "partials/_single-project-hero.njk" %}
 
     <main>
-      <div class="introduction introduction-{{project.class}}">
-        <div class="flex justify-between mx-auto py-24 container-lg">
-          <div class="col-7">
-            <h1 class="text-12 mb-6 text-white text-weight-600">{{ title }}</h1>
-            <p class="text-6 text-weight-300 text-white">Accountable Tech came to us with a powerful mission: to hold Big Tech accountable and advocate for a safer digital future. Their existing website wasn't doing their vision justice. We crafted a bold, purpose-driven platform that amplifies their voice, strengthens campaigns, and empowers their team with tools for storytelling, SEO, and accessibility. The result is a website that embodies their mission and positions them as leaders in the fight for accountability in the tech industry.</p>
-          </div>
-          <div class="col-3 details">
-            <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Industry</h5>
-            <ul class="text-3">
-              <li>{{project.industry}}</li>
-            </ul>
+      {% include "partials/_single-project-introduction.njk" %}
 
-            {% if project.services %}
-              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Services</h5>
-                <ul class="text-3">
-                {% for service in project.services %}
-                  <li>{{ service.name }}</li>
+      <section class="project-section-wrapper">
+        {% if project.sections %}
+          {% for section in project.sections %}
+            <div class="py-20">
+              {% if section.heading or section.paragraph %}
+                <div class="container-lg mx-auto">
+                  <div class="flex mb-12">
+                    <div class="col-6">
+                      {% if section.heading %}
+                        <{{ heading_level | default('h3') }} class="text-9 mb-0 text-weight-600">{{ section.heading | safe }}</{{ section.heading_level | default('h3') }}>
+                      {% endif %}
+                      {% if section.paragraph %}
+                        <p class="text-5 text-weight-300">{{ section.paragraph | safe }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if section.content %}
+                {% for contentItem in section.content %}
+                  {% if contentItem.type == "slideshow" %}
+                    <div class="container-lg mx-auto">
+                      <div class="flex">
+                        {% for slideshow in contentItem.slideshows %}
+                          <div class="col-{{ slideshow.colSpan or 6 }}">
+                            <div class="slideshow">
+                              {% for slide in slideshow.slides %}
+                                {% image slide.src, slide.alt or "Slide image", [2200, 600], ["jpeg", "webp"] %}
+                              {% endfor %}
+                            </div>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if contentItem.type == "image" %}
+                    <div class="container-lg mx-auto">
+                      <div class="flex justify-between">
+                        {% for image in contentItem.images %}
+                          <div class="col-{{ image.colSpan or 6 }} mb-8">
+                            {% if image.cardClass %}
+                              <div class="card {{ image.cardClass }}">
+                            {% endif %}
+                            {% image image.src, image.alt or "Image", [2200, 600], ["jpeg", "webp"], "reveal" %}
+                            {% if image.cardClass %}
+                              </div>
+                            {% endif %}
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if contentItem.type == "fullwidth" %}
+                    {% for image in contentItem.images %}
+                      <div class="fullwidth-wrapper">
+                        {% image image.src, image.alt or "Full width image", [2200, 600], ["jpeg", "webp"] %}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                
+                  {% if contentItem.type == "colors" %}
+                    <div class="container-lg mx-auto">
+                      <div class="brand-palette pb-16">
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+
                 {% endfor %}
-              </ul>
-            {% endif %}
-
-            {% if project.collaborators %}
-              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Collaborators</h5>
-                <ul class="text-3">
-                {% for collaborator in project.collaborators %}
-                  <li>{{ collaborator.name }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-
-            {% if project.press %}
-              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Press</h5>
-                <ul class="text-3">
-                {% for item in project.press %}
-                  <li>{{ item.name }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-
-            {% if project.website %}
-              <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Website</h5>
-                <ul class="text-3">
-                  <li>{{ project.website }}</li>
-              </ul>
-            {% endif %}
+              {% endif %}
+          {% endfor %}
           </div>
-        </div>
-      </div>
+        {% endif %}
+      </section>
 
-      <div class="project-wrapper">
-
-        <div class="container-lg mx-auto py-20 mb-12">
-          <div class="flex mb-12">
-            <div class="col-6">
-              <h3 class="text-9 mb-0 text-weight-600">Visual System</h3>
-              <p class="text-5 text-weight-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-            </div>
-          </div>
-
-          <div class="flex mb-12">
-            <div class="col-6">
-              <div class="slideshow">
-                {% image "./src/img/projects/accountable-tech-logo-panel.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-7.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-4.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-3.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="slideshow">
-                {% image "./src/img/projects/slideshow-accountable-tech-5.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-6.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-2.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-                {% image "./src/img/projects/slideshow-accountable-tech-8.png", "Image description", [2200, 600], ["jpeg", "webp"] %}
-              </div>
-            </div>
-          </div>
-          <div class="flex">
-            <div class="col-12">
-              {% image "./src/img/projects/gettyimages-1471645492-170667a.jpg", "Image description", [2200, 600], ["jpeg", "webp"], "reveal" %}
+      {% if project.testimonial %}
+        <div class="introduction introduction-{{ project.class }}">
+          <div class="flex justify-between mx-auto py-24 container-lg">
+            <div class="col-7">
+              <p class="text-10 text-weight-300 text-white">"{{ project.testimonial.quote }}"</p>
+              <p class="text-5 m-0 p-0 text-white text-weight-600 details">{{ project.testimonial.author }}</p>
+              <p class="text-5 m-0 p-0 text-white text-weight-300">{{ project.testimonial.role }}</p>
             </div>
           </div>
         </div>
+      {% endif %}
 
-        <div class="container-lg mx-auto py-20">
-          <div class="flex mb-12">
-            <div class="col-6">
-              <h3 class="text-9 mb-0 text-weight-600">Website</h3>
-              <p class="text-5 text-weight-300">Accountable Tech’s website is designed to inform and inspire action, extending the brand’s bold visual identity while staying rooted in its past. We focused on clarity and impact, creating a platform that makes complex issues accessible and drives engagement with their campaigns. The result is a site that amplifies their mission and empowers users to take part in the movement for accountability in Big Tech.</p>
-            </div>
-            <div class="col-12">
-              {% image "./src/img/projects/website-accountable-tech.png", "Image description", [2200, 600], ["jpeg", "webp"], "reveal mb-12" %}
-            </div>
-
-            <div class="col-6 mb-8">
-              <div class="card card-at-light-blue">
-                {% image "./src/img/projects/two-up-accountable-tech-1.png", "Image description", [2200, 600], ["jpeg", "webp"], "reveal" %}
-              </div>
-            </div>
-            <div class="col-6 mb-8">
-              <div class="card card-at-light">
-                {% image "./src/img/projects/two-up-accountable-tech-2.png", "Image description", [2200, 600], ["jpeg", "webp"], "reveal" %}
-              </div>
-              </div>
-          </div>
-        </div>
-
-        {% image "./src/img/projects/screenshot-accountable-tech.jpg", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}
-
-        <div class="container-lg mx-auto py-20 mb-12">
-          <div class="flex mb-12">
-            <div class="col-6">
-              <h3 class="text-9 mb-0 text-weight-600">Brand Extension</h3>
-              <p class="text-5 text-weight-300">We refined the logo and typography to align seamlessly with the website’s modern design, creating a cohesive digital identity that amplifies Accountable Tech’s mission. Adjustments to proportions and type hierarchy bring clarity and boldness to the brand, while vibrant yellow call-to-action elements inject energy and draw attention to key actions. These updates pave the way for a more accessible and engaging conversation around Big Tech accountability, ensuring the brand feels both authoritative and approachable in a digital-first context.</p>
-            </div>
-          </div>
-					<div class="flex mb-12">
-	            <div class="col-6">
-								{% image "./src/img/projects/accountable-tech-logo-panel.png", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}	
-							</div>
-							<div class="col-6">
-								{% image "./src/img/projects/accountable-tech-logo-panel-dark.png", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}	
-							</div>
-					</div>
-					<div class="flex mb-12">
-            <div class="col-12">
-              <div class="brand-palette">
-                <div class="brand-color animated">
-                </div>
-                <div class="brand-color animated">
-                </div>
-                <div class="brand-color animated">
-                </div>
-                <div class="brand-color animated">
-                </div>
-                <div class="brand-color animated">
-                </div>
-                <div class="brand-color animated">
-                </div>
-              </div>
-            </div>
-        </div>
-
-        {% image "./src/img/projects/accountable-tech-full.png", "Image description", [2200, 600], ["jpeg", "webp"], "mb-12" %}
-
-      </div>
-
-      <div class="introduction introduction-{{project.class}}">
-        <div class="flex justify-between mx-auto py-24 container-lg">
-          <div class="col-7">
-            <p class="text-10 text-weight-300 text-white">"Love the site! I think ya'll did it: Made something refreshed and more compelling while sticking to some of the bones in areas to save us time and respect our past work."</p>
-            <p class="text-5 m-0 p-0 text-white text-weight-600 details">Zach Praiss</p>
-            <p class="text-5 m-0 p-0 text-white text-weight-300">Digital Director</p>
-          </div>
-        </div>
-      </div>
 			<section class="cta">
 			  <div class="cta-container">
    		 		<h4 class="text-10 text-weight-600">Our actions today shape tomorrow. Let's get started.</h4>

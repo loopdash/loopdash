@@ -3,11 +3,17 @@ import { minify as htmlmin } from "html-minifier";
 import { inspect } from "util";
 import eleventyImg from "@11ty/eleventy-img";
 import dotenv from "dotenv";
+import { getVersion } from "./src/utils/getVersion.js";
+
 
 // Load environment variables
 dotenv.config();
 
 export default function (eleventyConfig) {
+
+  // Add version to global data
+  eleventyConfig.addGlobalData("siteVersion", getVersion());
+
   // Image shortcode
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
