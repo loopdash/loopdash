@@ -60,14 +60,14 @@ project:
               colSpan: 12
         - type: image
           images: 
-            - src: "./src/img/projects/two-up-accountable-tech-1.png"
+            - src: "./src/img/projects/encode-12.png"
               alt: 
               colSpan: 6
-              cardClass: "card-at-light-blue"
+              cardClass: "card-encode-light-blue"
             - src: "./src/img/projects/two-up-accountable-tech-2.png"
               alt:
               colSpan: 6
-              cardClass: "card-at-light"
+              cardClass: "card-encode-light"
         - type: fullwidth
           images:
             - src: "./src/img/projects/encode-10.jpg"
