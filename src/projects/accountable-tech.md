@@ -97,7 +97,8 @@ project:
               alt:
               colSpan: 6
   testimonial:
-    quote: "Love the site! I think ya'll did it: Made something refreshed and more compelling while sticking to some of the bones in areas to save us time and respect our past work."
+    quote: >
+      Love the site! I think ya'll did it: Made something refreshed and more compelling while sticking to some of the bones in areas to save us time and respect our past work.
     author: Zach Praiss
     role: Campaigns Director
 sitemap:

@@ -47,7 +47,7 @@ project:
                   alt: ""
         - type: image
           images:
-            - src: "./src/img/projects/gettyimages-1471645492-170667a.jpg"
+            - src: "./src/img/projects/encode-9.jpg"
               alt: "Image 1"
               colSpan: 12
     - heading: Website
@@ -55,7 +55,7 @@ project:
       content:
         - type: image
           images:
-            - src: "./src/img/projects/website-encode.png"
+            - src: "./src/img/projects/encode-14.png"
               alt: ""
               colSpan: 12
         - type: image
@@ -64,7 +64,7 @@ project:
               alt: 
               colSpan: 6
               cardClass: "card-encode-light-blue"
-            - src: "./src/img/projects/two-up-accountable-tech-2.png"
+            - src: "./src/img/projects/encode-13.png"
               alt:
               colSpan: 6
               cardClass: "card-encode-light"
@@ -77,10 +77,10 @@ project:
       content:
         - type: image
           images: 
-            - src: "./src/img/projects/accountable-tech-logo-panel-dark.png"
+            - src: "./src/img/projects/encode-2.png"
               alt: 
               colSpan: 6
-            - src: "./src/img/projects/accountable-tech-logo-panel.png"
+            - src: "./src/img/projects/encode-1.png"
               alt:
               colSpan: 6
         - type: colors
@@ -97,7 +97,8 @@ project:
               alt:
               colSpan: 6
   testimonial:
-    quote: "Had a fantastic experience working with Loopdash - the team was accessible and responsive to feedback even when we had changes in vision throughout the process. We're all so pleased with the final product and would 100% work with Loopdash again."
+    quote: >
+      Had a fantastic experience working with Loopdash - the team was accessible and responsive to feedback even when we had changes in vision throughout the process. We're all so pleased with the final product and would 100% work with Loopdash again.
     author: Sneha Revanur
     role: Activist & Founder of Encode
 sitemap:

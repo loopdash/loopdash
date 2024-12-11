@@ -678,6 +678,7 @@ hr {
 /* Default Hamburger State */
 .menu-toggle .bar:nth-child(1) {
   top: 1px;
+  z-index: 99;
 }
 
 .menu-toggle .bar:nth-child(2) {
@@ -693,6 +694,15 @@ hr {
 .nav-opened .menu-toggle .bar:nth-child(1) {
   background: var(--color-cream);
   transform: translateY(10px) rotate(45deg);
+}
+
+.nav-opened .menu-toggle .bar:nth-child(1)::after {
+  content: "";
+  width: 27px;
+  background-color: var(--color-charcoal);
+  height: 2px;
+  margin: -2px 0 0 0;
+  display: block;
 }
 
 .nav-opened .menu-toggle .bar:nth-child(2) {
@@ -1192,6 +1202,26 @@ hr {
   .introduction {
     margin-bottom: calc(var(--spacing) * 16);
   }
+
+  .quote::before,
+  .quote::after {
+    font-family: Georgia, serif;
+    font-size: 110%;
+    color: #0000004f;
+  }
+
+  .quote::before {
+    content: "“";
+    margin-left: -17px;
+    padding-right: 3px;
+  }
+
+  .quote::after {
+    content: "”";
+    margin-right: -17px;
+    padding-left: 3px;
+  }
+
   .introduction-accountable-tech {
     background-color: #0097FC;
     .details {
