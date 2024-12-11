@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags:
+  - faq
+  - getting-started
 date: 2023-03-20
 url: /faq/how-do-i-join-loopdash
 ---

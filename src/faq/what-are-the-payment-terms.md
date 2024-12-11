@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags:
+  - faq
+  - payment
 date: 2023-03-26
 url: /faq/what-are-the-payment-terms
 ---

@@ -210,6 +210,9 @@ hr {
   flex-wrap: wrap;
   gap: 2rem;
 }
+.flex-center {
+  justify-content: center;
+}
 @media only screen and (max-width: 768px) {
   .flex {
     flex-direction: column;

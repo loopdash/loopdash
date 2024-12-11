@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags:
+  - faq
+  - payment
 date: 2023-03-27
 url: /faq/what-does-it-cost-to-work-with-loopdash
 ---

@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags: 
+  - faq
+  - getting-started
 date: 2023-06-28
 url: /faq/what-kind-of-projects-do-you-work-on
 ---

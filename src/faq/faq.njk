@@ -6,7 +6,7 @@ h2: Everything you need to know about Loopdash
 description: Here you can find answers to questions about our creative & digital services. We understand that it can be hard to choose the right company to work with, so we have compiled a list of frequently asked questions to help you decide. If you have any other questions, please contact us.
 pagination:
   data: collections.faq
-  size: 10
+  size: 50
   alias: questions
 sitemap:
   changefreq: weekly
@@ -15,17 +15,92 @@ sitemap:
 
 <section class="container-sm mx-auto">
   <div class="my-24">
-    <h1 class="text-13 text-weight-400 ">FAQ</h1>
+    <h1 class="text-13 text-weight-400">FAQ</h1>
     <h2 class="text-5 text-weight-400">We've curated answers to the most common questions about our creative and digital services to guide your decision. For anything beyond, our team is here to provide clarity and insight.</h2>
   </div>
-  {% for question in questions | reverse %}
-    <article class="card card-question rounded-7 mb-3">
-      <div class="card-header">
-        <h3 class="text-4 text-weight-500 my-0" role="button">{{ question.data.question }}</h3>
-      </div>
-      <div class="card-body">
-        <p class="text-4">{{ question.templateContent | safe }}</p>
-      </div>
-  </article>
-  {% endfor %}
+
+    <div class="mb-12">
+    {% set currentTag = "getting-started" %}
+    <h3 class="text-2 flex flex-center text-weight-600 text-uppercase">Getting Started</h3>
+    {% for question in questions | reverse %}
+      {% if currentTag in question.data.tags %}
+        <article class="card card-question rounded-7 mb-3">
+          <div class="card-header">
+            <h3 class="text-4 text-weight-400 my-0" role="button">{{ question.data.question }}</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-4">{{ question.templateContent | safe }}</p>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="mb-12">
+    {% set currentTag = "care" %}
+    <h3 class="text-2 flex flex-center text-weight-600 text-uppercase">Care</h3>
+    {% for question in questions | reverse %}
+      {% if currentTag in question.data.tags %}
+        <article class="card card-question rounded-7 mb-3">
+          <div class="card-header">
+            <h3 class="text-4 text-weight-400 my-0" role="button">{{ question.data.question }}</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-4">{{ question.templateContent | safe }}</p>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="mb-12">
+    {% set currentTag = "hosting" %}
+    <h3 class="text-2 flex flex-center text-weight-600 text-uppercase">Hosting</h3>
+    {% for question in questions | reverse %}
+      {% if currentTag in question.data.tags %}
+        <article class="card card-question rounded-7 mb-3">
+          <div class="card-header">
+            <h3 class="text-4 text-weight-400 my-0" role="button">{{ question.data.question }}</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-4">{{ question.templateContent | safe }}</p>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="mb-12">
+    {% set currentTag = "launch" %}
+    <h3 class="text-2 flex flex-center text-weight-600 text-uppercase">Launch</h3>
+    {% for question in questions | reverse %}
+      {% if currentTag in question.data.tags %}
+        <article class="card card-question rounded-7 mb-3">
+          <div class="card-header">
+            <h3 class="text-4 text-weight-400 my-0" role="button">{{ question.data.question }}</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-4">{{ question.templateContent | safe }}</p>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="mb-12">
+    {% set currentTag = "payment" %}
+    <h3 class="text-2 flex flex-center text-weight-600 text-uppercase">Payment</h3>
+    {% for question in questions | reverse %}
+      {% if currentTag in question.data.tags %}
+        <article class="card card-question rounded-7 mb-3">
+          <div class="card-header">
+            <h3 class="text-4 text-weight-400 my-0" role="button">{{ question.data.question }}</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-4">{{ question.templateContent | safe }}</p>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>

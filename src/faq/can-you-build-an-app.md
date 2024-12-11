@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags: 
+  - faq
+  - getting-started
 date: 2023-03-23
 url: /faq/can-you-build-an-app
 ---

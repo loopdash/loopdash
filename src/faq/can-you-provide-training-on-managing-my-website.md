@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags: 
+  - faq
+  - launch
 date: 2024-12-24
 url: /faq/do-you-provide-training
 ---

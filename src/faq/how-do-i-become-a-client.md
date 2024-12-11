@@ -6,7 +6,9 @@ permalink: false
 sitemap:
   changefreq: monthly
   priority: 0.6
-tags: faq
+tags:
+  - faq
+  - getting-started
 date: 2023-03-24
 url: /faq/how-do-i-become-a-client
 ---
