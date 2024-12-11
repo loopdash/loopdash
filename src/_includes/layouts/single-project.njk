@@ -16,12 +16,12 @@
               {% if section.heading or section.paragraph %}
                 <div class="container-lg mx-auto">
                   <div class="flex mb-12">
-                    <div class="col-6">
+                    <div class="col-6 animated">
                       {% if section.heading %}
                         <{{ heading_level | default('h3') }} class="text-9 mb-0 text-weight-600">{{ section.heading | safe }}</{{ section.heading_level | default('h3') }}>
                       {% endif %}
                       {% if section.paragraph %}
-                        <p class="text-5 text-weight-300">{{ section.paragraph | safe }}</p>
+                        <p class="text-4 text-weight-300">{{ section.paragraph | safe }}</p>
                       {% endif %}
                     </div>
                   </div>

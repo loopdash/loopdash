@@ -2,26 +2,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   let lastScrollTop = 0;
   const header = document.querySelector('.site-header');
-  let ticking = false;
+  const animationDuration = 500; // Duration in milliseconds
 
   window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-        // Toggle 'no-sticky' class based on scroll direction
-        if (currentScroll > lastScrollTop) {
-          header.classList.add('no-sticky'); // Scrolling down
-        } else {
-          header.classList.remove('no-sticky'); // Scrolling up
-        }
-
-        lastScrollTop = Math.max(0, currentScroll); // Prevent negative scroll values
-        ticking = false;
-      });
-
-      ticking = true;
+    if (currentScroll > lastScrollTop) {
+      // Scrolling down - hide immediately
+      header.style.animation = 'hideHeader 0.5s forwards';
+    } else {
+      // Scrolling up - slowly hide
+      header.style.animation = 'showHeader 0.5s forwards';
     }
+
+    lastScrollTop = Math.max(0, currentScroll); // Prevent negative scroll values
   });
 
   // Observe elements and add 'visible' class when in viewport
@@ -104,4 +98,23 @@ document.addEventListener('DOMContentLoaded', () => {
 Cal("init", "meet", {origin:"https://cal.com"});
   Cal.ns.meet("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
   
+
+  const cards = document.querySelectorAll(".card-question");
+  cards.forEach((card) => {
+    const header = card.querySelector(".card-header");
+    const body = card.querySelector(".card-body");
+
+    header.addEventListener("click", () => {
+      console.log('click');
+      // Toggle the 'opened' class
+      card.classList.toggle("opened");
+    });
+
+    // Allow keyboard accessibility for toggling
+    header.addEventListener("keypress", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        card.classList.toggle("opened");
+      }
+    });
+  });
 });

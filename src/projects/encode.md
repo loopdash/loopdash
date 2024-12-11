@@ -1,7 +1,7 @@
 ---
 layout: single-project.njk
-title: Encode
-description:
+title: Encode Justice
+description: Encode Justice is leading the charge to regulate AI and create a future where technology is ethical, accountable, and centered on human values. To match the urgency of their mission, we designed a bold, impactful logo and an intuitive, streamlined website that amplify their campaigns and engage their audience. Their new brand identity positions Encode Justice as a leader in ethical AI advocacy, transforming their platform into a powerful tool for change.
 metaImage: 
 project:
   class: encode
@@ -31,19 +31,15 @@ project:
                   alt: ""
                 - src: "./src/img/projects/encode-3.png"
                   alt: ""
-                - src: "./src/img/projects/slideshow-accountable-tech-4.png"
-                  alt: ""
-                - src: "./src/img/projects/slideshow-accountable-tech-3.png"
+                - src: "./src/img/projects/encode-2.png"
                   alt: ""
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/encode-2.png"
+                - src: "./src/img/projects/encode-4.png"
                   alt: ""
-                - src: "./src/img/projects/slideshow-accountable-tech-6.png"
+                - src: "./src/img/projects/encode-5.png"
                   alt: ""
-                - src: "./src/img/projects/slideshow-accountable-tech-2.png"
-                  alt: ""
-                - src: "./src/img/projects/slideshow-accountable-tech-8.png"
+                - src: "./src/img/projects/encode-6.png"
                   alt: ""
         - type: image
           images:
@@ -51,7 +47,7 @@ project:
               alt: "Image 1"
               colSpan: 12
     - heading: Website
-      paragraph: Accountable Tech's website is designed to inform and inspire action, extending the brand's bold visual identity while staying rooted in its past. We focused on clarity and impact, creating a platform that makes complex issues accessible and drives engagement with their campaigns. The result is a site that amplifies their mission and empowers users to take part in the movement for accountability in Big Tech.
+      paragraph: Encode Justice's website serves as a dynamic platform that informs and mobilizes action, reflecting their bold visual identity and commitment to human-centered AI. The design emphasizes clarity and impact, making complex AI issues accessible and engaging.
       content:
         - type: image
           images:
@@ -72,8 +68,8 @@ project:
           images:
             - src: "./src/img/projects/encode-10.jpg"
               alt: ""
-    - heading: Brand Extension
-      paragraph: We refined the logo and typography to align seamlessly with the website’s modern design, creating a cohesive digital identity that amplifies Accountable Tech’s mission. Adjustments to proportions and type hierarchy bring clarity and boldness to the brand, while vibrant yellow call-to-action elements inject energy and draw attention to key actions. These updates pave the way for a more accessible and engaging conversation around Big Tech accountability, ensuring the brand feels both authoritative and approachable in a digital-first context.
+    - heading: Brand Identity
+      paragraph: We revitalized Encode Justice's logo and typography to reflect their bold and forward-thinking mission, creating a cohesive identity that seamlessly integrates with their new digital platform. By refining proportions and modernizing the type hierarchy, we brought clarity and confidence to the brand.
       content:
         - type: image
           images: 
@@ -83,6 +79,9 @@ project:
             - src: "./src/img/projects/encode-1.png"
               alt:
               colSpan: 6
+    - heading: Bold Colors for a Bold Mission
+      paragraph: Deep blue and vibrant orange accents convey trust and urgency, creating a balance between authority and energy. With refined typography and modern proportions, Encode Justice’s updated identity feels bold, approachable, and ready to lead the charge in ethical AI advocacy.
+      content:
         - type: colors
         - type: fullwidth
           images: 
