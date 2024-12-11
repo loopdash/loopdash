@@ -1426,8 +1426,8 @@ hr {
     background-size: 16px 16px;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin: 4px 0 0 0;
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
