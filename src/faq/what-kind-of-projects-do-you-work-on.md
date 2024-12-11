@@ -11,12 +11,12 @@ date: 2023-06-28
 url: /faq/what-kind-of-projects-do-you-work-on
 ---
 
-<p class="font-41">We partner with social welfare and advocacy organizations to boost support, signatures, and donations. Often we find the most value working on campaigns that translate into branding and digital website projects. We like to collaborate closely with visionaries and changemakers who want to make the world a better place. Our holistic approach encompasses:</p>
-<ul class="font-41">
-  <li class="check">Brand / Visual Identity</li>
-  <li class="check">Website Design</li>
-  <li class="check">Website Development</li>
-  <li class="check">EveryAction, ActionNetwork and ActBlue Integrations</li>
-  <li class="check">Conversion Rate Optimization</li>
-  <li class="check">Donation Rate Optimization</li>
+We partner with social welfare and advocacy organizations to boost support, signatures, and donations. Often we find the most value working on campaigns that translate into branding and digital website projects. We like to collaborate closely with visionaries and changemakers who want to make the world a better place. Our holistic approach encompasses:</p>
+<ul class="ul">
+  <li>Brand / Visual Identity</li>
+  <li>Website Design</li>
+  <li>Website Development</li>
+  <li>EveryAction, ActionNetwork and ActBlue Integrations</li>
+  <li>Conversion Rate Optimization</li>
+  <li>Donation Rate Optimization</li>
 </ul>
