@@ -102,6 +102,73 @@ export default function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.setServerOptions({
+    middleware: [
+      (req, res, next) => {
+        // Check if the request is for a proposal
+        if (req.url.startsWith('/proposals')) {
+          const cookies = req.headers.cookie || ""; // Fallback to an empty string if cookies are undefined
+          const password = process.env.PROPOSAL_PASSWORD;
+
+          // Check if the access cookie exists
+          if (!cookies.includes('proposal_access_granted=true')) {
+            // If the password is not provided, show a login form
+            if (req.method === 'GET') {
+              res.statusCode = 401;
+              res.setHeader('Content-Type', 'text/html');
+              res.end(`
+                <html>
+                  <head>
+                    <link rel="stylesheet" href="../../css/normalize.css"/>
+                    <link rel="stylesheet" href="../../css/base.css"/>
+                  </head>
+                  <body>
+                    <div class="container-sm mx-auto">
+                      <div class="password-wrapper">
+                        <form method="POST" class="form-group">
+                          <label class="form-label mb-2" for="password">Password</label>
+                          <input class="form-input" type="password" id="password" name="password" />
+                          <p class="error" aria-live="polite">
+                          </p>
+                          <button type="submit" class="button button-sm">View</button>
+                        </form>
+                      </div>
+                    </div>
+                  </body>
+                </html>
+              `);
+              return;
+            }
+
+            // Handle password submission
+            if (req.method === 'POST') {
+              let body = '';
+              req.on('data', chunk => {
+                body += chunk;
+              });
+
+              req.on('end', () => {
+                const params = new URLSearchParams(body);
+                if (params.get('password') === password) {
+                  res.setHeader('Set-Cookie', 'proposal_access_granted=true; Path=/; HttpOnly');
+                  res.writeHead(302, { Location: req.url });
+                  res.end();
+                } else {
+                  res.statusCode = 401;
+                  res.end('Invalid password');
+                }
+              });
+              return;
+            }
+          }
+        }
+
+        next();
+      }
+    ]
+  });
+
+
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
