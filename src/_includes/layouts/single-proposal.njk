@@ -20,8 +20,8 @@
             <div class="col-4">
               {% if proposal.services %}
                 <div class="mb-8">
-                  <h5 class="text-3 mb-0 text-weight-600 text-uppercase">Services</h5>
-                  <ul class="text-3">
+                  <h5 class="text-3 text-weight-600 text-uppercase mb-2">Services</h5>
+                  <ul class="text-3 ol">
                     {% for service in proposal.services %}
                       <li>{{ service.name }}</li>
                     {% endfor %}
@@ -29,7 +29,9 @@
                 </div>
               {% endif %}
               
-              <div class="flex gap-0.5">
+              <div class="">
+                <h5 class="text-3 text-weight-600 text-uppercase mb-2">Next steps</h5>
+                <p class="text-3 mb-10">We will approach this engagement with careful consideration and thoughtful execution</p>
                 <a href="{{ proposal.url }}" target="_blank" class="button button-sm">Your Proposal</a>
               </div>
             </div>
