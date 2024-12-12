@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include 'head.njk' %}
-    <body>
-      {% include 'nav.njk' %}
-      
-      <main>
-        <section class="container-lg mx-auto">
-          <div class="col-9 my-24">
-            <h1 class="text-10 text-weight-400">{{ proposal.name }}</h1>
-            <h2 class="text-8 text-weight-300">Voluptatem accusantium doloremque laudantium, totam rem aperiam.</h2>
-          </div>
+  {% include 'head.njk' %}
+  <body>
+    {% include 'nav.njk' %}
+    <main>
+      <section class="container-lg mx-auto">
+        <div class="col-9 my-24">
+          <h1 class="text-10 text-weight-400">{{ proposal.name }}</h1>
+          <h2 class="text-8 text-weight-300">Voluptatem accusantium doloremque laudantium, totam rem aperiam.</h2>
+        </div>
 
-          <div class="flex justify-between mb-16">
-            <div class="col-5">
-              <p class="text-5 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.url }}" target="_blank" class="link">your proposal</a>. 
-              <br /><br />
-              The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link">about us</a> or refer to our <a href="/faq" target="_blank" class="link">commonly asked questions</a>.</p>
-            </div>
-            <div class="col-4">
-              {% if proposal.services %}
-                <div class="mb-8">
-                  <h5 class="text-3 text-weight-600 text-uppercase mb-2">Services</h5>
-                  <ul class="text-3 ol">
-                    {% for service in proposal.services %}
-                      <li>{{ service.name }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              {% endif %}
-              
-              <div class="">
-                <h5 class="text-3 text-weight-600 text-uppercase mb-2">Next steps</h5>
-                <p class="text-3 mb-10">We will approach this engagement with careful consideration and thoughtful execution</p>
-                <a href="{{ proposal.url }}" target="_blank" class="button button-sm">Your Proposal</a>
+        <div class="flex justify-between mb-16">
+          <div class="col-5">
+            <p class="text-5 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.url }}" target="_blank" class="link">your proposal</a>. 
+            <br /><br />
+            The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link">about us</a> or refer to our <a href="/faq" target="_blank" class="link">commonly asked questions</a>.</p>
+          </div>
+          <div class="col-4">
+            {% if proposal.services %}
+              <div class="mb-8">
+                <h5 class="text-3 text-weight-600 text-uppercase mb-2">Services</h5>
+                <ul class="text-3 ol">
+                  {% for service in proposal.services %}
+                    <li>{{ service.name }}</li>
+                  {% endfor %}
+                </ul>
               </div>
+            {% endif %}
+            
+            <div class="">
+              <h5 class="text-3 text-weight-600 text-uppercase mb-2">Next steps</h5>
+              <p class="text-3 mb-10">We will approach this engagement with careful consideration and thoughtful execution</p>
+              <a href="{{ proposal.url }}" target="_blank" class="button button-sm">Your Proposal</a>
             </div>
           </div>
+        </div>
 
-        </section>
+      </section>
 
-      </main>
-      {% include 'footer.njk' %}
-    </body>
-  {% if cookies.proposal_access_granted %}
-    {% include 'head.njk' %}
-  {% else %}
-    <div class="container-sm mx-auto">
-      <div class="password-wrapper">
-        <form method="POST" class="form-group">
-          <label class="form-label mb-2" for="password">Password</label>
-          <input class="form-input" type="password" id="password" name="password" />
-          <p class="error" aria-live="polite">
-          </p>
-          <button type="submit" class="button button-sm">View</button>
-        </form>
-      </div>
-    </div>
-  {% endif %}
+    </main>
+    {% include 'footer.njk' %}
+  </body>
 </html>
-
