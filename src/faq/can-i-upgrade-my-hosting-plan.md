@@ -13,4 +13,4 @@ date: 2024-12-24
 url: /faq/can-i-upgrade-my-hosting-plan
 ---
 
-Absolutely! Our hosting plans are designed to be flexible and scalable. You can easily upgrade your hosting plan to accommodate your website’s growth and increased resource requirements without experiencing any downtime.
+Yes, our hosting plans are designed to be flexible and scalable. You can easily upgrade your hosting plan to accommodate your website’s growth and increased resource requirements without experiencing any downtime.

@@ -144,16 +144,16 @@ hr {
 .link {
     background: rgba(0, 0, 0, 0.03);
     border-radius: 5px;
-    padding: 1px 4px;
-    margin: 0 -4px;
+    padding: 1px 6px;
+    margin: 0 -6px;
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 .link:hover {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.ol, .ul {
+.ol, .ul, .card-question .card-body {
   padding-left: 20px;
     li:before {
       margin: 0px 5px 0 -16px;
@@ -163,6 +163,10 @@ hr {
       color: inherit;
       font-size: 70%;
   }
+}
+
+.card-question .card-body ul {
+  margin-left: 20px;
 }
 
 /* Border */
@@ -1405,53 +1409,64 @@ hr {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
   .card-header {
-    padding: 1rem 1.375rem;
+    padding: 1rem .75rem 1rem 1.375rem;
+  }
+
+  :hover h3:after {
+    opacity: 0.8;
   }
 
   .card-body {
     padding: 0 1.375rem 1rem;
-    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
-    display: none;
+    max-height: 0; /* Collapsed state */
+    opacity: 0; /* Fully transparent */
+    overflow: hidden; /* Prevent content overflow */
+    transition: max-height var(--trs-time) var(--trs-tfunc), 
+                opacity var(--trs-time) var(--trs-tfunc);
   }
 
   h3 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   
   h3:after {
     content: "";
     background-image: url("../img/icons/circle-plus.svg");
-    opacity: 0.8;
+    opacity: 0.5;
     background-size: 16px 16px;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     margin: 4px 0 0 0;
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
 }
 
-.card-question.opened  {
+.card-question.opened {
   background-color: rgba(17, 17, 17, .06);
+  
   .card-header {
-    border-bottom: 1px solid rgba(17, 17, 17, .12);;
+    border-bottom: 1px solid rgba(17, 17, 17, .12);
   }
+
   .card-body {
-    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
-    display: block;
+    max-height: 500px; /* Set a max-height large enough for your content */
+    opacity: 1; /* Fully visible */
   }
+
   h3:after {
-    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
     transform: rotate(45deg);
     opacity: 1;
   }
 }
-  
+
 .card-question:hover {
   background-color: rgba(17, 17, 17, .06);
 }
+
 
 .card-at-blue {
   background-color: #1797FC;
@@ -1467,6 +1482,8 @@ hr {
   z-index: 999;
   position: relative;
   .link {
+    background: none;
+    border-radius: 0;
     color: var(--color-charcoal);
     text-decoration: none;
     border-bottom: 1px solid var(--color-charcoal);
