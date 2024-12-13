@@ -62,50 +62,23 @@ export default function (eleventyConfig) {
 
   // Middleware for password protection
   eleventyConfig.setServerOptions({
-    middleware: [
-      (req, res, next) => {
-        const cookies = parseCookies(req.headers?.cookie || '');
-        const password = process.env.PROPOSAL_PASSWORD || 'defaultpassword';
+  middleware: [
+    (req, res, next) => {
+      const cookies = parseCookies(req.headers?.cookie || '');
+      const password = process.env.PROPOSAL_PASSWORD || 'defaultpassword';
 
-        // Check if the cookie indicates access
-        const accessGranted = cookies['proposal_access_granted'] === 'true';
-        req.proposalAccessGranted = accessGranted;
+      // Check if the cookie indicates access
+      const accessGranted = cookies['proposal_access_granted'] === 'true';
+      req.proposalAccessGranted = accessGranted;
 
-        // Attach the value to res.locals for use in templates
-        res.locals = res.locals || {};
-        res.locals.proposalAccessGranted = accessGranted;
+      // Attach the value to res.locals for use in templates
+      res.locals = res.locals || {};
+      res.locals.proposalAccessGranted = accessGranted;
 
-        // Protect `/proposals` routes
-        if (req.url.startsWith('/proposals') && !accessGranted) {
-          if (req.method === 'GET') {
-            res.statusCode = 401;
-            res.setHeader('Content-Type', 'text/html');
-            res.end(`
-              <html>
-                <head>
-                  <link rel="stylesheet" href="../../css/normalize.css"/>
-                  <link rel="stylesheet" href="../../css/base.css"/>
-                  <script src="../../javascript/scripts.js" defer></script>
-                </head>
-                <body>
-                  <main>
-                    <div class="container-sm mx-auto">
-                      <div class="password-wrapper">
-                        <form method="POST" class="form-group">
-                          <label class="form-label mb-2" for="password">Password</label>
-                          <input class="form-input" type="password" id="password" name="password" />
-                          <p class="error" aria-live="polite">
-                          </p>
-                          <button type="submit" class="button button-sm">View</button>
-                        </form>
-                      </div>
-                    </div>
-                  </main>
-                </body>
-              </html>
-            `);
-            return;
-          }
+      // Protect `/proposals` routes
+      if (req.url.startsWith('/proposals') && !accessGranted) {
+        if (req.method === 'GET' || req.method === 'POST') {
+          let errorMessage = '';
 
           if (req.method === 'POST') {
             let body = '';
@@ -119,19 +92,55 @@ export default function (eleventyConfig) {
                 res.setHeader('Set-Cookie', 'proposal_access_granted=true; Path=/; HttpOnly');
                 res.writeHead(302, { Location: req.url });
                 res.end();
+                return;
               } else {
-                res.statusCode = 401;
-                res.end('Invalid password');
+                errorMessage = 'Invalid password. Please try again.';
+                renderForm(res, errorMessage);
               }
             });
             return;
           }
-        }
 
-        next();
-      },
-    ],
-  });
+          renderForm(res, errorMessage);
+          return;
+        }
+      }
+
+      next();
+    },
+  ],
+});
+
+// Helper function to render the password form
+function renderForm(res, errorMessage) {
+  res.statusCode = 401;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`
+    <html>
+      <head>
+        <link rel="stylesheet" href="../../css/normalize.css"/>
+        <link rel="stylesheet" href="../../css/base.css"/>
+        <script src="../../javascript/scripts.js" defer></script>
+      </head>
+      <body>
+        <main>
+          <div class="container-sm mx-auto">
+            <div class="password-wrapper">
+              <h1 class="text-5 text-weight-500 mb-6">View your proposal</h1>
+              <form method="POST" class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" name="password" />
+                ${errorMessage ? `<p class="error" aria-live="polite">${errorMessage}</p>` : ''}
+                <button type="submit" class="button button-sm button-secondary">View</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </body>
+    </html>
+  `);
+}
+
 
 
   // HTML minification

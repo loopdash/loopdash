@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npm run start:eleventy",
+    "start": "npm run watch:css & npm run start:eleventy",
     "start:eleventy": "npx @11ty/eleventy --serve",
-    "build": "npm i && npx @11ty/eleventy"
+    "watch:css": "postcss src/css/*.css --dir _site/css --watch",
+    "build": "npm i && npm run build:css && npx @11ty/eleventy",
+    "build:css": "postcss src/css/*.css --dir _site/css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,6 @@
     "url": "https://github.com/loopdash/loopdash/issues"
   },
   "homepage": "https://github.com/loopdash/loopdash#readme",
-  "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "autoprefixer": "^10.3.1",

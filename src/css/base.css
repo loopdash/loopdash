@@ -12,6 +12,7 @@
   --color-charcoal-light: #78766d;
   --color-charcoal: #262218;
   --color-focus: #1f69ff;
+  --color-error: #f4502f;
   --container: 1260px;
   --mobile: 768px;
   --trs-prop: all;
@@ -923,10 +924,10 @@ hr {
   /* --color-charcoal-light: #3e3e3d;
   --color-charcoal: #1f1f1f; */
 .button {
+  cursor: pointer;
   justify-content: center;
   max-width: fit-content;
   font-family: var(--base-font);
-  /* padding: 11px 26px 14px 26px; */
   padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
   line-height: 1;
   font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
@@ -939,27 +940,32 @@ hr {
   align-items: center;
   box-sizing: border-box;
   margin: 0px;
-  box-shadow: 
-        0 5px 10px rgba(0, 0, 0, 0.3), 
-        inset 0 2px 7px rgba(0, 0, 0, 0.3), 
-        inset 0 4px 7px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.01), inset 0 2px 7px rgba(0, 0, 0, 0.01), inset 0 4px 7px rgba(255, 255, 255, 0.05);
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   transform: translateY(0);
   width: 100%;
 }
 
+.button-secondary {
+  color: var(--color-charcoal);
+  border: 1px solid #cacac7;
+  background: linear-gradient(172deg, #e9e9e5, #cacac7);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.01), inset 0 2px 7px rgba(0, 0, 0, 0.01), inset 0 4px 7px rgba(255, 255, 255, 0.05);
+}
+
+.button-primary:hover, 
+.button-secondary:hover {
+  box-shadow: 
+        0 3px 5px rgba(0, 0, 0, 0.2), 
+        inset 0 -1px 3px rgba(0, 0, 0, 0.2), 
+        inset 0 1px 3px rgba(255, 255, 255, 0.2); /* Adjusted shadows */
+}
+
+
 .button-sm {
   font-size: clamp(0.75rem, 1vw, 0.875rem);
   padding: calc(var(--spacing) * 2.5) calc(var(--spacing) * 4);
   border-radius: .625rem;
-}
-
-.button:hover {
-  transform: translateY(4px); /* Simulates the button being pressed */
-  box-shadow: 
-        0 3px 5px rgba(0, 0, 0, 0.3), 
-        inset 0 -1px 3px rgba(0, 0, 0, 0.4), 
-        inset 0 1px 3px rgba(255, 255, 255, 0.3); /* Adjusted shadows */
 }
 
 .button svg {
@@ -1416,6 +1422,13 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  
+  @media only screen and (max-width: 768px) {
+    .form-group {
+      width: 100%;
+    }
+  }
 }
 
 /* Form */
@@ -1425,22 +1438,19 @@ hr {
     height: 3rem;
     padding: 0 1rem;
     color: #121212;
-    background-color: #f7f7f2;
+    background-color: var(--color-cream);
     border: .125rem rgba(18, 18, 18, .06) solid;
     border-radius: .875rem;
-    -webkit-box-shadow: 0 0 0 4px transparent;
     box-shadow: 0 0 0 4px transparent;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    -webkit-transition-duration: 75ms;
-    transition-duration: 75ms;
+    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-family: "Margiela Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--base-font);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
     line-height: 1;
+    margin-bottom: calc(var(--spacing) * 3)
   }
   .form-input:focus {
     border-color: var(--color-focus);
@@ -1452,6 +1462,15 @@ hr {
     display: block;
     font-weight: 500;
     font-size: clamp(0.875rem, 1.2vw, 1rem);
+    margin-bottom: calc(var(--spacing) * 1.5)
+  }
+  .error {
+    color: var(--color-error);
+    padding: .5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: .875rem;
+    margin: 0 0 calc(var(--spacing) * 1.5) 0;
+    background-color: rgba(228, 48, 12, .06);
   }
 }
 
