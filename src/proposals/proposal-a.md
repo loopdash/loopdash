@@ -1,7 +1,8 @@
 ---
 layout: single-proposal.njk
-title: Proposal A
-description: 
+meta:
+  title:
+  description: 
 sitemap:
 changefreq: monthly
 proposal:

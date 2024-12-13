@@ -1,7 +1,12 @@
 ---
 layout: home.njk
-title: Home
-description:
+meta: 
+  title: Home
+  description:
+pagination:
+  data: collections.projects
+  size: 4
+  alias: projects
 sitemap:
   changefreq: weekly
   priority: 1.0
@@ -14,31 +19,14 @@ sitemap:
 </section>
 
 <section class="projects container-xl">
-  <a href="/projects/accountable-tech" class="project project-ej will-animate">
-    <div class="project-details">
-      <h4 class="text-9 m-0 mb-1 reveal">Encode Justice</h4>
-      <p class="text-6 m-0 text-weight-400 reveal">Empowering the youth to safeguard the future of AI.</p>
-    </div>
-  </a>
-  <a href="/projects/accountable-tech" class="project project-fm will-animate">
-    <div class="project-details">
-      <h4 class="text-9 m-0 mb-1 reveal">Forward Majority</h4>
-      <p class="text-7 m-0 text-weight-400 reveal">A fresh look for a stronger democracy.</p>
-    </div>
-  </a>
-  <a href="/projects/accountable-tech" class="project project-at will-animate">
-    <div class="project-details">
-      <h4 class="text-9 m-0 mb-1 reveal">Accountable Tech</h4>
-      <p class="text-7 m-0 text-weight-400 reveal">A bold new look for a more accountable future.</p>
-    </div>
-  </a>
-  <a href="/projects/accountable-tech" class="project project-ndf reveal">
-    <div class="project-details">
-      <h4 class="text-9 m-0 mb-1 reveal">No Deepfakes for Democracy</h4>
-      <p class="text-7 m-0 text-weight-400 reveal">Fighting deepfakes. Protecting truth.</p>
-    </div>
-  </a>
-  <a href="/projects" class="text-4 link-chevron text-weight-400 pt-6">View more projects</a>
+  {% for project in projects %}
+    <a href="{{project.data.page.url}}" class="project project-{{project.data.project.class}} ">
+      <div class="project-details">
+        <h4 class="text-9 m-0 mb-1 reveal">{{ project.data.title }}</h4>
+        <p class="text-6 m-0 text-weight-400 reveal">{{ project.data.project.tagline }}</p>
+      </div>
+    </a>
+  {% endfor %}
 </section>
 
 <section class="cta">

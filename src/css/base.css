@@ -216,6 +216,9 @@ hr {
   flex-wrap: wrap;
   gap: 2rem;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .flex-center {
   justify-content: center;
 }
@@ -905,6 +908,12 @@ hr {
   }
 }
 
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 /* Home Hero */
 .home-hero {
   padding: 9rem 36px 12rem 36px;
@@ -1049,19 +1058,19 @@ hr {
   transform: translateY(0);
 }
 
-.project-at {
+.project-accountable-tech {
   background-image: 
     linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
     url('../img/projects/cover-accountable-tech-1.jpg');
 }
 
-.project-ndf {
+.project-no-deepfakes-for-democracy {
   background-image: 
     linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
     url('../img/projects/cover-palantir.jpg');
 }
 
-.project-ej {
+.project-encode {
   background-image:
     linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
     url('../img/projects/cover-encode-justice.jpg');
@@ -1548,11 +1557,11 @@ hr {
 }
 
 
-.card-at-blue {
+.card-accountable-tech-blue {
   background-color: #1797FC;
 }
 
-.card-at-light-blue {
+.card-accountable-tech-light-blue {
   background-color: #C2EBFF;
 }
 

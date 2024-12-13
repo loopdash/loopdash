@@ -1,13 +1,12 @@
 ---
 layout: single-project.njk
-meta: 
-  title: Encode Justice
-  description:
+meta:
+  title: No Deepfakes for Democracy
+  description: 
 project:
-  name: Encode Justice
-  description: Encode Justice is leading the charge to regulate AI and create a future where technology is ethical, accountable, and centered on human values. To match the urgency of their mission, we designed a bold, impactful logo and an intuitive, streamlined website that amplify their campaigns and engage their audience. Their new brand identity positions Encode Justice as a leader in ethical AI advocacy, transforming their platform into a powerful tool for change.
-  tagline: Empowering the youth to safeguard the future of AI.
-  class: encode
+  name: No Deepfakes for Democracy
+  tagline: Fighting deepfakes. Protecting truth.
+  class: no-deepfakes-for-democracy
   hero:
     src: "./src/img/projects/cover-encode-justice.jpg"
     alt: Encode WordPress Website
