@@ -38,12 +38,17 @@ export default function (eleventyConfig) {
     }
   );
 
-  eleventyConfig.addNunjucksAsyncShortcode("svgIcon", async (src) => {
+  // {% svgIcon "./src/icons/logo.svg", "icon-class" %}
+  eleventyConfig.addNunjucksAsyncShortcode("svgIcon", async (src, className = "") => {
     let metadata = await eleventyImg(src, {
       formats: ["svg"],
       dryRun: true,
     });
-    return metadata.svg[0].buffer.toString();
+
+    // Add the class to the <svg> tag
+    return metadata.svg[0].buffer
+      .toString()
+      .replace("<svg", `<svg class="${className}"`);
   });
 
   // Environment variables filter

@@ -339,6 +339,23 @@ hr {
   }
 }
 
+/* Width */
+.w-0 { width: 0; }
+.w-1 { width: calc(var(--spacing) * 1); }
+.w-2 { width: calc(var(--spacing) * 2); }
+.w-3 { width: calc(var(--spacing) * 3); }
+.w-4 { width: calc(var(--spacing) * 4); }
+.w-4 { width: calc(var(--spacing) * 5); }
+.w-6 { width: calc(var(--spacing) * 6); }
+
+.icon {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+  overflow: visible;
+  height: 2.5rem;
+}
+
 /* Padding */
 .p-0 { padding: 0; }
 .p-1 { padding: calc(var(--spacing) * 1); }
@@ -915,6 +932,7 @@ hr {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
 /* Home Hero */
 .home-hero {
   padding: 9rem 36px 12rem 36px;
