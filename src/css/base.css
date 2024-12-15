@@ -167,7 +167,20 @@ hr {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.ol, .ul, .card-question .card-body {
+
+.ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+    li:before {
+      margin: 0px 5px 0 -16px;
+      vertical-align: middle;
+      display: inline-block;
+      color: inherit;
+      font-size: 70%;
+  }
+}
+
+.ul, .card-question .card-body {
   padding-left: 20px;
     li:before {
       margin: 0px 5px 0 -16px;
