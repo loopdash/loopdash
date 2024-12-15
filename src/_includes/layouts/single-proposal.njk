@@ -27,10 +27,17 @@
                 </ul>
               </div>
             {% endif %}
+
+            {% if proposal.video %}
+              <div class="mb-8">
+                <h5 class="text-3 text-weight-600 text-uppercase mb-2">Walkthrough</h5>
+                {{ proposal.video | safe }}
+              </div>
+            {% endif %}
             
-            <div class="">
+            <div class="mb-8">
               <h5 class="text-3 text-weight-600 text-uppercase mb-2">Next steps</h5>
-              <p class="text-3 mb-10">We will approach this engagement with careful consideration and thoughtful execution</p>
+              <p class="text-3 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia.</p>
               <a href="{{ proposal.url }}" target="_blank" class="button button-sm">Your Proposal</a>
             </div>
           </div>
