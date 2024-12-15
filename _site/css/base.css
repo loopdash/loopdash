@@ -758,6 +758,10 @@ hr {
   position: relative;
 }
 
+.menu-toggle:hover .bar {
+    background: var(--color-charcoal);
+  }
+
 .menu-toggle .bar {
   height: 3px;
   width: 26px;
@@ -787,6 +791,9 @@ hr {
   background: var(--color-cream);
   transform: translateY(10px) rotate(45deg);
 }
+.nav-opened .menu-toggle:hover .bar {
+    background: var(--color-cream-dark);
+  }
 
 .nav-opened .menu-toggle .bar:nth-child(1)::after {
   content: "";
@@ -915,6 +922,9 @@ hr {
 
 .nav-opened .nav li:nth-child(6) {
   animation-delay: 0.475s; /* +0.3s */
+}
+.nav-opened .nav li:nth-child(7) {
+  animation-delay: 0.550s; /* +0.3s */
 }
 
 
@@ -1589,6 +1599,7 @@ hr {
 
 .card-question.opened {
   background-color: rgba(17, 17, 17, .06);
+  box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.06);
 }
 
 .card-question.opened .card-header {
@@ -1597,7 +1608,7 @@ hr {
   }
 
 .card-question.opened .card-body {
-    max-height: 500px; /* Set a max-height large enough for your content */
+    max-height: 600px; /* Set a max-height large enough for your content */
     opacity: 1; /* Fully visible */
   }
 
