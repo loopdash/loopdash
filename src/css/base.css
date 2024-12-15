@@ -148,7 +148,7 @@ hr {
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
 .text-gradient {
-  background: linear-gradient(to right bottom, var(--color-charcoal) 50%, hsla(0, 0%, 100%, .5));
+  background: linear-gradient(to right bottom, var(--color-charcoal) 50%, hsla(43, 23%, 12%, .1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1552,7 +1552,7 @@ hr {
   
   h3:after {
     content: "";
-    background-image: url("../img/icons/circle-plus.svg");
+    background-image: url("../img/icons/plus-circle.svg");
     opacity: 0.5;
     background-size: 16px 16px;
     background-repeat: no-repeat;
