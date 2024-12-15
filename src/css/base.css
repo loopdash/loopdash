@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 :root {
   --base-font-size: 1rem;
   --base-line-height: 1.275;
   --base-font: "DM Sans", sans-serif;
+  --mono-font: "JetBrains Mono", ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   --border-radius: 12px;
   --color-cream: #f6f6f1;
   --color-cream-dark: #f3f2eb;
@@ -134,6 +137,7 @@ hr {
 }
 
 .text-center { text-align: center; }
+.text-mono { font-family: var(--mono-font); }
 .text-white { color: #ffffff; }
 .text-charcoal-light { color: var(--color-charcoal-light); }
 .text-weight-300 { font-weight: 300 !important; }
@@ -143,6 +147,14 @@ hr {
 .text-weight-550 { font-weight: 550 !important; }
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
+.text-gradient {
+  background: linear-gradient(to right bottom, var(--color-charcoal) 50%, hsla(0, 0%, 100%, .5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: unset;
+}
+
 .link {
     background: #dededd;
     border-radius: 5px;
@@ -639,7 +651,7 @@ hr {
   width: 100%;
   overflow: visible;
   height: 2.5rem;
-  fill: var(--color-charcoal);
+  stroke: var(--color-charcoal) !important;
 }
 .hr {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.0) 0%, rgb(218 211 194) 50%, rgba(0, 0, 0, 0) 100%);
@@ -1009,8 +1021,6 @@ hr {
 .button span {
   display: inline-block;
 }
-
-
 
 /* Projects */
 .projects {
