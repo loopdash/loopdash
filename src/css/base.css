@@ -230,8 +230,11 @@ hr {
   main {
     padding-top: calc(var(--spacing) * 12);
   }
-  .site-footer a { 
-    color: #ffffff;
+  .site-footer {
+    background: var(--color-charcoal);
+    a { 
+      color: #ffffff;
+    }
   }
 }
 
@@ -339,6 +342,9 @@ hr {
 
 
 /* Containers */
+.container-xs {
+  max-width: 480px;
+}
 .container-sm {
   max-width: 640px;
 }
@@ -847,6 +853,20 @@ hr {
   top: 0;
   z-index: 100;
   overflow: hidden;
+
+  .support-link {
+    position: absolute;
+    color: var(--color-cream);
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 0.25rem;
+  }
+  .support-link svg {
+    width: 14px;
+    height: auto;
+    fill: white;
+  }
 }
 
 .nav-opened .nav-container {
@@ -1531,6 +1551,8 @@ hr {
 
 /* Form */
 .form-group {
+  margin-bottom: calc(var(--spacing) * 2);
+
   .form-input {
     width: 100%;
     height: 3rem;
@@ -1549,6 +1571,10 @@ hr {
     font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
     line-height: 1;
     margin-bottom: calc(var(--spacing) * 3)
+  }
+  textarea.form-input {
+    height: 40vh;
+    padding: 1rem;
   }
   .form-input:focus {
     border-color: var(--color-focus);

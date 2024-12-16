@@ -132,11 +132,13 @@ function renderForm(res, errorMessage) {
           <div class="container-sm mx-auto">
             <div class="password-wrapper">
               <h1 class="text-5 text-weight-500 mb-6">View your proposal</h1>
-              <form method="POST" class="form-group">
-                <label class="form-label" for="password">Password</label>
-                <input class="form-input" type="password" id="password" name="password" />
-                ${errorMessage ? `<p class="error" aria-live="polite">${errorMessage}</p>` : ''}
-                <button type="submit" class="button button-sm button-secondary">View</button>
+              <form method="POST" class="form">
+                <div class="form-group">
+                  <label class="form-label" for="password">Password</label>
+                  <input class="form-input" type="password" id="password" name="password" />
+                  ${errorMessage ? `<p class="error" aria-live="polite">${errorMessage}</p>` : ''}
+                  <button type="submit" class="button button-sm button-secondary">View</button>
+                </div>
               </form>
             </div>
           </div>
