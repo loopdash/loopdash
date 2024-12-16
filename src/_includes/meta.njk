@@ -1,9 +1,17 @@
 <meta charset="UTF-8">
-{% set metaTitle =  title + " - Loopdash" %}
-{%- if (metaImage) -%}
-  {% set metaImage = metaImage %}
+
+{%- if data.tags and 'faq' in data.tags -%}
+  {% set metaTitle = "FAQ" %}
+{%- elseif data.tags and 'project' in data.tags -%}
+  {% set metaTitle = data.meta.title %}
 {%- else -%}
-  {% set metaImage =  "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_116_letter_spacing_-5:" + (title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/l_loopdashmark,w_216,h_24,g_north,y_210,g_west,x_60/computer.png" %}
+  {% set metaTitle = meta.title + " - Loopdash" %}
+{%- endif -%}
+
+{%- if (metaImage) -%}
+  {% set metaImage = meta.image %}
+{%- else -%}
+  {% set metaImage =  "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_116_letter_spacing_-5:" + (meta.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/l_loopdashmark,w_216,h_24,g_north,y_210,g_west,x_60/computer.png" %}
 {%- endif -%}
 <link rel="canonical" href="https://loopdash.com{{ page.url | safe }}"/>
 

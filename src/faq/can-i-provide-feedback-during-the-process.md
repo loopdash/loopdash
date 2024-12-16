@@ -1,6 +1,7 @@
 ---
 layout: single-faq.njk
-title: Can I provide feedback during the process?
+meta:
+  title: Can I provide feedback during the process?
 question: Can I provide feedback during the process?
 permalink: false
 sitemap:

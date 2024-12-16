@@ -171,6 +171,7 @@ hr {
 .ol {
   list-style-type: decimal;
   padding-left: 20px;
+  line-height: 150%;
 }
 
 
@@ -184,6 +185,7 @@ hr {
 
 .ul, .card-question .card-body {
   padding-left: 20px;
+  line-height: 150%;
 }
 
 .ul li:before, .card-question .card-body li:before {
@@ -1057,14 +1059,14 @@ hr {
 
 .button svg,
 .button-primary svg {
-  width: 19px;
-  margin: 0 2px 0 -3px;
-  flex-shrink: 0;
+  width: 12px;
+  margin: 0 4px 0 -4px;
   fill: #ffffff;
 }
 .button-secondary svg {
-  width: 14px;
-  padding-right: 0.375rem;
+  width: 12px;
+  margin: 0 4px 0 -4px;
+  fill:  var(--color-charcoal);
 }
 
 .button-sm {

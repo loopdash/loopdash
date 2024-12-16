@@ -32,7 +32,7 @@ sitemap:
   {% for section in sections %}
     <div class="mb-12">
       {% set currentTag = section.tag %}
-      <h3 class="text-2 text-center text-weight-600 text-uppercase">{{ section.title }}</h3>
+      <h3 class="text-2 text-center text-weight-600 text-uppercase">{{ section.question }}</h3>
       {% for question in questions | reverse %}
         {% if currentTag in question.data.tags %}
           <article class="card card-question rounded-7 mb-3 reveal">
