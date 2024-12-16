@@ -13,9 +13,8 @@
         <div class="flex justify-between mb-16">
           <div class="col-5">
             <p class="text-5 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.url }}" target="_blank" class="link">your proposal</a>. 
-            <br /><br />
-            The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link">about us</a> or refer to our <a href="/faq" target="_blank" class="link">commonly asked questions</a>.</p>
           </div>
+
           <div class="col-4">
             {% if proposal.services %}
               <div class="mb-8">
@@ -27,6 +26,11 @@
                 </ul>
               </div>
             {% endif %}
+
+           <div class="mb-8">
+              <h5 class="text-3 text-weight-600 text-uppercase mb-2">Timeline</h5>
+              <p class="text-5 mb-10">The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link">about us</a> or refer to our <a href="/faq" target="_blank" class="link">commonly asked questions</a>.</p>
+           </div>
 
             {% if proposal.video %}
               <div class="mb-8">
