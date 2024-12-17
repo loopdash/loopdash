@@ -2,24 +2,27 @@
 layout: single-project.njk
 meta:
   title: Forward Majority
-  description: Encode Justice is leading the charge to regulate AI and create a future where technology is ethical, accountable, and centered on human values. To match the urgency of their mission, we designed a bold, impactful logo and an intuitive, streamlined website that amplify their campaigns and engage their audience. Their new brand identity positions Encode Justice as a leader in ethical AI advocacy, transforming their platform into a powerful tool for change.
-project:
-  tagline: A bold new look for a more accountable future.
-  class: encode
+  description: 
+project: 
+  name: Forward Majority
+  description: "The national balance of power begins in the states, but Forward Majority’s existing website wasn’t equipped to drive that message home. We built a platform that turns their strategy into action—communicating urgency, rallying supporters, and showcasing their impact with clarity and purpose. With tools for storytelling, engagement, and accessibility, the new site amplifies their mission to secure representative leadership and protect democracy where it's decided: in state capitols."
+  tagline: Rebuilding democracy where it matters most.
+  collaborators:
+    - name: Order
+  class: forward-majority
   hero:
-    src: "./src/img/projects/cover-encode-justice.jpg"
-    alt: Encode WordPress Website
-  industry: Internet Advocacy
+    src: "./src/img/projects/cover-forward-majority.jpg"
+    alt: Forward Majority Website
+  industry: Electoral Advocacy
   services:
-    - name: Brand Identity
     - name: Strategy
     - name: Web Design
     - name: Web Development
   press:
-    - name: Forbes
-    - name: Washington Post
-    - name: Time Magazine
-  website: encodeai.org
+    # - name: Forbes
+    # - name: Washington Post
+    # - name: Time Magazine
+  website: forwardmajority.org
   sections:
     - heading: null
       paragraph: null
@@ -28,7 +31,7 @@ project:
           slideshows:
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/encode-1.png"
+                - src: "./src/img/projects/forward-majority-1.jpg"
                   alt: ""
                 - src: "./src/img/projects/encode-3.png"
                   alt: ""
@@ -44,7 +47,7 @@ project:
                   alt: ""
         - type: image
           images:
-            - src: "./src/img/projects/encode-9.jpg"
+            - src: "./src/img/projects/forward-majority-12.jpg"
               alt: "Image 1"
               colSpan: 12
     - heading: Website
@@ -52,7 +55,7 @@ project:
       content:
         - type: image
           images:
-            - src: "./src/img/projects/encode-14.png"
+            - src: "./src/img/projects/forward-majority-9.png"
               alt: ""
               colSpan: 12
         - type: image
@@ -67,26 +70,14 @@ project:
               cardClass: "card-encode-light"
         - type: fullwidth
           images:
-            - src: "./src/img/projects/encode-10.jpg"
+            - src: "./src/img/projects/forward-majority-10.jpg"
               alt: ""
-    - heading: Brand Identity
-      paragraph: We revitalized Encode Justice's logo and typography to reflect their bold and forward-thinking mission, creating a cohesive identity that seamlessly integrates with their new digital platform. By refining proportions and modernizing the type hierarchy, we brought clarity and confidence to the brand.
+    - heading: null
+      paragraph: null
       content:
-        - type: image
-          images: 
-            - src: "./src/img/projects/encode-2.png"
-              alt: 
-              colSpan: 6
-            - src: "./src/img/projects/encode-1.png"
-              alt:
-              colSpan: 6
-    - heading: Bold Colors for a Bold Mission
-      paragraph: Deep blue and vibrant orange accents convey trust and urgency, creating a balance between authority and energy. With refined typography and modern proportions, Encode Justice’s updated identity feels bold, approachable, and ready to lead the charge in ethical AI advocacy.
-      content:
-        - type: colors
         - type: fullwidth
           images: 
-            - src: "./src/img/projects/encode-11.jpg"
+            - src: "./src/img/projects/forward-majority-13.jpg"
               alt: null
         - type: image
           images: 
@@ -106,5 +97,5 @@ sitemap:
   priority: 0.5
 tags: projects
 date: 2023-12-07
-url: /projects/accountable-tech
+url: /projects/forward-majority
 ---
