@@ -1663,7 +1663,7 @@ hr {
 }
 
 .card-question .card-header {
-    padding: 1rem .75rem 0 1.375rem;
+    padding: 1rem .75rem 0 0.75rem;
   }
 
 .card-question :hover h3:after {
@@ -1671,7 +1671,7 @@ hr {
   }
 
 .card-question .card-body {
-    padding: 0 1.375rem 1rem;
+    padding: 0 0.75rem 1rem;
     max-height: 0; /* Collapsed state */
     opacity: 0; /* Fully transparent */
     overflow: hidden; /* Prevent content overflow */
