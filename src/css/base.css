@@ -1641,7 +1641,7 @@ hr {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
   .card-header {
-    padding: 1rem .75rem 0 1.375rem;
+    padding: 1rem .75rem 0 0.75rem;
   }
 
   :hover h3:after {
@@ -1649,7 +1649,7 @@ hr {
   }
 
   .card-body {
-    padding: 0 1.375rem 1rem;
+    padding: 0 0.75rem 1rem;
     max-height: 0; /* Collapsed state */
     opacity: 0; /* Fully transparent */
     overflow: hidden; /* Prevent content overflow */
@@ -1682,7 +1682,7 @@ hr {
   box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.06);
 
   .card-header {
-    padding: 1rem .75rem 1rem 1.375rem;
+    padding: 1rem .75rem 1rem .75rem;
     border-bottom: 1px solid rgba(17, 17, 17, .12);
   }
 
