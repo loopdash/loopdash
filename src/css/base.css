@@ -1642,7 +1642,7 @@ hr {
   }
 
   .card-body {
-    padding: 0 1.375rem 1rem;
+    padding: 0 0.75rem 1rem;
     max-height: 0; /* Collapsed state */
     opacity: 0; /* Fully transparent */
     overflow: hidden; /* Prevent content overflow */
