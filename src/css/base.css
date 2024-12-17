@@ -1412,6 +1412,13 @@ hr {
     color: #0000004f;
   }
 
+  .quote-forward-majority::before,
+  .quote-forward-majority::after {
+    font-family: Georgia, serif;
+    font-size: 110%;
+    color: #c6c6c680;
+  }
+
   .quote::before {
     content: "“";
     margin-left: -17px;

@@ -51,23 +51,23 @@ project:
               alt: "Image 1"
               colSpan: 12
     - heading: Website
-      paragraph: Encode Justice's website serves as a dynamic platform that informs and mobilizes action, reflecting their bold visual identity and commitment to human-centered AI. The design emphasizes clarity and impact, making complex AI issues accessible and engaging.
+      paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
       content:
         - type: image
           images:
             - src: "./src/img/projects/forward-majority-9.png"
               alt: ""
               colSpan: 12
-        - type: image
-          images: 
-            - src: "./src/img/projects/encode-12.png"
-              alt: 
-              colSpan: 6
-              cardClass: "card-encode-light-blue"
-            - src: "./src/img/projects/encode-13.png"
-              alt:
-              colSpan: 6
-              cardClass: "card-encode-light"
+        # - type: image
+        #   images: 
+        #     - src: "./src/img/projects/encode-12.png"
+        #       alt: 
+        #       colSpan: 6
+        #       cardClass: "card-encode-light-blue"
+        #     - src: "./src/img/projects/encode-13.png"
+        #       alt:
+        #       colSpan: 6
+        #       cardClass: "card-encode-light"
         - type: fullwidth
           images:
             - src: "./src/img/projects/forward-majority-10.jpg"
@@ -79,19 +79,19 @@ project:
           images: 
             - src: "./src/img/projects/forward-majority-13.jpg"
               alt: null
-        - type: image
-          images: 
-            - src: "./src/img/projects/slideshow-accountable-tech-7.png"
-              alt: 
-              colSpan: 6
-            - src: "./src/img/projects/slideshow-accountable-tech-2.png"
-              alt:
-              colSpan: 6
+        # - type: image
+        #   images: 
+        #     - src: "./src/img/projects/slideshow-accountable-tech-7.png"
+        #       alt: 
+        #       colSpan: 6
+        #     - src: "./src/img/projects/slideshow-accountable-tech-2.png"
+        #       alt:
+        #       colSpan: 6
   testimonial:
     quote: >
-      Had a fantastic experience working with Loopdash - the team was accessible and responsive to feedback even when we had changes in vision throughout the process. We're all so pleased with the final product and would 100% work with Loopdash again.
-    author: Sneha Revanur
-    role: Activist & Founder of Encode
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    author: Maddie Coats
+    role: Chief of Staff
 sitemap:
   changefreq: weekly
   priority: 0.5
