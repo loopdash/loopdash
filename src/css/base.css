@@ -1634,7 +1634,7 @@ hr {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
   .card-header {
-    padding: 1rem .75rem 0 1.375rem;
+    padding: 1rem .75rem 0 0.75rem;
   }
 
   :hover h3:after {
