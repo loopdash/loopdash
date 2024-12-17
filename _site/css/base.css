@@ -156,24 +156,22 @@ hr {
 }
 
 .link {
-    background: #dededd;
-    border-radius: 5px;
-    padding: 1px 6px;
-    margin: 0 -6px;
-    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+  background: #dededd;
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin: 0 -6px;
+  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 .link:hover {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   background: rgba(0, 0, 0, 0.15);
 }
 
-
 .ol {
   list-style-type: decimal;
   padding-left: 20px;
   line-height: 150%;
 }
-
 
 .ol li:before {
       margin: 0px 5px 0 -16px;
@@ -1146,24 +1144,28 @@ hr {
   box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.28);
   color: #ffffff;
   text-decoration: none;
+  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
 .project:hover {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   background-size: 105%; /* Zoom in the background */
 }
+
 @media only screen and (max-width: 768px) {
   .project {
     background-size: cover;
   }
-  .project:hover {
-    background-size: cover;
+}
+@media only screen and (max-width: 1260px) {
+  .projects {
+    padding: 1.5rem;
   }
 }
 
 .project.visible {
   opacity: 1;
-  transform: translateY(0);
+  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
 .project-accountable-tech {
@@ -1178,6 +1180,12 @@ hr {
     url('../img/projects/cover-palantir.jpg');
 }
 
+.project-design-it-for-us {
+  background-image: 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
+    url('../img/6esGZ3w8Ks-1440.jpeg');
+}
+
 .project-encode {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
@@ -1190,6 +1198,12 @@ hr {
     url('../img/projects/cover-forward-majority.jpg');
 }
 
+@media only screen and (max-width: 1060px) {
+
+}
+
+
+
 .link-chevron {
   text-decoration: none;
   text-align: center;
@@ -1199,7 +1213,7 @@ hr {
 }
 
 .link-chevron::after {
-  content: url('../images/chevron-right.svg');
+  content: url('../img/icons/chevron-right.svg');
   transform: scale(0.8);
   display: inline-block;
   background-size: contain; /* Ensure the SVG scales properly */
@@ -1448,6 +1462,20 @@ hr {
       color: #00558e;
     }
 
+.single-project-layout .introduction-accountable-tech .details .press-link {
+        color: #00558e;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      }
+
+.single-project-layout .introduction-accountable-tech .details .press-link svg {
+          fill: #00558e;
+        }
+
+.single-project-layout .introduction-accountable-tech .details .press-link:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+
 .single-project-layout .introduction-encode {
     background-color: #ff6347;
   }
@@ -1456,6 +1484,20 @@ hr {
       color: #ffc0b6;
     }
 
+.single-project-layout .introduction-encode .details .press-link {
+        color: #ffc0b6;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      }
+
+.single-project-layout .introduction-encode .details .press-link svg {
+          fill: #ffc0b6;
+        }
+
+.single-project-layout .introduction-encode .details .press-link:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+
 .single-project-layout .introduction-forward-majority {
     background-color: #000000;
   }
@@ -1463,6 +1505,42 @@ hr {
 .single-project-layout .introduction-forward-majority .details {
       color: #b7b5b5;
     }
+
+.single-project-layout .introduction-forward-majority .details .press-link {
+        color: #b7b5b5;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      }
+
+.single-project-layout .introduction-forward-majority .details .press-link svg {
+          fill: #b7b5b5;
+        }
+
+.single-project-layout .introduction-forward-majority .details .press-link:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+
+.single-project-layout .introduction-design-it-for-us {
+    background-color: #009F65;
+  }
+
+.single-project-layout .introduction-design-it-for-us .details {
+      color: #ffffff;
+    }
+
+.single-project-layout .introduction-design-it-for-us .details .press-link {
+        color: #ffffff;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      }
+
+.single-project-layout .introduction-design-it-for-us .details .press-link svg {
+          fill: #ffffff;
+        }
+
+.single-project-layout .introduction-design-it-for-us .details .press-link:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
 
 .single-project-layout .brand-palette {
     display: grid;

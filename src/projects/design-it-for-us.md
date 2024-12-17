@@ -1,31 +1,29 @@
 ---
 layout: single-project.njk
 meta:
-  title: Forward Majority
+  title: Design It For Us
   description: 
 project: 
-  name: Forward Majority
-  description: "The national balance of power begins in the states, but Forward Majority’s existing website wasn’t equipped to drive that message home. We built a platform that turns their strategy into action—communicating urgency, rallying supporters, and showcasing their impact with clarity and purpose. With tools for storytelling, engagement, and accessibility, the new site amplifies their mission to secure representative leadership and protect democracy where it's decided: in state capitols."
-  tagline: Rebuilding democracy where it matters most.
-  collaborators:
-    - name: Order
-  class: forward-majority
+  name: Design It For Us
+  description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+  tagline: Building a safer internet for the next generation.
+  class: design-it-for-us
   hero:
-    src: "./src/img/projects/cover-forward-majority.jpg"
-    alt: Forward Majority Website
-  industry: Electoral Advocacy
+    src: "./src/img/projects/cover-design-it-for-us.jpg"
+    alt: "null"
+  industry: Internet Advocacy
   services:
     - name: Strategy
     - name: Web Design
     - name: Web Development
   press:
-    - name: The Guardian
-      link: https://www.theguardian.com/us-news/2024/sep/17/republican-fundraising-local-elections/
-    - name: Newsweek
-      link: https://www.newsweek.com/fight-democracy-comes-down-suburbs-opinion-1912574/
-    - name: NPR
-      link: https://www.npr.org/2022/10/28/1131815619/2022-state-legislative-races-abortion-voting-november-republicans-democrats/
-  website: forwardmajority.org
+    - name: Axios
+      link: https://www.axios.com/pro/tech-policy/2024/12/03/house-leadership-punts-kids-online-safety-to-next-year/
+    - name: Politico
+      link: https://www.politico.com/news/2024/07/28/children-online-safety-congress-00171487/
+    - name: The Hill
+      link: https://thehill.com/opinion/technology/4722943-my-fathers-day-request-a-safer-internet-in-honor-of-my-lost-son/
+  website: designitforus.org
   sections:
     - heading: null
       paragraph: null

@@ -19,8 +19,11 @@ project:
     - name: Web Development
   press:
     - name: Forbes
-    - name: Washington Post
+      link: https://www.forbes.com/sites/sap/2024/06/24/new-global-study-finds-young-decision-makers-must-help-solve-world-issues/
+    - name: The Washington Post
+      link: https://www.washingtonpost.com/politics/2024/05/16/youth-activists-call-world-leaders-set-ai-safeguards-by-2030/
     - name: Time Magazine
+      link: https://time.com/7131271/ai-2024-elections/
   website: encodeai.org
   sections:
     - heading: null

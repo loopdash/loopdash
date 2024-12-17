@@ -156,17 +156,16 @@ hr {
 }
 
 .link {
-    background: #dededd;
-    border-radius: 5px;
-    padding: 1px 6px;
-    margin: 0 -6px;
-    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+  background: #dededd;
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin: 0 -6px;
+  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 .link:hover {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   background: rgba(0, 0, 0, 0.15);
 }
-
 
 .ol {
   list-style-type: decimal;
@@ -1147,24 +1146,28 @@ hr {
   box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.28);
   color: #ffffff;
   text-decoration: none;
+  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
 .project:hover {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   background-size: 105%; /* Zoom in the background */
 }
+
 @media only screen and (max-width: 768px) {
   .project {
     background-size: cover;
   }
-  .project:hover {
-    background-size: cover;
+}
+@media only screen and (max-width: 1260px) {
+  .projects {
+    padding: 1.5rem;
   }
 }
 
 .project.visible {
   opacity: 1;
-  transform: translateY(0);
+  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
 .project-accountable-tech {
@@ -1179,6 +1182,12 @@ hr {
     url('../img/projects/cover-palantir.jpg');
 }
 
+.project-design-it-for-us {
+  background-image: 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
+    url('../img/6esGZ3w8Ks-1440.jpeg');
+}
+
 .project-encode {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
@@ -1191,6 +1200,12 @@ hr {
     url('../img/projects/cover-forward-majority.jpg');
 }
 
+@media only screen and (max-width: 1060px) {
+
+}
+
+
+
 .link-chevron {
   text-decoration: none;
   text-align: center;
@@ -1200,7 +1215,7 @@ hr {
 }
 
 .link-chevron::after {
-  content: url('../images/chevron-right.svg');
+  content: url('../img/icons/chevron-right.svg');
   transform: scale(0.8);
   display: inline-block;
   background-size: contain; /* Ensure the SVG scales properly */
@@ -1435,18 +1450,68 @@ hr {
     background-color: #0097FC;
     .details {
       color: #00558e;
+      .press-link {
+        color: #00558e;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        svg {
+          fill: #00558e;
+        }
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+      }
     }
   }
   .introduction-encode {
     background-color: #ff6347;
     .details {
       color: #ffc0b6;
+      .press-link {
+        color: #ffc0b6;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        svg {
+          fill: #ffc0b6;
+        }
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+      }
     }
   }
   .introduction-forward-majority {
     background-color: #000000;
     .details {
       color: #b7b5b5;
+      .press-link {
+        color: #b7b5b5;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        svg {
+          fill: #b7b5b5;
+        }
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .introduction-design-it-for-us {
+    background-color: #009F65;
+    .details {
+      color: #ffffff;
+      .press-link {
+        color: #ffffff;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        svg {
+          fill: #ffffff;
+        }
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+      }
     }
   }
   .brand-palette {

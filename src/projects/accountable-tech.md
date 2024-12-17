@@ -18,9 +18,12 @@ project:
     - name: Web Design
     - name: Web Development
   press:
-    - name: Bloomberg
-    - name: Fast Company
+    - name: Axios
+      link: https://www.axios.com/2024/09/30/california-ai-safety-bill-governor-newsom-veto/
     - name: Mashable
+      link: https://mashable.com/video/accountable-tech-ad-mark-zuckerberg-facebook/
+    - name: The Washington Post
+      link: https://www.washingtonpost.com/technology/2024/10/16/instagram-limits-political-content-shadowban-election-posts/
   website: accountabletech.org
   sections:
     - heading: null
