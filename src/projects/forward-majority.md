@@ -33,17 +33,17 @@ project:
               slides:
                 - src: "./src/img/projects/forward-majority-1.jpg"
                   alt: ""
-                - src: "./src/img/projects/encode-3.png"
+                - src: "./src/img/projects/forward-majority-2.png"
                   alt: ""
-                - src: "./src/img/projects/encode-2.png"
+                - src: "./src/img/projects/forward-majority-3.png"
                   alt: ""
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/encode-4.png"
+                - src: "./src/img/projects/forward-majority-3.png"
                   alt: ""
-                - src: "./src/img/projects/encode-5.png"
+                - src: "./src/img/projects/forward-majority-1.jpg"
                   alt: ""
-                - src: "./src/img/projects/encode-6.png"
+                - src: "./src/img/projects/forward-majority-2.png"
                   alt: ""
         - type: image
           images:
