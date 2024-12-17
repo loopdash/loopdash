@@ -1168,25 +1168,25 @@ hr {
 
 .project-accountable-tech {
   background-image: 
-    linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
-    url('../img/projects/cover-accountable-tech-1.jpg');
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
+    url('../img/projects/cover-accountable-tech.jpg');
 }
 
 .project-no-deepfakes-for-democracy {
   background-image: 
-    linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/projects/cover-palantir.jpg');
 }
 
 .project-encode {
   background-image:
-    linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/projects/cover-encode-justice.jpg');
 }
 
 .project-forward-majority {
   background-image:
-    linear-gradient(0deg, #00000088 30%, #ffffff44 100%), 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/projects/cover-forward-majority.jpg');
 }
 
@@ -1327,7 +1327,24 @@ hr {
 
 .single-project-layout .hero {
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 0 1rem;
   }
+
+.single-project-layout .hero h1 {
+      z-index: 999;
+      width: 1024px;
+      overflow: hidden;
+    }
+
+@media only screen and (max-width: 1024px) {
+
+.single-project-layout .hero {
+      padding: 0
+  }
+    }
 
 .single-project-layout .hero::after {
     content: '';
@@ -1336,7 +1353,7 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+    background: linear-gradient(0deg, #0000007d 30%, #ffffff44 100%);
     pointer-events: none;
     z-index: 1;
   }

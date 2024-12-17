@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run watch:css & npm run start:eleventy",
     "start:eleventy": "npx @11ty/eleventy --serve",
-    "watch:css": "postcss src/css/*.css --dir _site/css --watch",
+    "watch:css": "postcss src/css/base.css --dir _site/css --watch",
     "build": "npm i && npm run build:css && npx @11ty/eleventy",
     "build:css": "postcss src/css/*.css --dir _site/css"
   },

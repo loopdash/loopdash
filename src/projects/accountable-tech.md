@@ -9,7 +9,7 @@ project:
   tagline: A bold new look for a more accountable future.
   class: accountable-tech
   hero:
-    src: "./src/img/projects/cover-accountable-tech-1.jpg"
+    src: "./src/img/projects/cover-accountable-tech.jpg"
     alt: Accountable Tech WordPress Website
   industry: Internet Advocacy
   services:
