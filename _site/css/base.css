@@ -1014,8 +1014,10 @@ hr {
 }
 
 /* Home Hero */
-.home-hero {
-  padding: 9rem 36px 12rem 36px;
+.text-set {
+  padding-top: 9rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   text-align: center;
   margin: 0 auto;
   max-width: 32rem;
@@ -1024,8 +1026,12 @@ hr {
   align-items: center;
 } 
 
+.text-set-home {
+  padding: 9rem 3rem 12rem 3rem;
+} 
+
 @media only screen and (max-width: 768px) {
-  .home-hero {
+  .text-set {
     max-width: 90vw;
   } 
 }
