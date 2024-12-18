@@ -777,10 +777,18 @@ hr {
   cursor: pointer;
   z-index: 999;
   position: relative;
+  padding: 0.25rem 0.5rem;
 }
-
+.menu-toggle:hover {
+    background: rbga(255,255,255, 0.4);
+  }
 .menu-toggle:hover .bar {
-    background: var(--color-charcoal);
+      background: var(--color-charcoal);
+    }
+.menu-toggle:focus {
+    border-color: var(--color-focus);
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(31, 105, 255, .14);
   }
 
 .menu-toggle .bar {
@@ -1041,6 +1049,12 @@ hr {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   transform: translateY(0);
   width: 100%;
+}
+
+.button:focus {
+  border-color: var(--color-focus);
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(31, 105, 255, .14);
 }
 
 .button:hover,
@@ -1703,20 +1717,24 @@ hr {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-family: var(--base-font);
-    font-weight: 500;
-    font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
+    font-weight: 400;
     line-height: 1;
-    margin-bottom: calc(var(--spacing) * 3)
-  }
-.form-group textarea.form-input {
-    height: 40vh;
-    padding: 1rem;
+    margin-bottom: calc(var(--spacing) * 3);
   }
 .form-group .form-input:focus {
-    border-color: var(--color-focus);
-    outline: 0;
-    box-shadow: 0 0 0 4px rgba(31, 105, 255, .14);
+      border-color: var(--color-focus);
+      outline: 0;
+      box-shadow: 0 0 0 4px rgba(31, 105, 255, .14);
+    }
+.form-group .form-input:placeholder {
+      font-size: clamp(0.75rem, 1vw, 0.875rem);
+      font-weight: 400;
+      font-family: var(--base-font);
+    }
+.form-group textarea.form-input {
+    height: 30vh;
+    padding: 1rem;
   }
 .form-group .form-label {
     display: block;
