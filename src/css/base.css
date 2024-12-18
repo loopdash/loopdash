@@ -1804,7 +1804,7 @@ hr {
   &:hover {
     transform: translateY(-2px); /* Moves the card slightly up */
     border-color: rgba(18, 18, 18, 0.1); /* Increases border contrast */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); /* Adds a subtle shadow */
+    background: rgba(17, 17, 17, .06);
   }
 }
 
@@ -1815,7 +1815,7 @@ hr {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
   .card-header {
-    padding: 1rem .75rem 0 0.75rem;
+    padding: 1rem 1.25rem 0 1.25rem;
   }
 
   :hover h3:after {
@@ -1823,7 +1823,7 @@ hr {
   }
 
   .card-body {
-    padding: 0 0.75rem 1rem;
+    padding: 0 1.25rem 1.25rem 1.25rem;
     max-height: 0; /* Collapsed state */
     opacity: 0; /* Fully transparent */
     overflow: hidden; /* Prevent content overflow */
@@ -1856,7 +1856,7 @@ hr {
   box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.06);
 
   .card-header {
-    padding: 1rem .75rem 1rem .75rem;
+    padding: 1rem 1.25rem 1rem 1.25rem;
     border-bottom: 1px solid rgba(17, 17, 17, .12);
   }
 

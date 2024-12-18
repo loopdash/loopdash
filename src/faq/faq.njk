@@ -36,10 +36,10 @@ sitemap:
       {% for question in questions | reverse %}
         {% if currentTag in question.data.tags %}
           <article class="card card-question rounded-7 mb-3 reveal">
-            <div class="card-header">
-              <h3 class="text-4 text-weight-400 my-0" role="button">{{ question.data.question }}</h3>
+            <div class="card-header" tabindex="0" role="button" aria-expanded="false" aria-controls="content-{{ loop.index }}">
+              <h3 class="text-4 text-weight-400 my-0">{{ question.data.question }}</h3>
             </div>
-            <div class="card-body text-4">
+            <div class="card-body text-4 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
               {{ question.templateContent | safe }}
             </div>
           </article>
