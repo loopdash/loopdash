@@ -8,7 +8,9 @@ meta:
 sitemap:
   changefreq: weekly
   priority: 0.5
-tags: blogs
+tags:
+  - blogs
+  - guide
 date: 2023-03-04
 url: /blog/fix-wordpress-internal-server-error
 ---

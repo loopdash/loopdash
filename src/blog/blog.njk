@@ -12,25 +12,43 @@ sitemap:
   priority: 0.7
 ---
 
-<section class="container-lg mx-auto">
-  <div class="text-set pb-16">
+<section class="container-lg flex mx-auto">
+  <div class="col-5 pt-16 pb-16">
     <h1 class="text-12 text-weight-550 text-gradient">Blog</h1>
     <p class="text-7 text-charcoal-light text-weight-400">Where ideas take shape.</p>
   </div>
 
-  <div class="mb-12 mx-auto flex container-lg">
+  <div class="mb-12 mx-auto flex col-7">
     {% for blog in blogs | reverse %}
-      <a href="{{ blog.data.url }}" class="rounded-7 col-6">
-        <article class="mb-16">
-          {% if blog.data.meta.image %}
-            {% set img = blog.data.meta.image %}
-          {% else %}
-            {% set img = "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
-          {% endif %}
+
+      {# set filteredTags #}
+      {% set filteredTags = [] %}
+      {% for tag in blog.data.tags %}
+        {% if tag != "blogs" %}
+          {% set filteredTags = filteredTags.concat(tag) %}
+        {% endif %}
+      {% endfor %}
+
+      {# set image #}
+      {% if blog.data.meta.image %}
+        {% set img = blog.data.meta.image %}
+      {% else %}
+        {% set img = "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
+      {% endif %}
+
+      <a href="{{ blog.data.url }}" class="rounded-7">
+        <article class="mb-8">
           {% image img, "asdf", [2200, 800], ["jpeg", "webp"] %}
+          <div class="flex flex-no-wrap">
+            <div class="col-10">
+              <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
+            </div>
+            <div class="col-2 align-self-center">
+              <span class="tag">{{ filteredTags }}</span>
+            </div>
+          </div>
           
           
-          <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
           <div class="text-3 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
             {{ blog.data.meta.description | safe }}
           </div>

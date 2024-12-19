@@ -250,8 +250,14 @@ hr {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
 .flex-center {
   justify-content: center;
+}
+.align-self-center {
+  align-self: center;
 }
 .gap-1 {
   gap: 1rem;
@@ -676,6 +682,7 @@ hr {
   width: 100%;
   overflow: visible;
   height: 2.5rem;
+  fill: #78766d;
 }
 
 .icon-wrapper {
@@ -1119,6 +1126,14 @@ hr {
     fill: var(--color-charcoal);
   }
 
+.tag {
+  /* font-size: clamp(0.625rem, 0.8vw, 0.75rem); */
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  background: #edede5;
+  padding: 0.125rem .875rem;
+  border: 1px solid rgba(18, 18, 18, .06);
+  border-radius: 50px;
+}
 
 /* Projects */
 .projects {

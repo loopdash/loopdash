@@ -8,7 +8,9 @@ meta:
 sitemap:
   changefreq: weekly
   priority: 0.5
-tags: blogs
+tags:
+  - blogs
+  - guide
 date: 2021-07-14
 url: /blog/how-to-delegate-access-to-godaddy
 ---

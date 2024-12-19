@@ -8,7 +8,9 @@ meta:
 sitemap:
   changefreq: weekly
   priority: 0.5
-tags: blogs
+tags:
+  - blogs
+  - opinion
 date: 2022-05-23
 url: /blog/wordpress-vs-squarespace
 ---
