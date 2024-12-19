@@ -2,8 +2,9 @@
 layout: single-blog.njk
 title: Does My Site Need an SSL?
 meta:
-   title: Does My Site Need an SSL?
-   description: Running a website, app or something on the internet? Having an SSL certificate is no longer treated as a luxury, but a necessity.
+  title: Does My Site Need an SSL?
+  description: Running a website, app or something on the internet? Having an SSL certificate is no longer treated as a luxury, but a necessity.
+  image: ./src/img/blogs/ghost.jpg
 sitemap:
   changefreq: weekly
   priority: 0.5

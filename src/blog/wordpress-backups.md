@@ -2,8 +2,9 @@
 layout: single-blog.njk
 title: WordPress backups; do I need them?
 meta:
-   title: WordPress backups; do I need them?
-   description: Creating daily backups for WordPress websites is essential for several reasons.
+  title: WordPress backups; do I need them?
+  description: Creating daily backups for WordPress websites is essential for several reasons.
+  image: ./src/img/blogs/marbel.jpg
 sitemap:
   changefreq: weekly
   priority: 0.5

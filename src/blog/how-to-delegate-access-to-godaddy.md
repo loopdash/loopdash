@@ -2,8 +2,9 @@
 layout: single-blog.njk
 title: How to Delegate Access to GoDaddy
 meta:
-   title: How to Delegate Access to GoDaddy
-   description: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
+  title: How to Delegate Access to GoDaddy
+  description: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
+  image: ./src/img/blogs/leaf.jpg
 sitemap:
   changefreq: weekly
   priority: 0.5

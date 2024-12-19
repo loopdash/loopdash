@@ -12,20 +12,26 @@ sitemap:
   priority: 0.7
 ---
 
-<section class="container-sm mx-auto">
-  <div class="mt-12 mb-12">
-    <h1 class="text-13 text-weight-400 text-gradient">Blog</h1>
-    <h2 class="text-5 text-charcoal-light text-weight-400">We've curated answers to the most common questions about our creative and digital services to guide your decision. For anything beyond, our team is here to provide clarity and insight.</h2>
+<section class="container-lg mx-auto">
+  <div class="text-set pb-16">
+    <h1 class="text-12 text-weight-550 text-gradient">Blog</h1>
+    <p class="text-7 text-charcoal-light text-weight-400">Where ideas take shape.</p>
   </div>
 
-  <div class="mb-12">
+  <div class="mb-12 mx-auto flex container-lg">
     {% for blog in blogs | reverse %}
-      <a href="{{ blog.data.url }}" class="rounded-7">
-        <article class="mb-10">
-          {% set img =  "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
-          <img src="{{ img }}" />
-          <h3 class="text-6 text-weight-500 mb-2">{{ blog.data.title }}</h3>
-          <div class="text-4 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
+      <a href="{{ blog.data.url }}" class="rounded-7 col-6">
+        <article class="mb-16">
+          {% if blog.data.meta.image %}
+            {% set img = blog.data.meta.image %}
+          {% else %}
+            {% set img = "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
+          {% endif %}
+          {% image img, "asdf", [2200, 800], ["jpeg", "webp"] %}
+          
+          
+          <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
+          <div class="text-3 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
             {{ blog.data.meta.description | safe }}
           </div>
         </article>

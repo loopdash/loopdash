@@ -166,7 +166,8 @@ function renderForm(res, errorMessage) {
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
-   eleventyConfig.addPassthroughCopy("src/img/icons/");
+  eleventyConfig.addPassthroughCopy("src/img/icons/");
+  eleventyConfig.addPassthroughCopy("src/javascript/");
 
   return {
     dir: {
