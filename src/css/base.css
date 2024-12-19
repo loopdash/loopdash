@@ -148,7 +148,7 @@ hr {
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
 .text-gradient {
-  background: linear-gradient(to right bottom, var(--color-charcoal) 50%, hsla(43, 23%, 12%, .1));
+  background: linear-gradient(to right bottom, var(--color-charcoal) 50%, hsl(43deg 23% 12% / 30%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1772,6 +1772,7 @@ hr {
   .form-label {
     display: block;
     font-weight: 500;
+    color: var(--color-charcoal-light);
     font-size: clamp(0.875rem, 1.2vw, 1rem);
     margin-bottom: calc(var(--spacing) * 1.5)
   }
@@ -1807,10 +1808,12 @@ hr {
       var(--color-cream) 100%);
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-2px); /* Moves the card slightly up */
     border-color: rgba(18, 18, 18, 0.1); /* Increases border contrast */
     background: rgba(17, 17, 17, .06);
+    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
 }
 
