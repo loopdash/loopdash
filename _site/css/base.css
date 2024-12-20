@@ -1962,9 +1962,8 @@ hr {
     position: relative;
     border-radius: 1rem;
     padding: 1rem 2rem;
-    filter: blur(30px);
-    -webkit-backdrop-filter: blur(23px);
-            backdrop-filter: blur(23px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
 
 
@@ -2059,6 +2058,37 @@ hr {
     font-size: 16px;
     color: #666;
 }
+
+.support-layout .navbar {
+    margin: -88px auto 0;
+  }
+
+.support-layout .support-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+.support-layout .support-content .half-image {
+      min-height: 400px;
+      width: 100%;
+      background-image: url('../img/passthrough/marbel-flow.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+@media only screen and (min-width: 768px) {
+
+    .support-layout .support-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+      .support-layout .support-content .half-image {
+        height: auto;
+        width: 50vw;
+      }
+}
+
 /* Footer */
 .site-footer {
   background: var(--color-cream);
