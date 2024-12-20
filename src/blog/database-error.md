@@ -4,7 +4,7 @@ title: Fix Error Establishing Connection to Database
 meta:
    title: Fix Error Establishing Connection to Database
    description: Error establishing database connection on your WordPress site is caused by a number of different issues.
-   image: ./src/img/blogs/wood.jpg
+   image: ./src/img/blogs/wool.jpg
 sitemap:
   changefreq: weekly
   priority: 0.5

@@ -67,31 +67,37 @@ hr {
   line-height: clamp(1.125rem, 1.5vw, 1.25rem);
 }
 
+.single-blog-layout h6,
 .text-4 {
   font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
   line-height: clamp(1.25rem, 1.75vw, 1.375rem);
 }
 
+.single-blog-layout h5,
 .text-5 {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   line-height: clamp(1.375rem, 2vw, 1.5rem);
 }
 
+.single-blog-layout h4,
 .text-6 {
   font-size: clamp(1.125rem, 1.75vw, 1.5rem);
   line-height: clamp(1.5rem, 2.25vw, 1.75rem);
 }
 
+.single-blog-layout h3,
 .text-7 {
   font-size: clamp(1.25rem, 2vw, 1.625rem);
   line-height: clamp(1.75rem, 2.5vw, 2rem);
 }
 
+.single-blog-layout h2,
 .text-8 {
   font-size: clamp(1.375rem, 2.25vw, 1.75rem);
   line-height: clamp(1.875rem, 2.75vw, 2.25rem);
 }
 
+.single-blog-layout h1,
 .text-9 {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: clamp(2rem, 3vw, 2.5rem);
@@ -1908,6 +1914,52 @@ hr {
 .card-accountable-tech-light-blue {
   background-color: #C2EBFF;
 }
+
+/* single-blog */
+.single-blog-layout {
+  .image-wrapper {
+    max-width: 1024px;
+    img {
+      border-radius: 0;
+    }
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    margin-top: calc(var(--spacing) * 8);
+  }
+
+  .content {
+    margin-top: 0rem;
+    background-color: #f6f6f14f;
+    z-index: 9999;
+    position: relative;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    fliter: blur(30px);
+    backdrop-filter: blur(23px);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .single-blog-layout {
+    .image-wrapper  {
+      img {
+        border-radius: var(--border-radius);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .single-blog-layout {
+    .content {
+      margin-top: -10rem;
+    }
+  }
+}
+
 
 /* Footer */
 .site-footer {
