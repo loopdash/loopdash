@@ -90,9 +90,9 @@ project:
         #       colSpan: 6
   testimonial:
     quote: >
-      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    author: First Name
-    role: Last Name
+      The Loopdash team listened to our unique needs for a website, and quickly turned our dreams into a reality. We’re grateful for the bright, bold, and functional site they created for our coalition.
+    author: Alison Rice
+    role: Senior Campaign Manager
 sitemap:
   changefreq: weekly
   priority: 0.5

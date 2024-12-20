@@ -55,87 +55,104 @@ hr {
 .text-1 {
   font-size: clamp(0.625rem, 0.8vw, 0.75rem);
   line-height: clamp(0.875rem, 1vw, 1rem);
+  margin: 0 0  calc(clamp(0.875rem, 1vw, 1rem) * 0.5) 0;
 }
 
 .text-2 {
   font-size: clamp(0.75rem, 1vw, 0.875rem);
   line-height: clamp(1rem, 1.25vw, 1.125rem);
-}
-
-.text-3 {
-  font-size: clamp(0.875rem, 1.2vw, 1rem);
-  line-height: clamp(1.125rem, 1.5vw, 1.25rem);
+  margin: 0 0  calc(clamp(1rem, 1.25vw, 1.125rem) * 0.5) 0;
 }
 
 .single-blog-layout h6,
-.text-4 {
-  font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
-  line-height: clamp(1.25rem, 1.75vw, 1.375rem);
+.text-3 {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  line-height: clamp(1.125rem, 1.5vw, 1.25rem);
+  margin: 0 0  calc(clamp(1.125rem, 1.5vw, 1.25rem) * 0.5) 0;
 }
 
 .single-blog-layout h5,
-.text-5 {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  line-height: clamp(1.375rem, 2vw, 1.5rem);
+.single-blog-layout p,
+.text-4 {
+  font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
+  line-height: clamp(1.25rem, 1.75vw, 1.375rem);
+  margin: 0 0  calc(clamp(1.25rem, 1.75vw, 1.375rem) * 0.5) 0;
 }
 
 .single-blog-layout h4,
-.text-6 {
-  font-size: clamp(1.125rem, 1.75vw, 1.5rem);
-  line-height: clamp(1.5rem, 2.25vw, 1.75rem);
+.text-5 {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: clamp(1.375rem, 2vw, 1.5rem);
+  margin: 0 0  calc(clamp(1.375rem, 2vw, 1.5rem) * 0.5) 0;
 }
 
 .single-blog-layout h3,
-.text-7 {
-  font-size: clamp(1.25rem, 2vw, 1.625rem);
-  line-height: clamp(1.75rem, 2.5vw, 2rem);
+.text-6 {
+  font-size: clamp(1.125rem, 1.75vw, 1.5rem);
+  line-height: clamp(1.5rem, 2.25vw, 1.75rem);
+  margin: 0 0  calc(clamp(1.5rem, 2.25vw, 1.75rem) * 0.5) 0;
 }
 
 .single-blog-layout h2,
+.text-7 {
+  font-size: clamp(1.25rem, 2vw, 1.625rem);
+  line-height: clamp(1.75rem, 2.5vw, 2rem);
+  margin: 0 0  calc(clamp(1.75rem, 2.5vw, 2rem) * 0.5) 0;
+}
+
 .text-8 {
   font-size: clamp(1.375rem, 2.25vw, 1.75rem);
   line-height: clamp(1.875rem, 2.75vw, 2.25rem);
+  margin: 0 0  calc(clamp(1.875rem, 2.75vw, 2.25rem) * 0.5) 0;
 }
 
 .single-blog-layout h1,
 .text-9 {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: clamp(2rem, 3vw, 2.5rem);
+  margin: 0 0  calc(clamp(2rem, 3vw, 2.5rem) * 0.5) 0;
 }
 
 .text-10 {
   font-size: clamp(1.875rem, 2.75vw, 2.25rem);
   line-height: clamp(2.25rem, 3.5vw, 2.75rem);
+  margin: 0 0  calc(clamp(2.25rem, 3.5vw, 2.75rem) * 0.5) 0;
 }
 
 .text-11 {
   font-size: clamp(2.25rem, 3vw, 2.5rem);
   line-height: clamp(2.5rem, 4vw, 3rem);
+  margin: 0 0  calc(clamp(2.5rem, 4vw, 3rem) * 0.5) 0;
 }
 
 .text-12 {
   font-size: clamp(2.625rem, 3.5vw, 3rem);
   line-height: clamp(2.75rem, 4.5vw, 3.25rem);
+  margin: 0 0  calc(clamp(2.75rem, 4.5vw, 3.25rem) * 0.5) 0;
 }
 
 .text-13 {
   font-size: clamp(3rem, 4vw, 3.5rem);
   line-height: clamp(3rem, 4.5vw, 3.5rem);
+  margin: 0 0  calc(clamp(3rem, 4.5vw, 3.5rem) * 0.5) 0;
 }
 
 .text-14 {
   font-size: clamp(3.375rem, 4.5vw, 4rem);
   line-height: clamp(3.375rem, 5vw, 4rem);
+  margin: 0 0  calc(clamp(3.375rem, 5vw, 4rem) * 0.5) 0;
 }
 
 .text-15 {
   font-size: clamp(3.75rem, 5vw, 4.5rem);
   line-height: clamp(3.75rem, 5.5vw, 4.5rem);
+  margin: 0 0  calc(clamp(3.75rem, 5.5vw, 4.5rem) * 0.5) 0;
 }
 
 .text-16 {
   font-size: clamp(4.5rem, 6vw, 5rem);
   line-height: clamp(4.5rem, 6.5vw, 5.5rem);
+  margin: 0 0  calc(clamp(4.5rem, 6.5vw, 5.5rem) * 0.5) 0;
 }
 
 .letter-spacing-1 {
@@ -833,7 +850,7 @@ hr {
 .menu-toggle .bar {
   height: 3px;
   width: 26px;
-  background: var(--color-charcoal-light);
+  background: var(--color-charcoal);
   border-radius: 2px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   position: absolute;
@@ -994,12 +1011,13 @@ hr {
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
   padding: calc(var(--spacing) * 1) 0;
+  margin: 0;
 }
 
 .nav a.menu-item:hover {
   color: var(--color-cream);
   transform: scale(1.03);
-  margin-left: 10px;
+  margin-left: 1.5rem;
 }
 
 
@@ -1302,9 +1320,6 @@ hr {
     }
   }
 }
-
-
-
 
 
 /* cta */
@@ -1917,6 +1932,11 @@ hr {
 
 /* single-blog */
 .single-blog-layout {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    color: var(--color-charcoal);
+  }
+
   .image-wrapper {
     max-width: 1024px;
     img {
@@ -1931,12 +1951,13 @@ hr {
 
   .content {
     margin-top: 0rem;
-    background-color: #f6f6f14f;
+    background-color: #f6f6f194;
+    box-shadow: none;
     z-index: 999;
     position: relative;
     border-radius: 1rem;
     padding: 1rem 2rem;
-    fliter: blur(30px);
+    filter: blur(30px);
     backdrop-filter: blur(23px);
   }
 }
@@ -1949,6 +1970,9 @@ hr {
         border-radius: var(--border-radius);
       }
     }
+    .content {
+      box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.03);
+    }
   }
 }
 
@@ -1960,7 +1984,81 @@ hr {
   }
 }
 
+/* browser */
+.browser {
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
+.browser-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #d9d9d7;
+    border-bottom: 1px solid #ccc;
+}
+
+.browser-controls {
+    display: flex;
+    gap: 8px;
+    margin-right: 16px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.control.close {
+    background-color: #ff5f56;
+}
+
+.control.minimize {
+    background-color: #ffbd2e;
+}
+
+.control.maximize {
+    background-color: #27c93f;
+}
+
+.browser-address-bar {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.browser-address-bar input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.browser-content {
+  img {
+    border-radius: 0;  
+  }
+  text-align: center;
+}
+
+.browser-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.browser-content p {
+    font-size: 16px;
+    color: #666;
+}
 /* Footer */
 .site-footer {
   background: var(--color-cream);
