@@ -1932,7 +1932,7 @@ hr {
   .content {
     margin-top: 0rem;
     background-color: #f6f6f14f;
-    z-index: 9999;
+    z-index: 999;
     position: relative;
     border-radius: 1rem;
     padding: 1rem 2rem;
