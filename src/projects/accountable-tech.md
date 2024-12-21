@@ -4,6 +4,7 @@ meta:
   title: Accountable Tech
   description:
 project:
+  featured: true
   name: Accountable Tech
   description: "Accountable Tech came to us with a powerful mission: to hold Big Tech accountable and advocate for a safer digital future. Their existing website wasn't doing their vision justice. We crafted a bold, purpose-driven platform that amplifies their voice, strengthens campaigns, and empowers their team with tools for storytelling, SEO, and accessibility. The result is a website that embodies their mission and positions them as leaders in the fight for accountability in the tech industry."
   tagline: A bold new look for a more accountable future.

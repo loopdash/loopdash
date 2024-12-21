@@ -980,6 +980,12 @@ hr {
     right: 2rem;
     display: flex;
     gap: 0.25rem;
+    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+
+    &:hover {
+      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      transform: translateY(-2px); /* Moves the card slightly up */
+    }
     
     svg {
       width: 14px;
@@ -1017,7 +1023,7 @@ hr {
 .nav a.menu-item:hover {
   color: var(--color-cream);
   transform: scale(1.03);
-  margin-left: 1.5rem;
+  margin-left: 2.5rem;
 }
 
 
@@ -1513,7 +1519,18 @@ hr {
     }
   }
   .introduction {
-    margin-bottom: calc(var(--spacing) * 16);
+
+    .details {
+
+      ul {
+        list-style: none;
+        margin-bottom: calc(var(--spacing) * 8);
+
+        li {
+          margin-left: -40px;
+        }
+      }
+    }
   }
 
   .quote::before,
@@ -1546,6 +1563,7 @@ hr {
     background-color: #0097FC;
     .details {
       color: #00558e;
+
       .link-chevron {
         color: #00558e;
         transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
@@ -1600,7 +1618,8 @@ hr {
         color: #b7b5b5;
         transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
         &:after {
-          filter: brightness(0) saturate(100%);
+          filter: brightness(0) saturate(100%)
+              invert(73%) sepia(0%) saturate(0%) hue-rotate(12deg) brightness(96%) contrast(86%);
         }
         &:hover {
           transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
@@ -1618,12 +1637,15 @@ hr {
   .introduction-design-it-for-us {
     background-color: #009F65;
     .details {
-      color: #ffffff;
+      color: #086e46;
       .link-chevron {
-        color: #ffffff;
+        color: #086e46;
         transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
         &:after {
-          filter: brightness(0) saturate(100%) invert(100%);
+          filter:
+            brightness(0) saturate(100%)
+            invert(16%) sepia(89%) saturate(579%) hue-rotate(120deg) brightness(93%) contrast(100%);
+            opacity: 0.5;
         }
         &:hover {
           transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
@@ -1631,7 +1653,7 @@ hr {
           &:after {
             filter:
               brightness(0) saturate(100%)
-              invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+              invert(16%) sepia(89%) saturate(579%) hue-rotate(120deg) brightness(93%) contrast(100%);
           }
         }
       }
@@ -1767,6 +1789,15 @@ hr {
 }
 
 /* Form */
+form input,
+form textarea,
+form select,
+form button {
+  max-width: 100%; /* Prevents individual elements from overflowing */
+  width: 100%; /* Stretches elements to fill the form */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
+
 .form-group {
   margin-bottom: calc(var(--spacing) * 2);
 
@@ -1933,11 +1964,12 @@ hr {
 /* single-blog */
 .blog-layout {
   .navbar {
-    margin: -88px auto 0;
+    margin: -94px auto 0;
   }
 }
 
-.single-blog-layout {
+.single-blog-layout,
+.support-layout {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     color: var(--color-charcoal);
@@ -1989,85 +2021,9 @@ hr {
   }
 }
 
-/* browser */
-.browser {
-    width: 800px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.browser-header {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    background-color: #d9d9d7;
-    border-bottom: 1px solid #ccc;
-}
-
-.browser-controls {
-    display: flex;
-    gap: 8px;
-    margin-right: 16px;
-}
-
-.control {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.control.close {
-    background-color: #ff5f56;
-}
-
-.control.minimize {
-    background-color: #ffbd2e;
-}
-
-.control.maximize {
-    background-color: #27c93f;
-}
-
-.browser-address-bar {
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.browser-address-bar input {
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.browser-content {
-  img {
-    border-radius: 0;  
-  }
-  text-align: center;
-}
-
-.browser-content h1 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.browser-content p {
-    font-size: 16px;
-    color: #666;
-}
-
 .support-layout {
   .navbar {
-    margin: -88px auto 0;
+    margin: -94px auto 0;
   }
 
   .support-content {
@@ -2075,11 +2031,7 @@ hr {
     flex-direction: column;
 
     .half-image {
-      background-image: url('../img/passthrough/marbel-flow.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 260px;
-      width: 100%;
+      display: none;
     }
   }
 }
@@ -2092,8 +2044,16 @@ hr {
       flex-direction: row;
 
       .half-image {
+        display: block;
+        background-image: url('../img/passthrough/marbel-flow-vertical.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         height: auto;
         width: 50%;
+      }
+
+      .image-wrapper {
+        display: none;
       }
     }
   }

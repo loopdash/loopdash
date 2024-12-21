@@ -4,6 +4,7 @@ meta:
   title: Design It For Us
   description: 
 project: 
+  featured: true
   name: Design It For Us
   description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
   tagline: Building a safer internet for the next generation.
