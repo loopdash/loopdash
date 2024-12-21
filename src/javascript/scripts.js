@@ -1,5 +1,19 @@
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
+
+  // Navigation
+  const menuToggle = document.querySelector('.menu-toggle');
+  const body = document.querySelector('body');
+  window.addEventListener('load', () => {
+    body.classList.remove('nav-opened');
+  });
+  window.addEventListener('pageshow', () => {
+    body.classList.remove('nav-opened');
+  });
+  menuToggle.addEventListener('click', () => {
+    body.classList.toggle('nav-opened');
+  });
+
   let lastScrollTop = 0;
   const header = document.querySelector('.site-header');
   const animationDuration = 500; // Duration in milliseconds
