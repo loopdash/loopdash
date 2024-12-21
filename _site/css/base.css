@@ -1939,21 +1939,28 @@ hr {
 }
 
 /* single-blog */
+.blog-layout .navbar {
+    margin: -97px auto 0;
+  }
+
 .single-blog-layout h1, .single-blog-layout h2, .single-blog-layout h3, .single-blog-layout h4, .single-blog-layout h5, .single-blog-layout h6 {
     font-weight: 500;
     color: var(--color-charcoal);
   }
+
 .single-blog-layout .image-wrapper {
     max-width: 1024px;
   }
+
 .single-blog-layout .image-wrapper img {
       border-radius: 0;
     }
+
 .single-blog-layout .image {
     width: 100%;
     height: auto;
-    margin-top: calc(var(--spacing) * 8);
   }
+
 .single-blog-layout .content {
     margin-top: 0rem;
     background-color: #f6f6f194;
@@ -1969,6 +1976,7 @@ hr {
 
 @media only screen and (min-width: 1024px) {
       .single-blog-layout .image-wrapper img {
+        margin-top: calc(var(--spacing) * 30);
         border-radius: var(--border-radius);
       }
     .single-blog-layout .content {
@@ -2059,17 +2067,17 @@ hr {
     color: #666;
 }
 
-.support-layout .navbar {
-    margin: -88px auto 0;
+.blog-layout .navbar {
+    margin: -97px auto 0;
   }
 
-.support-layout .support-content {
+.blog-layout .support-content {
     display: flex;
     flex-direction: column;
   }
 
-.support-layout .support-content .half-image {
-      min-height: 400px;
+.blog-layout .support-content .half-image {
+      min-height: 40vh;
       width: 100%;
       background-image: url('../img/passthrough/marbel-flow.jpg');
       background-repeat: no-repeat;
