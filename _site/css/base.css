@@ -1940,7 +1940,7 @@ hr {
 
 /* single-blog */
 .blog-layout .navbar {
-    margin: -97px auto 0;
+    margin: -88px auto 0;
   }
 
 .single-blog-layout h1, .single-blog-layout h2, .single-blog-layout h3, .single-blog-layout h4, .single-blog-layout h5, .single-blog-layout h6 {
@@ -2067,21 +2067,21 @@ hr {
     color: #666;
 }
 
-.blog-layout .navbar {
-    margin: -97px auto 0;
+.support-layout .navbar {
+    margin: -88px auto 0;
   }
 
-.blog-layout .support-content {
+.support-layout .support-content {
     display: flex;
     flex-direction: column;
   }
 
-.blog-layout .support-content .half-image {
-      min-height: 40vh;
-      width: 100%;
+.support-layout .support-content .half-image {
       background-image: url('../img/passthrough/marbel-flow.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+      height: 430px;
+      width: 100%;
     }
 
 @media only screen and (min-width: 768px) {
@@ -2093,7 +2093,7 @@ hr {
 
       .support-layout .support-content .half-image {
         height: auto;
-        width: 50vw;
+        width: 50%;
       }
 }
 
