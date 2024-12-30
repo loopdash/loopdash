@@ -1268,31 +1268,31 @@ hr {
 .project-accountable-tech {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/projects/cover-accountable-tech.jpg');
+    url('../img/passthrough/cover-accountable-tech.jpg');
 }
 
 .project-no-deepfakes-for-democracy {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/projects/cover-palantir.jpg');
+    url('../img/passthrough/cover-palantir.jpg');
 }
 
 .project-design-it-for-us {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/6esGZ3w8Ks-1440.jpeg');
+    url('../img/passthrough/cover-design-it-for-us.jpg');
 }
 
 .project-encode {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/projects/cover-encode-justice.jpg');
+    url('../img/passthrough/cover-encode-justice.jpg');
 }
 
 .project-forward-majority {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/projects/cover-forward-majority.jpg');
+    url('../img/passthrough/cover-forward-majority.jpg');
 }
 
 @media only screen and (max-width: 1060px) {
@@ -1793,6 +1793,7 @@ form input,
 form textarea,
 form select,
 form button {
+  font-family: var(--base-font);
   max-width: 100%; /* Prevents individual elements from overflowing */
   width: 100%; /* Stretches elements to fill the form */
   box-sizing: border-box; /* Ensures padding and borders are included in the width */
@@ -1841,7 +1842,7 @@ form button {
     font-weight: 500;
     color: var(--color-charcoal-light);
     font-size: clamp(0.875rem, 1.2vw, 1rem);
-    margin-bottom: calc(var(--spacing) * 1.5)
+    margin-bottom: calc(var(--spacing) * 1.25)
   }
 
   .error {
@@ -1988,7 +1989,7 @@ form button {
 
   .content {
     margin-top: 0rem;
-    background-color: #f6f6f194;
+    background-color: #f6f6f1b0;
     box-shadow: none;
     z-index: 999;
     position: relative;

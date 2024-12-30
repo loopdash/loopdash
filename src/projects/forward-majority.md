@@ -36,26 +36,26 @@ project:
             - colSpan: 6
               slides:
                 - src: "./src/img/projects/forward-majority-1.jpg"
-                  alt: ""
+                  alt: "forward-majority-logo-with-image-backdrop"
                 - src: "./src/img/projects/forward-majority-2.png"
-                  alt: ""
+                  alt: "forward-majority-website-ui-corner"
                 - src: "./src/img/projects/forward-majority-3.png"
-                  alt: ""
+                  alt: "forward-majority-website-ui"
             - colSpan: 6
               slides:
                 - src: "./src/img/projects/forward-majority-3.png"
-                  alt: ""
+                  alt: "forward-majority-website-ui"
                 - src: "./src/img/projects/forward-majority-1.jpg"
-                  alt: ""
+                  alt: "forward-majority-logo-with-image-backdrop"
                 - src: "./src/img/projects/forward-majority-2.png"
-                  alt: ""
+                  alt: "forward-majority-website-ui-corner"
         - type: image
           images:
             - src: "./src/img/projects/forward-majority-12.jpg"
               alt: "Image 1"
               colSpan: 12
     - heading: Website
-      paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+      paragraph: Forward Majority’s website blends compelling design with strategic functionality, offering a seamless user experience that informs, inspires, and mobilizes. Every element, from dynamic visuals to streamlined navigation, serves the goal of engaging users and empowering action. The result is a digital presence that reflects their vision, builds trust, and fuels the fight for a more representative democracy.
       content:
         - type: image
           images:
@@ -75,14 +75,14 @@ project:
         - type: fullwidth
           images:
             - src: "./src/img/projects/forward-majority-10.jpg"
-              alt: ""
+              alt: "forward-majority-website-footer"
     - heading: null
       paragraph: null
       content:
         - type: fullwidth
           images: 
             - src: "./src/img/projects/forward-majority-13.jpg"
-              alt: null
+              alt: "forward-majority-website-on-3-iphones"
         # - type: image
         #   images: 
         #     - src: "./src/img/projects/slideshow-accountable-tech-7.png"
@@ -94,8 +94,8 @@ project:
   testimonial:
     quote: >
       Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    author: First Name
-    role: Last Name
+    author: David Cohen
+    role: Co-Founder
 sitemap:
   changefreq: weekly
   priority: 0.5
