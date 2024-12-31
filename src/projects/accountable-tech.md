@@ -54,7 +54,7 @@ project:
                   alt: "security-cameras-overlayed-with-accountable-tech-logo"
         - type: image
           images:
-            - src: "./src/img/projects/gettyimages-1471645492-170667a.jpg"
+            - src: "./src/img/projects/accountable-tech-person.jpg"
               alt: "getty-image"
               colSpan: 12
     - heading: Website

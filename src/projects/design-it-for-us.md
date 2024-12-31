@@ -49,37 +49,12 @@ project:
                   alt: ""
         - type: image
           images:
-            - src: "./src/img/projects/rami-al-zayat-w33-zg-dNL4-unsplash.jpg"
+            - src: "./src/img/projects/design-it-for-us-14.jpg"
               alt: ""
               colSpan: 12
     - heading: Website
-      paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+      paragraph: The Design It For Us website is a vibrant, action-driven platform designed to inspire and mobilize. With bold typography and dynamic layouts, it captures the movement's energy while features like the custom share tool empower users to create and spread their advocacy across digital and physical spaces. The site is built to connect, amplify, and drive meaningful engagement.
       content:
-        - type: image
-          images:
-            - src: "./src/img/projects/design-it-for-us-7.jpg"
-              alt: ""
-              colSpan: 12
-        - type: image
-          images: 
-            - src: "./src/img/projects/design-it-for-us-10.png"
-              alt: 
-              colSpan: 6
-            - src: "./src/img/projects/design-it-for-us-11.png"
-              alt:
-              colSpan: 6
-        - type: fullwidth
-          images:
-            - src: "./src/img/projects/design-it-for-us-7.jpg"
-              alt: ""
-    - heading: null
-      paragraph: null
-      content:
-        - type: colors
-        - type: fullwidth
-          images: 
-            - src: "./src/img/projects/design-it-for-us-12.png"
-              alt: null
         - type: image
           images: 
             - src: "./src/img/projects/design-it-for-us-8.png"
@@ -90,6 +65,31 @@ project:
               alt:
               colSpan: 6
               cardClass: "card-design-it-for-us-secondary"
+        - type: fullwidth
+          images:
+            - src: "./src/img/projects/design-it-for-us-7.jpg"
+              alt: ""
+    - heading: Color Treatment
+      paragraph: The Design It For Us palette combines bold, energizing tones with soft, neutral accents to create a modern and empowering identity. Vibrant greens symbolize growth and action, while deep, grounding hues add a sense of focus and seriousness. Balanced by subtle grays and clean whites, the palette feels fresh, approachable, and versatile—perfectly reflecting the energy and inclusivity of the movement.
+      content:
+        - type: colors
+        - type: fullwidth
+          images: 
+            - src: "./src/img/projects/design-it-for-us-12.png"
+              alt: null
+        - type: image
+          images: 
+            - src: "./src/img/projects/design-it-for-us-10.png"
+              alt: 
+              colSpan: 6
+            - src: "./src/img/projects/design-it-for-us-11.png"
+              alt:
+              colSpan: 6
+        - type: image
+          images: 
+            - src: "./src/img/projects/design-it-for-us-13.jpg"
+              alt: 
+              colSpan: 12
   testimonial:
     quote: >
       The Loopdash team listened to our unique needs for a website, and quickly turned our dreams into a reality. We’re grateful for the bright, bold, and functional site they created for our coalition.

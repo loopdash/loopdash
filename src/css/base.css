@@ -307,7 +307,7 @@ hr {
 .col-9 { flex: 0 0 calc(75% - 2rem); }
 .col-10 { flex: 0 0 calc(83.33% - 2rem); }
 .col-11 { flex: 0 0 calc(91.66% - 2rem); }
-.col-12 { flex: 0 0 calc(100% - 2rem); }
+.col-12 { flex: 0 0 calc(100%); }
 
 /* Full Width for Small Screens */
 @media only screen and (max-width: 768px) {
@@ -2044,11 +2044,11 @@ form button {
 }
 
 .card-design-it-for-us-primary {
-  background-color: #009F65;
+  background-color: #ffffff;
 }
 
 .card-design-it-for-us-secondary {
-  background-color: #01e692;
+  background-color: #009F65;
 }
 
 /* single-blog */
