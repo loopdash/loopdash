@@ -2035,13 +2035,20 @@ form button {
   background-color: rgba(17, 17, 17, .06);
 }
 
-
 .card-accountable-tech-blue {
   background-color: #1797FC;
 }
 
 .card-accountable-tech-light-blue {
   background-color: #C2EBFF;
+}
+
+.card-design-it-for-us-primary {
+  background-color: #009F65;
+}
+
+.card-design-it-for-us-secondary {
+  background-color: #01e692;
 }
 
 /* single-blog */

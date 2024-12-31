@@ -49,8 +49,8 @@ project:
                   alt: ""
         - type: image
           images:
-            - src: "./src/img/projects/forward-majority-12.jpg"
-              alt: "Image 1"
+            - src: "./src/img/projects/rami-al-zayat-w33-zg-dNL4-unsplash.jpg"
+              alt: ""
               colSpan: 12
     - heading: Website
       paragraph: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
@@ -60,16 +60,14 @@ project:
             - src: "./src/img/projects/design-it-for-us-7.jpg"
               alt: ""
               colSpan: 12
-        # - type: image
-        #   images: 
-        #     - src: "./src/img/projects/encode-12.png"
-        #       alt: 
-        #       colSpan: 6
-        #       cardClass: "card-encode-light-blue"
-        #     - src: "./src/img/projects/encode-13.png"
-        #       alt:
-        #       colSpan: 6
-        #       cardClass: "card-encode-light"
+        - type: image
+          images: 
+            - src: "./src/img/projects/design-it-for-us-10.png"
+              alt: 
+              colSpan: 6
+            - src: "./src/img/projects/design-it-for-us-11.png"
+              alt:
+              colSpan: 6
         - type: fullwidth
           images:
             - src: "./src/img/projects/design-it-for-us-7.jpg"
@@ -77,19 +75,21 @@ project:
     - heading: null
       paragraph: null
       content:
+        - type: colors
         - type: fullwidth
           images: 
-            - src: "./src/img/projects/forward-majority-13.jpg"
+            - src: "./src/img/projects/design-it-for-us-12.png"
               alt: null
-        # - type: image
-        #   images: 
-        #     - src: "./src/img/projects/slideshow-accountable-tech-7.png"
-        #       alt: 
-        #       colSpan: 6
-        #     - src: "./src/img/projects/slideshow-accountable-tech-2.png"
-        #       alt:
-        #       colSpan: 6
-        - type: colors
+        - type: image
+          images: 
+            - src: "./src/img/projects/design-it-for-us-8.png"
+              alt: 
+              colSpan: 6
+              cardClass: "card-design-it-for-us-primary"
+            - src: "./src/img/projects/design-it-for-us-9.png"
+              alt:
+              colSpan: 6
+              cardClass: "card-design-it-for-us-secondary"
   testimonial:
     quote: >
       The Loopdash team listened to our unique needs for a website, and quickly turned our dreams into a reality. We’re grateful for the bright, bold, and functional site they created for our coalition.
