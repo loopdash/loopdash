@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
 
 
 :root {
   --base-font-size: 1rem;
   --base-line-height: 1.275;
   --base-font: "DM Sans", sans-serif;
-  --mono-font: "JetBrains Mono", ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --mono-font: "DM Mono", ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   --border-radius: 12px;
   --color-cream: #f6f6f1;
   --color-cream-dark: #f3f2eb;
@@ -1523,7 +1522,7 @@ hr {
   .introduction {
 
     .details {
-
+      font-family: var(--mono-font);
       ul {
         list-style: none;
         margin-bottom: calc(var(--spacing) * 8);

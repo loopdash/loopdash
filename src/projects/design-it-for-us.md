@@ -6,7 +6,7 @@ meta:
 project: 
   featured: true
   name: Design It For Us
-  description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+  description: "Design It For Us is a youth-led movement on a mission to empower young voices and drive meaningful change. They came to us with a challenge: how to create a digital platform that not only inspires action but also gives their audience the tools to amplify their message far and wide. Together, we reimagined their website, introducing an innovative feature that lets users create custom Instagram posts, phone wallpapers, and printable materials for events and rallies. The result? A site that captures their energy, elevates their message, and fuels their movement for justice."
   tagline: Building a safer internet for the next generation.
   class: design-it-for-us
   hero:
@@ -57,7 +57,7 @@ project:
       content:
         - type: image
           images:
-            - src: "./src/img/projects/forward-majority-9.png"
+            - src: "./src/img/projects/design-it-for-us-7.jpg"
               alt: ""
               colSpan: 12
         # - type: image
@@ -72,7 +72,7 @@ project:
         #       cardClass: "card-encode-light"
         - type: fullwidth
           images:
-            - src: "./src/img/projects/forward-majority-10.jpg"
+            - src: "./src/img/projects/design-it-for-us-7.jpg"
               alt: ""
     - heading: null
       paragraph: null
