@@ -1434,6 +1434,7 @@ hr {
     opacity: 1;
     position: fixed;
     z-index: 1;
+    overflow: hidden;
 
     /* Ensures the content scales proportionally */
     object-fit: cover; /* Keeps aspect ratio for images */
@@ -1525,10 +1526,6 @@ hr {
       ul {
         list-style: none;
         margin-bottom: calc(var(--spacing) * 8);
-
-        li {
-          margin-left: -40px;
-        }
       }
     }
   }
