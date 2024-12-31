@@ -703,7 +703,7 @@ hr {
   width: 100%;
   overflow: visible;
   height: 2.5rem;
-  fill: #78766d;
+  color: #78766d;
 }
 
 .icon-wrapper {
@@ -1450,6 +1450,7 @@ hr {
     flex-direction: column;
     flex-direction: column-reverse;
     padding: 0 1rem;
+    overflow: hidden;
     h1 {
       z-index: 999;
       width: 1024px;
@@ -1526,6 +1527,11 @@ hr {
       ul {
         list-style: none;
         margin-bottom: calc(var(--spacing) * 8);
+        margin-left: -40px;
+
+        li {
+          line-height: 1.5rem;
+        }
       }
     }
   }
@@ -1566,7 +1572,7 @@ hr {
         transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
         &:after {
-          filter: none;
+          filter: brightness(0) saturate(100%) invert(17%) sepia(81%) saturate(1803%) hue-rotate(190deg) brightness(88%) contrast(85%);
         }
 
         &:hover {
@@ -1687,76 +1693,156 @@ hr {
     /* https://colorbase.app/colors */
     .brand-color-accountable-tech:nth-child(1) {
       background: #0097FC;
+
+      &:after {
+        content: "Azure Radiance";
+      }
     }
-    .brand-color-accountable-tech:nth-child(1)::after { content: "Azure Radiance"; }
 
     .brand-color-accountable-tech:nth-child(2) {
       background: #0A1F2B;
       color: rgba(255, 255, 255, 0.8);
+
+      &:after {
+        content: "Firefly";
+      }
     }
-    .brand-color-accountable-tech:nth-child(2)::after { content: "Firefly"; }
 
     .brand-color-accountable-tech:nth-child(3) {
       background: #C2EBFF;
 
+      &:after {
+        content: "French Pass";
+      }
     }
-    .brand-color-accountable-tech:nth-child(3)::after { content: "French Pass"; }
 
     .brand-color-accountable-tech:nth-child(4) {
       background: #EFFF34;
 
+      &:after {
+        content: "Golden Fizz";
+      }
     }
-    .brand-color-accountable-tech:nth-child(4)::after { content: "Golden Fizz"; }
 
     .brand-color-accountable-tech:nth-child(5) {
       background: #ffffff;
 
+      &:after {
+        content: "Pure White";
+      }
     }
-    .brand-color-accountable-tech:nth-child(5)::after { content: "Pure White"; }
 
     .brand-color-accountable-tech:nth-child(6) {
       background: #f5f5f5;
 
+      &:after {
+        content: "Wild Sand";
+      }
     }
-    .brand-color-accountable-tech:nth-child(6)::after { content: "Wild Sand"; }
-
 
     /* Encode */    
     /* https://colorbase.app/colors */
     .brand-color-encode:nth-child(1) {
       background: #ff6347;
+
+      &:after {
+        content: "Persimmon";
+      }
     }
-    .brand-color-encode:nth-child(1)::after { content: "Persimmon"; }
 
     .brand-color-encode:nth-child(2) {
       background: #182c58;
       color: rgba(255, 255, 255, 0.8);
+
+      &:after {
+        content: "Cloud Burst";
+      }
     }
-    .brand-color-encode:nth-child(2)::after { content: "Cloud Burst"; }
 
     .brand-color-encode:nth-child(3) {
       background: #fffae9;
 
+      &:after {
+        content: "Buttery White";
+      }
     }
-    .brand-color-encode:nth-child(3)::after { content: "Buttery White"; }
 
     .brand-color-encode:nth-child(4) {
       background: #ffc0b6;
 
+      &:after {
+        content: "Tuft Blush";
+      }
     }
-    .brand-color-encode:nth-child(4)::after { content: "Tuft Blush"; }
 
     .brand-color-encode:nth-child(5) {
       background: #ffffff;
 
+      &:after {
+        content: "Pure White";
+      }
     }
-    .brand-color-encode:nth-child(5)::after { content: "Pure White"; }
 
     .brand-color-encode:nth-child(6) {
       background: #526182;
       color: rgba(255, 255, 255, 0.8);
+
+      &:after {
+        content: "Blue Bayoux";
+      }
     }
-    .brand-color-encode:nth-child(6)::after { content: "Blue Bayoux"; }
+
+    /* Design It For Us */    
+    /* https://colorbase.app/colors */
+    .brand-color-design-it-for-us:nth-child(1) {
+      background: #009f65;
+
+      &:after {
+        content: "Green Haze";
+      }
+    }
+
+    .brand-color-design-it-for-us:nth-child(2) {
+      background: #000E09;
+      color: rgba(255, 255, 255, 0.8);
+
+      &:after {
+        content: "Midnight Moss";
+      }
+    }
+
+    .brand-color-design-it-for-us:nth-child(3) {
+      background: #01e692;
+
+      &:after {
+        content: "Caribbean Green";
+      }
+    }
+
+    .brand-color-design-it-for-us:nth-child(4) {
+      background: #cdcfce;
+
+      &:after {
+        content: "Celeste";
+      }
+    }
+
+    .brand-color-design-it-for-us:nth-child(5) {
+      background: #faf8f6;
+
+      &:after {
+        content: "Desert Storm";
+      }
+    }
+
+    .brand-color-design-it-for-us:nth-child(6) {
+      background: #ffffff;
+
+      &:after {
+        content: "Pure White";
+      }
+    }
+
 
     @media only screen and (max-width: 768px) {
       .brand-color,

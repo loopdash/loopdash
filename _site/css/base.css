@@ -705,7 +705,7 @@ hr {
   width: 100%;
   overflow: visible;
   height: 2.5rem;
-  fill: #78766d;
+  color: #78766d;
 }
 
 .icon-wrapper {
@@ -1419,6 +1419,7 @@ hr {
     flex-direction: column;
     flex-direction: column-reverse;
     padding: 0 1rem;
+    overflow: hidden;
   }
 
 .single-project-layout .hero h1 {
@@ -1501,7 +1502,12 @@ hr {
 .single-project-layout .introduction .details ul {
         list-style: none;
         margin-bottom: calc(var(--spacing) * 8);
+        margin-left: -40px;
       }
+
+.single-project-layout .introduction .details ul li {
+          line-height: 1.5rem;
+        }
 
 .single-project-layout .quote::before,
   .single-project-layout .quote::after {
@@ -1543,7 +1549,7 @@ hr {
       }
 
 .single-project-layout .introduction-accountable-tech .details .link-chevron:after {
-          filter: none;
+          filter: brightness(0) saturate(100%) invert(17%) sepia(81%) saturate(1803%) hue-rotate(190deg) brightness(88%) contrast(85%);
         }
 
 .single-project-layout .introduction-accountable-tech .details .link-chevron:hover {
@@ -1649,6 +1655,8 @@ hr {
 .single-project-layout .brand-palette {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    /* Design It For Us */
   }
 
 .single-project-layout .brand-palette .animated {
@@ -1682,44 +1690,52 @@ hr {
       background: #0097FC;
     }
 
-/* Accountable Tech */
+.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(1):after {
+        content: "Azure Radiance";
+      }
 
-.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(1)::after { content: "Azure Radiance"; }
+/* Accountable Tech */
 
 .single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(2) {
       background: #0A1F2B;
       color: rgba(255, 255, 255, 0.8);
     }
 
-.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(2)::after { content: "Firefly"; }
+.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(2):after {
+        content: "Firefly";
+      }
 
 .single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(3) {
       background: #C2EBFF;
-
     }
 
-.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(3)::after { content: "French Pass"; }
+.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(3):after {
+        content: "French Pass";
+      }
 
 .single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(4) {
       background: #EFFF34;
-
     }
 
-.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(4)::after { content: "Golden Fizz"; }
+.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(4):after {
+        content: "Golden Fizz";
+      }
 
 .single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(5) {
       background: #ffffff;
-
     }
 
-.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(5)::after { content: "Pure White"; }
+.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(5):after {
+        content: "Pure White";
+      }
 
 .single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(6) {
       background: #f5f5f5;
-
     }
 
-.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(6)::after { content: "Wild Sand"; }
+.single-project-layout .brand-palette .brand-color-accountable-tech:nth-child(6):after {
+        content: "Wild Sand";
+      }
 
 /* https://colorbase.app/colors */
 
@@ -1727,44 +1743,104 @@ hr {
       background: #ff6347;
     }
 
-/* Encode */
+.single-project-layout .brand-palette .brand-color-encode:nth-child(1):after {
+        content: "Persimmon";
+      }
 
-.single-project-layout .brand-palette .brand-color-encode:nth-child(1)::after { content: "Persimmon"; }
+/* Encode */
 
 .single-project-layout .brand-palette .brand-color-encode:nth-child(2) {
       background: #182c58;
       color: rgba(255, 255, 255, 0.8);
     }
 
-.single-project-layout .brand-palette .brand-color-encode:nth-child(2)::after { content: "Cloud Burst"; }
+.single-project-layout .brand-palette .brand-color-encode:nth-child(2):after {
+        content: "Cloud Burst";
+      }
 
 .single-project-layout .brand-palette .brand-color-encode:nth-child(3) {
       background: #fffae9;
-
     }
 
-.single-project-layout .brand-palette .brand-color-encode:nth-child(3)::after { content: "Buttery White"; }
+.single-project-layout .brand-palette .brand-color-encode:nth-child(3):after {
+        content: "Buttery White";
+      }
 
 .single-project-layout .brand-palette .brand-color-encode:nth-child(4) {
       background: #ffc0b6;
-
     }
 
-.single-project-layout .brand-palette .brand-color-encode:nth-child(4)::after { content: "Tuft Blush"; }
+.single-project-layout .brand-palette .brand-color-encode:nth-child(4):after {
+        content: "Tuft Blush";
+      }
 
 .single-project-layout .brand-palette .brand-color-encode:nth-child(5) {
       background: #ffffff;
-
     }
 
-.single-project-layout .brand-palette .brand-color-encode:nth-child(5)::after { content: "Pure White"; }
+.single-project-layout .brand-palette .brand-color-encode:nth-child(5):after {
+        content: "Pure White";
+      }
 
 .single-project-layout .brand-palette .brand-color-encode:nth-child(6) {
       background: #526182;
       color: rgba(255, 255, 255, 0.8);
     }
 
-.single-project-layout .brand-palette .brand-color-encode:nth-child(6)::after { content: "Blue Bayoux"; }
+.single-project-layout .brand-palette .brand-color-encode:nth-child(6):after {
+        content: "Blue Bayoux";
+      }
+
+/* https://colorbase.app/colors */
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(1) {
+      background: #009f65;
+    }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(1):after {
+        content: "Green Haze";
+      }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(2) {
+      background: #000E09;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(2):after {
+        content: "Midnight Moss";
+      }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(3) {
+      background: #01e692;
+    }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(3):after {
+        content: "Caribbean Green";
+      }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(4) {
+      background: #cdcfce;
+    }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(4):after {
+        content: "Celeste";
+      }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(5) {
+      background: #faf8f6;
+    }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(5):after {
+        content: "Desert Storm";
+      }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(6) {
+      background: #ffffff;
+    }
+
+.single-project-layout .brand-palette .brand-color-design-it-for-us:nth-child(6):after {
+        content: "Pure White";
+      }
 
 @media only screen and (max-width: 768px) {
       .single-project-layout .brand-palette .brand-color,
