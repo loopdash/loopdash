@@ -11,7 +11,7 @@ project:
   class: encode
   hero:
     src: "./src/img/projects/cover-encode-justice.jpg"
-    alt: Encode WordPress Website
+    alt: "macbook-displaying-encode-justice-website"
   industry: Internet Advocacy
   services:
     - name: Brand Identity
@@ -35,23 +35,23 @@ project:
             - colSpan: 6
               slides:
                 - src: "./src/img/projects/encode-1.png"
-                  alt: ""
+                  alt: "encode-justice-logo-on-white-background"
                 - src: "./src/img/projects/encode-3.png"
-                  alt: ""
+                  alt: "home-page-of-encode-justice-website"
                 - src: "./src/img/projects/encode-2.png"
-                  alt: ""
+                  alt: "encode-justice-logo-on-dark-background"
             - colSpan: 6
               slides:
                 - src: "./src/img/projects/encode-4.png"
-                  alt: ""
+                  alt: "iphone-displaying-encode-justice-website-on-orange-background"
                 - src: "./src/img/projects/encode-5.png"
-                  alt: ""
+                  alt: "iphone-displaying-encode-justice-website-on-blue-background"
                 - src: "./src/img/projects/encode-6.png"
-                  alt: ""
+                  alt: "encode-justice-team-member-with-logo"
         - type: image
           images:
             - src: "./src/img/projects/encode-9.jpg"
-              alt: "Image 1"
+              alt: "flowers-growing-from-concrete"
               colSpan: 12
     - heading: Website
       paragraph: Encode Justice's website serves as a dynamic platform that informs and mobilizes action, reflecting their bold visual identity and commitment to human-centered AI. The design emphasizes clarity and impact, making complex AI issues accessible and engaging.
@@ -59,32 +59,32 @@ project:
         - type: image
           images:
             - src: "./src/img/projects/encode-14.png"
-              alt: ""
+              alt: "ipad-and-iphone-displaying-encode-justice-website"
               colSpan: 12
         - type: image
           images: 
             - src: "./src/img/projects/encode-12.png"
-              alt: 
+              alt: "social-media-posts-of-encode-justice-campaign"
               colSpan: 6
               cardClass: "card-encode-light-blue"
             - src: "./src/img/projects/encode-13.png"
-              alt:
+              alt: "crowd-overlaying-encode-justice-logo"
               colSpan: 6
               cardClass: "card-encode-light"
         - type: fullwidth
           images:
             - src: "./src/img/projects/encode-10.jpg"
-              alt: ""
+              alt: "woman-holding-phone-browsing-encode-justice-site"
     - heading: Brand Identity
       paragraph: We revitalized Encode Justice's logo and typography to reflect their bold and forward-thinking mission, creating a cohesive identity that seamlessly integrates with their new digital platform. By refining proportions and modernizing the type hierarchy, we brought clarity and confidence to the brand.
       content:
         - type: image
           images: 
             - src: "./src/img/projects/encode-2.png"
-              alt: 
+              alt: "encode-justice-logo-on-dark-background"
               colSpan: 6
             - src: "./src/img/projects/encode-1.png"
-              alt:
+              alt: "encode-justice-logo-on-white-background"
               colSpan: 6
     - heading: Bold Colors for a Bold Mission
       paragraph: Deep blue and vibrant orange accents convey trust and urgency, creating a balance between authority and energy. With refined typography and modern proportions, Encode Justice’s updated identity feels bold, approachable, and ready to lead the charge in ethical AI advocacy.
@@ -93,15 +93,15 @@ project:
         - type: fullwidth
           images: 
             - src: "./src/img/projects/encode-11.jpg"
-              alt: null
-        - type: image
-          images: 
-            - src: "./src/img/projects/slideshow-accountable-tech-7.png"
-              alt: 
-              colSpan: 6
-            - src: "./src/img/projects/slideshow-accountable-tech-2.png"
-              alt:
-              colSpan: 6
+              alt: "encode-justice-about-page-on-orange-background"
+        # - type: image
+        #   images: 
+        #     - src: "./src/img/projects/slideshow-accountable-tech-7.png"
+        #       alt: 
+        #       colSpan: 6
+        #     - src: "./src/img/projects/slideshow-accountable-tech-2.png"
+        #       alt:
+        #       colSpan: 6
   testimonial:
     quote: >
       Had a fantastic experience working with Loopdash - the team was accessible and responsive to feedback even when we had changes in vision throughout the process. We're all so pleased with the final product and would 100% work with Loopdash again.

@@ -13,7 +13,7 @@ project:
   class: forward-majority
   hero:
     src: "./src/img/projects/cover-forward-majority.jpg"
-    alt: Forward Majority Website
+    alt: "forward-majority-website-on-ipad"
   industry: Electoral Advocacy
   services:
     - name: Strategy
@@ -52,7 +52,7 @@ project:
         - type: image
           images:
             - src: "./src/img/projects/forward-majority-12.jpg"
-              alt: "Image 1"
+              alt: "washington-dc"
               colSpan: 12
     - heading: Website
       paragraph: Forward Majority’s website blends compelling design with strategic functionality, offering a seamless user experience that informs, inspires, and mobilizes. Every element, from dynamic visuals to streamlined navigation, serves the goal of engaging users and empowering action. The result is a digital presence that reflects their vision, builds trust, and fuels the fight for a more representative democracy.
@@ -60,18 +60,8 @@ project:
         - type: image
           images:
             - src: "./src/img/projects/forward-majority-9.png"
-              alt: ""
+              alt: "forward-majority-website-map"
               colSpan: 12
-        # - type: image
-        #   images: 
-        #     - src: "./src/img/projects/encode-12.png"
-        #       alt: 
-        #       colSpan: 6
-        #       cardClass: "card-encode-light-blue"
-        #     - src: "./src/img/projects/encode-13.png"
-        #       alt:
-        #       colSpan: 6
-        #       cardClass: "card-encode-light"
         - type: fullwidth
           images:
             - src: "./src/img/projects/forward-majority-10.jpg"
@@ -83,14 +73,6 @@ project:
           images: 
             - src: "./src/img/projects/forward-majority-13.jpg"
               alt: "forward-majority-website-on-3-iphones"
-        # - type: image
-        #   images: 
-        #     - src: "./src/img/projects/slideshow-accountable-tech-7.png"
-        #       alt: 
-        #       colSpan: 6
-        #     - src: "./src/img/projects/slideshow-accountable-tech-2.png"
-        #       alt:
-        #       colSpan: 6
   testimonial:
     quote: >
       Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?

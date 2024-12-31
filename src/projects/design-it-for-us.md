@@ -33,19 +33,19 @@ project:
           slideshows:
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/forward-majority-1.jpg"
+                - src: "./src/img/projects/design-it-for-us-2.png"
                   alt: ""
-                - src: "./src/img/projects/forward-majority-2.png"
+                - src: "./src/img/projects/design-it-for-us-4.png"
                   alt: ""
-                - src: "./src/img/projects/forward-majority-3.png"
+                - src: "./src/img/projects/design-it-for-us-3.png"
                   alt: ""
             - colSpan: 6
               slides:
-                - src: "./src/img/projects/forward-majority-3.png"
+                - src: "./src/img/projects/design-it-for-us-6.png"
                   alt: ""
-                - src: "./src/img/projects/forward-majority-1.jpg"
+                - src: "./src/img/projects/design-it-for-us-1.png"
                   alt: ""
-                - src: "./src/img/projects/forward-majority-2.png"
+                - src: "./src/img/projects/design-it-for-us-5.png"
                   alt: ""
         - type: image
           images:
