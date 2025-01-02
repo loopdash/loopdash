@@ -1,27 +1,83 @@
 ---
-layout: layouts/default.njk
-title: Web Design & Development Services - Loopdash
-h1: Loopdash Web Services
-h2: WordPress Websites, apps and support
-description: Loopdash provides web design and development services for WordPress and other platforms. We also offer hosting and support.
+layout: text.njk
+meta:
+  title: Services
+  description: Loopdash offers web design, development, SEO, and hosting services tailored for nonprofits and businesses, providing reliable solutions to grow your online presence.
 sitemap:
   changefreq: weekly
-  priority: 0.8
+  priority: 0.1
 ---
 
-<div class="container-40">
-  {% include 'big-hero.njk' %}
-  <div class="page-content">
-    <h3 class="font-43">Website Design and Development</h3>
-    <p>Your website connects the world to your business. We build effective sites and web apps that quickly bring your
-      customers the right content.</p>
-    <h3 class="font-43">WordPress Hosting</h3>
-    <p>Whether you're looking to create a website, blog or online store Loopdash can get you started with hosting tailored
-      to your needs.</p>
-    <h3 class="font-43">WordPress Support</h3>
-    <p>Let us manage maintenance, updates and backups as well as making any changes or fixes whenever you need.
-    </p>
-    <h3 class="font-43">Website Optmization</h3>
-    <p>Nobody likes a slow site. Let's get your site loading quickly no matter what device your customers are using.</p>
+<section class="container-lg mx-auto">
+  <div class="text-set pb-16 mb-0">
+    <h1 class="text-12 text-weight-550 mb-8 text-gradient">Our Services</h1>
+    <p class="text-7 text-charcoal-light text-weight-400">From design to development, SEO to hosting — everything you need to build and grow online.</p>
   </div>
-</div>
+  <div class="mb-16 hr"></div>
+  <div class="services">
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/paintbrush.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Web Design</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Your website isn't just a URL — it's your first impression. We create bold, intuitive designs that captivate your audience and keep them coming back. Beauty meets functionality in every pixel.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/light-bulb.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Branding & Identity Design</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Your brand is your story. From logos to full identity systems, we craft visual identities that tell your story, connect with your audience, and stand the test of time.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/terminal.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Web Development</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Built for speed, reliability, and scalability. Our code isn't just clean — it's strategic. We build websites that grow with your business and keep visitors engaged at every step.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/server.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Hosting</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Say goodbye to downtime and complicated setups. We offer secure, fast, and reliable hosting so you can focus on your business while we handle the technical heavy lifting.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/container.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Website Migration</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Moving your website shouldn't be a nightmare. Whether you're upgrading platforms or switching hosts, we ensure seamless migrations with zero headaches and zero downtime.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/browser.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">UX/UI Design</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Good design isn't just about looks — it's about experience. We craft interfaces that guide your users effortlessly, turning clicks into conversions and visits into loyalty.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/graph.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">SEO</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">A great website is useless if no one can find it. Our SEO services ensure your business ranks high where it matters, driving traffic, leads, and sales to your site.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/log.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Copywriting</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">Words matter. We write compelling copy that speaks to your audience, tells your story, and drives action. From headlines to blogs, every word earns its place.</p>
+    </div>
+    <div class="col-4 reveal">
+      <div class="w-6 icon-wrapper">
+        {% svgIcon "./src/img/icons/note.svg" %}
+      </div>
+      <h3 class="text-4 text-weight-500">Creative Strategy & Direction</h3>
+      <p class="text-3 text-charcoal-light text-weight-400">A strong website needs more than good looks — it needs purpose. We align design, messaging, and goals to create strategies that work and websites that deliver results.</p>
+    </div>
+  </div>
+</section>
+

@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include 'head.njk' %}
-  <body>
+  <body class="blog-layout">
     {% include 'nav.njk' %}
-    <main class="blog">
-      {% include 'blog-single-hero.njk' %}
-      <article class="container-40 page-content">
-        {{ content | safe }}
-      </article>
+    <main class="single-blog-layout">
+      <div class="image-wrapper mx-auto">
+        {% image meta.image, "Image description", [300, 1920], ["jpeg", "webp"], "image" %}
+      </div>
+
+      <section class="container-sm mx-auto content">
+        <div class="mt-12 mb-12">
+          <h1 class="text-8 text-weight-550 text-gradient">{{ title }}</h1>
+          <p class="text-5 text-charcoal-light text-weight-400">{{ description }}</p>
+          <div class="mb-12 mx-auto col-7 text-4 text-charcoal-light">
+            {{ content | safe }}
+          </div>
+        </div>
+        <div class="mb-12 mt-8 hr"></div>
+        {% include 'partials/_social-share.njk' %}
+      </section>
     </main>
-    {% include 'site-footer.njk' %}
+    {% include 'footer.njk' %}
   </body>
 </html>

@@ -1,13 +1,52 @@
 ---
-layout: layouts/default.njk
-title: Support - Loopdash
-h1: Contact Loopdash
-h2: Need Additional Support?
-description: Fill out the form below and reach out to the Loopdash team and we will get back to you.
+layout: support-layout.njk
+meta:
+  title: Support
+  description: 
 sitemap:
   changefreq: weekly
-  priority: 0.7
+  priority: 0.1
 ---
 
-{% include 'page-hero.njk' %}
-{% include 'support-form.njk' %}
+<div class="support-content">
+
+  <div class="image-wrapper">
+    {% image "./src/img/blogs/marbel-flow-horizontal.jpg", "Image description", [300, 1920], ["jpeg", "webp"], "image" %}
+  </div>
+  <div class="half-image">
+  </div>
+  <section class="mx-auto">
+  <div class="text-set mb-0">
+    <h1 class="text-12 text-weight-550 mb-8 text-gradient">Support</h1>
+    <p class="text-5 text-charcoal-light text-weight-400">Support, when you need it.</p>
+  </div>
+
+  <div class="container-xs mx-auto mb-10">
+    <form class="form" action="https://submit-form.com/1vijeOzmy">
+      <div class="form-group">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" id="name" name="name" placeholder="Your name" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email Address</label>
+        <input class="form-input" type="email" id="email" name="email" placeholder="Your email address" />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="website">Website</label>
+        <input class="form-input" type="text" id="website" name="website" placeholder="The website url"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Details</label>
+        <textarea
+          id="details"
+          name="details"
+          class="form-input"
+          placeholder="A detailed description of your issue or project."
+          required=""
+        ></textarea>
+      </div>
+      <button type="submit" class="button button-primary">Send</button>
+    </form>
+  </div>
+</section>
+</div>

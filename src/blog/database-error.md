@@ -1,15 +1,16 @@
 ---
-layout: layouts/single-blog.njk
-title: Fix Error Establishing Connection to Database - Loopdash
-h1: Fix Error Establishing Connection to Database
-h2: Error establishing database connection on your WordPress site is caused by a number of different issues.
-image: "/images/database-error.jpg"
-imageAlt: An illustration of a computer on fire from a server error
-imageClasses: page-hero__image--reduced
+layout: single-blog.njk
+title: Fix Error Establishing Connection to Database
+meta:
+   title: Fix Error Establishing Connection to Database
+   description: Error establishing database connection on your WordPress site is caused by a number of different issues.
+   image: ./src/img/blogs/venetian-plaster.jpg
 sitemap:
   changefreq: weekly
   priority: 0.5
-tags: blogs
+tags:
+   - blogs
+   - guide
 date: 2023-03-04
 url: /blog/database-error
 ---

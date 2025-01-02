@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include 'head.njk' %}
-  <body>
+  <body class="single-project-layout">
     {% include 'nav.njk' %}
-    <main class="blog">
-      {% include 'big-hero.njk' %}
-      <article class="container-72 page-content">
-        <div class="single-project-image">
-          <img src="{{ image }}" alt="{{ imageAlt }}" class="project-image"/>
+    
+    {% include "partials/_single-project-hero.njk" %}
+    <main>
+      {% include "partials/_single-project-introduction.njk" %}
+
+      <section class="project-section-wrapper">
+        {% if project.sections %}
+          {% for section in project.sections %}
+            <div class="py-20">
+              {% if section.heading or section.paragraph %}
+                <div class="container-lg mx-auto">
+                  <div class="flex mb-12">
+                    <div class="col-6 animated">
+                      {% if section.heading %}
+                        <{{ heading_level | default('h3') }} class="text-9 mb-0 text-weight-600">{{ section.heading | safe }}</{{ section.heading_level | default('h3') }}>
+                      {% endif %}
+                      {% if section.paragraph %}
+                        <p class="text-4 text-weight-300">{{ section.paragraph | safe }}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if section.content %}
+                {% for contentItem in section.content %}
+                  {% if contentItem.type == "slideshow" %}
+                    <div class="container-lg mx-auto">
+                      <div class="flex">
+                        {% for slideshow in contentItem.slideshows %}
+                          <div class="col-{{ slideshow.colSpan or 6 }}">
+                            <div class="slideshow">
+                              {% for slide in slideshow.slides %}
+                                {% image slide.src, slide.alt or "Slide image", [2200, 600], ["jpeg", "webp"] %}
+                              {% endfor %}
+                            </div>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if contentItem.type == "image" %}
+                    <div class="container-lg mx-auto">
+                      <div class="flex justify-between">
+                        {% for image in contentItem.images %}
+                          <div class="col-{{ image.colSpan or 6 }} mb-8">
+                            {% if image.cardClass %}
+                              <div class="card {{ image.cardClass }}">
+                            {% endif %}
+                            {% image image.src, image.alt or "Image", [2200, 600], ["jpeg", "webp"], "reveal" %}
+                            {% if image.cardClass %}
+                              </div>
+                            {% endif %}
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if contentItem.type == "fullwidth" %}
+                    {% for image in contentItem.images %}
+                      <div class="fullwidth-wrapper">
+                        {% image image.src, image.alt or "Full width image", [2200, 600], ["jpeg", "webp"] %}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                
+                  {% if contentItem.type == "colors" %}
+                    <div class="container-lg mx-auto">
+                      <div class="brand-palette pb-16">
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                        <div class="brand-color brand-color-{{ project.class }} animated">
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+
+                {% endfor %}
+              {% endif %}
+          {% endfor %}
+          </div>
+        {% endif %}
+      </section>
+
+      {% if project.testimonial %}
+        <div class="introduction introduction-{{ project.class }}">
+          <div class="flex justify-between mx-auto py-24 container-lg">
+            <div class="col-7">
+              <p class="text-10 text-weight-300 text-white quote quote-{{project.class}}">{{ project.testimonial.quote }}</p>
+              <p class="text-5 m-0 p-0 text-white text-weight-600 details">{{ project.testimonial.author }}</p>
+              <p class="text-5 m-0 p-0 text-white text-weight-300">{{ project.testimonial.role }}</p>
+            </div>
+          </div>
         </div>
-      </article>
+      {% endif %}
+
+			<section class="cta">
+			  <div class="cta-container">
+   		 		<h4 class="text-10 text-weight-600">Our actions today shape tomorrow. Let's get started.</h4>
+			    <a href="/contact" class="button">Contact us</a>
+			  </div>
+			</section>
+
     </main>
-    {% include 'site-footer.njk' %}
+    {% include 'footer.njk' %}
   </body>
 </html>

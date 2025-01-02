@@ -1,12 +1,19 @@
 ---
-layout: layouts/default.njk
-title: Thank you - Loopdash
-h1: Success!
-h2: Thank you
-description: Thanks, we'll be in touch soon.
+layout: text.njk
+meta:
+  title: Thank you
+  description: Thanks for reaching out.
 sitemap:
   changefreq: weekly
-  priority: 1.0
+  priority: 0.1
+permalink: /thank-you.html
 ---
 
-{% include 'page-hero.njk' %}
+<section class="container-lg mx-auto">
+  <div class="flex">
+    <div class="col-5 mx-auto text-center">
+      <h1 class="text-9 text-weight-400 my-24 text-gradient">Thank you. We will be in contact soon.</h1>
+      <a href="/" class="button button-primary">Go to home</a>
+    </div>
+  </div>
+</section>

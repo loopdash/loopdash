@@ -1,14 +1,16 @@
 ---
-layout: layouts/single-blog.njk
-title: How to Delegate Access to GoDaddy - Loopdash
-h1: How to Delegate Access to GoDaddy
-h2: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
-image: "/images/3d-safe.jpg"
-imageAlt: A safe
+layout: single-blog.njk
+title: How to Delegate Access to GoDaddy
+meta:
+  title: How to Delegate Access to GoDaddy
+  description: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
+  image: ./src/img/blogs/leaf.jpg
 sitemap:
   changefreq: weekly
   priority: 0.5
-tags: blogs
+tags:
+  - blogs
+  - guide
 date: 2021-07-14
 url: /blog/how-to-delegate-access-to-godaddy
 ---

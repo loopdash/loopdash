@@ -1,24 +1,51 @@
 ---
-layout: layouts/default.njk
-title: FAQ - Loopdash
-h1: FAQ
-h2: Everything you need to know about Loopdash
-description: Here you can find answers to questions about our creative & digital services. We understand that it can be hard to choose the right company to work with, so we have compiled a list of frequently asked questions to help you decide. If you have any other questions, please contact us.
+layout: text.njk
+meta:
+  title: FAQ
+  description: Here you can find answers to questions about our creative & digital services. We understand that it can be hard to choose the right company to work with, so we have compiled a list of frequently asked questions to help you decide. If you have any other questions, please contact us.
 pagination:
   data: collections.faq
-  size: 10
+  size: 100
   alias: questions
 sitemap:
   changefreq: weekly
   priority: 0.7
 ---
 
-{% include 'big-hero.njk' %}
-<article class="container-40">
-  {% for question in questions | reverse %}
-    <div class="mb-2">
-      <h3 class="font-43 text--charcoal font-weight--700 mb-1 mt-0">{{ question.data.question }}</h3>
-      {{ question.templateContent | safe }}
+<section class="container-sm mx-auto">
+  <div class="mt-12 mb-12">
+    <h1 class="text-13 text-weight-400 text-gradient">FAQ</h1>
+    <h2 class="text-5 text-charcoal-light text-weight-400">We've curated answers to the most common questions about our creative and digital services to guide your decision. For anything beyond, our team is here to provide clarity and insight.</h2>
+  </div>
+
+  {% set sections = [
+    { tag: "getting-started", title: "Getting Started" },
+    { tag: "technical", title: "Technical" },
+    { tag: "communication", title: "Communication" },
+    { tag: "launch", title: "Launch" },
+    { tag: "care", title: "Care" },
+    { tag: "hosting", title: "Hosting" },
+    { tag: "legal", title: "Legal" },
+    { tag: "payment", title: "Payment" }
+  ] %}
+
+  {% for section in sections %}
+    <div class="mb-12">
+      {% set currentTag = section.tag %}
+      <h3 class="text-2 text-center text-weight-600 text-charcoal-light text-uppercase">{{ currentTag }}</h3>
+      {% for question in questions | reverse %}
+        {% if currentTag in question.data.tags %}
+          <article class="card card-question rounded-7 mb-3 reveal">
+            <div class="card-header" tabindex="0" role="button" aria-expanded="false" aria-controls="content-{{ loop.index }}">
+              <h3 class="text-4 text-weight-400 my-0">{{ question.data.question }}</h3>
+            </div>
+            <div class="card-body text-4 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
+              {{ question.templateContent | safe }}
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+      <div class="mb-12 mt-8 hr"></div>
     </div>
   {% endfor %}
-</div></article>
+</section>

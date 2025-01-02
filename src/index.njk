@@ -1,52 +1,91 @@
 ---
-layout: layouts/default.njk
-title: Web Design & Website Development - Loopdash
-h1: Get More Support for Your Organization
-h2: We help social welfare organizations get more signatures, support, and donations.
-description: "Discover the winning formula for success: more traffic plus a strategic content approach equals more support, more signatures and more donations."
+layout: home.njk
+meta: 
+  title: Loopdash 
+  description: Loopdash partners with nonprofits and businesses to deliver expert web design, development, SEO, and hosting solutions that drive results and simplify growth.
+pagination:
+  data: collections.projects
+  size: 10
+  alias: projects
 sitemap:
   changefreq: weekly
   priority: 1.0
 ---
 
-<section class="section-home-hero container-40 text-center">
-  <h1 class="text--eyebrow">{{ h1 }}</h1>
-  <h2 class="font-47 text-bold">{{ h2 }}</h2>
-  <p class="font-42 mb-2">
-    {{ description }}
-  </p>
-  {% include "partials/calendly-button.njk" %}
-  {% set perk_1 = "Join 67+ happy clients" %}
-  {% set perk_2 = "Get a free consultation" %}
-  {% set perk_3 = "Rated 5 stars on Google" %}
-  {% set perk_4 = "No credit card required" %}
-  {% set perk_5 = "Book a consultation today ☝️" %}
-  {% include "partials/perk-carousel.njk" %}
+<section class="text-set text-set-home pb-16">
+  <h1 class="text-11 text-weight-600 text-gradient">Bringing Simplicity Back to Web Development.</h1>
+  <p class="text-7 text-charcoal-light text-weight-400">We help founders, nonprofits, and changemakers amplify their impact and achieve results.</p>
+  <a href="/about" class="button button-secondary">About us</a>
 </section>
-<section class="section-slideshow fadein">
-  <img class="section-slideshow__image" src="/images/work.gif" alt="animated slideshow of Loopdash's work"/>
+
+<section class="projects container-xl">
+  {% for project in projects %}
+    {% if project.data.project.featured %}
+      <a href="{{project.data.page.url}}" class="project project-{{project.data.project.class}}">
+        <div class="project-details">
+          <h4 class="text-9 m-0 mb-1 reveal">{{ project.data.project.name }}</h4>
+          <p class="text-6 m-0 text-weight-400 reveal">{{ project.data.project.tagline }}</p>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
 </section>
-{% include "partials/problem-section.njk" %}
-<div class="section-projects">
-  <h4 class="font-46 text-bold text-center">Selected Projects</h4>
-  {% include "partials/project-section.njk" %}
-</div>
-{% set testimonialHeadline = "Rated 5 Stars on Google" %}
-{% include "partials/testimonial-section.njk" %}
-{% include "partials/faq-section.njk" %}
-{% include "partials/cta-section.njk" %}
+
+<section class="cta">
+  <div class="cta-container">
+    <h4 class="text-10 text-weight-600">Our actions today shape tomorrow. Let's get started.</h4>
+    <a href="/contact" class="button button-primary">Contact us</a>
+  </div>
+</section>
+{#  
+<div id="load-screen" class="load-screen">
+  <div class="progress-bar"></div>
+  <div class="load-text">Loading...</div>
+</div> #}
+
 <script>
-  $(document).ready(function () {
-    $(window).scroll(function () {
-      $('.fadein').each(function (i) {
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > bottom_of_element) {
-          $(this).animate({
-            'opacity': '1'
-          }, 400);
-        }
-      });
-    });
+  document.addEventListener('DOMContentLoaded', () => {
+      // Check if the current path is the home screen
+      if (window.location.pathname === '/') {
+          const loadScreen = document.getElementById('load-screen');
+          const progressBar = document.querySelector('.progress-bar');
+          const loadText = document.querySelector('.load-text');
+
+          // Function to generate random 8-letter uppercase strings
+          const generateRandomText = () => {
+              const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+              let text = '';
+              for (let i = 0; i < 8; i++) {
+                  text += chars[Math.floor(Math.random() * chars.length)];
+              }
+              return "[" + text + "]";
+          };
+
+          // Update the load text with random strings
+          const interval = setInterval(() => {
+              loadText.textContent = generateRandomText();
+          }, 100); // Update every 100ms
+
+          // When the progress bar animation ends
+          progressBar.addEventListener('animationend', () => {
+              clearInterval(interval); // Stop random text updates
+
+              // Show "LOOPDASH" 0.25 seconds before fade-out
+              setTimeout(() => {
+                  loadText.textContent = '[LOOPDASH]';
+              }, 400); // 1s - 0.25s = 0.75s
+
+              // Fade out the load screen
+              setTimeout(() => {
+                  loadScreen.style.opacity = '0'; // Fade out
+                  loadScreen.style.pointerEvents = 'none';
+
+                  // Remove load screen after fade-out
+                  setTimeout(() => {
+                      loadScreen.remove();
+                  }, 500); // Match the CSS transition duration
+              }, 500); // Total animation duration
+          });
+      }
   });
 </script>

@@ -1,14 +1,16 @@
 ---
-layout: layouts/single-blog.njk
-title: WordPress vs Squarespace - Loopdash
-h1: WordPress vs Squarespace
-h2: Overcome the pain on deciding on the right CMS. There are a dozen options on the market, all of which in many ways resemble each other.
-image: "/images/keyboard.jpg"
-imageAlt: keyboard
+layout: single-blog.njk
+title: WordPress vs Squarespace
+meta:
+  title: WordPress vs Squarespace
+  description: Overcome the pain on deciding on the right CMS. There are a dozen options on the market, all of which in many ways resemble each other.
+  image: "./src/img/blogs/wood-people.jpg"
 sitemap:
   changefreq: weekly
   priority: 0.5
-tags: blogs
+tags:
+  - blogs
+  - opinion
 date: 2022-05-23
 url: /blog/wordpress-vs-squarespace
 ---

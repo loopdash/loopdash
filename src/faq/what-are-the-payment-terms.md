@@ -1,12 +1,14 @@
 --- 
-layout: layouts/single-glossary.njk
+layout: single-faq.njk
 title: What are the payment terms? - Loopdash
 question: What are the payment terms?
 permalink: false
 sitemap:
-	changefreq: monthly
-	priority: 0.6
-tags: faq
+  changefreq: monthly
+  priority: 0.6
+tags:
+  - faq
+  - payment
 date: 2023-03-26
 url: /faq/what-are-the-payment-terms
 ---

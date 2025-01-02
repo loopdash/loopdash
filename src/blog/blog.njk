@@ -1,35 +1,59 @@
 ---
-layout: layouts/default.njk
-title: Blog - Loopdash
-h1: Loopdash Blog
-h2: Our blog about the web
-description: Welcome to our blog where you can find articles about WordPress, Webflow, Ruby on Rails, software development, and design.
-image: "/images/computer-illustration.jpg"
-imageAlt: Computer
+layout: text.njk
+meta:
+  title: Blog
+  description: Here you can find answers to blogs about our creative & digital services. We understand that it can be hard to choose the right company to work with, so we have compiled a list of frequently asked questions to help you decide. If you have any other questions, please contact us.
 pagination:
   data: collections.blogs
-  size: 10
-  alias: posts
+  size: 100
+  alias: blogs
 sitemap:
   changefreq: weekly
-  priority: 0.6
+  priority: 0.7
 ---
 
-{% include 'big-hero.njk' %}
-<article class="container-40 mt-4">
-  <ul class="blogs">
-    {% for post in posts | reverse %}
-      <li>
-        <article class="blog-preview">
-          <a class="blog-preview__link" href="{{ post.url }}">
-            <div class="blog-preview__image" style="background-image: url({{ post.data.image }})"></div>
-            <div class="blog-preview__content">
-              <h3 class="font-44 text--charcoal font-weight--700 mb-0 mt-0">{{ post.data.h1 }}</h3>
-              <p class="font-42 text--charcoal">{{ post.data.h2 }}</p>
+<section class="container-lg flex mx-auto">
+  <div class="col-5 pt-16 pb-16">
+    <h1 class="text-12 text-weight-550 text-gradient">Blog</h1>
+    <p class="text-7 text-charcoal-light text-weight-400">Where ideas take shape.</p>
+  </div>
+
+  <div class="mb-12 mx-auto flex col-7">
+    {% for blog in blogs | reverse %}
+
+      {# set filteredTags #}
+      {% set filteredTags = [] %}
+      {% for tag in blog.data.tags %}
+        {% if tag != "blogs" %}
+          {% set filteredTags = filteredTags.concat(tag) %}
+        {% endif %}
+      {% endfor %}
+
+      {# set image #}
+      {% if blog.data.meta.image %}
+        {% set img = blog.data.meta.image %}
+      {% else %}
+        {% set img = "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
+      {% endif %}
+
+      <a href="{{ blog.data.url }}" class="rounded-7">
+        <article class="mb-8">
+          {% image img, "asdf", [2200, 800], ["jpeg", "webp"] %}
+          <div class="flex flex-no-wrap mt-3">
+            <div class="col-10">
+              <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
             </div>
-          </a>
+            {# <div class="col-2 align-self-center">
+              <span class="tag">{{ filteredTags }}</span>
+            </div> #}
+          </div>
+          
+          <div class="text-3 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
+            {{ blog.data.meta.description | safe }}
+          </div>
         </article>
-      </li>
+        </a>
+      </a>
     {% endfor %}
-  </ul>
-</article>
+  </div>
+</section>

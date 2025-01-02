@@ -1,12 +1,14 @@
 --- 
-layout: layouts/single-glossary.njk
+layout: single-faq.njk
 title: What does it cost to work with Loopdash? - Loopdash
 question: What does it cost to work with Loopdash?
 permalink: false
 sitemap:
-	changefreq: monthly
-	priority: 0.6
-tags: faq
+  changefreq: monthly
+  priority: 0.6
+tags:
+  - faq
+  - payment
 date: 2023-03-27
 url: /faq/what-does-it-cost-to-work-with-loopdash
 ---

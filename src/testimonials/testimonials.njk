@@ -1,9 +1,8 @@
 ---
-layout: layouts/default.njk
-title: Testimonials - Loopdash
-h1: Testimonials
-h2: "Client Testimonials: Feedback on our design, dev, and strategy"
-description: Real experiences shared by our valued clients
+layout: text.njk
+meta:
+  title: Testimonials
+  description: Insights from the people who trust us to bring their ideas to life.
 pagination:
   data: collections.testimonials
   size: 30
@@ -13,15 +12,25 @@ sitemap:
   priority: 0.7
 ---
 
-{% include 'big-hero.njk' %}
-<article class="container-72 testimonial-grid mb-4">
-  {% for testimonial in testimonials | reverse %}
-    <div class="testimonial-card" id="testimonial">
-      <img class="testimonial-card__stars" src="/images/review-stars.svg" alt="5 out of 5 stars"/>
-      <p class="font-40">
-        {{ testimonial.data.description }}</p>
-      <span class="font-39 text--charcoal">{{ testimonial.data.name }}, {{ testimonial.data.role }} @
-      {{ testimonial.data.company }}</span>
+<section class="container-lg mx-auto">
+  <div class="flex mb-16">
+    <div class="col-7">
+      <h1 class="text-10 text-weight-400 my-12 text-gradient">Testimonials</h1>
+      <p class="text-9">Insights from the people who trust us to bring their ideas to life.</p>
     </div>
-  {% endfor %}
-</div></article>
+  </div>
+
+  <div class="flex">
+    {% for testimonial in testimonials | reverse %}
+      <div class="col-6">
+        <div class="card card-default">
+          <div class="mw-xs py-8 px-2">
+            <p class="quote text-4 text-charcoal text-weight-400 mb-5">{{ testimonial.data.description }}</p>
+            <p class="text-3 text-charcoal-light mb-0">{{ testimonial.data.name }}, {{ testimonial.data.role }}</p>
+            <p class="text-3 text-charcoal-light mb-0">{{ testimonial.data.company }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
