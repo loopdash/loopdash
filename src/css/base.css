@@ -1555,7 +1555,7 @@ hr {
       ul {
         list-style: none;
         margin-bottom: calc(var(--spacing) * 8);
-        margin-left: -40px;
+        margin-left: 0;
 
         li {
           line-height: 1.5rem;
