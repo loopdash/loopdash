@@ -908,7 +908,13 @@ hr {
         animation-delay: 0.475s;
       }
 .nav-opened .nav li:nth-child(7) {
-        animation-delay: 0.55s;
+        animation-delay: 0.550s;
+      }
+.nav-opened .nav li:nth-child(8) {
+        animation-delay: 0.625s;
+      }
+.nav-opened .nav li:nth-child(9) {
+        animation-delay: 0.7s;
       }
 .nav-opened .menu-toggle .bar:nth-child(1) {
         background: var(--color-cream);
@@ -1960,8 +1966,8 @@ form button {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
-.card-default:hover,
-  .card-default:focus {
+a.card-default:hover,
+  a.card-default:focus {
     transform: translateY(-2px); /* Moves the card slightly up */
     border-color: rgba(18, 18, 18, 0.1); /* Increases border contrast */
     background: rgba(17, 17, 17, .06);

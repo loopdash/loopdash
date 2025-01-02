@@ -916,7 +916,15 @@ hr {
       }
 
       &:nth-child(7) {
-        animation-delay: 0.55s;
+        animation-delay: 0.550s;
+      }
+
+      &:nth-child(8) {
+        animation-delay: 0.625s;
+      }
+
+      &:nth-child(9) {
+        animation-delay: 0.7s;
       }
     }
   }
@@ -1958,7 +1966,9 @@ form button {
       var(--color-cream-dark) 0%, 
       var(--color-cream) 100%);
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+}
 
+a.card-default {
   &:hover,
   &:focus {
     transform: translateY(-2px); /* Moves the card slightly up */
