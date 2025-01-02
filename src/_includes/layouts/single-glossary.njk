@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body class="text-layout">
+    {% include 'nav.njk' %}
+    <main>
+      {{ content | safe }}
+      {% set previousPost = collections.glossary | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.glossary | getNextCollectionItem(page) %}
+      <div class="container-72">
+        <h3 class="font-43 text-center font-bold">Related WordPress Terms</h3>
+        <div class="related-terms-container">
+          {% if previousPost %}
+            <div class="faq-term">
+              <a class="card" href="{{ previousPost.url }}">
+                <h2 class="font-44 text--charcoal font-weight--700 mb-1 mt-0">{{ previousPost.data.h1 }}</h2>
+                <p class="font-42 text--charcoal">{{ previousPost.data.description }}</p>
+              </a>
+            </div>
+          {% endif %}
+          {% if nextPost %}
+            <div class="faq-term">
+              <a class="card" href="{{ nextPost.url }}">
+                <h2 class="font-44 text--charcoal font-weight--700 mb-1 mt-0">{{ nextPost.data.h1 }}</h2>
+                <p class="font-42 text--charcoal">{{ nextPost.data.description }}</p>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </main>
+    {% include 'footer.njk' %}
+  </body>
+</html>
