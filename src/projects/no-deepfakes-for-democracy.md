@@ -4,9 +4,10 @@ meta:
   title: No Deepfakes for Democracy
   description: 
 project:
+  featured: false
   name: No Deepfakes for Democracy
   tagline: Fighting deepfakes. Protecting truth.
-  class: no-deepfakes-for-democracy
+  class: no-deep-fakes
   hero:
     src: "./src/img/projects/cover-encode-justice.jpg"
     alt: Encode WordPress Website
@@ -107,5 +108,5 @@ sitemap:
   priority: 0.5
 tags: projects
 date: 2023-12-07
-url: /projects/accountable-tech
+url: /projects/no-deep-fakes
 ---
