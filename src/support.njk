@@ -22,7 +22,7 @@ sitemap:
   </div>
 
   <div class="container-xs mx-auto mb-10">
-    <form class="form" action="https://submit-form.com/1vijeOzmy">
+    <form id="contactForm" class="form" action="https://submit-form.com/1vijeOzmy">
       <input
         type="hidden"
         name="_redirect"
@@ -30,15 +30,37 @@ sitemap:
       />
       <div class="form-group">
         <label class="form-label" for="name">Name</label>
-        <input class="form-input" type="text" id="name" name="name" placeholder="Your name" />
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <p class="error" id="nameError" aria-live="polite" style="display: none;">Name is required.</p>
       </div>
       <div class="form-group">
         <label class="form-label" for="email">Email Address</label>
-        <input class="form-input" type="email" id="email" name="email" placeholder="Your email address" />
+        <input
+          class="form-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email address"
+          required
+        />
+        <p class="error" id="emailError" aria-live="polite" style="display: none;">Valid email is required.</p>
       </div>
       <div class="form-group">
         <label class="form-label" for="website">Website</label>
-        <input class="form-input" type="text" id="website" name="website" placeholder="The website url"/>
+        <input
+          class="form-input"
+          type="text"
+          id="website"
+          name="website"
+          placeholder="The website URL"
+        />
       </div>
       <div class="form-group">
         <label class="form-label" for="message">Details</label>
@@ -47,8 +69,9 @@ sitemap:
           name="details"
           class="form-input"
           placeholder="A detailed description of your issue or project."
-          required=""
+          required
         ></textarea>
+        <p class="error" id="detailsError" aria-live="polite" style="display: none;">Details are required.</p>
       </div>
       <button type="submit" class="button button-primary">Send</button>
     </form>

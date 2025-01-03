@@ -131,4 +131,78 @@ Cal("init", "meet", {origin:"https://cal.com"});
       }
     });
   });
+
+  // Check if the current page is /support or /support/
+  if (
+    window.location.pathname === '/support' || 
+    window.location.pathname === '/support/' ||
+    window.location.pathname.endsWith('/support') || // For local testing paths
+    window.location.pathname.endsWith('/support/')   // For local testing paths
+  ) {
+    const form = document.getElementById('contactForm');
+
+    if (form) {
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const details = document.getElementById('details');
+
+      const nameError = document.getElementById('nameError');
+      const emailError = document.getElementById('emailError');
+      const detailsError = document.getElementById('detailsError');
+
+      // Helper function to check if a value is null, undefined, or empty
+      function isEmpty(value) {
+        return value === null || value === undefined || value.trim() === '';
+      }
+
+      // Helper function for showing errors
+      function showError(input, errorElement, message) {
+        if (isEmpty(input.value)) {
+          errorElement.textContent = message;
+          errorElement.style.display = 'block';
+        } else if (input.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) {
+          errorElement.textContent = 'Please enter a valid email.';
+          errorElement.style.display = 'block';
+        } else {
+          errorElement.style.display = 'none';
+        }
+      }
+
+      // Add blur event listeners to fields
+      name.addEventListener('blur', () => {
+        showError(name, nameError, 'Name is required.');
+      });
+
+      email.addEventListener('blur', () => {
+        showError(email, emailError, 'Email is required.');
+      });
+
+      details.addEventListener('blur', () => {
+        showError(details, detailsError, 'Details are required.');
+      });
+
+      // Add submit event listener to the form
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        let isValid = true;
+
+        // Validate fields on submit
+        showError(name, nameError, 'Name is required.');
+        if (isEmpty(name.value)) isValid = false;
+
+        showError(email, emailError, 'Email is required.');
+        if (isEmpty(email.value) || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) isValid = false;
+
+        showError(details, detailsError, 'Details are required.');
+        if (isEmpty(details.value)) isValid = false;
+
+        // If the form is valid, submit it
+        if (isValid) {
+          form.submit();
+        }
+      });
+    }
+  }
+
 });

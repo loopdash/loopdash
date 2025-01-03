@@ -1956,6 +1956,7 @@ form button {
   }
 
   .error {
+    font-size: clamp(0.625rem, 0.8vw, 0.75rem);
     color: var(--color-error);
     padding: .5rem 1rem;
     border: 2px solid transparent;
