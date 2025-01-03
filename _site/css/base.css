@@ -207,16 +207,15 @@ hr {
 .ul, .card-question .card-body {
   padding-left: 20px;
   line-height: 150%;
-}
-
-.ul li:before, .card-question .card-body li:before {
+    /* li:before {
       margin: 0px 5px 0 -16px;
       vertical-align: middle;
       display: inline-block;
       content: "●";
       color: inherit;
       font-size: 70%;
-  }
+  } */
+}
 
 .card-question .card-body ul {
   margin-left: 20px;

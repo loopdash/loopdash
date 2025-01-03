@@ -6,7 +6,12 @@
     <main>
       <section class="container-lg mx-auto">
         <div class="col-9 my-24">
+          <div class="flex justify-between">
           <p class="text-2 text-weight-600 text-charcoal-light text-uppercase mb-3">{{ proposal.client }}</p>
+          <span id="copyLink" data-url="{{ proposal.url }}">
+            {% svgIcon "./src/img/icons/copy.svg" %} Copy link
+          </span>
+          </div>
           <h1 class="text-10 text-weight-400 text-gradient">{{ proposal.name }}</h1>
           <h2 class="text-6 text-weight-300 text-charcoal-light">{{ proposal.description }}</h2>
         </div>
@@ -19,9 +24,9 @@
             {% if proposal.services %}
               <div class="mb-8">
                 <h5 class="text-5 text-weight-600">Services</h5>
-                <ul class="text-4 ul">
+                <ul class="text-3 ul">
                   {% for service in proposal.services %}
-                    <li><strong>{{ service.name }}</strong>: {{ service.description }} <em>{{ service.duration }}</em></li>
+                    <li><strong>{{ service.name }}</strong>: {{ service.description }} <em class="text-charcoal-light">{{ service.duration }}</em></li>
                   {% endfor %}
                 </ul>
               </div>
@@ -49,5 +54,41 @@
 
     </main>
     {% include 'footer.njk' %}
+
+<script>
+  // Select the span element by its ID
+  const linkElement = document.getElementById('copyLink');
+
+  // Add a click event listener to the span
+  linkElement.addEventListener('click', (event) => {
+    // Prevent the default action (if needed)
+    event.preventDefault();
+
+    // Retrieve the URL from the data-url attribute
+    const url = linkElement.getAttribute('data-url');
+
+    // Copy the URL to the clipboard
+    navigator.clipboard.writeText(url)
+      .then(() => {
+        console.log('Link copied to clipboard:', url);
+
+        // Replace the SVG icon with a checkmark and update text to "Copied"
+        linkElement.innerHTML = `
+          <img src="/img/icons/checkmark.svg" />Copied
+        `;
+
+        // Optionally, revert the text/icon back after a delay
+        setTimeout(() => {
+          linkElement.innerHTML = `
+            {% svgIcon "./src/img/icons/copy.svg" %} Copy Link
+          `;
+        }, 2000); // Revert after 2 seconds
+      })
+      .catch((err) => {
+        console.error('Error copying the link:', err);
+      });
+  });
+</script>
+
   </body>
 </html>
