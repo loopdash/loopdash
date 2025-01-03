@@ -1532,7 +1532,7 @@ hr {
 .single-project-layout .introduction .details ul {
         list-style: none;
         margin-bottom: calc(var(--spacing) * 8);
-        margin-left: 0;
+        margin-left: -40px;
       }
 
 .single-project-layout .introduction .details ul li {
@@ -1974,7 +1974,6 @@ form button {
 .card-default {
   border: 1px solid rgba(18, 18, 18, .06);
   box-shadow: none;
-  padding: 0.25rem 1.5rem;
   display: block;
   background: 
     radial-gradient(29.48% 34.97% at 0% 98.67%, 
