@@ -9,6 +9,14 @@ import { getVersion } from "./src/utils/getVersion.js";
 dotenv.config();
 
 export default function (eleventyConfig) {
+
+  // Add sitemap
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://loopdash.com",
+    },
+  });
+
   // Add version to global data
   eleventyConfig.addGlobalData("siteVersion", getVersion());
 
