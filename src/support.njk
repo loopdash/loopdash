@@ -17,17 +17,12 @@ sitemap:
   </div>
   <section class="mx-auto">
   <div class="text-set mb-0">
-    <h1 class="text-12 text-weight-550 mb-8 text-gradient">Support</h1>
+    <h1 class="text-11 text-weight-600 text-gradient">Support</h1>
     <p class="text-5 text-charcoal-light text-weight-400">Support, when you need it.</p>
   </div>
 
   <div class="container-xs mx-auto mb-10">
-    <form id="contactForm" class="form" action="https://submit-form.com/1vijeOzmy">
-      <input
-        type="hidden"
-        name="_redirect"
-        value="https://loopdash.com/thank-you"
-      />
+    <form id="contactForm" class="form" action="https://formspree.io/f/xvggvkez" method="POST">
       <div class="form-group">
         <label class="form-label" for="name">Name</label>
         <input
@@ -36,7 +31,7 @@ sitemap:
           id="name"
           name="name"
           placeholder="Your name"
-          required
+          required=""
         />
         <p class="error" id="nameError" aria-live="polite" style="display: none;">Name is required.</p>
       </div>
@@ -48,7 +43,7 @@ sitemap:
           id="email"
           name="email"
           placeholder="Your email address"
-          required
+          required=""
         />
         <p class="error" id="emailError" aria-live="polite" style="display: none;">Valid email is required.</p>
       </div>
@@ -61,6 +56,9 @@ sitemap:
           name="website"
           placeholder="The website URL"
         />
+      </div>
+      <div class="form-group">
+        <input type="file" name="upload">
       </div>
       <div class="form-group">
         <label class="form-label" for="message">Details</label>

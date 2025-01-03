@@ -175,6 +175,7 @@ hr {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: unset;
+  padding-bottom: 3px;
 }
 
 .link {
