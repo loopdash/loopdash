@@ -175,6 +175,7 @@ function renderForm(res, errorMessage) {
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy("src/img/icons/");
   eleventyConfig.addPassthroughCopy("src/img/passthrough/");
+  eleventyConfig.addPassthroughCopy("src/img/favicons/");
   eleventyConfig.addPassthroughCopy("src/javascript/");
 
   return {
