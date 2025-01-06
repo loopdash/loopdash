@@ -45,7 +45,10 @@ sitemap:
           </article>
         {% endif %}
       {% endfor %}
-      <div class="mb-12 mt-8 hr"></div>
+      {% if not loop.last %}
+        <div class="mb-12 mt-8 hr"></div>
+      {% endif %}
     </div>
   {% endfor %}
+
 </section>
