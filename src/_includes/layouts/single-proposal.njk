@@ -43,9 +43,12 @@
                 <a href="{{ proposal.url }}" target="_blank" class="button button-secondary">
                   {% svgIcon "./src/img/icons/eye.svg" %}View Proposal
                 </a>
-                <span class="cursor-pointer" id="copyLink" data-url="{{ proposal.url }}">
+                <a href="{{ proposal.altURL }}" target="_blank" class="button button-secondary">
+                  {% svgIcon "./src/img/icons/browser.svg" %}View MVP
+                </a>
+                {# <span class="cursor-pointer" id="copyLink" data-url="{{ proposal.url }}">
                   {% svgIcon "./src/img/icons/copy.svg" %} Copy link
-                </span>
+                </span> #}
               </div>
             </div>
           </div>
