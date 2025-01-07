@@ -205,4 +205,60 @@ Cal("init", "meet", {origin:"https://cal.com"});
     }
   }
 
+
+async function checkServerStatus() {
+    try {
+        // Fetch server status from the API
+        const response = await fetch('https://echo.loopda.sh/api/get-server-status');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // Parse the response and check the server status
+        const isDown = data?.data?.isDown;
+        const message = data?.data?.message || "Unknown status";
+
+        // Get the server-status div and server-status-tag elements
+        const serverStatusDiv = document.querySelector(".server-status");
+        const statusTag = document.getElementById("server-status-tag");
+
+        if (serverStatusDiv && statusTag) {
+            // Remove any previous status classes
+            serverStatusDiv.classList.remove('server-status-up', 'server-status-down', 'server-status-error');
+
+            // Update the content and apply the appropriate class
+            if (isDown) {
+                statusTag.textContent = "Some servers down.";
+                serverStatusDiv.classList.add("server-status-down");
+            } else {
+                statusTag.textContent = "All servers up.";
+                serverStatusDiv.classList.add("server-status-up");
+            }
+        }
+    } catch (error) {
+        console.error("Error fetching server status:", error);
+
+
+
+        // Get the server-status div and server-status-tag elements
+        const serverStatusDiv = document.querySelector(".server-status");
+        const statusTag = document.getElementById("server-status-tag");
+
+        if (serverStatusDiv && statusTag) {
+            // Remove any previous status classes
+            serverStatusDiv.classList.remove('server-status-up', 'server-status-down', 'server-status-error');
+
+            // Update the text and apply the error class
+            statusTag.textContent = "Error fetching server status.";
+            serverStatusDiv.classList.add("server-status-error");
+        }
+    }
+}
+
+// Call the function to check server status
+checkServerStatus();
+
 });
