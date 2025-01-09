@@ -36,8 +36,13 @@ proposal:
   - name: Testing and Launch
     description: Rigorous testing for flawless launch readiness.
     duration: (3-4 days)
-  url: https://loopda.sh/unrig-our-economy
-  altURL: https://loopda.sh/grocery-chart
+  links: 
+  - url: https://loopda.sh/unrig-our-economy
+    text: Sign proposal
+    icon: pencil
+  - url: https://loopda.sh/grocery-chart
+    text: View MVP
+    icon: link-external
 priority: 0.6
 tags: proposals
 date: 2024-12-24

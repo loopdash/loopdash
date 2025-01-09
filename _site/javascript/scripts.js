@@ -209,7 +209,7 @@ Cal("init", "meet", {origin:"https://cal.com"});
 async function checkServerStatus() {
     try {
         // Fetch server status from the API
-        const response = await fetch('https://echo.loopda.sh/api/get-server-status');
+        const response = await fetch('https://api.loopda.sh/get-server-status');
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
