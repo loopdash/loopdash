@@ -13,8 +13,8 @@
 
         <div class="flex justify-between mb-16">
           <div class="col-7">
-            <p class="text-4 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.url }}" target="_blank" class="link">your proposal</a>. 
-            <p class="text-4 mb-10">The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link">about us</a> or refer to our <a href="/faq" target="_blank" class="link">commonly asked questions</a>.</p>
+            <p class="text-4 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.url }}" target="_blank" class="link plausible-event-name=Proposal+Sign+Link+Click">your proposal</a>. 
+            <p class="text-4 mb-10">The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">about us</a> or refer to our <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">commonly asked questions</a>.</p>
 
             {% if proposal.services %}
               <div class="mb-8">
@@ -43,7 +43,7 @@
 
                 {% if proposal.links %}
                   {% for link in proposal.links %}
-                    <a href="{{ link.url }}" target="_blank" class="button button-secondary">
+                    <a href="{{ link.url }}" target="_blank" class="button button-secondary plausible-event-name={{link.event}}">
                       {% if link.icon %}
                         {% svgIcon "./src/img/icons/" ~ link.icon ~ ".svg" %}
                       {% endif %}

@@ -40,9 +40,11 @@ proposal:
   - url: https://loopda.sh/unrig-our-economy
     text: Sign proposal
     icon: pencil
+    event: Proposal+Sign+Button+Click
   - url: https://loopda.sh/grocery-chart
     text: View MVP
     icon: link-external
+    event: Proposal+MVP+Button+Click
 priority: 0.6
 tags: proposals
 date: 2024-12-24
