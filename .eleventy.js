@@ -131,7 +131,7 @@ function renderForm(res, errorMessage) {
   res.end(`
     <html>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
         <link rel="stylesheet" href="../../css/normalize.css"/>
         <link rel="stylesheet" href="../../css/base.css"/>
         <script src="../../javascript/scripts.js" defer></script>
