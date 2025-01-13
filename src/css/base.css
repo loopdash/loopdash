@@ -182,11 +182,13 @@ code {
 }
 
 .link {
-  background: #dededd;
+  background: #e7e7e3;
   border-radius: 5px;
-  padding: 1px 6px;
-  margin: 0 -6px;
+  padding: 0px 3px;
+  margin: 0 -3px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+  overflow-wrap: unset;
+  white-space: nowrap;
 }
 .link:hover {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);

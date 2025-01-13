@@ -1,37 +1,40 @@
 ---
 layout: single-proposal.njk
 meta:
-  title: Proposal for Flockmap
-  description: A proposal to design and develop an interactive .
+  title: Proposal for Flockmap Interactive Wireframes
+  description: Create and finalize interactive wireframes for the Flockmap application in Figma.
 sitemap:
   changefreq: monthly
 proposal:
-  name: Flockmap
-  client: Unrig Our Economy
-  description: Creating an interactive, visually engaging landing page to highlight grocery price trends, connect them to political factors, and empower visitors to take action.
-  website: unrigoureconomy.com
+  name: Interactive Wireframes for Flockmap Application
+  client: Flockmap
+  description: Create and finalize interactive wireframes for the Flockmap application in Figma.
+  website: null
   video: null
   price: $3,500
-  duration: 2-5 weeks
+  duration: 4 weeks
   services:
-  - name: Discovery
-    description: Determine sitemap, aesthetic direction, and recommend adjustments to messaging.
-    duration: (2-4 days)
-  - name: Design
-    description: Elegant, user-friendly design with interactive charts, graphs and tools.
-    duration: (1-2 week)
-  - name: Design Revisions
-    description: Incorporate feedback related to layout, structure, and visual elements.
-    duration: (1 week)
+  - name: Interactive Wireframe Creation
+    description: Design interactive wireframes for nine Flockmap screens.
+    duration: 1-2 weeks
+  - name: User Experience Improvement
+    description: Propose updates to improve user experience and flow.
+    duration: 1 week
+  - name: Branding Integration
+    description: Align wireframes with Flockmap branding assets.
+    duration: 1 week
+  - name: Feedback Rounds
+    description: Work with Flockmap team on 2 feedback rounds.
+    duration: 1-2 weeks (running concurent with design)
+  - name: Access and Training
+    description: Provide access and training on using wireframes.
+    duration: 1 day
   links: 
-  - url: https://loopda.sh/unrig-our-economy
+  - url: https://loopda.sh/flockmap-sign
     text: Sign proposal
     icon: pencil
-  - url: https://loopda.sh/grocery-chart
-    text: View MVP
-    icon: link-external
 priority: 0.6
 tags: proposals
-date: 2024-12-24
+date: 2025-01-13
 url: /proposals/flockmap
 ---

@@ -26,7 +26,7 @@
             id="submitButton"
             class="button button-secondary"
           >
-            Search
+            {% svgIcon "./src/img/icons/search.svg" %} Search
           </button>
         </form>
 
@@ -59,13 +59,15 @@
           .getElementById('lookupForm')
           .addEventListener('submit', async function (event) {
             event.preventDefault();
-            const domain = document.getElementById('domain').value.trim();
+            let domain = document.getElementById('domain').value.trim();
             const submitButton = document.getElementById('submitButton');
 
             if (!domain) {
               displayError('Please enter a valid domain name.');
               return;
             }
+
+            domain = domain.replace(/^https?:\/\//, '').replace(/\/+$/, '');
 
             submitButton.classList.add('loading');
             submitButton.innerHTML = 'Loading';
