@@ -27,5 +27,5 @@ proposal:
 priority: 0.6
 tags: proposals
 date: # [DATE IN YYYY-MM-DD]
-url: /proposals/flockmap
+url: /proposals/example
 ---

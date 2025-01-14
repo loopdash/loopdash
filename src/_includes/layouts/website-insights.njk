@@ -54,156 +54,171 @@
         </div>
       </section>
 
-      <script>
-        document
-          .getElementById('lookupForm')
-          .addEventListener('submit', async function (event) {
-            event.preventDefault();
-            let domain = document.getElementById('domain').value.trim();
-            const submitButton = document.getElementById('submitButton');
+    <script>
+      // Auto-submit based on the URL query parameter
+      window.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const domain = params.get('url');
 
-            if (!domain) {
-              displayError('Please enter a valid domain name.');
-              return;
-            }
+        if (domain) {
+          // Populate the input field with the `url` value
+          const domainInput = document.getElementById('domain');
+          domainInput.value = domain;
 
-            domain = domain.replace(/^https?:\/\//, '').replace(/\/+$/, '');
+          // Trigger form submission automatically
+          const lookupForm = document.getElementById('lookupForm');
+          lookupForm.dispatchEvent(new Event('submit'));
+        }
+      });
 
-            submitButton.classList.add('loading');
-            submitButton.innerHTML = 'Loading';
-            resetUI();
+      document.getElementById('lookupForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        let domain = document.getElementById('domain').value.trim();
+        const submitButton = document.getElementById('submitButton');
 
-            try {
-              const dnsResponse = await fetch(
-                `https://networkcalc.com/api/dns/lookup/${domain}`
-              );
-              if (!dnsResponse.ok) {
-                throw new Error('DNS lookup failed');
-              }
-              const dnsData = await dnsResponse.json();
-
-              const cmsResponse = await fetch(
-                `https://whatcms.org/API/Tech?key=w2rv29kg83nmiogxn25h4wkatirius2cicbr092gkp91k2yns4oqalykl8iu5wley99g01&url=${domain}`
-              );
-              if (!cmsResponse.ok) {
-                throw new Error('CMS lookup failed');
-              }
-              const cmsData = await cmsResponse.json();
-
-              const hostResponse = await fetch(
-                `https://www.who-hosts-this.com/API/Host?key=w2rv29kg83nmiogxn25h4wkatirius2cicbr092gkp91k2yns4oqalykl8iu5wley99g01&url=${domain}`
-              );
-              if (!hostResponse.ok) {
-                throw new Error('Hosting provider lookup failed');
-              }
-              const hostData = await hostResponse.json();
-
-              displayResults(dnsData, cmsData, hostData);
-            } catch (error) {
-              displayError(error.message);
-            } finally {
-              submitButton.classList.remove('loading');
-              submitButton.innerHTML = 'Search';
-            }
-          });
-
-        function resetUI() {
-          const results = document.getElementById('results');
-          const resultContent = document.getElementById('resultContent');
-          const hostingProvider = document.getElementById('hostingProvider');
-          const nameServers = document.getElementById('nameServers');
-          const resultsTitle = document.getElementById('resultsTitle');
-          const error = document.getElementById('error');
-
-          results.style.display = 'none';
-          error.style.display = 'none';
-          resultContent.innerHTML = '';
-          hostingProvider.innerHTML = '';
-          nameServers.innerHTML = '';
-          resultsTitle.textContent = '';
+        if (!domain) {
+          displayError('Please enter a valid domain name.');
+          return;
         }
 
-        function displayResults(dnsData, cmsData, hostData) {
-          const results = document.getElementById('results');
-          const resultContent = document.getElementById('resultContent');
-          const hostingProvider = document.getElementById('hostingProvider');
-          const nameServers = document.getElementById('nameServers');
-          const resultsTitle = document.getElementById('resultsTitle');
+        domain = domain.replace(/^https?:\/\//, '').replace(/\/+$/, '');
 
-          resultsTitle.textContent = `Results for ${dnsData.hostname}`;
+        submitButton.classList.add('loading');
+        submitButton.innerHTML = 'Loading';
+        resetUI();
 
-          // Hosting Provider and Technical Information with Links
-          let hostInfo = '';
-          if (hostData.results && hostData.results.length > 0) {
-            const host = hostData.results[0];
-            hostInfo = `<p class="text-2"><strong>Hosting Provider:</strong> <a href="${host.isp_url}" target="_blank" class="link-chevron">${host.isp_name}</a></p>`;
-          } else {
-            hostInfo = '<p class="text-2"><strong>Hosting Provider:</strong> N/A</p>';
+        try {
+          const dnsResponse = await fetch(
+            `https://networkcalc.com/api/dns/lookup/${domain}`
+          );
+          if (!dnsResponse.ok) {
+            throw new Error('DNS lookup failed');
           }
+          const dnsData = await dnsResponse.json();
 
-          if (cmsData.results && cmsData.results.length > 0) {
-            const cmsDetails = cmsData.results.reduce(
-              (acc, curr) => {
-                const link = curr.url
-                  ? `<a href="${curr.url.replace('//', 'https://')}" target="_blank" class="link-chevron">${curr.name}</a>`
-                  : curr.name;
-
-                if (curr.categories.includes('CMS')) acc.cms = link;
-                if (curr.categories.includes('Programming Language')) acc.language = link;
-                if (curr.categories.includes('Database')) acc.database = link;
-                if (curr.categories.includes('CDN')) acc.cdn = link;
-                if (curr.categories.includes('Web Server')) acc.webServer = link;
-                return acc;
-              },
-              { cms: '', language: '', database: '', cdn: '', webServer: '' }
-            );
-
-            hostingProvider.innerHTML = `
-              <h3 class="text-5 text-weight-600">Hosting Provider</h3>
-              ${hostInfo}
-              <p class="text-2"><strong>CMS:</strong> ${cmsDetails.cms || 'N/A'}</p>
-              <p class="text-2"><strong>Programming Language:</strong> ${cmsDetails.language || 'N/A'}</p>
-              <p class="text-2"><strong>Database:</strong> ${cmsDetails.database || 'N/A'}</p>
-              <p class="text-2"><strong>CDN:</strong> ${cmsDetails.cdn || 'N/A'}</p>
-              <p class="text-2"><strong>Web Server:</strong> ${cmsDetails.webServer || 'N/A'}</p>`;
-          } else {
-            hostingProvider.innerHTML = `
-              <h3 class="text-5 text-weight-600">Hosting Provider</h3>
-              ${hostInfo}
-              <p class="text-4 text-charcoal-light">No hosting information available.</p>`;
+          const cmsResponse = await fetch(
+            `https://whatcms.org/API/Tech?key=w2rv29kg83nmiogxn25h4wkatirius2cicbr092gkp91k2yns4oqalykl8iu5wley99g01&url=${domain}`
+          );
+          if (!cmsResponse.ok) {
+            throw new Error('CMS lookup failed');
           }
+          const cmsData = await cmsResponse.json();
 
-          // DNS Records
-          resultContent.innerHTML = Object.entries(dnsData.records)
-            .filter(([key, value]) => value.length > 0)
-            .map(([key, value]) => {
-              const records = value
-                .map(
-                  (record) =>
-                    `<code class="text-1">${record.address || record.exchange || record.nameserver || record}</code>`
-                )
-                .join('<br>');
-              return `<div class="mb-5"><h3 class="text-2 text-weight-600 text-charcoal-light text-uppercase mb-1">${key} Records</h3>${records}</div>`;
-            })
-            .join('');
+          const hostResponse = await fetch(
+            `https://www.who-hosts-this.com/API/Host?key=w2rv29kg83nmiogxn25h4wkatirius2cicbr092gkp91k2yns4oqalykl8iu5wley99g01&url=${domain}`
+          );
+          if (!hostResponse.ok) {
+            throw new Error('Hosting provider lookup failed');
+          }
+          const hostData = await hostResponse.json();
 
-          // Name Servers
-          nameServers.innerHTML =
-            dnsData.records.NS && dnsData.records.NS.length > 0
-              ? dnsData.records.NS.map(
-                  (ns) => `<code class="text-1">${ns.nameserver}</code>`
-                ).join('<br>')
-              : '<p class="text-4 text-charcoal-light">No name servers available.</p>';
+          displayResults(dnsData, cmsData, hostData);
+        } catch (error) {
+          displayError(error.message);
+        } finally {
+          submitButton.classList.remove('loading');
+          submitButton.innerHTML = '<svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg> Search';
+        }
+      });
 
-          results.style.display = 'block';
+      function resetUI() {
+        const results = document.getElementById('results');
+        const resultContent = document.getElementById('resultContent');
+        const hostingProvider = document.getElementById('hostingProvider');
+        const nameServers = document.getElementById('nameServers');
+        const resultsTitle = document.getElementById('resultsTitle');
+        const error = document.getElementById('error');
+
+        results.style.display = 'none';
+        error.style.display = 'none';
+        resultContent.innerHTML = '';
+        hostingProvider.innerHTML = '';
+        nameServers.innerHTML = '';
+        resultsTitle.textContent = '';
+      }
+
+      function displayResults(dnsData, cmsData, hostData) {
+        const results = document.getElementById('results');
+        const resultContent = document.getElementById('resultContent');
+        const hostingProvider = document.getElementById('hostingProvider');
+        const nameServers = document.getElementById('nameServers');
+        const resultsTitle = document.getElementById('resultsTitle');
+
+        resultsTitle.textContent = `Results for ${dnsData.hostname}`;
+
+        // Hosting Provider and Technical Information with Links
+        let hostInfo = '';
+        if (hostData.results && hostData.results.length > 0) {
+          const host = hostData.results[0];
+          hostInfo = `<p class="text-2"><strong>Hosting Provider:</strong> <a href="${host.isp_url}" target="_blank" class="link-chevron">${host.isp_name}</a></p>`;
+        } else {
+          hostInfo = '<p class="text-2"><strong>Hosting Provider:</strong> N/A</p>';
         }
 
-        function displayError(message) {
-          const error = document.getElementById('error');
-          error.textContent = message;
-          error.style.display = 'block';
+        if (cmsData.results && cmsData.results.length > 0) {
+          const cmsDetails = cmsData.results.reduce(
+            (acc, curr) => {
+              const link = curr.url
+                ? `<a href="${curr.url.replace('//', 'https://')}" target="_blank" class="link-chevron">${curr.name}</a>`
+                : curr.name;
+
+              if (curr.categories.includes('CMS')) acc.cms = link;
+              if (curr.categories.includes('Programming Language')) acc.language = link;
+              if (curr.categories.includes('Database')) acc.database = link;
+              if (curr.categories.includes('CDN')) acc.cdn = link;
+              if (curr.categories.includes('Web Server')) acc.webServer = link;
+              return acc;
+            },
+            { cms: '', language: '', database: '', cdn: '', webServer: '' }
+          );
+
+          hostingProvider.innerHTML = `
+            <h3 class="text-5 text-weight-600">Hosting Provider</h3>
+            ${hostInfo}
+            <p class="text-2"><strong>CMS:</strong> ${cmsDetails.cms || 'N/A'}</p>
+            <p class="text-2"><strong>Programming Language:</strong> ${cmsDetails.language || 'N/A'}</p>
+            <p class="text-2"><strong>Database:</strong> ${cmsDetails.database || 'N/A'}</p>
+            <p class="text-2"><strong>CDN:</strong> ${cmsDetails.cdn || 'N/A'}</p>
+            <p class="text-2"><strong>Web Server:</strong> ${cmsDetails.webServer || 'N/A'}</p>`;
+        } else {
+          hostingProvider.innerHTML = `
+            <h3 class="text-5 text-weight-600">Hosting Provider</h3>
+            ${hostInfo}
+            <p class="text-4 text-charcoal-light">No hosting information available.</p>`;
         }
-      </script>
+
+        // DNS Records
+        resultContent.innerHTML = Object.entries(dnsData.records)
+          .filter(([key, value]) => value.length > 0)
+          .map(([key, value]) => {
+            const records = value
+              .map(
+                (record) =>
+                  `<code class="text-1">${record.address || record.exchange || record.nameserver || record}</code>`
+              )
+              .join('<br>');
+            return `<div class="mb-5"><h3 class="text-2 text-weight-600 text-charcoal-light text-uppercase mb-1">${key} Records</h3>${records}</div>`;
+          })
+          .join('');
+
+        // Name Servers
+        nameServers.innerHTML =
+          dnsData.records.NS && dnsData.records.NS.length > 0
+            ? dnsData.records.NS.map(
+                (ns) => `<code class="text-1">${ns.nameserver}</code>`
+              ).join('<br>')
+            : '<p class="text-4 text-charcoal-light">No name servers available.</p>';
+
+        results.style.display = 'block';
+      }
+
+      function displayError(message) {
+        const error = document.getElementById('error');
+        error.textContent = message;
+        error.style.display = 'block';
+      }
+    </script>
+
     </main>
     {% include 'footer.njk' %}
   </body>
