@@ -15,22 +15,16 @@ proposal:
   price: $13,700
   duration: 5-7 weeks
   services:
-  - name: Sitemap Analysis & Recommendations
-    description: Optimize sitemap based on content length and relevance.
+  - name: Discovery
+    description: Design high level options for visual direction.
     duration: 1 week
   - name: Desktop & Mobile Design
     description: Create responsive designs for web and mobile.
     duration: 2-3 weeks
-  - name: Walking Tour Instructions
-    description: Add walking tour feature in design and functionality.
-    duration: 2-3 days
-  - name: Event Listing Page
-    description: Create dynamic event pages with content management.
-    duration: 1 week
-  - name: CMS Integration
+  - name: Development
     description: Build and integrate a user-friendly CMS for updates.
     duration: 3 weeks
-  - name: Revision Rounds
+  - name: Revisions
     description: Implement 2 rounds of design and development revisions.
     duration: 2 weeks
   - name: Quality Assurance & Testing
