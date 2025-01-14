@@ -19,7 +19,7 @@
             {% if proposal.services %}
               <div class="mb-8">
                 <h5 class="text-4 text-weight-600">Services</h5>
-                <ul class="text-3 ul">
+                <ul class="text-3 ul ul-check">
                   {% for service in proposal.services %}
                     <li><strong>{{ service.name }}</strong>: {{ service.description }} <em class="text-charcoal-light">{{ service.duration }}</em></li>
                   {% endfor %}

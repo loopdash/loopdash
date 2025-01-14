@@ -10,7 +10,8 @@ proposal:
   client: Carnegie Hill Neighbors
   description: Redesign and development of Carnegie Hill Neighbors website with donation integration, walking tours, and event details.
   website: carnegiehillneighbors.org
-  video: [LOOM VIDEO URL HERE]
+  video: |
+    <div style="position: relative; padding-bottom: 64.92178098676294%; height: 0;"><iframe src="https://www.loom.com/embed/fa9827b347fb4c7cbf490cd6aad0f630?sid=6a54c901-e49d-4bc5-8a22-e3e27cf345f8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   price: $13,700
   duration: 5-7 weeks
   services:
