@@ -35,7 +35,7 @@ proposal:
     duration: 1 week
   links: 
   - url: https://loopda.sh/chn-sign/
-    text: Sign proposal
+    text: Review proposal
     icon: pencil
     event: Proposal+Sign+Button+Click
 priority: 0.6
