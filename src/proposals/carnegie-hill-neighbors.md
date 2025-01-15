@@ -37,6 +37,7 @@ proposal:
   - url: https://loopda.sh/chn-sign/
     text: Sign proposal
     icon: pencil
+    event: Proposal+Sign+Button+Click
 priority: 0.6
 tags: proposals
 date: 2025-01-13
