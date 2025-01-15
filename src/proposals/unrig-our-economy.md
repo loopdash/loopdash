@@ -38,7 +38,7 @@ proposal:
     duration: (3-4 days)
   links: 
   - url: https://loopda.sh/unrig-our-economy
-    text: Sign proposal
+    text: Review proposal
     icon: pencil
     event: Proposal+Sign+Button+Click
   - url: https://loopda.sh/grocery-chart

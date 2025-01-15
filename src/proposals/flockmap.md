@@ -31,8 +31,9 @@ proposal:
     duration: 1 day
   links: 
   - url: https://loopda.sh/flockmap-sign
-    text: Sign proposal
+    text: Review proposal
     icon: pencil
+    event: Proposal+Sign+Button+Click
 priority: 0.6
 tags: proposals
 date: 2025-01-13
