@@ -41,6 +41,10 @@ proposal:
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
+  - url: https://loopda.sh/alerislife-deck
+    text: Our Work
+    icon: eye
+    event: Our+Work+Button+Click
 priority: 0.6
 tags: proposals
 date: 2025-01-15
