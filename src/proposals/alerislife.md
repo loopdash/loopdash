@@ -14,7 +14,8 @@ proposal:
     <br /><br />
     This partnership is designed to produce meaningful and impactful results over time. For more details on the investment and scope of work, please refer to your <a href="https://loopda.sh/alerislife-sign" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">proposal. You can also learn more <a href="/about" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">about our approach</a>, <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">explore common questions</a>, or <a href="mailto:gary@loopdash.com" class="link plausible-event-name=Proposal+Email+Link+Click">contact us directly</a>.
   website: alerislife.com
-  video: null
+  video: |
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/db8ca67f534e49488bedf404f710c04c?sid=d4484617-e435-4d83-b643-101bd0defcd2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   price: $6,000
   duration: [ESTIMATE HOW LONG PROJECT WILL TAKE]
   services:
