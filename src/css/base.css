@@ -249,7 +249,6 @@ code {
 
 
 .ul-service {
-  margin: 0 0 0 -40px;
   li {
     list-style-type: none;
     margin-top: calc(var(--spacing) * 6);
@@ -287,7 +286,7 @@ code {
       font-size: clamp(0.625rem, 0.8vw, 0.75rem);
     }
     .widget-completed {
-      background-color: #78766dce;
+      background-color: #78766d45;
     }
   }
 }
