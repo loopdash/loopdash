@@ -839,12 +839,12 @@ code {
   max-width: 228px;
 }
 
-.logo-text {
+.navbar .logo-text {
   display: none;
 }
 
 @media only screen and (min-width: 760px) {
-  .logo-text {
+  .navbar .logo-text {
     display: block;
   }
   .logo {
@@ -1028,22 +1028,28 @@ code {
 
   .support-link {
     position: absolute;
-    color: var(--color-cream);
-    bottom: 2rem;
-    right: 2rem;
+    color: var(--color-charcoal-light);
+    bottom: 4rem;
+    right: 4rem;
     display: flex;
     gap: 0.25rem;
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 
-    &:hover {
-      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
-      transform: translateY(-2px); /* Moves the card slightly up */
-    }
-    
     svg {
+      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
       width: 14px;
       height: auto;
-      fill: white;
+      fill: var(--color-charcoal-light);
+    }
+
+    &:hover {
+      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      color: var(--color-cream-dark);
+      transform: translateY(-2px); /* Moves the card slightly up */
+      svg {
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        fill: var(--color-cream-dark);
+      }
     }
   }
 }
@@ -2303,8 +2309,10 @@ a.card-default {
   background: var(--color-green-waterloo);
   z-index: 999;
   position: relative;
+  margin-top: calc(var(--spacing) * 20);
   padding: calc(var(--spacing) * 40) 1.5rem calc(var(--spacing) * 10);
   color: var(--color-charcoal-light);
+
   ul {
     margin-left: -40px;
     li {
@@ -2331,11 +2339,14 @@ a.card-default {
     padding-top: calc(var(--spacing) * 10);
   }
   .legal {
-    padding-top: calc(var(--spacing) * 30);
+    border-top: 1px solid #3e3d3d9e;
+    padding-top: calc(var(--spacing) * 3);
+    margin-top: calc(var(--spacing) * 30);
     
     .legal-links {
-      justify-content: space-between;
       display: flex;
+      align-items: center;
+      gap: 1rem;
       align-items: center;
 
       a {
@@ -2352,7 +2363,7 @@ a.card-default {
   .server-status {
     gap: 0.25rem;
     flex-direction: row;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
@@ -2360,7 +2371,6 @@ a.card-default {
     .server-status-dot {
       width: 9px;
       height: 9px;
-      margin-right: 4px;
       display: inline-block;
       border-radius: 50%;
       background: var(--color-charcoal-light);
@@ -2386,6 +2396,28 @@ a.card-default {
 
     .server-status-dot {
       background: #d78371;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .container-xl {
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .flex {
+      flex-direction: row;
+    }
+
+    .col-4 {
+      flex: 0 0 43% !important;
+    }
+
+    .legal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
   }
 }
