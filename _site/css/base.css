@@ -2351,9 +2351,6 @@ a.card-default:hover,
   padding: calc(var(--spacing) * 40) 1.5rem calc(var(--spacing) * 10);
   color: var(--color-charcoal-light);
 }
-.site-footer ul {
-    margin-left: -40px;
-  }
 .site-footer ul li {
       list-style-type: none;
       line-height: 1.8;

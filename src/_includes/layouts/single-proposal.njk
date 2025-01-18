@@ -21,7 +21,13 @@
               <div class="mb-8">
                 <div class="card card-default">
                   <div class="card-header">
-                    <h5 class="text-4 text-weight-600">Service Timeline</h5>
+                    <h5 class="text-4 text-weight-600">
+                      {% if service.complete !== null %}
+                        Timeline
+                        {% else %}
+                        Services
+                      {% endif %}
+                    </h5>
                   </div>
                   <div class="pb-10 pt-3 px-6">
                     <ul class="text-2 ul-service">
