@@ -2368,7 +2368,6 @@ a.card-default {
   color: var(--color-charcoal-light);
 
   ul {
-    margin-left: -40px;
     li {
       list-style-type: none;
       line-height: 1.8;
