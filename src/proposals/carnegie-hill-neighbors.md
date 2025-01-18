@@ -22,21 +22,27 @@ proposal:
   - name: Discovery
     description: Design high level options for visual direction.
     duration: 1 week
+    complete: false
   - name: Desktop & Mobile Design
     description: Create responsive designs for web and mobile.
     duration: 2-3 weeks
+    complete: false
   - name: Development
     description: Build and integrate a user-friendly CMS for updates.
     duration: 3 weeks
+    complete: false
   - name: Revisions
     description: Implement 2 rounds of design and development revisions.
     duration: 2 weeks
+    complete: false
   - name: Quality Assurance & Testing
     description: Test website for responsiveness and functionality.
     duration: 1 week
+    complete: false
   - name: Deployment & Training
     description: Launch site and provide admin training.
     duration: 1 week
+    complete: false
   links: 
   - url: https://loopda.sh/chn-sign/
     text: Review proposal

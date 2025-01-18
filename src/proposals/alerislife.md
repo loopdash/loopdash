@@ -22,21 +22,27 @@ proposal:
   - name: Website Design and Development
     description: Modern, responsive designs tailored to your brand.
     duration: Ongoing
+    complete: null
   - name: Maintenance and Updates
     description: Regular updates to ensure performance and security.
     duration: Ongoing
+    complete: null
   - name: Content Updates
     description: Keeping your content current and relevant.
     duration: Ongoing
+    complete: null
   - name: UX Optimization
     description: Enhancing usability and engagement across your site.
     duration: Ongoing
+    complete: null
   - name: SEO Integration
     description: Improving visibility to drive organic traffic.
     duration: Ongoing
+    complete: null
   - name: Custom Functionality
     description: Building features to meet your unique digital needs.
     duration: As required
+    complete: null
   links: 
   - url: https://loopda.sh/alerislife-sign
     text: Review proposal

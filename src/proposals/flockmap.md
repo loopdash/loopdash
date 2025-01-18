@@ -21,18 +21,23 @@ proposal:
   - name: Interactive Wireframe Creation
     description: Design interactive wireframes for nine Flockmap screens.
     duration: 1-2 weeks
+    complete: false
   - name: User Experience Improvement
     description: Propose updates to improve user experience and flow.
     duration: 1 week
+    complete: false
   - name: Branding Integration
     description: Align wireframes with Flockmap branding assets.
     duration: 1 week
+    complete: false
   - name: Feedback Rounds
     description: Work with Flockmap team on 2 feedback rounds.
     duration: 1-2 weeks (running concurent with design)
+    complete: false
   - name: Access and Training
     description: Provide access and training on using wireframes.
     duration: 1 day
+    complete: false
   links: 
   - url: https://loopda.sh/flockmap-sign
     text: Review proposal

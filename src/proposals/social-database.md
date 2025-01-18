@@ -21,15 +21,19 @@ proposal:
   - name: Discovery & Planning
     description: Requirements gathering and API setup.
     duration: 1 week
+    complete: true
   - name: Data Scraping Setup
     description: Configure crawlers and cron jobs.
     duration: 2 weeks
+    complete: false
   - name: Post Data Collection
     description: Automate post metrics scraping and Airtable updates.
     duration: 1–2 weeks
+    complete: false
   - name: Airtable Integration
     description: Create seamless pipelines for data updates.
     duration: 1 week
+    complete: false
   links: 
   - url: https://loopda.sh/the-hub-project
     text: Review proposal

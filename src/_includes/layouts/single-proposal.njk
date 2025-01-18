@@ -19,12 +19,38 @@
 
             {% if proposal.services %}
               <div class="mb-8">
-                <h5 class="text-4 text-weight-600">Services</h5>
-                <ul class="text-3 ul ul-check">
-                  {% for service in proposal.services %}
-                    <li><strong>{{ service.name }}</strong>: {{ service.description }} <em class="text-charcoal-light">{{ service.duration }}</em></li>
-                  {% endfor %}
-                </ul>
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h5 class="text-4 text-weight-600">Service Timeline</h5>
+                  </div>
+                  <div class="pb-10 pt-3 px-6">
+                    <ul class="text-2 ul-service">
+                      {% for service in proposal.services %}
+                        <li>
+                          {% if (not loop.last or service.complete) and service.complete !== null %}
+                            <div class="service-timeline-container">
+                              <div class="w-px bg-border"></div>
+                            </div>
+                          {% endif %}
+                            <div class="widget">
+                              {% if service.complete or service.complete == null %}
+                                {% svgIcon "./src/img/icons/checkmark.svg" %}
+                              {% else %}
+                                {{ loop.index }}
+                              {% endif %}
+                            </div>
+                          <div class="w-100">
+                            <div class="flex flex-column-row justify-between">
+                              <strong>{{ service.name }}</strong>
+                              <span class="text-1 mb-0 text-uppercase text-charcoal-light">{{ service.duration }}</span>
+                            </div>
+                            {{ service.description }}
+                          </div>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
               </div>
             {% endif %}
           </div>

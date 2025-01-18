@@ -21,25 +21,32 @@ proposal:
   services:
   - name: Discovery
     description: Determine sitemap, aesthetic direction, and recommend adjustments to messaging.
-    duration: (2-4 days)
+    duration: 2-4 days
+    complete: false
   - name: Design
     description: Elegant, user-friendly design with interactive charts, graphs and tools.
-    duration: (1 week)
+    duration: 1 week
+    complete: false
   - name: Design Revisions
     description: Incorporate feedback related to layout, structure, and visual elements.
-    duration: (3-4 days)
+    duration: 3-4 days
+    complete: false
   - name: Development
     description: Responsive, accessible, and optimized for performance.
-    duration: (2 weeks)
+    duration: 2 weeks
+    complete: false
   - name: Interactivity Development
     description: Interactive charts, actionable & shareable social media links.
-    duration: (3-4 days)
+    duration: 3-4 days
+    complete: false
   - name: Data and Content Integration
     description: Grocery data trend visualization from FRED API.
-    duration: (1 week)
+    duration: 1 week
+    complete: false
   - name: Testing and Launch
     description: Rigorous testing for flawless launch readiness.
-    duration: (3-4 days)
+    duration: 3-4 days
+    complete: false
   links: 
   - url: https://loopda.sh/unrig-our-economy
     text: Review proposal
