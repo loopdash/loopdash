@@ -482,6 +482,7 @@ code {
 }
 
 @media only screen and (max-width: 1024px) {
+  .container-xs,
   .container-sm,
   .container-md,
   .container-lg,
@@ -1052,8 +1053,8 @@ code {
 .nav-container .support-link {
     position: absolute;
     color: var(--color-charcoal-light);
-    bottom: 4rem;
-    right: 4rem;
+    bottom: 2rem;
+    right: 2rem;
     display: flex;
     gap: 0.25rem;
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
