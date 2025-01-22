@@ -4,6 +4,11 @@ import { inspect } from "util";
 import eleventyImg from "@11ty/eleventy-img";
 import dotenv from "dotenv";
 import { getVersion } from "./src/utils/getVersion.js";
+import nunjucks from "nunjucks";
+
+nunjucks.configure('views', {
+  autoescape: true,
+});
 
 // Load environment variables
 dotenv.config();
@@ -57,6 +62,11 @@ export default function (eleventyConfig) {
     return metadata.svg[0].buffer
       .toString()
       .replace("<svg", `<svg class="${className}"`);
+  });
+
+  eleventyConfig.addNunjucksFilter('renderNested', function (str, context) {
+    const nunjucksEnvironment = new nunjucks.Environment();
+    return nunjucksEnvironment.renderString(str, context);
   });
 
   // Environment variables filter
