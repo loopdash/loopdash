@@ -165,6 +165,7 @@ code {
 .text-center { text-align: center; }
 .text-mono { font-family: var(--mono-font); }
 .text-white { color: #ffffff; }
+.text-charcoal { color: var(--color-charcoal); }
 .text-charcoal-light { color: var(--color-charcoal-light); }
 .text-weight-300 { font-weight: 300 !important; }
 .text-weight-400 { font-weight: 400 !important; }
@@ -2358,6 +2359,70 @@ a.card-default {
     }
   }
 }
+
+/* state-modal */
+.state-modal {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  display: block;
+  background-color: #ffffff;
+  backdrop-filter: blur(12px); /* Adds blur effect */
+  padding: calc(var(--spacing) * 4) calc(var(--spacing) * 4);
+  position: fixed;
+  z-index: 9999;
+  width: 50%;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 11px;
+  box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.08);
+  @media only screen and (min-width: 768px) {
+    width: 30%;
+  }
+
+  .state-modal-content {
+    display: flex;
+    align-items: flex-start;
+
+    .state-modal-icon {
+      flex-shrink: 0;
+      color: #66c979;
+
+      svg {
+        height: 24px;
+        width: 24px;
+        color: #66c979;
+      }
+    }
+
+    .state-modal-text {
+      flex: 1;
+      padding-top: 2px;
+    }
+
+    .state-modal-close {
+      margin-left: 0;
+      flex-shrink: 0;
+      display: flex;
+
+      .close-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        color: #9ca3af;
+        transition: color 0.15s ease-in-out;
+        width: 16px;
+        height: 16px;
+
+        &:focus {
+          outline: none;
+          color: #6b7280;
+        }
+      }
+    }
+  }
+}
+
 
 /* Footer */
 .site-footer {

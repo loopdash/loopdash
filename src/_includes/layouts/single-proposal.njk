@@ -80,9 +80,9 @@
                     </a>
                   {% endfor %}
                 {% endif %}
-                {# <span class="cursor-pointer" id="copyLink" data-url="{{ proposal.url }}">
-                  {% svgIcon "./src/img/icons/copy.svg" %} Copy link
-                </span> #}
+                <span class="cursor-pointer text-2 text-charcoal-light trigger-modal" data-url="{{ proposal.url }}" data-title="Copied!" data-subtext="Link was copied was successfully.">
+                  {% svgIcon "./src/img/icons/copy.svg", "text-charcoal-light" %} Copy link
+                </span>
               </div>
             </div>
           </div>
@@ -91,42 +91,7 @@
       </section>
 
     </main>
+    {% include 'partials/_state-modal.njk' %}
     {% include 'footer.njk' %}
-
-<script>
-  // Select the span element by its ID
-  const linkElement = document.getElementById('copyLink');
-
-  // Add a click event listener to the span
-  linkElement.addEventListener('click', (event) => {
-    // Prevent the default action (if needed)
-    event.preventDefault();
-
-    // Retrieve the URL from the data-url attribute
-    const url = linkElement.getAttribute('data-url');
-
-    // Copy the URL to the clipboard
-    navigator.clipboard.writeText(url)
-      .then(() => {
-        console.log('Link copied to clipboard:', url);
-
-        // Replace the SVG icon with a checkmark and update text to "Copied"
-        linkElement.innerHTML = `
-          <img src="/img/icons/checkmark.svg" /> Copied!
-        `;
-
-        // Optionally, revert the text/icon back after a delay
-        setTimeout(() => {
-          linkElement.innerHTML = `
-            {% svgIcon "./src/img/icons/copy.svg" %} Copy link
-          `;
-        }, 2000); // Revert after 2 seconds
-      })
-      .catch((err) => {
-        console.error('Error copying the link:', err);
-      });
-  });
-</script>
-
   </body>
 </html>

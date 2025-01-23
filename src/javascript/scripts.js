@@ -240,9 +240,6 @@ async function checkServerStatus() {
         }
     } catch (error) {
         console.error("Error fetching server status:", error);
-
-
-
         // Get the server-status div and server-status-tag elements
         const serverStatusDiv = document.querySelector(".server-status");
         const statusTag = document.getElementById("server-status-tag");
@@ -261,4 +258,67 @@ async function checkServerStatus() {
 // Call the function to check server status
 checkServerStatus();
 
+
+document.querySelectorAll('.trigger-modal').forEach(button => {
+    button.addEventListener('click', () => {
+      console.log(button)
+      const title = button.getAttribute('data-title');
+      const subText = button.getAttribute('data-subtext');
+      showStateModal('.state-modal', title, subText);
+    });
+  });
+
+function showStateModal(modalSelector, titleText, subText) {
+    const modal = document.querySelector(modalSelector);
+
+    if (!modal) {
+      console.error(`Modal with selector "${modalSelector}" not found.`);
+      return;
+    }
+
+    // Update modal title and subtext
+    const titleElement = modal.querySelector('#modal-title');
+    const subTextElement = modal.querySelector('#modal-subtext');
+
+    if (titleElement) titleElement.textContent = titleText;
+    if (subTextElement) subTextElement.textContent = subText;
+
+    // Show the modal
+    modal.style.display = 'block';
+    setTimeout(() => {
+      modal.style.opacity = '1'; // Fade in
+    }, 10); // Small delay to ensure display change takes effect
+
+    // Automatically hide the modal after 7 seconds
+    const autoHideTimeout = setTimeout(() => {
+      fadeOutModal();
+    }, 7000);
+
+    // Function to fade out the modal
+    function fadeOutModal() {
+      modal.style.transition = 'opacity 0.5s ease';
+      modal.style.opacity = '0';
+      setTimeout(() => {
+        modal.style.display = 'none';
+      }, 500); // Match the duration of the fade-out transition
+    }
+
+    // Close button logic
+    const closeButton = modal.querySelector('.close-button');
+    if (closeButton) {
+      closeButton.addEventListener('click', () => {
+        clearTimeout(autoHideTimeout); // Cancel auto-hide if the close button is clicked
+        fadeOutModal();
+      });
+    }
+  }
+
+  // Attach click event to all buttons with class "trigger-modal"
+  document.querySelectorAll('.trigger-modal').forEach(button => {
+    button.addEventListener('click', () => {
+      const title = button.getAttribute('data-title');
+      const subText = button.getAttribute('data-subtext');
+      showStateModal('.state-modal', title, subText);
+    });
+  });
 });
