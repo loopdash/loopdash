@@ -463,6 +463,7 @@ code {
 
 
 /* Containers */
+.mw-xs { max-width: 24rem; }
 .container-xs {
   max-width: 480px;
 }
@@ -503,9 +504,6 @@ code {
 .w-5 { width: calc(var(--spacing) * 5); }
 .w-6 { width: calc(var(--spacing) * 6); }
 .w-100 { width: 100%; }
-
-/* max-Width */
-.mw-xs { max-width: 24rem; }
 
 /* Padding */
 .p-0 { padding: 0; }
