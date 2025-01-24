@@ -13,6 +13,8 @@ proposal:
     <p class="text-3 mb-10">We are excited about the opportunity to collaborate with LogiSync to redesign and modernize logisync.com. By leveraging a structured and phased approach, we will ensure that the project meets your expectations for design, functionality, performance, and ongoing maintenance. The proposed investment for this project is outlined in <a href="{{ proposal.links[0].url }}" target="_blank" class="link plausible-event-name=Proposal+Sign+Link+Click">your proposal</a>.</p>
     <p class="text-3 mb-10">
     The new website is estimated to be completed within {{ duration }}, providing a fully refreshed and optimized experience. If you need additional clarity, please feel free to <a class="link" href="#" data-cal-link="garyb/meet">schedule a meeting</a> or explore our <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">frequently asked questions</a>.</p>
+  video: |
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/1bfe7a26af0e42d38f40a5797e3bd1af?sid=a157cf38-e288-4159-b535-53a603a3b81d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   website: logisync.com
   price: $26,240
   duration: 10-12 weeks

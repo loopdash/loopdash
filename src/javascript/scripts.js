@@ -259,66 +259,77 @@ async function checkServerStatus() {
 checkServerStatus();
 
 
-document.querySelectorAll('.trigger-modal').forEach(button => {
-    button.addEventListener('click', () => {
-      console.log(button)
-      const title = button.getAttribute('data-title');
-      const subText = button.getAttribute('data-subtext');
-      showStateModal('.state-modal', title, subText);
-    });
-  });
 
+// Function to show the modal (reusable)
 function showStateModal(modalSelector, titleText, subText) {
-    const modal = document.querySelector(modalSelector);
+  const modal = document.querySelector(modalSelector);
 
-    if (!modal) {
-      console.error(`Modal with selector "${modalSelector}" not found.`);
-      return;
-    }
-
-    // Update modal title and subtext
-    const titleElement = modal.querySelector('#modal-title');
-    const subTextElement = modal.querySelector('#modal-subtext');
-
-    if (titleElement) titleElement.textContent = titleText;
-    if (subTextElement) subTextElement.textContent = subText;
-
-    // Show the modal
-    modal.style.display = 'block';
-    setTimeout(() => {
-      modal.style.opacity = '1'; // Fade in
-    }, 10); // Small delay to ensure display change takes effect
-
-    // Automatically hide the modal after 7 seconds
-    const autoHideTimeout = setTimeout(() => {
-      fadeOutModal();
-    }, 7000);
-
-    // Function to fade out the modal
-    function fadeOutModal() {
-      modal.style.transition = 'opacity 0.5s ease';
-      modal.style.opacity = '0';
-      setTimeout(() => {
-        modal.style.display = 'none';
-      }, 500); // Match the duration of the fade-out transition
-    }
-
-    // Close button logic
-    const closeButton = modal.querySelector('.close-button');
-    if (closeButton) {
-      closeButton.addEventListener('click', () => {
-        clearTimeout(autoHideTimeout); // Cancel auto-hide if the close button is clicked
-        fadeOutModal();
-      });
-    }
+  if (!modal) {
+    console.error(`Modal with selector "${modalSelector}" not found.`);
+    return;
   }
 
-  // Attach click event to all buttons with class "trigger-modal"
-  document.querySelectorAll('.trigger-modal').forEach(button => {
-    button.addEventListener('click', () => {
+  // Update modal title and subtext
+  const titleElement = modal.querySelector('#modal-title');
+  const subTextElement = modal.querySelector('#modal-subtext');
+
+  if (titleElement) titleElement.textContent = titleText;
+  if (subTextElement) subTextElement.textContent = subText;
+
+  // Show the modal
+  modal.style.display = 'block';
+  setTimeout(() => {
+    modal.style.opacity = '1'; // Fade in
+  }, 10); // Small delay to ensure display change takes effect
+
+  // Automatically hide the modal after 7 seconds
+  const autoHideTimeout = setTimeout(() => {
+    fadeOutModal();
+  }, 7000);
+
+  // Function to fade out the modal
+  function fadeOutModal() {
+    modal.style.transition = 'opacity 0.5s ease';
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 500); // Match the duration of the fade-out transition
+  }
+
+  // Close button logic
+  const closeButton = modal.querySelector('.close-button');
+  if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      clearTimeout(autoHideTimeout); // Cancel auto-hide if the close button is clicked
+      fadeOutModal();
+    });
+  }
+}
+
+// Function to handle the copy action and modal display
+function handleCopyAndShowModal(event) {
+  const button = event.currentTarget;
+
+  // Get the data-url attribute
+  const urlToCopy = button.getAttribute('data-url');
+  console.log(urlToCopy);
+
+  // Use the Clipboard API to copy the URL
+  navigator.clipboard.writeText(urlToCopy)
+    .then(() => {
+      // Display the modal after successful copy
       const title = button.getAttribute('data-title');
       const subText = button.getAttribute('data-subtext');
       showStateModal('.state-modal', title, subText);
+    })
+    .catch(err => {
+      console.error('Failed to copy text: ', err);
     });
-  });
+}
+
+// Attach click event to buttons with ID or class
+document.querySelectorAll('.trigger-modal').forEach(button => {
+  button.addEventListener('click', handleCopyAndShowModal);
+});
+
 });
