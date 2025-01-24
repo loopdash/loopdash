@@ -18,13 +18,21 @@ proposal:
   price: $10,200
   duration: 2-5 weeks
   services:
+  - name: Discovery
+    description: Design high level options for visual direction.
+    duration: 1-2 days
+    complete: false
   - name: Website Design
     description: Create modern, visually compelling designs for 4-5 pages.
     duration: 1-2 weeks
     complete: false
-  - name: WordPress Development
+  - name: Development
     description: Build a custom WordPress site with easy-to-manage CMS.
     duration: 2-3 weeks
+    complete: false
+  - name: Feedback & Revisions
+    description: Implement 2 rounds of design and development revisions.
+    duration: 1-2 days
     complete: false
   - name: Testing & Launch
     description: Ensure functionality and responsiveness before deployment.
