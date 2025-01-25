@@ -70,9 +70,7 @@
             <p id="utmUrl" class="text-3"></p>
             <button
               id="copyButton"
-              data-title="Copied to clipboard"
-              data-subtext="The URL has been copied to your clipboard"
-              class="trigger-modal button button-primary"
+              class="button button-primary"
             >
               {% svgIcon "./src/img/icons/copy.svg" %} Copy URL
             </button>
@@ -110,7 +108,9 @@
           const utmUrl = document.getElementById('utmUrl').textContent;
 
           navigator.clipboard.writeText(utmUrl).then(() => {
-            
+          const title = "Copied to clipboard"
+          const subText = "The URL has been copied to your clipboard"
+          showStateModal('.state-modal', title, subText);
           }).catch((err) => {
             console.error('Failed to copy UTM URL: ', err);
           });

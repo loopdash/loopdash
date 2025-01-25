@@ -258,54 +258,6 @@ async function checkServerStatus() {
 // Call the function to check server status
 checkServerStatus();
 
-
-
-// Function to show the modal (reusable)
-function showStateModal(modalSelector, titleText, subText) {
-  const modal = document.querySelector(modalSelector);
-
-  if (!modal) {
-    console.error(`Modal with selector "${modalSelector}" not found.`);
-    return;
-  }
-
-  // Update modal title and subtext
-  const titleElement = modal.querySelector('#modal-title');
-  const subTextElement = modal.querySelector('#modal-subtext');
-
-  if (titleElement) titleElement.textContent = titleText;
-  if (subTextElement) subTextElement.textContent = subText;
-
-  // Show the modal
-  modal.style.display = 'block';
-  setTimeout(() => {
-    modal.style.opacity = '1'; // Fade in
-  }, 10); // Small delay to ensure display change takes effect
-
-  // Automatically hide the modal after 7 seconds
-  const autoHideTimeout = setTimeout(() => {
-    fadeOutModal();
-  }, 7000);
-
-  // Function to fade out the modal
-  function fadeOutModal() {
-    modal.style.transition = 'opacity 0.5s ease';
-    modal.style.opacity = '0';
-    setTimeout(() => {
-      modal.style.display = 'none';
-    }, 500); // Match the duration of the fade-out transition
-  }
-
-  // Close button logic
-  const closeButton = modal.querySelector('.close-button');
-  if (closeButton) {
-    closeButton.addEventListener('click', () => {
-      clearTimeout(autoHideTimeout); // Cancel auto-hide if the close button is clicked
-      fadeOutModal();
-    });
-  }
-}
-
 // Function to handle the copy action and modal display
 function handleCopyAndShowModal(event) {
   const button = event.currentTarget;
@@ -320,16 +272,55 @@ function handleCopyAndShowModal(event) {
       // Display the modal after successful copy
       const title = button.getAttribute('data-title');
       const subText = button.getAttribute('data-subtext');
-      showStateModal('.state-modal', title, subText);
+      window.showStateModal('.state-modal', title, subText);
     })
     .catch(err => {
       console.error('Failed to copy text: ', err);
     });
 }
 
-// Attach click event to buttons with ID or class
-document.querySelectorAll('.trigger-modal').forEach(button => {
-  button.addEventListener('click', handleCopyAndShowModal);
+  // Attach click event to buttons with ID or class
+  document.querySelectorAll('#copy-link').forEach(button => {
+    button.addEventListener('click', handleCopyAndShowModal);
+  });
 });
 
-});
+window.showStateModal = function (modalSelector, titleText, subText) {
+  const modal = document.querySelector(modalSelector);
+
+  if (!modal) {
+    console.error(`Modal with selector "${modalSelector}" not found.`);
+    return;
+  }
+
+  const titleElement = modal.querySelector('#modal-title');
+  const subTextElement = modal.querySelector('#modal-subtext');
+
+  if (titleElement) titleElement.textContent = titleText;
+  if (subTextElement) subTextElement.textContent = subText;
+
+  modal.style.display = 'block';
+  setTimeout(() => {
+    modal.style.opacity = '1'; 
+  }, 10);
+
+  const autoHideTimeout = setTimeout(() => {
+    fadeOutModal();
+  }, 7000);
+
+  function fadeOutModal() {
+    modal.style.transition = 'opacity 0.5s ease';
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 500);
+  }
+
+  const closeButton = modal.querySelector('.close-button');
+  if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      clearTimeout(autoHideTimeout);
+      fadeOutModal();
+    });
+  }
+};

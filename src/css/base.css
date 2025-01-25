@@ -328,7 +328,6 @@ code {
 
 
 /* Flex */
-/* Base Flex Grid */
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -366,7 +365,7 @@ code {
     flex-direction: column;
   }
   .flex.flex-column-row {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -798,6 +797,11 @@ code {
   overflow: visible;
   height: 2.5rem;
   color: #78766d;
+}
+
+.icon-12 {
+  width: 12px;
+  height: 12px;
 }
 
 .icon-wrapper {

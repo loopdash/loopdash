@@ -8,7 +8,7 @@
         <div class="col-9 my-24">
           <div class="flex flex-column-row justify-between flex-center text-2">
             <p class="text-weight-600 text-charcoal-light text-uppercase mb-3">{{ proposal.client }}</p>
-            <p id="copy-link" class="cursor-pointer text-charcoal-light trigger-modal" data-url="{{ proposal.links[0].url }}" data-title="Copied to clipboard" data-subtext="The proposal link has been copied to your clipboard.">
+            <p id="copy-link" class="cursor-pointer text-charcoal-light" data-url="{{ proposal.links[0].url }}" data-title="Copied to clipboard" data-subtext="The proposal link has been copied to your clipboard.">
               {% svgIcon "./src/img/icons/copy.svg", "text-charcoal-light" %} Copy link
             </p>
           </div>

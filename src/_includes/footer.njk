@@ -53,8 +53,11 @@
             <li>
               <a href="/support/" class="text-3 plausible-event-name=Footer+Link+Click+Support+Us">Support</a>
             </li>
-            <li>
-              <a href="mailto:hi@loopdash.com" class="text-3 plausible-event-name=Footer+Link+Click+Email">hi@loopdash.com</a>
+            <li class="flex">
+              <a href="javascript:void(0);" id="copy-link" class="text-3 plausible-event-name=Footer+Link+Click+Email" data-url="hi@loopdash.com" data-title="Copied to clipboard" data-subtext="The email hi@loopdash.com has been copied to your clipboard.">
+                hi@loopdash.com
+                {% svgIcon "./src/img/icons/copy.svg", "text-charcoal-light icon-12" %}
+              </a>
             </li>
           </ul>
         </div>
