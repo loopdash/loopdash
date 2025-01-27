@@ -13,10 +13,14 @@
 {%- else -%}
   {% set metaImage =  "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_116_letter_spacing_-5:" + (meta.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/l_loopdashmark,w_216,h_24,g_north,y_210,g_west,x_60/computer.png" %}
 {%- endif -%}
-<link rel="canonical" href="https://loopdash.com{{ page.url | safe }}"/>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="UTF-8">
+<title>{{ metaTitle }}</title>
 <meta name="description" content="{{ description | safe }}">
+<meta name="keywords" content="Loopdash, web design, web development, WordPress, hosting, website maintenance, SEO, digital agency, website redesign, responsive design, nonprofit websites">
+<meta name="author" content="Loopdash">
+<link rel="canonical" href="https://loopdash.com{{ page.url | safe }}"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 <!-- Google tags -->
 <meta itemprop="name" content="loopdash">
