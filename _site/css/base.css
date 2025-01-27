@@ -303,7 +303,7 @@ code {
 .rounded-4 { border-radius: .5rem !important; }
 .rounded-5 { border-radius: .625rem !important; }
 .rounded-6 { border-radius: .75rem !important; }
-.rounded-7 { border-radius: .875rem !important; }
+.rounded-7, .rounded-7 iframe { border-radius: .875rem !important; }
 .rounded-8 { border-radius: 1rem !important; }
 .rounded-9 { border-radius: 1.125rem !important; }
 .rounded-10 { border-radius: 1.25rem !important; }
@@ -368,7 +368,7 @@ code {
     flex-direction: column;
   }
   .flex.flex-column-row {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 

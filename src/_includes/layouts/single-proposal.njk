@@ -15,13 +15,22 @@
           <h1 class="text-10 text-weight-400 text-gradient">{{ proposal.name }}</h1>
           <h2 class="text-6 text-weight-300 text-charcoal-light">{{ proposal.description }}</h2>
         </div>
-
-        <div class="flex justify-between mb-16">
-          <div class="col-7 mb-10">
+        <div class="flex justify-between">
+          <div class="col-7 mb-2">
             {% if proposal.summary %}
               {{ proposal.summary | renderNested(proposal) | safe }}
             {% endif %}
 
+            {% if proposal.video %}
+              <div class="mb-8">
+                <h5 class="text-4 text-weight-600">Walkthrough</h5>
+                <div class="rounded-7">
+                  {{ proposal.video | safe }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+          <div class="col-5">   
             {% if proposal.services %}
               <div class="mb-8">
                 <div class="card card-default">
@@ -30,7 +39,7 @@
                       Overview
                     </h5>
                   </div>
-                  <div class="pb-10 pt-3 px-6">
+                  <div class="pb-10 pt-3 px-3">
                     <ul class="text-2 ul-service">
                       {% for service in proposal.services %}
                         <li>
@@ -61,36 +70,25 @@
               </div>
             {% endif %}
           </div>
-
-          <div class="col-5">
-            {% if proposal.video %}
-              <div class="card card-default pt-6 pb-8 px-8 mb-8">
-                <h5 class="text-4 text-weight-600">Walkthrough</h5>
-                {{ proposal.video | safe }}
-              </div>
-            {% endif %}
-            
-            <div class="mb-8">
-              <h5 class="text-4 text-weight-600">Next steps</h5>
-              <p class="text-3 mb-10">Once you sign the proposal, we'll get started. You'll receive a welcome email with everything you need, including timelines, key contacts, and what to expect next. <br/><br/>Questions? We're here to help every step of the way. Let's make something great together.</p>
-              <div class="flex gap-0.5 align-items-center">
-
-                {% if proposal.links %}
-                  
-                  {% for link in proposal.links %}
-                    <a href="{{ link.url }}" target="_blank" class="button button-secondary plausible-event-name={{link.event}}">
-                      {% if link.icon %}
-                        {% svgIcon "./src/img/icons/" ~ link.icon ~ ".svg" %}
-                      {% endif %}
-                      {{ link.text }}
-                    </a>
-                  {% endfor %}
-                {% endif %}
-              </div>
+        </div>
+        <div class="flex justify-between mb-16">
+          <div class="col-7 mb-8">
+            <h5 class="text-4 text-weight-600">Next steps</h5>
+            <p class="text-3 mb-10">Once you sign the proposal, we'll get started. You'll receive a welcome email with everything you need, including timelines, key contacts, and what to expect next. <br/><br/>Questions? We're here to help every step of the way. Let's make something great together.</p>
+            <div class="flex gap-0.5 align-items-center">
+              {% if proposal.links %}
+                {% for link in proposal.links %}
+                  <a href="{{ link.url }}" target="_blank" class="button button-secondary plausible-event-name={{link.event}}">
+                    {% if link.icon %}
+                      {% svgIcon "./src/img/icons/" ~ link.icon ~ ".svg" %}
+                    {% endif %}
+                    {{ link.text }}
+                  </a>
+                {% endfor %}
+              {% endif %}
             </div>
           </div>
         </div>
-
       </section>
 
     </main>

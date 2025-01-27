@@ -79,7 +79,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   // Add global data for `proposalAccessGranted`
-  eleventyConfig.addGlobalData("proposalAccessGranted", (data) => {
+  eleventyConfig.addGlobalData("proposalFunnelAccessGranted", (data) => {
     return data?.req?.proposalAccessGranted || false;
   });
 
@@ -154,7 +154,7 @@ function renderForm(res, errorMessage) {
               <form method="POST" class="form">
                 <div class="form-group">
                   <label class="form-label" for="password">Password</label>
-                  <input class="form-input" type="password" id="password" name="password" />
+                  <input class="form-input" type="text" id="password" name="password" />
                   ${errorMessage ? `<p class="error" aria-live="polite">${errorMessage}</p>` : ''}
                   <button type="submit" class="button button-sm button-secondary">View</button>
                 </div>
@@ -166,8 +166,6 @@ function renderForm(res, errorMessage) {
     </html>
   `);
 }
-
-
 
   // HTML minification
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
