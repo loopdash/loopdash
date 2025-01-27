@@ -43,16 +43,16 @@ proposal:
     duration: 1 week
     complete: false
   links: 
-  - url: https://loopdash.com/proposals/ken-ganley-subaru-sign
+  - url: https://loopda.sh/ken-ganley-subaru-sign/
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
-  - url: https://loopdash.com/proposals/ken-ganley-subaru-deck
+  - url: https://www.figma.com/proto/MOn1JkRP99zrvW2wAlLHex/Results?node-id=0-151&node-type=frame&t=81TrCnv5eEEin9SV-0&scaling=contain&content-scaling=fixed&page-id=0%3A1
     text: Our Work
     icon: eye
     event: Proposal+Alt+Button+Click
 priority: 0.6
 tags: proposals
 date: 2025-01-26
-url: /proposals/ken-ganley-subaru
+url: /proposals/ken-ganley-subaru/
 ---
