@@ -14,7 +14,7 @@ proposal:
     <p class="text-3 mb-10">The full project has an estimated timeline of 8-10 weeks to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">about us</a> or refer to our <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">commonly asked questions</a>.</p>
   website: https://kenganleysubarubedford.com/
   video: |
-    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c46f5baa13154eda995786f1a5ca4930?sid=089ee3d1-ffe6-4f4d-8cbc-00b6ca41301b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/7cab44a7c0144bb888b345efb052d7d7?sid=d8702d97-e72f-481a-b989-10ca10b604a7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   price: $14,650
   duration: 8-10 weeks
   services:
