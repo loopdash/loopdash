@@ -32,15 +32,24 @@ sitemap:
   {% for section in sections %}
     <div class="mb-12">
       {% set currentTag = section.tag %}
-      <h3 class="text-2 text-center text-weight-600 text-charcoal-light text-uppercase">{{ currentTag }}</h3>
+      <h3 class="text-2 text-center text-weight-600 text-charcoal-light text-uppercase">{{ section.title }}</h3>
       {% for question in questions | reverse %}
         {% if currentTag in question.data.tags %}
-          <article class="card card-question rounded-7 mb-3 reveal">
+          {% set question_id = question.data.url | replace("/faq/", "") %}
+          <article 
+            class="card card-question rounded-7 mb-3 reveal" 
+            id="{{ question_id }}" 
+            data-id="#{{ question_id }}">
             <div class="card-header" tabindex="0" role="button" aria-expanded="false" aria-controls="content-{{ loop.index }}">
               <h3 class="text-4 text-weight-400 my-0">{{ question.data.question }}</h3>
             </div>
             <div class="card-body text-4 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
               {{ question.templateContent | safe }}
+              <div class="flex justify-content-end">
+                <p id="copy-link" class="link px-2 py-1 cursor-pointer mt-3 text-2 text-charcoal-light" data-url="{{ "https://loopdash.com/faq/#" + question_id }}" data-title="Copied to clipboard" data-subtext="The question link has been copied to your clipboard.">
+                  {% svgIcon "./src/img/icons/copy.svg", "text-charcoal-light" %} Copy link
+                </p>
+              </div>
             </div>
           </article>
         {% endif %}
@@ -50,5 +59,17 @@ sitemap:
       {% endif %}
     </div>
   {% endfor %}
-
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const currentHash = window.location.hash; // Get the current hash from the URL
+    const articles = document.querySelectorAll('article'); // Select all article elements
+
+    articles.forEach(article => {
+      if (article.dataset.id === currentHash) { // Compare hash with article's data-id
+        article.classList.add('opened'); // Add the "opened" class if matched
+      }
+    });
+  });
+</script>
