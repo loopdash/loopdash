@@ -21,7 +21,7 @@
               {{ proposal.summary | renderNested(proposal) | safe }}
             {% endif %}
 
-            {% if proposal.video %}
+            {% if proposal.video and proposal.video is not null %}
               <div class="mb-8">
                 <h5 class="text-4 text-weight-600">Walkthrough</h5>
                 <div class="rounded-7">
@@ -69,23 +69,21 @@
                 </div>
               </div>
             {% endif %}
-          </div>
-        </div>
-        <div class="flex justify-between mb-16">
-          <div class="col-7 mb-8">
-            <h5 class="text-4 text-weight-600">Next steps</h5>
-            <p class="text-3 mb-10">Once you sign the proposal, we'll get started. You'll receive a welcome email with everything you need, including timelines, key contacts, and what to expect next. <br/><br/>Questions? We're here to help every step of the way. Let's make something great together.</p>
-            <div class="flex gap-0.5 align-items-center">
-              {% if proposal.links %}
-                {% for link in proposal.links %}
-                  <a href="{{ link.url }}" target="_blank" class="button button-secondary plausible-event-name={{link.event}}">
-                    {% if link.icon %}
-                      {% svgIcon "./src/img/icons/" ~ link.icon ~ ".svg" %}
-                    {% endif %}
-                    {{ link.text }}
-                  </a>
-                {% endfor %}
-              {% endif %}
+            <div class="mb-32">
+              <h5 class="text-4 text-weight-600">Next steps</h5>
+              <p class="text-3 mb-10">Once you sign the proposal, we'll get started. You'll receive a welcome email with everything you need, including timelines, key contacts, and what to expect next. <br/><br/>Questions? We're here to help every step of the way. Let's make something great together.</p>
+              <div class="flex gap-0.5 align-items-center">
+                {% if proposal.links %}
+                  {% for link in proposal.links %}
+                    <a href="{{ link.url }}" target="_blank" class="button button-secondary plausible-event-name={{link.event}}">
+                      {% if link.icon %}
+                        {% svgIcon "./src/img/icons/" ~ link.icon ~ ".svg" %}
+                      {% endif %}
+                      {{ link.text }}
+                    </a>
+                  {% endfor %}
+                {% endif %}
+              </div>
             </div>
           </div>
         </div>
@@ -93,6 +91,5 @@
 
     </main>
     {% include 'partials/_state-modal.njk' %}
-    {% include 'footer.njk' %}
   </body>
 </html>

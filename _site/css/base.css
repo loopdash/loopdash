@@ -720,6 +720,7 @@ code {
 .mb-14 { margin-bottom: calc(var(--spacing) * 14); }
 .mb-15 { margin-bottom: calc(var(--spacing) * 15); }
 .mb-16 { margin-bottom: calc(var(--spacing) * 16); }
+.mb-32 { margin-bottom: calc(var(--spacing) * 32); }
 
 /* Margin Left */
 .ml-0 { margin-left: 0; }
