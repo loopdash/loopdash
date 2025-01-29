@@ -44,7 +44,7 @@ proposal:
     duration: 1 week
     complete: false
   links: 
-  - url: https://loopda.sh/codiscovr
+  - url: https://app.pandadoc.com/document/v2?token=ce294fb44c86033d26d542d04084940737e542d4
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
