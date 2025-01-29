@@ -15,7 +15,7 @@ proposal:
     <p class="text-3 mb-10">The full project has an estimated timeline of 4-6 weeks to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">about us</a> or refer to our <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">commonly asked questions</a>.</p>
   website: https://codiscovr.com
   video: |
-    <div style="position: relative; padding-bottom: 64.92178098676294%; height: 0;"><iframe src="https://www.loom.com/embed/c46f5baa13154eda995786f1a5ca4930?sid=c69b0692-c471-40cc-8ae0-497d4776922d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    <div style="position: relative; padding-bottom: 64.92178098676294%; height: 0;"><iframe src="https://www.loom.com/embed/bf54054bc2d04cac8d24afbfb0bddd57?sid=eb2ae921-f432-4184-b408-1988aa7e161e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   price: $8,300
   duration: 4-6 weeks
   services:
