@@ -4,11 +4,24 @@ import { inspect } from "util";
 import eleventyImg from "@11ty/eleventy-img";
 import dotenv from "dotenv";
 import { getVersion } from "./src/utils/getVersion.js";
+import nunjucks from "nunjucks";
+
+nunjucks.configure('views', {
+  autoescape: true,
+});
 
 // Load environment variables
 dotenv.config();
 
 export default function (eleventyConfig) {
+
+  // Add sitemap
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://loopdash.com",
+    },
+  });
+
   // Add version to global data
   eleventyConfig.addGlobalData("siteVersion", getVersion());
 
@@ -51,6 +64,11 @@ export default function (eleventyConfig) {
       .replace("<svg", `<svg class="${className}"`);
   });
 
+  eleventyConfig.addNunjucksFilter('renderNested', function (str, context) {
+    const nunjucksEnvironment = new nunjucks.Environment();
+    return nunjucksEnvironment.renderString(str, context);
+  });
+
   // Environment variables filter
   eleventyConfig.addFilter("env", (key) => process.env[key]);
 
@@ -61,7 +79,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
   // Add global data for `proposalAccessGranted`
-  eleventyConfig.addGlobalData("proposalAccessGranted", (data) => {
+  eleventyConfig.addGlobalData("proposalFunnelAccessGranted", (data) => {
     return data?.req?.proposalAccessGranted || false;
   });
 
@@ -123,7 +141,7 @@ function renderForm(res, errorMessage) {
   res.end(`
     <html>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
         <link rel="stylesheet" href="../../css/normalize.css"/>
         <link rel="stylesheet" href="../../css/base.css"/>
         <script src="../../javascript/scripts.js" defer></script>
@@ -136,7 +154,7 @@ function renderForm(res, errorMessage) {
               <form method="POST" class="form">
                 <div class="form-group">
                   <label class="form-label" for="password">Password</label>
-                  <input class="form-input" type="password" id="password" name="password" />
+                  <input class="form-input" type="text" id="password" name="password" />
                   ${errorMessage ? `<p class="error" aria-live="polite">${errorMessage}</p>` : ''}
                   <button type="submit" class="button button-sm button-secondary">View</button>
                 </div>
@@ -148,8 +166,6 @@ function renderForm(res, errorMessage) {
     </html>
   `);
 }
-
-
 
   // HTML minification
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
@@ -167,6 +183,7 @@ function renderForm(res, errorMessage) {
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy("src/img/icons/");
   eleventyConfig.addPassthroughCopy("src/img/passthrough/");
+  eleventyConfig.addPassthroughCopy("src/img/favicons/");
   eleventyConfig.addPassthroughCopy("src/javascript/");
 
   return {

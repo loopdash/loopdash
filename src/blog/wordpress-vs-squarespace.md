@@ -4,7 +4,8 @@ title: WordPress vs Squarespace
 meta:
   title: WordPress vs Squarespace
   description: Overcome the pain on deciding on the right CMS. There are a dozen options on the market, all of which in many ways resemble each other.
-  image: "./src/img/blogs/wood-people.jpg"
+  image: ./src/img/blogs/wood-people.jpg
+  alt: A collection of rounded, minimalist wooden figures with soft, warm beige tones. Some figures have simple, happy facial expressions, set against a neutral background.
 sitemap:
   changefreq: weekly
   priority: 0.5

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body class="text-layout">
+    {% include 'nav.njk' %}
+    <main>
+      <section class="container-sm mx-auto">
+        <h1 class="text-9 text-weight-400 my-24 text-gradient">{{ h1 }}</h1>
+        <div class="text-charcoal-light">{{ content | safe }}</div>
+      </section>
+
+      <section class="container-sm mx-auto">
+        <div class="hr my-12"></div>
+        {% set previousPost = collections.glossary | getPreviousCollectionItem(page) %}
+        {% set nextPost = collections.glossary | getNextCollectionItem(page) %}
+
+          <h3 class="text-2 text-center text-weight-600 text-charcoal-light text-uppercase mb-6">Related WordPress Terms</h3>
+          <div class="flex mb-8">
+            {% if previousPost %}
+              <div class="col-6">
+                <a class="card card-default py-10 px-6" href="{{ previousPost.url }}">
+                  <h2 class="text-4 text-weight-500">{{ previousPost.data.h1 }}</h2>
+                  <p class="text-3 text-charcoal-light text-weight-400">{{ previousPost.data.description }}</p>
+                </a>
+              </div>
+            {% endif %}
+            {% if nextPost %}
+              <div class="col-6">
+                <a class="card card-default py-10 px-6" href="{{ nextPost.url }}">
+                  <h2 class="text-4 text-weight-500">{{ nextPost.data.h1 }}</h2>
+                  <p class="text-3 text-charcoal-light text-weight-400">{{ nextPost.data.description }}</p>
+                </a>
+              </div>
+            {% endif %}
+          </div>
+          <div class="mx-auto text-center">
+            <a href="/glossary/" class="link-chevron">Back to glossary</a>
+          </div>
+      </section>
+    </main>
+    {% include 'partials/_state-modal.njk' %}
+    {% include 'footer.njk' %}
+  </body>
+</html>

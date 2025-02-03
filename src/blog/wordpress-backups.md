@@ -5,6 +5,7 @@ meta:
   title: WordPress backups; do I need them?
   description: Creating daily backups for WordPress websites is essential for several reasons.
   image: ./src/img/blogs/marbel.jpg
+  alt: A smooth, polished surface featuring vivid orange and yellow marble streaks, blending beautifully with soft, natural light casting warm shadows.
 sitemap:
   changefreq: weekly
   priority: 0.5

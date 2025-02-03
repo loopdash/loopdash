@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body>
+    {% include 'nav.njk' %}
+    <main>
+      <section class="container-xs my-24 mx-auto">
+        <h1 class="text-9 text-weight-400 text-gradient">Domain Lookup</h1>
+        <h2 class="text-5 text-charcoal-light text-weight-400">
+          Find the hosting, DNS, and CMS details behind your domain.
+        </h2>
+
+        <form id="lookupForm" class="form">
+          <div class="form-group flex">
+            <input
+              class="form-input"
+              type="text"
+              id="domain"
+              name="domain"
+              placeholder="example.com"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            id="submitButton"
+            class="button button-secondary"
+          >
+            {% svgIcon "./src/img/icons/search.svg" %} Search
+          </button>
+        </form>
+
+        <div class="form-group">
+          <div id="error" style="display: none;" class="error"></div>
+        </div>
+
+        <div id="results" style="display: none;" class="mb-8 mt-8">
+          <div class="card card-default py-6 px-6">
+            <h2
+              id="resultsTitle"
+              class="text-6 text-center text-weight-400"
+            ></h2>
+            <div class="mb-8 mt-8 hr"></div>
+            <div id="hostingProvider" class="mb-6"></div>
+            <div id="dnsRecords" class="mb-6">
+              <h3 class="text-5 text-weight-600">DNS Records</h3>
+              <div class="accordion-content">
+                <div id="resultContent"></div>
+              </div>
+            </div>
+            <h3 class="text-5 text-weight-600">Nameservers</h3>
+            <div id="nameServers"></div>
+          </div>
+        </div>
+      </section>
+
+    <script>
+      // Auto-submit based on the URL query parameter
+      window.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const domain = params.get('url');
+
+        if (domain) {
+          // Populate the input field with the `url` value
+          const domainInput = document.getElementById('domain');
+          domainInput.value = domain;
+
+          // Trigger form submission automatically
+          const lookupForm = document.getElementById('lookupForm');
+          lookupForm.dispatchEvent(new Event('submit'));
+        }
+      });
+
+      document.getElementById('lookupForm').addEventListener('submit', async function (event) {
+        event.preventDefault();
+        let domain = document.getElementById('domain').value.trim();
+        const submitButton = document.getElementById('submitButton');
+
+        if (!domain) {
+          displayError('Please enter a valid domain name.');
+          return;
+        }
+
+        domain = domain.replace(/^https?:\/\//, '').replace(/\/+$/, '');
+
+        submitButton.classList.add('loading');
+        submitButton.innerHTML = 'Loading';
+        resetUI();
+
+        try {
+          const dnsResponse = await fetch(
+            `https://networkcalc.com/api/dns/lookup/${domain}`
+          );
+          if (!dnsResponse.ok) {
+            throw new Error('DNS lookup failed');
+          }
+          const dnsData = await dnsResponse.json();
+
+          const cmsResponse = await fetch(
+            `https://whatcms.org/API/Tech?key=w2rv29kg83nmiogxn25h4wkatirius2cicbr092gkp91k2yns4oqalykl8iu5wley99g01&url=${domain}`
+          );
+          if (!cmsResponse.ok) {
+            throw new Error('CMS lookup failed');
+          }
+          const cmsData = await cmsResponse.json();
+
+          const hostResponse = await fetch(
+            `https://www.who-hosts-this.com/API/Host?key=w2rv29kg83nmiogxn25h4wkatirius2cicbr092gkp91k2yns4oqalykl8iu5wley99g01&url=${domain}`
+          );
+          if (!hostResponse.ok) {
+            throw new Error('Hosting provider lookup failed');
+          }
+          const hostData = await hostResponse.json();
+
+          displayResults(dnsData, cmsData, hostData);
+        } catch (error) {
+          displayError(error.message);
+        } finally {
+          submitButton.classList.remove('loading');
+          submitButton.innerHTML = '<svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg> Search';
+        }
+      });
+
+      function resetUI() {
+        const results = document.getElementById('results');
+        const resultContent = document.getElementById('resultContent');
+        const hostingProvider = document.getElementById('hostingProvider');
+        const nameServers = document.getElementById('nameServers');
+        const resultsTitle = document.getElementById('resultsTitle');
+        const error = document.getElementById('error');
+
+        results.style.display = 'none';
+        error.style.display = 'none';
+        resultContent.innerHTML = '';
+        hostingProvider.innerHTML = '';
+        nameServers.innerHTML = '';
+        resultsTitle.textContent = '';
+      }
+
+      function displayResults(dnsData, cmsData, hostData) {
+        const results = document.getElementById('results');
+        const resultContent = document.getElementById('resultContent');
+        const hostingProvider = document.getElementById('hostingProvider');
+        const nameServers = document.getElementById('nameServers');
+        const resultsTitle = document.getElementById('resultsTitle');
+
+        resultsTitle.textContent = `Results for ${dnsData.hostname}`;
+
+        // Hosting Provider and Technical Information with Links
+        let hostInfo = '';
+        if (hostData.results && hostData.results.length > 0) {
+          const host = hostData.results[0];
+          hostInfo = `<p class="text-2"><strong>Hosting Provider:</strong> <a href="${host.isp_url}" target="_blank" class="link-chevron">${host.isp_name}</a></p>`;
+        } else {
+          hostInfo = '<p class="text-2"><strong>Hosting Provider:</strong> N/A</p>';
+        }
+
+        if (cmsData.results && cmsData.results.length > 0) {
+          const cmsDetails = cmsData.results.reduce(
+            (acc, curr) => {
+              const link = curr.url
+                ? `<a href="${curr.url.replace('//', 'https://')}" target="_blank" class="link-chevron">${curr.name}</a>`
+                : curr.name;
+
+              if (curr.categories.includes('CMS')) acc.cms = link;
+              if (curr.categories.includes('Programming Language')) acc.language = link;
+              if (curr.categories.includes('Database')) acc.database = link;
+              if (curr.categories.includes('CDN')) acc.cdn = link;
+              if (curr.categories.includes('Web Server')) acc.webServer = link;
+              return acc;
+            },
+            { cms: '', language: '', database: '', cdn: '', webServer: '' }
+          );
+
+          hostingProvider.innerHTML = `
+            <h3 class="text-5 text-weight-600">Hosting Provider</h3>
+            ${hostInfo}
+            <p class="text-2"><strong>CMS:</strong> ${cmsDetails.cms || 'N/A'}</p>
+            <p class="text-2"><strong>Programming Language:</strong> ${cmsDetails.language || 'N/A'}</p>
+            <p class="text-2"><strong>Database:</strong> ${cmsDetails.database || 'N/A'}</p>
+            <p class="text-2"><strong>CDN:</strong> ${cmsDetails.cdn || 'N/A'}</p>
+            <p class="text-2"><strong>Web Server:</strong> ${cmsDetails.webServer || 'N/A'}</p>`;
+        } else {
+          hostingProvider.innerHTML = `
+            <h3 class="text-5 text-weight-600">Hosting Provider</h3>
+            ${hostInfo}
+            <p class="text-4 text-charcoal-light">No hosting information available.</p>`;
+        }
+
+        // DNS Records
+        resultContent.innerHTML = Object.entries(dnsData.records)
+          .filter(([key, value]) => value.length > 0)
+          .map(([key, value]) => {
+            const records = value
+              .map(
+                (record) =>
+                  `<code class="text-1">${record.address || record.exchange || record.nameserver || record}</code>`
+              )
+              .join('<br>');
+            return `<div class="mb-5"><h3 class="text-2 text-weight-600 text-charcoal-light text-uppercase mb-1">${key} Records</h3>${records}</div>`;
+          })
+          .join('');
+
+        // Name Servers
+        nameServers.innerHTML =
+          dnsData.records.NS && dnsData.records.NS.length > 0
+            ? dnsData.records.NS.map(
+                (ns) => `<code class="text-1">${ns.nameserver}</code>`
+              ).join('<br>')
+            : '<p class="text-4 text-charcoal-light">No name servers available.</p>';
+
+        results.style.display = 'block';
+      }
+
+      function displayError(message) {
+        const error = document.getElementById('error');
+        error.textContent = message;
+        error.style.display = 'block';
+      }
+    </script>
+
+    </main>
+    {% include 'partials/_state-modal.njk' %}
+    {% include 'footer.njk' %}
+  </body>
+</html>

@@ -5,6 +5,7 @@ meta:
   title: How to Delegate Access to GoDaddy
   description: Most of our customers use GoDaddy. Giving us access will allow us to add the appropriate DNS records without sharing your password.
   image: ./src/img/blogs/leaf.jpg
+  alt: A single, delicate leaf in soft green and yellow hues, set against a gradient background transitioning from blue to light beige.
 sitemap:
   changefreq: weekly
   priority: 0.5

@@ -73,11 +73,11 @@ project:
           images: 
             - src: "./src/img/projects/forward-majority-13.jpg"
               alt: "forward-majority-website-on-3-iphones"
-  testimonial:
-    quote: >
-      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    author: David Cohen
-    role: Co-Founder
+  # testimonial:
+  #   quote: >
+  #     Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  #   author: David Cohen
+  #   role: Co-Founder
 sitemap:
   changefreq: weekly
   priority: 0.5

@@ -5,6 +5,7 @@ meta:
    title: Fix Error Establishing Connection to Database
    description: Error establishing database connection on your WordPress site is caused by a number of different issues.
    image: ./src/img/blogs/venetian-plaster.jpg
+   alt: A close-up of a textured Venetian plaster surface in neutral beige, featuring dynamic, layered strokes that create depth and a rustic, artistic finish.
 sitemap:
   changefreq: weekly
   priority: 0.5

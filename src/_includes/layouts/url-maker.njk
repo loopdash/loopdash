@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body>
+    {% include 'nav.njk' %}
+    <main>
+      <section class="container-xs my-24 mx-auto">
+        <h1 class="text-9 text-weight-400 text-gradient">URL Maker</h1>
+        <h2 class="text-5 text-charcoal-light text-weight-400">
+          Generate UTM parameters to track your campaign performance.
+        </h2>
+
+        <form id="utmForm" class="form">
+          <div class="form-group">
+            <label for="baseUrl" class="form-label">Domain</label>
+            <input
+              class="form-input"
+              type="url"
+              id="baseUrl"
+              name="baseUrl"
+              placeholder="https://example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="utmSource" class="form-label">UTM Source</label>
+            <input
+              class="form-input"
+              type="text"
+              id="utmSource"
+              name="utmSource"
+              placeholder="e.g., Google"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="utmMedium" class="form-label">UTM Medium</label>
+            <input
+              class="form-input"
+              type="text"
+              id="utmMedium"
+              name="utmMedium"
+              placeholder="e.g., CPC"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="utmCampaign" class="form-label">UTM Campaign</label>
+            <input
+              class="form-input"
+              type="text"
+              id="utmCampaign"
+              name="utmCampaign"
+              placeholder="e.g., Summer_Sale"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            id="generateButton"
+            class="button button-secondary"
+          >
+            Make URL
+          </button>
+        </form>
+
+        <div id="results" style="display: none;" class="mb-8 mt-8">
+          <div class="card card-default py-6 px-6">
+            <h3 class="text-5 text-weight-600">Generated UTM URL</h3>
+            <p id="utmUrl" class="text-3"></p>
+            <button
+              id="copyButton"
+              class="button button-primary"
+            >
+              {% svgIcon "./src/img/icons/copy.svg" %} Copy URL
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.getElementById('utmForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          const baseUrl = document.getElementById('baseUrl').value.trim();
+          const utmSource = document.getElementById('utmSource').value.trim();
+          const utmMedium = document.getElementById('utmMedium').value.trim();
+          const utmCampaign = document.getElementById('utmCampaign').value.trim();
+
+          if (!baseUrl || !utmSource || !utmMedium || !utmCampaign) {
+            alert('Please fill out all fields.');
+            return;
+          }
+
+          // Generate the UTM URL
+          const utmUrl = `${baseUrl}?utm_source=${encodeURIComponent(utmSource)}&utm_medium=${encodeURIComponent(utmMedium)}&utm_campaign=${encodeURIComponent(utmCampaign)}`;
+
+          // Display the generated URL
+          const results = document.getElementById('results');
+          const utmUrlElement = document.getElementById('utmUrl');
+          utmUrlElement.textContent = utmUrl;
+          utmUrlElement.style.wordBreak = 'break-word';
+          results.style.display = 'block';
+        });
+
+        // Copy the UTM URL to the clipboard
+        document.getElementById('copyButton').addEventListener('click', function () {
+          const utmUrl = document.getElementById('utmUrl').textContent;
+
+          navigator.clipboard.writeText(utmUrl).then(() => {
+          const title = "Copied to clipboard"
+          const subText = "The URL has been copied to your clipboard"
+          showStateModal('.state-modal', title, subText);
+          }).catch((err) => {
+            console.error('Failed to copy UTM URL: ', err);
+          });
+        });
+      </script>
+    </main>
+    {% include 'partials/_state-modal.njk' %}
+    {% include 'footer.njk' %}
+  </body>
+</html>

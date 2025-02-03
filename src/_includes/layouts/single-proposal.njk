@@ -6,47 +6,90 @@
     <main>
       <section class="container-lg mx-auto">
         <div class="col-9 my-24">
+          <div class="flex flex-column-row justify-between flex-center text-2">
+            <p class="text-weight-600 text-charcoal-light text-uppercase mb-3">{{ proposal.client }}</p>
+            <p id="copy-link" class="cursor-pointer text-charcoal-light" data-url="{{ proposal.links[0].url }}" data-title="Copied to clipboard" data-subtext="The proposal link has been copied to your clipboard.">
+              {% svgIcon "./src/img/icons/copy.svg", "text-charcoal-light" %} Copy link
+            </p>
+          </div>
           <h1 class="text-10 text-weight-400 text-gradient">{{ proposal.name }}</h1>
-          <h2 class="text-8 text-weight-300">Voluptatem accusantium doloremque laudantium, totam rem aperiam.</h2>
+          <h2 class="text-6 text-weight-300 text-charcoal-light">{{ proposal.description }}</h2>
         </div>
+        <div class="flex justify-between">
+          <div class="col-7 mb-2">
+            {% if proposal.summary %}
+              {{ proposal.summary | renderNested(proposal) | safe }}
+            {% endif %}
 
-        <div class="flex justify-between mb-16">
-          <div class="col-5">
-            <p class="text-5 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.url }}" target="_blank" class="link">your proposal</a>. 
-            <p class="text-5 mb-10">The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link">about us</a> or refer to our <a href="/faq" target="_blank" class="link">commonly asked questions</a>.</p>
-
-            {% if proposal.services %}
+            {% if proposal.video and proposal.video is not null %}
               <div class="mb-8">
-                <h5 class="text-3 text-weight-600 text-uppercase mb-2">Services</h5>
-                <ul class="text-5 ul">
-                  {% for service in proposal.services %}
-                    <li>{{ service.name }}</li>
-                  {% endfor %}
-                </ul>
+                <h5 class="text-4 text-weight-600">Walkthrough</h5>
+                <div class="rounded-7">
+                  {{ proposal.video | safe }}
+                </div>
               </div>
             {% endif %}
           </div>
-
-          <div class="col-4">
-            {% if proposal.video %}
+          <div class="col-5">   
+            {% if proposal.services %}
               <div class="mb-8">
-                {{ proposal.video | safe }}
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h5 class="text-4 text-weight-600">
+                      Overview
+                    </h5>
+                  </div>
+                  <div class="pb-10 pt-3 px-3">
+                    <ul class="text-2 ul-service">
+                      {% for service in proposal.services %}
+                        <li>
+                          {% if (not loop.last or service.complete) and service.complete !== null %}
+                            <div class="service-timeline-container">
+                              <div class="w-px bg-border"></div>
+                            </div>
+                          {% endif %}
+                            <div class="widget">
+                              {% if service.complete or service.complete == null %}
+                                {% svgIcon "./src/img/icons/checkmark.svg" %}
+                              {% else %}
+                                {{ loop.index }}
+                              {% endif %}
+                            </div>
+                          <div class="w-100">
+                            <div class="flex flex-column-row justify-between">
+                              <strong>{{ service.name }}</strong>
+                              <span class="text-1 mb-0 text-uppercase text-charcoal-light">{{ service.duration }}</span>
+                            </div>
+                            {{ service.description }}
+                          </div>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
               </div>
             {% endif %}
-            
-            <div class="mb-8">
-              <h5 class="text-3 text-weight-600 text-uppercase mb-2">Next steps</h5>
-              <p class="text-5 mb-10">Once you sign the proposal, we’ll get started. You’ll receive a welcome email with everything you need, including timelines, key contacts, and what to expect next. Questions? We’re here to help every step of the way. Let’s make something great together.</p>
-              <a href="{{ proposal.url }}" target="_blank" class="button button-secondary">
-                {% svgIcon "./src/img/icons/eye.svg" %}View Proposal
-              </a>
+            <div class="mb-32">
+              <h5 class="text-4 text-weight-600">Next steps</h5>
+              <p class="text-3 mb-10">Once you sign the proposal, we'll get started. You'll receive a welcome email with everything you need, including timelines, key contacts, and what to expect next. <br/><br/>Questions? We're here to help every step of the way. Let's make something great together.</p>
+              <div class="flex gap-0.5 align-items-center">
+                {% if proposal.links %}
+                  {% for link in proposal.links %}
+                    <a href="{{ link.url }}" target="_blank" class="button button-secondary plausible-event-name={{link.event}}">
+                      {% if link.icon %}
+                        {% svgIcon "./src/img/icons/" ~ link.icon ~ ".svg" %}
+                      {% endif %}
+                      {{ link.text }}
+                    </a>
+                  {% endfor %}
+                {% endif %}
+              </div>
             </div>
           </div>
         </div>
-
       </section>
 
     </main>
-    {% include 'footer.njk' %}
+    {% include 'partials/_state-modal.njk' %}
   </body>
 </html>

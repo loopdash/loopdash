@@ -1,0 +1,43 @@
+---
+layout: text.njk
+title: Glossary
+h1: WordPress Glossary
+h2: The A-Zs of WordPress
+description: The A-Zs of the WordPress
+pagination:
+  data: collections.glossary
+  size: 10
+  alias: terms
+sitemap:
+  changefreq: weekly
+  priority: 0.6
+---
+
+<section class="container-sm mx-auto">
+  <div class="mt-12 mb-12">
+    <h1 class="text-13 text-weight-400 text-gradient">Glossary</h1>
+    <h2 class="text-5 text-charcoal-light text-weight-400">We've put together a glossary of development terms to add clarity.</h2>
+  </div>
+
+  <div class="flex mb-8">
+    {% for term in terms %}
+      <div class="col-6">
+        <a href="{{ term.data.url }}" class="card card-default reveal">
+          <div class="py-6 px-6">
+            <h3 class="text-4 text-weight-500">{{ term.data.h1 }}</h3>
+            <div class="text-3 text-charcoal-light text-weight-400">
+              {{ term.data.description | safe }}
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if pagination.previousPageHref %}
+    <a class="button button-secondary" rel="prev" href="{{ pagination.previousPageHref }}">Previous</a>
+  {% endif %}
+  {% if pagination.nextPageHref %}
+    <a class="button button-secondary" rel="next" href="{{ pagination.nextPageHref }}">Next</a>
+  {% endif %}
+</section>
