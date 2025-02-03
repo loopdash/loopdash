@@ -1,0 +1,34 @@
+---
+layout: sign-layout.njk
+meta:
+  title: Sign your proposal
+  description: Review and sign your proposal.
+pagination:
+  data: collections.proposals
+  size: 1
+  alias: proposal
+permalink: "{{ proposal.data.url }}/sign/"
+---
+
+<main>
+  <section class="container-lg mx-auto">
+    <div class="col-9 my-24">
+      <div class="flex flex-column-row justify-between flex-center text-2">
+        <p class="text-weight-600 text-charcoal-light text-uppercase mb-3">{{ proposal.data.proposal.client }}</p>
+        <p id="copy-link" class="cursor-pointer text-charcoal-light" data-url="{{ proposal.data.proposal.links[0].url }}" data-title="Copied to clipboard" data-subtext="The proposal link has been copied to your clipboard.">
+          {% svgIcon "./src/img/icons/copy.svg", "text-charcoal-light" %} Copy link
+        </p>
+      </div>
+      <h1 class="text-10 text-weight-400 text-gradient">{{ proposal.data.proposal.name }}</h1>
+      <h2 class="text-6 text-weight-300 text-charcoal-light">{{ proposal.data.proposal.description }}</h2>
+    </div>
+    <section class="container-lg mx-auto" style="height: 100%;">
+      <div id="documenso-embed" class="documenso-embed rounded-7"
+        data-name="{{ proposal.data.proposal.documenso.name }}"
+        data-token="{{ proposal.data.proposal.documenso.token }}"
+        data-email="{{ proposal.data.proposal.documenso.email }}">
+      </div>
+    </section>
+  </section>
+</main>
+
