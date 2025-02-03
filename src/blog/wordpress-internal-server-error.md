@@ -4,7 +4,8 @@ title: Fix a WordPress Internal Server Error in 4 Steps
 meta:
   title: Fix a WordPress Internal Server Error in 4 Steps
   description: Are you having trouble accessing your WordPress website? WordPress internal server errors are a common problem that can be easily solved.
-  image: "./src/img/blogs/plant.jpg"
+  image: ./src/img/blogs/plant.jpg
+  alt: A round, minimalist white vase holding a bundle of delicate, dried flowers with thin stems, set against a neutral beige background.
 sitemap:
   changefreq: weekly
   priority: 0.5

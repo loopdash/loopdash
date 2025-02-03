@@ -5,6 +5,7 @@ meta:
   title: Does My Site Need an SSL?
   description: Running a website, app or something on the internet? Having an SSL certificate is no longer treated as a luxury, but a necessity.
   image: ./src/img/blogs/ghost.jpg
+  alt: A minimalistic white, rounded character with a cute smiling face, standing against a soft gradient background.
 sitemap:
   changefreq: weekly
   priority: 0.5

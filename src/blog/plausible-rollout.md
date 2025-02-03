@@ -4,7 +4,8 @@ title: Loopdash is Rolling Out Plausible Analytics
 meta:
    title: Loopdash is Rolling Out Plausible Analytics  
    description: Loopdash is introducing Plausible Analytics for client websites—an independent, privacy-friendly alternative to traditional tracking tools.  
-   image: ./src/img/blogs/soft-light.jpg  
+   image: ./src/img/blogs/soft-light.jpg
+   alt: A close-up of soft, flowing fabric in gentle waves, illuminated by warm golden and cool blue lighting, creating a serene and airy ambiance.
 sitemap:
   changefreq: weekly  
   priority: 0.5  

@@ -38,7 +38,9 @@ sitemap:
 
       <a href="{{ blog.data.url }}" class="rounded-7">
         <article class="mb-8">
-          {% image img, "asdf", [2200, 800], ["jpeg", "webp"] %}
+          <div class="mb-4">
+            {% image img, blog.data.meta.alt, [2200, 800], ["jpeg", "webp"] %}
+          </div>
           <div class="flex flex-no-wrap mt-3">
             <div class="col-10">
               <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
