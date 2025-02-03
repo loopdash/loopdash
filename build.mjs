@@ -3,7 +3,7 @@ import esbuild from "esbuild";
 await esbuild.build({
   entryPoints: ["src/client.js"],
   bundle: true,
-  outfile: "_site/dist/client.js",
+  outfile: "_site/javascript/preact.js",
   format: "esm",
   minify: true,
   jsxFactory: "h", // ✅ Ensures JSX uses Preact

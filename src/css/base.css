@@ -2434,6 +2434,11 @@ a.card-default {
 }
 
 
+.documenso-embed iframe {
+  width: 100%;
+  height: 80vh;
+}
+
 /* Footer */
 .site-footer {
   background: var(--color-green-waterloo);

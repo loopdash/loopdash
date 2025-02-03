@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = container.getAttribute("data-email") || null;
 
     if (token) {
+      console.error("❌ No signing token found in data-token attribute!");
       render(<Proposal token={token} name={name} email={email} />, container); // ✅ Pass token & name as props
     } else {
       console.error("❌ No signing token found in data-token attribute!");

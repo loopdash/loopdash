@@ -6,6 +6,9 @@ meta:
 sitemap:
   changefreq: monthly
 proposal:
+  documenso:
+    token: 94nstKrfL4swayGR6OpA7
+    name: Vikram Gupta
   name: Website Development & Theme Integration for CODISCOVR
   client: Cozen O'Connor
   description: Website development using selected theme with embedded video support.

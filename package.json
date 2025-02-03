@@ -24,12 +24,15 @@
   "homepage": "https://github.com/loopdash/loopdash#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@documenso/embed-preact": "^0.2.0",
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.6",
     "dotenv": "^16.0.3",
+    "esbuild": "^0.24.2",
     "html-minifier": "^4.0.0",
     "postcss": "^8.4.49",
-    "postcss-nested": "^7.0.2"
+    "postcss-nested": "^7.0.2",
+    "preact": "^10.25.4"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^5.0.0",
