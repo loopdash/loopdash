@@ -25,7 +25,7 @@ project:
       link: https://www.washingtonpost.com/politics/2024/05/16/youth-activists-call-world-leaders-set-ai-safeguards-by-2030/
     - name: Time Magazine
       link: https://time.com/7131271/ai-2024-elections/
-  website: encodeai.org
+  website: https://encodeai.org
   sections:
     - heading: null
       paragraph: null

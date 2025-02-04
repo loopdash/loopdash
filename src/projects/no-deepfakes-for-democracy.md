@@ -21,7 +21,7 @@ project:
     - name: Forbes
     - name: Washington Post
     - name: Time Magazine
-  website: encodeai.org
+  website: https://nodeepfakesfordemocracy.org
   sections:
     - heading: null
       paragraph: null

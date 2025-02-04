@@ -25,7 +25,7 @@ project:
       link: https://mashable.com/video/accountable-tech-ad-mark-zuckerberg-facebook/
     - name: The Washington Post
       link: https://www.washingtonpost.com/technology/2024/10/16/instagram-limits-political-content-shadowban-election-posts/
-  website: accountabletech.org
+  website: https://accountabletech.org
   sections:
     - heading: null
       paragraph: null

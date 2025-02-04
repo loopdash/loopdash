@@ -26,7 +26,7 @@ project:
       link: https://www.newsweek.com/fight-democracy-comes-down-suburbs-opinion-1912574/
     - name: NPR
       link: https://www.npr.org/2022/10/28/1131815619/2022-state-legislative-races-abortion-voting-november-republicans-democrats/
-  website: forwardmajority.org
+  website: https://forwardmajority.org
   sections:
     - heading: null
       paragraph: null

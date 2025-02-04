@@ -24,7 +24,7 @@ project:
       link: https://www.politico.com/news/2024/07/28/children-online-safety-congress-00171487/
     - name: The Hill
       link: https://thehill.com/opinion/technology/4722943-my-fathers-day-request-a-safer-internet-in-honor-of-my-lost-son/
-  website: designitforus.org
+  website: https://designitforus.org
   sections:
     - heading: null
       paragraph: null
