@@ -14,7 +14,7 @@ proposal:
     <p class="text-3 mb-10">The full project has an estimated timeline of {{ duration }} to deliver an impactful outcome. Please feel free to learn more <a href="/about" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">about us</a> or check our <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">commonly asked questions</a>.</p>  
   website: [WEBSITE URL]  
   video: |
-    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c46f5baa13154eda995786f1a5ca4930?sid=03ef9e62-aba7-4043-90e7-b9e0e7dc6df9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/5870302e214741d8b9f0384f397ba555?sid=f865f7b7-dc7c-44a3-b80e-8551bc38a753" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   price: $27,200
   duration: 8–10 weeks  
   services:  
@@ -38,14 +38,22 @@ proposal:
     description: Conduct quality assurance testing, ensure data accuracy, and incorporate stakeholder feedback.  
     duration: 2 weeks  
     complete: false  
+  - name: Deployment & Training
+    description: Deploy the script and provide training for managing frequency and adding accounts/posts.
+    duration: 1 week
+    complete: false
+  - name: Post-Launch Support
+    duration: 30 days
+    complete: false
+    description: 30 days of post-launch support for adjusting automation schedules or data fields based on real-world usage.
   links:   
-  - url: https://loopda.sh/the-hub-project  
+  - url: https://app.documenso.com/sign/eOtQBWC99zuJWHGiGnVRX
     text: Review proposal  
     icon: pencil  
     event: Proposal+Review+Button+Click  
   - url: https://loopda.sh/the-hub-project-mvp  
     text: MVP  
-    icon: browser  
+    icon: browser
     event: Proposal+Alt+Button+Click  
 priority: 0.6  
 tags: proposals  
