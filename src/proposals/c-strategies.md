@@ -45,7 +45,7 @@ proposal:
   - name: Post-Launch Support
     description: 30 days of post-launch support for fixes, guidance and sssistance with any necessary refinements.
   links: 
-  - url: https://app.documenso.com/sign/zOstPQ1e-QSasRqiUegIC
+  - url: https://app.documenso.com/sign/yYpRTrLG7CdC3zKPUxMYt
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
