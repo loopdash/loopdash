@@ -16,6 +16,7 @@
   --color-green-waterloo: #13110c; /* https://colorbase.app/colors/13110c */
   --color-focus: #1f69ff;
   --color-error: #f4502f;
+  --color-success: #8bc34a;
   --container: 1260px;
   --mobile: 768px;
   --trs-prop: all;
@@ -287,7 +288,9 @@ code {
       font-size: clamp(0.625rem, 0.8vw, 0.75rem);
     }
     .widget-completed {
-      background-color: #78766d45;
+      color: #a4d56b;
+      background-color: #e8ffcd;
+      border-color: #cff6a2;
     }
   }
 }

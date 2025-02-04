@@ -48,13 +48,15 @@
                               <div class="w-px bg-border"></div>
                             </div>
                           {% endif %}
-                            <div class="widget">
                               {% if service.complete or service.complete == null %}
-                                {% svgIcon "./src/img/icons/checkmark.svg" %}
+                                <div class="widget widget-completed">
+                                  {% svgIcon "./src/img/icons/checkmark.svg" %}
+                                </div>
                               {% else %}
-                                {{ loop.index }}
+                                <div class="widget">
+                                  {{ loop.index }}
+                                </div>
                               {% endif %}
-                            </div>
                           <div class="w-100">
                             <div class="flex flex-column-row justify-between">
                               <strong>{{ service.name }}</strong>
