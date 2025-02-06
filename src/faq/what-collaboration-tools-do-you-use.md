@@ -12,11 +12,4 @@ tags:
 date: 2024-12-24
 url: /faq/collaboration-tools
 ---
-We use industry-leading collaboration tools:
-
-- Slack for communication
-- Figma for design collaboration
-- Slack boards for project management
-- Google for video meetings
-
-These tools ensure transparent, efficient project tracking.
+We rely on industry-leading collaboration tools to keep everything running smoothly. Slack keeps communication seamless, while Figma enables real-time design collaboration. Project management stays organized with Slack boards, and Google video meetings make it easy to connect. Together, these tools ensure transparency and efficiency throughout the project.

@@ -13,9 +13,4 @@ date: 2024-12-24
 url: /faq/primary-contact
 ---
 
-You'll have a dedicated Senior Project Manager who:
-
-- Understands your project goals
-- Coordinates team efforts
-- Serves as your main point of contact
-- Ensures smooth communication throughout the project
+A dedicated Senior Project Manager will guide your project, ensuring your goals are understood, team efforts are well-coordinated, and communication remains seamless. As your main point of contact, they’ll keep everything running smoothly from start to finish.

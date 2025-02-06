@@ -13,10 +13,4 @@ date: 2024-12-24
 url: /faq/project-communication-cadence
 ---
 
-We maintain regular communication throughout your project:
-
-- Bi-weekly meetings
-- Regular design reviews
-- Weekly progress updates via email or Slack
-
-Our goal is to keep you informed and involved at every stage of development.
+We stay in close contact throughout your project with bi-weekly meetings, regular design reviews, and weekly progress updates via email. If you have a large enough project we'll setup a shared Slack channel with our design and engineering team. Our goal is to keep you informed and involved at every stage of development.

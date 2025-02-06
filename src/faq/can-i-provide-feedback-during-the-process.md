@@ -14,11 +14,4 @@ date: 2024-12-24
 url: /faq/feedback
 ---
 
-Yes, we encourage client feedback through:
-
-- Design review meetings
-- Collaborative revision sessions
-- Inline commenting on design files
-- Dedicated feedback forms
-
-Your input is crucial to creating a website that meets your vision.
+We actively encourage client feedback through design review meetings, collaborative revision sessions, and inline commenting on design files. Dedicated feedback forms provide another way to share your thoughts, ensuring your input shapes the final result. Your vision is at the heart of everything we create.
