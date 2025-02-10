@@ -287,11 +287,11 @@ code {
       margin-right: calc(var(--spacing) * 2);
       font-size: clamp(0.625rem, 0.8vw, 0.75rem);
     }
-    .widget-completed {
+    /* .widget-completed {
       color: #a4d56b;
       background-color: #e8ffcd;
       border-color: #cff6a2;
-    }
+    } */
   }
 }
 
