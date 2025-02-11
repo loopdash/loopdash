@@ -255,6 +255,11 @@ code {
     margin-top: calc(var(--spacing) * 6);
     display: flex;
     position: relative;
+    /* .widget-completed {
+      color: #a4d56b;
+      background-color: #e8ffcd;
+      border-color: #cff6a2;
+    } */
   }
 
 
@@ -289,13 +294,6 @@ code {
       border-radius: 5000px;
       margin-right: calc(var(--spacing) * 2);
       font-size: clamp(0.625rem, 0.8vw, 0.75rem);
-    }
-
-
-.ul-service li .widget-completed {
-      color: #a4d56b;
-      background-color: #e8ffcd;
-      border-color: #cff6a2;
     }
 
 /* Border */
@@ -1348,19 +1346,20 @@ code {
 .projects {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   margin: 0 auto;
   padding-bottom: 7rem;
   box-sizing: border-box;
-  font-size: 33px;
-  font-weight:550;
+  font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
+  font-weight: 550;
   color: #ffffff;
+  flex-wrap: wrap;
 }
 
 .project-details {
-  padding: 3rem 3rem;
+  padding: calc(var(--spacing) * 6);
 }
 
 .project-details .reveal.visible {
@@ -1375,14 +1374,12 @@ code {
 
 .project {
   cursor: pointer;
-  background: linear-gradient (0deg, #000000 30%, #ffffff 100%);
-  background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   border-radius: var(--border-radius);
-  width: 100%;
+  width: 48%;
   max-width: 1260px;
-  height: 80vh;
+  height: auto;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -1393,20 +1390,21 @@ code {
   color: #ffffff;
   text-decoration: none;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+  height: clamp(60vh, 80vh, 100vh);
 }
 
-@media only screen and (max-width: 1260px) {
-    .project:hover {
-      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
-      background-size: 105%; /* Zoom in the background */
-    }
+@media only screen and (max-width: 960px) {
+
+.project {
+    width: 100%
+}
   }
 
-@media only screen and (max-width: 768px) {
-  .project {
-    background-size: cover;
+.project:hover {
+    transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+    box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.38);
+    opacity: 0.9 !important;
   }
-}
 
 @media only screen and (max-width: 1260px) {
   .projects {
@@ -1423,30 +1421,35 @@ code {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/passthrough/cover-accountable-tech.jpg');
+  background-size: cover;
 }
 
 .project-no-deepfakes-for-democracy {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/passthrough/cover-palantir.jpg');
+  background-size: cover;
 }
 
 .project-design-it-for-us {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/passthrough/cover-design-it-for-us.jpg');
+  background-size: cover;
 }
 
 .project-encode {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/passthrough/cover-encode-justice.jpg');
+  background-size: cover;
 }
 
 .project-forward-majority {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('../img/passthrough/cover-forward-majority.jpg');
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1060px) {
