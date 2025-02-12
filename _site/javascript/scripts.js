@@ -308,13 +308,13 @@ window.showStateModal = function (modalSelector, titleText, subText) {
     fadeOutModal();
   }, 7000);
 
-  // function fadeOutModal() {
-  //   modal.style.transition = 'opacity 0.5s ease';
-  //   modal.style.opacity = '0';
-  //   setTimeout(() => {
-  //     modal.style.display = 'none';
-  //   }, 500);
-  // }
+  function fadeOutModal() {
+    modal.style.transition = 'opacity 0.5s ease';
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 500);
+  }
 
   const closeButton = modal.querySelector('.close-button');
   if (closeButton) {

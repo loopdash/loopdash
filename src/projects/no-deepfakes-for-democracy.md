@@ -74,9 +74,6 @@ project:
               alt:
               colSpan: 6
         - type: colors
-    - heading: A Call to Action, Unignorable
-      paragraph: Every aspect of this campaign is designed to drive action. From compelling messaging to seamless sign-up flows, the platform makes it effortless for supporters to add their names, amplify the cause, and push platforms to enforce real accountability. 
-      content:
         - type: fullwidth
           images: 
             - src: "../../img/passthrough/no-deepfakes-for-democracy.gif"
