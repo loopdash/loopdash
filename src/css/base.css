@@ -2305,6 +2305,12 @@ a.card-default {
     margin: 4px 0 0 0;
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
+
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
 }
 
 .card-question.opened {
