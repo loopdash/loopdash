@@ -1382,7 +1382,7 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem 1rem;
   margin: 0 auto;
   padding-bottom: 7rem;
   box-sizing: border-box;
@@ -1411,7 +1411,7 @@ code {
   background-size: 100%;
   background-position: center;
   border-radius: var(--border-radius);
-  width: 48%;
+  width: 49%;
   max-width: 1260px;
   height: auto;
   margin: 0 auto;
@@ -1482,8 +1482,11 @@ code {
   background-size: cover;
 }
 
-@media only screen and (max-width: 1060px) {
-
+.project-no-deepfakes-for-democracy {
+  background-image: 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
+    url('../img/passthrough/cover-no-deepfakes-for-democracy.jpg');
+  background-size: cover;
 }
 
 .link-chevron {
@@ -1868,6 +1871,33 @@ code {
       }
     }
   }
+
+  .introduction-no-deepfakes-for-democracy {
+    background-color: #050f15;
+    .details {
+      color: #a3abb0;
+      .link-chevron {
+        color: #a3abb0;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        &:after {
+          filter:
+            brightness(0) saturate(100%)
+            invert(68%) sepia(5%) saturate(250%) hue-rotate(175deg) brightness(94%) contrast(85%);
+            opacity: 0.5;
+        }
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+          &:after {
+            filter:
+              brightness(0) saturate(100%)
+              invert(68%) sepia(5%) saturate(250%) hue-rotate(175deg) brightness(94%) contrast(85%);
+          }
+        }
+      }
+    }
+  }
+
   .brand-palette {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -2050,6 +2080,50 @@ code {
     }
 
 
+    /* No Deepfakes for Democracy */    
+    /* https://colorbase.app/colors */
+    .brand-color-no-deepfakes-for-democracy:nth-child(1) {
+      background: #0A1F2B;
+      color: rgba(255, 255, 255, 0.8);
+
+      &:after {
+        content: "Firefly";
+      }
+    }
+
+    .brand-color-no-deepfakes-for-democracy:nth-child(2) {
+      background: #EFFF34;
+      color: rgba(0, 0, 0, 0.8);
+
+      &:after {
+        content: "Golden Fizz";
+      }
+    }
+
+    .brand-color-no-deepfakes-for-democracy:nth-child(3) {
+      background: #233640;
+      color: rgba(255, 255, 255, 0.5);
+      &:after {
+        content: "Outer Space";
+      }
+    }
+
+    .brand-color-no-deepfakes-for-democracy:nth-child(4) {
+      background: #F5F5F5;
+
+      &:after {
+        content: "Wild Sand";
+      }
+    }
+
+    .brand-color-no-deepfakes-for-democracy:nth-child(5) {
+      background: #ffffff;
+
+      &:after {
+        content: "Pure White";
+      }
+    }
+    
     @media only screen and (max-width: 768px) {
       .brand-color,
       .brand-color:nth-child(1),
@@ -2443,7 +2517,6 @@ a.card-default {
   background: var(--color-green-waterloo);
   z-index: 999;
   position: relative;
-  margin-top: calc(var(--spacing) * 20);
   padding: calc(var(--spacing) * 40) 1.5rem calc(var(--spacing) * 10);
   color: var(--color-charcoal-light);
 

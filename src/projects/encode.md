@@ -94,14 +94,6 @@ project:
           images: 
             - src: "./src/img/projects/encode-11.jpg"
               alt: "encode-justice-about-page-on-orange-background"
-        # - type: image
-        #   images: 
-        #     - src: "./src/img/projects/slideshow-accountable-tech-7.png"
-        #       alt: 
-        #       colSpan: 6
-        #     - src: "./src/img/projects/slideshow-accountable-tech-2.png"
-        #       alt:
-        #       colSpan: 6
   testimonial:
     quote: >
       Had a fantastic experience working with Loopdash - the team was accessible and responsive to feedback even when we had changes in vision throughout the process. We're all so pleased with the final product and would 100% work with Loopdash again.

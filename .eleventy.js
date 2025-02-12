@@ -29,8 +29,23 @@ export default function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
     async (src, alt, widths = [512, 1024, null], formats = ["png", "webp", "jpeg", "jpg"], className = "") => {
-      if (!alt) {
+      if (!alt && !/\.(mp4)$/i.test(src)) {
         throw new Error(`Missing \`alt\` attribute for image: ${src}`);
+      }
+
+      // If the file is an MP4, return a video tag
+      if (/\.(mp4)$/i.test(src)) {
+        console.warn(`Rendering video instead of processing: ${src}`);
+        return `<video controls class="${className}">
+                  <source src="${src}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>`;
+      }
+
+      // If the image is a GIF, return a simple <img> tag without processing
+      if (/\.(gif)$/i.test(src)) {
+        console.warn(`Skipping image processing for GIF: ${src}`);
+        return `<img src="${src}" alt="${alt}" loading="lazy" decoding="async" class="${className}">`;
       }
 
       let metadata = await eleventyImg(src, {
@@ -50,6 +65,13 @@ export default function (eleventyConfig) {
       return eleventyImg.generateHTML(metadata, imageAttributes);
     }
   );
+
+
+  eleventyConfig.addFilter("sortByDate", (projects) => {
+    return projects
+      .filter(project => project.data.page.date) // Ensure there's a date
+      .sort((a, b) => new Date(b.data.page.date) - new Date(a.data.page.date)); // Descending order
+  });
 
   // {% svgIcon "./src/icons/logo.svg", "icon-class" %}
   eleventyConfig.addNunjucksAsyncShortcode("svgIcon", async (src, className = "") => {
@@ -184,6 +206,7 @@ function renderForm(res, errorMessage) {
   eleventyConfig.addPassthroughCopy("src/img/icons/");
   eleventyConfig.addPassthroughCopy("src/img/passthrough/");
   eleventyConfig.addPassthroughCopy("src/img/favicons/");
+  eleventyConfig.addPassthroughCopy("src/video/");
   eleventyConfig.addPassthroughCopy("src/javascript/");
 
   return {
