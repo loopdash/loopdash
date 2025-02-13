@@ -2591,6 +2591,9 @@ a.card-default:hover,
 .site-footer .server-status-down .server-status-dot {
       background: #d78371;
     }
+.site-footer .shred {
+    transition: transform var(--rotation-speed, 200ms) ease-out; 
+  }
 @media only screen and (max-width: 1024px) {
     .site-footer .container-xl {
       padding: 0;

@@ -2615,6 +2615,10 @@ a.card-default {
     }
   }
 
+  .shred {
+    transition: transform var(--rotation-speed, 200ms) ease-out; 
+  }
+
   @media only screen and (max-width: 1024px) {
     .container-xl {
       padding: 0;
