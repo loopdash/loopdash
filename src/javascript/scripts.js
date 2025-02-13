@@ -32,18 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     lastScrollTop = Math.max(0, currentScroll); // Prevent negative scroll values
   });
 
-  // Observe elements and add 'visible' class when in viewport
-  const bgImages = document.querySelectorAll('.project');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible'); // Mark element as visible
-        observer.unobserve(entry.target); // Stop observing once visible
-      }
-    });
-  });
-
-  bgImages.forEach((bgImage) => observer.observe(bgImage));
 
   // Select all elements with .c-animate-reveal and .c-animate-trigger classes
   const elementsToObserve = [

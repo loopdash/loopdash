@@ -1425,14 +1425,14 @@ code {
   text-decoration: none;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   height: clamp(60vh, 80vh, 100vh);
-
+  opacity: 1;
   @media only screen and (max-width: 960px) {
     width: 100%;
   }
   &:hover {
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
     box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.38);
-    opacity: 0.9 !important;
+    opacity: 0.82 !important;
   }
 }
 
@@ -1440,11 +1440,6 @@ code {
   .projects {
     padding: 1.5rem;
   }
-}
-
-.project.visible {
-  opacity: 1;
-  transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
 .project-accountable-tech {
