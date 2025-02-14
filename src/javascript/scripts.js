@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('nav-opened');
   });
 
-  let lastScrollTop = 0;
+  let lastScrollTop = 6;
   const header = document.querySelector('.site-header');
   const animationDuration = 500; // Duration in milliseconds
 
