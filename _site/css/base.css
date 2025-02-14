@@ -938,7 +938,7 @@ code {
     background: rbga(255,255,255, 0.4);
   }
 .menu-toggle:hover .bar {
-      background: var(--color-charcoal);
+      background: var(--color-green-waterloo);
     }
 .menu-toggle:focus {
     border-color: var(--color-focus);
@@ -949,7 +949,7 @@ code {
 .menu-toggle .bar {
   height: 3px;
   width: 26px;
-  background: var(--color-charcoal);
+  background: var(--color-green-waterloo);
   border-radius: 2px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   position: absolute;
@@ -980,7 +980,7 @@ code {
     opacity: 1;
   }
 .nav-opened .logo-path {
-    fill: var(--color-cream-dark);
+    fill: var(--color-green-waterloo);
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
 .nav-opened .nav li {

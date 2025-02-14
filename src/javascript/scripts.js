@@ -271,6 +271,42 @@ function handleCopyAndShowModal(event) {
   document.querySelectorAll('#copy-link').forEach(button => {
     button.addEventListener('click', handleCopyAndShowModal);
   });
+
+  function rotateElement(selector) {
+    const element = document.querySelector(selector);
+    if (!element) {
+      console.error("Element not found:", selector);
+      return;
+    }
+
+    let rotations = [1, -1, 2, -2, 1, 0]; // Define shake sequence
+    let index = 0;
+
+    function applyRotation() {
+      if (index >= rotations.length) {
+        return; // Stop when all rotations are applied
+      }
+
+      element.style.transform = `rotate(${rotations[index]}deg)`;
+      index++;
+      setTimeout(applyRotation, 200); // Apply each shake with a delay
+    }
+
+    // Initial delay before the first shake (wait 2 seconds)
+    setTimeout(() => {
+      applyRotation();
+      setInterval(() => {
+        index = 0;
+        applyRotation();
+      }, 6000); // Repeat shake every 6 seconds
+    }, 2000);
+  }
+
+// Example usage: Pass in a class or ID selector
+rotateElement("#myElement"); // Use '.myClass' for class-based selection
+
+
+  rotateElement(".shake");
 });
 
 window.showStateModal = function (modalSelector, titleText, subText) {
