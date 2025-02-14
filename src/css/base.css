@@ -984,7 +984,7 @@ code {
   }
 
   .logo-path {
-    fill: var(--color-cream-dark);
+    fill: var(--color-green-waterloo);
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
 
