@@ -938,7 +938,7 @@ code {
   &:hover {
     background: rbga(255,255,255, 0.4);
     .bar {
-      background: var(--color-charcoal);
+      background: var(--color-green-waterloo);
     }
   }
 
@@ -952,7 +952,7 @@ code {
 .menu-toggle .bar {
   height: 3px;
   width: 26px;
-  background: var(--color-charcoal);
+  background: var(--color-green-waterloo);
   border-radius: 2px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   position: absolute;
