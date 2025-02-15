@@ -1711,7 +1711,6 @@ code {
     position: fixed;
     z-index: 1;
     overflow: hidden;
-    margin-bottom: 0;
 
     /* Ensures the content scales proportionally */
     object-fit: cover; /* Keeps aspect ratio for images */
@@ -1728,6 +1727,8 @@ code {
     flex-direction: column-reverse;
     padding: 0 1rem;
     overflow: hidden;
+    margin-bottom: 0;
+
     h1 {
       z-index: 999;
       overflow: hidden;

@@ -1699,6 +1699,7 @@ code {
     flex-direction: column-reverse;
     padding: 0 1rem;
     overflow: hidden;
+    margin-bottom: 0;
   }
 
 .single-project-layout .hero h1 {
