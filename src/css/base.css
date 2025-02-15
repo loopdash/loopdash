@@ -175,8 +175,18 @@ code {
 .text-weight-550 { font-weight: 550 !important; }
 .text-weight-600 { font-weight: 600 !important; }
 .text-uppercase { text-transform: uppercase; }
+
 .text-gradient {
   background: linear-gradient(to right bottom, var(--color-charcoal) 50%, hsl(43deg 23% 12% / 30%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: unset;
+  padding-bottom: 3px;
+}
+
+.text-gradient-white {
+  background: linear-gradient(to right bottom, var(--color-cream) 50%, hsl(60deg 13% 94% / 80%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -855,6 +865,7 @@ code {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
+
 @keyframes hideHeader {
   from {
     transform: translateY(0); /* Fully visible */
@@ -875,19 +886,42 @@ code {
   }
 }
 
+.navbar-container {
+  margin: 0  0.675rem 0  0.675rem;
+}
+
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1.125rem .9725rem;
   max-width: var(--container);
   margin: 0 auto;
-  z-index: 99 !important;
+  z-index: 10000;
+  background: transparent; /* Remove background */
+  top: 0.675rem;
+  border-radius: 11px;
+  justify-content: center;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(246, 246, 246 , 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  z-index: -1; /* Keep it behind the content */
+  border-radius: 11px; /* Match the navbar */
 }
 
 @media only screen and (max-width: 1260px) {
   .navbar {
-    padding: 2rem 1.5rem;
+    padding: 1.125rem .9725rem;
   }
 }
 
@@ -898,14 +932,18 @@ code {
 
 .navbar .logo-text {
   display: none;
+  
 }
 
 @media only screen and (min-width: 760px) {
+  .navbar {
+    top: 0.675rem;
+  }
   .navbar .logo-text {
     display: block;
   }
   .logo {
-    max-width: 140px;
+    max-width: 128px;
   }
 }
 
@@ -927,7 +965,7 @@ code {
   justify-content: space-between;
   align-items: center;
   width: 30px;
-  height: 24px;
+  height: 23px;
   background: none;
   border: none;
   cursor: pointer;
@@ -950,8 +988,8 @@ code {
 }
 
 .menu-toggle .bar {
-  height: 3px;
-  width: 26px;
+  height: 2px;
+  width: 22px;
   background: var(--color-green-waterloo);
   border-radius: 2px;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
@@ -977,8 +1015,11 @@ code {
 .nav-opened {
   overflow: hidden;
 
+  .navbar::before {
+    background: unset;
+    backdrop-filter: none;
+  }
   .nav-container {
-    background-color: var(--color-green-waterloo);
     visibility: visible;
     opacity: 1;
   }
@@ -995,6 +1036,7 @@ code {
       animation: fadeInUp 0.5s ease forwards;
 
       &:nth-child(1) {
+        top: 0.5px;
         animation-delay: 0.1s;
       }
 
@@ -1035,13 +1077,12 @@ code {
   .menu-toggle {
     .bar {
       &:nth-child(1) {
-        background: var(--color-cream);
+        background: var(--color-green-waterloo);
         transform: translateY(10px) rotate(45deg);
 
         &::after {
           content: "";
           width: 27px;
-          background-color: var(--color-charcoal);
           height: 2px;
           margin: -2px 0 0 0;
           display: block;
@@ -1053,7 +1094,7 @@ code {
       }
 
       &:nth-child(3) {
-        background: var(--color-cream);
+        background: var(--color-green-waterloo);
         transform: translateY(-10px) rotate(-45deg);
       }
     }
@@ -1068,7 +1109,9 @@ code {
 
 /* Navigation Container and Items */
 .nav-container {
-  background: var(--color-cream);
+  background: rgba(246, 246, 246 , 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: absolute;
   top: 144px;
   visibility: hidden;
@@ -1124,7 +1167,7 @@ code {
 
 .nav a.menu-item {
   display: inline-block;
-  color: #f3f2ebad;
+  color: #605d50;
   line-height: inherit;
   font-weight: 500;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
@@ -1136,7 +1179,7 @@ code {
   margin: 0;
   
   &:hover {
-    color: var(--color-cream);
+    color: var(--color-green-waterloo);
     transform: scale(1.03);
     margin-left: 2.5rem;
 
@@ -1194,6 +1237,10 @@ code {
   justify-content: space-between;
   width: 100%;
   z-index: 999;
+
+  .logo {
+    display: flex;
+  }
 }
 
 /* flex / containers */
@@ -1226,7 +1273,40 @@ code {
   gap: 2rem;
 }
 
-/* Home Hero */
+.hero {
+  margin-bottom: calc(var(--spacing) * 60);
+  color: var(--color-cream-dark);
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .video-bkg {
+    background-color: rgb(0 0 0 / 20%);
+    z-index: 1; /* Low z-index so .text-set appears above */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text-set {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+
 .text-set {
   padding-top: 9rem;
   padding-left: 3rem;
@@ -1615,15 +1695,6 @@ code {
 .single-project-layout .site-header {
   backdrop-filter: none;
   background-color: unset;
-
-  .logo-path {
-    fill: #ffffff;
-  }
-
-  .menu-toggle .bar {
-    background: #ffffff;
-    background-color: #ffffff;
-  }
 }
 
 .single-project-layout {
@@ -1677,7 +1748,7 @@ code {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-green-waterloo);
+    background: linear-gradient(0deg, #13110c2b 30%, #13110c57 100%);
     pointer-events: none;
     z-index: 1;
   }
