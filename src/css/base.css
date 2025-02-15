@@ -1711,6 +1711,7 @@ code {
     position: fixed;
     z-index: 1;
     overflow: hidden;
+    margin-bottom: 0;
 
     /* Ensures the content scales proportionally */
     object-fit: cover; /* Keeps aspect ratio for images */
