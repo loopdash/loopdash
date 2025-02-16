@@ -4,7 +4,7 @@ meta:
   title: Forward Majority
   description: 
 project: 
-  featured: true
+  featured: false
   name: Forward Majority
   description: "The national balance of power begins in the states, but Forward Majority’s existing website wasn’t equipped to drive that message home. We built a platform that turns their strategy into action—communicating urgency, rallying supporters, and showcasing their impact with clarity and purpose. With tools for storytelling, engagement, and accessibility, the new site amplifies their mission to secure representative leadership and protect democracy where it's decided: in state capitols."
   tagline: Rebuilding democracy where it matters most.
