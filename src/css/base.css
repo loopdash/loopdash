@@ -1168,7 +1168,7 @@ code {
 
 .nav a.menu-item {
   display: inline-block;
-  color: #605d50;
+  color: var(--color-charcoal);
   line-height: inherit;
   font-weight: 500;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);

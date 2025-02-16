@@ -5,6 +5,10 @@ import eleventyImg from "@11ty/eleventy-img";
 import dotenv from "dotenv";
 import { getVersion } from "./src/utils/getVersion.js";
 import nunjucks from "nunjucks";
+import { minify as terserMinify } from "terser";
+import fs from "fs";
+import path from "path";
+import { glob } from "glob";
 
 nunjucks.configure('views', {
   autoescape: true,
@@ -24,6 +28,36 @@ export default function (eleventyConfig) {
 
   // Add version to global data
   eleventyConfig.addGlobalData("siteVersion", getVersion());
+
+
+  // Minify JavaScript files **before** Eleventy builds
+  eleventyConfig.on("beforeBuild", async () => {
+    console.log("🔧 Minifying JavaScript files...");
+    
+    const files = glob.sync("src/javascript/**/*.js"); // Find all JS files in src/javascript/
+
+    for (const file of files) {
+      const content = fs.readFileSync(file, "utf8");
+      try {
+        const minified = await terserMinify(content, {
+          compress: true,
+          mangle: true,
+        });
+
+        if (minified.code) {
+          const outputFilePath = file.replace(/^src\//, "_site/").replace(/\.js$/, ".min.js");
+          fs.mkdirSync(path.dirname(outputFilePath), { recursive: true });
+          fs.writeFileSync(outputFilePath, minified.code);
+          console.log(`✅ Minified: ${file} → ${outputFilePath}`);
+        }
+      } catch (err) {
+        console.error(`❌ Error minifying ${file}:`, err);
+      }
+    }
+  });
+
+  // Passthrough Copy - Ensures JavaScript files are in _site/javascript/
+  eleventyConfig.addPassthroughCopy({ "src/javascript": "javascript" });
 
   // Image shortcode
   eleventyConfig.addNunjucksAsyncShortcode(
@@ -166,7 +200,7 @@ function renderForm(res, errorMessage) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
         <link rel="stylesheet" href="../../css/normalize.css"/>
         <link rel="stylesheet" href="../../css/base.css"/>
-        <script src="../../javascript/scripts.js" defer></script>
+        <script src="../../javascript/scripts.min.js" defer></script>
       </head>
       <body>
         <main>
@@ -204,10 +238,9 @@ function renderForm(res, errorMessage) {
   // Passthrough copy
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy("src/img/icons/");
-  eleventyConfig.addPassthroughCopy("src/img/passthrough/");
+  eleventyConfig.addPassthroughCopy({ "src/javascript": "javascript" });
   eleventyConfig.addPassthroughCopy("src/img/favicons/");
   eleventyConfig.addPassthroughCopy("src/video/");
-  eleventyConfig.addPassthroughCopy("src/javascript/");
 
   return {
     dir: {

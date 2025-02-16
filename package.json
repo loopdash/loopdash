@@ -28,13 +28,16 @@
     "cssnano": "^5.0.6",
     "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
+    "glob": "^11.0.1",
     "html-minifier": "^4.0.0",
+    "path": "^0.12.7",
     "postcss": "^8.4.49",
     "postcss-nested": "^7.0.2"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^5.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.1.4",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^11.0.0",
+    "terser": "^5.39.0"
   }
 }
