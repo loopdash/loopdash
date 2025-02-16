@@ -1499,42 +1499,35 @@ code {
 .project-accountable-tech {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/passthrough/cover-accountable-tech.jpg');
-  background-size: cover;
-}
-
-.project-no-deepfakes-for-democracy {
-  background-image: 
-    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/passthrough/cover-palantir.jpg');
+    url('../img/passthrough/preview-accountable-tech.jpg');
   background-size: cover;
 }
 
 .project-design-it-for-us {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/passthrough/cover-design-it-for-us.jpg');
+    url('../img/passthrough/preview-design-it-for-us.jpg');
   background-size: cover;
 }
 
 .project-encode {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/passthrough/cover-encode-justice.jpg');
+    url('../img/passthrough/preview-encode-justice.jpg');
   background-size: cover;
 }
 
 .project-forward-majority {
   background-image:
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/passthrough/cover-forward-majority.jpg');
+    url('../img/passthrough/preview-forward-majority.jpg');
   background-size: cover;
 }
 
 .project-no-deepfakes-for-democracy {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('../img/passthrough/cover-no-deepfakes-for-democracy.jpg');
+    url('../img/passthrough/preview-no-deepfakes-for-democracy.jpg');
   background-size: cover;
 }
 
@@ -1570,7 +1563,7 @@ code {
 /* cta */
 .cta {
   background: var(--color-cream-dark);
-  padding: 12rem 36px 18rem 36px;
+  padding: calc(var(--spacing) * 24) 36px calc(var(--spacing) * 24) 36px;
   text-align: center;
   margin: 0 auto;
   display: flex;
