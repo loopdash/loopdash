@@ -301,12 +301,57 @@ function handleCopyAndShowModal(event) {
       }, 6000); // Repeat shake every 6 seconds
     }, 2000);
   }
-
-// Example usage: Pass in a class or ID selector
-rotateElement("#myElement"); // Use '.myClass' for class-based selection
-
-
   rotateElement(".shake");
+
+
+  // footer bounce
+  const footer = document.querySelector(".site-footer");
+  const shreds = document.querySelectorAll(".shred");
+  let lastScrollY = window.scrollY;
+  let lastTimestamp = Date.now();
+  let hasBounced = false; // Prevents bounce from happening repeatedly
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const currentTimestamp = Date.now();
+    const timeDiff = currentTimestamp - lastTimestamp || 16; // Avoid division by zero
+
+    let scrollSpeed = (currentScrollY - lastScrollY) / timeDiff; // Measure downward velocity
+    lastScrollY = currentScrollY;
+    lastTimestamp = currentTimestamp;
+
+    const footerRect = footer.getBoundingClientRect();
+
+    // Only trigger if scrolling down FAST and hitting the bottom of the footer
+    if ((footerRect.bottom - 2) <= window.innerHeight && scrollSpeed > 0.4 && !hasBounced) {
+      triggerBounce(scrollSpeed);
+    }
+
+    // Reset bounce trigger when scrolling back up
+    if (currentScrollY < lastScrollY) {
+      hasBounced = false;
+    }
+  });
+
+  function triggerBounce(velocity) {
+    shreds.forEach((shred) => {
+      const velocityMultiplier = Math.min(Math.max(velocity * 8.5, 1), 6); // Control bounce intensity
+      const bounceHeight = velocityMultiplier * 13 + 39; // Bounce height (10px to 30px)
+      const rotationAmount = (Math.random() * 4 + 49) * (Math.random() < 0.5 ? -1 : 1); // Rotate 2-6 degrees randomly left or right
+      const duration = Math.max(250 - velocity * 30, 150); // Faster animation if scroll speed is higher
+
+      requestAnimationFrame(() => {
+        shred.style.transform = `translateY(-${bounceHeight}px) rotate(${rotationAmount}deg)`;
+        shred.style.transition = `transform ${duration}ms ease-out`;
+
+        setTimeout(() => {
+          shred.style.transform = `translateY(0) rotate(0deg)`;
+          shred.style.transition = `transform ${duration}ms ease-in`;
+        }, duration);
+      });
+    });
+  }
+
 });
 
 window.showStateModal = function (modalSelector, titleText, subText) {
