@@ -24,6 +24,7 @@
   "homepage": "https://github.com/loopdash/loopdash#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@aws-sdk/client-s3": "^3.749.0",
     "autoprefixer": "^10.3.1",
     "cssnano": "^5.0.6",
     "dotenv": "^16.0.3",
