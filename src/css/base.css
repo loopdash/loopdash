@@ -1723,10 +1723,6 @@ code {
       z-index: 999;
       overflow: hidden;
       width: 1024px;
-
-      @media only screen and (max-width: 768px) {
-        width: unset;
-      }
     }
 
     @media only screen and (max-width: 1024px) {
@@ -1776,6 +1772,7 @@ code {
         width: 100%;
         overflow: hidden;
         border-radius: var(--border-radius);
+        margin-bottom: calc(var(--spacing) * 16);
         picture {
           display: block; /* Keeps pictures in the document flow */
           width: 100%;

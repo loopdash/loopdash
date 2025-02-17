@@ -279,7 +279,7 @@ function handleCopyAndShowModal(event) {
       return;
     }
 
-    let rotations = [1, -1, 2, -2, 1, 0]; // Define shake sequence
+    let rotations = [2, -2, 4, -4, 3, 0]; // Define shake sequence
     let index = 0;
 
     function applyRotation() {

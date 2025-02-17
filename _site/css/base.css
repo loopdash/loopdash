@@ -1701,13 +1701,6 @@ code {
       width: 1024px;
     }
 
-@media only screen and (max-width: 768px) {
-
-.single-project-layout .hero h1 {
-        width: unset
-    }
-      }
-
 @media only screen and (max-width: 1024px) {
 
 .single-project-layout .hero {
@@ -1759,6 +1752,7 @@ code {
         width: 100%;
         overflow: hidden;
         border-radius: var(--border-radius);
+        margin-bottom: calc(var(--spacing) * 16);
       }
 
 .single-project-layout main .project-section-wrapper .slideshow picture {
