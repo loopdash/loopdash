@@ -25,11 +25,6 @@ jobs:
       - name: Build 11ty Site
         run: npm run build
 
-      - name: Install AWS CLI
-        run: |
-          sudo apt update
-          sudo apt install -y awscli
-
       - name: Configure AWS CLI for Cloudflare R2
         run: |
           aws configure set aws_access_key_id ${{ secrets.R2_ACCESS_KEY_ID }}
