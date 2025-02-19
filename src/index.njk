@@ -12,15 +12,28 @@ sitemap:
   priority: 1.0
 ---
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelector(".video");
+  const videoBkg = document.querySelector(".video-bkg");
+
+  video.addEventListener("loadeddata", function () {
+    video.style.display = "block"; // Instantly switch to video
+    videoBkg.style.display = "none"; // Hide the placeholder image
+  });
+});
+</script>
 <section class="hero">
-  <div class="video-bkg"></div>
-  <video autoplay muted loop defaultMuted playsinline preload="auto" class="video" oncontextmenu="return false;">
-    <source src="https://cdn.loopdash.com/video/alpha.mp4" type="video/mp4">
-    <source src="https://cdn.loopdash.com/video/alpha.webm" type="video/webm">
-  </video>
+  <div class="video-container">
+    <div class="video-bkg"></div>
+    <video autoplay muted loop defaultMuted playsinline preload="auto" class="video" oncontextmenu="return false;">
+      <source src="https://cdn.loopdash.com/video/alpha.mp4" type="video/mp4">
+      <source src="https://cdn.loopdash.com/video/alpha.webm" type="video/webm">
+    </video>
+  </div>
   <div class="text-set text-set-home pb-24">
     <h1 class="text-11 text-weight-600 text-gradient-white">Bringing Simplicity Back to Web Development.</h1>
-    <p class="text-7 text-weight-400">We help founders, nonprofits, and changemakers amplify their impact and achieve results.</p>
+    <p class="text-7 text-weight-400">We help businesses, nonprofits, and changemakers amplify their impact and achieve results.</p>
     <a href="/about" class="button button-secondary plausible-event-name=Home+About+Button+Click">About us</a>
   </div>
 </section>
