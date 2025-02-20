@@ -34,19 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // Select all elements with .c-animate-reveal and .c-animate-trigger classes
-  const elementsToObserve = [
-    ...document.querySelectorAll('.reveal'), // Select all .c-animate-reveal elements
-    ...document.querySelectorAll('.animated') // Select all .c-animate-trigger elements
-  ];
-
-  const video = document.querySelector(".video");
-  const videoBkg = document.querySelector(".video-bkg");
-
-  video.addEventListener("loadeddata", function () {
-    video.style.display = "block"; // Instantly switch to video
-    videoBkg.style.display = "none"; // Hide the placeholder image
-  });
-
   const projectObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -58,11 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.1 // Adjust the threshold as needed
   });
 
-  // Observe each matching element
+  const elementsToObserve = [
+    ...document.querySelectorAll('.reveal'), // Select all .c-animate-reveal elements
+    ...document.querySelectorAll('.animated') // Select all .c-animate-trigger elements
+  ];
+
   elementsToObserve.forEach((element) => {
     projectObserver.observe(element);
   });
 
+    const video = document.querySelector(".video");
+    const videoBkg = document.querySelector(".video-bkg");
+
+    if (video) {
+      video.addEventListener("loadeddata", function () {
+        video.style.display = "block"; // Instantly switch to video
+        if (videoBkg) videoBkg.style.display = "none"; // Hide the placeholder image if it exists
+      });
+    }
 
   // Select all slideshow containers
   const slideshows = document.querySelectorAll(".slideshow");

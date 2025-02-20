@@ -693,6 +693,9 @@ code {
 .mt-14 { margin-top: calc(var(--spacing) * 14); }
 .mt-15 { margin-top: calc(var(--spacing) * 15); }
 .mt-16 { margin-top: calc(var(--spacing) * 16); }
+.mt-24 { margin-top: calc(var(--spacing) * 24); }
+.mt-32 { margin-top: calc(var(--spacing) * 32); }
+.mt-48 { margin-top: calc(var(--spacing) * 48); }
 
 /* Margin Right */
 .mr-0 { margin-right: 0; }

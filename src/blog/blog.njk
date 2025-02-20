@@ -13,12 +13,12 @@ sitemap:
 ---
 
 <section class="container-lg flex mx-auto">
-  <div class="col-5 pt-16 pb-16">
+  <div class="col-5 mt-48">
     <h1 class="text-12 text-weight-550 text-gradient">Blog</h1>
     <p class="text-7 text-charcoal-light text-weight-400">Where ideas take shape.</p>
   </div>
 
-  <div class="mb-12 mx-auto flex col-7">
+  <div class="mb-12 mx-auto mt-48 flex col-7">
     {% for blog in blogs | reverse %}
 
       {# set filteredTags #}
@@ -54,7 +54,6 @@ sitemap:
             {{ blog.data.meta.description | safe }}
           </div>
         </article>
-        </a>
       </a>
     {% endfor %}
   </div>
