@@ -54,15 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
     projectObserver.observe(element);
   });
 
-    const video = document.querySelector(".video");
-    const videoBkg = document.querySelector(".video-bkg");
+   const video = document.querySelector(".video");
+  const videoBkg = document.querySelector(".video-bkg");
 
-    if (video) {
-      video.addEventListener("loadeddata", function () {
-        video.style.display = "block"; // Instantly switch to video
-        if (videoBkg) videoBkg.style.display = "none"; // Hide the placeholder image if it exists
-      });
-    }
+  if (video) {
+    video.addEventListener("canplay", function () {
+      video.style.display = "block"; // Instantly switch to video
+      if (videoBkg) videoBkg.style.display = "none"; // Hide the placeholder image if it exists
+    });
+  } else {
+    console.warn("Video element not found.");
+  }
 
   // Select all slideshow containers
   const slideshows = document.querySelectorAll(".slideshow");

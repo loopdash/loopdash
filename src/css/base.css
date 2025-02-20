@@ -885,6 +885,10 @@ code {
   top: 0.675rem;
   border-radius: 11px;
   justify-content: center;
+
+  .button {
+    border-radius: 1rem !important;
+  }
 }
 
 .navbar::before {
@@ -1306,6 +1310,7 @@ code {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 95vw;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
