@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectObserver.observe(element);
   });
 
-   const video = document.querySelector(".video");
+  const video = document.querySelector(".video");
   const videoBkg = document.querySelector(".video-bkg");
 
   if (video) {
