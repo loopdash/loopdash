@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     ...document.querySelectorAll('.animated') // Select all .c-animate-trigger elements
   ];
 
+  const video = document.querySelector(".video");
+  const videoBkg = document.querySelector(".video-bkg");
+
+  video.addEventListener("loadeddata", function () {
+    video.style.display = "block"; // Instantly switch to video
+    videoBkg.style.display = "none"; // Hide the placeholder image
+  });
+
   const projectObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -272,14 +280,16 @@ function handleCopyAndShowModal(event) {
     button.addEventListener('click', handleCopyAndShowModal);
   });
 
-  function rotateElement(selector) {
-    const element = document.querySelector(selector);
-    if (!element) {
-      console.error("Element not found:", selector);
-      return;
-    }
+function rotateElement(selector) {
+  const elements = document.querySelectorAll(selector);
+  if (!elements.length) {
+    console.error("No elements found with selector:", selector);
+    return;
+  }
 
-    let rotations = [2, -2, 4, -4, 3, 0]; // Define shake sequence
+  let rotations = [2, -2, 3, -4, 3, 0]; // Define shake sequence
+
+  elements.forEach((element) => {
     let index = 0;
 
     function applyRotation() {
@@ -300,7 +310,10 @@ function handleCopyAndShowModal(event) {
         applyRotation();
       }, 6000); // Repeat shake every 6 seconds
     }, 2000);
-  }
+  });
+}
+
+// Call the function with the class selector
   rotateElement(".shake");
 
 
