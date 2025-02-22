@@ -36,7 +36,7 @@
                           <div class="col-{{ slideshow.colSpan or 6 }}">
                             <div class="slideshow">
                               {% for slide in slideshow.slides %}
-                                {% image slide.src, slide.alt or "Slide image", [2200, 600], ["jpeg", "webp"] %}
+                                {% image slide.src, slide.alt or "Slide image", [480, 768, 1280, 1920, 3840] %}
                               {% endfor %}
                             </div>
                           </div>
@@ -53,7 +53,7 @@
                             {% if image.cardClass %}
                               <div class="card {{ image.cardClass }}">
                             {% endif %}
-                            {% image image.src, image.alt or "Image", [2200, 600], ["jpeg", "webp"], "reveal" %}
+                            {% image image.src, image.alt or "Image", [480, 768, 1280, 1920, 3840], "reveal" %}
                             {% if image.cardClass %}
                               </div>
                             {% endif %}
@@ -66,7 +66,7 @@
                   {% if contentItem.type == "fullwidth" %}
                     {% for image in contentItem.images %}
                       <div class="fullwidth-wrapper">
-                        {% image image.src, image.alt or "Full width image", [2200, 600], ["jpeg", "webp"] %}
+                        {% image image.src, image.alt or "Full width image", [640, 1280, 1920, 2560, 3840] %}
                       </div>
                     {% endfor %}
                   {% endif %}

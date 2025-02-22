@@ -2,7 +2,7 @@
 layout: single-project.njk
 meta:
   title: Accountable Tech
-  description:
+  description: A bold new look for a more accountable future.
 project:
   featured: true
   name: Accountable Tech

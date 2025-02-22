@@ -62,7 +62,7 @@ export default function (eleventyConfig) {
   // Image shortcode
   eleventyConfig.addNunjucksAsyncShortcode(
     "image",
-    async (src, alt, widths = [512, 1024, null], formats = ["png", "webp", "jpeg", "jpg"], className = "") => {
+    async (src, alt, widths = [512, 1024, null], className = "") => {
       if (!alt && !/\.(mp4)$/i.test(src)) {
         throw new Error(`Missing \`alt\` attribute for image: ${src}`);
       }
@@ -84,7 +84,7 @@ export default function (eleventyConfig) {
 
       let metadata = await eleventyImg(src, {
         widths: widths,
-        formats: formats,
+        formats: ["avif", "webp", "png", "jpeg", "jpg"],
         outputDir: "./_site/img",
       });
 
@@ -99,7 +99,6 @@ export default function (eleventyConfig) {
       return eleventyImg.generateHTML(metadata, imageAttributes);
     }
   );
-
 
   eleventyConfig.addFilter("sortByDate", (projects) => {
     return projects
