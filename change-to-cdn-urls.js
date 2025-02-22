@@ -11,15 +11,24 @@ const FILE_EXTENSIONS = ['.html', '.js'];
 
 function replaceUrlsInFile(filePath) {
     let content = fs.readFileSync(filePath, 'utf8');
-    
-    // Replace only image URLs in src attributes pointing to relative paths
-    const regex = /(src)=["'](\.\.\/[^"']+\.(png|jpg|jpeg|gif|svg|webp))["']/g;
-    content = content.replace(regex, (match, attr, url) => {
-        // Normalize URL
-        const newUrl = `${CDN_BASE}${url.replace(/^\.\.\//, '/')}`;
-        return `${attr}="${newUrl}"`;
+
+    // Replace all image URLs in src attributes (relative and absolute paths)
+    const srcRegex = /(src)=\"(["']?)(\/[^"'>]+\.(png|jpg|jpeg|gif|svg|webp|avif))\2/g;
+    content = content.replace(srcRegex, (match, attr, quote, url) => {
+        const newUrl = `${CDN_BASE}${url}`;
+        return `${attr}=${quote}${newUrl}${quote}`;
     });
-    
+
+    // Replace all image URLs in srcset attributes (relative and absolute paths)
+    const srcsetRegex = /(srcset)=\"([^"']+)\"/g;
+    content = content.replace(srcsetRegex, (match, attr, urls) => {
+        const newUrls = urls
+            .split(',')
+            .map(url => url.trim().replace(/^(\/[^"'>]+)/, `${CDN_BASE}$1`))
+            .join(', ');
+        return `${attr}="${newUrls}"`;
+    });
+
     fs.writeFileSync(filePath, content, 'utf8');
     console.log(`Updated: ${filePath}`);
 }
