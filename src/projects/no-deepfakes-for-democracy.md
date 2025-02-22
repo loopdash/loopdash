@@ -47,9 +47,11 @@ project:
                   alt: ""
                 - src: "./src/img/projects/no-deepfakes-for-democracy-7.png"
                   alt: ""
-        # - type: image
-        #   images:
-        #     - src: "../../video/no-deepfakes-for-democracy.mp4"
+        - type: image
+        - type: fullwidth
+          images: 
+            - src: "./src/img/projects/no-deep-fakes-for-democracy-13.png"
+              alt: "social-media-posts-of-encode-justice-campaign"
     - heading: Website
       paragraph: This isn’t just a website — it’s a call to action. No Deepfakes for Democracy is built to inform, mobilize, and demand accountability from Big Tech. Precision in design meets urgency in mission, with bold typography, seamless navigation, and a visual language that makes the stakes unmistakable.
       content:

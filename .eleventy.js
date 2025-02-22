@@ -241,6 +241,7 @@ function renderForm(res, errorMessage) {
   eleventyConfig.addPassthroughCopy("src/img/icons/");
   eleventyConfig.addPassthroughCopy({ "src/javascript": "javascript" });
   eleventyConfig.addPassthroughCopy("src/img/favicons/");
+  eleventyConfig.addPassthroughCopy("src/img/passthrough/");
   eleventyConfig.addPassthroughCopy("src/video/");
 
   return {
