@@ -62,7 +62,7 @@ const syncAssets = async () => {
     console.log("🚀 Uploading assets to Cloudflare R2...");
 
     await uploadDirectory(path.join(process.cwd(), '_site', 'img'), 'img');
-    await uploadDirectory(path.join(process.cwd(), '_site', 'video'), 'video');
+    // await uploadDirectory(path.join(process.cwd(), '_site', 'video'), 'video');
 
     console.log("🎉 All assets uploaded successfully!");
 };
