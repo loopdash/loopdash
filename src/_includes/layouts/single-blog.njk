@@ -5,12 +5,12 @@
     {% include 'nav.njk' %}
     <main class="single-blog-layout">
       <div class="image-wrapper mx-auto">
-        {% image meta.image, "Image description", [300, 1920], ["jpeg", "webp"], "image" %}
+        {% image meta.image, "Image description", [300, 960], "image" %}
       </div>
 
       <section class="container-sm mx-auto content">
         <div class="mt-12 mb-12">
-          <h1 class="text-8 text-weight-550 text-gradient">{{ title }}</h1>
+          <h1 class="text-8 mb-0 text-weight-550 text-gradient">{{ title }}</h1>
           <p class="text-5 text-charcoal-light text-weight-400">{{ description }}</p>
           <div class="mb-12 mx-auto col-7 text-4 text-charcoal-light">
             {{ content | safe }}
