@@ -2478,23 +2478,22 @@ a.card-default:hover,
   background-color: #009F65;
 }
 
-/* single-blog */
-.blog-layout .navbar {
-    margin: -94px auto 0;
-  }
 
 .single-blog-layout .image-wrapper, .support-layout .image-wrapper {
     max-width: 1024px;
   }
 
+
 .single-blog-layout .image-wrapper img, .support-layout .image-wrapper img {
       border-radius: 0;
     }
+
 
 .single-blog-layout .image, .support-layout .image {
     width: 100%;
     height: auto;
   }
+
 
 .single-blog-layout .content, .support-layout .content {
     margin-top: 0rem;
