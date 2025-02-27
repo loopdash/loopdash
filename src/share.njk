@@ -8,111 +8,104 @@ sitemap:
   priority: 0.1
 ---
 
-<div class="support-content">
+<div>
   <section class="mx-auto">
-  <div class="text-set mb-0">
-    <h1 class="text-11 text-weight-600 text-gradient">Share</h1>
-    <p class="text-5 text-charcoal-light text-weight-400">Share your passwords, securely. .</p>
-  </div>
+    <div class="text-set mb-0">
+      <h1 class="text-11 text-weight-600 text-gradient">Share</h1>
+      <p class="text-5 text-charcoal-light text-weight-400">Share your passwords securely.</p>
+    </div>
 
-  <div class="container-xs mx-auto mb-10">
-    <form id="contactForm" class="form" action="https://formspree.io/f/xvggvkez" method="POST">
-      <div class="form-group">
-        <label class="form-label" for="name">Name</label>
-        <input
-          class="form-input"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your name"
-          required=""
-        />
-        <p class="error" id="nameError" aria-live="polite" style="display: none;">Name is required.</p>
-      </div>
-      <div class="form-group plausible-event-name=Support+Form+Button+Click">
-        <label class="form-label" for="email">Email Address</label>
-        <input
-          class="form-input"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email address"
-          required=""
-        />
-        <p class="error" id="emailError" aria-live="polite" style="display: none;">Valid email is required.</p>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="domain">Domain Name</label>
-        <input
-          class="form-input"
-          type="text"
-          id="domain"
-          name="domain"
-          placeholder="https://example.com"
-        />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="domain_registrar">Domain Registrar</label>
-        <input
-          class="form-input"
-          type="text"
-          id="domain_registrar"
-          name="domain_registrar"
-          placeholder="GoDaddy, Namecheap, BlueHost, etc."
-        />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="domain_registrar_username">Domain Registrar Password </label>
-        <input
-          class="form-input"
-          type="text"
-          id="domain_registrar_username"
-          name="domain_registrar_username"
-          placeholder=""
-        />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="domain_registrar_password">Domain Registrar Password</label>
-        <input
-          class="form-input"
-          type="text"
-          id="domain_registrar_password"
-          name="domain_registrar_password"
-          placeholder=""
-        />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="cms_username">CMS Username</label>
-        <input
-          class="form-input"
-          type="text"
-          id="cms_username"
-          name="cms_username"
-          placeholder=""
-        />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="cms_password">CMS Username</label>
-        <input
-          class="form-input"
-          type="text"
-          id="cms_password"
-          name="cms_password"
-          placeholder=""
-        />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="message">Details</label>
-        <textarea
-          id="details"
-          name="details"
-          class="form-input"
-          placeholder="A detailed description of your issue or project."
-          required
-        ></textarea>
-        <p class="error" id="detailsError" aria-live="polite" style="display: none;">Details are required.</p>
-      </div>
-      <button type="submit" class="button button-primary">Send</button>
-    </form>
-</section>
+    <div class="container-xs mx-auto mb-10">
+      <form id="contactForm" class="form" action="https://formspree.io/f/xvggvkez" method="POST">
+        
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Your Email</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="domain">Domain Name</label>
+          <input class="form-input" type="url" id="domain" name="domain" placeholder="https://example.com" required>
+        </div>
+
+        <div class="hr my-5"></div>
+
+        <p class="text-charcoal text-5 text-weight-550">Domain Registrar</p>
+        
+        <div class="form-group">
+          <label class="form-label" for="domain_registrar">Select Registrar</label>
+          <select class="form-input" id="domain_registrar" name="domain_registrar">
+            <option value="">Select your registrar</option>
+            <option value="GoDaddy">GoDaddy</option>
+            <option value="Namecheap">Namecheap</option>
+            <option value="Bluehost">Bluehost</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="domain_registrar_username">Registrar Username</label>
+          <input class="form-input" type="text" id="domain_registrar_username" name="domain_registrar_username" placeholder="Your login email">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="domain_registrar_password">Registrar Password</label>
+          <input class="form-input" type="password" id="domain_registrar_password" name="domain_registrar_password" placeholder="Your password">
+        </div>
+
+        <div class="hr my-5"></div>
+
+        <p class="text-charcoal text-5 text-weight-550">Website Hosting Provider</p>
+
+        <div class="form-group">
+          <label class="form-label" for="hosting_provider">Select Hosting Provider</label>
+          <select class="form-input" id="hosting_provider" name="hosting_provider">
+            <option value="">Select your host</option>
+            <option value="WP Engine">WP Engine</option>
+            <option value="Bluehost">Bluehost</option>
+            <option value="SiteGround">SiteGround</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="hosting_provider_username">Hosting Username</label>
+          <input class="form-input" type="text" id="hosting_provider_username" name="hosting_provider_username" placeholder="Your login email">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="hosting_provider_password">Hosting Password</label>
+          <input class="form-input" type="password" id="hosting_provider_password" name="hosting_provider_password" placeholder="Your password">
+        </div>
+
+        <div class="hr my-5"></div>
+
+        <p class="text-charcoal text-5 text-weight-550">CMS (WordPress, Shopify, etc.)</p>
+
+        <div class="form-group">
+          <label class="form-label" for="cms_username">CMS Username</label>
+          <input class="form-input" type="text" id="cms_username" name="cms_username" placeholder="admin@example.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cms_password">CMS Password</label>
+          <input class="form-input" type="password" id="cms_password" name="cms_password" placeholder="Your CMS password">
+        </div>
+
+        <div class="hr my-5"></div>
+
+        <div class="form-group">
+          <label class="form-label" for="details">Additional Details</label>
+          <textarea id="details" name="details" class="form-input" placeholder="Any additional info (optional)"></textarea>
+        </div>
+
+        <button type="submit" class="button button-primary">Send</button>
+      </form>
+    </div>
+  </section>
 </div>
