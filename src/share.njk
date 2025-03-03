@@ -16,12 +16,12 @@ sitemap:
     </div>
 
     <div class="container-xs mx-auto mb-10">
-      <form id="shareForm" class="form" action="https://formspree.io/f/xvggvkez" method="POST">
-        
-        <div class="form-group">
-          <label class="form-label" for="name">Your Name</label>
-          <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required>
-        </div>
+      <form id="shareForm" class="form" action="https://api.loopda.sh/api/webhook/" method="POST">
+         <input
+          type="hidden"
+          name="_redirect"
+          value="https://loopdash.com/thank-you"
+        />
 
         <div class="form-group">
           <label class="form-label" for="email">Your Email</label>
@@ -36,7 +36,7 @@ sitemap:
           <label class="form-label" for="account_type">Account Type</label>
           <select class="form-input" id="account_type" name="account_type">
             <option value="">Select account type</option>
-            <option value="Website or CMS">Website or CMS</option>
+            <option value="WordPress">WordPress</option>
             <option value="Hosting">Hosting</option>
             <option value="Registrar">Domain Registrar</option>
             <option value="Other">Other</option>
@@ -49,8 +49,8 @@ sitemap:
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="password">Password</label>
-          <input class="form-input" type="password" id="password" name="password" placeholder="Enter your password" required>
+          <label class="form-label" for="pa">Password</label>
+          <input class="form-input" type="pa" id="pa" name="pa" placeholder="Enter your password" required>
         </div>
 
         <div class="hr my-5"></div>
