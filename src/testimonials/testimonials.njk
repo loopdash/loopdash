@@ -12,9 +12,9 @@ sitemap:
   priority: 0.7
 ---
 
-<section class="container-lg mx-auto">
+<section class="container-md mx-auto">
   <div class="flex mb-16">
-    <div class="col-7">
+    <div class="col-9">
       <h1 class="text-10 text-weight-400 mb-12 mt-48 text-gradient">Testimonials</h1>
       <p class="text-9">Insights from the people who trust us to bring their ideas to life.</p>
     </div>
@@ -22,10 +22,10 @@ sitemap:
 
   <div class="flex gap-1">
     {% for testimonial in testimonials | reverse %}
-      <div class="col-6">
+      <div class="col-12">
         <div class="card card-default py-4 px-6">
-          <div class="mw-xs py-8 px-2">
-            <p class="quote text-4 text-charcoal text-weight-400 mb-5">{{ testimonial.data.description }}</p>
+          <div class="py-8 px-2">
+            <p class="quote text-4 text-charcoal text-weight-400 mb-5">{{ testimonial.data.description | safe }}</p>
             <p class="text-3 text-charcoal-light mb-0">{{ testimonial.data.name }}, {{ testimonial.data.role }}</p>
             <p class="text-3 text-charcoal-light mb-0">{{ testimonial.data.company }}</p>
           </div>
