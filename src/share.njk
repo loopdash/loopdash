@@ -16,7 +16,8 @@ sitemap:
     </div>
 
     <div class="container-xs mx-auto mb-10">
-      <form id="shareForm" class="form" action="https://api.loopda.sh/create-password/" method="POST" enctype="multipart/form-data">
+      <form id="shareForm" class="form" action="https://api.loopda.sh/create-password/" method="POST" enctype="multipart/form-data"
+>
          <input
           type="hidden"
           name="_redirect"
@@ -26,6 +27,11 @@ sitemap:
         <div class="form-group">
           <label class="form-label" for="email">Your Email</label>
           <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="website">Your website</label>
+          <input class="form-input" type="text" id="website" name="website" placeholder="example.com">
         </div>
 
         <div class="hr my-5"></div>
@@ -50,7 +56,7 @@ sitemap:
 
         <div class="form-group">
           <label class="form-label" for="pa">Password</label>
-          <input class="form-input" type="pa" id="pa" name="pa" placeholder="Enter your password" required>
+          <input class="form-input" type="password" id="pa" name="pa" placeholder="Enter your password" required>
         </div>
 
         <div class="hr my-5"></div>
