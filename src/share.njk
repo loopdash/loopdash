@@ -18,12 +18,6 @@ sitemap:
     <div class="container-xs mx-auto mb-10">
       <form id="shareForm" class="form" action="http://localhost:3000/create-password/" method="POST" enctype="multipart/form-data"
 >
-         <input
-          type="hidden"
-          name="_redirect"
-          value="https://loopdash.com/thank-you"
-        />
-
         <div class="form-group">
           <label class="form-label" for="email">Your Email</label>
           <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
@@ -45,6 +39,7 @@ sitemap:
             <option value="WordPress">WordPress</option>
             <option value="Hosting">Hosting</option>
             <option value="Registrar">Domain Registrar</option>
+            <option value="API">API</option>
             <option value="Other">Other</option>
           </select>
         </div>
