@@ -16,7 +16,7 @@ sitemap:
     </div>
 
     <div class="container-xs mx-auto mb-10">
-      <form id="shareForm" class="form" action="https://api.loopda.sh/create-password/" method="POST" enctype="multipart/form-data"
+      <form id="shareForm" class="form" action="http://localhost:3000/create-password/" method="POST" enctype="multipart/form-data"
 >
          <input
           type="hidden"
@@ -28,15 +28,15 @@ sitemap:
           <label class="form-label" for="email">Your Email</label>
           <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
         </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="website">Your website</label>
-          <input class="form-input" type="text" id="website" name="website" placeholder="example.com">
-        </div>
 
         <div class="hr my-5"></div>
 
         <p class="text-charcoal text-5 text-weight-550">Account Details</p>
+
+        <div class="form-group">
+          <label class="form-label" for="website">Website</label>
+          <input class="form-input" type="text" id="website" name="website" placeholder="example.com">
+        </div>
 
         <div class="form-group">
           <label class="form-label" for="account_type">Account Type</label>
@@ -62,8 +62,8 @@ sitemap:
         <div class="hr my-5"></div>
 
         <div class="form-group">
-          <label class="form-label" for="details">Additional Details</label>
-          <textarea id="details" name="details" class="form-input" placeholder="Any additional info (optional)"></textarea>
+          <label class="form-label" for="notes">Notes</label>
+          <textarea id="notes" name="notes" class="form-input" placeholder="Any additional info (optional)"></textarea>
         </div>
 
         <button type="submit" class="button button-primary">Send</button>
@@ -71,3 +71,29 @@ sitemap:
     </div>
   </section>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const success = urlParams.get("success");
+    const formContainer = document.querySelector(".container-xs");
+
+    if (success === "1") {
+      // Success message
+      const successMessage = document.createElement("p");
+      successMessage.className = "success text-green";
+      successMessage.setAttribute("aria-live", "polite");
+      successMessage.textContent = "Your credentials have been securely shared.";
+      
+      formContainer.insertAdjacentElement("afterbegin", successMessage);
+    } else if (success === "0") {
+      // Error message
+      const errorMessage = document.createElement("p");
+      errorMessage.className = "error text-red";
+      errorMessage.setAttribute("aria-live", "assertive");
+      errorMessage.textContent = "There was an error submitting your credentials. Please try again.";
+      
+      formContainer.insertAdjacentElement("afterbegin", errorMessage);
+    }
+  });
+</script>

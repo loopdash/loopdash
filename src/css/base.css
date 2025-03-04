@@ -14,7 +14,7 @@
   --color-green-waterloo: #13110c; /* https://colorbase.app/colors/13110c */
   --color-focus: #1f69ff;
   --color-error: #f4502f;
-  --color-success: #8bc34a;
+  --color-success: #6ea132;
   --container: 1260px;
   --mobile: 768px;
   --trs-prop: all;
@@ -2323,16 +2323,26 @@ form button {
     font-size: clamp(0.875rem, 1.2vw, 1rem);
     margin-bottom: calc(var(--spacing) * 1.25)
   }
+}
 
-  .error {
-    font-size: clamp(0.625rem, 0.8vw, 0.75rem);
-    color: var(--color-error);
-    padding: .5rem 1rem;
-    border: 2px solid transparent;
-    border-radius: .875rem;
-    margin: 0 0 calc(var(--spacing) * 1.5) 0;
-    background-color: rgba(228, 48, 12, .06);
-  }
+.error {
+  font-size: clamp(0.625rem, 0.8vw, 0.75rem);
+  color: var(--color-error);
+  padding: .5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: .875rem;
+  margin: 0 0 calc(var(--spacing) * 1.5) 0;
+  background-color: rgba(228, 48, 12, .06);
+}
+
+.success {
+  font-size: clamp(0.625rem, 0.8vw, 0.75rem);
+  color: var(--color-success);
+  padding: .5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: .875rem;
+  margin: 0 0 calc(var(--spacing)* 1.5) 0;
+  background-color: hsl(87.57deg 52.61% 41.37% / 22%);
 }
 
 /* Card */
