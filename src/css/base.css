@@ -2387,6 +2387,7 @@ form button {
     font-size: 1rem;
     font-weight: 600;
     flex: 1;
+    text-align: left;
   }
 
 .error {
