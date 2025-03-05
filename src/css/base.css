@@ -2325,6 +2325,70 @@ form button {
   }
 }
 
+  .form-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .form-selector-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: (var(--spacing) * 3);
+  }
+
+  .form-selector {
+    flex: 1 1 calc(33.333% - 12px); /* 3 cards per row */
+    min-width: 180px;
+    border-radius: 12px;
+    border: .125rem solid rgba(18, 18, 18, .06);
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .form-selector:hover,
+  .form-selector-input:checked + .form-selector-label {
+    border-color: var(--color-charcoal-light);
+    background-color: #13110c21;
+    box-shadow: 0 0 0 4px rgba(38, 34, 24, 0.1);
+  }
+
+  .form-selector-input {
+    display: none;
+  }
+
+  .form-selector-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .form-selector-left-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-selector-left-col svg {
+    width: 20px;
+  }
+
+  .form-selector-title {
+    font-size: 1rem;
+    font-weight: 600;
+    flex: 1;
+  }
+
 .error {
   font-size: clamp(0.625rem, 0.8vw, 0.75rem);
   color: var(--color-error);

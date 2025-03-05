@@ -32,16 +32,73 @@ sitemap:
           <input class="form-input" type="text" id="website" name="website" placeholder="example.com">
         </div>
 
-        <div class="form-group">
-          <label class="form-label" for="account_type">Account Type</label>
-          <select class="form-input" id="account_type" name="account_type">
-            <option value="">Select account type</option>
-            <option value="WordPress">WordPress</option>
-            <option value="Hosting">Hosting</option>
-            <option value="Registrar">Domain Registrar</option>
-            <option value="API">API</option>
-            <option value="Other">Other</option>
-          </select>
+        <div class="mb-6">
+          <div class="form-group">
+            <label class="form-label">Account Type</label>
+            <div class="form-selector-group">
+
+              <input class="form-selector-input" type="radio" id="account_cms" name="account_type" value="CMS" checked>
+              <label for="account_cms" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/browser.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">CMS/WordPress</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_hosting" name="account_type" value="Hosting">
+              <label for="account_hosting" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/server.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">Hosting</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_registrar" name="account_type" value="Registrar">
+              <label for="account_registrar" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/globe.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">Domain Registrar</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_api" name="account_type" value="API">
+              <label for="account_api" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/terminal.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">API</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_database" name="account_type" value="Database">
+              <label for="account_database" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/database.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">Database</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_other" name="account_type" value="Other">
+              <label for="account_other" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/question.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">Other</span>
+              </label>
+
+            </div>
+          </div>
         </div>
 
         <div class="form-group">
