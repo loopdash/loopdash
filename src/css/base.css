@@ -2384,7 +2384,8 @@ form button {
   }
 
   .form-selector-title {
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
+    color: var(--color-charcoal);
     font-weight: 600;
     flex: 1;
     text-align: left;

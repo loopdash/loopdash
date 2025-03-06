@@ -19,7 +19,7 @@ sitemap:
       <form id="shareForm" class="form" action="https://api.loopda.sh/create-password/" method="POST" enctype="multipart/form-data"
 >
         <div class="form-group">
-          <label class="form-label" for="email">Your Email</label>
+          <label class="form-label" for="email">Your Email<sup>*</sup></label>
           <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required>
         </div>
 
@@ -28,23 +28,33 @@ sitemap:
         <p class="text-charcoal text-5 text-weight-550">Account Details</p>
 
         <div class="form-group">
-          <label class="form-label" for="website">Website</label>
+          <label class="form-label" for="website">Website<sup>*</sup></label>
           <input class="form-input" type="text" id="website" name="website" placeholder="example.com">
         </div>
 
         <div class="mb-6">
           <div class="form-group">
-            <label class="form-label">Account Type</label>
+            <label class="form-label">Account Type<sup>*</sup></label>
             <div class="form-selector-group">
 
-              <input class="form-selector-input" type="radio" id="account_cms" name="account_type" value="CMS" checked>
+              <input class="form-selector-input" type="radio" id="account_cms" name="account_type" value="wordpress" checked>
               <label for="account_cms" class="form-selector form-selector-label">
                 <span class="form-selector-left-col">
                   <div class="icon-wrapper">
-                    {% svgIcon "./src/img/icons/browser.svg" %}
+                    {% svgIcon "./src/img/icons/wordpress.svg" %}
                   </div>
                 </span>
-                <span class="form-selector-title">CMS/WordPress</span>
+                <span class="form-selector-title">WordPress</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_webflow" name="account_type" value="webflow">
+              <label for="account_webflow" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/webflow.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">WebFlow</span>
               </label>
 
               <input class="form-selector-input" type="radio" id="account_hosting" name="account_type" value="Hosting">
@@ -55,6 +65,16 @@ sitemap:
                   </div>
                 </span>
                 <span class="form-selector-title">Hosting</span>
+              </label>
+
+              <input class="form-selector-input" type="radio" id="account_shopify" name="account_type" value="Shopify">
+              <label for="account_shopify" class="form-selector form-selector-label">
+                <span class="form-selector-left-col">
+                  <div class="icon-wrapper">
+                    {% svgIcon "./src/img/icons/shopify.svg" %}
+                  </div>
+                </span>
+                <span class="form-selector-title">Shopify</span>
               </label>
 
               <input class="form-selector-input" type="radio" id="account_registrar" name="account_type" value="Registrar">
@@ -102,12 +122,12 @@ sitemap:
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="username">Username or Email</label>
+          <label class="form-label" for="username">Account Email or Username<sup>*</sup></label>
           <input class="form-input" type="text" id="username" name="username" placeholder="Enter your username or email" required>
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="pa">Password</label>
+          <label class="form-label" for="pa">Account Password<sup>*</sup></label>
           <input class="form-input" type="password" id="pa" name="pa" placeholder="Enter your password" required>
         </div>
 
