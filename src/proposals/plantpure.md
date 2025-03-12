@@ -43,7 +43,7 @@ proposal:
     duration: 1 week
     complete: false
   links: 
-  - url: https://app.documenso.com/sign/sUnBExrg_O6_I3m5wa6xJ
+  - url: https://app.documenso.com/sign/HrNkz8xplVx77jDAiymxl
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
