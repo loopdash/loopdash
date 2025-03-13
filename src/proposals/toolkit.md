@@ -35,7 +35,7 @@ proposal:
     description: Launch the updated toolkit and provide training/documentation.
     duration: 1 week
   links:
-  - url: https://app.documenso.com/sign/41AcFoaRtuUXTZleJvbcb
+  - url: https://app.documenso.com/sign/3Z8ReI5NJf9PkYQCUmlPL
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
