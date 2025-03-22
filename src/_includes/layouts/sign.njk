@@ -1,0 +1,31 @@
+---
+meta:
+  title: "Sign your Proposal"
+  description: "Sign your proposal"
+sitemap:
+  changefreq: weekly
+  priority: 0.1
+pagination:
+  data: collections.proposals
+  size: 1
+  alias: proposal
+permalink: "/proposals/{{ proposal.page.fileSlug }}/sign/"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body>
+    <main class="">
+      <!-- Embed root with token -->
+        <div id="embed-root" class="" 
+          data-token="{{ proposal.data.proposal.documenso.token }}"
+          data-name="{{ proposal.data.proposal.documenso.name }}"
+          data-email="{{ proposal.data.proposal.documenso.email }}"
+          >
+        </div>
+        <!-- Load the bundled JavaScript -->
+        <script type="module" src="/dist/bundle.js"></script>
+    </main>
+  </body>
+</html>

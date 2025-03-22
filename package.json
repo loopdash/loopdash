@@ -5,10 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npm run watch:css & npm run start:eleventy",
+    "start": "npm run build:vite && concurrently \"npm:watch:css\" \"npm:start:eleventy\"",
+    "build:vite": "npx vite build",
     "start:eleventy": "npx @11ty/eleventy --serve",
     "watch:css": "postcss src/css/base.css --dir _site/css --watch",
-    "build": "npm i && npm run build:css && npx @11ty/eleventy",
+    "build": "npm i && npm run build:css && npm run build:vite && npx @11ty/eleventy",
     "build:css": "postcss src/css/*.css --dir _site/css",
     "upload": "node upload-to-r2.js"
   },
@@ -26,20 +27,28 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@aws-sdk/client-s3": "^3.749.0",
+    "@documenso/embed-preact": "^0.2.1-rc.0",
     "autoprefixer": "^10.3.1",
+    "concurrently": "^9.1.2",
     "cssnano": "^5.0.6",
     "dotenv": "^16.0.3",
+    "esbuild": "^0.25.1",
+    "esbuild-plugin-alias": "^0.2.1",
     "fs": "^0.0.1-security",
     "glob": "^11.0.1",
     "html-minifier": "^4.0.0",
     "path": "^0.12.7",
     "postcss": "^8.4.49",
-    "postcss-nested": "^7.0.2"
+    "postcss-nested": "^7.0.2",
+    "preact-render-to-string": "^6.5.13"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^5.0.0",
+    "@preact/preset-vite": "^2.10.1",
     "@quasibit/eleventy-plugin-sitemap": "^2.1.4",
     "postcss-cli": "^11.0.0",
-    "terser": "^5.39.0"
+    "preact": "^10.26.4",
+    "terser": "^5.39.0",
+    "vite": "^6.2.2"
   }
 }

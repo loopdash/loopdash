@@ -6,6 +6,10 @@ meta:
 sitemap:
   changefreq: monthly
 proposal:
+  documenso:
+    token: 9norstyHMHJi3w47L_bwb
+    name: Test
+    email: Test@Test.com
   name: 
   client: [CLIENT]
   description: [SHORT DESCRIPTION MAX 164 CHARACTERS]

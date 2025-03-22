@@ -235,6 +235,12 @@ function renderForm(res, errorMessage) {
     return content;
   });
 
+
+  eleventyConfig.addCollection("proposals", function(collectionApi) {
+    let proposals = collectionApi.getFilteredByTag("proposals");
+    return proposals;
+  });
+
   // Passthrough copy
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy("src/img/icons/");
