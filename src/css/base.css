@@ -872,7 +872,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 2);
   max-width: var(--container);
   margin: 0 auto;
   z-index: 10000;
