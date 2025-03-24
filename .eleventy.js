@@ -241,6 +241,10 @@ function renderForm(res, errorMessage) {
     return proposals;
   });
 
+  eleventyConfig.addFilter("isPastDate", function(date) {
+    return new Date(date) <= new Date();
+  });
+
   // Passthrough copy
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy("src/img/icons/");

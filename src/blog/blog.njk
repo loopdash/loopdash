@@ -12,49 +12,54 @@ sitemap:
   priority: 0.7
 ---
 
-<section class="container-lg flex mx-auto">
-  <div class="col-5 mt-48">
-    <h1 class="text-12 text-weight-400 mb-12 mt-24 text-gradient">Blog</h1>
-    <p class="text-7 text-charcoal-light text-weight-400">Where ideas take shape.</p>
+<section class="container-lg mx-auto mt-24">
+  <div class="flex mb-16">
+    <div class="col-7">
+      <h1 class="text-12 text-weight-400 mb-12 mt-24 text-gradient">Blog</h1>
+      <p class="text-7 text-charcoal-light text-weight-400">Where ideas take shape.</p>
+    </div>
   </div>
 
-  <div class="mb-12 mx-auto mt-48 flex col-7">
+  <div class="mb-16 hr"></div>
+  <div class="flex">
     {% for blog in blogs | reverse %}
+      {% if blog.date | isPastDate %}
 
-      {# set filteredTags #}
-      {% set filteredTags = [] %}
-      {% for tag in blog.data.tags %}
-        {% if tag != "blogs" %}
-          {% set filteredTags = filteredTags.concat(tag) %}
+        {# set filteredTags #}
+        {% set filteredTags = [] %}
+        {% for tag in blog.data.tags %}
+          {% if tag != "blogs" %}
+            {% set filteredTags = filteredTags.concat(tag) %}
+          {% endif %}
+        {% endfor %}
+
+        {# set image #}
+        {% if blog.data.meta.image %}
+          {% set img = blog.data.meta.image %}
+        {% else %}
+          {% set img = "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
         {% endif %}
-      {% endfor %}
 
-      {# set image #}
-      {% if blog.data.meta.image %}
-        {% set img = blog.data.meta.image %}
-      {% else %}
-        {% set img = "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_40:" + (blog.data.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/computer.png" %}
+        <div class="col-6 reveal">
+          <a href="{{ blog.data.url }}" class="rounded-7">
+            <article class="mb-8">
+              <div class="mb-4">
+                {% image img, blog.data.meta.alt, [480, 768, 1280], "reveal" %}
+              </div>
+              <div class="flex flex-no-wrap mt-3">
+                <div class="col-10">
+                  <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
+                </div>
+              </div>
+              <div class="text-3 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
+                {{ blog.data.meta.description | safe }}
+              </div>
+            </article>
+          </a>
+        </div>
+
+
       {% endif %}
-
-      <a href="{{ blog.data.url }}" class="rounded-7">
-        <article class="mb-8">
-          <div class="mb-4">
-            {% image img, blog.data.meta.alt, [480, 768, 1280], "reveal" %}
-          </div>
-          <div class="flex flex-no-wrap mt-3">
-            <div class="col-10">
-              <h3 class="text-5 mb-2 text-weight-600">{{ blog.data.title }}</h3>
-            </div>
-            {# <div class="col-2 align-self-center">
-              <span class="tag">{{ filteredTags }}</span>
-            </div> #}
-          </div>
-          
-          <div class="text-3 text-charcoal-light text-weight-400" id="content-{{ loop.index }}">
-            {{ blog.data.meta.description | safe }}
-          </div>
-        </article>
-      </a>
     {% endfor %}
   </div>
 </section>
