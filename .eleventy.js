@@ -29,7 +29,6 @@ export default function (eleventyConfig) {
   // Add version to global data
   eleventyConfig.addGlobalData("siteVersion", getVersion());
 
-
   // Minify JavaScript files **before** Eleventy builds
   eleventyConfig.on("beforeBuild", async () => {
     console.log("🔧 Minifying JavaScript files...");
