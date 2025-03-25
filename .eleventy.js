@@ -9,6 +9,7 @@ import { minify as terserMinify } from "terser";
 import fs from "fs";
 import path from "path";
 import { glob } from "glob";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 nunjucks.configure('views', {
   autoescape: true,
@@ -242,6 +243,31 @@ function renderForm(res, errorMessage) {
 
   eleventyConfig.addFilter("isPastDate", function(date) {
     return new Date(date) <= new Date();
+  });
+
+  eleventyConfig.addCollection("blogs", function (collectionApi) {
+    return collectionApi.getFilteredByTag("blogs").filter(item =>
+      new Date(item.data.date) <= new Date()
+    );
+  });
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom", // or "rss", "json"
+    outputPath: "/rss.xml",
+    collection: {
+      name: "blogs", // iterate over `collections.posts`
+      limit: 3,     // 0 means no limit
+    },
+    metadata: {
+      language: "en",
+      title: "Blog Title",
+      subtitle: "This is a longer description about your blog.",
+      base: "https://loopdash.com/",
+      author: {
+        name: "Gary Bunofsky",
+        email: "gary@loopdash.com",
+      }
+    }
   });
 
   // Passthrough copy
