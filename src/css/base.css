@@ -1394,10 +1394,7 @@ blockquote p {
 
   &:hover {
     border: 1px solid #535252;
-    box-shadow: 
-      0 5px 10px rgba(0, 0, 0, 0.01),
-      inset 0 2px 7px rgba(0, 0, 0, 0.01),
-      inset 0 4px 7px rgba(255, 255, 255, 0.0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.01), inset 0 2px 7px rgba(0, 0, 0, 0.01), inset 0 4px 7px rgba(255, 255, 255, 0.0);
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
   }
 
