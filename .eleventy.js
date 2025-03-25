@@ -252,7 +252,7 @@ function renderForm(res, errorMessage) {
   });
 
   eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
+    type: "rss", // or "rss", "json"
     outputPath: "/rss.xml",
     collection: {
       name: "blogs", // iterate over `collections.posts`
