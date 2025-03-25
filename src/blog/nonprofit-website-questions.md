@@ -5,7 +5,7 @@ meta:
    title: What Nonprofits & Businesses Should Ask Before Hiring a Web Agency  
    description: A simple checklist of key questions nonprofits and businesses should ask before hiring a web agency, covering timelines, budgets, platform choice, and post-launch support.  
    image: ./src/img/blogs/abstract-blur-grass.png
-   alt: A clean wooden desk with a checklist, pen, and coffee cup arranged neatly beside a laptop.
+   alt: An abstract, artistic blur of green grass in soft natural light, creating a calm and organic backdrop
 sitemap:
   changefreq: weekly  
   priority: 0.5  
