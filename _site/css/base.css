@@ -2493,6 +2493,7 @@ a.card-default:hover,
 
 .card-question {
   background: none;
+  border: 1px solid rgba(18, 18, 18, .06);
   box-shadow: none;
   cursor: pointer;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
