@@ -21,6 +21,12 @@
   --trs-time: 0.333s;
   --trs-tfunc: ease-in-out;
   --spacing: 0.25rem;
+
+  --antaeus-lighter-gray: #fdfdff;
+  --antaeus-darkish-green: #0C0F00;
+  --antaeus-light-purple: #DED2E1;
+  --antaeus-dark-yellow: #DF8E2F;
+  --antaeus-muted-cyan: #C1D6E0;
 }
 
 body {
@@ -1553,6 +1559,13 @@ blockquote p {
   background-size: cover;
 }
 
+.project-antaeus {
+  background-image: 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
+    url('https://cdn.loopdash.com/img/preview-antaeus.png');
+  background-size: cover;
+}
+
 .project-no-deepfakes-for-democracy {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
@@ -1900,6 +1913,10 @@ blockquote p {
     background-color: #0097FC;
   }
 
+.single-project-layout .introduction-accountable-tech p {
+      color: #ffffff;
+    }
+
 .single-project-layout .introduction-accountable-tech .details {
       color: #00558e;
     }
@@ -1957,6 +1974,10 @@ blockquote p {
     background-color: #000000;
   }
 
+.single-project-layout .introduction-forward-majority p {
+      color: #ffffff;
+    }
+
 .single-project-layout .introduction-forward-majority .details {
       color: #b7b5b5;
     }
@@ -1985,6 +2006,10 @@ blockquote p {
 .single-project-layout .introduction-design-it-for-us {
     background-color: #009F65;
   }
+
+.single-project-layout .introduction-design-it-for-us p {
+      color: #ffffff;
+    }
 
 .single-project-layout .introduction-design-it-for-us .details {
       color: #086e46;
@@ -2017,6 +2042,10 @@ blockquote p {
     background-color: #050f15;
   }
 
+.single-project-layout .introduction-no-deepfakes-for-democracy p {
+      color: #ffffff;
+    }
+
 .single-project-layout .introduction-no-deepfakes-for-democracy .details {
       color: #a3abb0;
     }
@@ -2044,12 +2073,44 @@ blockquote p {
               invert(68%) sepia(5%) saturate(250%) hue-rotate(175deg) brightness(94%) contrast(85%);
           }
 
+.single-project-layout .introduction-antaeus {
+    background-color: #ded2e1;
+  }
+
+.single-project-layout .introduction-antaeus p {
+      color: #0d0f00;
+    }
+
+.single-project-layout .introduction-antaeus .details {
+      color: #0d0f00;
+    }
+
+.single-project-layout .introduction-antaeus .details .link-chevron {
+        color: #0d0f00;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      }
+
+.single-project-layout .introduction-antaeus .details .link-chevron:after {
+          filter: brightness(0) saturate(100%) invert(88%) sepia(19%) saturate(527%) hue-rotate(336deg) brightness(94%) contrast(91%);
+        }
+
+.single-project-layout .introduction-antaeus .details .link-chevron:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+
+.single-project-layout .introduction-antaeus .details .link-chevron:hover:after {
+            filter:
+              brightness(0) saturate(100%)
+              invert(82%) sepia(19%) saturate(2334%) hue-rotate(328deg) brightness(96%) contrast(92%);
+          }
+
 .single-project-layout .brand-palette {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    
 
-
-    /* No Deepfakes for Democracy */
+    /* Antaeus */
   }
 
 .single-project-layout .brand-palette .animated {
@@ -2248,6 +2309,8 @@ blockquote p {
         content: "Firefly";
       }
 
+/* No Deepfakes for Democracy */
+
 .single-project-layout .brand-palette .brand-color-no-deepfakes-for-democracy:nth-child(2) {
       background: #EFFF34;
       color: rgba(0, 0, 0, 0.8);
@@ -2280,6 +2343,49 @@ blockquote p {
 
 .single-project-layout .brand-palette .brand-color-no-deepfakes-for-democracy:nth-child(5):after {
         content: "Pure White";
+      }
+
+/* https://colorbase.app/colors */
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(1) {
+      background: var(--antaeus-light-purple);
+    }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(1):after {
+        content: "Lavander Mist";
+      }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(2) {
+      background: var(--antaeus-muted-cyan);
+    }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(2):after {
+        content: "Ziggurat";
+      }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(3) {
+      background: var(--antaeus-lighter-gray);
+    }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(3):after {
+        content: "Frost White";
+      }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(4) {
+      background: var(--antaeus-darkish-green);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(4):after {
+        content: "Nordic Sky";
+      }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(5) {
+      background: var(--antaeus-dark-yellow);
+    }
+
+.single-project-layout .brand-palette .brand-color-antaeus:nth-child(5):after {
+        content: "Harvest Gold";
       }
 
 @media only screen and (max-width: 768px) {
