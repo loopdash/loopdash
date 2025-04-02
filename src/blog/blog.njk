@@ -23,7 +23,6 @@ sitemap:
   <div class="mb-16 hr"></div>
   <div class="flex">
     {% for blog in blogs | reverse %}
-      {% if blog.date | isPastDate %}
 
         {# set filteredTags #}
         {% set filteredTags = [] %}
@@ -58,8 +57,6 @@ sitemap:
           </a>
         </div>
 
-
-      {% endif %}
     {% endfor %}
   </div>
 </section>
