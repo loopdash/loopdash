@@ -16,7 +16,7 @@ tags:
   - design  
   - wordpress  
   - branding  
-date: 2025-04-26
+date: 2025-05-26
 url: /blog/nonprofit-typography-guide  
 ---
 
