@@ -3,7 +3,7 @@ layout: single-blog.njk
 title: What Nonprofits & Businesses Should Ask Before Hiring a Web Agency  
 meta:
    title: What Nonprofits & Businesses Should Ask Before Hiring a Web Agency  
-   description: A simple checklist of key questions nonprofits and businesses should ask before hiring a web agency, covering timelines, budgets, platform choice, and post-launch support.  
+   description: A checklist of must-ask questions and essential tips for nonprofits, advocacy groups, and businesses before hiring a web design agency. Learn what to look for in timelines, budgets, CMS platforms, and post-launch support.  
    image: ./src/img/blogs/abstract-blur-grass.png
    alt: An abstract, artistic blur of green grass in soft natural light, creating a calm and organic backdrop
 sitemap:
@@ -13,101 +13,110 @@ tags:
    - blogs  
    - guide  
    - nonprofit  
-   - business
+   - advocacy  
+   - business  
+   - web design
 date: 2025-03-23
 url: /blog/business-nonprofit-website-questions  
 ---
 
-For many organizations—whether you're running a nonprofit or growing a business—your website is one of your most valuable assets. It's often the first impression you make with potential clients, donors, customers, or community members. Choosing the right web partner isn’t just a creative decision—it’s a strategic one that can influence your success for years to come.
+For nonprofits and advocacy organizations, your website isn’t just a digital brochure—it’s your most powerful storytelling tool. It helps secure funding, galvanize supporters, and extend your mission beyond physical boundaries. For businesses, it drives visibility, builds trust, and creates a direct line to customers.
 
-At Loopdash, we’ve worked with organizations of all sizes, from grassroots nonprofits to fast-moving startups and national brands. Over time, we’ve learned what tends to work—and what often gets missed early in the process.
+But whether you're advocating for change or scaling your service, the stakes are the same: choosing the **right web agency** can determine how effectively your message reaches the world.
 
-If you’re preparing a formal RFP or simply starting to explore your options, here are some key questions to ask before hiring a web agency.
+At Loopdash, we’ve partnered with organizations across the spectrum—from grassroots campaigns and community nonprofits to growing companies and national networks. We’ve seen what leads to a smooth, mission-aligned build—and what issues tend to derail progress.
 
----
-
-## 1. What platforms do you build on, and why?
-
-Some agencies specialize in custom development. Others work with open-source or drag-and-drop platforms. It’s important to understand which content management systems (CMS) they recommend—and how that aligns with your internal team's needs.
-
-> At Loopdash, we often recommend WordPress for its flexibility and long-term sustainability—especially for teams that want control over their content and fewer ongoing tech hurdles.
-
-Ask:
-- Is the platform open-source or proprietary?
-- Will we be able to make our own updates easily?
-- Are there any limitations or hidden costs?
+If you're preparing an RFP or simply exploring options, here's how to evaluate a web design agency and make sure they’re the right fit for your nonprofit, advocacy group, or business.
 
 ---
 
-## 2. What is your process—and how long will it take?
+## 1. Platform Choice: Does Their Approach Fit Your Needs?
 
-Every agency works a little differently. Some move quickly and lean, while others favor a more in-depth, research-driven process.
+From WordPress to custom stacks to no-code platforms, every agency has its preferences. Make sure their recommendation aligns with your capacity and goals—not just their in-house tooling.
 
-You’ll want clarity on:
-- How long a typical build like yours takes
-- What milestones or phases are involved
-- What happens if things shift along the way
+Things to explore:
+- Is the CMS open-source or proprietary?
+- Will your team be able to edit pages easily?
+- Are there limits on scalability or integrations?
 
-This helps everyone plan ahead—whether it's internal reviews, copywriting, or approvals.
-
----
-
-## 3. How involved will our team need to be?
-
-Every successful website project is a collaboration—but the level of involvement can vary.
-
-Ask:
-- Will we need to write all the content?
-- How many rounds of revisions are included?
-- Will you guide us on accessibility, branding, or content strategy?
-
-Clear roles help the project move forward smoothly and keep expectations aligned.
+> For most nonprofits and advocacy sites, we recommend WordPress. It’s flexible, easy to manage, and well-supported—ideal for growing organizations that need editorial control without technical overhead.
 
 ---
 
-## 4. What kind of training and documentation do you provide?
+## 2. Timeline & Process: What Should You Expect?
 
-Once your site launches, your team should feel empowered—not dependent.
+Transparency around project timelines is crucial, especially if your launch is tied to a campaign, funding cycle, or legislative calendar.
 
-Ask:
-- Will we receive training, walkthroughs, or documentation?
-- Are tutorials or help videos included?
-- Can we get follow-up help if we need it later?
+Ask agencies to walk you through:
+- Their standard process from kickoff to launch
+- Expected phases and milestones
+- How they handle delays, approvals, or scope changes
 
-Independence is a sign of a well-delivered project.
-
----
-
-## 5. Will we fully own the website and its assets?
-
-Ownership is critical. You should be able to move your site, switch providers, or make changes without being locked into a specific vendor or platform.
-
-Ask:
-- Who owns the design and code?
-- Where will the site be hosted?
-- Can we take it with us if we ever need to?
-
-> At Loopdash, our clients fully own their websites—design, code, and content. We believe your site should always belong to you.
+This insight helps you align internal workflows—like stakeholder reviews or content development—with their production calendar.
 
 ---
 
-## 6. What support is available after launch?
+## 3. Collaboration: How Much Will Your Team Be Responsible For?
 
-Even the most well-built sites need updates over time—whether it's a new feature, a content change, or a quick bug fix.
+Website redesigns often require input from leadership, communications, development, and tech. Clarify how involved your team will be—and whether the agency offers strategic support.
 
-Ask:
-- Do you offer ongoing support plans?
-- Can we get help on an as-needed basis?
-- How quickly do you respond to requests?
+Look for clarity around:
+- Who’s responsible for writing or editing content
+- Support for accessibility, branding, or UX strategy
+- How many revision rounds are included in the process
 
-A long-term support partner can help your website grow alongside your organization.
+Knowing what’s expected upfront prevents scope creep and keeps things moving.
 
 ---
 
-## Final Thoughts
+## 4. Training & Handoff: Will You Be Set Up for Success?
 
-A website project is more than a technical build—it’s an investment in clarity, credibility, and long-term impact. The right web partner will understand your goals, respect your constraints, and bring a structured approach to what can sometimes feel overwhelming.
+Post-launch independence is one of the most overlooked parts of hiring a web agency. Your team shouldn’t feel lost the day the site goes live.
 
-If you're starting to plan your next website, we’d be glad to share insight or answer questions—no strings attached. Whether you choose to work with Loopdash or another agency, we hope this guide helps you feel more confident and better prepared.
+Make sure to discuss:
+- What kind of training, videos, or documentation are included
+- Whether the CMS will be customized or user-friendly out of the box
+- If follow-up support is available in the first 30–60 days
 
-We're here when you're ready.
+Empowering your team reduces long-term dependency and ensures smooth onboarding for new staff or volunteers.
+
+---
+
+## 5. Ownership: Do You Control Your Site and Assets?
+
+Ownership questions are especially important for nonprofits who may rely on changing grant partners, hosting providers, or consultants over time.
+
+Clarify:
+- Who owns the design, content, and code
+- What happens if you want to change hosts or agencies
+- Whether all third-party accounts (e.g. DNS, analytics) will be in your name
+
+> At Loopdash, our clients retain full ownership of their websites. Your mission deserves control, not lock-in.
+
+---
+
+## 6. Long-Term Support: What Happens After Launch?
+
+Your website should evolve alongside your programs. Whether it's adding a new donation tool, launching a campaign, or publishing a policy brief, you’ll want support beyond day one.
+
+Discuss:
+- Monthly maintenance or retainer options
+- Hourly or on-demand availability
+- Typical turnaround times for content updates or feature requests
+
+Look for partners who treat post-launch support as part of a long-term relationship—not an afterthought.
+
+---
+
+## Final Thoughts: Choosing a Mission-Aligned Web Partner
+
+For nonprofits and advocacy organizations, hiring a web design agency is about more than just aesthetics—it’s about clarity, credibility, and impact.
+
+The right partner will:
+- Understand your mission and messaging
+- Build with accessibility and sustainability in mind
+- Equip your team with the tools and confidence to thrive online
+
+If you're preparing for a redesign or simply exploring possibilities, we’d be glad to share ideas or offer advice. No pitch, no pressure—just insight from a team that’s walked this path with others like you.
+
+Your mission deserves a website that works as hard as you do.
