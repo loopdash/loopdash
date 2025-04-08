@@ -65,6 +65,6 @@ sitemap:
   changefreq: weekly
   priority: 0.5
 tags: projects
-date: 2025-04-25
+date: 2025-04-08
 url: /projects/antaeus
 ---

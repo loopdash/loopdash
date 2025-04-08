@@ -154,7 +154,7 @@ export default function (eleventyConfig) {
       res.locals.proposalAccessGranted = accessGranted;
 
       // Protect `/proposals` routes
-      if ((req.url.startsWith('/proposals') || req.url.startsWith('/projects/antaeus/') ) && !accessGranted) {
+      if ((req.url.startsWith('/proposals')) && !accessGranted) {
         if (req.method === 'GET' || req.method === 'POST') {
           let errorMessage = '';
 
