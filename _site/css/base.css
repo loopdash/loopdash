@@ -252,18 +252,26 @@ blockquote p {
   margin-left: 20px;
 }
 
+.ul-check {
+  margin-left: 20px;
+}
+
 .ul-check li {
     list-style-type: none;
     position: relative;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
 .ul-check li:before {
       content: "";
       top: 9px;
+      background: rgba(255,255,255 0.4);
+      border-radius: 0.25rem;
       left: 0;
       transform: translate(-50%, -50%);
-      width: 16px;
-      height: 16px;
+      width: 13px;
+      height: 10px;
       background: url(../img/icons/checkmark.svg);
       background-size: contain;
       background-repeat: no-repeat;
@@ -271,6 +279,46 @@ blockquote p {
       margin-left: -10px;
       margin-right: 16px;
     }
+
+.has-tooltip {
+  position: relative;
+  cursor: help; /* fallback cursor */
+}
+
+.has-tooltip:hover::after {
+  opacity: 1;
+  margin: -4rem 0 0 0;
+}
+
+.has-tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(6px);
+  background: var(--antaeus-darkish-green);
+  min-width: 220px; /* ensures a base width */
+  max-width: 320px; /* prevents it from getting too wide */
+  color: var(--color-cream);
+  padding: 6px 10px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 0.75rem;
+  white-space: normal; /* allows wrapping */
+  word-break: break-word; /* breaks long words if needed */
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeInTooltip 0.2s forwards;
+}
+
+
+@keyframes fadeInTooltip {
+  to {
+    opacity: 1;
+  }
+}
 
 
 .ul-service li {
