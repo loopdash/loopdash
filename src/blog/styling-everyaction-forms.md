@@ -3,7 +3,7 @@ layout: single-blog.njk
 title: How to Style EveryAction Forms Without Breaking Their Code  
 meta:
   title: How to Style EveryAction Forms Without Breaking Their Code  
-  description: A practical guide for nonprofits on how to customize EveryAction forms using clean CSS overrides—while keeping accessibility, functionality, and brand consistency intact.  
+  description: Elevate your EveryAction forms with a touch of elegance and brand consistency, ensuring they resonate with your nonprofit's identity.
   image: ./src/img/blogs/moody-san-francisco.png  
   alt: A blue and white porcelain jar with wave and horse motifs, evoking traditional Chinese patterns on a modern gray background  
 sitemap:
@@ -16,7 +16,7 @@ tags:
   - styling  
   - css  
   - wordpress  
-date: 2025-05-12  
+date: 2025-04-12  
 url: /blog/styling-everyaction-forms
 ---
 
