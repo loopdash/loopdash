@@ -18,7 +18,7 @@ project:
     - name: Web Design
     - name: Web Development
     - name: CMS Integration
-  website: https://antaeus.org
+  website: https://antaeusaction.com
   sections:
     - heading: null
       paragraph: null
