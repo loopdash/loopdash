@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+Host: https://loopdash.com/
+
+Sitemap: https://loopdash.com/sitemap.xml
