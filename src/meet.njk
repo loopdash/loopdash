@@ -19,7 +19,7 @@ sitemap:
   document.addEventListener('DOMContentLoaded', function() {
 
   const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('src') === 'ref') {
+  if (urlParams.get('src')) {
     document.getElementById('meeting-title').textContent = 'Refer a friend & earn.';
     document.getElementById('meeting-subtitle').innerHTML = 'Share <a class="text-charcoal-light link" href="javascript:void(0);" id="copy-link" data-url="https://loopdash.com/meet?src=ref" data-title="Copied to clipboard" data-subtext="Your referrral link has been copied to your clipboard.">your link</a> with friends and collegues to earn for each successful connection.';
   }
