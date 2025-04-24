@@ -13,15 +13,20 @@ sitemap:
     <h1 id="meeting-title" class="text-12 text-weight-400 mb-12 mt-24 text-gradient">Schedule a Meeting</h1>
     <p id="meeting-subtitle" class="text-7 text-charcoal-light text-weight-400">Great brands aren't just built; they're engineered.</p>
   </div>
-<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+<div style="width:100%;overflow:scroll" id="my-cal-inline"></div>
 <script type="text/javascript">
   // Script to check for referral query parameter and update text
   document.addEventListener('DOMContentLoaded', function() {
 
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('src')) {
-    document.getElementById('meeting-title').textContent = 'Refer a friend & earn.';
-    document.getElementById('meeting-subtitle').innerHTML = 'Share <a class="text-charcoal-light link" href="javascript:void(0);" id="copy-link" data-url="https://loopdash.com/meet?src=ref" data-title="Copied to clipboard" data-subtext="Your referrral link has been copied to your clipboard.">your link</a> with friends and collegues to earn for each successful connection.';
+    // Check if src parameter is an email address
+    const referrer = urlParams.get('src');
+    if (referrer.includes('@')) {
+      // Apple-style personalized referral message
+      document.getElementById('meeting-title').textContent = 'Let\'s get started';
+      document.getElementById('meeting-subtitle').innerHTML = "Looks like you were referred by <span class=\"link\">" + referrer + "</span>. Let's schedule a meeting to connect.";
+    }
   }
 
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
