@@ -22,7 +22,7 @@ project:
     - name: Strategy
     - name: Web Design
     - name: Web Development
-  website: https://nodeepfakesfordemocracy.org
+  website: https://nodeepfakesfordemocracy.com
   sections:
     - heading: null
       paragraph: null
