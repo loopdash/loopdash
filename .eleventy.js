@@ -10,6 +10,8 @@ import fs from "fs";
 import path from "path";
 import { glob } from "glob";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { DateTime }  from "luxon";
+
 
 nunjucks.configure('views', {
   autoescape: true,
@@ -132,6 +134,11 @@ export default function (eleventyConfig) {
 
   // Limit filter
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
+
+  eleventyConfig.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(new Date(dateObj), { zone: 'utc' })
+      .toFormat("LLLL d',' yyyy"); // Example: June 1, 2025
+  });
 
   // Add global data for `proposalAccessGranted`
   eleventyConfig.addGlobalData("proposalFunnelAccessGranted", (data) => {

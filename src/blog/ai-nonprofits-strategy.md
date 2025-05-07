@@ -4,7 +4,7 @@ title: 7 Ways Nonprofits Are Using AI to Save Time and Drive Impact
 meta:
   title: 7 Ways Nonprofits Are Using AI to Save Time and Drive Impact  
   description: A quiet, clear guide to how nonprofits are using AI to streamline communications, analyze data, write content, and deepen engagement—without losing their voice.  
-  image: ./src/img/blogs/tall-grass.png
+  image: ./src/img/blogs/sheets.jpg
   alt: A dreamlike abstraction of blurred organic shapes—shells, seeds, wings—rotating gently in a field of ivory and dusk pink, with hand-painted textures and fine pencil lines  
 sitemap:
   changefreq: weekly  
