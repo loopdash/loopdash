@@ -97,4 +97,4 @@ Choosing your words wisely not only reflects positively on your organization but
 
 An RFP is more than just a document; it's the beginning of a potential partnership. At Loopdash, we help organizations navigate digital transformations with creative services. Whether you're looking to rebrand, redesign a website, or rename, we're here to help.
 
-Loopdash is a creative agency dedicated to design, branding, and digital products for today's changemakers and visionaries. Follow us on Instagram or Twitter, or drop us a line at hello@loopdash.coc. We'd love to hear from you!
+Loopdash is a creative agency dedicated to design, branding, and digital products for today's changemakers and visionaries.
