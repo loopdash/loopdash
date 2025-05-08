@@ -19,7 +19,7 @@ date: 2025-05-08
 url: /blog/perfect-rfp-nonprofits
 ---
 
-Hello there! If you're part of a nonprofit, you've likely navigated the RFP (Request for Proposal) process to find the right partner for your next big project. Here at Wide Eye, we respond to about 50–75 RFPs each year, covering creative rebrands, strategic engagements, website redesigns, and more. We know the effort it takes to craft these documents, and we're here to share some insights from our side of the table: the good, the not-so-good, and the "please avoid this."
+Hello there! If you're part of a nonprofit, you've likely navigated the RFP (Request for Proposal) process to find the right partner for your next big project. Here at Loopdash, we respond to about 20 RFPs each year, covering creative rebrands, strategic engagements, website redesigns, and more. We know the effort it takes to craft these documents, and we're here to share some insights from our side of the table: the good, the not-so-good, and the "please avoid this."
 
 ---
 
@@ -95,6 +95,6 @@ Choosing your words wisely not only reflects positively on your organization but
 
 ## Final Thoughts
 
-An RFP is more than just a document; it's the beginning of a potential partnership. At Wide Eye, we help organizations navigate digital transformations with creative services. Whether you're looking to rebrand, redesign a website, or rename, we're here to help.
+An RFP is more than just a document; it's the beginning of a potential partnership. At Loopdash, we help organizations navigate digital transformations with creative services. Whether you're looking to rebrand, redesign a website, or rename, we're here to help.
 
-Wide Eye is a creative agency dedicated to design, branding, and digital products for today's changemakers and visionaries. Follow us on Instagram or Twitter, or drop us a line at hello@wideeye.co. We'd love to hear from you!
+Loopdash is a creative agency dedicated to design, branding, and digital products for today's changemakers and visionaries. Follow us on Instagram or Twitter, or drop us a line at hello@loopdash.coc. We'd love to hear from you!
