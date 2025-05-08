@@ -4,7 +4,7 @@ title: Building Global Networks for Local Impact
 meta:
   title: Building Global Networks for Local Impact
   description: How think tanks can forge international partnerships to address local issues in 2025.
-  image: ./src/img/blogs/computer.jpg
+  image: ./src/img/blogs/hermes-tree.jpg
   alt: A world map with interconnected nodes, symbolizing global collaboration
 sitemap:
   changefreq: weekly

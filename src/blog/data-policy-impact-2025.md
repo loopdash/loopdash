@@ -4,7 +4,7 @@ title: Leveraging Data for Policy Impact in 2025
 meta:
   title: Leveraging Data for Policy Impact in 2025
   description: How think tanks can use data-driven insights to shape and influence policy decisions effectively.
-  image: ./src/img/blogs/papers.jpg
+  image: ./src/img/blogs/primary-colors.jpg
   alt: A graph overlaying a cityscape, symbolizing data-driven policy
 sitemap:
   changefreq: weekly

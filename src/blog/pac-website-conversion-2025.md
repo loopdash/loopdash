@@ -4,7 +4,7 @@ title: How to Build a High-Conversion PAC Website in 2025
 meta:
   title: How to Build a High-Conversion PAC Website in 2025
   description: From donation flows to email capture, here's how PACs can create websites that turn traffic into support in an election year.
-  image: ./src/img/blogs/computer.jpg
+  image: ./src/img/blogs/megaphone.jpg
   alt: A ballot being dropped into a voting box, symbolizing PAC engagement
 sitemap:
   changefreq: weekly

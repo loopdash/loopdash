@@ -4,7 +4,7 @@ title: Choosing the Right WordPress Theme for Your Advocacy Campaign
 meta:
   title: Choosing the Right WordPress Theme for Your Advocacy Campaign  
   description: A calm guide to selecting a WordPress theme that supports clarity, speed, accessibility, and visual storytelling for mission-driven advocacy organizations.  
-  image: ./src/img/blogs/tall-grass.png
+  image: ./src/img/blogs/computer-desk.jpg
   alt: A sandstone cave with soft waterfalls and white powder cascades, forming an otherworldly, peaceful landscape with space for banner text  
 sitemap:
   changefreq: weekly  
