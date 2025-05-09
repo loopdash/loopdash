@@ -8,7 +8,7 @@ sitemap:
   changefreq: monthly
 proposal:
   documenso:
-    token: aYOdLaC16SnJeMbWSizVQ
+    token: vpLzMm_2Wt9s2wY8vJHV0
     name: Jon Green
     email: jongreennyc@gmail.com
   name: Digital Campaign Platform and Organizing
