@@ -7,7 +7,7 @@ sitemap:
   changefreq: monthly
 proposal:
   documenso:
-    token: HH54eGFu4MGglC8uVZPo4
+    token: dVJi9EJ73B9zpoovF_96G
     name: Vikram Gupta
     email: vgupta@cozen.com
   name: WordPress Development for ConnectBridge
