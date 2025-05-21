@@ -7,7 +7,7 @@ sitemap:
   changefreq: monthly  
 proposal:  
   documenso:  
-    token: 9norstyHMHJi3w47L_bwb  
+    token: JTpK8JgbrfWnzmlUv-Sci  
     name: Test  
     email: Test@Test.com  
   name:  Contact Import & Template Creation
