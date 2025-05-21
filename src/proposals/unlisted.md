@@ -40,7 +40,7 @@ proposal:
     description: Create a listing PDF template in Canva or other design app.
     duration: 3-4 days
   links:  
-  - url: [SIGNING LINK]  
+  - url: https://loopdash.com/proposals/unlisted/sign
     text: Review proposal
     icon: pencil  
     event: Proposal+Review+Button+Click  
