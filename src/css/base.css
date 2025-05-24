@@ -1558,7 +1558,7 @@ blockquote p {
   border-radius: var(--border-radius);
   width: 49%;
   max-width: 1260px;
-  border-radius: .375rem;
+  border-radius: 16px;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
@@ -1620,6 +1620,13 @@ blockquote p {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('https://cdn.loopdash.com/img/preview-antaeus.png');
+  background-size: cover;
+}
+
+.project-moms-first-future-of-fatherhood {
+  background-image:
+    linear-gradient(0deg, #00000000 15%, #ffffff44 100%), 
+    url('https://cdn.loopdash.com/img/cover-future-of-fatherhood.jpg');
   background-size: cover;
 }
 
@@ -2100,6 +2107,30 @@ blockquote p {
       color: #0d0f00;
       .link-chevron {
         color: #0d0f00;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+        &:after {
+          filter: brightness(0) saturate(100%) invert(88%) sepia(19%) saturate(527%) hue-rotate(336deg) brightness(94%) contrast(91%);
+        }
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+          &:after {
+            filter:
+              brightness(0) saturate(100%)
+              invert(82%) sepia(19%) saturate(2334%) hue-rotate(328deg) brightness(96%) contrast(92%);
+          }
+        }
+      }
+    }
+  }
+
+  .introduction-moms-first-future-of-fatherhood {
+    background-color: #408382;
+    color: #fff;
+    .details {
+      color: #005958;
+      .link-chevron {
+        color: #005958;
         transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
         &:after {
           filter: brightness(0) saturate(100%) invert(88%) sepia(19%) saturate(527%) hue-rotate(336deg) brightness(94%) contrast(91%);

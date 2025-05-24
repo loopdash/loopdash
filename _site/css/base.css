@@ -1531,7 +1531,7 @@ blockquote p {
   border-radius: var(--border-radius);
   width: 49%;
   max-width: 1260px;
-  border-radius: .375rem;
+  border-radius: 16px;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
@@ -1598,6 +1598,13 @@ blockquote p {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
     url('https://cdn.loopdash.com/img/preview-antaeus.png');
+  background-size: cover;
+}
+
+.project-moms-first-future-of-fatherhood {
+  background-image:
+    linear-gradient(0deg, #00000000 15%, #ffffff44 100%), 
+    url('https://cdn.loopdash.com/img/cover-future-of-fatherhood.jpg');
   background-size: cover;
 }
 
@@ -2135,6 +2142,35 @@ blockquote p {
         }
 
 .single-project-layout .introduction-antaeus .details .link-chevron:hover:after {
+            filter:
+              brightness(0) saturate(100%)
+              invert(82%) sepia(19%) saturate(2334%) hue-rotate(328deg) brightness(96%) contrast(92%);
+          }
+
+.single-project-layout .introduction-moms-first-future-of-fatherhood {
+    background-color: #408382;
+    color: #fff;
+  }
+
+.single-project-layout .introduction-moms-first-future-of-fatherhood .details {
+      color: #005958;
+    }
+
+.single-project-layout .introduction-moms-first-future-of-fatherhood .details .link-chevron {
+        color: #005958;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      }
+
+.single-project-layout .introduction-moms-first-future-of-fatherhood .details .link-chevron:after {
+          filter: brightness(0) saturate(100%) invert(88%) sepia(19%) saturate(527%) hue-rotate(336deg) brightness(94%) contrast(91%);
+        }
+
+.single-project-layout .introduction-moms-first-future-of-fatherhood .details .link-chevron:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+        }
+
+.single-project-layout .introduction-moms-first-future-of-fatherhood .details .link-chevron:hover:after {
             filter:
               brightness(0) saturate(100%)
               invert(82%) sepia(19%) saturate(2334%) hue-rotate(328deg) brightness(96%) contrast(92%);
