@@ -2133,15 +2133,13 @@ blockquote p {
         color: #005958;
         transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
         &:after {
-          filter: brightness(0) saturate(100%) invert(88%) sepia(19%) saturate(527%) hue-rotate(336deg) brightness(94%) contrast(91%);
+          filter: brightness(0) saturate(100%) invert(33%) sepia(97%) saturate(215%) hue-rotate(131deg) brightness(91%) contrast(93%);
         }
         &:hover {
           transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
           opacity: 0.5;
           &:after {
-            filter:
-              brightness(0) saturate(100%)
-              invert(82%) sepia(19%) saturate(2334%) hue-rotate(328deg) brightness(96%) contrast(92%);
+            filter: brightness(0) saturate(100%) invert(33%) sepia(97%) saturate(215%) hue-rotate(131deg) brightness(91%) contrast(93%);
           }
         }
       }
