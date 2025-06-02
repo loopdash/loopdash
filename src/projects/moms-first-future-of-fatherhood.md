@@ -15,6 +15,8 @@ project:
   industry: Social Advocacy
   services:
     - name: Web Development
+  collaborators:
+    - name: Ruby Western
   website: https://momsfirst.org
   sections:
     - heading: null
