@@ -87,6 +87,11 @@ project:
           images: 
             - src: "./src/img/projects/katrina-20-full-bleed-mockup-2.jpg"
               alt: "Katrina 20 website displayed on multiple devices including laptop, tablet, and phone"
+  testimonial:
+    quote: >
+      Working with Loopdash has been a great experience. Their recent work on our campaign was timely, creative, and highly professional. We appreciated their support throughout the process and look forward to partnering with them again on future projects.
+    author: Bobbie Green
+    role: Digital Content Manager
 sitemap:
   changefreq: weekly
   priority: 0.5
