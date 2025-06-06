@@ -1735,7 +1735,6 @@ blockquote p {
 .quote::before,
 .quote::after {
   font-family: Georgia, serif;
-  font-size: 160%;
   color: #b6b2b2;
 }
 .quote::before {
@@ -1943,20 +1942,22 @@ blockquote p {
   .quote::before,
   .quote::after {
     font-family: Georgia, serif;
-    font-size: 110%;
+    font-size: 240%;
     color: #0000004f;
+    position: absolute;
+    z-index: 1;
   }
 
   .quote::before {
     content: "“";
-    margin-left: -17px;
-    padding-right: 3px;
+    margin-left: -27px;
+    padding-right: 13px;
   }
 
   .quote::after {
     content: "”";
-    margin-right: -17px;
-    padding-left: 3px;
+    margin-right: -27px;
+    padding-left: 4px;
   }
 
   .quote-forward-majority::before,
