@@ -367,6 +367,19 @@ function rotateElement(selector) {
     });
   }
 
+    // Carousel
+    const track = document.querySelector('.carousel-track');
+    const images = Array.from(track.children);
+    const imageWidth = images[0].getBoundingClientRect().width;
+  
+    let currentIndex = 0;
+  
+    function moveToNextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    }
+  
+    setInterval(moveToNextImage, 2000);
 });
 
 window.showStateModal = function (modalSelector, titleText, subText) {
