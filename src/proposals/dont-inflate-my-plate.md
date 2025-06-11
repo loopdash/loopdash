@@ -6,7 +6,7 @@ sitemap:
   changefreq: monthly
 proposal:
   documenso:
-    token: R5XQqbg_zKy3YQS0dyudz
+    token: yLgP2LbmmCCzr48owtun-
     name: Bradley Williams
     email: bradley.williams@thehubproject.org
   name: Don't Inflate My Plate Campaign Templates
