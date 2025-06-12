@@ -43,14 +43,10 @@ proposal:
     description: 30 days of support post-launch.
     duration: 30 days
   links: 
-  - url: https://loopdashcom/proposals/protect-your-check/sign
+  - url: https://loopdash.com/proposals/protect-your-check/sign
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
-  - url: null
-    text: null
-    icon: null
-    event: Proposal+Alt+Button+Click
 priority: 0.6
 tags: proposals
 date: 2025-06-11
