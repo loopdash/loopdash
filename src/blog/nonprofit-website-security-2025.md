@@ -16,7 +16,7 @@ tags:
    - web design  
    - advocacy  
    - data privacy
-date: 2025-06-02
+date: 2025-06-05
 url: /blog/nonprofit-website-security-2025  
 ---
 
