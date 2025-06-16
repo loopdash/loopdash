@@ -15,6 +15,9 @@ project:
   industry: Social Advocacy
   services:
     - name: Web Development
+  press:
+    - name: New York Times
+      link: https://www.nytimes.com/2025/06/14/style/fatherhood-summit-jonathan-haidt-dr-becky.html?emci=5c44b1c7-b44a-f011-8f7c-6045bdfe8e9c&emdi=dc80e04a-ef4a-f011-8f7c-6045bdfe8e9c&ceid=2421440
   collaborators:
     - name: Ruby Western
   website: https://momsfirst.org
