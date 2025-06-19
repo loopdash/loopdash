@@ -7,7 +7,7 @@ sitemap:
   changefreq: monthly
 proposal:
   documenso:
-    token: VvL9qBOIYgFpaQpAYtNQQ
+    token: K17OMv7ayWJ6OK6O-HhQK
     name: Saryn
     email: saryn@thehubproject.org
   name: Protect Your Check
