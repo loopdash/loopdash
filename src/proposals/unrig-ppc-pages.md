@@ -9,9 +9,9 @@ proposal:
     token: nqGWbTKPeUmPwEFKRcPOC
     name: Bradley Williams
     email: bradley.williams@thehubproject.org
-  name: Don't Inflate My Plate Campaign Templates
+  name: Unrig Our Economy Campaign Templates
   client: Unrig Our Economy
-  description: Design and develop two dynamic page templates to support a total of six pages for PPC ads, increasing site traffic and enhancing audience understanding of the current inflation landscape.
+  description: Design and develop two dynamic page templates to support a total of six pages for PPC ads, increasing site traffic and enhancing audience.
   summary: |
     <p class="text-3 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.links[0].url }}" target="_blank" class="link plausible-event-name=Proposal+Sign+Link+Click">your proposal</a>.</p>
     
