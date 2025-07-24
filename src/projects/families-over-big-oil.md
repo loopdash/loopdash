@@ -15,8 +15,8 @@ project:
   industry: Advocacy
   services:
     - name: Campaign Strategy
-    - name: Public Awareness
-    - name: Advocacy
+    - name: Web Design
+    - name: Identity
   press:
     - name: Oil Change International
       link: https://oilchange.org/
