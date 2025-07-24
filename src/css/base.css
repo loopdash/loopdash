@@ -1644,6 +1644,13 @@ blockquote p {
   background-size: cover;
 }
 
+.project-families-over-big-oil {
+  background-image: 
+    linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
+    url('https://cdn.loopdash.com/img/cover-families-over-big-oil.jpg');
+  background-size: cover;
+}
+
 .link-chevron {
   text-decoration: none;
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
@@ -2154,6 +2161,7 @@ blockquote p {
     }
   }
 
+
   .introduction-katrina-20 {
     background-color: #06192F;
     p {
@@ -2174,6 +2182,37 @@ blockquote p {
             filter:
               brightness(0) saturate(100%)
               invert(82%) sepia(19%) saturate(2334%) hue-rotate(328deg) brightness(96%) contrast(92%);
+          }
+        }
+      }
+    }
+  }
+
+  .introduction-families-over-big-oil {
+    background-color: #EBFF30;
+    p {
+      color: #000000;
+    }
+    .details {
+      color: #000000;
+
+      .link-chevron {
+        color: #000000;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+
+        &:after {
+          filter: brightness(0) saturate(100%) invert(17%) sepia(81%) saturate(1803%) hue-rotate(190deg) brightness(88%) contrast(85%);
+        }
+
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+
+          &:after {
+            filter:
+              brightness(0)
+              saturate(100%) 
+              invert(37%) sepia(71%) saturate(355%) hue-rotate(80deg) brightness(92%) contrast(90%);
           }
         }
       }
