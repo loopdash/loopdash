@@ -7,11 +7,11 @@ sitemap:
   changefreq: monthly
 proposal:
   documenso:
-    token: Q8_eGMTZpmKXuhJqi5wdE
+    token: u2UWWiXLE2ZMXI_uy2pG6
     name: Stasha Rhodes
     email: stasha@antaeusaction.com
-  name: Wisconsin Campaign Landing Page
-  client: Stasha Rhodes - Wisconsin Campaign
+  name: Wisconsin Campaign Website & Interactive Charts
+  client: Citizen Impact
   description: Dynamic landing page with interactive charts and visualizations for the Wisconsin campaign mission and initiatives.
   summary: |
     <p class="text-3 mb-10">We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.links[0].url }}" target="_blank" class="link plausible-event-name=Proposal+Sign+Link+Click">your proposal</a>.
@@ -40,7 +40,7 @@ proposal:
     description: 30 days of support and maintenance
     duration: 30 days
   links: 
-  - url: https://loopdash.com/proposals/wisconsion/sign
+  - url: /proposals/citizen-impact/sign
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
