@@ -14,21 +14,25 @@ proposal:
   client: Navigator Research
   description: Comprehensive website redesign with interactive data visualization using Chart.js and WordPress platform.
   summary: |
-    We will approach this engagement with careful consideration and thoughtful execution, ensuring that every phase of the process is handled with precision and purpose. By following a structured timeline with clearly defined milestones, we will ensure progress remains aligned with your vision. The investment for this work can be found in <a href="{{ proposal.links[0].url }}" target="_blank" class="link plausible-event-name=Proposal+Sign+Link+Click">your proposal</a>. 
+    <p class="text-3 mb-10">We will handle this engagement with precision, ensuring each phase is executed efficiently. By following a structured timeline with clear milestones, we will keep progress aligned with your goals. You can find the <a href="https://loopdash.com/proposals/navigator-research/sign" target="_blank" class="link plausible-event-name=Proposal+Sign+Link+Click">your proposal</a>. 
     <br /><br />
     The full project has an estimated timeline of {{ proposal.duration }} to deliver an effective outcome. Please feel free to read more <a href="/about" target="_blank" class="link plausible-event-name=Proposal+About+Link+Click">about us</a> or refer to our <a href="/faq" target="_blank" class="link plausible-event-name=Proposal+FAQ+Link+Click">commonly asked questions</a>.
+    </p>
   website: navigatorresearch.org
   video: |
-    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c46f5baa13154eda995786f1a5ca4930?sid=03ef9e62-aba7-4043-90e7-b9e0e7dc6df9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/e9399df9c5c742b6a4a9a7bf11d060c2?sid=366a7fc9-2b6f-4e02-99ec-29155fb40939" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
   price: $21,700-$24,700
   duration: 8-12 weeks
   services:
   - name: Discovery & Planning
     description: Sitemap development and website architecture for 10-12 page structure
     duration: 1-2 weeks
-  - name: Data Visualization & Migration
+  - name: Data Visualization
     description: Interactive Chart.js implementation with backend data management system
-    duration: 2-3 weeks
+    duration: 1-2 weeks
+  - name: Data Migration
+    description: Migrate the historical data into interactive and updatable visualizations.
+    duration: 1-2 weeks
   - name: Design Development
     description: Desktop and mobile designs for all pages with professional data-driven aesthetic
     duration: 2-3 weeks
@@ -39,11 +43,11 @@ proposal:
     description: Comprehensive testing for functionality, cross-browser compatibility, and mobile responsiveness
     duration: 1 week
   links: 
-  - url: https://loopda.sh/navigator-research
+  - url: https://docs.google.com/document/d/10toT-W-XvrRTyUavKUGqd7iMJWqhZWC0S1pt08k-0ns/
     text: Review proposal
     icon: pencil
     event: Proposal+Review+Button+Click
-  - url: https://loopda.sh/nav
+  - url: https://navigator.loopdash.com/
     text: View Demo
     icon: eye
     event: Proposal+Alt+Button+Click

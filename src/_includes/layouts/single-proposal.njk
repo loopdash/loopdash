@@ -22,7 +22,7 @@
               {{ proposal.summary | renderNested(proposal) | safe }}
             {% endif %}
 
-            {% if proposal.video and proposal.video is not null %}
+            {% if proposal.video and proposal.video is not null and proposal.video | trim != '' %}
               <div class="mb-8">
                 <h5 class="text-4 text-weight-600">Walkthrough</h5>
                 <div class="rounded-7">
