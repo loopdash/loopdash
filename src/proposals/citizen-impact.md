@@ -51,5 +51,5 @@ proposal:
 priority: 0.6
 tags: proposals
 date: 2025-01-16
-url: /proposals/wisconsin
+url: /proposals/citizen-impact
 ---
