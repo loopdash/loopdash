@@ -8,8 +8,6 @@ project:
   name: Katrina 20
   description: "To honor the 20th Anniversary of Hurricane Katrina, the Hip Hop Caucus team needed a fast, beautiful digital presence for their national commemoration event. We designed and developed katrina20.com in under three weeks—crafting a site that drives attendance, lifts up community stories, and amplifies the movement for racial, economic, and climate justice. From RSVP flows to storytelling, the site captures the urgency and heart of this annual remembrance."
   tagline: Commemorate. Demand Justice. Build the Future.
-  collaborators:
-    - name: Hip Hop Caucus
   class: katrina-20
   hero:
     src: "./src/img/projects/katrina-20-cover.jpg"

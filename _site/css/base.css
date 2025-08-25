@@ -1680,15 +1680,22 @@ blockquote p {
 }
 
 .logo-wrapper {
-  background: var(--color-green-waterloo);
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  padding: 2rem;
 }
+
 .logo-container {
+  background: var(--color-green-waterloo);
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 16px;
 }
 .logo-slideshow {
   width: 100%;
@@ -1698,21 +1705,41 @@ blockquote p {
   align-items: center;
 }
 
+.logo-slideshow-item svg path {
+  fill: var(--color-cream);
+}
+
 .logo-slideshow-inner {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 4rem;
+  flex-wrap: wrap;
 }
 
 .logo-slideshow-item {
-  width: 100%;
+  width: 30%;
   height: 100%;
   display: flex;
   justify-content: center;
+  padding: 0.5rem 8%;
   align-items: center;
+}
+
+/* Tablet: 3 columns */
+@media only screen and (min-width: 768px) {
+  .logo-slideshow-item {
+    width: 16.667%;
+    padding: 0.5rem 2%;
+  }
+}
+
+/* Desktop: 6 columns (close to original 16%) */
+@media only screen and (min-width: 1024px) {
+  .logo-slideshow-item {
+    width: 16.667%;
+  }
 }
 
 .quote::before,
@@ -3162,7 +3189,7 @@ a.card-default:hover,
 .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 6); /* Adjust based on number of items */
+  width: calc(180px * 6 + 220px * 2); /* 6 regular slides + 2 large slides */
 }
 
 .slide {
@@ -3172,9 +3199,25 @@ a.card-default:hover,
   justify-content: center;
   align-items: center;
 }
+
+.slide-lg {
+  width: 220px; /* Increased width for larger logos */
+}
+
 .slide svg {
   max-width: 100%;
   max-height: 40%;
+}
+
+.slide-lg svg {
+  max-width: 130%; /* Increase width to compensate for shorter height */
+  max-height: 60%; /* Increase height to make logos appear larger */
+  transform: scale(1.2); /* Scale up the entire SVG */
+}
+
+.slide svg path {
+  color: var(--color-cream);
+  fill: var(--color-cream);
 }
 
 @keyframes scroll {
@@ -3182,7 +3225,7 @@ a.card-default:hover,
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-250px * 3));
+      transform: translateX(calc(-180px * 3 - 220px * 1)); /* Move by half the total width */
   }
 }
 
