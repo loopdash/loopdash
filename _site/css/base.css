@@ -1291,7 +1291,7 @@ blockquote p {
 }
 
 .hero {
-  margin-bottom: calc(var(--spacing) * 60);
+  margin-bottom: calc(var(--spacing) * 20);
   color: var(--color-cream-dark);
   position: relative;
 }
@@ -1689,7 +1689,7 @@ blockquote p {
 }
 
 .logo-container {
-  background: var(--color-green-waterloo);
+  background: white;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1697,6 +1697,7 @@ blockquote p {
   align-items: center;
   border-radius: 16px;
 }
+
 .logo-slideshow {
   width: 100%;
   height: 100%;
@@ -1706,7 +1707,7 @@ blockquote p {
 }
 
 .logo-slideshow-item svg path {
-  fill: var(--color-cream);
+  /* fill: var(--color-cream); */
 }
 
 .logo-slideshow-inner {
@@ -1716,29 +1717,40 @@ blockquote p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: calc(var(--spacing) * 5) 0;
 }
 
 .logo-slideshow-item {
-  width: 30%;
+  width: 18%;
   height: 100%;
+  max-height: 48px;
   display: flex;
   justify-content: center;
-  padding: 0.5rem 8%;
+  padding: 0 10%;
   align-items: center;
 }
 
+.logo-slideshow-item-lg {
+  width: 25%;
+  padding: 0 5%;
+}
+
+@media only screen and (min-width: 580px) {
+  .logo-slideshow-item {
+    width: 14%;
+    padding: 0 4% calc(var(--spacing) * 3) 4%;
+  }
+}
 /* Tablet: 3 columns */
 @media only screen and (min-width: 768px) {
   .logo-slideshow-item {
-    width: 16.667%;
-    padding: 0.5rem 2%;
+    width: 9%;
+    padding: 0 4% calc(var(--spacing) * 3) 4%;
   }
-}
-
-/* Desktop: 6 columns (close to original 16%) */
-@media only screen and (min-width: 1024px) {
-  .logo-slideshow-item {
-    width: 16.667%;
+  
+  .logo-slideshow-item-lg {
+    width: 15%;
+    padding: 0 2% calc(var(--spacing) * 3) 2%;
   }
 }
 
