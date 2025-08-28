@@ -28,10 +28,10 @@ proposal:
     description: Sitemap development and website architecture for 10-12 page structure
     duration: 1-2 weeks
   - name: Data Visualization
-    description: Interactive Chart.js implementation with backend data management system
+    description: Create main custom chart and Datawrapper styles for secondary/research charts.
     duration: 1-2 weeks
   - name: Data Migration
-    description: Migrate the historical data into interactive and updatable visualizations.
+    description: Migrate the historical data into Datawrapper visualizations.
     duration: 1-2 weeks
   - name: Design Development
     description: Desktop and mobile designs for all pages with professional data-driven aesthetic
@@ -53,6 +53,6 @@ proposal:
     event: Proposal+Alt+Button+Click
 priority: 0.6
 tags: proposals
-date: 2025-01-27
+date: 2025-08-28
 url: /proposals/navigator-research
 ---
