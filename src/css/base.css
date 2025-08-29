@@ -1529,7 +1529,7 @@ blockquote p {
   justify-content: center;
   gap: 1.5rem 1rem;
   margin: 0 auto;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
   box-sizing: border-box;
   font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
   font-weight: 550;
@@ -1773,7 +1773,7 @@ blockquote p {
   }
   
   .logo-slideshow-item-lg {
-    width: 15%;
+    width: 13%;
     padding: 0 2% calc(var(--spacing) * 3) 2%;
   }
 }
