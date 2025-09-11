@@ -1,3 +1,21 @@
+// Console callout for Loopdash
+console.log(`
+<!--
+    0000  0000000000
+    0000  0000000000
+    0000  0000000000
+    0000        0000
+    0000        0000
+    0000        0000    
+    0000        0000
+    0000
+    0000000000000000
+    0000000000000000
+
+    We help nonprofits build better websites. We're probably hiring, so email us at hello@loopdash.com
+-->
+`);
+
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
 
