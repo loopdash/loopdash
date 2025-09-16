@@ -561,7 +561,7 @@ blockquote p {
   .container-lg,
   .container-xl,
   .container-2xl {
-    padding: 0 1.5rem;
+    padding: 0 calc(var(--spacing) * 3);
   }
 }
 
@@ -1558,13 +1558,6 @@ blockquote p {
     box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.38);
     opacity: 0.82 !important;
   }
-
-
-@media only screen and (max-width: 1260px) {
-  .projects {
-    padding:calc(var(--spacing) * 2);
-  }
-}
 
 .project-accountable-tech {
   background-image: 
@@ -3246,10 +3239,17 @@ a.card-default:hover,
 .site-footer {
   background: var(--color-green-waterloo);
   z-index: 999;
+  border-radius: 16px;
   position: relative;
-  padding: calc(var(--spacing) * 40) 1.5rem calc(var(--spacing) * 10);
+  padding: calc(var(--spacing) * 40) calc(var(--spacing) * 30) calc(var(--spacing) * 10);
+  margin-bottom: calc(var(--spacing) * 8);
   color: var(--color-charcoal-light);
 }
+@media only screen and (max-width: 1024px) {
+.site-footer {
+    margin-bottom: calc(var(--spacing) * 3)
+}
+  }
 .site-footer ul li {
       list-style-type: none;
       line-height: 1.8;

@@ -560,7 +560,7 @@ blockquote p {
   .container-lg,
   .container-xl,
   .container-2xl {
-    padding: 0 1.5rem;
+    padding: 0 calc(var(--spacing) * 3);
   }
 }
 
@@ -1578,13 +1578,6 @@ blockquote p {
     transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
     box-shadow: 0px 16px 26px rgba(0, 0, 0, 0.38);
     opacity: 0.82 !important;
-  }
-}
-
-
-@media only screen and (max-width: 1260px) {
-  .projects {
-    padding:calc(var(--spacing) * 2);
   }
 }
 
@@ -3214,10 +3207,15 @@ a.card-default {
 .site-footer {
   background: var(--color-green-waterloo);
   z-index: 999;
+  border-radius: 16px;
   position: relative;
-  padding: calc(var(--spacing) * 40) 1.5rem calc(var(--spacing) * 10);
+  padding: calc(var(--spacing) * 40) calc(var(--spacing) * 30) calc(var(--spacing) * 10);
+  margin-bottom: calc(var(--spacing) * 8);
   color: var(--color-charcoal-light);
 
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   ul {
     li {
       list-style-type: none;
