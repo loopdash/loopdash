@@ -1687,7 +1687,6 @@ blockquote p {
 
 /* cta */
 .cta {
-  background: var(--color-cream-dark);
   padding: calc(var(--spacing) * 24) 36px calc(var(--spacing) * 24) 36px;
   text-align: center;
   margin: 0 auto;
