@@ -4,7 +4,7 @@ meta:
   title: Design It For Us
   description: 
 project: 
-  featured: true
+  featured: false
   name: Design It For Us
   description: "Design It For Us is a youth-led movement on a mission to empower young voices and drive meaningful change. They came to us with a challenge: how to create a digital platform that not only inspires action but also gives their audience the tools to amplify their message far and wide. Together, we reimagined their website, introducing an innovative feature that lets users create custom Instagram posts, phone wallpapers, and printable materials for events and rallies. The result? A site that captures their energy, elevates their message, and fuels their movement for justice."
   tagline: Building a safer internet for the next generation.

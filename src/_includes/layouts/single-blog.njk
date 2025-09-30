@@ -4,15 +4,25 @@
   <body class="blog-layout">
     {% include 'nav.njk' %}
     <main class="single-blog-layout mb-12">
-      <div class="image-wrapper mx-auto">
-        {% image meta.image, "Image description", [300, 960], "image" %}
+      <div class="blog-hero mx-auto">
+        <div class="blog-headline">
+          <div class="blog-headline-text">
+            <div class="mb-4">
+              <p class="text-2 text-charcoal-light text-weight-300">{{ date | readableDate }}</p>
+            </div>
+            <h1 class="text-12 mb-3 text-weight-700">{{ title }}</h1>
+            <p class="text-4 text-charcoal-light text-weight-300">{{ meta.description }}</p>
+          </div>
+        </div>
+        <div class="blog-image">
+          {% image meta.image, "Image description", [300, 960], "image" %}
+        </div>
       </div>
 
       <section class="container-sm mx-auto content prose">
         <div class="mt-12 mb-12">
-          <h1 class="text-8 mb-0 text-weight-550 text-gradient">{{ title }}</h1>
-          <p class="text-5 text-charcoal-light text-weight-400">{{ description }}</p>
-          <div class="mb-12 mx-auto col-7 text-4">
+          
+          <div class="mb-12 mx-auto col-6 text-5">
             {{ content | safe }}
           </div>
         </div>

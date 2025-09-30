@@ -19,7 +19,7 @@ sitemap:
 
 <section class="projects container-xl">
   {% for project in projects | sortByDate %}
-    {% if project.data.project.featured and project.data.date | isPastDate %}
+    {% if project.data.project and project.data.date | isPastDate %}
       <a href="{{project.data.page.url}}" class="project project-{{project.data.project.class}} plausible-event-name=Projects+Project+Card+Click+{{project.event}}">
         <div class="project-details">
           <h4 class="text-7 m-0 mb-1 reveal">{{ project.data.project.name }}</h4>
