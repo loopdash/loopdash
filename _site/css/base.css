@@ -3334,6 +3334,7 @@ a.card-default:hover,
 }
 @media only screen and (max-width: 1024px) {
 .site-footer {
+    padding: calc(var(--spacing) * 10) calc(var(--spacing) * 4) calc(var(--spacing) * 10);
     margin-bottom: calc(var(--spacing) * 3)
 }
   }

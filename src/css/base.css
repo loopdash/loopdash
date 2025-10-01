@@ -3297,6 +3297,7 @@ a.card-default {
   color: var(--color-charcoal-light);
 
   @media only screen and (max-width: 1024px) {
+    padding: calc(var(--spacing) * 10) calc(var(--spacing) * 4) calc(var(--spacing) * 10);
     margin-bottom: calc(var(--spacing) * 3);
   }
   ul {
