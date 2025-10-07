@@ -36,6 +36,7 @@
     "esbuild": "^0.25.1",
     "esbuild-plugin-alias": "^0.2.1",
     "fs": "^0.0.1-security",
+    "fullpage.js": "^4.0.37",
     "glob": "^11.0.1",
     "html-minifier": "^4.0.0",
     "luxon": "^3.6.1",

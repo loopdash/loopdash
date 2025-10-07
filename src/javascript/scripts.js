@@ -19,6 +19,19 @@ console.log(`
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Initialize fullPage.js only when present and when #fullpage exists
+  try {
+    if (typeof window.fullpage !== 'undefined' && document.querySelector('#fullpage')) {
+      new fullpage('#fullpage', {
+        autoScrolling: true,
+        scrollingSpeed: 600,
+        navigation: false
+      });
+    }
+  } catch (e) {
+    console.warn('fullPage initialization skipped:', e);
+  }
+  
   // Navigation
   const menuToggle = document.querySelector('.menu-toggle');
   const body = document.querySelector('body');
