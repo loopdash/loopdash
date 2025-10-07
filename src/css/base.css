@@ -428,6 +428,9 @@ blockquote p {
 .justify-content-end {
   justify-content: flex-end;
 }
+.gap-0 {
+  gap: 0;
+}
 .gap-1 {
   gap: 1rem;
 }
@@ -1985,7 +1988,7 @@ blockquote p {
   .quote::before,
   .quote::after {
     font-family: Georgia, serif;
-    font-size: 240%;
+    font-size: 440%;
     color: #0000004f;
     position: absolute;
     z-index: 1;
@@ -3285,6 +3288,44 @@ a.card-default {
   }
 }
 
+.testimonials .single-testimonial:nth-of-type(3n+1) {
+  background: var(--color-green-waterloo);
+  color: var(--color-cream-dark);
+}
+
+.testimonials .single-testimonial:nth-of-type(3n+2) {
+  background: var(--color-cream);
+  color: var(--color-charcoal-light);
+}
+
+.testimonials .single-testimonial:nth-of-type(3n+3) {
+  background: var(--color-charcoal-light);
+  color: var(--color-cream);
+}
+
+.testimonials .single-testimonial:nth-of-type(3n+4) {
+  background: var(--color-cream-dark);
+  color: var(--color-charcoal);
+}
+
+.testimonials {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.single-testimonial {
+  box-shadow: 0 9px 50px rgba(0, 0, 0, 0.3);
+  height: 100vh !important;
+  min-height: 900px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
 
 /* Footer */
 .site-footer {
