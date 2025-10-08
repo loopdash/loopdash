@@ -5,7 +5,7 @@ meta:
   description: Advocating for families over fossil fuel interests.
 project:
   featured: true
-  name: Friends of the Earth
+  name: Families Over Big Oil
   description: Families Over Big Oil is a campaign focused on advocating for working families who are disproportionately affected by the policies favoring fossil fuel companies. The campaign highlights the economic struggles faced by families due to rising costs and government subsidies to Big Oil. It calls for legislative action to prioritize families over polluters.
   tagline: Working Families Pay the Price — While Big Oil Gets the Prize.
   class: families-over-big-oil
