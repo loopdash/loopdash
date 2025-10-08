@@ -7,7 +7,7 @@ sitemap:
   changefreq: monthly
 proposal:
   documenso:
-    token: CAkNIBwsLL0QRG-LPv8hE
+    token: ZR5d-ZGUlVV0yTs6WK2Zo
     name: David
     email: david@thebarbedwire.com
   name: Web Retainer
