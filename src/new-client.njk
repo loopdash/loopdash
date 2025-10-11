@@ -8,7 +8,7 @@ sitemap:
   priority: 0.1
 ---
 
-<section class="container-lg mx-auto py-24">
+<section class="container-xs mx-auto py-24">
   <form id="client-form"
     action="https://formspree.io/f/mnnggoql"
     method="POST"
@@ -27,7 +27,7 @@ sitemap:
       <input class="form-input" type="email" name="email" required autocomplete="email" />
     </div>
 
-    <div class="hr my-5"></div>
+    
 
     <!-- 1) Situation -->
     <div class="form-group">
@@ -46,7 +46,7 @@ sitemap:
 
     <!-- 2) Ops comfort -->
     <div class="form-group">
-      <label class="form-label">How comfortable are you managing updates, plugins, and security?</label>
+      <label class="form-label">How comfortable are you managing updates, plugins, and security? Be honest</label>
       <div class="form-selector-group">
         <input id="ops_comfort_none" class="form-selector-input" type="radio" name="ops_comfort" value="I’d rather not touch it" required />
         <label for="ops_comfort_none" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">I’d rather not touch it</span></span></label>
@@ -63,8 +63,8 @@ sitemap:
     <div class="form-group">
       <label class="form-label">How involved do you want to be in ongoing updates and improvements?</label>
       <div class="form-selector-group">
-        <input id="ops_involvement_full" class="form-selector-input" type="radio" name="ops_involvement" value="Please handle everything for us" required />
-        <label for="ops_involvement_full" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please handle everything for us</span></span></label>
+        <input id="ops_involvement_full" class="form-selector-input" type="radio" name="ops_involvement" value="Please handle everything for me" required />
+        <label for="ops_involvement_full" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please handle everything for me</span></span></label>
 
         <input id="ops_involvement_monthly" class="form-selector-input" type="radio" name="ops_involvement" value="Collaborate monthly on priorities" required />
         <label for="ops_involvement_monthly" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Collaborate monthly on priorities</span></span></label>
@@ -92,7 +92,7 @@ sitemap:
       </div>
     </div>
 
-    <div class="hr my-5"></div>
+    
 
     <!-- 5) Branding -->
     <div class="form-group">
@@ -111,7 +111,7 @@ sitemap:
 
     <!-- 6) Accessibility -->
     <div class="form-group">
-      <label class="form-label">Do you want the site accessible to all users (ADA/WCAG)?</label>
+      <label class="form-label">Should we make sure your site is easy to use for everyone (inclusive access & compliance)?</label>
       <div class="form-selector-group">
         <input id="accessibility_yes" class="form-selector-input" type="radio" name="accessibility" value="Yes, prioritize accessibility" required />
         <label for="accessibility_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, prioritize accessibility</span></span></label>
@@ -169,7 +169,7 @@ sitemap:
       </div>
     </div>
 
-    <div class="hr my-5"></div>
+    
 
     <!-- 10) SEO -->
     <div class="form-group">
@@ -233,7 +233,7 @@ sitemap:
 
     <!-- 14) Design system -->
     <div class="form-group">
-      <label class="form-label">Do you want a reusable design system to speed future pages?</label>
+      <label class="form-label">Want reusable building blocks so future pages match and ship faster?</label>
       <div class="form-selector-group">
         <input id="ds_yes" class="form-selector-input" type="radio" name="design_system" value="Yes, invest now for speed later" required />
         <label for="ds_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, invest now for speed later</span></span></label>
@@ -250,14 +250,11 @@ sitemap:
     <div class="form-group">
       <label class="form-label">Who should manage domain & DNS changes?</label>
       <div class="form-selector-group">
-        <input id="dns_us" class="form-selector-input" type="radio" name="dns_management" value="Please manage DNS for us" required />
-        <label for="dns_us" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please manage DNS for us</span></span></label>
+        <input id="dns_us" class="form-selector-input" type="radio" name="dns_management" value="Please manage DNS for me" required />
+        <label for="dns_us" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please manage DNS for me</span></span></label>
 
-        <input id="dns_them" class="form-selector-input" type="radio" name="dns_management" value="We’ll manage DNS" required />
-        <label for="dns_them" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">We’ll manage DNS</span></span></label>
-
-        <input id="dns_shared" class="form-selector-input" type="radio" name="dns_management" value="Shared—set us up and we’ll handle ongoing" required />
-        <label for="dns_shared" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Shared—set us up and we’ll handle ongoing</span></span></label>
+        <input id="dns_them" class="form-selector-input" type="radio" name="dns_management" value="I can manage DNS" required />
+        <label for="dns_them" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">I can manage DNS</span></span></label>
       </div>
     </div>
 
