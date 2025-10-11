@@ -1,0 +1,244 @@
+---
+layout: no-footer.njk
+meta:
+  title: New Client Form
+  description: Behind every great brand is the right stack of technology.
+sitemap:
+  changefreq: weekly
+  priority: 0.1
+---
+
+<section class="container-lg mx-auto py-24">
+  <form id="client-form"
+    action="https://formspree.io/f/mnnggoql"
+    method="POST"
+    class="container-sm mx-auto"
+  >
+    <h2 class="text-5 text-weight-500 mb-6 text-center">New Client Form</h2>
+
+    <!-- Contact -->
+    <div class="form-group">
+      <label class="form-label">Your Name</label>
+      <input class="form-input" type="text" name="name" required autocomplete="name" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Your Email</label>
+      <input class="form-input" type="email" name="email" required autocomplete="email" />
+    </div>
+
+    <div class="hr my-5"></div>
+
+    <!-- Existing site? -->
+    <div class="form-group">
+      <label class="form-label">Do you currently have a website that needs updates and ongoing maintenance?</label>
+      <div class="form-selector-group">
+        <input id="hasSiteYes" class="form-selector-input" type="radio" name="has_website" value="yes" required />
+        <label for="hasSiteYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="hasSiteNo" class="form-selector-input" type="radio" name="has_website" value="no" required />
+        <label for="hasSiteNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Hours -->
+    <div class="form-group">
+      <label class="form-label">How many hours per month do you estimate needing for website updates, content changes, and technical support?</label>
+      <select class="form-input" name="monthly_hours" id="monthly_hours">
+        <option value="">Select one</option>
+        <option value="5">5 hours (Essentials)</option>
+        <option value="12">12 hours (Growth)</option>
+        <option value="20">20 hours (Pro)</option>
+        <option value="30">30 hours (Partner)</option>
+        <option value="unlimited">Unlimited</option>
+      </select>
+    </div>
+
+    <!-- New vs updates -->
+    <div class="form-group">
+      <label class="form-label">Do you need a completely new website or just updates to an existing one?</label>
+      <select class="form-input" name="new_or_update" id="new_or_update" required>
+        <option value="">Select one</option>
+        <option value="new">New website</option>
+        <option value="redesign">Redesign existing website</option>
+        <option value="updates">Updates / maintenance only</option>
+      </select>
+    </div>
+
+    <!-- Page count -->
+    <div class="form-group">
+      <label class="form-label">How many custom pages do you need for your website?</label>
+      <input class="form-input" type="number" name="page_count" id="page_count" min="1" placeholder="e.g., 5" />
+    </div>
+
+    <div class="hr my-5"></div>
+
+    <!-- Branding -->
+    <div class="form-group">
+      <label class="form-label">Do you need a new logo and brand identity created?</label>
+      <div class="form-selector-group">
+        <input id="brandYes" class="form-selector-input" type="radio" name="branding_lite" value="yes" required />
+        <label for="brandYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="brandNo" class="form-selector-input" type="radio" name="branding_lite" value="no" required />
+        <label for="brandNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Accessibility -->
+    <div class="form-group">
+      <label class="form-label">Do you need your website to be ADA/WCAG compliant for accessibility?</label>
+      <div class="form-selector-group">
+        <input id="accYes" class="form-selector-input" type="radio" name="accessibility" value="yes" required />
+        <label for="accYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="accNo" class="form-selector-input" type="radio" name="accessibility" value="no" required />
+        <label for="accNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Copywriting -->
+    <div class="form-group">
+      <label class="form-label">Do you need help writing or polishing the content for your website?</label>
+      <div class="form-selector-group">
+        <input id="copyYes" class="form-selector-input" type="radio" name="copywriting_support" value="yes" required />
+        <label for="copyYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="copyNo" class="form-selector-input" type="radio" name="copywriting_support" value="no" required />
+        <label for="copyNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Timeline speed -->
+    <div class="form-group">
+      <label class="form-label">How quickly do you need your project completed?</label>
+      <select class="form-input" name="delivery_speed" id="delivery_speed" required>
+        <option value="">Select one</option>
+        <option value="standard">Standard timeline</option>
+        <option value="expedited">Expedited (rush)</option>
+      </select>
+    </div>
+
+    <div class="hr my-5"></div>
+
+    <!-- SEO -->
+    <div class="form-group">
+      <label class="form-label">Do you want advanced SEO setup including keyword tracking and optimization?</label>
+      <div class="form-selector-group">
+        <input id="seoYes" class="form-selector-input" type="radio" name="seo_booster" value="yes" required />
+        <label for="seoYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="seoNo" class="form-selector-input" type="radio" name="seo_booster" value="no" required />
+        <label for="seoNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- CRO -->
+    <div class="form-group">
+      <label class="form-label">Do you need conversion rate optimization with heatmaps and A/B testing?</label>
+      <div class="form-selector-group">
+        <input id="croYes" class="form-selector-input" type="radio" name="cro_optimization" value="yes" required />
+        <label for="croYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="croNo" class="form-selector-input" type="radio" name="cro_optimization" value="no" required />
+        <label for="croNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Slack -->
+    <div class="form-group">
+      <label class="form-label">Do you want a dedicated Slack channel for priority support communication?</label>
+      <div class="form-selector-group">
+        <input id="slackYes" class="form-selector-input" type="radio" name="dedicated_slack" value="yes" required />
+        <label for="slackYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="slackNo" class="form-selector-input" type="radio" name="dedicated_slack" value="no" required />
+        <label for="slackNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- SLA -->
+    <div class="form-group">
+      <label class="form-label">Do you want guaranteed uptime with an SLA?</label>
+      <div class="form-selector-group">
+        <input id="slaYes" class="form-selector-input" type="radio" name="performance_insurance" value="yes" required />
+        <label for="slaYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="slaNo" class="form-selector-input" type="radio" name="performance_insurance" value="no" required />
+        <label for="slaNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Design System -->
+    <div class="form-group">
+      <label class="form-label">Do you want a reusable design system for future website pages?</label>
+      <div class="form-selector-group">
+        <input id="dsYes" class="form-selector-input" type="radio" name="design_system" value="yes" required />
+        <label for="dsYes" class="form-selector form-selector-label">
+          <span class="form-selector-title">Yes</span>
+        </label>
+
+        <input id="dsNo" class="form-selector-input" type="radio" name="design_system" value="no" required />
+        <label for="dsNo" class="form-selector form-selector-label">
+          <span class="form-selector-title">No</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="hr my-5"></div>
+
+    <!-- Budget (optional) -->
+    <div class="form-group">
+      <label class="form-label">What is your total budget range for this project? <span class="text-charcoal-light">(optional)</span></label>
+      <select class="form-input" name="budget_range" id="budget_range">
+        <option value="">Prefer not to say</option>
+        <option value="under10k">Under $10,000</option>
+        <option value="10k-20k">$10,000–$20,000</option>
+        <option value="20k-35k">$20,000–$35,000</option>
+        <option value="35k+">$35,000+</option>
+      </select>
+    </div>
+
+    <!-- Launch timing -->
+    <div class="form-group">
+      <label class="form-label">When do you need to launch your website?</label>
+      <input class="form-input" type="text" name="launch_timeline" id="launch_timeline" placeholder="e.g., within 6 weeks or by Nov 15" required />
+    </div>
+
+    <button type="submit" class="button button-primary">Submit</button>
+
+    <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" />
+  </form>
+</section>

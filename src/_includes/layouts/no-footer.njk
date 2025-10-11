@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'head.njk' %}
+  <body class="text-layout">
+    <main class="mb-16">
+      {{ content | safe }}
+    </main>
+    {% include 'partials/_state-modal.njk' %}
+  </body>
+</html>

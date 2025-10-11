@@ -2580,7 +2580,7 @@ form button {
     height: 3rem;
     padding: 0 1rem;
     color: #121212;
-    background-color: var(--color-cream);
+    background-color: #fdfdfd;
     border: .125rem rgba(18, 18, 18, .06) solid;
     border-radius: .875rem;
     box-shadow: 0 0 0 4px transparent;
@@ -2648,7 +2648,7 @@ form button {
   }
 
   .form-selector:hover,
-  .form-selector-input:checked + .form-selector-label {
+  .form-selector-input:checked + .form-selector {
     border-color: var(--color-charcoal-light);
     background-color: #13110c21;
     box-shadow: 0 0 0 4px rgba(38, 34, 24, 0.1);
@@ -2681,7 +2681,7 @@ form button {
   .form-selector-title {
     font-size: clamp(0.75rem, 1vw, 0.875rem);
     color: var(--color-charcoal);
-    font-weight: 600;
+    font-weight: 400;
     flex: 1;
     text-align: left;
   }
