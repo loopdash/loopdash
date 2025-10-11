@@ -29,212 +29,236 @@ sitemap:
 
     <div class="hr my-5"></div>
 
-    <!-- Existing site? -->
+    <!-- 1) Situation -->
     <div class="form-group">
-      <label class="form-label">Do you currently have a website that needs updates and ongoing maintenance?</label>
+      <label class="form-label">What best describes your situation?</label>
       <div class="form-selector-group">
-        <input id="hasSiteYes" class="form-selector-input" type="radio" name="has_website" value="yes" required />
-        <label for="hasSiteYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
+        <input id="project_type_fresh" class="form-selector-input" type="radio" name="project_type" value="Starting fresh" required />
+        <label for="project_type_fresh" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Starting fresh</span></span></label>
 
-        <input id="hasSiteNo" class="form-selector-input" type="radio" name="has_website" value="no" required />
-        <label for="hasSiteNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
+        <input id="project_type_redesign" class="form-selector-input" type="radio" name="project_type" value="Redesigning an existing site" required />
+        <label for="project_type_redesign" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Redesigning an existing site</span></span></label>
+
+        <input id="project_type_improve" class="form-selector-input" type="radio" name="project_type" value="Keep site, improve & maintain" required />
+        <label for="project_type_improve" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Keep site, improve &amp; maintain</span></span></label>
       </div>
     </div>
 
-    <!-- Hours -->
+    <!-- 2) Ops comfort -->
     <div class="form-group">
-      <label class="form-label">How many hours per month do you estimate needing for website updates, content changes, and technical support?</label>
-      <select class="form-input" name="monthly_hours" id="monthly_hours">
-        <option value="">Select one</option>
-        <option value="5">5 hours (Essentials)</option>
-        <option value="12">12 hours (Growth)</option>
-        <option value="20">20 hours (Pro)</option>
-        <option value="30">30 hours (Partner)</option>
-        <option value="unlimited">Unlimited</option>
-      </select>
-    </div>
-
-    <!-- New vs updates -->
-    <div class="form-group">
-      <label class="form-label">Do you need a completely new website or just updates to an existing one?</label>
-      <select class="form-input" name="new_or_update" id="new_or_update" required>
-        <option value="">Select one</option>
-        <option value="new">New website</option>
-        <option value="redesign">Redesign existing website</option>
-        <option value="updates">Updates / maintenance only</option>
-      </select>
-    </div>
-
-    <!-- Page count -->
-    <div class="form-group">
-      <label class="form-label">How many custom pages do you need for your website?</label>
-      <input class="form-input" type="number" name="page_count" id="page_count" min="1" placeholder="e.g., 5" />
-    </div>
-
-    <div class="hr my-5"></div>
-
-    <!-- Branding -->
-    <div class="form-group">
-      <label class="form-label">Do you need a new logo and brand identity created?</label>
+      <label class="form-label">How comfortable are you managing updates, plugins, and security?</label>
       <div class="form-selector-group">
-        <input id="brandYes" class="form-selector-input" type="radio" name="branding_lite" value="yes" required />
-        <label for="brandYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
+        <input id="ops_comfort_none" class="form-selector-input" type="radio" name="ops_comfort" value="I’d rather not touch it" required />
+        <label for="ops_comfort_none" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">I’d rather not touch it</span></span></label>
 
-        <input id="brandNo" class="form-selector-input" type="radio" name="branding_lite" value="no" required />
-        <label for="brandNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
+        <input id="ops_comfort_light" class="form-selector-input" type="radio" name="ops_comfort" value="Light updates are fine" required />
+        <label for="ops_comfort_light" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Light updates are fine</span></span></label>
+
+        <input id="ops_comfort_most" class="form-selector-input" type="radio" name="ops_comfort" value="I’m comfortable doing most of it" required />
+        <label for="ops_comfort_most" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">I’m comfortable doing most of it</span></span></label>
       </div>
     </div>
 
-    <!-- Accessibility -->
+    <!-- 3) Ops involvement -->
     <div class="form-group">
-      <label class="form-label">Do you need your website to be ADA/WCAG compliant for accessibility?</label>
+      <label class="form-label">How involved do you want to be in ongoing updates and improvements?</label>
       <div class="form-selector-group">
-        <input id="accYes" class="form-selector-input" type="radio" name="accessibility" value="yes" required />
-        <label for="accYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
+        <input id="ops_involvement_full" class="form-selector-input" type="radio" name="ops_involvement" value="Please handle everything for us" required />
+        <label for="ops_involvement_full" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please handle everything for us</span></span></label>
 
-        <input id="accNo" class="form-selector-input" type="radio" name="accessibility" value="no" required />
-        <label for="accNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
+        <input id="ops_involvement_monthly" class="form-selector-input" type="radio" name="ops_involvement" value="Collaborate monthly on priorities" required />
+        <label for="ops_involvement_monthly" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Collaborate monthly on priorities</span></span></label>
+
+        <input id="ops_involvement_occasional" class="form-selector-input" type="radio" name="ops_involvement" value="Occasional help as needed" required />
+        <label for="ops_involvement_occasional" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Occasional help as needed</span></span></label>
       </div>
     </div>
 
-    <!-- Copywriting -->
+    <!-- 4) Pages (ranges) -->
     <div class="form-group">
-      <label class="form-label">Do you need help writing or polishing the content for your website?</label>
+      <label class="form-label">Roughly how many pages/sections do you need at launch?</label>
       <div class="form-selector-group">
-        <input id="copyYes" class="form-selector-input" type="radio" name="copywriting_support" value="yes" required />
-        <label for="copyYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
+        <input id="page_range_1_5" class="form-selector-input" type="radio" name="page_range" value="1–5" required />
+        <label for="page_range_1_5" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">1–5 (typical “Lite” launch)</span></span></label>
 
-        <input id="copyNo" class="form-selector-input" type="radio" name="copywriting_support" value="no" required />
-        <label for="copyNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
-      </div>
-    </div>
+        <input id="page_range_6_10" class="form-selector-input" type="radio" name="page_range" value="6–10" required />
+        <label for="page_range_6_10" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">6–10</span></span></label>
 
-    <!-- Timeline speed -->
-    <div class="form-group">
-      <label class="form-label">How quickly do you need your project completed?</label>
-      <select class="form-input" name="delivery_speed" id="delivery_speed" required>
-        <option value="">Select one</option>
-        <option value="standard">Standard timeline</option>
-        <option value="expedited">Expedited (rush)</option>
-      </select>
-    </div>
+        <input id="page_range_11_20" class="form-selector-input" type="radio" name="page_range" value="11–20" required />
+        <label for="page_range_11_20" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">11–20</span></span></label>
 
-    <div class="hr my-5"></div>
-
-    <!-- SEO -->
-    <div class="form-group">
-      <label class="form-label">Do you want advanced SEO setup including keyword tracking and optimization?</label>
-      <div class="form-selector-group">
-        <input id="seoYes" class="form-selector-input" type="radio" name="seo_booster" value="yes" required />
-        <label for="seoYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
-
-        <input id="seoNo" class="form-selector-input" type="radio" name="seo_booster" value="no" required />
-        <label for="seoNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
-      </div>
-    </div>
-
-    <!-- CRO -->
-    <div class="form-group">
-      <label class="form-label">Do you need conversion rate optimization with heatmaps and A/B testing?</label>
-      <div class="form-selector-group">
-        <input id="croYes" class="form-selector-input" type="radio" name="cro_optimization" value="yes" required />
-        <label for="croYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
-
-        <input id="croNo" class="form-selector-input" type="radio" name="cro_optimization" value="no" required />
-        <label for="croNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
-      </div>
-    </div>
-
-    <!-- Slack -->
-    <div class="form-group">
-      <label class="form-label">Do you want a dedicated Slack channel for priority support communication?</label>
-      <div class="form-selector-group">
-        <input id="slackYes" class="form-selector-input" type="radio" name="dedicated_slack" value="yes" required />
-        <label for="slackYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
-
-        <input id="slackNo" class="form-selector-input" type="radio" name="dedicated_slack" value="no" required />
-        <label for="slackNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
-      </div>
-    </div>
-
-    <!-- SLA -->
-    <div class="form-group">
-      <label class="form-label">Do you want guaranteed uptime with an SLA?</label>
-      <div class="form-selector-group">
-        <input id="slaYes" class="form-selector-input" type="radio" name="performance_insurance" value="yes" required />
-        <label for="slaYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
-
-        <input id="slaNo" class="form-selector-input" type="radio" name="performance_insurance" value="no" required />
-        <label for="slaNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
-      </div>
-    </div>
-
-    <!-- Design System -->
-    <div class="form-group">
-      <label class="form-label">Do you want a reusable design system for future website pages?</label>
-      <div class="form-selector-group">
-        <input id="dsYes" class="form-selector-input" type="radio" name="design_system" value="yes" required />
-        <label for="dsYes" class="form-selector form-selector-label">
-          <span class="form-selector-title">Yes</span>
-        </label>
-
-        <input id="dsNo" class="form-selector-input" type="radio" name="design_system" value="no" required />
-        <label for="dsNo" class="form-selector form-selector-label">
-          <span class="form-selector-title">No</span>
-        </label>
+        <input id="page_range_21_plus" class="form-selector-input" type="radio" name="page_range" value="21+" required />
+        <label for="page_range_21_plus" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">21+ (complex)</span></span></label>
       </div>
     </div>
 
     <div class="hr my-5"></div>
 
-    <!-- Budget (optional) -->
+    <!-- 5) Branding -->
     <div class="form-group">
-      <label class="form-label">What is your total budget range for this project? <span class="text-charcoal-light">(optional)</span></label>
-      <select class="form-input" name="budget_range" id="budget_range">
-        <option value="">Prefer not to say</option>
-        <option value="under10k">Under $10,000</option>
-        <option value="10k-20k">$10,000–$20,000</option>
-        <option value="20k-35k">$20,000–$35,000</option>
-        <option value="35k+">$35,000+</option>
-      </select>
+      <label class="form-label">Do you want help with your brand (logo, palette, type)?</label>
+      <div class="form-selector-group">
+        <input id="branding_keep" class="form-selector-input" type="radio" name="branding" value="Keep current brand" required />
+        <label for="branding_keep" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Keep current brand</span></span></label>
+
+        <input id="branding_refresh" class="form-selector-input" type="radio" name="branding" value="Light refresh" required />
+        <label for="branding_refresh" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Light refresh</span></span></label>
+
+        <input id="branding_full" class="form-selector-input" type="radio" name="branding" value="Need full brand setup" required />
+        <label for="branding_full" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Need full brand setup</span></span></label>
+      </div>
     </div>
 
-    <!-- Launch timing -->
+    <!-- 6) Accessibility -->
     <div class="form-group">
-      <label class="form-label">When do you need to launch your website?</label>
-      <input class="form-input" type="text" name="launch_timeline" id="launch_timeline" placeholder="e.g., within 6 weeks or by Nov 15" required />
+      <label class="form-label">Do you want the site accessible to all users (ADA/WCAG)?</label>
+      <div class="form-selector-group">
+        <input id="accessibility_yes" class="form-selector-input" type="radio" name="accessibility" value="Yes, prioritize accessibility" required />
+        <label for="accessibility_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, prioritize accessibility</span></span></label>
+
+        <input id="accessibility_maybe" class="form-selector-input" type="radio" name="accessibility" value="Nice to have" required />
+        <label for="accessibility_maybe" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Nice to have</span></span></label>
+
+        <input id="accessibility_no" class="form-selector-input" type="radio" name="accessibility" value="Not needed right now" required />
+        <label for="accessibility_no" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Not needed right now</span></span></label>
+      </div>
+    </div>
+
+    <!-- 7) Copywriting -->
+    <div class="form-group">
+      <label class="form-label">Do you want help writing/polishing your website copy?</label>
+      <div class="form-selector-group">
+        <input id="copy_yes" class="form-selector-input" type="radio" name="copywriting" value="Yes, write/polish core pages" required />
+        <label for="copy_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, write/polish core pages</span></span></label>
+
+        <input id="copy_maybe" class="form-selector-input" type="radio" name="copywriting" value="Maybe—depend on timeline" required />
+        <label for="copy_maybe" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Maybe—depend on timeline</span></span></label>
+
+        <input id="copy_no" class="form-selector-input" type="radio" name="copywriting" value="No, we’ll supply final copy" required />
+        <label for="copy_no" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">No, we’ll supply final copy</span></span></label>
+      </div>
+    </div>
+
+    <!-- 8) Launch target -->
+    <div class="form-group">
+      <label class="form-label">When would you ideally like to launch?</label>
+      <div class="form-selector-group">
+        <input id="launch_3w" class="form-selector-input" type="radio" name="launch_target" value="~3 weeks (Lite pace)" required />
+        <label for="launch_3w" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">~3 weeks (Lite pace)</span></span></label>
+
+        <input id="launch_8_10w" class="form-selector-input" type="radio" name="launch_target" value="8–10 weeks (Core pace)" required />
+        <label for="launch_8_10w" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">8–10 weeks (Core pace)</span></span></label>
+
+        <input id="launch_asap" class="form-selector-input" type="radio" name="launch_target" value="ASAP (I’m open to a rush)" required />
+        <label for="launch_asap" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">ASAP (I’m open to a rush)</span></span></label>
+
+        <input id="launch_flex" class="form-selector-input" type="radio" name="launch_target" value="Flexible" required />
+        <label for="launch_flex" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Flexible</span></span></label>
+      </div>
+    </div>
+
+    <!-- 9) Delivery speed -->
+    <div class="form-group">
+      <label class="form-label">How quickly do you want to move once we begin?</label>
+      <div class="form-selector-group">
+        <input id="speed_standard" class="form-selector-input" type="radio" name="delivery_speed" value="Standard pace" required />
+        <label for="speed_standard" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Standard pace</span></span></label>
+
+        <input id="speed_fast" class="form-selector-input" type="radio" name="delivery_speed" value="Fast track (rush production)" required />
+        <label for="speed_fast" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Fast track (rush production)</span></span></label>
+      </div>
+    </div>
+
+    <div class="hr my-5"></div>
+
+    <!-- 10) SEO -->
+    <div class="form-group">
+      <label class="form-label">Do you want advanced SEO setup + ongoing keyword tracking?</label>
+      <div class="form-selector-group">
+        <input id="seo_monthly" class="form-selector-input" type="radio" name="seo" value="Yes, setup + monthly tracking" required />
+        <label for="seo_monthly" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, setup + monthly tracking</span></span></label>
+
+        <input id="seo_initial" class="form-selector-input" type="radio" name="seo" value="Just initial technical SEO" required />
+        <label for="seo_initial" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Just initial technical SEO</span></span></label>
+
+        <input id="seo_none" class="form-selector-input" type="radio" name="seo" value="Not needed" required />
+        <label for="seo_none" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Not needed</span></span></label>
+      </div>
+    </div>
+
+    <!-- 11) CRO -->
+    <div class="form-group">
+      <label class="form-label">Do you want conversion optimization (analytics, heatmaps, A/B tests)?</label>
+      <div class="form-selector-group">
+        <input id="cro_yes" class="form-selector-input" type="radio" name="cro" value="Yes, ongoing CRO" required />
+        <label for="cro_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, ongoing CRO</span></span></label>
+
+        <input id="cro_later" class="form-selector-input" type="radio" name="cro" value="Maybe later" required />
+        <label for="cro_later" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Maybe later</span></span></label>
+
+        <input id="cro_none" class="form-selector-input" type="radio" name="cro" value="Not needed" required />
+        <label for="cro_none" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Not needed</span></span></label>
+      </div>
+    </div>
+
+    <!-- 12) Communication preference -->
+    <div class="form-group">
+      <label class="form-label">How would you like to communicate with us?</label>
+      <div class="form-selector-group">
+        <input id="comm_slack" class="form-selector-input" type="radio" name="comm_pref" value="Private Slack channel" required />
+        <label for="comm_slack" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Private Slack channel</span></span></label>
+
+        <input id="comm_email_calls" class="form-selector-input" type="radio" name="comm_pref" value="Email + scheduled calls" required />
+        <label for="comm_email_calls" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Email + scheduled calls</span></span></label>
+
+        <input id="comm_email_only" class="form-selector-input" type="radio" name="comm_pref" value="Email only" required />
+        <label for="comm_email_only" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Email only</span></span></label>
+      </div>
+    </div>
+
+    <!-- 13) SLA -->
+    <div class="form-group">
+      <label class="form-label">Do you want guaranteed uptime & performance monitoring (SLA)?</label>
+      <div class="form-selector-group">
+        <input id="sla_yes" class="form-selector-input" type="radio" name="sla" value="Yes, peace of mind" required />
+        <label for="sla_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, peace of mind</span></span></label>
+
+        <input id="sla_later" class="form-selector-input" type="radio" name="sla" value="Maybe later" required />
+        <label for="sla_later" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Maybe later</span></span></label>
+
+        <input id="sla_none" class="form-selector-input" type="radio" name="sla" value="Not needed" required />
+        <label for="sla_none" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Not needed</span></span></label>
+      </div>
+    </div>
+
+    <!-- 14) Design system -->
+    <div class="form-group">
+      <label class="form-label">Do you want a reusable design system to speed future pages?</label>
+      <div class="form-selector-group">
+        <input id="ds_yes" class="form-selector-input" type="radio" name="design_system" value="Yes, invest now for speed later" required />
+        <label for="ds_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, invest now for speed later</span></span></label>
+
+        <input id="ds_later" class="form-selector-input" type="radio" name="design_system" value="Maybe later" required />
+        <label for="ds_later" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Maybe later</span></span></label>
+
+        <input id="ds_none" class="form-selector-input" type="radio" name="design_system" value="Not needed" required />
+        <label for="ds_none" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Not needed</span></span></label>
+      </div>
+    </div>
+
+    <!-- 15) DNS management -->
+    <div class="form-group">
+      <label class="form-label">Who should manage domain & DNS changes?</label>
+      <div class="form-selector-group">
+        <input id="dns_us" class="form-selector-input" type="radio" name="dns_management" value="Please manage DNS for us" required />
+        <label for="dns_us" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please manage DNS for us</span></span></label>
+
+        <input id="dns_them" class="form-selector-input" type="radio" name="dns_management" value="We’ll manage DNS" required />
+        <label for="dns_them" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">We’ll manage DNS</span></span></label>
+
+        <input id="dns_shared" class="form-selector-input" type="radio" name="dns_management" value="Shared—set us up and we’ll handle ongoing" required />
+        <label for="dns_shared" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Shared—set us up and we’ll handle ongoing</span></span></label>
+      </div>
     </div>
 
     <button type="submit" class="button button-primary">Submit</button>
