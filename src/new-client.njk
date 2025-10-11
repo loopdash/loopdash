@@ -18,16 +18,24 @@ sitemap:
 
     <!-- Contact -->
     <div class="form-group">
-      <label class="form-label">Your Name</label>
-      <input class="form-input" type="text" name="name" required autocomplete="name" />
+      <label class="form-label" for="name">Your Name</label>
+      <input class="form-input" id="name" type="text" name="name" required autocomplete="name" />
     </div>
 
     <div class="form-group">
-      <label class="form-label">Your Email</label>
-      <input class="form-input" type="email" name="email" required autocomplete="email" />
+      <label class="form-label" for="email">Your Email</label>
+      <input class="form-input" id="email" type="email" name="email" required autocomplete="email" />
     </div>
 
-    
+    <div class="form-group">
+      <label class="form-label" for="organization">Organization or Business</label>
+      <input class="form-input" id="organization" type="text" name="organization" required autocomplete="organization" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="domain">Domain</label>
+      <input class="form-input" id="domain" type="text" name="domain" autocomplete="url" />
+    </div>
 
     <!-- 1) Situation -->
     <div class="form-group">
@@ -39,7 +47,7 @@ sitemap:
         <input id="project_type_redesign" class="form-selector-input" type="radio" name="project_type" value="Redesigning an existing site" required />
         <label for="project_type_redesign" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Redesigning an existing site</span></span></label>
 
-        <input id="project_type_improve" class="form-selector-input" type="radio" name="project_type" value="Keep site, improve & maintain" required />
+        <input id="project_type_improve" class="form-selector-input" type="radio" name="project_type" value="Keep site, improve &amp; maintain" required />
         <label for="project_type_improve" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Keep site, improve &amp; maintain</span></span></label>
       </div>
     </div>
@@ -92,8 +100,6 @@ sitemap:
       </div>
     </div>
 
-    
-
     <!-- 5) Branding -->
     <div class="form-group">
       <label class="form-label">Do you want help with your brand (logo, palette, type)?</label>
@@ -111,7 +117,7 @@ sitemap:
 
     <!-- 6) Accessibility -->
     <div class="form-group">
-      <label class="form-label">Should we make sure your site is easy to use for everyone (inclusive access & compliance)?</label>
+      <label class="form-label">Should we make sure your site is easy to use for everyone (inclusive access &amp; compliance)?</label>
       <div class="form-selector-group">
         <input id="accessibility_yes" class="form-selector-input" type="radio" name="accessibility" value="Yes, prioritize accessibility" required />
         <label for="accessibility_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, prioritize accessibility</span></span></label>
@@ -169,8 +175,6 @@ sitemap:
       </div>
     </div>
 
-    
-
     <!-- 10) SEO -->
     <div class="form-group">
       <label class="form-label">Do you want advanced SEO setup + ongoing keyword tracking?</label>
@@ -218,7 +222,7 @@ sitemap:
 
     <!-- 13) SLA -->
     <div class="form-group">
-      <label class="form-label">Do you want guaranteed uptime & performance monitoring (SLA)?</label>
+      <label class="form-label">Do you want guaranteed uptime &amp; performance monitoring (SLA)?</label>
       <div class="form-selector-group">
         <input id="sla_yes" class="form-selector-input" type="radio" name="sla" value="Yes, peace of mind" required />
         <label for="sla_yes" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Yes, peace of mind</span></span></label>
@@ -248,7 +252,7 @@ sitemap:
 
     <!-- 15) DNS management -->
     <div class="form-group">
-      <label class="form-label">Who should manage domain & DNS changes?</label>
+      <label class="form-label">Who should manage domain &amp; DNS changes?</label>
       <div class="form-selector-group">
         <input id="dns_us" class="form-selector-input" type="radio" name="dns_management" value="Please manage DNS for me" required />
         <label for="dns_us" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Please manage DNS for me</span></span></label>
@@ -259,7 +263,6 @@ sitemap:
     </div>
 
     <button type="submit" class="button button-primary">Submit</button>
-
     <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you" />
   </form>
 </section>

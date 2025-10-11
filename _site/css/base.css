@@ -2662,7 +2662,7 @@ form button {
 .form-group .form-label {
     display: block;
     font-weight: 500;
-    color: var(--color-charcoal-light);
+    color: var(--color-charcoal);
     font-size: clamp(0.875rem, 1.2vw, 1rem);
     margin-bottom: calc(var(--spacing) * 1.25)
   }
@@ -2675,13 +2675,23 @@ form button {
 
   .form-selector-group {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Creates 2 equal columns */
+    grid-template-columns: 1fr; /* Creates 2 equal columns */
     grid-template-rows: auto auto;  /* Creates 2 rows that size to content */
     gap: 12px;
     margin-bottom: calc(var(--spacing) * 5);
   }
 
+  @media only screen and (min-width: 768px) {
+
+  .form-selector-group {
+      
+      grid-template-columns: 1fr 1fr
+  }
+    }
+
   .form-selector {
+    cursor: pointer;
+    display: inline-block;
     flex: 1 1 calc(33.333% - 12px); /* 3 cards per row */
     min-width: 180px;
     border-radius: 12px;
@@ -2705,15 +2715,22 @@ form button {
     border-color: var(--color-focus);
     background-color: #1f6aff17;
   }
+  
+  .form-selector-input:focus-visible + .form-selector {
+    outline: 2px solid #1f69ff42;
+    outline-offset: 3px;
+  }
+
 
   .form-selector-input {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .form-selector-label {
     display: flex;
     align-items: center;
-    width: 100%;
     gap: 12px;
     cursor: pointer;
   }
@@ -2732,7 +2749,7 @@ form button {
 
   .form-selector-title {
     font-size: clamp(0.75rem, 1vw, 0.875rem);
-    color: var(--color-charcoal);
+    color: var(--color-charcoal-light);
     font-weight: 400;
     flex: 1;
     text-align: left;
