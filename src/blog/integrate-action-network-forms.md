@@ -21,7 +21,9 @@ url: /blog/integrate-action-network-forms
 ---
 
 
-
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/E7Hxw28hGsk?si=N_Z3ChH26u7uPzEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 In the landscape of digital organizing, **Action Network** has earned its place as a core utility—empowering nonprofits to mobilize supporters through email, petitions, events, and fundraising. The platform's backend functionality is genuinely impressive, offering robust tools for list management, event coordination, and campaign tracking that have become essential for modern advocacy work. But for all its backend power, the frontend experience—particularly when it comes to embedding forms on your website—can feel like a step back in time, arriving on your carefully crafted pages looking like they just time-traveled from 2009 with tight padding, misaligned labels, and default system fonts that clash with your brand's visual identity.
 
