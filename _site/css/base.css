@@ -2998,7 +2998,6 @@ a.card-default:hover,
 @media only screen and (min-width: 1024px) {
     .single-blog-layout .blog-hero {
       display: flex;
-      flex-direction: row;
       height: 100vh;
     }
 

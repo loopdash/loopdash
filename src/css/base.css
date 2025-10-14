@@ -2943,7 +2943,6 @@ a.card-default {
   .single-blog-layout {
     .blog-hero {
       display: flex;
-      flex-direction: row;
       height: 100vh;
 
       .blog-headline {

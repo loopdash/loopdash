@@ -4,7 +4,7 @@ title: How to Integrate Action Network Forms Seamlessly Into Your Website
 meta:
   title: How to Integrate Action Network Forms Seamlessly Into Your Website  
   description: A gentle technical guide for nonprofits on embedding Action Network forms with styling tips, accessibility notes, and layout strategies for modern websites.  
-  image: ./src/img/blogs/organic-leaf-shapes.png  
+  image: ./src/img/blogs/action-network-optimization-kit.png  
   alt: Abstract leaf-like forms swirling in soft motion against a minimalist cream and green backdrop—stylized, organic, and clean  
 sitemap:
   changefreq: weekly  
@@ -19,6 +19,11 @@ tags:
 date: 2025-06-02  
 url: /blog/integrate-action-network-forms  
 ---
+
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/E7Hxw28hGsk?si=N_Z3ChH26u7uPzEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 In the landscape of digital organizing, **Action Network** has earned its place as a core utility—empowering nonprofits to mobilize supporters through email, petitions, events, and fundraising. The platform's backend functionality is genuinely impressive, offering robust tools for list management, event coordination, and campaign tracking that have become essential for modern advocacy work. But for all its backend power, the frontend experience—particularly when it comes to embedding forms on your website—can feel like a step back in time, arriving on your carefully crafted pages looking like they just time-traveled from 2009 with tight padding, misaligned labels, and default system fonts that clash with your brand's visual identity.
 
@@ -38,7 +43,7 @@ Before you even write a line of CSS, you need to choose the right embed method f
 
 ## 2. Let Your Site's Styles Do the First Pass
 
-With raw HTML embeds, Action Network forms will inherit your site's base CSS—**if** you've written it well. This inheritance is actually one of the most powerful aspects of using raw HTML embeds, as it means your forms will automatically pick up your site's typography, color palette, and spacing without requiring any additional work. When your global styles are thoughtfully crafted, fonts, button styles, label spacing, and other design elements will carry over naturally, creating a seamless visual experience that feels intentional rather than patched together.
+With raw HTML embeds, Action Network forms will inherit your site's base CSS — if you've written it well. This inheritance is actually one of the most powerful aspects of using raw HTML embeds, as it means your forms will automatically pick up your site's typography, color palette, and spacing without requiring any additional work. When your global styles are thoughtfully crafted, fonts, button styles, label spacing, and other design elements will carry over naturally, creating a seamless visual experience that feels intentional rather than patched together.
 
 The key is ensuring your global styles comprehensively cover all the form elements you're likely to encounter. This means creating base styles for inputs, selects, textareas, labels, and buttons that reflect your brand's design language and provide a consistent foundation for all interactive elements across your site. Well-crafted global styles not only make Action Network forms look better immediately, but they also create a system that works for any future forms or interactive elements you might add to your site.
 
@@ -76,6 +81,7 @@ button:hover {
 ```
 
 If you're using Tailwind CSS, you can skip custom CSS entirely and simply apply utility classes directly inside the HTML markup returned from Action Network. This approach gives you the same level of control while working within a utility-first framework that many teams find more maintainable and consistent.
+
 
 ## 3. Structure the Layout for Clarity and Flow
 
