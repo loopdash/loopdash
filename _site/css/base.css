@@ -1032,6 +1032,11 @@ blockquote p {
     line-height: 1;
   }
 
+.nav .reveal.visible{
+    -webkit-backdrop-filter: blur(17px);
+            backdrop-filter: blur(17px);
+  }
+
 
 /* Hamburger-to-X Transition */
 .menu-toggle {

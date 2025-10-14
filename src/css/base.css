@@ -1028,6 +1028,10 @@ blockquote p {
   li {
     line-height: 1;
   }
+
+  .reveal.visible{
+    backdrop-filter: blur(17px);
+  }
 }
 
 
