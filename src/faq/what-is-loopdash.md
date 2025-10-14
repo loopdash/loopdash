@@ -9,6 +9,7 @@ sitemap:
 tags:
   - faq
   - getting-started
+  - homepage
 date: 2023-03-29
 url: /faq/what-is-loopdash
 ---

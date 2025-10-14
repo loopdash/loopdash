@@ -9,6 +9,7 @@ sitemap:
 tags: 
   - faq
   - getting-started
+  - homepage
 date: 2023-06-28
 url: /faq/what-kind-of-projects-do-you-work-on
 ---

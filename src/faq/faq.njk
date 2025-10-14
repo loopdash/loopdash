@@ -60,16 +60,3 @@ sitemap:
     </div>
   {% endfor %}
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const currentHash = window.location.hash; // Get the current hash from the URL
-    const articles = document.querySelectorAll('article'); // Select all article elements
-
-    articles.forEach(article => {
-      if (article.dataset.id === currentHash) { // Compare hash with article's data-id
-        article.classList.add('opened'); // Add the "opened" class if matched
-      }
-    });
-  });
-</script>

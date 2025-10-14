@@ -9,6 +9,7 @@ sitemap:
 tags:
   - faq
   - getting-started
+  - homepage
 date: 2023-03-24
 url: /faq/how-do-i-become-a-client
 ---

@@ -93,6 +93,45 @@ sitemap:
   <a href="/projects" class="button button-primary plausible-event-name=More+Projects">More Projects</a>
 </div>
 
+<div class="bg-green-waterloo py-10">
+<section class="container-sm mx-auto mt-16">
+  <div class="text-center mb-12">
+    <h2 class="text-8 text-weight-600 text-cream-dark">Frequently Asked Questions</h2>
+    <p class="text-5 text-weight-400 text-cream-dark">Quick answers to common questions about our services</p>
+  </div>
+  
+  <div class="faq-container">
+    {% set homepageFaqCount = 0 %}
+    {% for question in collections.faq | reverse %}
+      {% if "homepage" in question.data.tags and homepageFaqCount < 6 %}
+        {% set homepageFaqCount = homepageFaqCount + 1 %}
+        {% set question_id = question.data.url | replace("/faq/", "") %}
+        <article 
+          class="card card-question rounded-7 mb-3 reveal" 
+          id="{{ question_id }}" 
+          data-id="#{{ question_id }}">
+          <div class="card-header" tabindex="0" role="button" aria-expanded="false" aria-controls="content-{{ homepageFaqCount }}">
+            <h3 class="text-4 text-cream-dark text-weight-400 my-0">{{ question.data.question }}</h3>
+          </div>
+          <div class="card-body text-4 text-cream-dark text-weight-400" id="content-{{ homepageFaqCount }}">
+            {{ question.templateContent | safe }}
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
+    
+    {% if homepageFaqCount == 0 %}
+      <div class="text-center py-8">
+        <p class="text-4 text-charcoal-light">No FAQs are currently marked for homepage display. Add the "homepage" tag to FAQ files to show them here.</p>
+      </div>
+    {% endif %}
+  </div>
+  
+  <div class="text-center mt-8">
+    <a href="/faq" class="text-white plausible-event-name=Home+FAQ+View+All">View All FAQs</a>
+  </div>
+</section>
+</div>
 <section class="cta">
   <div class="cta-container">
     <h4 class="text-10 text-weight-600">Make your site work for you.</h4>

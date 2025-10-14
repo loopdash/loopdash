@@ -142,23 +142,45 @@ Cal("init", "meet", {origin:"https://cal.com"});
   Cal.ns.meet("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
   
 
+  // FAQ accordion functionality - works on both FAQ page and homepage
   const cards = document.querySelectorAll(".card-question");
   cards.forEach((card) => {
     const header = card.querySelector(".card-header");
     const body = card.querySelector(".card-body");
 
-    header.addEventListener("click", () => {
-      console.log('click');
-      // Toggle the 'opened' class
-      card.classList.toggle("opened");
+    header.addEventListener("click", (e) => {
+      e.preventDefault();
+      
+      const isOpen = card.classList.contains("opened");
+      
+      // Close all other FAQ items (accordion behavior)
+      document.querySelectorAll(".card-question").forEach(item => {
+        item.classList.remove("opened");
+      });
+      
+      // Toggle current item
+      if (!isOpen) {
+        card.classList.add("opened");
+      }
     });
 
     // Allow keyboard accessibility for toggling
     header.addEventListener("keypress", (event) => {
       if (event.key === "Enter" || event.key === " ") {
-        card.classList.toggle("opened");
+        event.preventDefault();
+        header.click();
       }
     });
+  });
+
+  // Handle hash in URL to open specific FAQ (from working FAQ page)
+  const currentHash = window.location.hash;
+  const articles = document.querySelectorAll('article');
+
+  articles.forEach(article => {
+    if (article.dataset.id === currentHash) {
+      article.classList.add('opened');
+    }
   });
 
   // Check if the current page is /support or /support/

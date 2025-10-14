@@ -9,6 +9,7 @@ priority: 0.6
 tags:
 - faq
 - communication
+- homepage
 date: 2024-12-24
 url: /faq/primary-contact
 ---

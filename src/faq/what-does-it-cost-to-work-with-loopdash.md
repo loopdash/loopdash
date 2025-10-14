@@ -9,6 +9,7 @@ sitemap:
 tags:
   - faq
   - payment
+  - homepage
 date: 2023-03-27
 url: /faq/what-does-it-cost-to-work-with-loopdash
 ---

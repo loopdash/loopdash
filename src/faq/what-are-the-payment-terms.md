@@ -9,6 +9,7 @@ sitemap:
 tags:
   - faq
   - payment
+  - homepage
 date: 2023-03-26
 url: /faq/what-are-the-payment-terms
 ---

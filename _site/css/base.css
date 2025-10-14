@@ -408,6 +408,24 @@ blockquote p {
     padding-top: calc(var(--spacing) * 12);
   }
 
+.bg-green-waterloo {
+  background: var(--color-green-waterloo);
+
+}
+
+.bg-green-waterloo .card-question,
+  .bg-green-waterloo .card-question.opened .card-header {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+.bg-green-waterloo .card-question h3:after {
+      content: "";
+      background-image: url("../img/icons/plus-circle-white.svg");
+    }
+
+.bg-green-waterloo .card-question:hover {
+    background-color: rgba(255,255,255, .06);
+  }
 
 /* Flex */
 .flex {
