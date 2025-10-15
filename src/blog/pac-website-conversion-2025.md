@@ -24,43 +24,43 @@ PAC websites need to do one thing well: convert. Whether that's signups, donatio
 
 Here's how to build a high-conversion PAC site for 2025:
 
-1. **Optimize for Mobile First**
+## Optimize for Mobile First
 
-   Your supporters are on their phones. Make sure:
+Your supporters are on their phones. Make sure:
 
-   - CTAs appear within the first scroll
-   - Navigation is clean and clear
-   - Forms use large tap targets and auto-fill
+- CTAs appear within the first scroll
+- Navigation is clean and clear
+- Forms use large tap targets and auto-fill
 
-   A 2-second delay on mobile drops conversions by 30%.
+A 2-second delay on mobile drops conversions by 30%.
 
-2. **Donation Flows Should Feel Easy**
+## Donation Flows Should Feel Easy
 
-   Your donation form should:
+Your donation form should:
 
-   - Offer preset amounts tied to specific outcomes (e.g. $20 = 500 texts)
-   - Include Apple Pay, Google Pay, Venmo, and ACH
-   - Highlight recurring giving without pushing too hard
+- Offer preset amounts tied to specific outcomes (e.g. $20 = 500 texts)
+- Include Apple Pay, Google Pay, Venmo, and ACH
+- Highlight recurring giving without pushing too hard
 
-3. **Capture Emails Everywhere**
+## Capture Emails Everywhere
 
-   Email is still the most effective channel. Use:
+Email is still the most effective channel. Use:
 
-   - Exit-intent popups with strong value props
-   - Forms at the top, middle, and end of key pages
-   - Gated content like reports or endorsements
+- Exit-intent popups with strong value props
+- Forms at the top, middle, and end of key pages
+- Gated content like reports or endorsements
 
-   Even a 1% improvement in email capture compounds over a campaign cycle.
+Even a 1% improvement in email capture compounds over a campaign cycle.
 
-4. **Reinforce Trust With Design**
+## Reinforce Trust With Design
 
-   You're asking people to give—make sure the site:
+You're asking people to give—make sure the site:
 
-   - Looks fast, clean, and credible
-   - Shows where the money goes
-   - Includes compliance info in the footer
+- Looks fast, clean, and credible
+- Shows where the money goes
+- Includes compliance info in the footer
 
-   Small trust cues add up. Especially for first-time givers.
+Small trust cues add up. Especially for first-time givers.
 
 **Final Thoughts: Form Follows Function**
 

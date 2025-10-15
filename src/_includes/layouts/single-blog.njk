@@ -4,26 +4,40 @@
   <body class="blog-layout">
     {% include 'nav.njk' %}
     <main class="single-blog-layout mb-12">
-      <div class="blog-hero mx-auto">
-        <div class="blog-headline">
-          <div class="blog-headline-text">
+      <div class="blog-hero">
+        <div class="blog-hero-block">
+          <div class="blog-hero-title-details">
             <div class="mb-4">
               <p class="text-2 text-charcoal-light text-weight-300">{{ date | readableDate }}</p>
             </div>
-            <h1 class="text-12 mb-3 text-weight-700">{{ title }}</h1>
+            <h1 class="text-10 mb-3 text-weight-700">{{ title }}</h1>
             <p class="text-4 text-charcoal-light text-weight-300">{{ meta.description }}</p>
+            <div class="flex gap-0.5 items-center gap-4 mt-8">
+              {% image "./src/img/blogs/garybunofsky.jpg", "Image description", [400, 780], "avatar" %}
+              <div class="author-details">
+                <p class="text-2 mb-1">Gary Bunofsky</p>
+                <p class="text-2 text-charcoal-light">Lead Developer</p>
+              </div>
+            </div>
           </div>
+          <div class="blog-hero-image">
+          {% image meta.image, "Image description", [400, 780], "image" %}
         </div>
-        <div class="blog-image">
-          {% image meta.image, "Image description", [300, 960], "image" %}
         </div>
       </div>
+      </div>
 
-      <section class="container-sm mx-auto content prose">
+      <section class="container-xl mx-auto content bg-white prose">
         <div class="mt-12 mb-12">
-          
-          <div class="mb-12 mx-auto col-6 text-5">
-            {{ content | safe }}
+          <div class="blog-content-grid">
+            <div class="blog-sidebar">
+              {% include 'partials/_table-of-contents.njk' %}
+            </div>
+            <div class="blog-main-content">
+              <div class="mb-12 text-5">
+                {{ content | safe }}
+              </div>
+            </div>
           </div>
         </div>
         <div class="mb-12 mt-8 hr"></div>
@@ -34,3 +48,4 @@
     {% include 'footer.njk' %}
   </body>
 </html>
+       

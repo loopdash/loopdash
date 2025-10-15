@@ -21,20 +21,20 @@ url: /blog/data-policy-impact-2025
 
 Data is more than numbers—it's a narrative. In 2025, think tanks must harness data to drive policy changes effectively.
 
-1. **Integrate Real-Time Analytics**
+## Integrate Real-Time Analytics
 
-   - Use dashboards to track policy impact
-   - Visualize data to communicate complex ideas simply
+- Use dashboards to track policy impact
+- Visualize data to communicate complex ideas simply
 
-2. **Collaborate with Data Scientists**
+## Collaborate with Data Scientists
 
-   - Partner with experts to interpret data accurately
-   - Develop predictive models to forecast policy outcomes
+- Partner with experts to interpret data accurately
+- Develop predictive models to forecast policy outcomes
 
-3. **Publish Interactive Reports**
+## Publish Interactive Reports
 
-   - Use tools that allow users to engage with data
-   - Make reports shareable and accessible
+- Use tools that allow users to engage with data
+- Make reports shareable and accessible
 
 **Final Thoughts: Data as a Catalyst**
 

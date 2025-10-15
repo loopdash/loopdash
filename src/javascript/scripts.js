@@ -16,8 +16,116 @@ console.log(`
 -->
 `);
 
+// Add IDs to headings for table of contents
+function addHeadingIds() {
+  const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
+  headings.forEach(heading => {
+    if (!heading.id) {
+      const text = heading.textContent.trim();
+      const id = text.toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
+      heading.id = id;
+    }
+  });
+}
+
+// Generate table of contents
+function generateTableOfContents() {
+  const tocList = document.getElementById('toc-list');
+  if (!tocList) return;
+  
+  const headings = document.querySelectorAll('h2');
+  
+  if (headings.length === 0) {
+    tocList.closest('.table-of-contents').style.display = 'none';
+    return;
+  }
+  
+  headings.forEach(heading => {
+    const text = heading.textContent.trim();
+    const id = text.toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+    
+    heading.id = id;
+    
+    // Remove numbers from the display text
+    const displayText = text.replace(/^\d+\.\s*/, '');
+    
+    const li = document.createElement('li');
+    li.className = 'toc-item';
+    
+    const a = document.createElement('a');
+    a.href = '#' + id;
+    a.className = 'toc-link';
+    a.textContent = displayText;
+    
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+}
+
+// Handle table of contents scroll positioning
+function handleTableOfContentsScroll() {
+  const toc = document.querySelector('.table-of-contents');
+  if (!toc) return;
+  
+  const blogHero = document.querySelector('.blog-hero');
+  if (!blogHero) return;
+  
+  let isFixed = false;
+  let ticking = false;
+  
+  function updateTocPosition() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const heroBottom = blogHero.offsetTop + blogHero.offsetHeight;
+    
+    // Check if we should make the TOC fixed
+    if (scrollTop > heroBottom && !isFixed) {
+      // Make TOC fixed
+      toc.classList.add('fixed');
+      isFixed = true;
+    } else if (scrollTop <= heroBottom && isFixed) {
+      // Remove fixed positioning
+      toc.classList.remove('fixed');
+      isFixed = false;
+    }
+    
+    ticking = false;
+  }
+  
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(updateTocPosition);
+      ticking = true;
+    }
+  }
+  
+  // Initial check
+  updateTocPosition();
+  
+  // Listen for scroll events with throttling
+  window.addEventListener('scroll', requestTick);
+  
+  // Listen for resize events to recalculate positioning
+  window.addEventListener('resize', requestTick);
+}
+
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
+  // Add IDs to headings for table of contents
+  addHeadingIds();
+  
+  // Generate table of contents
+  generateTableOfContents();
+  
+  // Handle table of contents scroll positioning
+  handleTableOfContentsScroll();
 
   // Initialize fullPage.js only when present and when #fullpage exists
   try {

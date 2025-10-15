@@ -135,6 +135,27 @@ export default function (eleventyConfig) {
   // Limit filter
   eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
+  // Table of contents filter
+  eleventyConfig.addNunjucksFilter("extractHeadings", (content) => {
+    if (!content) return [];
+    const lines = content.split('\n');
+    const headings = [];
+    
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('##') && !trimmed.startsWith('###')) {
+        const headingText = trimmed.replace(/^##\s*/, '').trim();
+        const headingId = headingText
+          .toLowerCase()
+          .replace(/\s+/g, '-')
+          .replace(/[^a-z0-9\-]/g, '');
+        headings.push({ text: headingText, id: headingId });
+      }
+    }
+    
+    return headings;
+  });
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(new Date(dateObj), { zone: 'utc' })
       .toFormat("LLLL d',' yyyy"); // Example: June 1, 2025
