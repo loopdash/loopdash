@@ -8,15 +8,15 @@
   {% set metaTitle = meta.title + " - Loopdash" %}
 {%- endif -%}
 
-{%- if (metaImage) -%}
-  {% set metaImage = meta.image %}
+{%- if layout == "single-blog.njk" and meta.image -%}
+  {% set metaImage = meta.image | replace("./src/img/", "../../img/") | replace("/blogs/", "/") | replace(".jpg", ".jpeg") | replace(".png", "-780.png") | replace(".jpeg", "-780.jpeg") | replace(".webp", "-780.webp") %}
 {%- else -%}
   {% set metaImage =  "https://res.cloudinary.com/loopdash/image/upload/l_text:dm-sans-bold.ttf_116_letter_spacing_-5:" + (meta.title | urlencode) + ",co_rgb:584e46,g_south,y_-20,g_west,x_60/l_loopdashmark,w_216,h_24,g_north,y_210,g_west,x_60/computer.png" %}
 {%- endif -%}
 
 <meta charset="UTF-8">
 <title>{{ metaTitle }}</title>
-<meta name="description" content="{{ description | safe }}">
+<meta name="description" content="{{ meta.description | safe }}">
 <meta name="keywords" content="Loopdash, web design, web development, WordPress, hosting, website maintenance, SEO, digital agency, website redesign, responsive design, nonprofit websites">
 <meta name="author" content="Loopdash">
 <link rel="canonical" href="https://loopdash.com{{ page.url | safe }}"/>
@@ -24,20 +24,20 @@
 
 <!-- Google tags -->
 <meta itemprop="name" content="loopdash">
-<meta itemprop="description" content="{{ description | safe }}">
+<meta itemprop="description" content="{{ meta.description | safe }}">
 <meta itemprop="image" content="{{ metaImage }}">
 
 <!-- Facebook tags -->
 <meta property="og:url" content="https://loopdash.com{{ page.url | safe }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ metaTitle }}">
-<meta property="og:description" content="{{ description | safe }}">
+<meta property="og:description" content="{{ meta.description | safe }}">
 <meta property="og:image" content="{{ metaImage }}">
 
 <!-- Twitter tags -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ metaTitle }}">
-<meta name="twitter:description" content="{{ description | safe }}">
+<meta name="twitter:description" content="{{ meta.description | safe }}">
 <meta name="twitter:image" property="og:image" content="{{ metaImage }}">
 <meta name="robots" content="index, follow"/>
 <meta name="googlebot" content="index, follow"/>

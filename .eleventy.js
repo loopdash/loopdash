@@ -88,6 +88,12 @@ export default function (eleventyConfig) {
         widths: widths,
         formats: ["avif", "webp", "png", "jpeg", "jpg"],
         outputDir: "./_site/img",
+        filenameFormat: function (id, src, width, format, options) {
+          // Extract the original filename without extension
+          const originalName = path.basename(src, path.extname(src));
+          // Return format: originalname-width.format
+          return `${originalName}-${width}.${format}`;
+        }
       });
 
       let imageAttributes = {
