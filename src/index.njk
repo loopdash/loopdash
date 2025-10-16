@@ -87,14 +87,38 @@ sitemap:
         <div class="card card-flat py-8 px-8">
           <div class="container-xxs mb-10">
             <h3 class="text-4 text-weight-500">An extension of your team.</h3>
-            <p class="text-3 text-charcoal-light text-weight-400">When the launch is live and stakes are high, we’re already in the thread. Real feedback below.</p>
+            <p class="text-3 text-charcoal-light text-weight-400">When the launch is live and stakes are high, we’re already in the thread. We plug into your Slack and fix things fast to your campaigns moving.</p>
           </div>
-            <div class="mx-auto">
-              {% svgIcon "./src/img/team-extension.svg" %}
+          <div class="mx-auto team-extension-carousel">
+            <div class="carousel-container">
+              <div class="carousel-item">
+                {% svgIcon "./src/img/team-extension-1.svg" %}
+              </div>
+              <div class="carousel-item">
+                {% svgIcon "./src/img/team-extension-2.svg" %}
+              </div>
+              <div class="carousel-item">
+                {% svgIcon "./src/img/team-extension-1.svg" %}
+              </div>
+              <div class="carousel-item">
+                {% svgIcon "./src/img/team-extension-2.svg" %}
+              </div>
             </div>
+          </div>
+          <div class="text-center">
+            <a href="/testimonials" class="text-charcoal-light">View testimonials →</a>
+          </div>
         </div>
       </div>
-    </div>
+    {# <div class="feature reveal">
+      <div class="card card-flat py-8 px-8">
+        <div class="container-xxs mb-10">
+          <h3 class="text-4 text-weight-500">Report issues 10x faster.</h3>
+          <p class="text-3 text-charcoal-light text-weight-400">Send feedback and improvements straight from your website to your development team.</p>
+        </div>
+      </div>
+    </div>#}
+  </section>
     
     {#<div class="feature reveal">
         <div class="card card-flat py-8 px-8">

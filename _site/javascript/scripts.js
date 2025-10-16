@@ -528,19 +528,61 @@ function rotateElement(selector) {
     });
   }
 
+    // Team Extension Stacked Carousel
+    const carouselContainer = document.querySelector('.carousel-container');
+    if (carouselContainer) {
+      const carouselItems = carouselContainer.querySelectorAll('.carousel-item');
+      let currentIndex = 0;
+      
+      function updateCarousel() {
+        // Remove all classes from all items
+        carouselItems.forEach(item => {
+          item.classList.remove('active', 'prev', 'next', 'hidden');
+        });
+        
+        // Add appropriate classes based on position
+        carouselItems.forEach((item, index) => {
+          const relativeIndex = (index - currentIndex + carouselItems.length) % carouselItems.length;
+          
+          if (relativeIndex === 0) {
+            item.classList.add('active');
+          } else if (relativeIndex === 1) {
+            item.classList.add('prev');
+          } else if (relativeIndex === 2) {
+            item.classList.add('next');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      }
+      
+      function moveToNext() {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel();
+      }
+      
+      // Initialize carousel
+      updateCarousel();
+      
+      // Start the carousel with 5-second intervals
+      setInterval(moveToNext, 5000);
+    }
+
     // Carousel
     const track = document.querySelector('.carousel-track');
-    const images = Array.from(track.children);
-    const imageWidth = images[0].getBoundingClientRect().width;
-  
-    let currentIndex = 0;
-  
-    function moveToNextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    if (track) {
+      const images = Array.from(track.children);
+      const imageWidth = images[0].getBoundingClientRect().width;
+    
+      let currentIndex = 0;
+    
+      function moveToNextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+      }
+    
+      setInterval(moveToNextImage, 2000);
     }
-  
-    setInterval(moveToNextImage, 2000);
 });
 
 window.showStateModal = function (modalSelector, titleText, subText) {
