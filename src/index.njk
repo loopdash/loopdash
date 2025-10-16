@@ -12,15 +12,12 @@ sitemap:
   priority: 1.0
 ---
 
-<section class="hero">
-  <div class="video-container">
-    <div class="video-bkg"></div>
-    <video autoplay muted loop defaultMuted playsinline preload="auto" class="video" oncontextmenu="return false;">
-      <source src="https://cdn.loopdash.com/video/alpha.mp4" type="video/mp4">
-      <source src="https://cdn.loopdash.com/video/alpha.webm" type="video/webm">
-    </video>
+<section>
+  <div class="home-hero">
+    <h1 class="headline">Let's shape <span>tomorrow.</h1>
+    <p class="text-6 text-weight-400">Loopdash helps nonprofits turn purpose into progress through design, development, and strategy that drives real impact.</p>
   </div>
-  <section class="logo-wrapper">
+  {#<section class="logo-wrapper">
     <div class="logo-container container-xl">
       <div class="logo-slideshow-inner">
         <div class="logo-slideshow-item">
@@ -55,26 +52,22 @@ sitemap:
         </div>
       </div>
     </div>
-  </section>
-  {#<div class="slider">
+  </section> #}
+  <p class="text-charcoal-light mb-2 text-center mx-auto text-3">Recognized by the publications that move missions forward.</p>
+  <div class="slider">
     <div class="slide-track">
-      <div class="slide">{% svgIcon "./src/img/press/axios-logo.svg" %}</div>
-      <div class="slide ">{% svgIcon "./src/img/press/bloomberg-logo.svg" %}</div>
-      <div class="slide ">{% svgIcon "./src/img/press/cnn-logo.svg" %}</div>
-      <div class="slide">{% svgIcon "./src/img/press/forbes-logo.svg" %}</div>
-      <div class="slide">{% svgIcon "./src/img/press/fortune-logo.svg" %}</div>
-      <div class="slide">{% svgIcon "./src/img/press/mashable-logo.svg" %}</div>
-      <div class="slide slide-lg">{% svgIcon "./src/img/press/new-york-times-logo.svg" %}</div>
-      <div class="slide">{% svgIcon "./src/img/press/politico-logo.svg" %}</div>
-      <div class="slide slide-hill">{% svgIcon "./src/img/press/the-hill-logo.svg" %}</div>
-      <div class="slide slide-lg">{% svgIcon "./src/img/press/the-washington-post-logo.svg" %}</div>
+      <div class="slide slide-white">{% svgIcon "./src/img/press/axios-logo.svg" %}</div>
+      <div class="slide slide-white ">{% svgIcon "./src/img/press/bloomberg-logo.svg" %}</div>
+      <div class="slide slide-white ">{% svgIcon "./src/img/press/cnn-logo.svg" %}</div>
+      <div class="slide slide-white">{% svgIcon "./src/img/press/forbes-logo.svg" %}</div>
+      <div class="slide slide-white">{% svgIcon "./src/img/press/fortune-logo.svg" %}</div>
+      <div class="slide slide-white">{% svgIcon "./src/img/press/mashable-logo.svg" %}</div>
+      <div class="slide slide-white">{% svgIcon "./src/img/press/new-york-times-logo.svg" %}</div>
+      <div class="slide slide-white">{% svgIcon "./src/img/press/politico-logo.svg" %}</div>
+      <div class="slide">{% svgIcon "./src/img/press/the-hill-logo.svg" %}</div>
+      <div class="slide slide-white slide-180">{% svgIcon "./src/img/press/the-washington-post-logo.svg" %}</div>
     </div>
-  </div> #}
-  <div class="text-set text-set-home pb-24">
-    <h1 class="text-11 text-weight-600 text-gradient-white">Bringing simplicity back to web development.</h1>
-    <p class="text-7 text-weight-400">We help businesses, nonprofits, and changemakers amplify their impact and achieve results.</p>
-    <a href="/about" class="button button-secondary plausible-event-name=Home+About+Button+Click">About us</a>
-  </div>
+  </div> 
 </section>
 
 <section class="projects container-xl mt-16">

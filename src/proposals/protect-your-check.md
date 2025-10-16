@@ -2,7 +2,7 @@
 layout: single-proposal.njk
 meta:
   title: Proposal for The Hub Project
-  description: Website development for the "Protect Your Check" initiative.
+  description: Website development for the Protect Your Check initiative.
 sitemap:
   changefreq: monthly
 proposal:
