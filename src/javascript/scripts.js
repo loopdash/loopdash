@@ -16,6 +16,40 @@ console.log(`
 -->
 `);
 
+// Banner close functionality
+function initBannerClose() {
+  const banner = document.querySelector('.banner');
+  const closeButton = document.querySelector('.banner-close');
+  
+  if (!banner || !closeButton) return;
+  
+  closeButton.addEventListener('click', function() {
+    // Hide the banner with a smooth transition
+    banner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    banner.style.opacity = '0';
+    banner.style.transform = 'translateY(-100%)';
+    
+    // Remove the banner from the DOM after animation
+    setTimeout(() => {
+      banner.remove();
+      // Remove the banner class from body to trigger CSS changes
+      document.body.classList.remove('has-banner');
+      
+      // Adjust the site header position since banner is gone
+      const siteHeader = document.querySelector('.site-header');
+      if (siteHeader) {
+        siteHeader.style.top = '0';
+      }
+      
+      // Adjust the home hero padding since banner is gone
+      const homeHero = document.querySelector('.home-hero');
+      if (homeHero) {
+        homeHero.style.paddingTop = 'calc(var(--spacing) * 33)';
+      }
+    }, 300);
+  });
+}
+
 // Add IDs to headings for table of contents
 function addHeadingIds() {
   const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
@@ -118,6 +152,15 @@ function handleTableOfContentsScroll() {
 
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
+  // Check if banner is present and add class to body
+  const banner = document.querySelector('.banner');
+  if (banner) {
+    document.body.classList.add('has-banner');
+  }
+  
+  // Initialize banner close functionality
+  initBannerClose();
+  
   // Add IDs to headings for table of contents
   addHeadingIds();
   
