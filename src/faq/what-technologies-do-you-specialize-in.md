@@ -9,7 +9,6 @@ priority: 0.6
 tags:
 - faq
 - technical
-- homepage
 date: 2024-12-24
 url: /faq/platforms-and-technologies
 ---

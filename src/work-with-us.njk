@@ -1,0 +1,64 @@
+---
+layout: no-footer.njk
+meta:
+  title: Work with us
+  description: Behind every great brand is the right stack of technology.
+sitemap:
+  changefreq: weekly
+  priority: 0.1
+---
+
+<section class="container-xs mx-auto py-12">
+  <form id="client-form"
+    action="https://formspree.io/f/mnnggoql"
+    method="POST"
+    class="container-sm mx-auto form"
+  >
+
+    <div class="mb-8">
+      <h3 class="text-11 text-weight-600">Let's work together.</h3>
+      <p class="text-5 text-weight-400">The questions below will help us better understand your needs.</p>
+    </div>
+
+    <div class="hr mb-10"></div>
+
+    <h3 class="text-5 text-weight-600">Can you tell us about your project?</h3>
+    <div class="form-group">
+      <textarea class="form-input" id="project-description" name="project-description" rows="6" placeholder="Describe your project, goals, timeline, and any specific requirements..."></textarea>
+    </div>
+
+    <h3 class="text-5 text-weight-600">What's your timeline?</h3>
+    <div class="form-group">
+      <div class="form-selector-group">
+        <input id="timeline_asap" class="form-selector-input" type="radio" name="timeline" value="ASAP" required />
+        <label for="timeline_asap" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">ASAP</span></span></label>
+
+        <input id="timeline_1month" class="form-selector-input" type="radio" name="timeline" value="1 month" required />
+        <label for="timeline_1month" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">1 month</span></span></label>
+
+        <input id="timeline_2months" class="form-selector-input" type="radio" name="timeline" value="2-3 months" required />
+        <label for="timeline_2months" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">2-3 months</span></span></label>
+
+        <input id="timeline_3months" class="form-selector-input" type="radio" name="timeline" value="3-6 months" required />
+        <label for="timeline_3months" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">3-6 months</span></span></label>
+
+        <input id="timeline_flexible" class="form-selector-input" type="radio" name="timeline" value="Flexible" required />
+        <label for="timeline_flexible" class="form-selector"><span class="form-selector-label"><span class="form-selector-title">Flexible</span></span></label>
+      </div>
+    </div>
+    
+
+    <h3 class="text-5 text-weight-600">How can we reach you?</h3>
+    <!-- Contact -->
+    <div class="form-group">
+      <input class="form-input mb-3" placeholder="Full name "id="name" type="text" name="name" required autocomplete="name" />
+
+      <input class="form-input mb-3" placeholder="Your email" id="email" type="email" name="email" required autocomplete="email" />
+
+      <input class="form-input mb-3" placeholder="Organization/Company" id="organization" type="text" name="organization" required autocomplete="organization" />
+    </div>
+
+    <button type="submit" class="button button-primary button-lg">Work with us</button>
+    <input type="hidden" name="_redirect" value="https://loopdash.com/thank-you" />
+  </form>
+</section>

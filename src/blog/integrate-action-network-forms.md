@@ -25,6 +25,10 @@ url: /blog/integrate-action-network-forms
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/E7Hxw28hGsk?si=N_Z3ChH26u7uPzEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 In the landscape of digital organizing, **Action Network** has earned its place as a core utility—empowering nonprofits to mobilize supporters through email, petitions, events, and fundraising. The platform's backend functionality is genuinely impressive, offering robust tools for list management, event coordination, and campaign tracking that have become essential for modern advocacy work. But for all its backend power, the frontend experience—particularly when it comes to embedding forms on your website—can feel like a step back in time, arriving on your carefully crafted pages looking like they just time-traveled from 2009 with tight padding, misaligned labels, and default system fonts that clash with your brand's visual identity.
 
 **Forms are touchpoints.** They're the handshake at the door, the quiet contract between your message and someone willing to act. When someone visits your website and encounters a form, they're making a small but meaningful commitment to engage with your cause. The visual design of that form communicates volumes about your organization's attention to detail, your respect for the user's time, and your commitment to creating experiences that feel intentional rather than accidental. And yet, too often, Action Network forms arrive on-site looking like they were an afterthought, with the underlying functionality being robust but the visual experience risking the erosion of trust before the user even enters their name.
@@ -39,6 +43,11 @@ Before you even write a line of CSS, you need to choose the right embed method f
 
 **Recommendation:** Always use the **raw HTML embed** if you care about how your site looks and feels. To get it, navigate to your Action Network form, click on "Design Tools," then "Embed on Website," and select "HTML." You'll receive a block of code that you can paste directly into your CMS or template engine, giving you the foundation you need to create forms that truly belong on your site.
 
+
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 ---
 
 ## 2. Let Your Site's Styles Do the First Pass
@@ -81,7 +90,10 @@ button:hover {
 ```
 
 If you're using Tailwind CSS, you can skip custom CSS entirely and simply apply utility classes directly inside the HTML markup returned from Action Network. This approach gives you the same level of control while working within a utility-first framework that many teams find more maintainable and consistent.
-
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 
 ## 3. Structure the Layout for Clarity and Flow
 
@@ -126,6 +138,10 @@ If your layout calls for columns—such as placing first name and last name side
   gap: 1rem;
 }
 ```
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 
 ## 4. Check for Accessibility and Add Semantic Support
 
@@ -142,6 +158,10 @@ Tools like axe DevTools or Lighthouse can surface potential accessibility issues
 
 Error messages should also be exposed to assistive technology—not just styled in red or displayed through JavaScript-driven overlays that might not be accessible to all users. Include proper ARIA attributes and ensure your error handling provides clear, actionable feedback that helps users understand what went wrong and how to fix it. The goal is to create an experience where everyone can successfully complete your form, regardless of how they interact with your website.
 
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 ## 5. Control the Confirmation Experience
 
 When a form is submitted successfully, Action Network will usually display a generic thank-you message that, while functional, may not match your brand tone, campaign goals, or the specific context of the action someone just took. This moment of confirmation is actually one of the most important touchpoints in your user's journey—it's when they've just made a commitment to your cause and are most engaged with your message. Creating a more polished post-submission experience that feels personal, branded, and aligned with your organization's voice can significantly impact how people feel about their decision to take action and their likelihood of engaging with future campaigns.
@@ -162,6 +182,11 @@ $(document).on('actionnetwork:form:submitted', function () {
 ```
 
 Alternatively, set a custom "Redirect URL" within the Action Network platform that takes users to a completely separate page where you can show next steps, links to social media, prompts to share the campaign, or even trigger a welcome email automation. This approach gives you complete control over the post-submission experience and allows you to create a more comprehensive onboarding flow that can help convert one-time supporters into long-term advocates for your cause.
+
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 
 ## 6. Eliminate What's Not Needed
 
@@ -193,6 +218,11 @@ Here's an example of how to adapt padding and input sizing for smaller screens w
 ```
 
 Be sure to test your forms in multiple browsers and devices to ensure a consistent experience across different platforms and screen sizes. Chrome's mobile emulator, Firefox's responsive design mode, and Safari's developer tools are all helpful for initial testing, but nothing replaces testing on actual devices to understand how your forms feel in real-world usage scenarios.
+
+<div class="text-center pt-6 pb-4 px-3 card card-flat my-6">
+    <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
+  <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
+</div>
 
 ## Final Thoughts: Design That Disappears
 
