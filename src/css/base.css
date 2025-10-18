@@ -520,8 +520,6 @@ blockquote p {
 
 /* About-Layout */
 .about-layout {
-  background: var(--color-green-waterloo);
-  color: var(--color-cream);
   main {
     padding-top: calc(var(--spacing) * 12);
   }
@@ -3573,6 +3571,7 @@ a.card-default {
   }
 }
 .blog-hero-block {
+  column-gap: 2rem;
   row-gap: 2rem;
   align-items: center;
   display: flex;
@@ -3585,7 +3584,7 @@ a.card-default {
   }
 }
 .blog-hero-image {
-  max-width: 50%;
+  max-width: calc(50% - 4rem);
   margin: 0 auto;
 }
 

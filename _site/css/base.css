@@ -523,10 +523,6 @@ blockquote p {
 }
 
 /* About-Layout */
-.about-layout {
-  background: var(--color-green-waterloo);
-  color: var(--color-cream);
-}
 .about-layout main {
     padding-top: calc(var(--spacing) * 12);
   }
@@ -3610,6 +3606,8 @@ a.card-default:hover,
   }
 }
 .blog-hero-block {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   row-gap: 2rem;
   align-items: center;
   display: flex;
@@ -3624,7 +3622,7 @@ a.card-default:hover,
 }
   }
 .blog-hero-image {
-  max-width: 50%;
+  max-width: calc(50% - 4rem);
   margin: 0 auto;
 }
 
