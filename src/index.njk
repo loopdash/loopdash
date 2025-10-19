@@ -44,8 +44,8 @@ sitemap:
       {% if project.data.project.featured and project.data.date | isPastDate %}
         <a href="{{project.data.page.url}}" class="reveal project project-{{project.data.project.class}} plausible-event-name=Home+Project+Card+Click+{{project.data.project.class | replace('-', '+')}}">
           <div class="project-details">
-            <h4 class="text-7 m-0">{{ project.data.project.name }}</h4>
-            <p class="text-4 m-0 text-weight-400">{{ project.data.project.tagline }}</p>
+            <h4 class="text-4 m-0">{{ project.data.project.name }}</h4>
+            <p class="text-3 m-0 text-weight-400">{{ project.data.project.tagline }}</p>
           </div>
         </a>
       {% endif %}
