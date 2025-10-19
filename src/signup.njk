@@ -5,62 +5,81 @@ meta:
   description: Get started with Loopdash for expert web design, development, and strategy that drives real impact for your nonprofit or business.
 ---
 
-<div class="container-lg mx-auto p-4" style="padding: 5rem 0;">
-  <div class="signup-content">
-    <!-- Loopdash Logo -->
-    <div class="logo-wrapper">
-      {% svgIcon "./src/img/loopdash-logo.svg" %}
-    </div>
-    
-    <div class="cta-container">
-      <h1 class="text-7">New clients get up to 5 hours of dev if you qualify.</h1>
-      <p class="text-4 text-weight-400 text-charcoal-light">We partner with select organizations ready to grow. Get real strategy, expert development, and measurable impact — risk-free.</p>
-      
-      <!-- Email Form -->
-      <form 
-        class="form" 
-        style="width: 100%;"
-        action="https://formspree.io/f/mnnggoql"
-        method="POST"
-      >
-        <div class="form-group">
-          <input 
-            type="email" 
-            name="email"
-            placeholder="Enter your email" 
-            class="form-input"
-            required
-          >
+<div class="container-lg mx-auto p-4">
+  <div class="flex gap-4">
+    <!-- Left Column -->
+    <div class="col-5">
+      <div class="signup-content">
+        <!-- Loopdash Logo -->
+        <div class="logo-wrapper">
+          {% svgIcon "./src/img/loopdash-logo.svg" %}
         </div>
-        <button 
-          type="submit" 
-          class="button button-primary"
-          style="width: 100%;"
-        >
-          Get Started
-        </button>
-      </form>
+        
+        <div class="cta-container">
+          <h1 class="text-7">New clients get up to 5 hours of dev when you qualify.</h1>
+          <p class="text-4 text-weight-400 text-charcoal-light">We partner with select organizations ready to grow. Get real strategy, expert development, and measurable impact — risk-free.</p>
+          
+          <!-- Email Form -->
+          <form 
+            class="form" 
+            action="https://formspree.io/f/mnnggoql"
+            method="POST"
+          >
+            <div class="form-group">
+              <input 
+                type="email" 
+                name="email"
+                placeholder="Enter your email" 
+                class="form-input"
+                required
+              >
+            </div>
+            <button 
+              type="submit" 
+              class="button button-primary"
+            >
+              Get Started
+            </button>
+          </form>
+        </div>
+        
+        <!-- Brand Logos Grid -->
+        <div class="logo-grid">
+          <div class="logo-grid-item svg-green-waterloo">
+            {% svgIcon "./src/img/brands/accountable-tech.svg" %}
+          </div>
+          <div class="logo-grid-item svg-green-waterloo">
+            {% svgIcon "./src/img/brands/forward-majority.svg" %}
+          </div>
+          <div class="logo-grid-item svg-green-waterloo">
+            {% svgIcon "./src/img/brands/hiphop-caucus.svg" %}
+          </div>
+          <div class="logo-grid-item svg-green-waterloo">
+            {% svgIcon "./src/img/brands/moms-first.svg" %}
+          </div>
+          <div class="logo-grid-item svg-green-waterloo">
+            {% svgIcon "./src/img/brands/rock-the-vote.svg" %}
+          </div>
+          <div class="logo-grid-item svg-green-waterloo">
+            {% svgIcon "./src/img/brands/trending-up.svg", "svg-sm"%}
+          </div>
+        </div>
+      </div>
     </div>
     
-    <!-- Brand Logos Grid -->
-    <div class="logo-grid">
-      <div class="logo-grid-item svg-green-waterloo">
-        {% svgIcon "./src/img/brands/accountable-tech.svg" %}
-      </div>
-      <div class="logo-grid-item svg-green-waterloo">
-        {% svgIcon "./src/img/brands/forward-majority.svg" %}
-      </div>
-      <div class="logo-grid-item svg-green-waterloo">
-        {% svgIcon "./src/img/brands/hiphop-caucus.svg" %}
-      </div>
-      <div class="logo-grid-item svg-green-waterloo">
-        {% svgIcon "./src/img/brands/moms-first.svg" %}
-      </div>
-      <div class="logo-grid-item svg-green-waterloo">
-        {% svgIcon "./src/img/brands/rock-the-vote.svg" %}
-      </div>
-      <div class="logo-grid-item svg-green-waterloo">
-        {% svgIcon "./src/img/brands/trending-up.svg" %}
+    <!-- Right Column -->
+    <div class="col-6 flex align-items-center">
+      <div class="container-xs py-4 px-10">
+        <p class="quote text-4 mb-5">
+          Loopdash is an outstanding web development partner. Our nonprofit has been working with them regularly for the past year, and they truly feel like an extension of our internal team. They are collaborative, flexible, and an absolute pleasure to work with.<br /><br />
+          If you’re looking for a reliable, skilled, and client-focused web development team, I cannot recommend Loopdash enough.
+        </p>
+        <div class="">
+          <p class="text-2 mb-0 text-base text-weight-700 text-uppercase">
+            Julie Leitch, Digital Director<br />
+          </p>
+          <p class="text-2 mb-0 text-base text-underline">Moms First</p>
+        </div>
       </div>
     </div>
   </div>
