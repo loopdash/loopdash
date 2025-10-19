@@ -2,6 +2,7 @@
 <html lang="en">
   {% include 'head.njk' %}
   <body class="single-project-layout">
+    {% include 'partials/banner.njk' %}
     {% include 'nav.njk' %}
     
     {% include "partials/_single-project-hero.njk" %}
@@ -110,12 +111,10 @@
       {% endif %}
 
 			<section class="cta">
-        <div class="cta-container">
+        <div class="cta-container flex-center flex align-items-center">
           <h4 class="text-10 text-weight-600">Want results like this?</h4>
-          <p class="text-5 text-weight-400">We’ve helped advocacy orgs boost conversions, grow supporter lists, and launch faster with clean design and custom development.</p>
-          <div class="flex gap-1">
-            <a href="#" data-cal-link="garyb/meet" class="shake button button-primary plausible-event-name=Project+CTA+Button+Click">Book a Call</a>
-          </div>
+          <p class="text-5 text-weight-400">We’re giving new clients up to 5 free hours of development and a complete website audit.</p>
+          <a href="/signup" class="shake button button-primary plausible-event-name=Home+CTA+Button+Click">See if you qualify</a>
         </div>
       </section>
 
