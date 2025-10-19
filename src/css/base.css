@@ -2063,7 +2063,6 @@ body.has-banner .home-hero {
 }
 .cta-container {
   max-width: 32rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
 }
