@@ -23,7 +23,30 @@ function initBannerClose() {
   
   if (!banner || !closeButton) return;
   
+  // Check if banner was previously closed
+  if (getCookie('banner-closed') === 'true') {
+    // Completely hide the banner and remove from DOM immediately
+    banner.style.display = 'none';
+    banner.remove();
+    document.body.classList.remove('has-banner');
+    return;
+  }
+  
+  // Add fade-in animation for banner appearance
+  banner.style.opacity = '0';
+  banner.style.transform = 'translateY(-100%)';
+  banner.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  
+  // Trigger fade-in after a brief delay
+  setTimeout(() => {
+    banner.style.opacity = '1';
+    banner.style.transform = 'translateY(0)';
+  }, 100);
+  
   closeButton.addEventListener('click', function() {
+    // Set cookie to remember that banner was closed (expires in 30 days)
+    setCookie('banner-closed', 'true', 30);
+    
     // Hide the banner with a smooth transition
     banner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     banner.style.opacity = '0';
@@ -48,6 +71,24 @@ function initBannerClose() {
       }
     }, 300);
   });
+}
+
+// Cookie utility functions
+function setCookie(name, value, days) {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+  document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
 }
 
 // Add IDs to headings for table of contents
@@ -155,7 +196,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Check if banner is present and add class to body
   const banner = document.querySelector('.banner');
   if (banner) {
-    document.body.classList.add('has-banner');
+    // Only add the class if banner is not hidden by cookie
+    if (getCookie('banner-closed') !== 'true') {
+      document.body.classList.add('has-banner');
+    } else {
+      // If banner should be hidden, ensure it's completely hidden from the start
+      banner.style.display = 'none';
+    }
   }
   
   // Initialize banner close functionality

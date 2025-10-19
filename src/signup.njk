@@ -1,0 +1,67 @@
+---
+layout: signup.njk
+meta: 
+  title: Get Started - Loopdash
+  description: Get started with Loopdash for expert web design, development, and strategy that drives real impact for your nonprofit or business.
+---
+
+<div class="container-lg mx-auto" style="padding: 5rem 0;">
+  <div class="signup-content">
+    <!-- Loopdash Logo -->
+    <div class="logo-wrapper">
+      {% svgIcon "./src/img/loopdash-logo.svg" %}
+    </div>
+    
+    <div class="cta-container">
+      <h1 class="text-7">New clients get up to 5 hours of dev if you qualify.</h1>
+      <p class="text-4 text-weight-400 text-charcoal-light">We partner with select organizations ready to grow. Get real strategy, expert development, and measurable impact — risk-free.</p>
+      
+      <!-- Email Form -->
+      <form 
+        class="form" 
+        style="width: 100%;"
+        action="https://formspree.io/f/mnnggoql"
+        method="POST"
+      >
+        <div class="form-group">
+          <input 
+            type="email" 
+            name="email"
+            placeholder="Enter your email" 
+            class="form-input"
+            required
+          >
+        </div>
+        <button 
+          type="submit" 
+          class="button button-primary"
+          style="width: 100%;"
+        >
+          Get Started
+        </button>
+      </form>
+    </div>
+    
+    <!-- Brand Logos Grid -->
+    <div class="logo-grid">
+      <div class="logo-grid-item svg-green-waterloo">
+        {% svgIcon "./src/img/brands/accountable-tech.svg" %}
+      </div>
+      <div class="logo-grid-item svg-green-waterloo">
+        {% svgIcon "./src/img/brands/forward-majority.svg" %}
+      </div>
+      <div class="logo-grid-item svg-green-waterloo">
+        {% svgIcon "./src/img/brands/hiphop-caucus.svg" %}
+      </div>
+      <div class="logo-grid-item svg-green-waterloo">
+        {% svgIcon "./src/img/brands/moms-first.svg" %}
+      </div>
+      <div class="logo-grid-item svg-green-waterloo">
+        {% svgIcon "./src/img/brands/rock-the-vote.svg" %}
+      </div>
+      <div class="logo-grid-item svg-green-waterloo">
+        {% svgIcon "./src/img/brands/trending-up.svg" %}
+      </div>
+    </div>
+  </div>
+</div>

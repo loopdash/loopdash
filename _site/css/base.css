@@ -29,7 +29,7 @@
   --antaeus-light-purple: #DED2E1;
   --antaeus-dark-yellow: #DF8E2F;
   --antaeus-muted-cyan: #C1D6E0;
-  --nav-banner-height: 3rem;
+  --banner-height: 3.5rem;
   --color-primary-reverse: #ffffff;
   --color-hushed-reverse: #d1d5db;
 }
@@ -151,7 +151,7 @@ code {
   right: 0;
   z-index: 1001;
   display: flex;
-  height: var(--nav-banner-height);
+  height: var(--banner-height);
   width: 100%;
   flex-shrink: 0;
   align-items: center;
@@ -261,6 +261,46 @@ code {
   0% { transform: translateX(0); }
   50% { transform: translateX(4px); }
   100% { transform: translateX(0); }
+}
+
+/* Signup page styles */
+.signup-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo-grid-item svg {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.logo-grid-item:hover svg {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 .text-14 {
@@ -1248,7 +1288,7 @@ blockquote p {
 
 /* When banner is present, adjust header position */
 body.has-banner .site-header {
-  top: var(--nav-banner-height);
+  top: var(--banner-height);
 }
 
 
@@ -1589,7 +1629,7 @@ nav.reveal.visible{
 
 /* When banner is present, add extra padding */
 body.has-banner .home-hero {
-  padding: calc(var(--spacing) * 33 + var(--nav-banner-height)) calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 33 + var(--banner-height)) calc(var(--spacing) * 2);
 }
 
   .headline {
@@ -1972,14 +2012,15 @@ body.has-banner .home-hero {
 }
 
 .logo-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  width: 128px;
   margin: 2rem 0 1rem 0;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
+.logo-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
 .logo-container {
   max-width: var(--container);
   background: white;
@@ -4120,5 +4161,6 @@ a.card-default:hover,
     inset 0 4px 7px rgba(255, 255, 255, 0.0) !important;
   transition: all 0.333s ease-in-out !important;
 }
+
 
 html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}ummary{display:list-item}template{display:none}[hidden]{display:none}ol,ul{margin:0;padding:0;list-style:none}
