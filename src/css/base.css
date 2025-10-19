@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
 
 :root {
   --base-font-size: 1rem;
   --base-line-height: 1.275;
   --base-font: "DM Sans", sans-serif;
   --mono-font: "DM Mono", ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-  --serif-font: "DM Sans", sans-serif;
+  --serif-font: "Libre Baskerville", sans-serif;
   --border-radius: 12px;
   --primary-color: #262218;
   --color-border: rgba(18, 18, 18, .06);
@@ -271,9 +271,8 @@ code {
 .logo-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0rem;
-  margin-top: 1rem;
   width: 100%;
   max-width: 400px;
 }
@@ -284,6 +283,7 @@ code {
   justify-content: center;
   margin-top: calc(var(--spacing) * 2);
   padding: 0.5rem;
+  height: 40px;
 }
 
 .logo-grid-item svg {
@@ -294,17 +294,17 @@ code {
 }
 
 svg.svg-md {
-  max-width: 150px;
+  max-width: 120px;
   height: auto;
 }
 
 svg.svg-lg {
-  max-width: 200px;
+  max-width: 180px;
   height: auto;
 }
 
 svg.svg-sm{
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
 }
 
@@ -314,8 +314,8 @@ svg.svg-sm{
 
 @media (max-width: 768px) {
   .logo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
   }
 }
 
@@ -344,6 +344,7 @@ svg.svg-sm{
 .text-center { text-align: center; }
 .text-mono { font-family: var(--mono-font); }
 .text-base { font-family: var(--base-font); }
+.text-serif { font-family: var(--serif-font); }
 .text-white { color: #ffffff; }
 .text-charcoal { color: var(--color-charcoal); }
 .text-charcoal-light { color: var(--color-charcoal-light); }
@@ -1690,13 +1691,13 @@ nav.reveal.visible{
 
 /* When banner is present, add extra padding */
 body.has-banner .home-hero {
-  padding: calc(var(--spacing) * 33 + var(--banner-height)) calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 40 + var(--banner-height)) calc(var(--spacing) * 2) calc(var(--spacing) * 32);
 }
 
   .headline {
     color: var(--color-charcoal);
-    font-family: var(--serif-font);
-    font-size: clamp(2.25rem, 6vw, 4.5rem);
+    font-family: var(--base-font);
+    font-size: clamp(2.25rem, 6vw, 3.5rem);
     line-height: clamp(4.5rem, 6.5vw, 5.5rem);
     margin: 0;
     font-weight: 400;

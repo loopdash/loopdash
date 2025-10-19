@@ -17,11 +17,11 @@ meta:
         
         <div class="cta-container">
           <h1 class="text-7">New clients get up to 5 hours of dev when you qualify.</h1>
-          <p class="text-4 text-weight-400 text-charcoal-light">We partner with select organizations ready to grow. Get real strategy, expert development, and measurable impact — risk-free.</p>
+          <p class="text-4 text-weight-400 text-charcoal-light mb-4">We partner with select organizations ready to grow. Get real strategy, expert development, and measurable impact — risk-free.</p>
           
           <!-- Email Form -->
           <form 
-            class="form" 
+            class="form mb-10" 
             action="https://formspree.io/f/mnnggoql"
             method="POST"
           >
@@ -29,7 +29,7 @@ meta:
               <input 
                 type="email" 
                 name="email"
-                placeholder="Enter your email" 
+                placeholder="Your email" 
                 class="form-input"
                 required
               >
@@ -38,27 +38,22 @@ meta:
               type="submit" 
               class="button button-primary"
             >
-              Get Started
+              See if you qualify
             </button>
           </form>
         </div>
         
         <!-- Brand Logos Grid -->
+        <span class="text-3 text-charcoal-light">Trusted By:</span>
         <div class="logo-grid">
           <div class="logo-grid-item svg-green-waterloo">
-            {% svgIcon "./src/img/brands/accountable-tech.svg" %}
-          </div>
-          <div class="logo-grid-item svg-green-waterloo">
-            {% svgIcon "./src/img/brands/forward-majority.svg" %}
+            {% svgIcon "./src/img/brands/forward-majority.svg", "svg-lg" %}
           </div>
           <div class="logo-grid-item svg-green-waterloo">
             {% svgIcon "./src/img/brands/hiphop-caucus.svg" %}
           </div>
           <div class="logo-grid-item svg-green-waterloo">
-            {% svgIcon "./src/img/brands/moms-first.svg" %}
-          </div>
-          <div class="logo-grid-item svg-green-waterloo">
-            {% svgIcon "./src/img/brands/rock-the-vote.svg" %}
+            {% svgIcon "./src/img/brands/antaeus.svg", "svg-sm"%}
           </div>
           <div class="logo-grid-item svg-green-waterloo">
             {% svgIcon "./src/img/brands/trending-up.svg", "svg-sm"%}
@@ -70,15 +65,15 @@ meta:
     <!-- Right Column -->
     <div class="col-6 flex align-items-center">
       <div class="container-xs py-4 px-10">
-        <p class="quote text-4 mb-5">
+        <p class="text-charcoal-light quote text-serif text-4 mb-7">
           Loopdash is an outstanding web development partner. Our nonprofit has been working with them regularly for the past year, and they truly feel like an extension of our internal team. They are collaborative, flexible, and an absolute pleasure to work with.<br /><br />
           If you’re looking for a reliable, skilled, and client-focused web development team, I cannot recommend Loopdash enough.
         </p>
         <div class="">
-          <p class="text-2 mb-0 text-base text-weight-700 text-uppercase">
-            Julie Leitch, Digital Director<br />
+          <p class="text-charcoal text-2 mb-2 text-base text-weight-700 text-uppercase">
+            Julie Leitch, Digital Director
           </p>
-          <p class="text-2 mb-0 text-base text-underline">Moms First</p>
+          {% svgIcon "./src/img/brands/moms-first.svg", "svg-md" %}
         </div>
       </div>
     </div>
