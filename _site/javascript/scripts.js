@@ -707,6 +707,166 @@ function rotateElement(selector) {
     
       setInterval(moveToNextImage, 2000);
     }
+  
+  // GSAP Notifications Scroll/Observer sequence
+  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined' && typeof Observer !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger, Observer);
+
+    // constants
+    let allowScroll = true; // sometimes we want to ignore scroll-related stuff, like when an Observer-based section is transitioning.
+    let scrollTimeout = gsap.delayedCall(1, () => (allowScroll = true)).pause(); // controls how long we should wait after an Observer-based animation is initiated before we allow another scroll-related action
+    const time = 0.35; // animation duration (faster)
+    let animating = false; // state
+
+    // Ensure notifications are stacked on top of each other
+    const notificationsWrapper = document.querySelector('.notifications');
+    if (notificationsWrapper) {
+      notificationsWrapper.style.position = 'relative';
+      notificationsWrapper.style.overflow = 'hidden';
+      const notificationItems = notificationsWrapper.querySelectorAll('.notification');
+      notificationItems.forEach((el, i) => {
+        el.style.position = 'absolute';
+        el.style.left = '0';
+        el.style.right = '0';
+        el.style.top = '0';
+        el.style.width = '100%';
+        // Neutral base stacking; timeline will manage which item is on top
+        el.style.zIndex = '1';
+      });
+      // Set container height to the first item's height so layout doesn't collapse
+      const first = notificationItems[0];
+      if (first) notificationsWrapper.style.height = first.offsetHeight + 'px';
+    }
+
+    // Progressive enhancement: initial offsets for subtle layering
+    gsap.set(".notification", {
+      y: (index) => 14 * index,
+      transformOrigin: "center top"
+    });
+
+    //--------------------------------//
+    // The timeline
+    //--------------------------------//
+    const tl = gsap.timeline({
+      paused: true
+    });
+
+    tl.add("notification2");
+    tl.to(".notification:nth-child(1)", {
+      scale: 0.85,
+      duration: time,
+    });
+    // Demote previous, promote next so it fully covers
+    tl.set(".notification:nth-child(1)", { zIndex: 1 });
+    tl.set(".notification:nth-child(2)", { zIndex: 100 });
+    tl.from(
+      ".notification:nth-child(2)",
+      {
+        y: () => window.innerHeight,
+        duration: time
+      },
+      "<"
+    );
+
+    tl.add("notification3");
+    tl.to(".notification:nth-child(2)", {
+      scale: 0.9,
+      duration: time
+    });
+    // Demote previous, promote next so it fully covers
+    tl.set(".notification:nth-child(2)", { zIndex: 1 });
+    tl.set(".notification:nth-child(3)", { zIndex: 100 });
+    tl.from(
+      ".notification:nth-child(3)",
+      {
+        y: () => window.innerHeight,
+        duration: time
+      },
+      "<"
+    );
+
+    tl.add("notification4");
+    tl.to(".notification:nth-child(3)", {
+      scale: 0.95,
+      duration: time
+    });
+    // Demote previous, promote next so it fully covers
+    tl.set(".notification:nth-child(3)", { zIndex: 1 });
+    tl.set(".notification:nth-child(4)", { zIndex: 100 });
+    tl.from(
+      ".notification:nth-child(4)",
+      {
+        y: () => window.innerHeight,
+        duration: time
+      },
+      "<"
+    );
+    tl.add("notification5");
+    // END The timeline --------------//
+
+    function tweenToLabel(direction, isScrollingDown) {
+      if (
+        (!tl.nextLabel() && isScrollingDown) ||
+        (!tl.previousLabel() && !isScrollingDown)
+      ) {
+        notificationsObserver.disable(); // resume native scroll
+        return;
+      }
+      if (!animating && direction) {
+        // Check if we're already animating
+        animating = true;
+        tl.tweenTo(direction, { onComplete: () => (animating = false) });
+      }
+    }
+
+    //--------------------------------//
+    // Observer plugin
+    //--------------------------------//
+    const notificationsObserver = Observer.create({
+      // type: "wheel,touch,pointer",
+      wheelSpeed: -2, // increase scroll sensitivity
+      onDown: (self) => tweenToLabel(tl.previousLabel(), false),
+      onUp: (self) => tweenToLabel(tl.nextLabel(), true),
+      tolerance: 5,
+      preventDefault: true,
+      onEnable(self) {
+        allowScroll = false;
+        scrollTimeout.restart(true);
+        // when enabling, we should save the scroll position and freeze it. This fixes momentum-scroll on Macs, for example.
+        let savedScroll = self.scrollY();
+        self._restoreScroll = () => self.scrollY(savedScroll); // if the native scroll repositions, force it back to where it should be
+        document.addEventListener("scroll", self._restoreScroll, {
+          passive: false
+        });
+      },
+      onDisable: (self) =>
+        document.removeEventListener("scroll", self._restoreScroll)
+    });
+
+    notificationsObserver.disable(); // Disable on page load
+    // END Observer plugin --------------//
+
+    //--------------------------------//
+    // ScrollTrigger that disables the scroll and has the Observer plugin take over
+    //--------------------------------//
+    ScrollTrigger.create({
+      id: "STOP-SCROLL",
+      trigger: ".notifications-section",
+      pin: true,
+      start: "top 50%", // start higher so content remains in frame
+      markers: false,
+      end: "+=0",
+      pinSpacing: false, // prevent downward shift at the end
+      onEnter: (self) => {
+        if (notificationsObserver.isEnabled) return;
+        notificationsObserver.enable(); // STOP native scrolling
+      },
+      onEnterBack: (self) => {
+        if (notificationsObserver.isEnabled) return;
+        notificationsObserver.enable(); // STOP native scrolling
+      }
+    });
+  }
 });
 
 window.showStateModal = function (modalSelector, titleText, subText) {
