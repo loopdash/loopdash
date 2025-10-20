@@ -4160,6 +4160,10 @@ a.card-default {
   transition: all 0.333s ease-in-out !important;
 }
 
+.notifications-section {
+  max-width: 100%;
+
+}
 
 .notification {
   width: auto;
@@ -4170,6 +4174,9 @@ a.card-default {
   flex-direction: column;
   gap: 1rem;
   min-height: 240px;
+  svg {
+    max-width: 80vw;
+  }
 }
 
 .to-stay-notification {

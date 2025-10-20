@@ -715,7 +715,7 @@ function rotateElement(selector) {
     // constants
     let allowScroll = true; // sometimes we want to ignore scroll-related stuff, like when an Observer-based section is transitioning.
     let scrollTimeout = gsap.delayedCall(1, () => (allowScroll = true)).pause(); // controls how long we should wait after an Observer-based animation is initiated before we allow another scroll-related action
-    const time = 0.35; // animation duration (faster)
+    const time = 0.5; // animation duration (faster)
     let animating = false; // state
 
     // Ensure notifications are stacked on top of each other
