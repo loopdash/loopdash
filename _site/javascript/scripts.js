@@ -714,8 +714,8 @@ function rotateElement(selector) {
 
     // constants
     let allowScroll = true; // sometimes we want to ignore scroll-related stuff, like when an Observer-based section is transitioning.
-    let scrollTimeout = gsap.delayedCall(1, () => (allowScroll = true)).pause(); // controls how long we should wait after an Observer-based animation is initiated before we allow another scroll-related action
-    const time = 0.5; // animation duration (faster)
+    let scrollTimeout = gsap.delayedCall(0.3, () => (allowScroll = true)).pause(); // controls how long we should wait after an Observer-based animation is initiated before we allow another scroll-related action
+    const time = 0.25; // animation duration (faster)
     let animating = false; // state
 
     // Ensure notifications are stacked on top of each other
@@ -755,6 +755,7 @@ function rotateElement(selector) {
     tl.to(".notification:nth-child(1)", {
       scale: 0.85,
       duration: time,
+      ease: "power2.out"
     });
     // Demote previous, promote next so it fully covers
     tl.set(".notification:nth-child(1)", { zIndex: 1 });
@@ -763,7 +764,8 @@ function rotateElement(selector) {
       ".notification:nth-child(2)",
       {
         y: () => window.innerHeight,
-        duration: time
+        duration: time,
+        ease: "power2.out"
       },
       "<"
     );
@@ -771,7 +773,8 @@ function rotateElement(selector) {
     tl.add("notification3");
     tl.to(".notification:nth-child(2)", {
       scale: 0.9,
-      duration: time
+      duration: time,
+      ease: "power2.out"
     });
     // Demote previous, promote next so it fully covers
     tl.set(".notification:nth-child(2)", { zIndex: 1 });
@@ -780,7 +783,8 @@ function rotateElement(selector) {
       ".notification:nth-child(3)",
       {
         y: () => window.innerHeight,
-        duration: time
+        duration: time,
+        ease: "power2.out"
       },
       "<"
     );
@@ -788,7 +792,8 @@ function rotateElement(selector) {
     tl.add("notification4");
     tl.to(".notification:nth-child(3)", {
       scale: 0.95,
-      duration: time
+      duration: time,
+      ease: "power2.out"
     });
     // Demote previous, promote next so it fully covers
     tl.set(".notification:nth-child(3)", { zIndex: 1 });
@@ -797,7 +802,8 @@ function rotateElement(selector) {
       ".notification:nth-child(4)",
       {
         y: () => window.innerHeight,
-        duration: time
+        duration: time,
+        ease: "power2.out"
       },
       "<"
     );
@@ -824,10 +830,10 @@ function rotateElement(selector) {
     //--------------------------------//
     const notificationsObserver = Observer.create({
       // type: "wheel,touch,pointer",
-      wheelSpeed: -2, // increase scroll sensitivity
+      wheelSpeed: -1, // increase scroll sensitivity
       onDown: (self) => tweenToLabel(tl.previousLabel(), false),
       onUp: (self) => tweenToLabel(tl.nextLabel(), true),
-      tolerance: 5,
+      tolerance: 2,
       preventDefault: true,
       onEnable(self) {
         allowScroll = false;
