@@ -12,20 +12,23 @@ sitemap:
   priority: 1.0
 ---
 
-<section class="text-set text-set-home pb-16">
-  <h1 class="text-12 text-weight-600 text-gradient">Projects</h1>
-  <p class="text-7 text-charcoal-light text-weight-400"></p>
-</section>
+<section class="container-lg mx-auto">
+  <div class="text-set text-set-home pb-16">
+    <h1 class="text-12 text-weight-400 mb-12 mt-24 text-gradient">Projects</h1>
+    <p class="text-7 text-charcoal-light text-weight-400">Creative that turns purpose into progress.</p>
+  </div>
+  <div class="mb-16 hr"></div>
 
-<section class="projects container-xl">
-  {% for project in projects | sortByDate %}
-    {% if project.data.project and project.data.date | isPastDate %}
-      <a href="{{project.data.page.url}}" class="project project-{{project.data.project.class}} plausible-event-name=Projects+Project+Card+Click+{{project.event}}">
-        <div class="project-details">
-          <h4 class="text-7 m-0 mb-1 reveal">{{ project.data.project.name }}</h4>
-          <p class="text-4 m-0 text-weight-400 reveal">{{ project.data.project.tagline }}</p>
-        </div>
-      </a>
-    {% endif %}
-  {% endfor %}
+  <div class="projects container-xl">
+    {% for project in projects | sortByDate %}
+      {% if project.data.project and project.data.date | isPastDate %}
+        <a href="{{project.data.page.url}}" class="project project-{{project.data.project.class}} plausible-event-name=Projects+Project+Card+Click+{{project.event}}">
+          <div class="project-details">
+            <h4 class="text-7 m-0 mb-1 reveal">{{ project.data.project.name }}</h4>
+            <p class="text-4 m-0 text-weight-400 reveal">{{ project.data.project.tagline }}</p>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>
