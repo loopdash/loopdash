@@ -244,7 +244,7 @@ function renderForm(res, errorMessage) {
               <form method="POST" class="form">
                 <div class="form-group">
                   <label class="form-label" for="password">Password</label>
-                  <input class="form-input" type="text" id="password" name="password" />
+                  <input class="form-input mb-3" type="text" id="password" name="password" />
                   ${errorMessage ? `<p class="error" aria-live="polite">${errorMessage}</p>` : ''}
                   <button type="submit" class="button button-sm button-secondary">View</button>
                 </div>

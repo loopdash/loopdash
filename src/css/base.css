@@ -642,6 +642,9 @@ blockquote p {
 .gap-1 {
   gap: 1rem;
 }
+.gap-2 {
+  gap: 2rem;
+}
 .gap-4 {
   gap: 4rem;
 }
@@ -712,17 +715,17 @@ blockquote p {
 }
 
 /* Column Widths */
-.col-1 { flex: 0 0 calc(8.33% - 0.5rem); }
-.col-2 { flex: 0 0 calc(16.66% - 0.5rem); }
-.col-3 { flex: 0 0 calc(25% - 0.5rem); }
-.col-4 { flex: 0 0 calc(33.33% - 0.5rem); }
-.col-5 { flex: 0 0 calc(41.66% - 0.5rem); }
-.col-6 { flex: 0 0 calc(50% - 0.5rem); }
-.col-7 { flex: 0 0 calc(58.33% - 0.5rem); }
-.col-8 { flex: 0 0 calc(66.66% - 0.5rem); }
-.col-9 { flex: 0 0 calc(75% - 0.5rem); }
-.col-10 { flex: 0 0 calc(83.33% - 0.5rem); }
-.col-11 { flex: 0 0 calc(91.66% - 0.5rem); }
+.col-1 { flex: 0 0 calc(8.33% - 2rem); }
+.col-2 { flex: 0 0 calc(16.66% - 2rem); }
+.col-3 { flex: 0 0 calc(25% - 2rem); }
+.col-4 { flex: 0 0 calc(33.33% - 2rem); }
+.col-5 { flex: 0 0 calc(41.66% - 2rem); }
+.col-6 { flex: 0 0 calc(50% - 2rem); }
+.col-7 { flex: 0 0 calc(58.33% - 2rem); }
+.col-8 { flex: 0 0 calc(66.66% - 2rem); }
+.col-9 { flex: 0 0 calc(75% - 2rem); }
+.col-10 { flex: 0 0 calc(83.33% - 2rem); }
+.col-11 { flex: 0 0 calc(91.66% - 2rem); }
 .col-12 { flex: 0 0 calc(100%); }
 
 /* Full Width for Small Screens */
@@ -1820,7 +1823,7 @@ body.has-banner .home-hero {
   svg {
     width: 16px;
     margin: 0 4px 0 -4px;
-    fill: var(--color-charcoal);
+    fill: var(--color-cream);
   }
 }
 
