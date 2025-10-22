@@ -46,7 +46,7 @@ proposal:
     text: Review proposal  
     icon: pencil  
     event: Proposal+Review+Button+Click  
-  - url: https://loopda.sh/work  
+  - url: https://loopdash.com/projects  
     text: Our Work  
     icon: graph  
     event: Our+Work+Button+Click  
