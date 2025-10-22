@@ -16,6 +16,73 @@ console.log(`
 -->
 `);
 
+// CTA Modal functionality
+function initCTAModal() {
+  const modal = document.getElementById('cta-modal');
+  const closeButton = document.getElementById('cta-modal-close');
+  const backdrop = document.querySelector('.cta-modal-backdrop');
+  
+  if (!modal || !closeButton) return;
+  
+  // Check if modal was previously closed or if we should exclude this page
+  if (getCookie('cta-modal-closed') === 'true') {
+    return;
+  }
+  
+  // Check if current URL should be excluded
+  const currentPath = window.location.pathname;
+  const excludedPaths = ['/projects', '/proposals'];
+  const shouldExclude = excludedPaths.some(path => currentPath.startsWith(path));
+  
+  if (shouldExclude) {
+    return;
+  }
+  
+  // Show modal after 8 seconds (8000ms)
+  const showModal = () => {
+    modal.style.display = 'flex';
+    // Trigger opacity transition
+    setTimeout(() => {
+      modal.style.opacity = '1';
+    }, 10);
+  };
+  
+  // Hide modal function
+  const hideModal = () => {
+    modal.style.opacity = '0';
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 300); // Match CSS transition duration
+  };
+  
+  // Set cookie to remember modal was closed (expires in 7 days)
+  const setModalClosed = () => {
+    setCookie('cta-modal-closed', 'true', 7);
+  };
+  
+  // Event listeners
+  closeButton.addEventListener('click', () => {
+    hideModal();
+    setModalClosed();
+  });
+  
+  backdrop.addEventListener('click', () => {
+    hideModal();
+    setModalClosed();
+  });
+  
+  // Escape key to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      hideModal();
+      setModalClosed();
+    }
+  });
+  
+  // Show modal after delay
+  setTimeout(showModal, 8000);
+}
+
 // Banner close functionality
 function initBannerClose() {
   const banner = document.querySelector('.banner');
@@ -207,6 +274,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize banner close functionality
   initBannerClose();
+  
+  // Initialize CTA modal
+  initCTAModal();
   
   // Add IDs to headings for table of contents
   addHeadingIds();
