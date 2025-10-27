@@ -2935,7 +2935,7 @@ form button {
 }
 
 .form-group {
-  margin-bottom: calc(var(--spacing) * 6);
+  margin-bottom: calc(var(--spacing) * 4);
 
   &:last-of-type {
     margin-bottom: calc(var(--spacing) * 3);

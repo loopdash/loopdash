@@ -16,7 +16,7 @@ meta:
         </div>
         
         <div class="cta-container">
-          <h1 class="text-7">Qualifying nonprofits get up to 5 hours of free dev support — apply in 2 minutes.</h1>
+          <h1 class="text-7">Qualified nonprofits get up to $750 in free dev work — apply in 2 minutes.</h1>
           <p class="text-4 text-weight-400 text-charcoal-light mb-4">We partner with select organizations ready to grow. Get real strategy, expert development, and measurable impact — risk-free.</p>
           
           <!-- Email Form -->
@@ -26,6 +26,11 @@ meta:
             method="POST"
           >
             <div class="form-group">
+              <label class="form-label">Name</label>
+              <input class="form-input" type="text" name="name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
               <input 
                 type="email" 
                 name="email"

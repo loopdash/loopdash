@@ -2968,7 +2968,7 @@ form button {
 }
 
 .form-group {
-  margin-bottom: calc(var(--spacing) * 6);
+  margin-bottom: calc(var(--spacing) * 4);
 }
 
 .form-group:last-of-type {
