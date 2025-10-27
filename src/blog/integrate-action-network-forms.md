@@ -35,8 +35,6 @@ In the landscape of digital organizing, **Action Network** has earned its place 
 
 This guide is for anyone who's ever embedded an Action Network form and sighed at the result. It's for digital directors who understand that every interaction with your website either builds or breaks trust, for developers who believe that technical functionality should be matched by thoughtful design, and for designers who know that form design should disappear into the flow of the page—**smooth, branded, and frictionless**. We'll walk through practical steps to transform those default embeds into forms that feel like they belong on your site, that respect your users' time and attention, and that ultimately help more people take action for your cause.
 
----
-
 ## 1. Choosing the Right Embed Format
 
 Before you even write a line of CSS, you need to choose the right embed method for your needs. Action Network offers three primary options, each with different implications for styling and customization. The **Raw HTML Embed** gives you complete access to the underlying HTML structure, allowing you to target classes, inputs, and DOM elements with your own CSS. This is the preferred method when you care about visual consistency and want your forms to feel like a natural part of your website's design language. The **Iframe Embed** is an easier plug-and-play option that requires minimal setup, but it comes with a significant limitation: styles are sandboxed within the iframe, meaning you can't reach inside to apply your custom CSS or match your site's typography and spacing. Finally, **Hosted Form Links** work best as standalone pages when you're linking from email campaigns or social media, but they're not suitable for embedded use on your website.
@@ -48,7 +46,6 @@ Before you even write a line of CSS, you need to choose the right embed method f
     <span class="text-5 mb-0 text-weight-400">Download your Action Network style kit today.</p>
   <script async data-uid="17883cb699" src="https://loopdash.kit.com/17883cb699/index.js"></script>
 </div>
----
 
 ## 2. Let Your Site's Styles Do the First Pass
 

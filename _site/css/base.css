@@ -3718,10 +3718,13 @@ a.card-default:hover,
   background-color: var(--white);
 }
 .blog-hero {
-  padding-top: calc(var(--spacing) * 30);
+  padding-top: calc(var(--spacing) * 32);
   padding-bottom: calc(var(--spacing) * 10);
   background-color: var(--color-cream);
   margin-bottom: calc(var(--spacing) * 20);
+}
+.has-banner .blog-hero {
+  padding-top: calc(var(--spacing) * 32 + var(--banner-height));
 }
 @media only screen and (max-width: 768px) {
   .blog-hero {
