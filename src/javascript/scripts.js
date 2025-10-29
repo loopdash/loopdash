@@ -140,6 +140,194 @@ function initBannerClose() {
   });
 }
 
+// Email validation using MillionVerifier
+function initEmailValidation() {
+  const emailInput = document.getElementById('signup-email');
+  if (!emailInput) return;
+  
+  let validationTimeout;
+  let errorElement = null;
+  let successElement = null;
+  let isValidationInProgress = false;
+  let lastValidatedEmail = '';
+  
+  // Helper function to create or get error element
+  function getOrCreateErrorElement() {
+    if (errorElement) return errorElement;
+    
+    errorElement = document.createElement('p');
+    errorElement.className = 'error';
+    errorElement.setAttribute('aria-live', 'polite');
+    errorElement.style.display = 'none';
+    errorElement.style.color = '#d32f2f';
+    errorElement.style.marginTop = '0.5rem';
+    errorElement.style.fontSize = '0.875rem';
+    
+    // Insert error element after the email input
+    const formGroup = emailInput.closest('.form-group');
+    if (formGroup) {
+      formGroup.appendChild(errorElement);
+    }
+    
+    return errorElement;
+  }
+  
+  // Helper function to create or get success element
+  function getOrCreateSuccessElement() {
+    if (successElement) return successElement;
+    
+    successElement = document.createElement('p');
+    successElement.className = 'success';
+    successElement.setAttribute('aria-live', 'polite');
+    successElement.style.display = 'none';
+    successElement.style.color = '#2e7d32';
+    successElement.style.marginTop = '0.5rem';
+    successElement.style.fontSize = '0.875rem';
+    
+    // Insert success element after the email input (before error element if it exists)
+    const formGroup = emailInput.closest('.form-group');
+    if (formGroup) {
+      formGroup.appendChild(successElement);
+    }
+    
+    return successElement;
+  }
+  
+  // Helper function to show error
+  function showError(message) {
+    const errorEl = getOrCreateErrorElement();
+    const successEl = getOrCreateSuccessElement();
+    errorEl.textContent = message;
+    errorEl.style.display = 'block';
+    successEl.style.display = 'none';
+    emailInput.setAttribute('aria-invalid', 'true');
+  }
+  
+  // Helper function to show success
+  function showSuccess(message) {
+    const successEl = getOrCreateSuccessElement();
+    const errorEl = getOrCreateErrorElement();
+    successEl.textContent = message;
+    successEl.style.display = 'block';
+    errorEl.style.display = 'none';
+    emailInput.removeAttribute('aria-invalid');
+  }
+  
+  // Helper function to hide all messages
+  function hideMessages() {
+    if (errorElement) {
+      errorElement.style.display = 'none';
+    }
+    if (successElement) {
+      successElement.style.display = 'none';
+    }
+    emailInput.removeAttribute('aria-invalid');
+  }
+  
+  // Function to validate email via MillionVerifier API
+  async function validateEmail(email) {
+    // Don't validate if already validating or if email is the same as last validated
+    if (isValidationInProgress) {
+      return;
+    }
+    
+    if (!email || email.trim() === '') {
+      hideMessages();
+      lastValidatedEmail = '';
+      return;
+    }
+    
+    // If this is the same email we just validated, skip API call
+    if (email.trim() === lastValidatedEmail) {
+      return;
+    }
+    
+    // Basic email format check first
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      showError('Please enter a valid email address.');
+      lastValidatedEmail = email.trim();
+      return;
+    }
+    
+    // Set flag to prevent concurrent API calls
+    isValidationInProgress = true;
+    
+    try {
+      const apiKey = 'mqVAvDDGtXJOpMTnyI2SocBrl';
+      const timeout = 10;
+      const apiUrl = `https://api.millionverifier.com/api/v3/?api=${apiKey}&email=${encodeURIComponent(email)}&timeout=${timeout}`;
+      
+      const response = await fetch(apiUrl);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      // Check the response - MillionVerifier returns result field
+      // Common result values: 'ok', 'invalid', 'disposable', 'catch_all', 'unknown', etc.
+      const result = data.result || '';
+      
+      // Update last validated email
+      lastValidatedEmail = email.trim();
+      
+      // Invalid email statuses
+      if (result === 'invalid') {
+        showError('Please enter a valid email address.');
+      } else if (result === 'ok') {
+        showSuccess('Email looks good!');
+      } else {
+        // For other statuses (disposable, catch_all, unknown, etc.), show error
+        // as they may not be suitable for signup
+        if (result && result !== 'ok') {
+          showError('Please enter a valid email address.');
+        } else {
+          hideMessages();
+        }
+      }
+    } catch (error) {
+      console.error('Error validating email:', error);
+      // On API error, don't block the user but log it
+      hideMessages();
+      lastValidatedEmail = ''; // Reset so we can retry if needed
+    } finally {
+      // Always reset the flag after validation completes
+      isValidationInProgress = false;
+    }
+  }
+  
+  // Debounced validation function with better debouncing
+  function debouncedValidate() {
+    clearTimeout(validationTimeout);
+    validationTimeout = setTimeout(() => {
+      const email = emailInput.value.trim();
+      // Only validate if different from last validated
+      if (email !== lastValidatedEmail) {
+        validateEmail(email);
+      }
+    }, 800); // Increased to 800ms to prevent rapid successive calls
+  }
+  
+  // Validate on blur (when user leaves the field)
+  emailInput.addEventListener('blur', () => {
+    const email = emailInput.value.trim();
+    if (email && email !== lastValidatedEmail) {
+      validateEmail(email);
+    }
+  });
+  
+  // Validate while typing (debounced)
+  emailInput.addEventListener('input', debouncedValidate);
+  
+  // Clear messages on input start
+  emailInput.addEventListener('focus', () => {
+    // Clear timeout if user starts typing again
+    clearTimeout(validationTimeout);
+  });
+}
+
 // Cookie utility functions
 function setCookie(name, value, days) {
   const expires = new Date();
@@ -277,6 +465,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Initialize CTA modal
   initCTAModal();
+  
+  // Email validation for signup page
+  initEmailValidation();
   
   // Add IDs to headings for table of contents
   addHeadingIds();
