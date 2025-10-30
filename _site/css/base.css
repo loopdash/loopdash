@@ -675,17 +675,17 @@ blockquote p {
 }
 
 .feature {
-  grid-column: span 6;
+  grid-column: 3 / span 8;
 }
 
 /* Desktop: First feature (tag card) 5 columns, second feature (slack card) 7 columns */
 @media only screen and (min-width: 769px) {
   .feature:nth-child(1) {
-    grid-column: span 5;
+    grid-column: 3 / span 8;
   }
   
   .feature:nth-child(2) {
-    grid-column: span 7;
+    grid-column: span 5;
   }
   
   .feature:nth-child(3) {
@@ -3691,6 +3691,14 @@ a.card-default:hover,
   padding-right: calc(var(--spacing) * 3);
   gap: calc(var(--spacing) * 3);
 }
+.nav-flex a {
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+.nav-flex a:not(.no-hover):hover {
+      transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+      background: rgba(0,0,0, 0.15);
+    }
 
 @media only screen and (min-width: 769px) {
   .nav-flex { 
