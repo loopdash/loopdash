@@ -140,9 +140,9 @@ function initBannerClose() {
   });
 }
 
-// Email validation using MillionVerifier
-function initEmailValidation() {
-  const emailInput = document.getElementById('signup-email');
+// Email validation using MillionVerifier - reusable function for multiple email inputs
+function initEmailValidation(emailInputId) {
+  const emailInput = document.getElementById(emailInputId);
   if (!emailInput) return;
   
   let validationTimeout;
@@ -467,7 +467,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initCTAModal();
   
   // Email validation for signup page
-  initEmailValidation();
+  initEmailValidation('signup-email');
+  
+  // Email validation for work-with-us page
+  initEmailValidation('email');
   
   // Add IDs to headings for table of contents
   addHeadingIds();
