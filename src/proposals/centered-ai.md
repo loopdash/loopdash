@@ -8,7 +8,7 @@ sitemap:
 proposal:
   documenso:
     token: 9IcmdYK0i704LKrOzCptf
-    name: Nahom
+    name: Nahom Sisay
     email: snahomss@gmail.com
   name: CenteredAI Light Website & Essentials Webcare
   client: CenteredAI
