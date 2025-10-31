@@ -56,31 +56,83 @@ sitemap:
   </div>
 </section>
 
-<section class="bg-white py-16">
-  <div class="container-sm mx-auto mt-16 text-center">
-    <h2 class="text-11 text-weight-600">An extension of your team.</h2>
-    <p class="container-xxs mx-auto">When your launch is live, we’re already there — in Slack, in sync, fixing fast and keeping momentum.</p>
+<div class="bg-white py-16">
+  <div class="container-sm mx-auto mt-16 text-center mb-12">
+    <h2 class="text-11 text-weight-600">For nonprofits who want momentum.</h2>
+    <p class="container-xxs mx-auto">Simple plans, a streamlined process, and advanced development experience allows us to scale with you.</p>
   </div>
-  <div class="notifications-section">
-    <div class='notifications'>
-      <div class="notification">
-        {% svgIcon "./src/img/team-extension-david.svg", "d" %}
-      </div>
-      <div class="notification">
-        {% svgIcon "./src/img/team-extension-julie.svg", "j" %}
-      </div>
-      <div class="notification">
-        {% svgIcon "./src/img/team-extension-molly.svg", "m" %}
-      </div>
-      <div class="notification">
-        {% svgIcon "./src/img/team-extension-leor.svg", "l" %}
+  <section class="features mb-14">
+    <div class="feature reveal">
+      <div class="card card-flat py-8 px-8">
+        {% set homepageTestimonialCount = 0 %}
+          {% for testimonial in collections.testimonials | reverse %}
+            {% if "homepage" in testimonial.data.category and homepageTestimonialCount < 3 %}
+              {% set homepageTestimonialCount = homepageTestimonialCount + 1 %}
+            <div class="mb-10 flex justify-between">
+              <div class="container-xxs mb-10">
+                <h3 class="text-3 text-weight-500 mb-1">{{ testimonial.data.name }}, {{ testimonial.data.role }}</h3>
+                <p class="text-3 text-charcoal-light text-weight-400">{{ testimonial.data.company }}</p>
+              </div>
+              {% svgIcon testimonial.data.logo, "icon-12" %}
+            </div>
+            <div class="mx-auto">
+              <div class="py-4">
+                <p class="quote text-7 text-charcoal text-weight-400 mb-5 text-italic text-serif">{{ testimonial.data.description | safe }}</p>
+                <div class="flex justify-between">
+                </div>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
       </div>
     </div>
-  </div>
-  <div class="text-center pb-8">
-    <a href="/testimonials" class="text-charcoal-light">View testimonials →</a>
-  </div>
-</section>
+    <div class="feature reveal">
+      <div class="card card-flat py-8 px-8">
+        <div class="container-xxs mb-16">
+          <h3 class="text-3 text-weight-500 mb-1">Services we offer.</h3>
+          <p class="text-3 text-charcoal-light text-weight-400">What we can do.</p>
+        </div>
+        <div class="flex-wrap gap-0.5">
+          <a href="/services#web-design" class="tag">Web Design & Development</a>
+          <a href="/services#branding-identity" class="tag">Branding & Identity</a>
+          <a href="/services#copywriting" class="tag">Copywriting & Content</a>
+          <a href="/services#hosting" class="tag">Hosting & Maintenance</a>
+          <a href="/services#website-migration" class="tag">Website Migration</a>
+          <a href="/services#seo" class="tag">SEO & Performance</a>
+          <a href="/services#ux-ui-design" class="tag">Accessibility & Compliance</a>
+          <a href="/services#seo" class="tag">Analytics & Reporting</a>
+          <a href="/services#creative-strategy" class="tag">Email & Marketing Setup</a>
+          <a href="/services#creative-strategy" class="tag">Creative Strategy & Direction</a>
+        </div>
+      </div>
+    </div>
+</div>
+    
+    {#<div class="feature reveal">
+        <div class="card card-flat py-8 px-8">
+          <div class="container-xxs mb-10">
+            <h3 class="text-4 text-weight-500">Trusted under pressure.</h3>
+          </div>
+          <div class="brand-logos-grid">
+              <div class="brand-logo">{% svgIcon "./src/img/brands/accountable-tech.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/affordable-pennsylvania.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/antaeus.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/cozen.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/design-it-for-us.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/forge.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/forward-majority.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/hiphop-caucus.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/moms-first.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/picnic.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/rock-the-vote.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/scotts.svg" %}</div>
+              <div class="brand-logo">{% svgIcon "./src/img/brands/trending-up.svg" %}</div>
+            </div>
+        </div> #}
+      </div>
+    </div>
+  </section>
+</div>
 
 <div class="bg-green-waterloo py-10">
 <section class="container-sm mx-auto mt-16">
@@ -121,69 +173,33 @@ sitemap:
   </div>
 </section>
 </div>
-<div class="bg-white py-16">
-  <div class="container-sm mx-auto mt-16 text-center mb-12">
-    <h2 class="text-11 text-weight-600">For nonprofits who want momentum.</h2>
-    <p class="container-xxs mx-auto">Simple plans, a streamlined process, and advanced development experience allows us to scale with you.</p>
+
+<section class="bg-white py-16">
+  <div class="container-sm mx-auto mt-16 text-center">
+    <h2 class="text-11 text-weight-600">An extension of your team.</h2>
+    <p class="container-xxs mx-auto">When your launch is live, we’re already there — in Slack, in sync, fixing fast and keeping momentum.</p>
   </div>
-  <section class="features mb-14">
-    <div class="feature reveal">
-        <div class="card card-flat py-8 px-8">
-          <div class="container-xxs mb-10">
-            <h3 class="text-4 text-weight-500">Services we offer.</h3>
-            <p class="text-3 text-charcoal-light text-weight-400">What we can do.</p>
-          </div>
-          <div class="flex-wrap gap-0.5">
-            <a href="/services#web-design" class="tag">Web Design & Development</a>
-            <a href="/services#branding-identity" class="tag">Branding & Identity</a>
-            <a href="/services#copywriting" class="tag">Copywriting & Content</a>
-            <a href="/services#hosting" class="tag">Hosting & Maintenance</a>
-            <a href="/services#website-migration" class="tag">Website Migration</a>
-            <a href="/services#seo" class="tag">SEO & Performance</a>
-            <a href="/services#ux-ui-design" class="tag">Accessibility & Compliance</a>
-            <a href="/services#seo" class="tag">Analytics & Reporting</a>
-            <a href="/services#creative-strategy" class="tag">Email & Marketing Setup</a>
-            <a href="/services#creative-strategy" class="tag">Creative Strategy & Direction</a>
-          </div>
-        </div>
+  <div class="notifications-section">
+    <div class='notifications'>
+      <div class="notification">
+        {% svgIcon "./src/img/team-extension-david.svg", "d" %}
       </div>
-   {#<div class="feature reveal">
-        <div class="card card-flat py-8 px-8">
-          <div class="container-xxs mb-10">
-            <h3 class="text-4 text-weight-500">An extension of your team.</h3>
-            <p class="text-3 text-charcoal-light text-weight-400">When the launch is live and stakes are high, we’re already in the thread. Real feedback below.</p>
-          </div>
-            <div class="mx-auto">
-            </div>
-        </div>
+      <div class="notification">
+        {% svgIcon "./src/img/team-extension-julie.svg", "j" %}
       </div>
-    </div> #}
-    
-    {#<div class="feature reveal">
-        <div class="card card-flat py-8 px-8">
-          <div class="container-xxs mb-10">
-            <h3 class="text-4 text-weight-500">Trusted under pressure.</h3>
-          </div>
-          <div class="brand-logos-grid">
-              <div class="brand-logo">{% svgIcon "./src/img/brands/accountable-tech.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/affordable-pennsylvania.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/antaeus.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/cozen.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/design-it-for-us.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/forge.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/forward-majority.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/hiphop-caucus.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/moms-first.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/picnic.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/rock-the-vote.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/scotts.svg" %}</div>
-              <div class="brand-logo">{% svgIcon "./src/img/brands/trending-up.svg" %}</div>
-            </div>
-        </div> #}
+      <div class="notification">
+        {% svgIcon "./src/img/team-extension-molly.svg", "m" %}
+      </div>
+      <div class="notification">
+        {% svgIcon "./src/img/team-extension-leor.svg", "l" %}
       </div>
     </div>
-  </section>
-</div>
+  </div>
+  <div class="text-center pb-8">
+    <a href="/testimonials" class="text-charcoal-light">View testimonials →</a>
+  </div>
+</section>
+
 <section class="cta">
   <div class="cta-container flex-center flex align-items-center">
     <h4 class="text-10 text-weight-600">New clients get $750 in free dev work.</h4>

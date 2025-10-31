@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
 
 :root {
   --base-font-size: 1rem;
   --base-line-height: 1.275;
   --base-font: "DM Sans", sans-serif;
   --mono-font: "DM Mono", ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-  --serif-font: "Libre Baskerville", sans-serif;
+  --serif-font: "Source Serif 4", sans-serif;
   --border-radius: 12px;
   --primary-color: #262218;
   --color-border: rgba(18, 18, 18, .06);
@@ -349,6 +349,7 @@ svg.svg-sm{
 .text-charcoal { color: var(--color-charcoal); }
 .text-charcoal-light { color: var(--color-charcoal-light); }
 .text-cream-dark { color: var(--color-cream-dark); }
+.text-italic { font-style: italic; }
 .text-weight-300 { font-weight: 300 !important; }
 .text-weight-400 { font-weight: 400 !important; }
 .text-weight-450 { font-weight: 450 !important; }
@@ -675,13 +676,13 @@ blockquote p {
 }
 
 .feature {
-  grid-column: 3 / span 8;
+  grid-column: span 7;
 }
 
 /* Desktop: First feature (tag card) 5 columns, second feature (slack card) 7 columns */
 @media only screen and (min-width: 769px) {
   .feature:nth-child(1) {
-    grid-column: 3 / span 8;
+    grid-column: span 7;
   }
   
   .feature:nth-child(2) {
@@ -702,12 +703,6 @@ blockquote p {
 }
 
 /* Responsive SVG in features */
-.feature svg {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
 
 .justify-between {
   justify-content: space-between !important;
@@ -1327,8 +1322,9 @@ body.has-banner .site-header {
   padding: calc(var(--spacing) * 4) 0;
   margin: 0 auto;
   z-index: 10000;
-  background: transparent;
+  background: rgba(255,255,255, 0.4);
   justify-content: center;
+  
 }
 
 .logo {
@@ -1832,7 +1828,7 @@ body.has-banner .home-hero {
   transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1260px) {
   .tag {
     font-size: clamp(0.6rem, 1vw, 0.875rem);
     padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
@@ -2062,8 +2058,15 @@ body.has-banner .home-hero {
   align-items: center;
 }
 
-.logo-slideshow-item svg path {
-  /* fill: var(--color-cream); */
+.feature svg {
+  max-width: 65px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
+}
+
+.feature svg path {
+  fill: var(--color-charcoal);
 }
 
 .logo-slideshow-inner {
@@ -2112,7 +2115,7 @@ body.has-banner .home-hero {
 
 .quote::before,
 .quote::after {
-  font-family: Georgia, serif;
+  font-family: var(--serif-font);
   color: #b6b2b2;
 }
 .quote::before {
