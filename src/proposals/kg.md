@@ -7,7 +7,7 @@ sitemap:
   changefreq: monthly  
 proposal:  
   documenso:  
-    token: d3jC8-6ukO5Z5I8-RkIZS
+    token: IvoYpn-er_4PvcNC1HEW2
     name: Rick King  
     email: rking@thekgbi.com  
   name: Website Design, Hosting & IT Infrastructure  
