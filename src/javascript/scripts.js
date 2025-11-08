@@ -87,12 +87,22 @@ function initCTAModal() {
 function initBannerClose() {
   const banner = document.querySelector('.banner');
   
-  if (!banner) return;
+  if (!banner) {
+    return;
+  }
   
   // Find close button within the banner element
   const closeButton = banner.querySelector('.banner-close');
   
-  if (!closeButton) return;
+  if (!closeButton) {
+    return;
+  }
+  
+  // Check if listener already attached to prevent duplicates
+  if (closeButton.dataset.listenerAttached === 'true') {
+    return;
+  }
+  closeButton.dataset.listenerAttached = 'true';
   
   // Check if banner was previously closed
   if (getCookie('banner-closed') === 'true') {
@@ -117,45 +127,13 @@ function initBannerClose() {
     banner.style.transform = 'translateY(0)';
   }, 100);
   
-  // Use a named function so we can remove it if needed
-  const handleCloseClick = function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    // Set cookie to remember that banner was closed (expires in 30 days)
-    setCookie('banner-closed', 'true', 30);
-    
-    // Get fresh reference to banner in case it changed
-    const currentBanner = document.querySelector('.banner');
-    if (!currentBanner) return;
-    
-    // Hide the banner with a smooth transition
-    currentBanner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-    currentBanner.style.opacity = '0';
-    currentBanner.style.transform = 'translateY(-100%)';
-    
-    // Remove the banner from the DOM after animation
-    setTimeout(() => {
-      currentBanner.remove();
-      // Remove the banner class from body to trigger CSS changes
-      document.body.classList.remove('has-banner');
-      
-      // Adjust the site header position since banner is gone
-      const siteHeader = document.querySelector('.site-header');
-      if (siteHeader) {
-        siteHeader.style.top = '0';
-      }
-      
-      // Adjust the home hero padding since banner is gone
-      const homeHero = document.querySelector('.home-hero');
-      if (homeHero) {
-        homeHero.style.paddingTop = 'calc(var(--spacing) * 33)';
-      }
-    }, 300);
-  };
-  
-  // Attach event listener with capture phase to ensure it fires before other handlers
-  closeButton.addEventListener('click', handleCloseClick, true);
+  // Note: The global document-level handler above will handle clicks
+  // We don't need to attach additional handlers here to avoid conflicts
+  // Just ensure the button and icon are properly set up
+  const icon = closeButton.querySelector('.banner-close-icon');
+  if (icon) {
+    icon.style.pointerEvents = 'none'; // Ensure clicks pass through to button
+  }
 }
 
 // Email validation using MillionVerifier - reusable function for multiple email inputs
@@ -464,11 +442,83 @@ function handleTableOfContentsScroll() {
   window.addEventListener('resize', requestTick);
 }
 
+// Global banner close handler using event delegation (works even if banner is added dynamically)
+let isClosingBanner = false;
+document.addEventListener('click', function(e) {
+  // Check if click is on banner close button or icon
+  if (e.target.closest('.banner-close') || e.target.classList.contains('banner-close') || e.target.classList.contains('banner-close-icon')) {
+    // Prevent multiple handlers from firing
+    if (isClosingBanner) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    
+    const banner = document.querySelector('.banner');
+    if (!banner) return;
+    
+    // Set flag to prevent duplicate handling
+    isClosingBanner = true;
+    
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Set cookie to remember that banner was closed (expires in 30 days)
+    setCookie('banner-closed', 'true', 30);
+    
+    // Immediately remove has-banner class to hide banner via CSS
+    document.body.classList.remove('has-banner');
+    
+    // Hide the banner with a smooth transition
+    banner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    banner.style.opacity = '0';
+    banner.style.transform = 'translateY(-100%)';
+    
+    // Remove the banner from the DOM after animation
+    setTimeout(() => {
+      banner.remove();
+      
+      // Adjust the site header position since banner is gone
+      const siteHeader = document.querySelector('.site-header');
+      if (siteHeader) {
+        siteHeader.style.top = '0';
+      }
+      
+      // Adjust the home hero padding since banner is gone
+      const homeHero = document.querySelector('.home-hero');
+      if (homeHero) {
+        homeHero.style.paddingTop = 'calc(var(--spacing) * 33)';
+      }
+      
+      // Reset flag after banner is removed
+      isClosingBanner = false;
+    }, 300);
+  }
+}, true);
+
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize banner close functionality first (before checking cookie)
   // This ensures the event listener is attached even if banner might be removed
   initBannerClose();
+  
+  // Also try initializing after a short delay in case banner loads late
+  setTimeout(() => {
+    const banner = document.querySelector('.banner');
+    if (banner && !banner.dataset.listenerAttached) {
+      banner.dataset.listenerAttached = 'true';
+      initBannerClose();
+    }
+  }, 100);
+  
+  // Also try on window load as final fallback
+  window.addEventListener('load', () => {
+    const banner = document.querySelector('.banner');
+    if (banner && !banner.dataset.listenerAttached) {
+      banner.dataset.listenerAttached = 'true';
+      initBannerClose();
+    }
+  });
   
   // Check if banner is present and add class to body
   const banner = document.querySelector('.banner');
