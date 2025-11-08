@@ -704,6 +704,83 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize testimonial carousel
   initTestimonialCarousel();
 
+  // Homepage Testimonial Carousel
+  function initHomepageTestimonialCarousel() {
+    const carousel = document.querySelector('.homepage-testimonial-carousel');
+    if (!carousel) return;
+    
+    const slides = carousel.querySelectorAll('.testimonial-carousel-slide');
+    const indicators = carousel.querySelectorAll('.testimonial-indicator');
+    
+    if (slides.length <= 1) return;
+    
+    let currentIndex = 0;
+    let carouselInterval = null;
+    const intervalTime = 7000; // 7 seconds per slide
+    
+    function startCarousel() {
+      if (carouselInterval) {
+        clearInterval(carouselInterval);
+      }
+      carouselInterval = setInterval(nextSlide, intervalTime);
+    }
+    
+    function stopCarousel() {
+      if (carouselInterval) {
+        clearInterval(carouselInterval);
+        carouselInterval = null;
+      }
+    }
+    
+    function showSlide(index) {
+      // Remove active class from all slides and indicators
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach(indicator => indicator.classList.remove('active'));
+      
+      // Add active class to current slide and indicator
+      slides[index].classList.add('active');
+      indicators[index].classList.add('active');
+      
+      currentIndex = index;
+    }
+    
+    function nextSlide() {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    }
+    
+    function goToSlide(index) {
+      showSlide(index);
+      // Reset the interval when manually navigating
+      startCarousel();
+    }
+    
+    // Add click handlers to indicators
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        goToSlide(index);
+      });
+    });
+    
+    // Initialize with first slide
+    showSlide(0);
+    
+    // Start the carousel
+    startCarousel();
+    
+    // Pause on hover (optional enhancement)
+    carousel.addEventListener('mouseenter', () => {
+      stopCarousel();
+    });
+    
+    carousel.addEventListener('mouseleave', () => {
+      startCarousel();
+    });
+  }
+  
+  // Initialize homepage testimonial carousel
+  initHomepageTestimonialCarousel();
+
   // Cal.com
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "meet", {origin:"https://cal.com"});
