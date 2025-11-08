@@ -86,9 +86,13 @@ function initCTAModal() {
 // Banner close functionality
 function initBannerClose() {
   const banner = document.querySelector('.banner');
-  const closeButton = document.querySelector('.banner-close');
   
-  if (!banner || !closeButton) return;
+  if (!banner) return;
+  
+  // Find close button within the banner element
+  const closeButton = banner.querySelector('.banner-close');
+  
+  if (!closeButton) return;
   
   // Check if banner was previously closed
   if (getCookie('banner-closed') === 'true') {
@@ -98,6 +102,9 @@ function initBannerClose() {
     document.body.classList.remove('has-banner');
     return;
   }
+  
+  // Add has-banner class to body when banner is present and visible
+  document.body.classList.add('has-banner');
   
   // Add fade-in animation for banner appearance
   banner.style.opacity = '0';
@@ -110,18 +117,26 @@ function initBannerClose() {
     banner.style.transform = 'translateY(0)';
   }, 100);
   
-  closeButton.addEventListener('click', function() {
+  // Use a named function so we can remove it if needed
+  const handleCloseClick = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
     // Set cookie to remember that banner was closed (expires in 30 days)
     setCookie('banner-closed', 'true', 30);
     
+    // Get fresh reference to banner in case it changed
+    const currentBanner = document.querySelector('.banner');
+    if (!currentBanner) return;
+    
     // Hide the banner with a smooth transition
-    banner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-    banner.style.opacity = '0';
-    banner.style.transform = 'translateY(-100%)';
+    currentBanner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    currentBanner.style.opacity = '0';
+    currentBanner.style.transform = 'translateY(-100%)';
     
     // Remove the banner from the DOM after animation
     setTimeout(() => {
-      banner.remove();
+      currentBanner.remove();
       // Remove the banner class from body to trigger CSS changes
       document.body.classList.remove('has-banner');
       
@@ -137,7 +152,10 @@ function initBannerClose() {
         homeHero.style.paddingTop = 'calc(var(--spacing) * 33)';
       }
     }, 300);
-  });
+  };
+  
+  // Attach event listener with capture phase to ensure it fires before other handlers
+  closeButton.addEventListener('click', handleCloseClick, true);
 }
 
 // Email validation using MillionVerifier - reusable function for multiple email inputs
@@ -448,20 +466,24 @@ function handleTableOfContentsScroll() {
 
 // Handle header visibility on scroll
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize banner close functionality first (before checking cookie)
+  // This ensures the event listener is attached even if banner might be removed
+  initBannerClose();
+  
   // Check if banner is present and add class to body
   const banner = document.querySelector('.banner');
   if (banner) {
-    // Only add the class if banner is not hidden by cookie
-    if (getCookie('banner-closed') !== 'true') {
-      document.body.classList.add('has-banner');
-    } else {
-      // If banner should be hidden, ensure it's completely hidden from the start
+    // Check if banner was previously closed
+    if (getCookie('banner-closed') === 'true') {
+      // If banner should be hidden, ensure it's completely hidden and removed immediately
       banner.style.display = 'none';
+      banner.remove();
+      document.body.classList.remove('has-banner');
+    } else {
+      // Only add the class if banner is not hidden by cookie
+      document.body.classList.add('has-banner');
     }
   }
-  
-  // Initialize banner close functionality
-  initBannerClose();
   
   // Initialize CTA modal
   initCTAModal();

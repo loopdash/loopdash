@@ -30,6 +30,30 @@
 
   <link rel="stylesheet" href="/css/base.css"/>
   
+  <!-- Hide banner immediately if cookie is set (prevents flash) -->
+  <script>
+    (function() {
+      function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+      
+      // Check cookie immediately and hide banner if needed
+      if (getCookie('banner-closed') === 'true') {
+        // Add style to hide banner before DOM is ready
+        const style = document.createElement('style');
+        style.textContent = '.banner { display: none !important; }';
+        document.head.appendChild(style);
+      }
+    })();
+  </script>
+  
   {% if page.url == "/testimonials/" or page.url == "/testimonials" %}
     <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4/dist/fullpage.min.js" defer></script>
   {% endif %}

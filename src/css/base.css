@@ -29,6 +29,10 @@
   --antaeus-light-purple: #DED2E1;
   --antaeus-dark-yellow: #DF8E2F;
   --antaeus-muted-cyan: #C1D6E0;
+  --moms-first-light-green: #43A85A;
+  --moms-first-dark-green: #005958;
+  --moms-first-orange : #FFAD19;
+  --moms-first-lighter-green : #F1FFE5;
   --banner-height: 3.5rem;
   --color-primary-reverse: #ffffff;
 }
@@ -586,6 +590,7 @@ blockquote p {
 .bg-white {
   background: #ffffff;
 }
+
 .bg-green-waterloo {
   background: var(--color-green-waterloo);
   .card-question,
@@ -1030,6 +1035,7 @@ blockquote p {
 .pb-14 { padding-bottom: calc(var(--spacing) * 14); }
 .pb-15 { padding-bottom: calc(var(--spacing) * 15); }
 .pb-16 { padding-bottom: calc(var(--spacing) * 16); }
+.pb-24 { padding-bottom: calc(var(--spacing) * 24); }
 
 /* Padding Left */
 .pl-0 { padding-left: 0; }
@@ -1095,6 +1101,7 @@ blockquote p {
 .py-22 { padding-top: calc(var(--spacing) * 22); padding-bottom: calc(var(--spacing) * 22); }
 .py-23 { padding-top: calc(var(--spacing) * 23); padding-bottom: calc(var(--spacing) * 23); }
 .py-24 { padding-top: calc(var(--spacing) * 24); padding-bottom: calc(var(--spacing) * 24); }
+.py-32 { padding-top: calc(var(--spacing) * 32); padding-bottom: calc(var(--spacing) * 32); }
 
 /* Margin */
 .m-0 { margin: 0; }
@@ -1682,13 +1689,12 @@ nav.reveal.visible{
 
 .home-hero {
   margin-bottom: calc(var(--spacing) * 20);
-  padding: calc(var(--spacing) * 33) calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 33) calc(var(--spacing) * 8);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 24rem;
-  max-width: 40rem;
   position: relative;
 }
 
@@ -1888,7 +1894,7 @@ body.has-banner .home-hero {
   grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem 1rem;
   margin: 0 auto;
-  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 6) calc(var(--spacing) * 2);
+  padding: 0 calc(var(--spacing) * 8) 0;
   box-sizing: border-box;
   font-size: clamp(0.9375rem, 1.4vw, 1.125rem);
   font-weight: 550;
@@ -1938,7 +1944,7 @@ body.has-banner .home-hero {
 
 /* Grid column spans for alternating pattern */
 .project:nth-child(3n+1) {
-  grid-column: span 5;
+  grid-column: span 12;
 }
 
 .project:nth-child(3n+2) {
@@ -1946,7 +1952,7 @@ body.has-banner .home-hero {
 }
 
 .project:nth-child(3n) {
-  grid-column: span 12;
+  grid-column: span 5;
 }
 
 /* Mobile: Make all projects one column */
@@ -1989,7 +1995,7 @@ body.has-banner .home-hero {
 .project-antaeus {
   background-image: 
     linear-gradient(0deg, #0000007d 30%, #ffffff44 100%), 
-    url('https://cdn.loopdash.com/img/preview-antaeus.png');
+    url('/img/passthrough/antaeus-cover.jpg');
   background-size: cover;
 }
 
@@ -1997,6 +2003,13 @@ body.has-banner .home-hero {
   background-image:
     linear-gradient(0deg, #00000000 15%, #ffffff44 100%), 
     url('https://cdn.loopdash.com/img/cover-future-of-fatherhood.jpg');
+  background-size: cover;
+}
+
+.project-moms-first{
+  background-image:
+    linear-gradient(0deg, #00000000 15%, #ffffff44 100%), 
+    url('../img/passthrough/moms-first-cover.jpg');
   background-size: cover;
 }
 
@@ -2054,7 +2067,7 @@ body.has-banner .home-hero {
 
 /* cta */
 .cta {
-  padding: calc(var(--spacing) * 24) 36px calc(var(--spacing) * 24) 36px;
+  padding: calc(var(--spacing) * 32) 36px calc(var(--spacing) * 32) 36px;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -2634,6 +2647,34 @@ body.has-banner .home-hero {
       }
     }
   }
+
+  .introduction-moms-first {
+    background-color: #43A85A;
+    p {
+      color: #ffffff;
+    }
+    .details {
+      color: #ffffff;
+
+      .link-chevron {
+        color: #ffffff;
+        transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+
+        &:after {
+          filter: brightness(0) saturate(100%) invert(100%);
+        }
+
+        &:hover {
+          transition: var(--trs-prop) var(--trs-time) var(--trs-tfunc);
+          opacity: 0.5;
+
+          &:after {
+            filter: brightness(0) saturate(100%) invert(100%);
+          }
+        }
+      }
+    }
+  }
   .brand-palette {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -2901,6 +2942,40 @@ body.has-banner .home-hero {
 
       &:after {
         content: "Harvest Gold";
+      }
+    }
+
+    /* Moms First */    
+    .brand-color-moms-first:nth-child(1) {
+      background: var(--moms-first-light-green);
+
+      &:after {
+        content: "Chateau Green";
+      }
+    }
+
+    .brand-color-moms-first:nth-child(2) {
+      background: var(--moms-first-dark-green);
+
+      &:after {
+        content: "Deep Sea Green";
+      }
+    }
+
+    .brand-color-moms-first:nth-child(3) {
+      background: var(--moms-first-lighter-green);
+
+      &:after {
+        content: "Rice Flower";
+      }
+    }
+
+    .brand-color-moms-first:nth-child(4) {
+      background: var(--moms-first-orange);
+      color: rgba(255, 255, 255, 0.8);
+
+      &:after {
+        content: "Sun";
       }
     }
 
@@ -3585,7 +3660,7 @@ a.card-default {
 .slider {
   background: var(--color-green-waterloo);
   height: 100px;
-  margin: 0 auto calc(var(--spacing) * 32);
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
@@ -3966,10 +4041,8 @@ a.card-default {
 .site-footer {
   background: var(--color-green-waterloo);
   z-index: 999;
-  border-radius: 16px;
   position: relative;
   padding: calc(var(--spacing) * 40) calc(var(--spacing) * 30) calc(var(--spacing) * 10);
-  margin-bottom: calc(var(--spacing) * 8);
   color: var(--color-charcoal-light);
 
   @media only screen and (max-width: 1024px) {
