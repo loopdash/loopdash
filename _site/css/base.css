@@ -3068,7 +3068,6 @@ form select,
 form button {
   font-family: var(--base-font);
   max-width: 100%; /* Prevents individual elements from overflowing */
-  width: 100%; /* Stretches elements to fill the form */
   box-sizing: border-box; /* Ensures padding and borders are included in the width */
 }
 
@@ -3136,7 +3135,7 @@ form button {
 
   .form-selector-group {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Creates 2 equal columns */
+    grid-template-columns: 1fr; /* Creates 2 equal columns */
     grid-template-rows: auto auto;  /* Creates 2 rows that size to content */
     gap: 12px;
     margin-bottom: calc(var(--spacing) * 5);
